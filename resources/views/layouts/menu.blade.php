@@ -53,13 +53,15 @@
       <nav id="nav-menu-container">
         <ul class="nav-menu">
           <li class="menu-active"><a href="/">Accueil</a></li>
-          <li><a href="#about">A propos</a></li>
-          <li><a href="#features">Fonctionnalités</a></li>
-          <li><a href="#pricing">Prix</a></li>
-          <li><a href="#team">Formateurs</a></li>
-          <li><a href="#contact">Contactez-nous</a></li>
-          <li><a href="{{route('login')}}">Connexion</a></li>
-          <li><a href="{{route('register')}}">Inscription</a></li>
+          <li><a href="#features">La méthode</a></li>
+          <li><a href="#programme">Le programme</a></li>
+          <li class="dropdown">
+            <a href="#">Formateurs</a>
+            <ul class="dropdown-menu">
+              <li><a href="{{route('login')}}">Connexion</a></li>
+              <li><a href="{{route('register')}}">Inscription</a></li>
+            </ul>
+          </li>
           <li><a href="/online" class="get1-started-btn text-center btn btn-primary">Demander une démo</a></li>
         </ul>
       </nav><!-- #nav-menu-container -->
