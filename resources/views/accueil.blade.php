@@ -325,17 +325,45 @@
 
     <div class="features-row section-bg">
       <div class="container">
+        <h4>Le programme des rentrées</h4>
         <div class="row">
-          <div class="col-12">
-            <img class="advanced-feature-img-right wow fadeInRight" src="/avilon/img/advanced-feature-3.jpg" alt="">
-            <div class="wow fadeInLeft">
-              <h2>Le programme des rentrées</h2>
-              <h3>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-              <i class="ion-ios-albums-outline"></i>
-              <p>Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <div class="col-md-12">
+                <div class="main-timeline8">
+                    <div class="timeline">
+                        <span class="timeline-icon"></span>
+                        <span class="year">1er Octobre 2018 - 21 septembre 2018</span>
+                        <div class="timeline-content">
+                            <h3 class="title">La Genèse</h3>
+                            <p class="description">
+                              La première promotion ouvre ses portes ! C'est la génération
+                              la plus chanceuse, vu toutes les opportunités qu'elle aura...
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline">
+                        <span class="timeline-icon"></span>
+                        <span class="year">5 novembre 2018 - 8 février 2019</span>
+                        <div class="timeline-content">
+                            <h3 class="title">Le défi</h3>
+                            <p class="description">
+                              Deuxième embarcation vers la planète des codeurs, où vous
+                              devrez relever de nombreux défis
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline">
+                        <span class="timeline-icon"></span>
+                        <span class="year">Février - Mars 2019</span>
+                        <div class="timeline-content">
+                            <h3 class="title">Date bientôt dévoilée</h3>
+                            <p class="description">
+                                <img src="/avilon/img/ambassador.gif" style="width: 100%;" alt="">
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
             </div>
-          </div>
         </div>
       </div>
     </div>
@@ -349,7 +377,7 @@
       <div class="row">
         <div class="col-lg-9 text-center text-lg-left">
           <h3 class="cta-title">Essayez dès maintenant et GRATUITEMENT !</h3>
-          <p class="cta-text"> Demandez une démo et nous vous montrerons comment ca marche gratuitement. Après vous êtes libre de prendre votre décision.</p>
+          <p style="font-size: 22px;" class="cta-text"> Demandez une démo et nous vous montrerons comment ca marche gratuitement. Après vous êtes libre de prendre votre décision.</p>
         </div>
         <div class="col-lg-3 cta-btn-container text-center">
           <a class="cta-btn align-middle" href="#">Demander une démo</a>
