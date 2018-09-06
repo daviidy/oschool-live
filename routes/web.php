@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('accueil');
 });
+
+Route::get('/online', function () {
+    return view('online');
+});

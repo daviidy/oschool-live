@@ -203,7 +203,7 @@
                         <div class="timeline-content">
                             <h5 class="title" style="margin-right: 32px;">Sections</h5>
                             <p class="description" style="margin-right: 32px;">
-                                - Bienvenue 
+                                - Bienvenue
                                 <br><br>
                                - Comment fonctionne le web?
                             </p>
@@ -215,7 +215,7 @@
                         <div class="timeline-content">
                             <h5 class="title">Sections</h5>
                             <p class="description">
-                                - HTML: Structure d'un site web 
+                                - HTML: Structure d'un site web
                                 <br><br>
                                - Un regard plus attentif sur CSS
                             </p>
@@ -227,7 +227,7 @@
                         <div class="timeline-content">
                             <h5 class="title" style="margin-right: 32px;">Sections</h5>
                             <p class="description" style="margin-right: 32px;">
-                                - Bordures et espaces 
+                                - Bordures et espaces
                                 <br><br>
                                - Construire avec Bootstrap
                             </p>
@@ -299,7 +299,7 @@
                         <div class="timeline-content">
                             <h5 class="title" style="margin-right: 32px;">Sections</h5>
                             <p class="description" style="margin-right: 32px;">
-                                - PHP MySQL 
+                                - PHP MySQL
                                 <br><br>
                                - Wordpress
                             </p>
@@ -311,7 +311,7 @@
                         <div class="timeline-content">
                             <h5 class="title">Sections</h5>
                             <p class="description">
-                                - Hébergement et noms de domaines 
+                                - Hébergement et noms de domaines
                                 <br><br>
                                - Qu'avons-nous appris de ce cours ?
                             </p>
@@ -323,13 +323,13 @@
                         <div class="timeline-content">
                             <h5 class="title" style="margin-right: 32px;">Sections</h5>
                             <p class="description" style="margin-right: 32px;">
-                                - Projets 
+                                - Projets
                                 <br><br>
                                - Soutenances
                             </p>
                         </div>
                     </div>
-                    
+
                 </div>
             </div>
         </div>
@@ -463,31 +463,52 @@
 
       <div class="row wow fadeInUp">
         <div class="col-md-12" style="text-align: center;">
-            <h2>Nos partenaires</h2>
+            <h2>Travaillez comme</h2>
         </div>
 
-        <div class="col-md-2">
+        <div class="col-md-3">
           <img src="/avilon/img/clients/client-1.png" alt="">
         </div>
 
-        <div class="col-md-2">
+        <div class="col-md-3">
           <img src="/avilon/img/clients/client-2.png" alt="">
         </div>
 
-        <div class="col-md-2">
+        <div class="col-md-3">
           <img src="/avilon/img/clients/client-3.png" alt="">
         </div>
 
-        <div class="col-md-2">
+        <div class="col-md-3">
+          <img src="/avilon/img/clients/client-8.png" alt="">
+        </div>
+
+
+
+      </div>
+    </div>
+  </section><!-- #more-features -->
+  <section id="clients">
+    <div class="container">
+
+      <div class="row wow fadeInUp">
+        <div class="col-md-12" style="text-align: center;">
+            <h2>Nos partenaires</h2>
+        </div>
+
+        <div class="col-md-3">
           <img src="/avilon/img/clients/client-4.png" alt="">
         </div>
 
-        <div class="col-md-2">
+        <div class="col-md-3">
           <img src="/avilon/img/clients/client-5.png" alt="">
         </div>
 
-        <div class="col-md-2">
+        <div class="col-md-3">
           <img src="/avilon/img/clients/client-6.png" alt="">
+        </div>
+
+        <div class="col-md-3">
+          <img src="/avilon/img/clients/client-7.png" alt="">
         </div>
 
       </div>
