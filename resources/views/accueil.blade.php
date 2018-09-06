@@ -94,7 +94,7 @@
 
         <div class="col-lg-12">
           <div class="text-center">
-            <a href="#" class="get-started-btn text-center btn btn-primary">Demander une démo</a>
+            <a href="/online" class="get-started-btn text-center btn btn-primary">Demander une démo</a>
 
           </div>
         </div>
@@ -128,7 +128,7 @@
           <div class="row">
 
             <div class="col-lg-6 col-md-6 box wow fadeInRight">
-              <div class="icon"><i class="ion-ios-flask-outline"></i></div>
+              <div class="icon"><i class="ion-ios-paper-outline"></i></div>
               <h4 class="title"><a href="">1. Remplissez un formulaire d'inscription</a></h4>
               <p class="description">Nous verrons si vous êtes éligible ou pas pour apprendre le métier de développeur web
               dans notre école.</p>
@@ -141,7 +141,7 @@
             un formateur, qui se chargera de votre encadrement tout au long de la formation.</p>
             </div>
             <div class="col-lg-6 col-md-6 box wow fadeInRight data-wow-delay"="0.2s">
-              <div class="icon"><i class=" ion-android-phone-portrait"></i></div>
+              <div class="icon"><i class=" fa fa-code "></i></div>
               <h4 class="title"><a href="">Faites les exercices et projets</a></h4>
               <p class="description">Pendant les cours, vous ferez des exercices et après les cours vous travaillez sur des projets
               avec l'aide de votre formateur. Vous avez même la possibilité d'enregistrer chaque session de cours
@@ -149,7 +149,7 @@
           copie du code source</p>
             </div>
             <div class="col-lg-6 col-md-6 box wow fadeInRight" data-wow-delay="0.3s">
-              <div class="icon"><i class="ion-ios-analytics-outline"></i></div>
+              <div class="icon"><i class="fa fa-check-square-o"></i></div>
               <h4 class="title"><a href="">Soutenez et obtenez votre certificat !</a></h4>
               <p class="description">A la fin de la formation, vous passez une soutenance devant le jury Oschool,
               à la fin de laquelle vous obtenez un certificat qui vous permet d'être embauché par les entreprises.</p>
@@ -184,7 +184,7 @@
           </div>
           <div class="col-lg-12">
             <div class="text-center">
-              <a href="#" class="get-started-btn text-center btn btn-primary">Demander une démo</a>
+              <a href="/online" class="get-started-btn text-center btn btn-primary">Demander une démo</a>
 
             </div>
           </div>
@@ -393,7 +393,7 @@
           <p style="font-size: 22px;" class="cta-text"> Demandez une démo et nous vous montrerons comment ca marche gratuitement. Après vous êtes libre de prendre votre décision.</p>
         </div>
         <div class="col-lg-3 cta-btn-container text-center">
-          <a class="cta-btn align-middle" href="#">Demander une démo</a>
+          <a class="cta-btn align-middle" href="/online">Demander une démo</a>
         </div>
       </div>
 
