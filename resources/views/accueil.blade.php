@@ -193,130 +193,143 @@
     </div>
     <div class="features-row">
       <div class="container">
-        <h4>Timeline Style : Demo-7</h4>
+        <h4>Programme des cours</h4>
         <div class="row">
             <div class="col-md-12">
                 <div class="main-timeline7">
                     <div class="timeline">
                         <div class="timeline-icon"><i class="fa fa-globe"></i></div>
-                        <span class="year">2018</span>
+                        <span class="year">Semaine 1</span>
                         <div class="timeline-content">
-                            <h5 class="title">Web Desginer</h5>
-                            <p class="description">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum mattis felis vitae risus pulvinar tincidunt. Nam ac venenatis enim. Aenean hendrerit justo sed.
+                            <h5 class="title" style="margin-right: 32px;">Sections</h5>
+                            <p class="description" style="margin-right: 32px;">
+                                - Bienvenue 
+                                <br><br>
+                               - Comment fonctionne le web?
                             </p>
                         </div>
                     </div>
                     <div class="timeline">
-                        <div class="timeline-icon"><i class="fa fa-rocket"></i></div>
-                        <span class="year">2017</span>
+                        <div class="timeline-icon"><i class="fa fa-laptop"></i></div>
+                        <span class="year">Semaine 2</span>
                         <div class="timeline-content">
-                            <h5 class="title">Web Developer</h5>
+                            <h5 class="title">Sections</h5>
                             <p class="description">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum mattis felis vitae risus pulvinar tincidunt. Nam ac venenatis enim. Aenean hendrerit justo sed.
+                                - HTML: Structure d'un site web 
+                                <br><br>
+                               - Un regard plus attentif sur CSS
                             </p>
                         </div>
                     </div>
                     <div class="timeline">
-                        <div class="timeline-icon"><i class="fa fa-briefcase"></i></div>
-                        <span class="year">2016</span>
+                        <div class="timeline-icon"><i class="fa fa-laptop"></i></div>
+                        <span class="year">Semaine 3</span>
                         <div class="timeline-content">
-                            <h5 class="title">Web Desginer</h5>
-                            <p class="description">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum mattis felis vitae risus pulvinar tincidunt. Nam ac venenatis enim. Aenean hendrerit justo sed.
+                            <h5 class="title" style="margin-right: 32px;">Sections</h5>
+                            <p class="description" style="margin-right: 32px;">
+                                - Bordures et espaces 
+                                <br><br>
+                               - Construire avec Bootstrap
                             </p>
                         </div>
                     </div>
                     <div class="timeline">
-                        <div class="timeline-icon"><i class="fa fa-mobile"></i></div>
-                        <span class="year">2015</span>
+                        <div class="timeline-icon"><i class="fa fa-file-code-o"></i></div>
+                        <span class="year">Semaine 4</span>
                         <div class="timeline-content">
-                            <h5 class="title">Web Developer</h5>
+                            <h5 class="title">Sections</h5>
                             <p class="description">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum mattis felis vitae risus pulvinar tincidunt. Nam ac venenatis enim. Aenean hendrerit justo sed.
+                                - Créez un site web interactif: Faire un menu déroulant
+                                <br><br>
+                               - Site web interactif: Menu coulissant
                             </p>
                         </div>
                     </div>
                     <div class="timeline">
-                        <div class="timeline-icon"><i class="fa fa-globe"></i></div>
-                        <span class="year">2018</span>
+                        <div class="timeline-icon"><i class="fa fa-laptop"></i></div>
+                        <span class="year">Semaine 5</span>
                         <div class="timeline-content">
-                            <h5 class="title">Web Desginer</h5>
-                            <p class="description">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum mattis felis vitae risus pulvinar tincidunt. Nam ac venenatis enim. Aenean hendrerit justo sed.
+                           <h5 class="title" style="margin-right: 32px;">Sections</h5>
+                            <p class="description" style="margin-right: 32px;">
+                                - Javascript: les bases
+                                <br><br>
+                               - Les évènements
                             </p>
                         </div>
                     </div>
                     <div class="timeline">
-                        <div class="timeline-icon"><i class="fa fa-rocket"></i></div>
-                        <span class="year">2017</span>
+                        <div class="timeline-icon"><i class="fa fa-file-code-o"></i></div>
+                        <span class="year">Semaine 6</span>
                         <div class="timeline-content">
-                            <h5 class="title">Web Developer</h5>
+                            <h5 class="title">Sections</h5>
                             <p class="description">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum mattis felis vitae risus pulvinar tincidunt. Nam ac venenatis enim. Aenean hendrerit justo sed.
+                                - Site web interactif : Construisez un fil d'actualités
+                                <br><br>
+                               - Le DOM
                             </p>
                         </div>
                     </div>
                     <div class="timeline">
-                        <div class="timeline-icon"><i class="fa fa-briefcase"></i></div>
-                        <span class="year">2016</span>
+                        <div class="timeline-icon"><i class="fa fa-file-code-o"></i></div>
+                       <span class="year">Semaine 7</span>
                         <div class="timeline-content">
-                            <h5 class="title">Web Desginer</h5>
-                            <p class="description">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum mattis felis vitae risus pulvinar tincidunt. Nam ac venenatis enim. Aenean hendrerit justo sed.
+                            <h5 class="title" style="margin-right: 32px;">Sections</h5>
+                            <p class="description" style="margin-right: 32px;">
+                                - Site web interactif: Construisons la page d'accueil de Flipboard
+                                <br><br>
+                               - PHP: Introduction
                             </p>
                         </div>
                     </div>
                     <div class="timeline">
-                        <div class="timeline-icon"><i class="fa fa-mobile"></i></div>
-                        <span class="year">2015</span>
+                        <div class="timeline-icon"><i class="fa fa-laptop"></i></div>
+                        <span class="year">Semaine 8</span>
                         <div class="timeline-content">
-                            <h5 class="title">Web Developer</h5>
+                            <h5 class="title">Sections</h5>
                             <p class="description">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum mattis felis vitae risus pulvinar tincidunt. Nam ac venenatis enim. Aenean hendrerit justo sed.
+                                - Les bases en PHP
+                                <br><br>
+                               - Transmettre les données de page en page
                             </p>
                         </div>
                     </div>
                     <div class="timeline">
-                        <div class="timeline-icon"><i class="fa fa-globe"></i></div>
-                        <span class="year">2018</span>
+                        <div class="timeline-icon"><i class="fa fa-laptop"></i></div>
+                        <span class="year">Semaine 9</span>
                         <div class="timeline-content">
-                            <h5 class="title">Web Desginer</h5>
-                            <p class="description">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum mattis felis vitae risus pulvinar tincidunt. Nam ac venenatis enim. Aenean hendrerit justo sed.
+                            <h5 class="title" style="margin-right: 32px;">Sections</h5>
+                            <p class="description" style="margin-right: 32px;">
+                                - PHP MySQL 
+                                <br><br>
+                               - Wordpress
                             </p>
                         </div>
                     </div>
                     <div class="timeline">
-                        <div class="timeline-icon"><i class="fa fa-rocket"></i></div>
-                        <span class="year">2017</span>
+                        <div class="timeline-icon"><i class="fa fa-laptop"></i></div>
+                       <span class="year">Semaine 10</span>
                         <div class="timeline-content">
-                            <h5 class="title">Web Developer</h5>
+                            <h5 class="title">Sections</h5>
                             <p class="description">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum mattis felis vitae risus pulvinar tincidunt. Nam ac venenatis enim. Aenean hendrerit justo sed.
+                                - Hébergement et noms de domaines 
+                                <br><br>
+                               - Qu'avons-nous appris de ce cours ?
                             </p>
                         </div>
                     </div>
                     <div class="timeline">
-                        <div class="timeline-icon"><i class="fa fa-briefcase"></i></div>
-                        <span class="year">2016</span>
+                        <div class="timeline-icon"><i class="fa fa-laptop"></i></div>
+                        <span class="year">Semaine 11 et 12</span>
                         <div class="timeline-content">
-                            <h5 class="title">Web Desginer</h5>
-                            <p class="description">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum mattis felis vitae risus pulvinar tincidunt. Nam ac venenatis enim. Aenean hendrerit justo sed.
+                            <h5 class="title" style="margin-right: 32px;">Sections</h5>
+                            <p class="description" style="margin-right: 32px;">
+                                - Projets 
+                                <br><br>
+                               - Soutenances
                             </p>
                         </div>
                     </div>
-                    <div class="timeline">
-                        <div class="timeline-icon"><i class="fa fa-mobile"></i></div>
-                        <span class="year">2015</span>
-                        <div class="timeline-content">
-                            <h5 class="title">Web Developer</h5>
-                            <p class="description">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum mattis felis vitae risus pulvinar tincidunt. Nam ac venenatis enim. Aenean hendrerit justo sed.
-                            </p>
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
         </div>
