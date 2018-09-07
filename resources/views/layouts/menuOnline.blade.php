@@ -26,7 +26,7 @@
   <link href="/avilon/lib/magnific-popup/magnific-popup.css" rel="stylesheet">
 
   <!-- Main Stylesheet File -->
-  <link href="/avilon/css/style.css" rel="stylesheet">
+  <link href="/avilon/css/style2.css" rel="stylesheet">
 
   <!-- =======================================================
     Theme Name: Avilon
@@ -53,14 +53,17 @@
       <nav id="nav-menu-container">
         <ul class="nav-menu">
           <li class="menu-active"><a href="/">Accueil</a></li>
-          <li><a href="#about">A propos</a></li>
-          <li><a href="#features">Fonctionnalités</a></li>
-          <li><a href="#pricing">Prix</a></li>
-          <li><a href="#team">Cours pré-enregistrés</a></li>
-          <li><a href="#contact">Contactez-nous</a></li>
-           <li><a href="{{route('login')}}">Connexion</a></li>
-          <li><a href="{{route('register')}}">Inscription</a></li>
-          <li><a href="/online" class="get1-started-btn text-center btn btn-primary">Demander une démo</a></li>
+          <li><a href="#features">La méthode</a></li>
+          <li><a href="#programme">Le programme</a></li>
+          <li><a href="/online">Screencasts</a></li>
+          <li class="dropdown">
+            <a href="#">Formateurs</a>
+            <ul class="dropdown-menu">
+              <li><a href="{{route('login')}}">Connexion</a></li>
+              <li><a href="{{route('register')}}">Inscription</a></li>
+            </ul>
+          </li>
+          <li><a href="/online" class="get1-started-btn text-center btn">Essayez gratuitement</a></li>
         </ul>
       </nav><!-- #nav-menu-container -->
     </div>

@@ -332,7 +332,7 @@ h4{text-align:center;margin:30px 0;color:#444}
 .main-timeline8 .timeline-icon{width:32px;height:32px;border-radius:50%;background:#fff;border:3px solid #fe6847;position:absolute;top:5.5%;right:-17.5px}
 .main-timeline8 .year{display:block;padding:10px;margin:0;font-size:18px;color:#fff;border-radius:0 50px 50px 0;background:#fe6847;text-align:center;position:relative}
 .main-timeline8 .year:before{content:"";border-top:35px solid #f59c8b;border-left:35px solid transparent;position:absolute;bottom:-35px;left:0}
-.main-timeline8 .timeline-content{padding:30px 20px;margin:0 45px 0 35px;background:#f2f2f2;border-radius: 8px;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
+.main-timeline8 .timeline-content{padding:30px 20px;margin:0 45px 0 35px;background:#fff;border-radius: 8px;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
 .main-timeline8 .title{font-size:19px;font-weight:700;color:#504f54;margin:0 0 10px}
 .main-timeline8 .description{font-size:14px;color:#7d7b7b;margin:0}
 .main-timeline8 .timeline:nth-child(2n){padding:0 0 0 30px}

@@ -94,7 +94,7 @@
 
         <div class="col-lg-12">
           <div class="text-center">
-            <a href="/online" class="get-started-btn text-center btn btn-primary">Demander une démo</a>
+            <a target="_blank" href="https://calendly.com/adams_oschool/demo-oschool-code" class="get-started-btn text-center btn ">Demander une démo</a>
 
           </div>
         </div>
@@ -184,7 +184,7 @@
           </div>
           <div class="col-lg-12">
             <div class="text-center">
-              <a href="/online" class="get-started-btn text-center btn btn-primary">Demander une démo</a>
+              <a target="_blank" href="https://calendly.com/adams_oschool/demo-oschool-code" class="get-started-btn text-center btn ">Demander une démo</a>
 
             </div>
           </div>
@@ -393,7 +393,7 @@
           <p style="font-size: 22px;" class="cta-text"> Demandez une démo et nous vous montrerons comment ca marche gratuitement. Après vous êtes libre de prendre votre décision.</p>
         </div>
         <div class="col-lg-3 cta-btn-container text-center">
-          <a class="cta-btn align-middle" href="/online">Demander une démo</a>
+          <a target="_blank" class="cta-btn align-middle" href="https://calendly.com/adams_oschool/demo-oschool-code">Demander une démo</a>
         </div>
       </div>
 
@@ -416,7 +416,7 @@
 
         <div class="col-lg-6">
           <div class="box wow fadeInLeft">
-            <div class="icon"><i class="ion-ios-stopwatch-outline"></i></div>
+            <div class="icon"><i class="ion-ios-flame-outline"></i></div>
             <h4 class="title"><a href="">Des compétences prisées.</a></h4>
             <p class="description">Développement web, front-end, back-end, fullstack</p>
           </div>
@@ -658,7 +658,7 @@
       <div class="section-header">
         <h3 class="section-title">Nos cours</h3>
         <span class="section-divider"></span>
-        <p class="section-description">Vous apprendrez principalement les langages du front-end</p>
+        <p class="section-description"></p>
       </div>
 
       <div class="row no-gutters">
@@ -697,16 +697,16 @@
 
         <div class="col-lg-4 col-md-6">
           <div class="gallery-item wow fadeInUp">
-            <a href="/avilon/img/gallery/angular.png" class="gallery-popup">
-              <img src="/avilon/img/gallery/angular.png" alt="">
+            <a href="/avilon/img/gallery/php.png" class="gallery-popup">
+              <img src="/avilon/img/gallery/php.png" alt="">
             </a>
           </div>
         </div>
 
         <div class="col-lg-4 col-md-6">
           <div class="gallery-item wow fadeInUp">
-            <a href="/avilon/img/gallery/vue.png" class="gallery-popup">
-              <img src="/avilon/img/gallery/vue.png" alt="">
+            <a href="/avilon/img/gallery/wordpress.png" class="gallery-popup">
+              <img src="/avilon/img/gallery/wordpress.png" alt="">
             </a>
           </div>
         </div>
@@ -726,7 +726,8 @@
         <div class="col-lg-4 col-md-4">
           <div class="contact-about">
             <h3>Oschool</h3>
-            <p>Cras fermentum odio eu feugiat. Justo eget magna fermentum iaculis eu non diam phasellus. Scelerisque felis imperdiet proin fermentum leo. Amet volutpat consequat mauris nunc congue.</p>
+            <p>Oschool est une plateforme de formations, sur laquelle vous pouvez suivre
+            et/ou créer des formations dans les domaines du web</p>
             <div class="social-links">
               <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
               <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
@@ -741,17 +742,17 @@
           <div class="info">
             <div>
               <i class="ion-ios-location-outline"></i>
-              <p>A108 Adam Street<br>New York, NY 535022</p>
+              <p>Abidjan<br>Côte d'Ivoire</p>
             </div>
 
             <div>
               <i class="ion-ios-email-outline"></i>
-              <p>info@example.com</p>
+              <p>info@oschool.ci</p>
             </div>
 
             <div>
               <i class="ion-ios-telephone-outline"></i>
-              <p>+1 5589 55488 55s</p>
+              <p>+225 21-37-12-77</p>
             </div>
 
           </div>
@@ -759,8 +760,10 @@
 
         <div class="col-lg-5 col-md-8">
           <div class="form">
+
             <div id="sendmessage">Your message has been sent. Thank you!</div>
             <div id="errormessage"></div>
+          <!--
             <form action="" method="post" role="form" class="contactForm">
               <div class="form-row">
                 <div class="form-group col-lg-6">
@@ -780,8 +783,9 @@
                 <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
                 <div class="validation"></div>
               </div>
-              <div class="text-center"><button type="submit" title="Send Message">Send Message</button></div>
-            </form>
+
+            </form> -->
+            <div class="text-center"><a target="_blank" href="https://calendly.com/adams_oschool/demo-oschool-code" class="get-started-btn text-center btn ">Demander une démo</a></div>
           </div>
         </div>
 

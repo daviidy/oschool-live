@@ -8,24 +8,15 @@
 <section id="intro">
 
   <div class="intro-text">
-    <h2>Salut, Futurs Codeurs</h2>
-    <p>Embarquez dans nos salles de classe virtuelles pour apprendre le métier de développeur.
-    <br>  Un seul objectif : faire de vous un développeur web compétent, diplômé et recruté ! Ca vous dit ?</p>
+    <h2>Nouvelle facon d'apprendre à coder</h2>
+    <p>Jouez avec le code des instructeurs à tout moment, directement dans le lecteur.</p>
     <a href="#about" class="btn-get-started scrollto">En savoir plus</a>
   </div>
 
   <div class="product-screens">
 
-    <div class="product-screen-1 wow fadeInUp" data-wow-delay="0.4s" data-wow-duration="0.6s">
-      <img width="650" src="/avilon/img/scrimba.png" alt="">
-    </div>
-
-    <div class="product-screen-2 wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="0.6s">
-      <img width="600" src="/avilon/img/chat.png" alt="">
-    </div>
-
     <div class="product-screen-3 wow fadeInUp" data-wow-duration="0.6s">
-      <img width="300" src="/avilon/img/slider2.png" alt="">
+      <img width="600" src="/avilon/img/online1.png" alt="">
     </div>
 
   </div>
@@ -40,7 +31,7 @@
   <section id="about" class="section-bg">
     <div class="container-fluid">
       <div class="section-header">
-        <h3 class="section-title">1 étudiant. 1 formateur</h3>
+        <h3 class="section-title">Un duo gagnant: Oschool et Scrimba</h3>
         <span class="section-divider"></span>
         <p class="section-description">
           Oschool, vous permet d'apprendre le code autrement. Une première en Francophonie !
@@ -54,23 +45,6 @@
           <img src="/avilon/img/scrimba.png" alt="">
         </div>
 
-        <div class="col-lg-6 content wow fadeInRight">
-          <h2>Pourquoi ?</h2>
-          <h3>Beaucoup d'entre nous aiment le côté humain des cours en présentiel. D'autres préfèrent
-            l'économie qu'engendrent les cours en ligne. Pourquoi faire un choix si vous pouvez avoir les deux ?
-            </h3>
-          <p>
-            Avec Oschool, c'est :
-          </p>
-
-          <ul>
-            <li><i class="ion-android-checkmark-circle"></i> Un cours en ligne en téléprésentiel avec un formateur sur 4 mois</li>
-            <li><i class="ion-android-checkmark-circle"></i> Un emploi du temps léger et adapté au vôtre</li>
-            <li><i class="ion-android-checkmark-circle"></i> Un ensemble de projets réalisés et une soutenantce pour valider son parcours </li>
-          </ul>
-        </div>
-      </div>
-      <div class="row">
         <div class="col-lg-6 content wow fadeInRight">
           <h2>Nouvelle facon d'apprendre à coder</h2>
           <h3>On sait tous ce que ca fait de suivre des cours de programmation en ligne, regarder pendant des
@@ -86,15 +60,12 @@
             <li><i class="ion-android-checkmark-circle"></i> Séance de code en direct avec un formateur</li>
           </ul>
         </div>
-        <div class="col-lg-6 about-img wow fadeInLeft">
-          <img src="/avilon/img/cours.png" alt="">
-        </div>
       </div>
       <div class="row">
 
         <div class="col-lg-12">
           <div class="text-center">
-            <a href="#" class="get-started-btn text-center btn btn-primary">Demander une démo</a>
+            <a href="#" class="get-started-btn text-center btn ">Essayez gratuitement</a>
 
           </div>
         </div>
@@ -114,13 +85,13 @@
 
         <div class="col-lg-8 offset-lg-4">
           <div class="section-header wow fadeIn" data-wow-duration="1s">
-            <h3 class="section-title">La méthode</h3>
+            <h3 class="section-title">Fonctionnalités</h3>
             <span class="section-divider"></span>
           </div>
         </div>
 
         <div class="col-lg-4 col-md-5 features-img">
-          <img src="/avilon/img/about.jpg" alt="" class="wow fadeInLeft">
+          <img src="/avilon/img/image3.jpg" alt="" class="wow fadeInLeft">
         </div>
 
         <div class="col-lg-8 col-md-7 ">
@@ -129,30 +100,32 @@
 
             <div class="col-lg-6 col-md-6 box wow fadeInRight">
               <div class="icon"><i class="ion-ios-flask-outline"></i></div>
-              <h4 class="title"><a href="">1. Remplissez un formulaire d'inscription</a></h4>
-              <p class="description">Nous verrons si vous êtes éligible ou pas pour apprendre le métier de développeur web
-              dans notre école.</p>
+              <h4 class="title"><a href="">Mettre en pause et interagir avec le code</a></h4>
+              <p class="description">Oschool vous permet d'interagir avec le code à l'intérieur de la vidéo
+                quand vous le souhaitez. C’est une bouée de sauvetage lorsque vous ne comprenez pas complètement
+                le code et que vous devez vous en servir pour le comprendre. C’est également idéal lorsque vous souhaitez
+                simplement copier un morceau de code de la vidéo, pour le mettre dans votre environnement local.</p>
             </div>
             <div class="col-lg-6 col-md-6 box wow fadeInRight" data-wow-delay="0.1s">
               <div class="icon"><i class="ion-android-laptop"></i></div>
-              <h4 class="title"><a href="">Suivez le cours, depuis votre maison, avec un formateur en téléprésentiel</a></h4>
-              <p class="description">Après votre inscription, vous suivez le cours en fonction d'un emploi
-              du temps bien défini (2 heures/semaine). Ce cours est dispensé dans la classe virtuelle par
-            un formateur, qui se chargera de votre encadrement tout au long de la formation.</p>
+              <h4 class="title"><a href="">Suivez le cours, depuis n'importe quel écran</a></h4>
+              <p class="description">Nous adoptons le contenu des vidéos sur votre appareil.
+                Petit écran ? Nous allons augmenter la taille de la police. Vous préférez regarder en portrait
+                plutôt qu'en paysage ? Pas de soucis,
+                nous allons réorganiser le contenu de la page pour qu’elle soit correcte.</p>
             </div>
             <div class="col-lg-6 col-md-6 box wow fadeInRight data-wow-delay"="0.2s">
               <div class="icon"><i class=" ion-android-phone-portrait"></i></div>
-              <h4 class="title"><a href="">Faites les exercices et projets</a></h4>
-              <p class="description">Pendant les cours, vous ferez des exercices et après les cours vous travaillez sur des projets
-              avec l'aide de votre formateur. Vous avez même la possibilité d'enregistrer chaque session de cours
-            pour pouvoir regarder après. De plus, vous pouvez cloner l'espace de travail du cours pour avoir une
-          copie du code source</p>
+              <h4 class="title"><a href="">Etudiez, même avec une faible connexion internet</a></h4>
+              <p class="description">Une vidéo de 200 mégaoctets pèse 2 mégaoctets sur la plateforme partenaire Scrimba.
+                Cela signifie que vous pouvez regarder des vidéos même
+                lorsque votre connexion Internet est lente, par exemple lorsque vous vous déplacez.</p>
             </div>
             <div class="col-lg-6 col-md-6 box wow fadeInRight" data-wow-delay="0.3s">
               <div class="icon"><i class="ion-ios-analytics-outline"></i></div>
-              <h4 class="title"><a href="">Soutenez et obtenez votre certificat !</a></h4>
-              <p class="description">A la fin de la formation, vous passez une soutenance devant le jury Oschool,
-              à la fin de laquelle vous obtenez un certificat qui vous permet d'être embauché par les entreprises.</p>
+              <h4 class="title"><a href="">Jamais pixellisé</a></h4>
+              <p class="description">Les vidéos sont toujours 100% nets. La résolution est infinie,
+                ce qui signifie que vous ne verrez plus jamais un screencast de codage pixélisé.</p>
             </div>
           </div>
 
@@ -184,7 +157,7 @@
           </div>
           <div class="col-lg-12">
             <div class="text-center">
-              <a href="#" class="get-started-btn text-center btn btn-primary">Demander une démo</a>
+              <a href="#" class="get-started-btn text-center btn ">Demander une démo</a>
 
             </div>
           </div>
@@ -210,6 +183,7 @@
       </div>
     </div>
 
+<!--
     <div class="features-row section-bg">
       <div class="container">
         <div class="row">
@@ -225,7 +199,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div>  -->
   </section><!-- #advanced-features -->
 
   <!--==========================
@@ -253,7 +227,7 @@
     <div class="container">
 
       <div class="section-header">
-        <h3 class="section-title">Une formation en téléprésentiel innovante !</h3>
+        <h3 class="section-title">Un apprentissage innovant !</h3>
         <span class="section-divider"></span>
         <p class="section-description">Disponibles 24/7, pour apprendre à son rythme, et 100% en ligne.</p>
       </div>
@@ -281,7 +255,7 @@
           <div class="box wow fadeInLeft">
             <div class="icon"><i class="ion-ios-heart-outline"></i></div>
             <h4 class="title"><a href="">Un engagement maximum</a></h4>
-            <p class="description">L'expérience de l'apprentissage collaboratif, l'accompagnement des formateurs</p>
+            <p class="description">L'expérience de l'apprentissage collaboratif, l'accompagnement de la communauté</p>
           </div>
         </div>
 
@@ -312,28 +286,20 @@
             <h2>Travaillez comme</h2>
         </div>
 
-        <div class="col-md-2">
+        <div class="col-md-3">
           <img src="/avilon/img/clients/client-1.png" alt="">
         </div>
 
-        <div class="col-md-2">
+        <div class="col-md-3">
           <img src="/avilon/img/clients/client-2.png" alt="">
         </div>
 
-        <div class="col-md-2">
+        <div class="col-md-3">
           <img src="/avilon/img/clients/client-3.png" alt="">
         </div>
 
-        <div class="col-md-2">
-          <img src="/avilon/img/clients/client-4.png" alt="">
-        </div>
-
-        <div class="col-md-2">
-          <img src="/avilon/img/clients/client-5.png" alt="">
-        </div>
-
-        <div class="col-md-2">
-          <img src="/avilon/img/clients/client-6.png" alt="">
+        <div class="col-md-3">
+          <img src="/avilon/img/clients/client-8.png" alt="">
         </div>
 
       </div>
@@ -347,57 +313,30 @@
     <div class="container">
 
       <div class="section-header">
-        <h3 class="section-title">Prix</h3>
+        <h3 class="section-title">Vous êtes unique. Notre prix aussi.</h3>
         <span class="section-divider"></span>
-        <p class="section-description">Des prix pensés pour chacun de vous</p>
+        <p class="section-description">Un prix qui vous séduira certainement</p>
       </div>
 
       <div class="row">
 
-        <div class="col-lg-4 col-md-6">
-          <div class="box wow fadeInLeft">
-            <h3>Free</h3>
-            <h4><sup>$</sup>0<span> month</span></h4>
-            <ul>
-              <li><i class="ion-android-checkmark-circle"></i> Quam adipiscing vitae proin</li>
-              <li><i class="ion-android-checkmark-circle"></i> Nec feugiat nisl pretium</li>
-              <li><i class="ion-android-checkmark-circle"></i> Nulla at volutpat diam uteera</li>
-              <li><i class="ion-android-checkmark-circle"></i> Pharetra massa massa ultricies</li>
-              <li><i class="ion-android-checkmark-circle"></i> Massa ultricies mi quis hendrerit</li>
-            </ul>
-            <a href="#" class="get-started-btn">Get Started</a>
-          </div>
-        </div>
 
-        <div class="col-lg-4 col-md-6">
+        <div class="col-lg-4 col-md-6" style="width: 50%; margin: auto;">
           <div class="box featured wow fadeInUp">
-            <h3>Business</h3>
-            <h4><sup>$</sup>29<span> month</span></h4>
+            <h3>Un seul prix</h3>
+            <h4>20.000<sup>FCFA</sup><span> à vie</span></h4>
             <ul>
-              <li><i class="ion-android-checkmark-circle"></i> Quam adipiscing vitae proin</li>
-              <li><i class="ion-android-checkmark-circle"></i> Nec feugiat nisl pretium</li>
-              <li><i class="ion-android-checkmark-circle"></i> Nulla at volutpat diam uteera</li>
-              <li><i class="ion-android-checkmark-circle"></i> Pharetra massa massa ultricies</li>
-              <li><i class="ion-android-checkmark-circle"></i> Massa ultricies mi quis hendrerit</li>
+              <li><i class="ion-android-checkmark-circle"></i> Accès à la communauté Oschool</li>
+              <li><i class="ion-android-checkmark-circle"></i> Accès aux mises à jour du cours</li>
+              <li><i class="ion-android-checkmark-circle"></i> Accès aux fichiers PDF</li>
+              <li><i class="ion-android-checkmark-circle"></i> Accès à un compte Oschool</li>
+              <li><i class="ion-android-checkmark-circle"></i> Accès au cours DEVELOPPEUR WEB sur oschool.ci</li>
             </ul>
-            <a href="#" class="get-started-btn">Get Started</a>
+            <a href="#" class="get-started-btn">Je m'inscris !</a>
           </div>
         </div>
 
-        <div class="col-lg-4 col-md-6">
-          <div class="box wow fadeInRight">
-            <h3>Developer</h3>
-            <h4><sup>$</sup>49<span> month</span></h4>
-            <ul>
-              <li><i class="ion-android-checkmark-circle"></i> Quam adipiscing vitae proin</li>
-              <li><i class="ion-android-checkmark-circle"></i> Nec feugiat nisl pretium</li>
-              <li><i class="ion-android-checkmark-circle"></i> Nulla at volutpat diam uteera</li>
-              <li><i class="ion-android-checkmark-circle"></i> Pharetra massa massa ultricies</li>
-              <li><i class="ion-android-checkmark-circle"></i> Massa ultricies mi quis hendrerit</li>
-            </ul>
-            <a href="#" class="get-started-btn">Get Started</a>
-          </div>
-        </div>
+
 
       </div>
     </div>
@@ -552,7 +491,8 @@
         <div class="col-lg-4 col-md-4">
           <div class="contact-about">
             <h3>Oschool</h3>
-            <p>Cras fermentum odio eu feugiat. Justo eget magna fermentum iaculis eu non diam phasellus. Scelerisque felis imperdiet proin fermentum leo. Amet volutpat consequat mauris nunc congue.</p>
+            <p>Oschool est une plateforme de formations, sur laquelle vous pouvez suivre
+            et/ou créer des formations dans les domaines du web</p>
             <div class="social-links">
               <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
               <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
@@ -567,17 +507,17 @@
           <div class="info">
             <div>
               <i class="ion-ios-location-outline"></i>
-              <p>A108 Adam Street<br>New York, NY 535022</p>
+              <p>Abidjan<br>Côte d'Ivoire</p>
             </div>
 
             <div>
               <i class="ion-ios-email-outline"></i>
-              <p>info@example.com</p>
+              <p>info@oschool.ci</p>
             </div>
 
             <div>
               <i class="ion-ios-telephone-outline"></i>
-              <p>+1 5589 55488 55s</p>
+              <p>+225 21-37-12-77</p>
             </div>
 
           </div>
@@ -585,8 +525,10 @@
 
         <div class="col-lg-5 col-md-8">
           <div class="form">
+
             <div id="sendmessage">Your message has been sent. Thank you!</div>
             <div id="errormessage"></div>
+          <!--
             <form action="" method="post" role="form" class="contactForm">
               <div class="form-row">
                 <div class="form-group col-lg-6">
@@ -606,8 +548,9 @@
                 <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
                 <div class="validation"></div>
               </div>
-              <div class="text-center"><button type="submit" title="Send Message">Send Message</button></div>
-            </form>
+
+            </form> -->
+            <div class="text-center"><a href="/online" class="get-started-btn text-center btn ">Essayez gratuitement</a></div>
           </div>
         </div>
 

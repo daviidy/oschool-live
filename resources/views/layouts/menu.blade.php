@@ -55,8 +55,9 @@
           <li class="menu-active"><a href="/">Accueil</a></li>
           <li><a href="#features">La méthode</a></li>
           <li><a href="#programme">Le programme</a></li>
-          <li class="dropdown">
-            <a href="#">Formateurs</a>
+          <li><a href="/online">Screencasts</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Formateurs</a>
             <ul class="dropdown-menu">
               <li><a href="{{route('login')}}">Connexion</a></li>
               <li><a href="{{route('register')}}">Inscription</a></li>
