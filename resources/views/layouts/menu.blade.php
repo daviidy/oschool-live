@@ -63,7 +63,7 @@
               <li><a href="{{route('register')}}">Inscription</a></li>
             </ul>
           </li>
-          <li><a href="/online" class="get1-started-btn text-center btn btn-primary">Demander une démo</a></li>
+          <li><a href="/online" class="get1-started-btn text-center btn">Demander une démo</a></li>
         </ul>
       </nav><!-- #nav-menu-container -->
     </div>
