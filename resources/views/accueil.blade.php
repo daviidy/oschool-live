@@ -173,7 +173,7 @@
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <img width="400" class="advanced-feature-img-right wow fadeInRight" src="/avilon/img/frontend.png" alt="">
+            <img width="400" class="advanced-feature-img-right wow fadeInRight" src="/avilon/img/demo.gif" alt="">
             <div class="wow fadeInLeft">
               <h2>Plus besoin de vous déplacer pour apprendre, ou d'acheter des cours en ligne qu'il serait difficile de suivre après</h2>
               <h3>Restez chez vous à la maison, ou dans l'endroit qui vous sied le plus et suivez votre cours.</h3>
