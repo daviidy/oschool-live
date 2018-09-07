@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Avilon Bootstrap Template</title>
+  <title>Oschool Code | Pour les apprentis codeurs</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="" name="keywords">
   <meta content="" name="description">
@@ -63,7 +63,7 @@
               <li><a href="{{route('register')}}">Inscription</a></li>
             </ul>
           </li>
-          <li><a href="/online" class="get1-started-btn text-center btn">Essayez gratuitement</a></li>
+          <li><a href="#" class="get1-started-btn text-center btn">Essayez gratuitement</a></li>
         </ul>
       </nav><!-- #nav-menu-container -->
     </div>
@@ -87,7 +87,7 @@
               You can delete the links only if you purchased the pro version.
               Licensing information: https://bootstrapmade.com/license/
               Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Avilon
-            
+
             Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> -->
           </div>
         </div>

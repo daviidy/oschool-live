@@ -94,7 +94,7 @@
 
         <div class="col-lg-12">
           <div class="text-center">
-            <a target="_blank" href="https://calendly.com/adams_oschool/demo-oschool-code" class="get-started-btn text-center btn ">Demander une démo</a>
+            <a target="_blank" href="https://calendly.com/oschool_e-learning/demo-oschool-code" class="get-started-btn text-center btn ">Demander une démo</a>
 
           </div>
         </div>
@@ -184,7 +184,7 @@
           </div>
           <div class="col-lg-12">
             <div class="text-center">
-              <a target="_blank" href="https://calendly.com/adams_oschool/demo-oschool-code" class="get-started-btn text-center btn ">Demander une démo</a>
+              <a target="_blank" href="https://calendly.com/oschool_e-learning/demo-oschool-code" class="get-started-btn text-center btn ">Demander une démo</a>
 
             </div>
           </div>
@@ -393,7 +393,7 @@
           <p style="font-size: 22px;" class="cta-text"> Demandez une démo et nous vous montrerons comment ca marche gratuitement. Après vous êtes libre de prendre votre décision.</p>
         </div>
         <div class="col-lg-3 cta-btn-container text-center">
-          <a target="_blank" class="cta-btn align-middle" href="https://calendly.com/adams_oschool/demo-oschool-code">Demander une démo</a>
+          <a target="_blank" class="cta-btn align-middle" href="https://calendly.com/oschool_e-learning/demo-oschool-code">Demander une démo</a>
         </div>
       </div>
 
@@ -785,7 +785,7 @@
               </div>
 
             </form> -->
-            <div class="text-center"><a target="_blank" href="https://calendly.com/adams_oschool/demo-oschool-code" class="get-started-btn text-center btn ">Demander une démo</a></div>
+            <div class="text-center"><a target="_blank" href="https://calendly.com/oschool_e-learning/demo-oschool-code" class="get-started-btn text-center btn ">Demander une démo</a></div>
           </div>
         </div>
 

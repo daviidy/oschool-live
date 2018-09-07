@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Avilon Bootstrap Template</title>
+  <title>Oschool Code | Pour les apprentis codeurs</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="" name="keywords">
   <meta content="" name="description">
@@ -63,7 +63,7 @@
               <li><a href="{{route('register')}}">Inscription</a></li>
             </ul>
           </li>
-          <li><a href="/online" class="get1-started-btn text-center btn">Demander une démo</a></li>
+          <li><a href="https://calendly.com/oschool_e-learning/demo-oschool-code" class="get1-started-btn text-center btn">Demander une démo</a></li>
         </ul>
       </nav><!-- #nav-menu-container -->
     </div>

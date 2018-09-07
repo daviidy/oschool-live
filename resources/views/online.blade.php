@@ -168,15 +168,15 @@
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <img width="600" class="advanced-feature-img-left" src="/avilon/img/cours.png" alt="">
+            <img width="600" class="advanced-feature-img-left" src="/avilon/img/demo.gif" alt="">
             <div class="wow fadeInRight">
-              <h2>Le programme de la formation</h2>
-              <i class="ion-ios-paper-outline" class="wow fadeInRight" data-wow-duration="0.5s"></i>
-              <p class="wow fadeInRight" data-wow-duration="0.5s">Inscrivez-vous à nos différentes rentrées</p>
-              <i class="ion-ios-color-filter-outline wow fadeInRight" data-wow-delay="0.2s" data-wow-duration="0.5s"></i>
-              <p class="wow fadeInRight" data-wow-delay="0.2s" data-wow-duration="0.5s">Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
-              <i class="ion-ios-barcode-outline wow fadeInRight" data-wow-delay="0.4" data-wow-duration="0.5s"></i>
-              <p class="wow fadeInRight" data-wow-delay="0.4s" data-wow-duration="0.5s">Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
+              <h2>C'est l'école qu'il vous faut</h2>
+              <ol>
+                <li>Suivez le cours en <strong>téléprésentiel avec un formateur</strong> chaque semaine</li>
+                <li>Travaillez directement dans la <strong>classe virtuelle</strong>, sur le code du formateur, sans vous soucier d’éditeur de code ou de navigateur</li>
+                <li>Faites les <strong>exercices et challenges</strong></li>
+                <li>Réalisez des <strong>projets</strong> avec votre formateur</li>
+              </ol>
             </div>
           </div>
         </div>
