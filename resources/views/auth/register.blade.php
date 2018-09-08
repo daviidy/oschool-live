@@ -8,10 +8,10 @@
     <div class="wrap-login100 p-l-110 p-r-110 p-t-62 p-b-33">
       <form class="login100-form validate-form flex-sb flex-w" method="POST" action="{{ route('register') }}">
         <span class="login100-form-title p-b-53">
-          S'inscrire avec
+          Inscrivez-vous à l'espace Formateurs Oschool.
         </span>
 
-       
+
 
 
         <div class="p-t-31 p-b-9">

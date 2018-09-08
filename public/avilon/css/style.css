@@ -418,7 +418,7 @@ h1, h2, h3, h4, h5, h6 {
   padding-top: 18px;
   bottom: 0;
   z-index: 998;
-  background: rgba(52, 59, 64, 0.9);
+  background: #F2F2F2;
   left: -260px;
   width: 260px;
   overflow-y: auto;
@@ -436,7 +436,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #mobile-nav ul li a {
-  color: #fff;
+  color: #000;
   font-size: 16px;
   overflow: hidden;
   padding: 10px 22px 10px 15px;

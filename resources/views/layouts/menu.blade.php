@@ -56,13 +56,6 @@
           <li><a href="#features">La méthode</a></li>
           <li><a href="#programme">Le programme</a></li>
           <li><a href="/online">Screencasts</a></li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Formateurs</a>
-            <ul class="dropdown-menu">
-              <li><a href="{{route('login')}}">Connexion</a></li>
-              <li><a href="{{route('register')}}">Inscription</a></li>
-            </ul>
-          </li>
           <li><a href="https://calendly.com/oschool_e-learning/demo-oschool-code" class="get1-started-btn text-center btn">Demander une démo</a></li>
         </ul>
       </nav><!-- #nav-menu-container -->
@@ -95,6 +88,7 @@
           <nav class="footer-links text-lg-right text-center pt-2 pt-lg-0">
             <a href="#intro" class="scrollto">Accueil</a>
             <a href="#about" class="scrollto">A propos</a>
+            <a href="{{route('login')}}">Espace Formateurs</a>
           </nav>
         </div>
       </div>

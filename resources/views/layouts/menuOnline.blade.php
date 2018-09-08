@@ -56,13 +56,6 @@
           <li><a href="#features">La méthode</a></li>
           <li><a href="#programme">Le programme</a></li>
           <li><a href="/online">Screencasts</a></li>
-          <li class="dropdown">
-            <a href="#">Formateurs</a>
-            <ul class="dropdown-menu">
-              <li><a href="{{route('login')}}">Connexion</a></li>
-              <li><a href="{{route('register')}}">Inscription</a></li>
-            </ul>
-          </li>
           <li><a href="#" class="get1-started-btn text-center btn">Essayez gratuitement</a></li>
         </ul>
       </nav><!-- #nav-menu-container -->
