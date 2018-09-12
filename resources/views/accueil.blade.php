@@ -344,7 +344,7 @@
                 <div class="main-timeline8">
                     <div class="timeline">
                         <span class="timeline-icon"></span>
-                        <span class="year">1er Octobre 2018 - 4 Janvier 2018</span>
+                        <span class="year">1er Octobre 2018 - 4 Janvier 2019</span>
                         <div class="timeline-content">
                             <h3 class="title">La Genèse</h3>
                             <p class="description">
