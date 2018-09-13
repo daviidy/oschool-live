@@ -51,7 +51,7 @@
 
       <div class="row">
         <div class="col-lg-6 about-img wow fadeInLeft">
-          <img src="/avilon/img/scrimba.png" alt="">
+          <img src="/avilon/img/cours.png" alt="">
         </div>
 
         <div class="col-lg-6 content wow fadeInRight">
@@ -72,22 +72,19 @@
       </div>
       <div class="row">
         <div class="col-lg-6 content wow fadeInRight">
-          <h2>Nouvelle facon d'apprendre à coder</h2>
-          <h3>On sait tous ce que ca fait de suivre des cours de programmation en ligne, regarder pendant des
-          heures le code du professeur, et souffrir à faire la même chose sur son ordi. Oschool a repensé la facon d'apprendre
-        le code, pour les apprentis codeurs qui aiment la pratique et l'efficacité</h3>
-          <p>
-            Voilà ce que vous gagnez à apprendre le code avec Oschool et Scrimba.
-          </p>
+          <h2>Ce qu'ils en pensent</h2>
+          <h3>Cette école suscite déjà de l'engouement dans la communauté Oschool ! Rejoignez le forum pour discuter
+            avec d'autres étudiants de ce programme</h3>
+          <div style="text-align: center;margin-bottom: 2em;" class="">
 
-          <ul>
-            <li><i class="ion-android-checkmark-circle"></i> Modification du code des formateurs directement en ligne</li>
-            <li><i class="ion-android-checkmark-circle"></i> Visualisation des résultats en live</li>
-            <li><i class="ion-android-checkmark-circle"></i> Séance de code en direct avec un formateur</li>
-          </ul>
+            <a href="https://discord.gg/hhbzcHE" target="_blank">
+              Rejoindre la communauté
+            </a>
+
+          </div>
         </div>
         <div class="col-lg-6 about-img wow fadeInLeft">
-          <img src="/avilon/img/cours.png" alt="">
+          <img style="border-radius: 8px;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" src="/avilon/img/forum.png" alt="">
         </div>
       </div>
       <div class="row">
