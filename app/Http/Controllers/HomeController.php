@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Auth;
+use App\User;
 
 class HomeController extends Controller
 {
@@ -22,7 +24,29 @@ class HomeController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index()
+
     {
-        return view('home');
+      if (Auth::check()) {
+
+        $teachers = User::orderby ('id','asc')->where('type', 'teacher')->paginate(30);
+        return view('users.dashboard', ['teacher' => $teachers]);
+      }
+      else {
+        return redirect('/');
+      }
+
+    }
+
+
+    public function classrooms()
+
+    {
+      if (Auth::check()) {
+        return view('classrooms.index');
+      }
+      else {
+        return redirect('/');
+      }
+
     }
 }

@@ -21,3 +21,30 @@ Route::get('/online', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+/*
+Route::get('register', function () {
+    return view('accueil');
+});  */
+
+
+Route::get('/classrooms', 'HomeController@classrooms');
+
+Route::get('/admin', 'AdminController@admin')
+    ->middleware('is_admin')
+    ->name('admin');
+
+Route::get('/teacher', 'TeacherController@teacher')
+    ->middleware('is_teacher')
+    ->name('teacher');
+
+
+Route::resource('users','UserController');
+
+Route::resource('classrooms','ClassroomController');
+
+Route::resource('progressions','ProgressionController');
+
+Route::resource('achats','AchatController');
+
+Route::post('/envoi', 'AchatController@envoi')->name('envoi');

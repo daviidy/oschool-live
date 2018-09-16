@@ -44,6 +44,12 @@
   <header id="header">
     <div class="container">
 
+      @if (session('status'))
+          <div class="alert alert-success">
+              {{ session('status') }}
+          </div>
+      @endif
+
       <div id="logo" class="pull-left">
         <h1><a href="#intro" class="scrollto"> <img width="100" src="/avilon/img/logo-oschool.png" alt=""> </a></h1>
         <!-- Uncomment below if you prefer to use an image logo -->
@@ -88,7 +94,7 @@
           <nav class="footer-links text-lg-right text-center pt-2 pt-lg-0">
             <a href="#intro" class="scrollto">Accueil</a>
             <a href="#about" class="scrollto">A propos</a>
-            <a href="{{route('login')}}">Espace Formateurs</a>
+            <a href="{{route('login')}}">Espace Membres</a>
           </nav>
         </div>
       </div>

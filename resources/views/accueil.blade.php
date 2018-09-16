@@ -450,127 +450,91 @@
   </section><!-- #more-features -->
 
 
-
-
-  <!--==========================
-    Clients
-  ============================-->
-  <section id="clients">
-    <div class="container">
-
-      <div class="row wow fadeInUp">
-        <div class="col-md-12" style="text-align: center;">
-            <h2>Travaillez comme</h2>
-        </div>
-
-        <div class="col-md-3">
-          <img src="/avilon/img/clients/client-1.png" alt="">
-        </div>
-
-        <div class="col-md-3">
-          <img src="/avilon/img/clients/client-2.png" alt="">
-        </div>
-
-        <div class="col-md-3">
-          <img src="/avilon/img/clients/client-3.png" alt="">
-        </div>
-
-        <div class="col-md-3">
-          <img src="/avilon/img/clients/client-8.png" alt="">
-        </div>
-
-      </div>
-
-    </div>
-  </section><!-- #more-features -->
-
-  <section id="clients">
-    <div class="container">
-
-      <div class="row wow fadeInUp">
-        <div class="col-md-12" style="text-align: center;">
-            <h2>Nos partenaires</h2>
-        </div>
-
-        <div class="col-md-4">
-          <img src="/avilon/img/clients/client-4.png" alt="">
-        </div>
-
-        <div class="col-md-4">
-          <img src="/avilon/img/clients/client-5.png" alt="">
-        </div>
-
-        <div class="col-md-4">
-          <img src="/avilon/img/clients/client-6.png" alt="">
-        </div>
-
-      </div>
-    </div>
-  </section><!-- #more-features -->
-
   <!--==========================
     Pricing Section
   ============================-->
-  <!--
-  <section id="pricing" class="section-bg">
+  <section style="background-color: #fff;" id="pricing" class="section-bg">
     <div class="container">
 
       <div class="section-header">
-        <h3 class="section-title">Prix</h3>
+        <h3 class="section-title">Vous êtes unique. Notre prix aussi.</h3>
         <span class="section-divider"></span>
-        <p class="section-description">Des prix pensés pour chacun de vous</p>
+        <p class="section-description">Un prix qui vous séduira certainement</p>
       </div>
 
       <div class="row">
 
-        <div class="col-lg-4 col-md-6">
-          <div class="box wow fadeInLeft">
-            <h3>Free</h3>
-            <h4><sup>$</sup>0<span> month</span></h4>
-            <ul>
-              <li><i class="ion-android-checkmark-circle"></i> Quam adipiscing vitae proin</li>
-              <li><i class="ion-android-checkmark-circle"></i> Nec feugiat nisl pretium</li>
-              <li><i class="ion-android-checkmark-circle"></i> Nulla at volutpat diam uteera</li>
-              <li><i class="ion-android-checkmark-circle"></i> Pharetra massa massa ultricies</li>
-              <li><i class="ion-android-checkmark-circle"></i> Massa ultricies mi quis hendrerit</li>
-            </ul>
-            <a href="#" class="get-started-btn">Get Started</a>
-          </div>
-        </div>
 
-        <div class="col-lg-4 col-md-6">
+        <div class="col-lg-4 col-md-6" style="width: 50%; margin: auto;">
           <div class="box featured wow fadeInUp">
-            <h3>Business</h3>
-            <h4><sup>$</sup>29<span> month</span></h4>
+            <h3>Un seul prix</h3>
+            <h4>30.000<sup>FCFA</sup><span> /mois</span></h4>
             <ul>
-              <li><i class="ion-android-checkmark-circle"></i> Quam adipiscing vitae proin</li>
-              <li><i class="ion-android-checkmark-circle"></i> Nec feugiat nisl pretium</li>
-              <li><i class="ion-android-checkmark-circle"></i> Nulla at volutpat diam uteera</li>
-              <li><i class="ion-android-checkmark-circle"></i> Pharetra massa massa ultricies</li>
-              <li><i class="ion-android-checkmark-circle"></i> Massa ultricies mi quis hendrerit</li>
+              <li><i class="ion-android-checkmark-circle"></i> Un formateur dédié en télé présentiel chaque semaine</li>
+              <li><i class="ion-android-checkmark-circle"></i> Accès à tableau de bord spécial</li>
+              <li><i class="ion-android-checkmark-circle"></i> Accès à la communauté Oschool</li>
+              <li><i class="ion-android-checkmark-circle"></i> Accès aux mises à jour du cours</li>
+              <li><i class="ion-android-checkmark-circle"></i> Accès aux fichiers PDF</li>
+              <li><i class="ion-android-checkmark-circle"></i> Accès à un compte Oschool normal</li>
+              <li><i class="ion-android-checkmark-circle"></i> Accès au cours DEVELOPPEUR WEB sur oschool.ci</li>
             </ul>
-            <a href="#" class="get-started-btn">Get Started</a>
+            <a data-toggle="modal" data-target="#myModal" href="#" style="width: 173px; height: 35px; background: #FFB400;" class="get-started-btn">Je m'inscris !</a>
           </div>
         </div>
 
-        <div class="col-lg-4 col-md-6">
-          <div class="box wow fadeInRight">
-            <h3>Developer</h3>
-            <h4><sup>$</sup>49<span> month</span></h4>
-            <ul>
-              <li><i class="ion-android-checkmark-circle"></i> Quam adipiscing vitae proin</li>
-              <li><i class="ion-android-checkmark-circle"></i> Nec feugiat nisl pretium</li>
-              <li><i class="ion-android-checkmark-circle"></i> Nulla at volutpat diam uteera</li>
-              <li><i class="ion-android-checkmark-circle"></i> Pharetra massa massa ultricies</li>
-              <li><i class="ion-android-checkmark-circle"></i> Massa ultricies mi quis hendrerit</li>
-            </ul>
-            <a href="#" class="get-started-btn">Get Started</a>
-          </div>
+        <!-- The Modal -->
+<div class="modal fade" id="myModal">
+<div class="modal-dialog">
+  <div class="modal-content">
+
+    <!-- Modal Header -->
+    <div class="modal-header">
+      <h4 style="font-size: 24px;" class="modal-title">Remplissez ce formulaire pour vous inscrire à la formation</h4>
+      <button type="button" class="close" data-dismiss="modal">&times;</button>
+    </div>
+
+    <!-- Modal body -->
+    <div class="modal-body">
+      <form method="post" action="{{url('envoi')}}">
+        {{ csrf_field() }}
+
+        <div class="form-group">
+          <label for="">Email:</label>
+          <input type="email" class="form-control" id="" placeholder="Email" name="email" required>
         </div>
+        <div class="form-group">
+          <label for="">Nom</label>
+          <input type="text" class="form-control" id="" placeholder="Nom" name="nom" required>
+        </div>
+        <div class="form-group">
+          <label for="">Prénoms</label>
+          <input type="text" class="form-control" id="" placeholder="Prénoms" name="prenoms" required>
+        </div>
+        <div class="form-group">
+          <label for="">Numéro de téléphone</label>
+          <input type="text" class="form-control" id="" placeholder="Téléphone" name="tel" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Envoyer</button>
+      </form>
+    </div>
+
+    <!-- Modal footer -->
+    <div class="modal-footer">
+      <button type="button" class="btn btn-danger" data-dismiss="modal">Annuler</button>
+    </div>
+
+  </div>
+</div>
+</div>
+
+<!--end modal-->
+
+
 
       </div>
     </div>
   </section><!-- #pricing -->
+
 
 
 
@@ -648,8 +612,66 @@
   </section><!-- #team -->
 
   <!--==========================
+    Clients
+  ============================-->
+  <section id="clients">
+    <div class="container">
+
+      <div class="row wow fadeInUp">
+        <div class="col-md-12" style="text-align: center;">
+            <h2>Travaillez comme</h2>
+        </div>
+
+        <div class="col-md-3">
+          <img src="/avilon/img/clients/client-1.png" alt="">
+        </div>
+
+        <div class="col-md-3">
+          <img src="/avilon/img/clients/client-2.png" alt="">
+        </div>
+
+        <div class="col-md-3">
+          <img src="/avilon/img/clients/client-3.png" alt="">
+        </div>
+
+        <div class="col-md-3">
+          <img src="/avilon/img/clients/client-8.png" alt="">
+        </div>
+
+      </div>
+
+    </div>
+  </section><!-- #more-features -->
+
+  <section id="clients">
+    <div class="container">
+
+      <div class="row wow fadeInUp">
+        <div class="col-md-12" style="text-align: center;">
+            <h2>Nos partenaires</h2>
+        </div>
+
+        <div class="col-md-4">
+          <img src="/avilon/img/clients/client-4.png" alt="">
+        </div>
+
+        <div class="col-md-4">
+          <img src="/avilon/img/clients/client-5.png" alt="">
+        </div>
+
+        <div class="col-md-4">
+          <img src="/avilon/img/clients/client-6.png" alt="">
+        </div>
+
+      </div>
+    </div>
+  </section><!-- #more-features -->
+
+
+  <!--==========================
     Gallery Section
   ============================-->
+  <!--
   <section id="gallery">
     <div class="container-fluid">
       <div class="section-header">
@@ -711,7 +733,8 @@
       </div>
 
     </div>
-  </section><!-- #gallery -->
+  </section> -->
+  <!-- #gallery -->
 
   <!--==========================
     Contact Section

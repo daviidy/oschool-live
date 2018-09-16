@@ -7,7 +7,7 @@
   <div class="container-login100" style="background-image: url('/registration/images/bg-01.jpg');">
     <div class="wrap-login100 p-l-110 p-r-110 p-t-62 p-b-33">
       <form class="login100-form validate-form flex-sb flex-w" method="POST" action="{{ route('register') }}">
-        <span class="login100-form-title p-b-53">
+        <span style="padding-bottom: 0px;" class="login100-form-title p-b-53">
           Inscrivez-vous à l'espace Formateurs Oschool.
         </span>
 
@@ -46,6 +46,7 @@
               </span>
           @endif
         </div>
+
         <!--password-->
         <div class="p-t-13 p-b-9">
           <span class="txt1">

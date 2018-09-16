@@ -7,8 +7,8 @@
   <div class="container-login100" style="background-image: url('/registration/images/bg-01.jpg');">
     <div class="wrap-login100 p-l-110 p-r-110 p-t-62 p-b-33">
       <form class="login100-form validate-form flex-sb flex-w" method="POST" action="{{ route('login') }}">
-        <span class="login100-form-title p-b-53">
-          Connectez-vous à votre espace Formateurs Oschool.
+        <span style="padding-bottom: 0px;" class="login100-form-title p-b-53">
+          Connectez-vous à votre espace membre Oschool.
         </span>
 
 
@@ -66,12 +66,8 @@
         </div>
 
         <div class="w-full text-center p-t-55">
-          <span class="txt2">
-            Vous êtes un de nos formateurs mais vous n'êtes pas encore inscrit ?
-          </span>
-
-          <a href="{{ route('register') }}" class="txt2 bo1">
-            Inscrivez-vous maintenant
+          <a href="/" class="txt2 bo1">
+            Retour à la page d'accueil
           </a>
         </div>
       </form>
