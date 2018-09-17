@@ -115,7 +115,7 @@ class AchatController extends Controller
     {
       $achat=Achat::create([
                         'email' => Session::get('email'),
-                        'nom' => Session::get('nom'),
+                        'nom' => Session::get('name'),
                         'prenoms' => Session::get('prenoms'),
                         'tel' => Session::get('tel')
                       ]);
