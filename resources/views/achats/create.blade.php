@@ -31,7 +31,7 @@
         </div>
         <div style="display: none;" class="form-group">
           <select class="" name="cpm_amount">
-            <option value="100">montant</option>
+            <option value="30000">montant</option>
           </select>
         </div>
         <div style="display: none;" class="form-group">
