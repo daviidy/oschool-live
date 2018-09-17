@@ -81,7 +81,7 @@
         </div>
         <div style="display: none;" class="form-group">
           <select class="" name="cpm_designation">
-            <option value="Support Online">Désignation</option>
+            <option value="Achat Oschool Live">Désignation</option>
           </select>
         </div>
         <div style="display: none;" class="form-group">
