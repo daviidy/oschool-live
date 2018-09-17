@@ -128,7 +128,7 @@ class AchatController extends Controller
 
       //envoi mail admin
       Mail::send('mailsAchat.mail-admin', ['achat' => $achat], function($message) use ($achat){
-        $message->to('david@oschool.ci', 'A David')->subject('Notification pour nouvelle inscription à Oschool Code');
+        $message->to('yaodavidarmel@gmail.com', 'A David')->subject('Notification pour nouvelle inscription à Oschool Code');
         $message->from('eventsoschool@gmail.com', 'Oschool');
       });
       return redirect('/')->with('status', 'Achat validé ! Suivez immédiatement les instructions que nous vous avons laissées dans votre boîte de réception.');
