@@ -60,7 +60,7 @@
         <ul class="nav-menu">
           <li class="menu-active"><a href="/">Accueil</a></li>
           <li><a href="#pricing">S'inscrire</a></li>
-          <li><a href="#features">La méthode</a></li>
+          <li><a href="#features">Démonstration</a></li>
           <li><a href="#programme">Le programme</a></li>
           <!--<li><a href="/online">Screencasts</a></li>-->
           <li><a href="https://calendly.com/oschool_e-learning/demo-oschool-code" class="get1-started-btn text-center btn">Demander une démo</a></li>

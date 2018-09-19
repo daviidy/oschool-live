@@ -109,48 +109,23 @@
 
       <div class="row">
 
-        <div class="col-lg-8 offset-lg-4">
+        <div class="col-lg-12">
           <div class="section-header wow fadeIn" data-wow-duration="1s">
-            <h3 class="section-title">La méthode</h3>
+            <h3 class="section-title">Comment ca marche concrètement ?</h3>
             <span class="section-divider"></span>
           </div>
         </div>
 
-        <div class="col-lg-4 col-md-5 features-img">
-          <img src="/avilon/img/about.jpg" alt="" class="wow fadeInLeft">
-        </div>
-
-        <div class="col-lg-8 col-md-7 ">
+        <div class="col-lg-12 col-md-12 ">
 
           <div class="row">
 
-            <div class="col-lg-6 col-md-6 box wow fadeInRight">
-              <div class="icon"><i class="ion-ios-paper-outline"></i></div>
-              <h4 class="title"><a href="">1. Remplissez un formulaire d'inscription</a></h4>
-              <p class="description">Nous verrons si vous êtes éligible ou pas pour apprendre le métier de développeur web
-              dans notre école.</p>
+            <div class="col-lg-12 col-md-12 box wow fadeInRight">
+              <iframe src="https://player.vimeo.com/video/290234963?title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
+              </iframe>
             </div>
-            <div class="col-lg-6 col-md-6 box wow fadeInRight" data-wow-delay="0.1s">
-              <div class="icon"><i class="ion-android-laptop"></i></div>
-              <h4 class="title"><a href="">Suivez le cours, depuis votre maison, avec un formateur en téléprésentiel</a></h4>
-              <p class="description">Après votre inscription, vous suivez le cours en fonction d'un emploi
-              du temps bien défini (2 heures/semaine). Ce cours est dispensé dans la classe virtuelle par
-            un formateur, qui se chargera de votre encadrement tout au long de la formation.</p>
-            </div>
-            <div class="col-lg-6 col-md-6 box wow fadeInRight data-wow-delay"="0.2s">
-              <div class="icon"><i class=" fa fa-code "></i></div>
-              <h4 class="title"><a href="">Faites les exercices et projets</a></h4>
-              <p class="description">Pendant les cours, vous ferez des exercices et après les cours vous travaillez sur des projets
-              avec l'aide de votre formateur. Vous avez même la possibilité d'enregistrer chaque session de cours
-            pour pouvoir regarder après. De plus, vous pouvez cloner l'espace de travail du cours pour avoir une
-          copie du code source</p>
-            </div>
-            <div class="col-lg-6 col-md-6 box wow fadeInRight" data-wow-delay="0.3s">
-              <div class="icon"><i class="fa fa-check-square-o"></i></div>
-              <h4 class="title"><a href="">Soutenez et obtenez votre certificat !</a></h4>
-              <p class="description">A la fin de la formation, vous passez une soutenance devant le jury Oschool,
-              à la fin de laquelle vous obtenez un certificat qui vous permet d'être embauché par les entreprises.</p>
-            </div>
+
+
           </div>
 
         </div>
