@@ -46,7 +46,7 @@ class User extends Authenticatable
 
     public function teacher()
     {
-        return $this->belongsTo('App\User');
+        return $this->belongsTo('App\User', 'user_id');
     }
 
     public function sessions()

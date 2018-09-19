@@ -99,7 +99,11 @@
                           <div class="col-sm-4">
                             <h1><i class="fa fa-user"></i></h1>
                             <h3>Formateur</h3>
-                            <h6>Nombre d'étudiants actuels</h6>
+                            <h6>
+                              <a href="{{url('users', Auth::user()->teacher)}}">
+                                {{Auth::user()->teacher->name}}
+                              </a>
+                            </h6>
                           </div>
                           <div class="col-sm-4">
                             <h1><i class="fa fa-laptop"></i></h1>
@@ -168,7 +172,7 @@
                   </div>
                   <!-- /tab-pane -->
                   @auth
-                  @if (Auth::user()->isTeacher() || Auth::user()->isAdmin())
+                  @if (Auth::user()->isTeacher())
                   <!-- LISTE DES ETUDIANTS -->
                   <div id="edit" class="tab-pane">
                      <div class="container">
@@ -185,7 +189,7 @@
                           <tbody>
                             @foreach(Auth::user()->students as $student)
                             <tr>
-                              <td><a href="#">{{$student->name}}</a></td>
+                              <td><a href="{{url('users', $student)}}">{{$student->name}}</a></td>
                               <td>{{$student->prenoms}}</td>
                               <td>{{$student->email}}</td>
                             </tr>

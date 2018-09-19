@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Progression;
 use Illuminate\Http\Request;
 use Auth;
+use App\User;
 
 class ProgressionController extends Controller
 {
@@ -29,7 +30,7 @@ class ProgressionController extends Controller
         return view('progressions.create');
       }
       else {
-        return redirect('home');
+        return redirect('home')->with('status', 'La progression a bien été enregistrée');
       }
     }
 
@@ -54,6 +55,27 @@ class ProgressionController extends Controller
     public function show(Progression $progression)
     {
         //
+    }
+
+
+    public function valider(Progression $progression)
+    {
+      $progression->update([
+        'statut' => 'Validé'
+      ]);
+      return back()->with('status', 'Le statut de la progression a bien été mis à jour' );
+    }
+
+
+    public function programme()
+    {
+      return view('users.programme');
+    }
+
+
+    public function voir(User $user)
+    {
+      return view('progressions.show', ['user' => $user]);
     }
 
     /**

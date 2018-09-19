@@ -1,5 +1,5 @@
 @extends('layouts.registration')
-@section('title', 'Connexion Formateur')
+@section('title', 'Connexion')
 
 @section('content')
 

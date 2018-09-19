@@ -27,6 +27,15 @@
         </div>
 
         <div class="wrap-input100 validate-input" data-validate = "Etudiant">
+          <label for="">Etudiant</label>
+          <select name="user_id" class="form-control" style="">
+            @foreach(Auth::user()->students as $student)
+            <option value="{{ $student->id }}">{{ $student->name }}</option>
+            @endforeach
+          </select>
+        </div>
+
+        <div class="wrap-input100 validate-input" data-validate = "Etudiant">
           <label for="">Section</label>
           <input class="input100" type="text" name="section" placeholder="Comme indiqué dans le programme">
           <span class="focus-input100"></span>
@@ -45,19 +54,10 @@
           </span>
         </div>
 
-        <div style="display: none;" class="wrap-input100 validate-input">
-          <input class="input100" value="{{Auth::user()->id}}" type="text" name="user_id" placeholder="">
-          <span class="focus-input100"></span>
-          <span class="symbol-input100">
-            <i class="fa fa-user" aria-hidden="true"></i>
-          </span>
-        </div>
-
         <div class="wrap-input100 validate-input" data-validate = "Etudiant">
           <label for="">Statut</label>
-          <select name="etudiant" class="form-control" style="">
+          <select name="statut" class="form-control" style="">
             <option value="A revoir">A revoir</option>
-            <option value="Validé">Validé</option>
           </select>
         </div>
 

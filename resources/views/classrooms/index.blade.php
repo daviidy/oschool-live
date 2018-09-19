@@ -9,18 +9,19 @@
 <!--main content start-->
 <section id="main-content">
   <section class="wrapper">
-    <h3><i class="fa fa-angle-right"></i> Liste de vos séances de cours</h3>
+    <h3><i class="fa fa-angle-right"></i> Liste des progressions de {{$user->name}}</h3>
     <div class="row mt">
       <div class="col-lg-12">
         <div class="content-panel">
-          <h4><i class="fa fa-angle-right"></i> Sessions</h4>
+          <h4><i class="fa fa-angle-right"></i> Progressions</h4>
           <section id="unseen">
             <table class="table table-bordered table-striped table-condensed">
               <thead>
                 <tr>
-                  <th>Date</th>
-                  <th>Etudiant</th>
-                  <th class="numeric">Formateur</th>
+                  <th>Section</th>
+                  <th>Chapitre</th>
+                  <th class="numeric">Statut</th>
+                  <th class="numeric">Action</th>
                 </tr>
               </thead>
               <tbody>

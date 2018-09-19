@@ -43,6 +43,16 @@
                     <a data-toggle="tab" href="#edit">Attribuer un formateur</a>
                   </li>
                   @endif
+                  @if (Auth::user()->isAdmin() && $user->type == 'teacher')
+                  <li>
+                    <a data-toggle="tab" href="#students">Etudiants de {{$user->name}}</a>
+                  </li>
+                  @endif
+                  @if (Auth::user()->isAdmin() || Auth::user()->isTeacher() && $user->type == 'default')
+                  <li>
+                    <a data-toggle="tab" href="#progressions">Les progressions de {{$user->name}}</a>
+                  </li>
+                  @endif
                   @endauth
                 </ul>
               </div>
@@ -104,6 +114,76 @@
                       <!-- /col-lg-8 -->
                     </div>
                     <!-- /row -->
+                  </div>
+                  <!-- /tab-pane -->
+
+                  <div id="students" class="tab-pane">
+                    <div class="container">
+                       <h2>LISTE DES ETUDIANTS </h2>
+                       <p>Ciquez sur le nom d'un étudiant pour voir sa progression.</p>
+                       <table class="table">
+                         <thead>
+                           <tr>
+                             <th>Nom</th>
+                             <th>Prenoms</th>
+                             <th>Email</th>
+                           </tr>
+                         </thead>
+                         <tbody>
+                           @foreach($user->students as $student)
+                           <tr>
+                             <td><a href="#">{{$student->name}}</a></td>
+                             <td>{{$student->prenoms}}</td>
+                             <td>{{$student->email}}</td>
+                           </tr>
+                           @endforeach
+                         </tbody>
+                       </table>
+                     </div>
+                  </div>
+                  <!-- /tab-pane -->
+
+                  <div id="progressions" class="tab-pane">
+                    <div class="container">
+                       <h2>Progressions de {{$user->name}}</h2>
+                       <p>Formation : Développeur web</p>
+                       <table class="table">
+                         <thead>
+                           <tr>
+                             <th>Section</th>
+                             <th>Chapitre</th>
+                             <th>Statut</th>
+                           </tr>
+                         </thead>
+                         <tbody>
+                           @foreach($user->progressions as $progression)
+                           <tr>
+                             <td>{{$progression->section}}</td>
+                             <td>{{$progression->session}}</td>
+                             <td style="display: flex; flex-wrap: wrap;">
+
+                               @if($progression->statut == "A revoir")
+                               <p style="color: orange;">{{ $progression->statut }}</p>
+                               @else
+                               <p style="color: green;">{{ $progression->statut }}</p>
+                               @endif
+                               @if($progression->statut == "A revoir")
+                               <div style="margin-left: 15px;" class="dropdown">
+                                 <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                                   Action
+                                 </button>
+                                 <div class="dropdown-menu">
+                                   <a class="dropdown-item" href="{{url('valider', $progression)}}">Valider</a>
+                                 </div>
+                               </div>
+                               @endif
+
+                             </td>
+                           </tr>
+                           @endforeach
+                         </tbody>
+                       </table>
+                     </div>
                   </div>
                   <!-- /tab-pane -->
 

@@ -50,3 +50,9 @@ Route::resource('achats','AchatController');
 Route::post('/envoi', 'AchatController@envoi')->name('envoi');
 
 Route::post('/notify', 'AchatController@notify')->name('notify');
+
+Route::get('/valider/{progression}', 'ProgressionController@valider')->name('valider');
+
+Route::get('/programme', 'ProgressionController@programme')->name('programme');
+
+Route::get('/progression/{user}', 'ProgressionController@voir')->name('progression');

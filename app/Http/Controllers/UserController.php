@@ -57,10 +57,8 @@ class UserController extends Controller
      */
     public function show(User $user)
     {
-      if (Auth::user()->isAdmin()) {
         $teachers = User::orderby ('id','asc')->where('type', 'teacher')->paginate(30);
         return view('users.show', ['user' => $user, 'teachers' => $teachers]);
-      }
     }
 
     /**

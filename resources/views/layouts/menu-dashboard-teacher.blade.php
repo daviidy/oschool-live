@@ -7,7 +7,7 @@
   <meta name="description" content="">
   <meta name="author" content="Rikudo Technologies">
   <meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
-  <title>Tableau de bord Formateur | Oschool code</title>
+  <title>Tableau de bord Utilisateur | Oschool code</title>
 
   <!-- Favicons -->
   <link href="/dashboard/img/image-profil.png" rel="icon">
@@ -105,7 +105,7 @@
           @if(!Auth::user()->isAdmin() && !Auth::user()->isTeacher())
 
           <li class="mt">
-            <a href="#">
+            <a href="{{ url('progression', Auth::user()) }}">
               <i class="fa fa-dashboard"></i>
               <span>Ma progression</span>
               </a>
@@ -141,6 +141,12 @@
           </li>
           @endif
           @endauth
+          <li class="mt">
+            <a href="/programme">
+              <i class="fa fa-calendar"></i>
+              <span>Programme de la formation</span>
+              </a>
+          </li>
           <!--li>
             <a href="inbox.html">
               <i class="fa fa-envelope"></i>

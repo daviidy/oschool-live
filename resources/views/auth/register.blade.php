@@ -1,5 +1,5 @@
 @extends('layouts.registration')
-@section('title', 'Inscription Formateur')
+@section('title', 'Inscription')
 
 @section('content')
 

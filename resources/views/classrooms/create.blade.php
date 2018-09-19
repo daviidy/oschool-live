@@ -57,7 +57,7 @@
 
         <div class="container-login100-form-btn">
           <button class="login100-form-btn">
-            Créer le classroom
+            Ajouter la séance
           </button>
         </div>
 
