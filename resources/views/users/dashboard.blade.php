@@ -99,11 +99,13 @@
                           <div class="col-sm-4">
                             <h1><i class="fa fa-user"></i></h1>
                             <h3>Formateur</h3>
+                            @if(Auth::user()->user_id)
                             <h6>
                               <a href="{{url('users', Auth::user()->teacher)}}">
                                 {{Auth::user()->teacher->name}}
                               </a>
                             </h6>
+                            @endif
                           </div>
                           <div class="col-sm-4">
                             <h1><i class="fa fa-laptop"></i></h1>
