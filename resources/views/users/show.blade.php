@@ -48,7 +48,7 @@
                     <a data-toggle="tab" href="#students">Etudiants de {{$user->name}}</a>
                   </li>
                   @endif
-                  @if (Auth::user()->isAdmin() || Auth::user()->isTeacher() && $user->type == 'default')
+                  @if ($user->type == 'default' && Auth::user()->isAdmin() || Auth::user()->isTeacher())
                   <li>
                     <a data-toggle="tab" href="#progressions">Les progressions de {{$user->name}}</a>
                   </li>
