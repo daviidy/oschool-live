@@ -17,7 +17,7 @@
           Vous paierez 30.000 FCFA.<br><br>
           Important: cliquer sur "Retourner sur Oschool pour valider l'inscription" !
         </span>
-        <p style="color: red;">Rappel: il ne reste que {{20 - $achats->count()}} places !</p><br>
+        <p style="color: red;">Rappel: il ne reste que {{5 - $achats->count()}} places !</p><br>
         <ul>
           <li>Nom: <strong>{{session('name')}}</strong> </li>
           <li>Prénoms: <strong>{{session('prenoms')}}</strong> </li>
