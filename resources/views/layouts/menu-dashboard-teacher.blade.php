@@ -100,9 +100,7 @@
 
           </li>
           @endif
-          @endauth
 
-          @auth
           @if(!Auth::user()->isAdmin() && !Auth::user()->isTeacher())
 
           <li class="mt">
@@ -113,16 +111,16 @@
           </li>
 
           @endif
-          @endauth
 
 
+          @if(!Auth::user()->isAdmin())
           <li class="mt">
             <a href="{{route('classrooms.index')}}">
               <i class="fa fa-dashboard"></i>
               <span>Mes sessions</span>
               </a>
           </li>
-          @auth
+          @endif
           @if(Auth::user()->isTeacher())
           <li class="mt">
             <a href="profile.html">
@@ -131,9 +129,7 @@
               </a>
           </li>
           @endif
-          @endauth
 
-          @auth
           @if(Auth::user()->isAdmin())
           <li class="mt">
             <a href="{{route('users.index')}}">

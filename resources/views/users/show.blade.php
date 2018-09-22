@@ -53,6 +53,11 @@
                     <a data-toggle="tab" href="#progressions">Les progressions de {{$user->name}}</a>
                   </li>
                   @endif
+                  @if (Auth::user()->isAdmin())
+                  <li>
+                    <a data-toggle="tab" href="#classrooms">Les sessions de {{$user->name}}</a>
+                  </li>
+                  @endif
                   @endauth
                 </ul>
               </div>
@@ -186,6 +191,49 @@
                            </tr>
                            @endforeach
                          </tbody>
+                       </table>
+                     </div>
+                  </div>
+                  <!-- /tab-pane -->
+
+                  <div id="classrooms" class="tab-pane">
+                    <div class="container">
+                       <h2>Les sessions de {{$user->name}}</h2>
+                       <p>Formation : Développeur web</p>
+                       <table class="table">
+                         @auth
+                         @if($user->type == 'default')
+                         <thead>
+                           <tr>
+                             <th>Formateur</th>
+                             <th>Date</th>
+                           </tr>
+                         </thead>
+                         <tbody>
+                           @foreach($classroomsstudents as $classroom)
+                           <tr>
+                             <td><a href="{{url('users', $classroom->user_id)}}">{{$classroom->formateur}}</a></td>
+                             <td>{{ Carbon\Carbon::parse($classroom->date)->format('d-m-Y') }}</td>
+                           </tr>
+                           @endforeach
+                         </tbody>
+                         @elseif($user->type == 'teacher')
+                         <thead>
+                           <tr>
+                             <th>Etudiant</th>
+                             <th>Date</th>
+                           </tr>
+                         </thead>
+                         <tbody>
+                           @foreach($user->sessions as $classroom)
+                           <tr>
+                             <td><a href="{{url('users', $classroom->idEtudiant)}}">{{$classroom->etudiant}}</a></td>
+                             <td>{{ Carbon\Carbon::parse($classroom->date)->format('d-m-Y') }}</td>
+                           </tr>
+                           @endforeach
+                         </tbody>
+                         @endif
+                         @endauth
                        </table>
                      </div>
                   </div>

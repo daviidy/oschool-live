@@ -57,6 +57,11 @@ class UserController extends Controller
      */
     public function show(User $user)
     {
+        if ($user->type == 'default') {
+          $classroomsstudents = Classroom::where('etudiant', $user->name)->get();
+          $teachers = User::orderby ('id','asc')->where('type', 'teacher')->paginate(30);
+          return view('users.show', ['user' => $user, 'teachers' => $teachers, 'classroomsstudents' => $classroomsstudents]);
+        }
         $teachers = User::orderby ('id','asc')->where('type', 'teacher')->paginate(30);
         return view('users.show', ['user' => $user, 'teachers' => $teachers]);
     }
