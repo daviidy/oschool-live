@@ -9,27 +9,24 @@
 <!--main content start-->
 <section id="main-content">
   <section class="wrapper">
-    <h3><i class="fa fa-angle-right"></i> Liste des progressions de {{$user->name}}</h3>
+    <h3><i class="fa fa-angle-right"></i> Liste de vos sessions</h3>
     <div class="row mt">
       <div class="col-lg-12">
         <div class="content-panel">
-          <h4><i class="fa fa-angle-right"></i> Progressions</h4>
+          <h4><i class="fa fa-angle-right"></i> Historique</h4>
           <section id="unseen">
             <table class="table table-bordered table-striped table-condensed">
               <thead>
                 <tr>
-                  <th>Section</th>
-                  <th>Chapitre</th>
-                  <th class="numeric">Statut</th>
-                  <th class="numeric">Action</th>
+                  <th>Etudiant</th>
+                  <th>Date</th>
                 </tr>
               </thead>
               <tbody>
-                @foreach($classrooms as $classroom)
+                @foreach(Auth::user()->sessions as $classroom)
                 <tr>
-                  <td>{{$classroom->date}}</td>
                   <td><a href="#">{{$classroom->etudiant}}</a></td>
-                  <td class="numeric">{{$classroom->formateur}}</td>
+                  <td>{{ Carbon\Carbon::parse($classroom->date)->format('d-m-Y') }}</td>
                 </tr>
                 @endforeach
               </tbody>

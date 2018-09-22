@@ -117,7 +117,7 @@
           @auth
           @if(Auth::user()->isTeacher())
           <li class="mt">
-            <a href="/classrooms">
+            <a href="{{route('classrooms.index')}}">
               <i class="fa fa-dashboard"></i>
               <span>Mes sessions</span>
               </a>

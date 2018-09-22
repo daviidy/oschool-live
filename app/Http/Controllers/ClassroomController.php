@@ -16,13 +16,14 @@ class ClassroomController extends Controller
      */
     public function index()
     {
-      if (Auth::user()->isTeacher()) {
-        $classrooms = Classroom::orderby('id','asc')->paginate(30);
-        return view('classrooms.index', ['classrooms' => $classrooms]);
+      if (Auth::check()) {
+        return view('classrooms.index');
       }
       else {
         return redirect('/');
       }
+
+
     }
 
     /**
