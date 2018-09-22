@@ -61,6 +61,13 @@ class UserController extends Controller
         return view('users.show', ['user' => $user, 'teachers' => $teachers]);
     }
 
+    public function profil(Request $request)
+    {
+      $user = User::orderby ('id','asc')->where('name', $request)->get()->first();
+      $teachers = User::orderby ('id','asc')->where('type', 'teacher')->paginate(30);
+      return view('users.show', ['user' => $user, 'teachers' => $teachers]);
+    }
+
     /**
      * Show the form for editing the specified resource.
      *

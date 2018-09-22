@@ -49,24 +49,6 @@
       <!--logo end-->
       <div class="top-menu">
         <ul class="nav pull-right top-menu">
-          @auth
-          @if(Auth::user()->isTeacher())
-          <li>
-
-            <a style="background-color: green;" class="logout" href="{{ route('classrooms.create') }}">
-                Créer une session
-            </a>
-
-          </li>
-          <li>
-
-            <a style="background-color: orange;" class="logout" href="{{ route('progressions.create') }}">
-                Marquer une progression
-            </a>
-
-          </li>
-          @endif
-          @endauth
 
           <li>
 
@@ -102,6 +84,25 @@
               </a>
           </li>
           @auth
+          @if(Auth::user()->isTeacher())
+          <li>
+
+            <a  style="border-radius:8px; color: #fff; background-color: green;" class="logout" href="{{ route('classrooms.create') }}">
+                Créer une session
+            </a>
+
+          </li>
+          <li>
+
+            <a style="border-radius:8px; color: #fff; background-color: #F36A10;" class="logout" href="{{ route('progressions.create') }}">
+                Marquer une progression
+            </a>
+
+          </li>
+          @endif
+          @endauth
+
+          @auth
           @if(!Auth::user()->isAdmin() && !Auth::user()->isTeacher())
 
           <li class="mt">
@@ -114,14 +115,15 @@
           @endif
           @endauth
 
-          @auth
-          @if(Auth::user()->isTeacher())
+
           <li class="mt">
             <a href="{{route('classrooms.index')}}">
               <i class="fa fa-dashboard"></i>
               <span>Mes sessions</span>
               </a>
           </li>
+          @auth
+          @if(Auth::user()->isTeacher())
           <li class="mt">
             <a href="profile.html">
               <i class="fa fa-money"></i>

@@ -70,7 +70,11 @@
                           <div class="col-sm-4">
                             <h1><i class="fa fa-user"></i></h1>
                             <h3>Type</h3>
-                            <h6>{{$user->type}}</h6>
+                            @if($user->type == 'teacher')
+                            <h6>Formateur</h6>
+                            @else
+                            <h6>Etudiant</h6>
+                            @endif
                           </div>
                           <div class="col-sm-4">
                             <h1><i class="fa fa-laptop"></i></h1>

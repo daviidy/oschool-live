@@ -455,7 +455,7 @@
             </ul>
             <a data-toggle="modal" data-target="#myModal" href="#" style="width: 173px; height: 35px; background: #FFB400;" class="get-started-btn">Je m'inscris !</a>
           </div>
-        </div>
+        </div> 
 
         <!-- The Modal -->
 <div class="modal fade" id="myModal">

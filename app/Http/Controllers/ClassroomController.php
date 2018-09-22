@@ -17,6 +17,10 @@ class ClassroomController extends Controller
     public function index()
     {
       if (Auth::check()) {
+        if (!Auth::user()->isTeacher() && !Auth::user()->isAdmin()) {
+          $classrooms = Classroom::where('etudiant', Auth::user()->name)->get();
+          return view('classrooms.index', ['classrooms' => $classrooms]);
+        }
         return view('classrooms.index');
       }
       else {
@@ -31,7 +35,7 @@ class ClassroomController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create(Request $request)
     {
         if (Auth::check() && Auth::user()->isTeacher()) {
           return view('classrooms.create');

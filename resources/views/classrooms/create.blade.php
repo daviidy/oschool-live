@@ -35,6 +35,15 @@
           </select>
         </div>
 
+        <div class="wrap-input100 validate-input" data-validate = "Etudiant">
+          <label for="">Confirmer l'étudiant</label>
+          <select name="idEtudiant" class="form-control" style="">
+            @foreach(Auth::user()->students as $student)
+            <option value="{{ $student->id }}">{{ $student->name }}</option>
+            @endforeach
+          </select>
+        </div>
+
         <div style="display: none;" class="wrap-input100 validate-input">
           <input class="input100" value="{{Auth::user()->name}}" type="text" name="formateur" placeholder="">
           <span class="focus-input100"></span>
