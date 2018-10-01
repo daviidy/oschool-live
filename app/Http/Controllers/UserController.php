@@ -8,6 +8,7 @@ use Image;
 use Auth;
 use App\Classroom;
 use App\Progression;
+use App\Formation;
 
 class UserController extends Controller
 {
@@ -24,7 +25,29 @@ class UserController extends Controller
         return view('users.list', ['teachers' => $teachers, 'students' => $students]);
       }
       else {
-        return redirect('/');
+        return redirect('home');
+      }
+    }
+
+
+    public function accueil()
+
+    {
+
+        $formations = Formation::orderby ('id','asc')->paginate(30);
+        return view('accueil', ['formations' => $formations]);
+
+    }
+
+    //montrer les guides formateurs aux formateurs
+
+    public function documents()
+    {
+      if (Auth::user()->isTeacher() || Auth::user()->isAdmin()) {
+        return view('users.doc');
+      }
+      else {
+        return redirect('home');
       }
     }
 
@@ -50,6 +73,49 @@ class UserController extends Controller
     }
 
     /**
+     * Inscrire un étudiant à une formation
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+
+    public function inscription(Request $request)
+    {
+      //première chose, on retrouve l'étudiant à partir de l'id envoyé en paramètre
+      //secondo on attache cet etudiant à la formation en question
+
+      if (Auth::check() && Auth::user()->isAdmin() ) {
+        $formation = Formation::find($request['formation_id']);
+        $user = User::find($request['user_id']);
+        $user->formations()->attach($formation);
+
+        return redirect('home')->with('status', 'L\'utilisateur a bien été inscrit à la formation');
+      }
+      else {
+        return redirect('home');
+      }
+
+
+    }
+
+
+    public function inscrire(User $user)
+    {
+      //première chose, on retrouve l'étudiant à partir de l'id envoyé en paramètre
+      //secondo on attache cet etudiant à la formation en question
+
+      if (Auth::check() && Auth::user()->isAdmin() ) {
+        $formations = Formation::orderby ('id','asc')->paginate(30);
+        return view('users.inscription', ['user' => $user, 'formations' => $formations]);
+      }
+      else {
+        return redirect('home');
+      }
+
+
+    }
+
+    /**
      * Display the specified resource.
      *
      * @param  \App\User  $user
@@ -64,13 +130,6 @@ class UserController extends Controller
         }
         $teachers = User::orderby ('id','asc')->where('type', 'teacher')->paginate(30);
         return view('users.show', ['user' => $user, 'teachers' => $teachers]);
-    }
-
-    public function profil(Request $request)
-    {
-      $user = User::orderby ('id','asc')->where('name', $request)->get()->first();
-      $teachers = User::orderby ('id','asc')->where('type', 'teacher')->paginate(30);
-      return view('users.show', ['user' => $user, 'teachers' => $teachers]);
     }
 
     /**

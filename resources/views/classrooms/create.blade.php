@@ -19,7 +19,7 @@
 
         <div class="wrap-input100 validate-input" data-validate = "Jour de la séance">
           <label for="">Jour de la séance</label>
-          <input class="input100" type="date" name="date" placeholder="">
+          <input class="input100" type="date" name="date" placeholder="" required>
           <span class="focus-input100"></span>
           <span class="symbol-input100">
             <i class="fa fa-calendar" aria-hidden="true"></i>
@@ -28,7 +28,7 @@
 
         <div class="wrap-input100 validate-input" data-validate = "Etudiant">
           <label for="">Etudiant</label>
-          <select name="etudiant" class="form-control" style="">
+          <select name="etudiant" class="form-control" style="" required>
             @foreach(Auth::user()->students as $student)
             <option value="{{ $student->name }}">{{ $student->name }}</option>
             @endforeach
@@ -37,7 +37,7 @@
 
         <div class="wrap-input100 validate-input" data-validate = "Etudiant">
           <label for="">Confirmer l'étudiant</label>
-          <select name="idEtudiant" class="form-control" style="">
+          <select name="idEtudiant" class="form-control" style="" required>
             @foreach(Auth::user()->students as $student)
             <option value="{{ $student->id }}">{{ $student->name }}</option>
             @endforeach
@@ -61,7 +61,7 @@
         </div>
 
         <div class="wrap-input100 validate-input">
-          <textarea placeholder="Commentaire de la session" rows="50" style="height: 300px;" class="input100" name="commentaire" placeholder=""></textarea>
+          <textarea required placeholder="Commentaire de la session" rows="50" style="height: 300px;" class="input100" name="commentaire" placeholder=""></textarea>
         </div>
 
         <div class="container-login100-form-btn">

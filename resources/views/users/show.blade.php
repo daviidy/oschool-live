@@ -18,6 +18,14 @@
                   <p><img src="/avatars/users/{{$user->photo}}" class="img-circle"></p>
                   <h3>{{ $user->name }}</h3>
                   <h6>E-mail : {{ $user->email }}</h6>
+                  @auth
+                  @if (Auth::user()->isAdmin() && $user->type == 'default')
+                  <h5> <a href="{{url('inscrire', $user)}}">Inscrire {{$user->name}} à une formation</a> </h5>
+                  @endif
+                  @if (Auth::user()->isAdmin() && $user->type == 'teacher')
+                  <h5> <a href="{{url('inscrire', $user)}}">Assigner {{$user->name}} à une formation</a> </h5>
+                  @endif
+                  @endauth
                 </div>
               </div>
               <!-- /col-md-4 -->
@@ -83,8 +91,10 @@
                           </div>
                           <div class="col-sm-4">
                             <h1><i class="fa fa-laptop"></i></h1>
-                            <h3>Formation</h3>
-                            <h6>Développeur web junior</h6>
+                            <h3>Formation(s)</h3>
+                            @foreach($user->formations as $formation)
+                            <h6>{{$formation->nom}}</h6>
+                            @endforeach
                           </div>
 
                         </div>

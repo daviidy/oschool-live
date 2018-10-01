@@ -1,794 +1,481 @@
-@extends('layouts.menu')
+@extends('layouts.menu-new')
 
 @section('content')
 
-<!--==========================
-  Intro Section
-============================-->
-<section id="intro">
 
-  <div class="intro-text">
-    <h2>Salut, Futurs Codeurs</h2>
-    <p>Embarquez dans nos salles de classe virtuelles pour apprendre le métier de développeur.
-    <br>  Un seul objectif : faire de vous un développeur web compétent, diplômé et recruté ! Ca vous dit ?</p>
-    <a href="#about" class="btn-get-started scrollto">En savoir plus</a>
+<!-- Home -->
+
+<div class="home">
+  <div class="home_background" style="background-image: url(/new/images/fond.jpg);"></div>
+  <div class="home_content">
+    <div class="container">
+      <div class="row">
+        <div class="col text-center">
+          <h1 class="home_title">Apprenez à votre rythme le sujet que vous souhaitez. Avec un formateur dédié en télé présentiel</h1>
+          <div class="home_button trans_200"><a href="#">Commencez</a></div>
+        </div>
+      </div>
+    </div>
   </div>
+</div>
 
-  <div class="product-screens">
+<!-- Language -->
 
-    <div class="product-screen-1 wow fadeInUp" data-wow-delay="0.4s" data-wow-duration="0.6s">
-      <img width="650" src="/avilon/img/scrimba.png" alt="">
+<div class="language">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="language_slider_container">
+
+          <!-- Language Slider -->
+
+          <div class="owl-carousel owl-theme language_slider">
+
+            <!-- Flag -->
+            <div class="owl-item language_item">
+              <a href="#">
+                <div class="flag"><img src="/new/images/icones/web-dev.png" alt=""></div>
+                <div class="lang_name">Développement web</div>
+              </a>
+            </div>
+
+            <!-- Flag -->
+            <div class="owl-item language_item">
+              <a href="#">
+                <div class="flag"><img src="/new/images/icones/mobile-dev.png" alt=""></div>
+                <div class="lang_name">Android/iOS</div>
+              </a>
+            </div>
+
+            <!-- Flag -->
+            <div class="owl-item language_item">
+              <a href="#">
+                <div class="flag"><img src="/new/images/icones/design.png" alt=""></div>
+                <div class="lang_name">Front-end</div>
+              </a>
+            </div>
+
+            <!-- Flag -->
+            <div class="owl-item language_item">
+              <a href="#">
+                <div class="flag"><img src="/new/images/icones/photoshop.png" alt=""></div>
+                <div class="lang_name">Design numérique</div>
+              </a>
+            </div>
+
+            <!-- Flag -->
+            <div class="owl-item language_item">
+              <a href="#">
+                <div class="flag"><img src="/new/images/icones/cm.png" alt=""></div>
+                <div class="lang_name">Community management</div>
+              </a>
+            </div>
+
+            <!-- Flag -->
+            <div class="owl-item language_item">
+              <a href="#">
+                <div class="flag"><img src="/new/images/icones/social.png" alt=""></div>
+                <div class="lang_name">Social Média</div>
+              </a>
+            </div>
+
+            <!-- Flag -->
+            <div class="owl-item language_item">
+              <a href="#">
+                <div class="flag"><img src="/new/images/icones/blog.png" alt=""></div>
+                <div class="lang_name">Blogging</div>
+              </a>
+            </div>
+
+            <!-- Flag -->
+            <div class="owl-item language_item">
+              <a href="#">
+                <div class="flag"><img src="/new/images/icones/photo.png" alt=""></div>
+                <div class="lang_name">Photographie</div>
+              </a>
+            </div>
+
+            <!-- Flag -->
+            <div class="owl-item language_item">
+              <a href="#">
+                <div class="flag"><img src="/new/images/icones/bourse.png" alt=""></div>
+                <div class="lang_name">Investissement en bourse</div>
+              </a>
+            </div>
+
+          </div>
+
+          <div class="lang_nav lang_prev"><i class="fa fa-angle-left" aria-hidden="true"></i></div>
+          <div class="lang_nav lang_next"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
+        </div>
+      </div>
     </div>
-
-    <div class="product-screen-2 wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="0.6s">
-      <img width="600" src="/avilon/img/chat.png" alt="">
-    </div>
-
-    <div class="product-screen-3 wow fadeInUp" data-wow-duration="0.6s">
-      <img width="300" src="/avilon/img/slider2.png" alt="">
-    </div>
-
   </div>
+</div>
 
-</section><!-- #intro -->
+<!-- Courses -->
 
-<main id="main">
-
-  <!--==========================
-    About Us Section
-  ============================-->
-  <section id="about" class="section-bg">
-    <div class="container-fluid">
-      <div class="section-header">
-        <h3 class="section-title">1 étudiant. 1 formateur</h3>
-        <span class="section-divider"></span>
-        <p class="section-description">
-          Oschool, vous permet d'apprendre le code autrement. Une première en Francophonie !
-          Nous utilisons pour vous un nouveau moyen puissant d'apprendre le code.
-            Jouez avec le code des formateurs à tout moment, directement dans le lecteur.
-        </p>
+<div class="courses">
+  <div class="courses_background"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h2 class="section_title text-center">Métiers en vogue</h2>
       </div>
-
-      <div class="row">
-        <div class="col-lg-6 about-img wow fadeInLeft">
-          <img src="/avilon/img/cours.png" alt="">
-        </div>
-
-        <div class="col-lg-6 content wow fadeInRight">
-          <h2>Pourquoi ?</h2>
-          <h3>Beaucoup d'entre nous aiment le côté humain des cours en présentiel. D'autres préfèrent
-            l'économie qu'engendrent les cours en ligne. Pourquoi faire un choix si vous pouvez avoir les deux ?
-            </h3>
-          <p>
-            Avec Oschool, c'est :
-          </p>
-
-          <ul>
-            <li><i class="ion-android-checkmark-circle"></i> Un cours en ligne en téléprésentiel avec un formateur sur 4 mois</li>
-            <li><i class="ion-android-checkmark-circle"></i> Un emploi du temps léger et adapté au vôtre</li>
-            <li><i class="ion-android-checkmark-circle"></i> Un ensemble de projets réalisés et une soutenantce pour valider son parcours </li>
-          </ul>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-6 content wow fadeInRight">
-          <h2>Ce qu'ils en pensent</h2>
-          <h3>Cette école suscite déjà de l'engouement dans la communauté Oschool ! Rejoignez le forum pour discuter
-            avec d'autres étudiants de ce programme</h3>
-          <div style="text-align: center;margin-bottom: 2em;" class="">
-
-            <a href="https://discord.gg/hhbzcHE" target="_blank">
-              Rejoindre la communauté
-            </a>
-
-          </div>
-        </div>
-        <div class="col-lg-6 about-img wow fadeInLeft">
-          <img style="border-radius: 8px;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" src="/avilon/img/forum.png" alt="">
-        </div>
-      </div>
-      <div class="row">
-
-        <div class="col-lg-12">
-          <div class="text-center">
-            <a target="_blank" href="https://calendly.com/oschool_e-learning/demo-oschool-code" class="get-started-btn text-center btn ">Demander une démo</a>
-
-          </div>
-        </div>
-
-      </div>
-
     </div>
-  </section><!-- #about -->
+    <div class="row courses_row">
 
-  <!--==========================
-    Product Featuress Section
-  ============================-->
-  <section id="features">
-    <div class="container">
+      <!-- Course -->
 
-      <div class="row">
-
-        <div class="col-lg-12">
-          <div class="section-header wow fadeIn" data-wow-duration="1s">
-            <h3 class="section-title">Comment ca marche concrètement ?</h3>
-            <span class="section-divider"></span>
-          </div>
-        </div>
-
-        <div class="col-lg-12 col-md-12 ">
-
-          <div class="row">
-
-            <div class="col-lg-12 col-md-12 box wow fadeInRight">
-              <iframe src="https://player.vimeo.com/video/290234963?title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
-              </iframe>
+      <div class="col-lg-4 course_col">
+        <div class="course">
+          <div class="course_image"><img src="/new/images/cours/devweb.png" alt=""></div>
+          <div class="course_body">
+            <div class="course_title"><a href="/devweb">Développeur web</a></div>
+            <div class="course_info">
+              <ul>
+                <li><a href="#">Programmation et développement</a></li>
+                <li><a href="#">4 mois</a></li>
+              </ul>
             </div>
-
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </section><!-- #features -->
-
-  <!--==========================
-    Product Advanced Features Section
-  ============================-->
-  <section id="advanced-features">
-
-    <div class="features-row section-bg">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <img width="400" class="advanced-feature-img-right wow fadeInRight" src="/avilon/img/demo.gif" alt="">
-            <div class="wow fadeInLeft">
-              <h2>Plus besoin de vous déplacer pour apprendre, ou d'acheter des cours en ligne qu'il serait difficile de suivre après</h2>
-              <h3>Restez chez vous à la maison, ou dans l'endroit qui vous sied le plus et suivez votre cours.</h3>
-              <p>Un formateur sera en ligne avec vous aux heures prévues, et vous enseignera ce qu'il y a à savoir,
-              en fonction du programme du cours</p>
-              <p>Apprenez les langages de programmation web plus rapidement et de facon plus pratique</p>
+            <div class="course_text">
+              <p>Faites vos premiers pas dans le monde du développement web : créez des sites web et donnez vie aux maquettes !</p>
             </div>
           </div>
-          <div class="col-lg-12">
-            <div class="text-center">
-              <a target="_blank" href="https://calendly.com/oschool_e-learning/demo-oschool-code" class="get-started-btn text-center btn ">Demander une démo</a>
+          <div class="course_footer d-flex flex-row align-items-center justify-content-start">
+            <div class="course_students"><i class="fa fa-user" aria-hidden="true"></i><span>20</span></div>
+            <div class="course_rating ml-auto"><i class="fa fa-star" aria-hidden="true"></i><span>4,5</span></div>
+            <div class="course_mark course_free trans_200"><a href="#">Certifié</a></div>
+          </div>
+        </div>
+      </div>
 
+      <!-- Course -->
+      <div class="col-lg-4 course_col">
+        <div class="course">
+          <div class="course_image"><img src="/new/images/cours/cm.png" alt=""></div>
+          <div class="course_body">
+            <div class="course_title"><a href="course.html">Community Manager</a></div>
+            <div class="course_info">
+              <ul>
+                <li><a href="instructors.html">Web Marketing</a></li>
+                <li><a href="#">4 mois</a></li>
+              </ul>
+            </div>
+            <div class="course_text">
+              <p>Gérer la présence des marques sur les réseaux sociaux</p>
             </div>
           </div>
+          <div class="course_footer d-flex flex-row align-items-center justify-content-start">
+            <div class="course_students"><i class="fa fa-user" aria-hidden="true"></i><span>10</span></div>
+            <div class="course_rating ml-auto"><i class="fa fa-star" aria-hidden="true"></i><span>4,5</span></div>
+            <div class="course_mark course_free trans_200"><a href="#">Certifié</a></div>
+          </div>
         </div>
       </div>
-    </div>
-    <div id="programme" class="features-row">
-      <div class="container">
-        <h4>Programme des cours</h4>
-        <div class="row">
-            <div class="col-md-12">
-                <div class="main-timeline7">
-                    <div class="timeline">
-                        <div class="timeline-icon"><i class="fa fa-globe"></i></div>
-                        <span class="year">Semaine 1</span>
-                        <div class="timeline-content">
-                            <h5 class="title" style="margin-right: 32px;">Sections</h5>
-                            <p class="description" style="margin-right: 32px;">
-                                - Bienvenue
-                                <br><br>
-                               - Comment fonctionne le web?
-                            </p>
-                        </div>
-                    </div>
-                    <div class="timeline">
-                        <div class="timeline-icon"><i class="fa fa-laptop"></i></div>
-                        <span class="year">Semaine 2</span>
-                        <div class="timeline-content">
-                            <h5 class="title">Sections</h5>
-                            <p class="description">
-                                - HTML: Structure d'un site web
-                                <br><br>
-                               - Un regard plus attentif sur CSS
-                            </p>
-                        </div>
-                    </div>
-                    <div class="timeline">
-                        <div class="timeline-icon"><i class="fa fa-laptop"></i></div>
-                        <span class="year">Semaine 3</span>
-                        <div class="timeline-content">
-                            <h5 class="title" style="margin-right: 32px;">Sections</h5>
-                            <p class="description" style="margin-right: 32px;">
-                                - Bordures et espaces
-                                <br><br>
-                               - Construire avec Bootstrap
-                            </p>
-                        </div>
-                    </div>
-                    <div class="timeline">
-                        <div class="timeline-icon"><i class="fa fa-file-code-o"></i></div>
-                        <span class="year">Semaine 4</span>
-                        <div class="timeline-content">
-                            <h5 class="title">Sections</h5>
-                            <p class="description">
-                                - Créez un site web interactif: Faire un menu déroulant
-                                <br><br>
-                               - Site web interactif: Menu coulissant
-                            </p>
-                        </div>
-                    </div>
-                    <div class="timeline">
-                        <div class="timeline-icon"><i class="fa fa-laptop"></i></div>
-                        <span class="year">Semaine 5</span>
-                        <div class="timeline-content">
-                           <h5 class="title" style="margin-right: 32px;">Sections</h5>
-                            <p class="description" style="margin-right: 32px;">
-                                - Javascript: les bases
-                                <br><br>
-                               - Les évènements
-                            </p>
-                        </div>
-                    </div>
-                    <div class="timeline">
-                        <div class="timeline-icon"><i class="fa fa-file-code-o"></i></div>
-                        <span class="year">Semaine 6</span>
-                        <div class="timeline-content">
-                            <h5 class="title">Sections</h5>
-                            <p class="description">
-                                - Site web interactif : Construisez un fil d'actualités
-                                <br><br>
-                               - Le DOM
-                            </p>
-                        </div>
-                    </div>
-                    <div class="timeline">
-                        <div class="timeline-icon"><i class="fa fa-file-code-o"></i></div>
-                       <span class="year">Semaine 7</span>
-                        <div class="timeline-content">
-                            <h5 class="title" style="margin-right: 32px;">Sections</h5>
-                            <p class="description" style="margin-right: 32px;">
-                                - Site web interactif: Construisons la page d'accueil de Flipboard
-                                <br><br>
-                               - PHP: Introduction
-                            </p>
-                        </div>
-                    </div>
-                    <div class="timeline">
-                        <div class="timeline-icon"><i class="fa fa-laptop"></i></div>
-                        <span class="year">Semaine 8</span>
-                        <div class="timeline-content">
-                            <h5 class="title">Sections</h5>
-                            <p class="description">
-                                - Les bases en PHP
-                                <br><br>
-                               - Transmettre les données de page en page
-                            </p>
-                        </div>
-                    </div>
-                    <div class="timeline">
-                        <div class="timeline-icon"><i class="fa fa-laptop"></i></div>
-                        <span class="year">Semaine 9</span>
-                        <div class="timeline-content">
-                            <h5 class="title" style="margin-right: 32px;">Sections</h5>
-                            <p class="description" style="margin-right: 32px;">
-                                - PHP MySQL
-                                <br><br>
-                               - Wordpress
-                            </p>
-                        </div>
-                    </div>
-                    <div class="timeline">
-                        <div class="timeline-icon"><i class="fa fa-laptop"></i></div>
-                       <span class="year">Semaine 10</span>
-                        <div class="timeline-content">
-                            <h5 class="title">Sections</h5>
-                            <p class="description">
-                                - Hébergement et noms de domaines
-                                <br><br>
-                               - Qu'avons-nous appris de ce cours ?
-                            </p>
-                        </div>
-                    </div>
-                    <div class="timeline">
-                        <div class="timeline-icon"><i class="fa fa-laptop"></i></div>
-                        <span class="year">Semaine 11 et 12</span>
-                        <div class="timeline-content">
-                            <h5 class="title" style="margin-right: 32px;">Sections</h5>
-                            <p class="description" style="margin-right: 32px;">
-                                - Projets
-                                <br><br>
-                               - Soutenances
-                            </p>
-                        </div>
-                    </div>
 
-                </div>
+      <!-- Course -->
+      <div class="col-lg-4 course_col">
+        <div class="course">
+          <div class="course_image"><img src="/new/images/cours/webmobile.png" alt=""></div>
+          <div class="course_body">
+            <div class="course_title"><a href="course.html">Développeur d'applications mobiles</a></div>
+            <div class="course_info">
+              <ul>
+                <li><a href="instructors.html">Programmation et développement</a></li>
+                <li><a href="#">4 mois</a></li>
+              </ul>
             </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="features-row section-bg">
-      <div class="container">
-        <h4>Le programme des rentrées</h4>
-        <div class="row">
-            <div class="col-md-12">
-                <div class="main-timeline8">
-                    <div class="timeline">
-                        <span class="timeline-icon"></span>
-                        <span class="year">1er Octobre 2018 - 4 Janvier 2019</span>
-                        <div class="timeline-content">
-                            <h3 class="title">La Genèse</h3>
-                            <p class="description">
-                              La première promotion ouvre ses portes ! C'est la génération
-                              la plus chanceuse, vu toutes les opportunités qu'elle aura...
-                            </p>
-                        </div>
-                    </div>
-                    <div class="timeline">
-                        <span class="timeline-icon"></span>
-                        <span class="year">5 novembre 2018 - 8 février 2019</span>
-                        <div class="timeline-content">
-                            <h3 class="title">Le défi</h3>
-                            <p class="description">
-                              Deuxième embarcation vers la planète des codeurs, où vous
-                              devrez relever de nombreux défis
-                            </p>
-                        </div>
-                    </div>
-                    <div class="timeline">
-                        <span class="timeline-icon"></span>
-                        <span class="year">Février - Mars 2019</span>
-                        <div class="timeline-content">
-                            <h3 class="title">Date bientôt dévoilée</h3>
-                            <p class="description">
-                                <img src="/avilon/img/ambassador.gif" style="width: 100%;" alt="">
-                            </p>
-                        </div>
-                    </div>
-
-                </div>
+            <div class="course_text">
+              <p>Avec Ionic, vous allez pouvoir profiter de vos connaissances du développement Angular pour développer des applications mobiles multi-plateformes.</p>
             </div>
-        </div>
-      </div>
-    </div>
-  </section><!-- #advanced-features -->
-
-  <!--==========================
-    Call To Action Section
-  ============================-->
-  <section id="call-to-action">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-9 text-center text-lg-left">
-          <h3 class="cta-title">Essayez dès maintenant et GRATUITEMENT !</h3>
-          <p style="font-size: 22px;" class="cta-text"> Demandez une démo et nous vous montrerons comment ca marche gratuitement. Après vous êtes libre de prendre votre décision.</p>
-        </div>
-        <div class="col-lg-3 cta-btn-container text-center">
-          <a target="_blank" class="cta-btn align-middle" href="https://calendly.com/oschool_e-learning/demo-oschool-code">Demander une démo</a>
+          </div>
+          <div class="course_footer d-flex flex-row align-items-center justify-content-start">
+            <div class="course_students"><i class="fa fa-user" aria-hidden="true"></i><span>10</span></div>
+            <div class="course_rating ml-auto"><i class="fa fa-star" aria-hidden="true"></i><span>4,5</span></div>
+            <div class="course_mark course_free trans_200"><a href="#">Bientôt</a></div>
+          </div>
         </div>
       </div>
 
     </div>
-  </section><!-- #call-to-action -->
+  </div>
+</div>
 
-  <!--==========================
-    More Features Section
-  ============================-->
-  <section id="more-features" class="section-bg">
-    <div class="container">
+<!-- Instructors -->
 
-      <div class="section-header">
-        <h3 class="section-title">Une formation en téléprésentiel innovante !</h3>
-        <span class="section-divider"></span>
-        <p class="section-description">Disponibles 24/7, pour apprendre à son rythme, et 100% en ligne.</p>
-      </div>
-
-      <div class="row">
-
-        <div class="col-lg-6">
-          <div class="box wow fadeInLeft">
-            <div class="icon"><i class="ion-ios-flame-outline"></i></div>
-            <h4 class="title"><a href="">Des compétences prisées.</a></h4>
-            <p class="description">Développement web, front-end, back-end, fullstack</p>
-          </div>
-        </div>
-
-        <div class="col-lg-6">
-          <div class="box wow fadeInRight">
-            <div class="icon"><i class="ion-ios-bookmarks-outline"></i></div>
-            <h4 class="title"><a href="">Une approche nouvelle</a></h4>
-            <p class="description">Une formation en ligne, en live, dans une classe virtuelle, qui marche même avec une
-            faible connexion Internet</p>
-          </div>
-        </div>
-
-        <div class="col-lg-6">
-          <div class="box wow fadeInLeft">
-            <div class="icon"><i class="ion-ios-heart-outline"></i></div>
-            <h4 class="title"><a href="">Un engagement maximum</a></h4>
-            <p class="description">L'expérience de l'apprentissage collaboratif, l'accompagnement des formateurs</p>
-          </div>
-        </div>
-
-        <div class="col-lg-6">
-          <div class="box wow fadeInRight">
-            <div class="icon"><i class="ion-ios-analytics-outline"></i></div>
-            <h4 class="title"><a href="">Votre budget maîtrisé</a></h4>
-            <p class="description">Jusqu'à 5x moins coûteux qu'une formation en présentiel.
-            <br>Temps de trajet Maison - Ecole = 0 seconde </p>
-          </div>
-        </div>
-
+<div class="instructors">
+  <div class="instructors_background" style="background-image:url(/new/images/instructors_background.png)"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h2 class="section_title text-center">Comment ca marche ?</h2>
       </div>
     </div>
-  </section><!-- #more-features -->
+    <div class="row instructors_row">
 
-
-  <!--==========================
-    Pricing Section
-  ============================-->
-  <section style="background-color: #fff;" id="pricing" class="section-bg">
-    <div class="container">
-
-      <div class="section-header">
-        <h3 class="section-title">Vous êtes unique. Notre prix aussi.</h3>
-        <span class="section-divider"></span>
-        <p class="section-description">Un prix qui vous séduira certainement</p>
+      <!-- Instructor -->
+      <div class="col-lg-4 instructor_col">
+        <div class="instructor text-center">
+          <div class="instructor_image_container">
+            <div class="instructor_image"><img style="padding: 25px;" src="/new/images/visio.png" alt=""></div>
+          </div>
+          <div class="instructor_name"><a href="instructors.html">Suis une formation en télé présentiel</a></div>
+          <div class="instructor_text">
+            <p>Economise de l'argent et des efforts, en suivant nos formations en télé présentiel, avec un formateur dédié. <br>
+            De plus, tu as le formateur pour toi seul; tu ne le partages pas avec d'autres étudiants pendant la séance. </p>
+          </div>
+        </div>
       </div>
 
-      <div class="row">
+      <!-- Instructor -->
+      <div class="col-lg-4 instructor_col">
+        <div class="instructor text-center">
+          <div class="instructor_image_container">
+            <div class="instructor_image"><img style="padding: 25px;" src="/new/images/code.png" alt=""></div>
+          </div>
+          <div class="instructor_name"><a href="instructors.html">Fais les exercices et projets</a></div>
+          <div class="instructor_text">
+            <p>La formation est encore plus intéressante, car tu as tous les outils d'apprentissage à ta formation. <br>
+              Réalise les nombreux exercices et projets qui ont trait à la vie réelle. </p>
+          </div>
+        </div>
+      </div>
 
+      <!-- Instructor -->
+      <div class="col-lg-4 instructor_col">
+        <div class="instructor text-center">
+          <div class="instructor_image_container">
+            <div class="instructor_image"><img src="/new/images/win.jpg" alt=""></div>
+          </div>
+          <div class="instructor_name"><a href="instructors.html">Soutiens et gagne !</a></div>
+          <div class="instructor_text">
+            <p>Réalise le projet de fin de formation, soutiens ce projet, et obtiens ton certificat ! <br>
+              Mais par dessus-tout, à la fin de ta formation, tu acquiers les compétences recherchées par les entreprises</p>
+          </div>
+        </div>
+      </div>
 
-        <div class="col-lg-4 col-md-6" style="width: 50%; margin: auto;">
-          <div class="box featured wow fadeInUp">
-            <h3>Un seul prix</h3>
-            <h4>30.000<sup>FCFA</sup><span> /mois</span></h4>
-            <ul>
-              <li><i class="ion-android-checkmark-circle"></i> Un formateur dédié en télé présentiel chaque semaine</li>
-              <li><i class="ion-android-checkmark-circle"></i> Accès à tableau de bord spécial</li>
-              <li><i class="ion-android-checkmark-circle"></i> Accès à la communauté Oschool</li>
-              <li><i class="ion-android-checkmark-circle"></i> Accès aux mises à jour du cours</li>
-              <li><i class="ion-android-checkmark-circle"></i> Accès aux fichiers PDF</li>
-              <li><i class="ion-android-checkmark-circle"></i> Accès à un compte Oschool normal</li>
-              <li><i class="ion-android-checkmark-circle"></i> Accès au cours DEVELOPPEUR WEB sur oschool.ci</li>
+    </div>
+  </div>
+</div>
+
+<!-- Register -->
+
+<div class="register">
+  <div class="container">
+    <div class="row">
+
+      <!-- Register Form -->
+
+      <div class="col-lg-6">
+        <div class="register_form_container">
+          <div class="register_form_title">Des doutes ? Laissez-vous convaincre par nos MOOC</div>
+          <form action="#" id="register_form" class="register_form">
+            <div class="row register_row">
+              <div class="col-lg-6 register_col">
+                <input type="text" class="form_input" placeholder="Nom" required="required">
+              </div>
+              <div class="col-lg-6 register_col">
+                <input type="email" class="form_input" placeholder="Email" required="required">
+              </div>
+              <div class="col-lg-6 register_col">
+                <input type="tel" class="form_input" placeholder="Téléphone">
+              </div>
+              <div class="col-lg-6 register_col">
+                <input type="url" class="form_input" placeholder="Site (facultatif)">
+              </div>
+              <div class="col">
+                <button type="submit" class="form_button trans_200">Obtenir les cours	</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- Register Timer -->
+
+      <div class="col-lg-6">
+        <img width="600" src="/new/images/dashboard.png" alt="">
+        <!--
+        <div class="register_timer_container">
+          <div class="register_timer_title">Register Now</div>
+          <div class="register_timer_text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce enim nulla, mollis eu metus in, sagittis fringilla tortor.</p>
+          </div>
+          <div class="timer_container">
+            <ul class="timer_list">
+              <li><div id="day" class="timer_num">00</div><div class="timer_ss">days</div></li>
+              <li><div id="hour" class="timer_num">00</div><div class="timer_ss">hours</div></li>
+              <li><div id="minute" class="timer_num">00</div><div class="timer_ss">minutes</div></li>
+              <li><div id="second" class="timer_num">00</div><div class="timer_ss">seconds</div></li>
             </ul>
-            <a data-toggle="modal" data-target="#myModal" href="#" style="width: 173px; height: 35px; background: #FFB400;" class="get-started-btn">Je m'inscris !</a>
           </div>
-        </div> 
-
-        <!-- The Modal -->
-<div class="modal fade" id="myModal">
-<div class="modal-dialog">
-  <div class="modal-content">
-
-    <!-- Modal Header -->
-    <div class="modal-header">
-      <h4 style="font-size: 24px;" class="modal-title">Remplissez ce formulaire pour vous inscrire à la formation</h4>
-      <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+      -->
+      </div>
     </div>
-
-    <!-- Modal body -->
-    <div class="modal-body">
-      <form method="post" action="{{url('envoi')}}">
-        {{ csrf_field() }}
-
-        <div class="form-group">
-          <label for="">Email:</label>
-          <input type="email" class="form-control" id="" placeholder="Email" name="email" required>
-        </div>
-        <div class="form-group">
-          <label for="">Nom</label>
-          <input type="text" class="form-control" id="" placeholder="Nom" name="nom" required>
-        </div>
-        <div class="form-group">
-          <label for="">Prénoms</label>
-          <input type="text" class="form-control" id="" placeholder="Prénoms" name="prenoms" required>
-        </div>
-        <div class="form-group">
-          <label for="">Numéro de téléphone</label>
-          <input type="text" class="form-control" id="" placeholder="Téléphone" name="tel" required>
-        </div>
-        <button type="submit" class="btn btn-primary">Envoyer</button>
-      </form>
-    </div>
-
-    <!-- Modal footer -->
-    <div class="modal-footer">
-      <button type="button" class="btn btn-danger" data-dismiss="modal">Annuler</button>
-    </div>
-
   </div>
 </div>
+
+<!-- Events -->
+
+<div class="events">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h2 class="section_title text-center">Prochains événements</h2>
+      </div>
+    </div>
+    <div class="row events_row">
+
+      <!-- Event -->
+      <div class="col-lg-4 event_col">
+        <div class="event">
+          <div class="event_image"><img src="/new/images/fblive.png" alt=""></div>
+          <div class="event_date d-flex flex-column align-items-center justify-content-center">
+            <div class="event_day">26</div>
+            <div class="event_month">aug</div>
+          </div>
+          <div class="event_body d-flex flex-row align-items-center justify-content-start">
+            <div class="event_title"><a href="#">Facebook Live</a></div>
+            <div class="event_tag ml-auto">Gratuit</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Event -->
+      <div class="col-lg-4 event_col">
+        <div class="event">
+          <div class="event_image"><img src="/new/images/cours/jeux.png" alt=""></div>
+          <div class="event_date d-flex flex-column align-items-center justify-content-center">
+            <div class="event_day">26</div>
+            <div class="event_month">aug</div>
+          </div>
+          <div class="event_body d-flex flex-row align-items-center justify-content-start">
+            <div class="event_title"><a href="#">Orange Gaming Tour</a></div>
+            <div class="event_tag ml-auto">2000FCFA</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Event -->
+      <div class="col-lg-4 event_col">
+        <div class="event">
+          <div class="event_image"><img src="/new/images/event_3.jpg" alt=""></div>
+          <div class="event_date d-flex flex-column align-items-center justify-content-center">
+            <div class="event_day">26</div>
+            <div class="event_month">aug</div>
+          </div>
+          <div class="event_body d-flex flex-row align-items-center justify-content-start">
+            <div class="event_title"><a href="#">Meetup</a></div>
+            <div class="event_tag ml-auto">Free</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
 </div>
 
-<!--end modal-->
+<!-- Blog -->
 
+<div class="blog">
+  <div class="container">
+    <div class="row row-lg-eq-height">
 
+      <!-- Blog Left -->
+      <div class="col-lg-6">
+        <div class="blog_left">
+          <div style="font-size: 20px;" class="blog_title">Apprenez maintenant les compétences les plus recherchées dans ces domaines</div>
+          <div class="blog_categories">
+            <div class="row categories_row">
 
-      </div>
-    </div>
-  </section><!-- #pricing -->
-
-
-
-
-
-
-  <!--==========================
-    Our Team Section
-  ============================-->
-  <section id="team" class="section-bg">
-    <div class="container">
-      <div class="section-header">
-        <h3 class="section-title">La team Oschool</h3>
-        <span class="section-divider"></span>
-        <p class="section-description">Pleins d'expérience, d'humour et d'inspiration pour vous servir</p>
-      </div>
-      <div class="row wow fadeInUp">
-        <div class="col-lg-3 col-md-6">
-          <div class="member">
-            <div class="pic"><img src="/avilon/img/team/david.png" alt=""></div>
-            <h4>David YAO</h4>
-            <span>Co-fondateur Oschool</span>
-            <div class="social">
-              <a href=""><i class="fa fa-twitter"></i></a>
-              <a href=""><i class="fa fa-facebook"></i></a>
-              <a href=""><i class="fa fa-google-plus"></i></a>
-              <a href=""><i class="fa fa-linkedin"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6">
-          <div class="member">
-            <div class="pic"><img src="/avilon/img/team/perborgen.jpg" alt=""></div>
-            <h4>Per Harald Borgen</h4>
-            <span>Co-fondateur Scrimba</span>
-            <div class="social">
-              <a href=""><i class="fa fa-twitter"></i></a>
-              <a href=""><i class="fa fa-facebook"></i></a>
-              <a href=""><i class="fa fa-google-plus"></i></a>
-              <a href=""><i class="fa fa-linkedin"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6">
-          <div class="member">
-            <div class="pic"><img src="/avilon/img/team/arsenegimp.jpeg" alt=""></div>
-            <h4>Arsène Kouassi</h4>
-            <span>CTO et co-fondateur Oschool</span>
-            <div class="social">
-              <a href=""><i class="fa fa-twitter"></i></a>
-              <a href=""><i class="fa fa-facebook"></i></a>
-              <a href=""><i class="fa fa-google-plus"></i></a>
-              <a href=""><i class="fa fa-linkedin"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6">
-          <div class="member">
-            <div class="pic"><img src="/avilon/img/team/adamsgimp.jpeg" alt=""></div>
-            <h4>Adams Tehoua</h4>
-            <span>Marketing Director et co-fondateur Oschool</span>
-            <div class="social">
-              <a href=""><i class="fa fa-twitter"></i></a>
-              <a href=""><i class="fa fa-facebook"></i></a>
-              <a href=""><i class="fa fa-google-plus"></i></a>
-              <a href=""><i class="fa fa-linkedin"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </section><!-- #team -->
-
-  <!--==========================
-    Clients
-  ============================-->
-  <section id="clients">
-    <div class="container">
-
-      <div class="row wow fadeInUp">
-        <div class="col-md-12" style="text-align: center;">
-            <h2>Travaillez comme</h2>
-        </div>
-
-        <div class="col-md-3">
-          <img src="/avilon/img/clients/client-1.png" alt="">
-        </div>
-
-        <div class="col-md-3">
-          <img src="/avilon/img/clients/client-2.png" alt="">
-        </div>
-
-        <div class="col-md-3">
-          <img src="/avilon/img/clients/client-3.png" alt="">
-        </div>
-
-        <div class="col-md-3">
-          <img src="/avilon/img/clients/client-8.png" alt="">
-        </div>
-
-      </div>
-
-    </div>
-  </section><!-- #more-features -->
-
-  <section id="clients">
-    <div class="container">
-
-      <div class="row wow fadeInUp">
-        <div class="col-md-12" style="text-align: center;">
-            <h2>Nos partenaires</h2>
-        </div>
-
-        <div class="col-md-4">
-          <img src="/avilon/img/clients/client-4.png" alt="">
-        </div>
-
-        <div class="col-md-4">
-          <img src="/avilon/img/clients/client-5.png" alt="">
-        </div>
-
-        <div class="col-md-4">
-          <img src="/avilon/img/clients/client-6.png" alt="">
-        </div>
-
-      </div>
-    </div>
-  </section><!-- #more-features -->
-
-
-  <!--==========================
-    Gallery Section
-  ============================-->
-  <!--
-  <section id="gallery">
-    <div class="container-fluid">
-      <div class="section-header">
-        <h3 class="section-title">Nos cours</h3>
-        <span class="section-divider"></span>
-        <p class="section-description"></p>
-      </div>
-
-      <div class="row no-gutters">
-
-        <div class="col-lg-4 col-md-6">
-          <div class="gallery-item wow fadeInUp">
-            <a href="/avilon/img/gallery/js.jpg" class="gallery-popup">
-              <img src="/avilon/img/gallery/html.jpg" alt="">
-            </a>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6">
-          <div class="gallery-item wow fadeInUp">
-            <a href="/avilon/img/gallery/js.jpg" class="gallery-popup">
-              <img src="/avilon/img/gallery/js.jpg" alt="">
-            </a>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6">
-          <div class="gallery-item wow fadeInUp">
-            <a href="/avilon/img/gallery/bootstrap.png" class="gallery-popup">
-              <img src="/avilon/img/gallery/bootstrap.png" alt="">
-            </a>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6">
-          <div class="gallery-item wow fadeInUp">
-            <a href="/avilon/img/gallery/react.png" class="gallery-popup">
-              <img src="/avilon/img/gallery/react.png" alt="">
-            </a>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6">
-          <div class="gallery-item wow fadeInUp">
-            <a href="/avilon/img/gallery/php.png" class="gallery-popup">
-              <img src="/avilon/img/gallery/php.png" alt="">
-            </a>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6">
-          <div class="gallery-item wow fadeInUp">
-            <a href="/avilon/img/gallery/wordpress.png" class="gallery-popup">
-              <img src="/avilon/img/gallery/wordpress.png" alt="">
-            </a>
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-  </section> -->
-  <!-- #gallery -->
-
-  <!--==========================
-    Contact Section
-  ============================-->
-  <section id="contact">
-    <div class="container">
-      <div class="row wow fadeInUp">
-
-        <div class="col-lg-4 col-md-4">
-          <div class="contact-about">
-            <h3>Oschool</h3>
-            <p>Oschool est une plateforme de formations, sur laquelle vous pouvez suivre
-            et/ou créer des formations dans les domaines du web</p>
-            <div class="social-links">
-              <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-              <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-              <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-              <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
-              <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-4">
-          <div class="info">
-            <div>
-              <i class="ion-ios-location-outline"></i>
-              <p>Abidjan<br>Côte d'Ivoire</p>
-            </div>
-
-            <div>
-              <i class="ion-ios-email-outline"></i>
-              <p>info@oschool.ci</p>
-            </div>
-
-            <div>
-              <i class="ion-ios-telephone-outline"></i>
-              <p>+225 21-37-12-77</p>
-            </div>
-
-          </div>
-        </div>
-
-        <div class="col-lg-5 col-md-8">
-          <div class="form">
-
-            <div id="sendmessage">Your message has been sent. Thank you!</div>
-            <div id="errormessage"></div>
-          <!--
-            <form action="" method="post" role="form" class="contactForm">
-              <div class="form-row">
-                <div class="form-group col-lg-6">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                  <div class="validation"></div>
-                </div>
-                <div class="form-group col-lg-6">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-                  <div class="validation"></div>
-                </div>
-              </div>
-              <div class="form-group">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                <div class="validation"></div>
-              </div>
-              <div class="form-group">
-                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-                <div class="validation"></div>
+              <!-- Category -->
+              <div class="col-md-4 blog_category_col">
+                <a href="blog.html">
+                  <div class="blog_category">
+                    <div class="blog_category_image"><img src="/new/images/cours/devweb.png" alt=""></div>
+                    <div class="blog_category_title">programmation</div>
+                  </div>
+                </a>
               </div>
 
-            </form> -->
-            <div class="text-center"><a target="_blank" href="https://calendly.com/oschool_e-learning/demo-oschool-code" class="get-started-btn text-center btn ">Demander une démo</a></div>
+              <!-- Category -->
+              <div class="col-md-4 blog_category_col">
+                <a href="blog.html">
+                  <div class="blog_category">
+                    <div class="blog_category_image"><img src="/new/images/cours/cm.png" alt=""></div>
+                    <div class="blog_category_title">web marketing</div>
+                  </div>
+                </a>
+              </div>
+
+              <!-- Category -->
+              <div class="col-md-4 blog_category_col">
+                <a href="blog.html">
+                  <div class="blog_category">
+                    <div class="blog_category_image"><img src="/new/images/blog_3.jpg" alt=""></div>
+                    <div class="blog_category_title">langues</div>
+                  </div>
+                </a>
+              </div>
+
+              <!-- Category -->
+              <div class="col-md-4 blog_category_col">
+                <a href="blog.html">
+                  <div class="blog_category">
+                    <div class="blog_category_image"><img src="/new/images/cours/webmobile.png" alt=""></div>
+                    <div class="blog_category_title">data science</div>
+                  </div>
+                </a>
+              </div>
+
+              <!-- Category -->
+              <div class="col-md-4 blog_category_col">
+                <a href="blog.html">
+                  <div class="blog_category">
+                    <div class="blog_category_image"><img src="/new/images/cours/finance.png" alt=""></div>
+                    <div class="blog_category_title">finance</div>
+                  </div>
+                </a>
+              </div>
+
+              <!-- Category -->
+              <div class="col-md-4 blog_category_col">
+                <a href="blog.html">
+                  <div class="blog_category">
+                    <div class="blog_category_image"><img src="/new/images/cours/frontend.png" alt=""></div>
+                    <div class="blog_category_title">blogging</div>
+                  </div>
+                </a>
+              </div>
+
+            </div>
           </div>
         </div>
-
       </div>
 
-    </div>
-  </section><!-- #contact -->
+      <!-- Blog Right -->
 
-</main>
+      <div class="col-lg-6">
+        <div class="blog_right">
+          <div class="blog_image" style="background-image:url(/new/images/forum.png)"></div>
+          <div class="blog_title_container">
+            <div class="blog_right_category"><a href="#">le saviez-vous ?</a></div>
+            <div class="blog_right_title"><a target="_blank" href="https://discord.gg/hhbzcHE">On apprend mieux quand on n'est pas seul</a></div>
+            <div class="blog_right_text">
+              <p>Rejoignez notre communauté et posez toutes les questions qui vous apssent par la tête. Vos amis
+              se feront un plaisir de vous aider</p>
+            </div>
+            <div class="read_more"><a href="https://discord.gg/hhbzcHE">Rejoignez notre communauté <img src="/new/images/right.png" alt=""></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 
 @endsection

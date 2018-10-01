@@ -11,9 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('accueil');
-});
+Route::get('/', 'UserController@accueil');
 
 Route::get('/online', function () {
     return view('online');
@@ -56,3 +54,22 @@ Route::get('/valider/{progression}', 'ProgressionController@valider')->name('val
 Route::get('/programme', 'ProgressionController@programme')->name('programme');
 
 Route::get('/progression/{user}', 'ProgressionController@voir')->name('progression');
+
+Route::resource('formations','FormationController');
+
+Route::resource('categories','CategorieController');
+
+Route::post('/inscription', 'UserController@inscription')->name('inscription');
+
+Route::get('/inscrire/{user}', 'UserController@inscrire')->name('inscrire');
+
+Route::get('/devweb', function () {
+    return view('formations.dev-web');
+})->name('devweb');
+
+Route::get('/cours', function () {
+    return view('formations.cours');
+})->name('cours');
+
+
+Route::get('/documents', 'UserController@documents')->name('documents');

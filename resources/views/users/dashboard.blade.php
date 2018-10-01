@@ -109,8 +109,10 @@
                           </div>
                           <div class="col-sm-4">
                             <h1><i class="fa fa-laptop"></i></h1>
-                            <h3>Formation</h3>
-                            <h6>Développeur web junior</h6>
+                            <h3>Formation(s)</h3>
+                            @foreach(Auth::user()->formations as $formation)
+                            <h6>{{$formation->nom}}</h6> <br>
+                            @endforeach
                           </div>
 
                         </div>
@@ -149,12 +151,16 @@
                               <input name="prenoms" value="{{Auth::user()->prenoms}}" type="text" placeholder=" " id="prenoms" class="form-control">
                             </div>
                           </div>
+                          @auth
+                          @if(Auth::user()->isTeacher() || Auth::user()->isAdmin())
                           <div class="form-group">
                             <label class="col-lg-2 control-label">Capacité maximale d'étudiants</label>
                             <div class="col-lg-6">
                               <input name="max_students" value="{{Auth::user()->max_students}}" type="text" placeholder="Exemple: 50" id="max_students" class="form-control">
                             </div>
                           </div>
+                          @endif
+                          @endauth
                           <div class="form-group">
                             <label class="col-lg-2 control-label">Email</label>
                             <div class="col-lg-6">
@@ -174,7 +180,7 @@
                   </div>
                   <!-- /tab-pane -->
                   @auth
-                  @if (Auth::user()->isTeacher())
+                  @if (Auth::user()->isTeacher() || Auth::user()->isAdmin())
                   <!-- LISTE DES ETUDIANTS -->
                   <div id="edit" class="tab-pane">
                      <div class="container">

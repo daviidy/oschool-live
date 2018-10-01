@@ -45,7 +45,7 @@
         <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
       </div>
       <!--logo start-->
-      <a href="profile.html" class="logo"><img width="100" src="/dashboard/img/thumbnail.png"></a>
+      <a href="{{url('home')}}" class="logo"><img width="100" src="/dashboard/img/thumbnail.png"></a>
       <!--logo end-->
       <div class="top-menu">
         <ul class="nav pull-right top-menu">
@@ -101,6 +101,23 @@
           </li>
           @endif
 
+          @if(Auth::user()->isAdmin())
+          <li>
+
+            <a  style="border-radius:8px; color: #fff; background-color: green;" class="logout" href="{{ route('formations.create') }}">
+                Créer une formation
+            </a>
+
+          </li>
+          <li>
+
+            <a style="border-radius:8px; color: #fff; background-color: #F36A10;" class="logout" href="{{ route('categories.create') }}">
+                Créer une catégorie de formation
+            </a>
+
+          </li>
+          @endif
+
           @if(!Auth::user()->isAdmin() && !Auth::user()->isTeacher())
 
           <li class="mt">
@@ -123,10 +140,10 @@
           @endif
           @if(Auth::user()->isTeacher())
           <li class="mt">
-            <a href="profile.html">
+            <a href="#">
               <i class="fa fa-money"></i>
               <span>Facturation</span>
-              </a>
+            </a>
           </li>
           @endif
 
@@ -138,13 +155,23 @@
               </a>
           </li>
           @endif
-          @endauth
+        @endauth
           <li class="mt">
             <a href="/programme">
               <i class="fa fa-calendar"></i>
               <span>Programme de la formation</span>
               </a>
           </li>
+          @auth
+          @if(Auth::user()->isTeacher() || Auth::user()->isAdmin())
+          <li class="mt">
+            <a href="/documents">
+              <i class="fa fa-book"></i>
+              <span>Guides formateurs</span>
+              </a>
+          </li>
+          @endif
+          @endauth
           <!--li>
             <a href="inbox.html">
               <i class="fa fa-envelope"></i>

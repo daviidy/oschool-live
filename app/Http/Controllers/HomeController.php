@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Auth;
 use App\User;
+use App\Formation;
 
 class HomeController extends Controller
 {
@@ -29,14 +30,13 @@ class HomeController extends Controller
       if (Auth::check()) {
 
         $teachers = User::orderby ('id','asc')->where('type', 'teacher')->paginate(30);
-        return view('users.dashboard', ['teacher' => $teachers]);
+        return view('users.dashboard', ['teachers' => $teachers]);
       }
       else {
         return redirect('/');
       }
 
     }
-
 
     public function classrooms()
 
