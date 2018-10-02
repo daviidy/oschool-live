@@ -6,6 +6,7 @@ use App\Classroom;
 use App\User;
 use Auth;
 use Illuminate\Http\Request;
+use Mail;
 
 class ClassroomController extends Controller
 {
@@ -54,7 +55,22 @@ class ClassroomController extends Controller
      */
     public function store(Request $request)
     {
-      Classroom::create($request->all());
+      $classroom = Classroom::create($request->all());
+
+      $user = User::find($request['idEtudiant']);
+
+      //envoi mail étudiant
+      Mail::send('mails.planification-session', ['classroom' => $classroom, 'user' => $user], function($message) use ($user){
+        $message->to($user->email, 'Cher(ère) Etudiant(e)')->subject('Une nouvelle séance de formation a été programmée pour toi');
+        $message->from('eventsoschool@gmail.com', 'Oschool');
+      });
+
+      //envoi mail teacher
+      Mail::send('mailsTeacher.planification-session', ['classroom' => $classroom], function($message) use ($classroom){
+        $message->to(Auth::user()->email, 'A '.Auth::user()->name)->subject('Vous venez de programmer une nouvelle séance de formation');
+        $message->from('eventsoschool@gmail.com', 'Oschool');
+      });
+
       return redirect('home')->with('status', 'La session a bien été créée. Rendez-vous dans la progression de l\'étudiant pour marquer ses progrès');
     }
 

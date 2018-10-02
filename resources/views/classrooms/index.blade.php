@@ -29,7 +29,7 @@
                 @foreach(Auth::user()->sessions as $classroom)
                 <tr>
                   <td><a href="{{url('users', $classroom->idEtudiant)}}">{{$classroom->etudiant}}</a></td>
-                  <td>{{ Carbon\Carbon::parse($classroom->date)->format('d-m-Y') }}</td>
+                  <td>{{ Carbon\Carbon::parse($classroom->date)->format('d-m-Y H:i') }}</td>
                   <td style="display: flex; flex-wrap: wrap;">
 
                     @if($classroom->statut == "Planifié")
