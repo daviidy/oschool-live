@@ -27,7 +27,7 @@ class ProgressionController extends Controller
     public function create()
     {
       if (Auth::check() && Auth::user()->isTeacher()) {
-        return view('progressions.create');
+        return view('progressions.ajouter');
       }
       else {
         return redirect('home')->with('status', 'La progression a bien été enregistrée');
@@ -42,7 +42,14 @@ class ProgressionController extends Controller
      */
     public function store(Request $request)
     {
-      Progression::create($request->all());
+      $sessionString = implode(",", $request->get('session'));
+      Progression::create([
+        'formation' => $request->get('formation'),
+        'section' => $request->get('section'),
+        'statut' => $request->get('statut'),
+        'user_id' => $request->get('user_id'),
+        'session' => $sessionString,
+    ]);
       return redirect('home')->with('status', 'La progression a bien été marquée');
     }
 

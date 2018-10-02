@@ -9,6 +9,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
+use Mail;
 
 class RegisterController extends Controller
 {
@@ -65,12 +66,26 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
-        return User::create([
+        $user = User::create([
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
             'type' => User::DEFAULT_TYPE,
         ]);
+
+        //envoi mail inscrit
+        Mail::send('mails.inscription-utilisateur', ['user' => $user], function($message) use ($user){
+          $message->to($user->email, 'Bienvenue à Oschool !')->subject('Votre compte pour les cours en télé présentiel a été crée');
+          $message->from('eventsoschool@gmail.com', 'Oschool');
+        });
+
+        //envoi mail admin
+        Mail::send('mailsAdmin.inscription-utilisateur', ['user' => $user], function($message) use ($user){
+          $message->to('yaodavidarmel@gmail.com', 'A David')->subject('Il y a un nouvel utilisateur sur Oschool Live !');
+          $message->from('eventsoschool@gmail.com', 'Oschool');
+        });
+
+        return $user;
 
     }
 

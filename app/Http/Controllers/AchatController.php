@@ -188,7 +188,7 @@ class AchatController extends Controller
                           'tel' => Session::get('tel')
                         ]);
 
-       //envpi mail utilisateur
+       //envoi mail utilisateur
         Mail::send('mailsAchat.mail', ['achat' => $achat], function($message) use ($achat){
           $message->to($achat->email, 'Cher(ère) Etudiant(e)')->subject('Votre inscription a bien été pris en compte !');
           $message->from('eventsoschool@gmail.com', 'Oschool');

@@ -88,7 +88,7 @@
           <li>
 
             <a  style="border-radius:8px; color: #fff; background-color: green;" class="logout" href="{{ route('classrooms.create') }}">
-                Créer une session
+                Planifier une session
             </a>
 
           </li>

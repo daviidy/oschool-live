@@ -10,7 +10,7 @@
       <div class="row">
         <div class="col">
           <ul class="breadcrumbs_list d-flex flex-row align-items-center justify-content-start">
-            <li><a href="index.html">accueil</a></li>
+            <li><a href="/">accueil</a></li>
             <li>parcours</li>
           </ul>
         </div>

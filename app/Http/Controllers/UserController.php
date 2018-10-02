@@ -9,6 +9,7 @@ use Auth;
 use App\Classroom;
 use App\Progression;
 use App\Formation;
+use Mail;
 
 class UserController extends Controller
 {
@@ -89,6 +90,18 @@ class UserController extends Controller
         $user = User::find($request['user_id']);
         $user->formations()->attach($formation);
 
+        //envoi mail inscrit
+        Mail::send('mails.inscription-formation', ['user' => $user, 'formation' => $formation], function($message) use ($user){
+          $message->to($user->email, 'Cher(ère) Utilisateur(trice)')->subject('Vous avez été ajouté à une formation');
+          $message->from('eventsoschool@gmail.com', 'Oschool');
+        });
+
+        //envoi mail admin
+        Mail::send('mailsAdmin.inscription-formation', ['user' => $user, 'formation' => $formation], function($message) use ($user){
+          $message->to('yaodavidarmel@gmail.com', 'A David')->subject('Notification pour nouvelle inscription à une formation');
+          $message->from('eventsoschool@gmail.com', 'Oschool');
+        });
+
         return redirect('home')->with('status', 'L\'utilisateur a bien été inscrit à la formation');
       }
       else {
@@ -153,6 +166,26 @@ class UserController extends Controller
     public function update(Request $request, User $user)
     {
       $user->update($request->all());
+
+      if ($request['user_id']) {
+        //envoi mail étudiant
+        Mail::send('mails.attribution-formateur', ['user' => $user], function($message) use ($user){
+          $message->to($user->email, 'Cher(ère) Etudiant(e)')->subject('Vous avez un nouveau formateur');
+          $message->from('eventsoschool@gmail.com', 'Oschool');
+        });
+
+        //envoi mail teacher
+        Mail::send('mailsTeacher.attribution-formateur', ['user' => $user], function($message) use ($user){
+          $message->to($user->teacher->email, 'A '.$user->teacher->name)->subject('Vous avez un nouvel étudiant !');
+          $message->from('eventsoschool@gmail.com', 'Oschool');
+        });
+
+        //envoi mail admin
+        Mail::send('mailsAdmin.attribution-formateur', ['user' => $user], function($message) use ($user){
+          $message->to('yaodavidarmel@gmail.com', 'A David')->subject('Un étudiant a recu un nouveau formateur !');
+          $message->from('eventsoschool@gmail.com', 'Oschool');
+        });
+      }
 
       if($request->hasFile('photo')){
         $image = $request->file('photo');

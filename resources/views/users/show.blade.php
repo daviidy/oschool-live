@@ -171,7 +171,7 @@
                            <tr>
                              <th>Section</th>
                              <th>Chapitre</th>
-                             <th>Statut</th>
+                             <th>Statut</th> 
                            </tr>
                          </thead>
                          <tbody>

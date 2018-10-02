@@ -1,5 +1,5 @@
 @extends('layouts.menu-login')
-@section('title', 'Ajouter une séance de cours')
+@section('title', 'Séance de cours Oschool')
 
 @section('content')
 
@@ -13,7 +13,7 @@
 
       <form method="post" enctype="multipart/form-data" action="{{ route('classrooms.store') }}" class="login100-form validate-form">
         <span class="login100-form-title">
-          Ajouter une séance de cours effectuée avec un étudiant
+          Séance de formation
         </span>
         {{ csrf_field() }}
 
@@ -61,7 +61,7 @@
         </div>
 
         <div class="wrap-input100 validate-input">
-          <textarea required placeholder="Commentaire de la session" rows="50" style="height: 300px;" class="input100" name="commentaire" placeholder=""></textarea>
+          <textarea placeholder="Commentaire de la session" rows="50" style="height: 300px;" class="input100" name="commentaire" placeholder=""></textarea>
         </div>
 
         <div class="container-login100-form-btn">

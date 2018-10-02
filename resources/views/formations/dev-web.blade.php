@@ -11,8 +11,8 @@
       <div class="row">
         <div class="col">
           <ul class="breadcrumbs_list d-flex flex-row align-items-center justify-content-start">
-            <li><a href="index.html">accueil</a></li>
-            <li><a href="courses.html">cours</a></li>
+            <li><a href="/">accueil</a></li>
+            <li><a href="/cours">cours</a></li>
             <li>développeur web junior</li>
           </ul>
         </div>
@@ -64,7 +64,6 @@
                     <div class="tab active">description</div>
                     <div class="tab">programme</div>
                     <div class="tab">avis</div>
-                    <div class="tab">membres</div>
                   </div>
                 </div>
               </div>
@@ -174,10 +173,7 @@ mais aussi JavaScript et PHP. Il est chargé de :</p>
 
           <!-- Curriculum -->
           <div class="tab_panel curriculum">
-            <div class="panel_title">Programme</div>
-            <div class="panel_text">
-              <p>Nam egestas lorem ex, sit amet commodo tortor faucibus a. Suspendisse commodo, turpis a dapibus fermentum, turpis ipsum rhoncus massa, sed commodo nisi lectus id ipsum. Sed nec elit vehicula, aliquam neque euismod, porttitor ex. Nam consequat iaculis maximus. Suspendisse potenti. In rutrum justo et diam egestas luctus. Mauris eu neque eget odio suscipit eleifend. Sed imperdiet ante quis felis tempor hendrerit. Curabitur eget fermentum ipsum. Sed efficitur eget velit eu vulputate. Duis tincidunt quam in erat dignissim consequat. Praesent tempus leo eu nisl fringilla interdum. Maecenas rutrum libero eget lacus bibendum tristique. Curabitur at felis lobortis, mollis ante ut, tempus elit. Morbi justo nisi, posuere sed augue id, iaculis tincidunt mi. Pellentesque sed dolor sed dui congue tempus a et felis.</p>
-            </div>
+
             <div class="curriculum_items">
               <div class="cur_item">
                 <div class="cur_title_container d-flex flex-row align-items-start justify-content-start">
@@ -646,7 +642,7 @@ freelance.
             </div>
           </div>
 
-          <!-- Members -->
+          <!-- Members
           <div class="tab_panel members">
             <div class="panel_title">Members</div>
             <div class="panel_text">
@@ -654,97 +650,16 @@ freelance.
             </div>
             <div class="members_list d-flex flex-row flex-wrap align-items-start justify-content-start">
 
-              <!-- Member -->
               <div class="member">
                 <div class="member_image"><img src="/new/images/member_1.jpg" alt=""></div>
                 <div class="member_title"><a href="#">Sarah Parker</a></div>
               </div>
 
-              <!-- Member -->
-              <div class="member">
-                <div class="member_image"><img src="/new/images/member_0.jpg" alt=""></div>
-                <div class="member_title"><a href="#">Sarah Parker</a></div>
-              </div>
 
-              <!-- Member -->
-              <div class="member">
-                <div class="member_image"><img src="/new/images/member_0.jpg" alt=""></div>
-                <div class="member_title"><a href="#">Sarah Parker</a></div>
-              </div>
-
-              <!-- Member -->
-              <div class="member">
-                <div class="member_image"><img src="/new/images/member_2.jpg" alt=""></div>
-                <div class="member_title"><a href="#">Sarah Parker</a></div>
-              </div>
-
-              <!-- Member -->
-              <div class="member">
-                <div class="member_image"><img src="/new/images/member_3.jpg" alt=""></div>
-                <div class="member_title"><a href="#">Sarah Parker</a></div>
-              </div>
-
-              <!-- Member -->
-              <div class="member">
-                <div class="member_image"><img src="/new/images/member_4.jpg" alt=""></div>
-                <div class="member_title"><a href="#">Sarah Parker</a></div>
-              </div>
-
-              <!-- Member -->
-              <div class="member">
-                <div class="member_image"><img src="/new/images/member_0.jpg" alt=""></div>
-                <div class="member_title"><a href="#">Sarah Parker</a></div>
-              </div>
-
-              <!-- Member -->
-              <div class="member">
-                <div class="member_image"><img src="/new/images/member_5.jpg" alt=""></div>
-                <div class="member_title"><a href="#">Sarah Parker</a></div>
-              </div>
-
-              <!-- Member -->
-              <div class="member">
-                <div class="member_image"><img src="/new/images/member_6.jpg" alt=""></div>
-                <div class="member_title"><a href="#">Sarah Parker</a></div>
-              </div>
-
-              <!-- Member -->
-              <div class="member">
-                <div class="member_image"><img src="/new/images/member_0.jpg" alt=""></div>
-                <div class="member_title"><a href="#">Sarah Parker</a></div>
-              </div>
-
-              <!-- Member -->
-              <div class="member">
-                <div class="member_image"><img src="/new/images/member_7.jpg" alt=""></div>
-                <div class="member_title"><a href="#">Sarah Parker</a></div>
-              </div>
-
-              <!-- Member -->
-              <div class="member">
-                <div class="member_image"><img src="/new/images/member_8.jpg" alt=""></div>
-                <div class="member_title"><a href="#">Sarah Parker</a></div>
-              </div>
-
-              <!-- Member -->
-              <div class="member">
-                <div class="member_image"><img src="/new/images/member_0.jpg" alt=""></div>
-                <div class="member_title"><a href="#">Sarah Parker</a></div>
-              </div>
-
-              <!-- Member -->
-              <div class="member">
-                <div class="member_image"><img src="/new/images/member_9.jpg" alt=""></div>
-                <div class="member_title"><a href="#">Sarah Parker</a></div>
-              </div>
-
-              <!-- Member -->
-              <div class="member">
-                <div class="member_image"><img src="/new/images/member_0.jpg" alt=""></div>
-                <div class="member_title"><a href="#">Sarah Parker</a></div>
-              </div>
             </div>
           </div>
+        -->
+
         </div>
       </div>
 

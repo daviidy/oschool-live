@@ -22,6 +22,7 @@
                 <tr>
                   <th>Etudiant</th>
                   <th>Date</th>
+                  <th>Statut</th>
                 </tr>
               </thead>
               <tbody>
@@ -29,6 +30,30 @@
                 <tr>
                   <td><a href="{{url('users', $classroom->idEtudiant)}}">{{$classroom->etudiant}}</a></td>
                   <td>{{ Carbon\Carbon::parse($classroom->date)->format('d-m-Y') }}</td>
+                  <td style="display: flex; flex-wrap: wrap;">
+
+                    @if($classroom->statut == "Planifié")
+                    <p style="color: orange;">{{ $classroom->statut }}</p>
+                    @elseif($classroom->statut == "Annulée")
+                    <p style="color: red;">{{ $classroom->statut }}</p>
+                    @else
+                    <p style="color: green;">{{ $classroom->statut }}</p>
+                    @endif
+                    @if($classroom->statut == "Planifié")
+                    <div style="margin-left: 15px;" class="dropdown">
+                      <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                        Action
+                      </button>
+                      <div class="dropdown-menu">
+                        @if($classroom->date <= Carbon\Carbon::now())
+                        <a class="dropdown-item" href="{{ route('classrooms.edit', $classroom) }}">Faire le compte rendu</a><br>
+                        @endif
+                        <a class="dropdown-item" href="{{ route('classrooms.edit', $classroom) }}">Annuler</a>
+                      </div>
+                    </div>
+                    @endif
+
+                  </td>
                 </tr>
                 @endforeach
               </tbody>
@@ -57,6 +82,7 @@
                 <tr>
                   <th>Formateur</th>
                   <th>Date</th>
+                  <th>Statut</th>
                 </tr>
               </thead>
               <tbody>
@@ -64,6 +90,16 @@
                 <tr>
                   <td><a href="{{url('users', $classroom->user_id)}}">{{$classroom->formateur}}</a></td>
                   <td>{{ Carbon\Carbon::parse($classroom->date)->format('d-m-Y') }}</td>
+                  <td style="display: flex; flex-wrap: wrap;">
+
+                    @if($classroom->statut == "Planifié")
+                    <p style="color: orange;">{{ $classroom->statut }}</p>
+                    @elseif($classroom->statut == "Annulée")
+                    <p style="color: red;">{{ $classroom->statut }}</p>
+                    @else
+                    <p style="color: green;">{{ $classroom->statut }}</p>
+                    @endif
+                  </td>
                 </tr>
                 @endforeach
               </tbody>

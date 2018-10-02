@@ -38,11 +38,11 @@ class ClassroomController extends Controller
     public function create(Request $request)
     {
         if (Auth::check() && Auth::user()->isTeacher()) {
-          return view('classrooms.create');
+          return view('classrooms.ajouter');
         }
         else {
           return redirect('home');
-        } 
+        }
 
     }
 
@@ -69,6 +69,7 @@ class ClassroomController extends Controller
         //
     }
 
+
     /**
      * Show the form for editing the specified resource.
      *
@@ -77,7 +78,7 @@ class ClassroomController extends Controller
      */
     public function edit(Classroom $classroom)
     {
-        //
+        return view('classrooms.edit', ['classroom' => $classroom]);
     }
 
     /**
@@ -89,7 +90,8 @@ class ClassroomController extends Controller
      */
     public function update(Request $request, Classroom $classroom)
     {
-        //
+        $classroom->update($request->all());
+        return redirect('home')->with('status', 'Vos informations ont bien été entregistrées !');
     }
 
     /**

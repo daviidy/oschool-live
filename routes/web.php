@@ -49,6 +49,14 @@ Route::post('/envoi', 'AchatController@envoi')->name('envoi');
 
 Route::post('/notify', 'AchatController@notify')->name('notify');
 
+/*
+route pour les sessions ou classrooms
+*/
+
+Route::get('/valider/{classroom}', 'ClassroomController@valider')->name('validerClassroom');
+
+Route::get('/annuler/{classroom}', 'ClassroomController@annuler')->name('annulerClassroom');
+
 Route::get('/valider/{progression}', 'ProgressionController@valider')->name('valider');
 
 Route::get('/programme', 'ProgressionController@programme')->name('programme');
