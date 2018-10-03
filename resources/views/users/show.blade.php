@@ -171,7 +171,7 @@
                            <tr>
                              <th>Section</th>
                              <th>Chapitre</th>
-                             <th>Statut</th> 
+                             <th>Statut</th>
                            </tr>
                          </thead>
                          <tbody>
@@ -217,14 +217,53 @@
                            <tr>
                              <th>Formateur</th>
                              <th>Date</th>
+                             <th>Statut</th>
                            </tr>
                          </thead>
                          <tbody>
                            @foreach($classroomsstudents as $classroom)
                            <tr>
-                             <td><a href="{{url('users', $classroom->user_id)}}">{{$classroom->formateur}}</a></td>
-                             <td>{{ Carbon\Carbon::parse($classroom->date)->format('d-m-Y') }}</td>
+                             <td><a href="{{url('users', $classroom->idEtudiant)}}">{{$classroom->etudiant}}</a></td>
+                             <td> <a data-toggle="modal" data-target="#myModal{{$classroom->id}}" href="#">{{ Carbon\Carbon::parse($classroom->date)->format('d-m-Y H:i') }}</a></td>
+                             <td style="display: flex; flex-wrap: wrap;">
+
+                               @if($classroom->statut == "Planifié")
+                               <p style="color: orange;">{{ $classroom->statut }}</p>
+                               @elseif($classroom->statut == "Annulée")
+                               <p style="color: red;">{{ $classroom->statut }}</p>
+                               @else
+                               <p style="color: green;">{{ $classroom->statut }}</p>
+                               @endif
+                             </td>
                            </tr>
+                           <!-- The Modal -->
+                           <div class="modal fade" id="myModal{{$classroom->id}}">
+                           <div class="modal-dialog">
+                           <div class="modal-content">
+
+                           <!-- Modal Header -->
+                           <div class="modal-header">
+                           <h4 style="font-size: 24px;" class="modal-title">Compte-rendu de la session</h4>
+                           <button type="button" class="close" data-dismiss="modal">&times;</button>
+                           </div>
+
+                           <!-- Modal body -->
+                           <div class="modal-body">
+                             <div class="container">
+                                 {!! $classroom->commentaire !!}
+                             </div>
+                           </div>
+
+                           <!-- Modal footer -->
+                           <div class="modal-footer">
+                           <button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
+                           </div>
+
+                           </div>
+                           </div>
+                           </div>
+
+                           <!--end modal-->
                            @endforeach
                          </tbody>
                          @elseif($user->type == 'teacher')
@@ -238,8 +277,46 @@
                            @foreach($user->sessions as $classroom)
                            <tr>
                              <td><a href="{{url('users', $classroom->idEtudiant)}}">{{$classroom->etudiant}}</a></td>
-                             <td>{{ Carbon\Carbon::parse($classroom->date)->format('d-m-Y') }}</td>
+                             <td> <a data-toggle="modal" data-target="#myModal{{$classroom->id}}" href="#">{{ Carbon\Carbon::parse($classroom->date)->format('d-m-Y H:i') }}</a></td>
+                             <td style="display: flex; flex-wrap: wrap;">
+
+                               @if($classroom->statut == "Planifié")
+                               <p style="color: orange;">{{ $classroom->statut }}</p>
+                               @elseif($classroom->statut == "Annulée")
+                               <p style="color: red;">{{ $classroom->statut }}</p>
+                               @else
+                               <p style="color: green;">{{ $classroom->statut }}</p>
+                               @endif
+                             </td>
                            </tr>
+                           <!-- The Modal -->
+                           <div class="modal fade" id="myModal{{$classroom->id}}">
+                           <div class="modal-dialog">
+                           <div class="modal-content">
+
+                           <!-- Modal Header -->
+                           <div class="modal-header">
+                           <h4 style="font-size: 24px;" class="modal-title">Compte-rendu de la session</h4>
+                           <button type="button" class="close" data-dismiss="modal">&times;</button>
+                           </div>
+
+                           <!-- Modal body -->
+                           <div class="modal-body">
+                             <div class="container">
+                                 {!! $classroom->commentaire !!}
+                             </div>
+                           </div>
+
+                           <!-- Modal footer -->
+                           <div class="modal-footer">
+                           <button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
+                           </div>
+
+                           </div>
+                           </div>
+                           </div>
+
+                           <!--end modal-->
                            @endforeach
                          </tbody>
                          @endif
