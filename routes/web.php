@@ -80,4 +80,6 @@ Route::get('/cours', function () {
 })->name('cours');
 
 
-Route::get('/documents', 'UserController@documents')->name('documents');
+Route::get('/documentsTeacher', 'UserController@documentsTeacher')->name('documentsTeacher');
+
+Route::get('/documentsStudent', 'UserController@documentsStudent')->name('documentsStudent');

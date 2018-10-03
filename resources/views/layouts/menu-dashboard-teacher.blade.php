@@ -165,9 +165,17 @@
           @auth
           @if(Auth::user()->isTeacher() || Auth::user()->isAdmin())
           <li class="mt">
-            <a href="/documents">
+            <a href="/documentsTeacher">
               <i class="fa fa-book"></i>
               <span>Guides formateurs</span>
+              </a>
+          </li>
+          @endif
+          @if(!Auth::user()->isTeacher() || Auth::user()->isAdmin())
+          <li class="mt">
+            <a href="/documentsStudent">
+              <i class="fa fa-book"></i>
+              <span>Guides étudiants</span>
               </a>
           </li>
           @endif

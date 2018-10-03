@@ -7,7 +7,12 @@
 	<!--===============================================================================================-->
 		<link rel="icon" type="image/png" href="/sessions/images/icons/image-profil.png"/>
 	<!--===============================================================================================-->
-		<link rel="stylesheet" type="text/css" href="/sessions/vendor/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote-bs4.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote-bs4.js"></script>
 	<!--===============================================================================================-->
 		<link rel="stylesheet" type="text/css" href="/sessions/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
 	<!--===============================================================================================-->
@@ -28,6 +33,8 @@
 		<link rel="stylesheet" type="text/css" href="/sessions/css/util.css">
 		<link rel="stylesheet" type="text/css" href="/sessions/css/main.css">
 	<!--===============================================================================================-->
+
+
 	</head>
 	<body>
 
@@ -88,8 +95,10 @@
 
 					<div class="wrap-input100 validate-input bg0 rs1-alert-validate" data-validate = "S'il vous plait, veuillez remplir ce champ">
 						<span class="label-input100">Commentaire sur la séance</span>
-						<textarea required class="input100" name="commentaire" placeholder="Faites ici un commentaire de la séance ...."></textarea>
+						<textarea id="summernote" required class="input100" name="commentaire" placeholder="Faites ici un commentaire de la séance ...."></textarea>
 					</div>
+
+					<textarea name="editordata"></textarea>
 
 
 
@@ -111,14 +120,26 @@
 
 
 	<!--===============================================================================================-->
-		<script src="/sessions/vendor/jquery/jquery-3.2.1.min.js"></script>
 	<!--===============================================================================================-->
 		<script src="/sessions/vendor/animsition/js/animsition.min.js"></script>
 	<!--===============================================================================================-->
-		<script src="/sessions/vendor/bootstrap/js/popper.js"></script>
-		<script src="/sessions/vendor/bootstrap/js/bootstrap.min.js"></script>
+
 	<!--===============================================================================================-->
 		<script src="/sessions/vendor/select2/select2.min.js"></script>
+
+		<script type="text/javascript">
+
+		$(document).ready(function(){
+
+			$('#summernote').summernote({
+	        placeholder: 'Faites un commentaire sur la séance (ce qui a été fait, ce qui reste à faire.....ou la raison de l\'annulation de la séance...)',
+	        tabsize: 2,
+	        height: 300
+	      });
+
+		});
+
+		</script>
 
 		<script>
 		$(".js-select3").each(function(){

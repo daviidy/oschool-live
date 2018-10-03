@@ -42,10 +42,22 @@ class UserController extends Controller
 
     //montrer les guides formateurs aux formateurs
 
-    public function documents()
+    public function documentsTeacher()
     {
       if (Auth::user()->isTeacher() || Auth::user()->isAdmin()) {
-        return view('users.doc');
+        return view('users.docTeacher');
+      }
+      else {
+        return redirect('home');
+      }
+    }
+
+    //montrer les guides étudiants aux étudiants
+
+    public function documentsStudent()
+    {
+      if (!Auth::user()->isTeacher() || Auth::user()->isAdmin()) {
+        return view('users.docStudent');
       }
       else {
         return redirect('home');

@@ -22,7 +22,7 @@
           <a href="#" class="pull-right btn btn-theme02">+ Formez-vous avec Oschool</a>
           <div class="room-box">
             <h5 class="text-primary"><a target="_blank" href="https://oschool.ci/wp-content/uploads/2018/09/guide-formateurs-tele-presentiel.pdf">Guide formateurs (format PDF)</a></h5>
-            <p>Il faut absolument lire ce guide popur savoir comment devenir formateur Oschool,
+            <p>Il faut absolument lire ce guide pour savoir comment devenir formateur Oschool,
               et prendre en main son premier étudiant</p>
             <p><span class="text-muted"> <a target="_blank" href="https://oschool.ci/wp-content/uploads/2018/09/guide-formateurs-tele-presentiel.pdf">Télécharger le guide</a> </span></p>
           </div>

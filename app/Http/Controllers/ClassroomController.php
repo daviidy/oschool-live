@@ -107,6 +107,33 @@ class ClassroomController extends Controller
     public function update(Request $request, Classroom $classroom)
     {
         $classroom->update($request->all());
+
+        $detail=$request->commentaire;
+
+        $dom = new \domdocument();
+        $dom->loadHtml($detail, LIBXML_HTML_NOIMPLIED | LIBXML_HTML_NODEFDTD);
+
+        $images = $dom->getelementsbytagname('img');
+
+        foreach($images as $k => $img){
+            $data = $img->getattribute('src');
+
+            list($type, $data) = explode(';', $data);
+            list(, $data)      = explode(',', $data);
+
+            $data = base64_decode($data);
+            $image_name= time().$k.'.png';
+            $path = public_path() .'/img/classrooms/'. $image_name;
+
+            file_put_contents($path, $data);
+
+            $img->removeattribute('src');
+            $img->setattribute('src', '/img/classrooms/'. $image_name);
+        }
+
+        $detail = $dom->savehtml();
+        $classroom->commentaire = $detail;
+        $classroom->save();
         return redirect('home')->with('status', 'Vos informations ont bien été entregistrées !');
     }
 
