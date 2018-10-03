@@ -30,14 +30,14 @@
     <tr>
       <td style="padding: 20px 7.5% 0;"> Voici les infos de l'étudiant <br>
         Nom d'utilisateur: <strong>{{$user->name}}</strong> <br>
-        Nom d'utilisateur: <strong>{{$user->email}}</strong> <br>
+        Email: <strong>{{$user->email}}</strong> <br>
       </td>
     </tr>
 
     <tr>
       <td style="padding: 20px 7.5% 0;">
         Merci de le contacter dans les 48 heures maximum qui suivent la réception de ce mail. Nous espérons que vous aiderez cet étudiant à atteindre ses objectifs<br>
-        <a href="{{url('users', $user)}}">Consultez le profil du formateur</a><br>
+        <a href="{{url('users', $user)}}">Consultez le profil de l'étudiant</a><br>
         <a href="https://code.oschool.ci/cours">Voir nos différents parcours</a><br>
       </td>
     </tr>
