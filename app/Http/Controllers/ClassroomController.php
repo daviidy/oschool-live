@@ -55,7 +55,13 @@ class ClassroomController extends Controller
      */
     public function store(Request $request)
     {
-      $classroom = Classroom::create($request->all());
+      $classroom = Classroom::create([
+                        'date' => $request->date,
+                        'formateur' => $request->formateur,
+                        'user_id' => $request->user_id,
+                        'etudiant' => $request->etudiant,
+                        'idEtudiant' => $request->idEtudiant
+                      ]);
 
       $user = User::find($request['idEtudiant']);
 
