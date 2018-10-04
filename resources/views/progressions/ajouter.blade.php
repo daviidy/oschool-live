@@ -42,7 +42,7 @@
 						<span class="label-input100">De quelle formation s'agit-il ?</span>
 						<div>
 							<select class="js-select3" name="formation">
-								@foreach(Auth::user()->formation as $formation)
+								@foreach(Auth::user()->formations as $formation)
 							    <option value="{{ $formation->nom }}">{{ $formation->nom }}</option>
 								@endforeach
 							</select>
