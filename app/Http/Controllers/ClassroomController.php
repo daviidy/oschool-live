@@ -55,13 +55,21 @@ class ClassroomController extends Controller
      */
     public function store(Request $request)
     {
-      $classroom = Classroom::create([
-                        'date' => $request->date,
-                        'formateur' => $request->formateur,
-                        'user_id' => $request->user_id,
-                        'etudiant' => $request->etudiant,
-                        'idEtudiant' => $request->idEtudiant
-                      ]);
+      if($request->filled('commentaire') ){
+
+      $classroom = Classroom::create($request->all());
+
+      }
+      else {
+        $classroom = Classroom::create([
+                          'date' => $request->date,
+                          'formateur' => $request->formateur,
+                          'user_id' => $request->user_id,
+                          'etudiant' => $request->etudiant,
+                          'idEtudiant' => $request->idEtudiant
+                        ]);
+      }
+
 
       $user = User::find($request['idEtudiant']);
 
@@ -77,7 +85,7 @@ class ClassroomController extends Controller
         $message->from('eventsoschool@gmail.com', 'Oschool');
       });
 
-      return redirect('home')->with('status', 'La session a bien été créée. Rendez-vous dans la progression de l\'étudiant pour marquer ses progrès');
+      return redirect('classrooms')->with('status', 'La session a bien été créée. Rendez-vous dans la progression de l\'étudiant pour marquer ses progrès');
     }
 
     /**
@@ -140,7 +148,7 @@ class ClassroomController extends Controller
         $detail = $dom->savehtml();
         $classroom->commentaire = $detail;
         $classroom->save();
-        return redirect('home')->with('status', 'Vos informations ont bien été entregistrées !');
+        return redirect('classrooms')->with('status', 'Vos informations ont bien été entregistrées !');
     }
 
     /**

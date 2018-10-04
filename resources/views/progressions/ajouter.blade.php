@@ -325,7 +325,7 @@
 
 					<div class="wrap-contact100-form-radio">
 						<div class="contact100-form-radio m-t-15">
-							<input class="input-radio100" id="radio4" type="radio" name="statut" value="physical" checked="checked">
+							<input class="input-radio100" id="radio4" type="radio" name="statut" value="A revoir" checked="checked">
 							<label class="label-radio100" for="radio4">
 								A revoir
 							</label>
@@ -333,12 +333,6 @@
 					</div>
 
 					<!--FIN SECTION DES ETUDIANTS A COCHER ET DES STATUTS-->
-
-
-					<div class="wrap-input100 validate-input bg0 rs1-alert-validate" data-validate = "S'il vous plait, veuillez taper votre massage">
-						<span class="label-input100">Message</span>
-						<textarea class="input100" name="message" placeholder="Faites ici un commentaire ...."></textarea>
-					</div>
 
 					<div class="container-contact100-form-btn">
 						<button class="contact100-form-btn">
