@@ -15,7 +15,7 @@
 <link rel="stylesheet" type="text/css" href="/new/styles/main_styles.css">
 <link rel="stylesheet" type="text/css" href="/new/styles/responsive.css">
 @endif
-@if(Request::path() == 'devweb')
+@if(Request::path() == 'devweb' || Request::path() == 'trading' || Request::path() == 'web-design' || Request::path() == 'front-end' || Request::path() == 'dev-mobile' || Request::path() == 'social-media' || Request::path() == 'blog' || Request::path() == 'jeux-videos')
 <link rel="stylesheet" type="text/css" href="/new/styles/course.css">
 <link rel="stylesheet" type="text/css" href="/new/styles/course_responsive.css">
 @endif
@@ -47,13 +47,9 @@
 										<span class="top_bar_title">langue du site:</span>
 										<ul class="lang_list">
 											<li class="hassubs">
-												<a href="#">English<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+												<a href="#">Francais<i class="fa fa-angle-down" aria-hidden="true"></i></a>
 												<ul>
-													<li><a href="#">Ukrainian</a></li>
-													<li><a href="#">Japanese</a></li>
-													<li><a href="#">Lithuanian</a></li>
-													<li><a href="#">Swedish</a></li>
-													<li><a href="#">Italian</a></li>
+													<li><a href="#">English</a></li>
 												</ul>
 											</li>
 										</ul>
@@ -205,7 +201,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 @if(Request::path() == '/')
 <script src="/new/js/custom.js"></script>
 @endif
-@if(Request::path() == 'devweb')
+@if(Request::path() == 'devweb' || Request::path() == 'trading' || Request::path() == 'web-design' || Request::path() == 'front-end' || Request::path() == 'dev-mobile' || Request::path() == 'social-media' || Request::path() == 'blog' || Request::path() == 'jeux-videos')
 <script src="/new/plugins/parallax-js-master/parallax.min.js"></script>
 <script src="/new/plugins/progressbar/progressbar.min.js"></script>
 <script src="/new/js/course.js"></script>
