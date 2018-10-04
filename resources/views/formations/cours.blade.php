@@ -168,7 +168,7 @@
           <div class="course_footer d-flex flex-row align-items-center justify-content-start">
             <div class="course_students"><i class="fa fa-user" aria-hidden="true"></i><span>10</span></div>
             <div class="course_rating ml-auto"><i class="fa fa-star" aria-hidden="true"></i><span>4,5</span></div>
-            <div class="course_mark course_free trans_200"><a href="#">Certifié</a></div>
+            <div class="course_mark trans_200"><a href="#">Bientôt</a></div>
           </div>
         </div>
       </div>
@@ -178,7 +178,7 @@
         <div class="course">
           <div class="course_image"><img src="/new/images/cours/webmobile.png" alt=""></div>
           <div class="course_body">
-            <div class="course_title"><a href="#">Développeur d'applications mobiles</a></div>
+            <div class="course_title"><a href="{{url('dev-mobile')}}">Développeur d'applications mobiles</a></div>
             <div class="course_info">
               <ul>
                 <li><a href="#">Programmation et développement</a></li>
@@ -186,13 +186,13 @@
               </ul>
             </div>
             <div class="course_text">
-              <p>Avec Ionic, vous allez pouvoir profiter de vos connaissances du développement Angular pour développer des applications mobiles multi-plateformes.</p>
+              <p>Avec Flutter, vous allez pouvoir profiter de vos connaissances du développement Angular pour développer des applications mobiles multi-plateformes.</p>
             </div>
           </div>
           <div class="course_footer d-flex flex-row align-items-center justify-content-start">
             <div class="course_students"><i class="fa fa-user" aria-hidden="true"></i><span>10</span></div>
             <div class="course_rating ml-auto"><i class="fa fa-star" aria-hidden="true"></i><span>4,5</span></div>
-            <div class="course_mark course_free trans_200"><a href="#">Bientôt</a></div>
+            <div class="course_mark course_free trans_200"><a href="#">Certifié</a></div>
           </div>
         </div>
       </div>
@@ -201,7 +201,7 @@
         <div class="course">
           <div class="course_image"><img src="/new/images/cours/finance.png" alt=""></div>
           <div class="course_body">
-            <div class="course_title"><a href="#">Apprenez à investisser en bourse</a></div>
+            <div class="course_title"><a href="{{url('trading')}}">Apprenez le trading</a></div>
             <div class="course_info">
               <ul>
                 <li><a href="#">Finance</a></li>
@@ -226,7 +226,7 @@
         <div class="course">
           <div class="course_image"><img src="/new/images/cours/frontend.png" alt=""></div>
           <div class="course_body">
-            <div class="course_title"><a href="#">Développeur front-end</a></div>
+            <div class="course_title"><a href="{{url('front-end')}}">Développeur front-end</a></div>
             <div class="course_info">
               <ul>
                 <li><a href="#">Programmation et développement</a></li>
@@ -250,7 +250,7 @@
         <div class="course">
           <div class="course_image"><img src="/new/images/cours/jeux.png" alt=""></div>
           <div class="course_body">
-            <div class="course_title"><a href="#">Développeur de jeux vidéos</a></div>
+            <div class="course_title"><a href="{{url('jeux-videos')}}">Développeur de jeux vidéos</a></div>
             <div class="course_info">
               <ul>
                 <li><a href="#">Programmation et développement</a></li>
@@ -274,7 +274,7 @@
         <div class="course">
           <div class="course_image"><img src="/new/images/cours/socialmedia.png" alt=""></div>
           <div class="course_body">
-            <div class="course_title"><a href="#">Certification Social Media</a></div>
+            <div class="course_title"><a href="{{url('social-media')}}">Certification Social Media</a></div>
             <div class="course_info">
               <ul>
                 <li><a href="#">Web Marketing</a></li>
@@ -288,7 +288,7 @@
           <div class="course_footer d-flex flex-row align-items-center justify-content-start">
             <div class="course_students"><i class="fa fa-user" aria-hidden="true"></i><span>10</span></div>
             <div class="course_rating ml-auto"><i class="fa fa-star" aria-hidden="true"></i><span>4,5</span></div>
-            <div class="course_mark course_free trans_200"><a href="#">Free</a></div>
+            <div class="course_mark course_free trans_200"><a href="#">Certifié</a></div>
           </div>
         </div>
       </div>
@@ -298,7 +298,7 @@
         <div class="course">
           <div class="course_image"><img src="/new/images/cours/webdesign.png" alt=""></div>
           <div class="course_body">
-            <div class="course_title"><a href="#">Web Design</a></div>
+            <div class="course_title"><a href="{{url('web-design')}}">Web Design</a></div>
             <div class="course_info">
               <ul>
                 <li><a href="#">Programmation et Développement</a></li>
@@ -312,7 +312,7 @@
           <div class="course_footer d-flex flex-row align-items-center justify-content-start">
             <div class="course_students"><i class="fa fa-user" aria-hidden="true"></i><span>10</span></div>
             <div class="course_rating ml-auto"><i class="fa fa-star" aria-hidden="true"></i><span>4,5</span></div>
-            <div class="course_mark course_free trans_200"><a href="#">Free</a></div>
+            <div class="course_mark course_free trans_200"><a href="#">Certifié</a></div>
           </div>
         </div>
       </div>
@@ -322,7 +322,7 @@
         <div class="course">
           <div class="course_image"><img src="/new/images/cours/blog.png" alt=""></div>
           <div class="course_body">
-            <div class="course_title"><a href="#">Devenez blogueur professionnel</a></div>
+            <div class="course_title"><a href="{{url('blog')}}">Devenez blogueur professionnel</a></div>
             <div class="course_info">
               <ul>
                 <li><a href="#">Web Marketing</a></li>
@@ -338,7 +338,7 @@
           <div class="course_footer d-flex flex-row align-items-center justify-content-start">
             <div class="course_students"><i class="fa fa-user" aria-hidden="true"></i><span>10</span></div>
             <div class="course_rating ml-auto"><i class="fa fa-star" aria-hidden="true"></i><span>4,5</span></div>
-            <div class="course_mark course_free trans_200"><a href="#">Free</a></div>
+            <div class="course_mark  trans_200"><a href="#">Bientôt</a></div>
           </div>
         </div>
       </div>

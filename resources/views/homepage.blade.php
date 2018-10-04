@@ -147,22 +147,22 @@
             <div class="course_mark course_free trans_200"><a href="#">Certifié</a></div>
           </div>
         </div>
-      </div>
+      </div> 
 
       <!-- Course -->
       <div class="col-lg-4 course_col">
         <div class="course">
-          <div class="course_image"><img src="/new/images/cours/cm.png" alt=""></div>
+          <div class="course_image"><img src="/new/images/cours/socialmedia.png" alt=""></div>
           <div class="course_body">
-            <div class="course_title"><a href="course.html">Community Manager</a></div>
+            <div class="course_title"><a href="#">Certification Social Media</a></div>
             <div class="course_info">
               <ul>
-                <li><a href="instructors.html">Web Marketing</a></li>
+                <li><a href="#">Web Marketing</a></li>
                 <li><a href="#">4 mois</a></li>
               </ul>
             </div>
             <div class="course_text">
-              <p>Gérer la présence des marques sur les réseaux sociaux</p>
+              <p>Apprenez à définir une stratégie social média, et utilisez les bons outils pour augmenter l'influence des entreprises sur les réseaux sociaux</p>
             </div>
           </div>
           <div class="course_footer d-flex flex-row align-items-center justify-content-start">
@@ -178,21 +178,21 @@
         <div class="course">
           <div class="course_image"><img src="/new/images/cours/webmobile.png" alt=""></div>
           <div class="course_body">
-            <div class="course_title"><a href="course.html">Développeur d'applications mobiles</a></div>
+            <div class="course_title"><a href="#">Développeur d'applications mobiles</a></div>
             <div class="course_info">
               <ul>
-                <li><a href="instructors.html">Programmation et développement</a></li>
+                <li><a href="#">Programmation et développement</a></li>
                 <li><a href="#">4 mois</a></li>
               </ul>
             </div>
             <div class="course_text">
-              <p>Avec Ionic, vous allez pouvoir profiter de vos connaissances du développement Angular pour développer des applications mobiles multi-plateformes.</p>
+              <p>Avec Flutter, vous allez pouvoir profiter de vos connaissances du développement Angular pour développer des applications mobiles multi-plateformes.</p>
             </div>
           </div>
           <div class="course_footer d-flex flex-row align-items-center justify-content-start">
             <div class="course_students"><i class="fa fa-user" aria-hidden="true"></i><span>10</span></div>
             <div class="course_rating ml-auto"><i class="fa fa-star" aria-hidden="true"></i><span>4,5</span></div>
-            <div class="course_mark trans_200"><a href="#">Bientôt</a></div>
+            <div class="course_mark course_free trans_200"><a href="#">Certifié</a></div>
           </div>
         </div>
       </div>

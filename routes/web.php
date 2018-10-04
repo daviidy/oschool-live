@@ -71,6 +71,34 @@ Route::get('/devweb', function () {
     return view('formations.dev-web');
 })->name('devweb');
 
+Route::get('/socialmedia', function () {
+    return view('formations.social-media');
+})->name('social-media');
+
+Route::get('/webdesign', function () {
+    return view('formations.web-design');
+})->name('web-design');
+
+Route::get('/trading', function () {
+    return view('formations.trading');
+})->name('trading');
+
+Route::get('/frontend', function () {
+    return view('formations.front-end');
+})->name('front-end');
+
+Route::get('/devmobile', function () {
+    return view('formations.dev-mobile');
+})->name('dev-mobile');
+
+Route::get('/blog', function () {
+    return view('formations.blog');
+})->name('blog');
+
+Route::get('/jeuxvideos', function () {
+    return view('formations.jeux-videos');
+})->name('jeux-videos');
+
 Route::get('/cours', function () {
     return view('formations.cours');
 })->name('cours');
