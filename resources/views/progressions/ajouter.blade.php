@@ -38,12 +38,15 @@
 				<h2 style="margin: 25px 0px;">Marquer la progression d'un étudiant</h2>
 				<form method="post" enctype="multipart/form-data" action="{{ route('progressions.store') }}" class="contact100-form validate-form">
 					{{ csrf_field() }}
-					<div style="display: none;" class="wrap-input100 input100-select bg1">
-						<span class="label-input100">Formation</span>
+					<div class="wrap-input100 input100-select bg1">
+						<span class="label-input100">De quelle formation s'agit-il ?</span>
 						<div>
-							@foreach(Auth::user()->formations as $formation)
-							<input type="text" name="formation" value="{{$formation->nom}}">
-							@endforeach
+							<select class="js-select3" name="formation">
+								@foreach(Auth::user()->formation as $formation)
+							    <option value="{{ $formation->nom }}">{{ $formation->nom }}</option>
+								@endforeach
+							</select>
+							<div class="dropDownSelect3"></div>
 						</div>
 					</div>
 
