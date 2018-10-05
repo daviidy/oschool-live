@@ -15,7 +15,7 @@
 <link rel="stylesheet" type="text/css" href="/new/styles/main_styles.css">
 <link rel="stylesheet" type="text/css" href="/new/styles/responsive.css">
 @endif
-@if(Request::path() == 'devweb' || Request::path() == 'trading' || Request::path() == 'web-design' || Request::path() == 'front-end' || Request::path() == 'dev-mobile' || Request::path() == 'social-media' || Request::path() == 'blog' || Request::path() == 'jeux-videos')
+@if(Request::path() == 'devweb' || Request::path() == 'trading' || Request::path() == 'webdesign' || Request::path() == 'frontend' || Request::path() == 'devmobile' || Request::path() == 'socialmedia' || Request::path() == 'blog' || Request::path() == 'jeuxvideos')
 <link rel="stylesheet" type="text/css" href="/new/styles/course.css">
 <link rel="stylesheet" type="text/css" href="/new/styles/course_responsive.css">
 @endif
@@ -201,7 +201,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 @if(Request::path() == '/')
 <script src="/new/js/custom.js"></script>
 @endif
-@if(Request::path() == 'devweb' || Request::path() == 'trading' || Request::path() == 'web-design' || Request::path() == 'front-end' || Request::path() == 'dev-mobile' || Request::path() == 'social-media' || Request::path() == 'blog' || Request::path() == 'jeux-videos')
+@if(Request::path() == 'devweb' || Request::path() == 'trading' || Request::path() == 'webdesign' || Request::path() == 'frontend' || Request::path() == 'devmobile' || Request::path() == 'socialmedia' || Request::path() == 'blog' || Request::path() == 'jeuxvideos')
 <script src="/new/plugins/parallax-js-master/parallax.min.js"></script>
 <script src="/new/plugins/progressbar/progressbar.min.js"></script>
 <script src="/new/js/course.js"></script>

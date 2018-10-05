@@ -35,7 +35,7 @@
             <div class="intro_title">Développeur Web Junior</div>
             <div class="intro_meta">
               <div class="intro_image"><img style="width: 129%;"src="/new/images/dave_team.jpeg" alt=""></div>
-              <div class="intro_instructors"><a href="instructors.html">David YAO</a> et <span><a href="#">5 autres formateurs </a></span></div>
+              <div class="intro_instructors">Commence le <span><a href="#">lundi 8 octobre 2018 </a></span></div>
             </div>
           </div>
         </div>
@@ -74,7 +74,7 @@
           <div class="tab_panel description active">
             <div class="panel_title">Début de la prochaine rentrée :</div>
             <div class="panel_text">
-              <p style="color: #2E21DF;margin-bottom: 20px;font-size: 20px;">Jeudi 1er novembre 2018</p>
+              <p style="color: #2E21DF;margin-bottom: 20px;font-size: 20px;">Lundi 8 octobre 2018</p>
 <h2>Qu’est-ce qu’un développeur web junior ?<h2>
 <p>Le développeur web junior est indispensable dans une équipe de développement.
 Il a pour mission de donner vie aux maquettes visuelles d’une application web réalisées souvent
@@ -103,26 +103,6 @@ mais aussi JavaScript et PHP. Il est chargé de :</p>
 </ul>
             </div>
 
-            <!-- Instructors -->
-            <div class="instructors">
-              <div class="panel_title">Formateur(s)</div>
-              <div class="row instructors_row">
-
-                <!-- Instructor -->
-                <div class="col-lg-4 col-md-6">
-                  <div class="instructor d-flex flex-row align-items-center justify-content-start">
-                    <div class="instructor_image"><div><img src="/new/images/dave_team.jpeg" alt=""></div></div>
-                    <div class="instructor_content">
-                      <div class="instructor_name"><a href="instructors.html">David YAO</a></div>
-                      <div class="instructor_title">Développeur web</div>
-                    </div>
-                  </div>
-                </div>
-
-
-
-              </div>
-            </div>
 
             <!-- FAQs -->
             <div class="faqs">
@@ -134,14 +114,14 @@ mais aussi JavaScript et PHP. Il est chargé de :</p>
                   <div class="accordion_container">
                     <div class="accordion d-flex flex-row align-items-center active"><div>Combien coûte la formation ?</div></div>
                     <div class="accordion_panel">
-                      <p>30.000 FCFA par mois sur 4 mois (durée de la formation), payables en ligne.</p>
+                      <p>30.000 FCFA par mois, payables en ligne.</p>
                     </div>
                   </div>
 
                   <div class="accordion_container">
                     <div class="accordion d-flex flex-row align-items-center"><div>Quelle est la politique de remboursement ?</div></div>
                     <div class="accordion_panel">
-                      <p>Elle se base sur la garntie de satisfaction inconditionnelle de 14 jours. Ce qui veut dire qu'au bout de
+                      <p>Elle se base sur la garantie de satisfaction inconditionnelle de 14 jours. Ce qui veut dire qu'au bout de
                       14 jours, si vous n'êtes pas satisfait de la formation et sans avoir à en donner les raisons, nous vous
                     remboursons votre argent.</p>
                     </div>
@@ -151,7 +131,7 @@ mais aussi JavaScript et PHP. Il est chargé de :</p>
                     <div class="accordion d-flex flex-row align-items-center"><div>Quels sont les prérequis ?</div></div>
                     <div class="accordion_panel">
                       <p>Même si une connaissance en informatique serait l'idéal, il n'est pas nécessaire
-                        de s'y connaitre pour entrer dans la fprmation <br> Par contre, il faut un ordinateru (bureau ou portable)
+                        de s'y connaitre pour entrer dans la formation <br> Par contre, il faut un ordinateru (bureau ou portable)
                       et une connexion Internet. <br> De plus, il faut être quelqu'un de sérieux et déterminé. Voilà pourquoi Oschool
                     enlèvera du parcours, tout étudiant présentant de freéquentes absences et un manque évident de motivation. </p>
                     </div>
@@ -726,7 +706,6 @@ freelance.
                     <div class="like_title"> <a href="https://oschool.ci/course/formation-complete-developpeur-web-2/" target="_blank">Devenez développeur web en partant de zéro</a> </div>
                     <div class="like_subtitle">Par Oschool</div>
                   </div>
-                  <div class="like_price ml-auto">20.000 FCFA</div>
                 </div>
 
               </div>

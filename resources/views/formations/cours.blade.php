@@ -178,7 +178,7 @@
         <div class="course">
           <div class="course_image"><img src="/new/images/cours/webmobile.png" alt=""></div>
           <div class="course_body">
-            <div class="course_title"><a href="{{url('dev-mobile')}}">Développeur d'applications mobiles</a></div>
+            <div class="course_title"><a href="{{url('devmobile')}}">Développeur d'applications mobiles</a></div>
             <div class="course_info">
               <ul>
                 <li><a href="#">Programmation et développement</a></li>
@@ -226,7 +226,7 @@
         <div class="course">
           <div class="course_image"><img src="/new/images/cours/frontend.png" alt=""></div>
           <div class="course_body">
-            <div class="course_title"><a href="{{url('front-end')}}">Développeur front-end</a></div>
+            <div class="course_title"><a href="{{url('frontend')}}">Développeur front-end</a></div>
             <div class="course_info">
               <ul>
                 <li><a href="#">Programmation et développement</a></li>
@@ -250,7 +250,7 @@
         <div class="course">
           <div class="course_image"><img src="/new/images/cours/jeux.png" alt=""></div>
           <div class="course_body">
-            <div class="course_title"><a href="{{url('jeux-videos')}}">Développeur de jeux vidéos</a></div>
+            <div class="course_title"><a href="{{url('jeuxvideos')}}">Développeur de jeux vidéos</a></div>
             <div class="course_info">
               <ul>
                 <li><a href="#">Programmation et développement</a></li>
@@ -274,7 +274,7 @@
         <div class="course">
           <div class="course_image"><img src="/new/images/cours/socialmedia.png" alt=""></div>
           <div class="course_body">
-            <div class="course_title"><a href="{{url('social-media')}}">Certification Social Media</a></div>
+            <div class="course_title"><a href="{{url('socialmedia')}}">Certification Social Media</a></div>
             <div class="course_info">
               <ul>
                 <li><a href="#">Web Marketing</a></li>
@@ -298,7 +298,7 @@
         <div class="course">
           <div class="course_image"><img src="/new/images/cours/webdesign.png" alt=""></div>
           <div class="course_body">
-            <div class="course_title"><a href="{{url('web-design')}}">Web Design</a></div>
+            <div class="course_title"><a href="{{url('webdesign')}}">Web Design</a></div>
             <div class="course_info">
               <ul>
                 <li><a href="#">Programmation et Développement</a></li>

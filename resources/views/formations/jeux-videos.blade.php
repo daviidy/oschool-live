@@ -13,7 +13,7 @@
           <ul class="breadcrumbs_list d-flex flex-row align-items-center justify-content-start">
             <li><a href="/">accueil</a></li>
             <li><a href="/cours">cours</a></li>
-            <li>social média</li>
+            <li>jeux vidéos</li>
           </ul>
         </div>
       </div>
@@ -24,7 +24,7 @@
 <!-- Intro -->
 
 <div class="intro">
-  <div class="intro_background parallax-window" data-parallax="scroll" data-image-src="/new/images/cours/devweb.png" data-speed="0.8"></div>
+  <div class="intro_background parallax-window" data-parallax="scroll" data-image-src="/new/images/cours/jeux.png" data-speed="0.8"></div>
   <div class="container">
     <div class="row">
       <div class="col">
@@ -32,7 +32,7 @@
           <div class="intro_content">
             <div class="intro_price">Certifié</div>
             <div class="rating_r rating_r_4 intro_rating"><i></i><i></i><i></i><i></i><i></i></div>
-            <div class="intro_title">Développeur Web Junior</div>
+            <div class="intro_title">Développeur.euse de Jeux Vidéos Unity</div>
             <div class="intro_meta">
               <div class="intro_image"><img style="width: 129%;"src="/new/images/dave_team.jpeg" alt=""></div>
               <div class="intro_instructors"><a href="instructors.html">David YAO</a> et <span><a href="#">5 autres formateurs </a></span></div>
@@ -74,54 +74,25 @@
           <div class="tab_panel description active">
             <div class="panel_title">Début de la prochaine rentrée :</div>
             <div class="panel_text">
-              <p style="color: #2E21DF;margin-bottom: 20px;font-size: 20px;">Jeudi 1er novembre 2018</p>
-<h2>Qu’est-ce qu’un développeur web junior ?<h2>
-<p>Le développeur web junior est indispensable dans une équipe de développement.
-Il a pour mission de donner vie aux maquettes visuelles d’une application web réalisées souvent
-par le graphiste ou l’UX Designer.
-Il doit traduire, en langage web, ses recommandations graphiques en rédigeant du code HTML, CSS,
-mais aussi JavaScript et PHP. Il est chargé de :</p>
+              <p style="color: #2E21DF;margin-bottom: 20px;font-size: 20px;">Lundi 8 octobre 2018</p>
+<h2>Pourquoi suivre cette formation ?<h2>
+<p>ous avez toujours eu envie de créer un jeu vidéo sans jamais oser vous lancer ? Ce cours est fait pour vous.
 
-<ul>
-<li> <p>- assembler les pages en HTML5 et CSS3 à partir de maquettes graphiques</p> </li>
-<li> <p>- intégrer des contenus textes, images, sons, vidéos dans le code HTML5</p> </li>
-<li> <p>- respecter les normes d’accessibilité et de référencement du W3C</p> </li>
-<li> <p>- assurer la compatibilité avec les différents navigateurs du marché</p> </li>
-<li> <p>- mettre en place une communication entre client et serveur avec JavaScript et PHP</p> </li>
-<li> <p>- organiser et gérer la base de données</p> </li>
-</ul>
+Unity est un logiciel très puissant, et vous allez apprendre à l’utiliser sans toucher une ligne de code !
+
+En position de game/level designer, vous exploiterez les possibilités d’Unity pour concevoir votre premier jeu vidéo,
+un petit plateformer en vue subjective, un peu à la Deadcore. Vous pourrez même en faire une version desktop,
+mais aussi iOS et Android… !
+
+Ce pas à pas de prise en main d’Unity, pour une fois en français, vous donnera toutes les clés pour commencer !</p>
+
 
 <h2>Ce que vous serez capable de faire<h2>
 
 <ul>
-<li> <p>- développer des sites comme Facebook, Airbnb, Netflix, Jumia etc.</p> </li>
-<li> <p>- gérer les comptes utilisateurs</p> </li>
-<li> <p>- faire réagir la page web en fonction des actions de l’utilisateur en JavaScript</p> </li>
-<li> <p>- monter rapidement des sites web avec Wordpress</p> </li>
-<li> <p>- créer, gérer et afficher le contenu d’une base de données</p> </li>
-<li> <p>- adapter l'apparence d'un site web sur n'importe quel type d'écran</p> </li>
+<li> <p>- développer des jeux vidéos pour Windows, ou Android avec Unity</p> </li>
+
 </ul>
-            </div>
-
-            <!-- Instructors -->
-            <div class="instructors">
-              <div class="panel_title">Formateur(s)</div>
-              <div class="row instructors_row">
-
-                <!-- Instructor -->
-                <div class="col-lg-4 col-md-6">
-                  <div class="instructor d-flex flex-row align-items-center justify-content-start">
-                    <div class="instructor_image"><div><img src="/new/images/dave_team.jpeg" alt=""></div></div>
-                    <div class="instructor_content">
-                      <div class="instructor_name"><a href="instructors.html">David YAO</a></div>
-                      <div class="instructor_title">Développeur web</div>
-                    </div>
-                  </div>
-                </div>
-
-
-
-              </div>
             </div>
 
             <!-- FAQs -->
@@ -134,14 +105,14 @@ mais aussi JavaScript et PHP. Il est chargé de :</p>
                   <div class="accordion_container">
                     <div class="accordion d-flex flex-row align-items-center active"><div>Combien coûte la formation ?</div></div>
                     <div class="accordion_panel">
-                      <p>30.000 FCFA par mois sur 4 mois (durée de la formation), payables en ligne.</p>
+                      <p>30.000 FCFA par mois sur 4 mois, payables en ligne.</p>
                     </div>
                   </div>
 
                   <div class="accordion_container">
                     <div class="accordion d-flex flex-row align-items-center"><div>Quelle est la politique de remboursement ?</div></div>
                     <div class="accordion_panel">
-                      <p>Elle se base sur la garntie de satisfaction inconditionnelle de 14 jours. Ce qui veut dire qu'au bout de
+                      <p>Elle se base sur la garantie de satisfaction inconditionnelle de 14 jours. Ce qui veut dire qu'au bout de
                       14 jours, si vous n'êtes pas satisfait de la formation et sans avoir à en donner les raisons, nous vous
                     remboursons votre argent.</p>
                     </div>
@@ -151,7 +122,7 @@ mais aussi JavaScript et PHP. Il est chargé de :</p>
                     <div class="accordion d-flex flex-row align-items-center"><div>Quels sont les prérequis ?</div></div>
                     <div class="accordion_panel">
                       <p>Même si une connaissance en informatique serait l'idéal, il n'est pas nécessaire
-                        de s'y connaitre pour entrer dans la fprmation <br> Par contre, il faut un ordinateru (bureau ou portable)
+                        de s'y connaitre pour entrer dans la fàrmation <br> Par contre, il faut un ordinateru (bureau ou portable)
                       et une connexion Internet. <br> De plus, il faut être quelqu'un de sérieux et déterminé. Voilà pourquoi Oschool
                     enlèvera du parcours, tout étudiant présentant de freéquentes absences et un manque évident de motivation. </p>
                     </div>
@@ -188,26 +159,15 @@ mais aussi JavaScript et PHP. Il est chargé de :</p>
                   <div class="cur_contents">
                     <ul>
                       <li>
-                        <i class="fa fa-folder" aria-hidden="true"></i><span>Partie 0: Découvrir le développement web</span>
-                        <ul>
-
-                          <li class="d-flex flex-row align-items-center justify-content-start">
-                            <i class="fa fa-file" aria-hidden="true"></i><span>Section 1: Bienvenue !<a href="#"></a></span>
-                            <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
-                          </li>
-                          <li class="d-flex flex-row align-items-center justify-content-start">
-                            <i class="fa fa-file" aria-hidden="true"></i><span>Section 2: Comment fonctionne le web ?<a href="#"></a></span>
-                            <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
-                          </li>
-                        </ul>
+                        <i class="fa fa-folder" aria-hidden="true"></i><span>Partie 0: Engagez-vous à réussir votre formation</span>
                       </ul>
                   </div>
                 </div>
               </div>
               <div class="cur_item">
                 <div class="cur_title_container d-flex flex-row align-items-start justify-content-start">
-                  <div class="cur_title">Semaine 2</div>
-                  <div class="cur_num ml-auto">2/12</div>
+                  <div class="cur_title">Semaine 2 à 3</div>
+                  <div class="cur_num ml-auto">2-3/12</div>
                 </div>
                 <div class="cur_item_content">
                   <div class="cur_item_title"></div>
@@ -217,53 +177,8 @@ mais aussi JavaScript et PHP. Il est chargé de :</p>
                   <div class="cur_contents">
                     <ul>
                       <li>
-                        <i class="fa fa-folder" aria-hidden="true"></i><span>Partie 1: Apprendre HTML et CSS</span>
-                        <ul>
-
-                          <li class="d-flex flex-row align-items-center justify-content-start">
-                            <i class="fa fa-file" aria-hidden="true"></i><span>Section 1: HTML: structure d'un site web
-                              <a href="#"></a></span>
-                            <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
-                          </li>
-                          <li class="d-flex flex-row align-items-center justify-content-start">
-                            <i class="fa fa-file" aria-hidden="true"></i><span>Section 2: Un regard plus attentif sur CSS (Projet à réaliser en classe: présentation livre)<a href="#"></a></span>
-                            <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
-                          </li>
-                        </ul>
+                        <i class="fa fa-folder" aria-hidden="true"></i><span>Partie 1: Les étapes à connaître pour commencer sur Unity</span>
                       </li>
-
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="cur_item">
-                <div class="cur_title_container d-flex flex-row align-items-start justify-content-start">
-                  <div class="cur_title">Semaine 3</div>
-                  <div class="cur_num ml-auto">3/12</div>
-                </div>
-                <div class="cur_item_content">
-                  <div class="cur_item_title"></div>
-                  <div class="cur_item_text">
-
-                  </div>
-                  <div class="cur_contents">
-                    <ul>
-                      <li>
-                        <i class="fa fa-folder" aria-hidden="true"></i><span>Partie 1: Apprendre HTML et CSS</span>
-                        <ul>
-
-                          <li class="d-flex flex-row align-items-center justify-content-start">
-                            <i class="fa fa-file" aria-hidden="true"></i><span>Section 3: Bordures et espaces (Projet à réaliser en classe: la galerie d’amour)<a href="#"></a></span>
-                            <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
-                          </li>
-                          <li class="d-flex flex-row align-items-center justify-content-start">
-                            <i class="fa fa-file" aria-hidden="true"></i>Section 4: Construire avec bootstrap (Projet à réaliser en classe: maison des artisans)<span><a href="#"></a></span>
-                            <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
-                          </li>
-
-                        </ul>
-                      </li>
-
                     </ul>
                   </div>
                 </div>
@@ -281,19 +196,8 @@ mais aussi JavaScript et PHP. Il est chargé de :</p>
                   <div class="cur_contents">
                     <ul>
                       <li>
-                        <i class="fa fa-folder" aria-hidden="true"></i><span>Partie 2: Apprendre Javascript</span>
-                        <ul>
+                        <i class="fa fa-folder" aria-hidden="true"></i><span>Partie 2: A propos du Logiciel pour coder</span>
 
-                          <li class="d-flex flex-row align-items-center justify-content-start">
-                            <i class="fa fa-file" aria-hidden="true"></i><span>Section 1: Créez un site web interactif: faire un menu déroulant <a href="#"></a></span>
-                            <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>15 minutes</span></div>
-                          </li>
-                          <li class="d-flex flex-row align-items-center justify-content-start">
-                            <i class="fa fa-file" aria-hidden="true"></i><span>Section 2: Site Web interactif: Menu coulissant<a href="#"></a></span>
-                            <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
-                          </li>
-
-                        </ul>
                       </li>
 
                     </ul>
@@ -303,6 +207,27 @@ mais aussi JavaScript et PHP. Il est chargé de :</p>
               <div class="cur_item">
                 <div class="cur_title_container d-flex flex-row align-items-start justify-content-start">
                   <div class="cur_title">Semaine 5</div>
+                  <div class="cur_num ml-auto">4/12</div>
+                </div>
+                <div class="cur_item_content">
+                  <div class="cur_item_title"></div>
+                  <div class="cur_item_text">
+
+                  </div>
+                  <div class="cur_contents">
+                    <ul>
+                      <li>
+                        <i class="fa fa-folder" aria-hidden="true"></i><span>Partie 3: Présentation des modules dans Unity</span>
+
+                      </li>
+
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="cur_item">
+                <div class="cur_title_container d-flex flex-row align-items-start justify-content-start">
+                  <div class="cur_title">Semaine 6</div>
                   <div class="cur_num ml-auto">5/12</div>
                 </div>
                 <div class="cur_item_content">
@@ -313,19 +238,7 @@ mais aussi JavaScript et PHP. Il est chargé de :</p>
                   <div class="cur_contents">
                     <ul>
                       <li>
-                        <i class="fa fa-folder" aria-hidden="true"></i><span>Partie 2: Apprendre Javascript</span>
-                        <ul>
-
-                          <li class="d-flex flex-row align-items-center justify-content-start">
-                            <i class="fa fa-file" aria-hidden="true"></i><span>Section 3: Javascript: les bases<a href="#"></a></span>
-                            <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
-                          </li>
-                          <li class="d-flex flex-row align-items-center justify-content-start">
-                            <i class="fa fa-file" aria-hidden="true"></i><span>Section 4: Les événements <a href="#"></a></span>
-                            <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
-                          </li>
-
-                        </ul>
+                        <i class="fa fa-folder" aria-hidden="true"></i><span>Partie 4: Comment compiler son jeu et le tester</span>
                       </li>
 
                     </ul>
@@ -334,7 +247,7 @@ mais aussi JavaScript et PHP. Il est chargé de :</p>
               </div>
               <div class="cur_item">
                 <div class="cur_title_container d-flex flex-row align-items-start justify-content-start">
-                  <div class="cur_title">Semaine 6</div>
+                  <div class="cur_title">Semaine 7</div>
                   <div class="cur_num ml-auto">6/12</div>
                 </div>
                 <div class="cur_item_content">
@@ -345,19 +258,8 @@ mais aussi JavaScript et PHP. Il est chargé de :</p>
                   <div class="cur_contents">
                     <ul>
                       <li>
-                        <i class="fa fa-folder" aria-hidden="true"></i><span>Partie 2: Apprendre Javascript</span>
-                        <ul>
+                        <i class="fa fa-folder" aria-hidden="true"></i><span>Partie 5: Est-ce utile d'utiliser des tags et de superposer des éléments</span>
 
-                          <li class="d-flex flex-row align-items-center justify-content-start">
-                            <i class="fa fa-file" aria-hidden="true"></i><span>Section 5 : Site web interactif: construisez un fil d'actualités <a href="#"></a></span>
-                            <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>15 minutes</span></div>
-                          </li>
-                          <li class="d-flex flex-row align-items-center justify-content-start">
-                            <i class="fa fa-file" aria-hidden="true"></i><span>Section 6 : Le DOM<a href="#"></a></span>
-                            <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
-                          </li>
-
-                        </ul>
                       </li>
 
                     </ul>
@@ -365,38 +267,6 @@ mais aussi JavaScript et PHP. Il est chargé de :</p>
                 </div>
               </div>
               <div class="cur_item">
-                <div class="cur_title_container d-flex flex-row align-items-start justify-content-start">
-                  <div class="cur_title">Semaine 7</div>
-                  <div class="cur_num ml-auto">7/12</div>
-                </div>
-                <div class="cur_item_content">
-                  <div class="cur_item_title"></div>
-                  <div class="cur_item_text">
-
-                  </div>
-                  <div class="cur_contents">
-                    <ul>
-                      <li>
-                        <i class="fa fa-folder" aria-hidden="true"></i><span>Apprendre PHP</span>
-                        <ul>
-
-                          <li class="d-flex flex-row align-items-center justify-content-start">
-                            <i class="fa fa-file" aria-hidden="true"></i><span>Section 1: PHP : Introduction <a href="#"></a></span>
-                            <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
-                          </li>
-                          <li class="d-flex flex-row align-items-center justify-content-start">
-                            <i class="fa fa-file" aria-hidden="true"></i><span>Section 2: Les bases en PHP<a href="#"></a></span>
-                            <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
-                          </li>
-
-                        </ul>
-                      </li>
-
-                    </ul>
-                  </div>
-                </div>
-              </div>
-                <div class="cur_item">
                 <div class="cur_title_container d-flex flex-row align-items-start justify-content-start">
                   <div class="cur_title">Semaine 8</div>
                   <div class="cur_num ml-auto">8/12</div>
@@ -409,26 +279,15 @@ mais aussi JavaScript et PHP. Il est chargé de :</p>
                   <div class="cur_contents">
                     <ul>
                       <li>
-                        <i class="fa fa-folder" aria-hidden="true"></i><span>Apprendre PHP</span>
-                        <ul>
+                        <i class="fa fa-folder" aria-hidden="true"></i><span>Partie 6: Quels éléments peut-on trouver dans Unity et à quoi servent-ils ?</span>
 
-                          <li class="d-flex flex-row align-items-center justify-content-start">
-                            <i class="fa fa-file" aria-hidden="true"></i><span>Section 3 : Transmettre les données de page en page <a href="#"></a></span>
-                            <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
-                          </li>
-                          <li class="d-flex flex-row align-items-center justify-content-start">
-                            <i class="fa fa-file" aria-hidden="true"></i><span>Section 4 : PHP MySQL <a href="#"></a></span>
-                            <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
-                          </li>
-
-                        </ul>
                       </li>
 
                     </ul>
                   </div>
                 </div>
               </div>
-              <div class="cur_item">
+                <div class="cur_item">
                 <div class="cur_title_container d-flex flex-row align-items-start justify-content-start">
                   <div class="cur_title">Semaine 9</div>
                   <div class="cur_num ml-auto">9/12</div>
@@ -441,8 +300,8 @@ mais aussi JavaScript et PHP. Il est chargé de :</p>
                   <div class="cur_contents">
                     <ul>
                       <li>
-                        <i class="fa fa-folder" aria-hidden="true"></i><span>Partie 5: Wordpress</span>
-                        <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
+                        <i class="fa fa-folder" aria-hidden="true"></i><span>Partie 7: Les components sont des éléments importants de Unity</span>
+
                       </li>
 
                     </ul>
@@ -462,23 +321,33 @@ mais aussi JavaScript et PHP. Il est chargé de :</p>
                   <div class="cur_contents">
                     <ul>
                       <li>
-                        <i class="fa fa-folder" aria-hidden="true"></i><span>Partie 6: Hébergement et noms de domaines</span>
-                        <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
+                        <i class="fa fa-folder" aria-hidden="true"></i><span>Partie 8: Curieux de connnaitre les bases du fonctionnement des scripts CSharp ?</span>
+                      </li>
+
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="cur_item">
+                <div class="cur_title_container d-flex flex-row align-items-start justify-content-start">
+                  <div class="cur_title">Semaine 11 à 12</div>
+                  <div class="cur_num ml-auto">111-12/12</div>
+                </div>
+                <div class="cur_item_content">
+                  <div class="cur_item_title"></div>
+                  <div class="cur_item_text">
+
+                  </div>
+                  <div class="cur_contents">
+                    <ul>
+                      <li>
+                        <i class="fa fa-folder" aria-hidden="true"></i><span>Préparation de la soutenance</span>
                         </li>
 
 
                     </ul>
                   </div>
-                  <div class="cur_contents">
-                    <ul>
-                      <li>
-                        <i class="fa fa-folder" aria-hidden="true"></i><span>Partie 7 : Qu'avons-nous appris dans ce cours ?</span>
-                        <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
 
-                      </li>
-
-                    </ul>
-                  </div>
                 </div>
               </div>
               <div class="cur_item">
@@ -486,69 +355,12 @@ mais aussi JavaScript et PHP. Il est chargé de :</p>
                   <div class="cur_title">Semaine 11</div>
                   <div class="cur_num ml-auto">11/12</div>
                 </div>
-                <div class="cur_item_content">
-                  <div class="cur_item_title"></div>
-                  <div class="cur_item_text">
-
-                  </div>
-                  <div class="cur_contents">
-                    <ul>
-                      <li>
-                        <i class="fa fa-folder" aria-hidden="true"></i><span>Partie 8: Votre carrière</span>
-                        <ul>
-
-                          <li class="d-flex flex-row align-items-center justify-content-start">
-                            <i class="fa fa-file" aria-hidden="true"></i><span>Section 1: Devenir développeur web salarié<a href="#"></a></span>
-                            <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>15 minutes</span></div>
-                          </li>
-                          <li class="d-flex flex-row align-items-center justify-content-start">
-                            <i class="fa fa-file" aria-hidden="true"></i><span>Section 2 : Devenir développeur
-freelance.
-<a href="#"></a></span>
-<div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>15 minutes</span></div>
 
 
-                          </li>
-
-                        </ul>
-                      </li>
-
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="cur_item">
-                <div class="cur_title_container d-flex flex-row align-items-start justify-content-start">
-                  <div class="cur_title">Semaine 12</div>
-                  <div class="cur_num ml-auto">12/12</div>
-                </div>
-                <div class="cur_item_content">
-                  <div class="cur_item_title"></div>
-                  <div class="cur_item_text">
-
-                  </div>
-                  <div class="cur_contents">
-                    <ul>
-                      <li>
-                        <i class="fa fa-folder" aria-hidden="true"></i><span>Partie 9: Préparation de la soutenance</span>
-                        <ul>
-
-                          <li class="d-flex flex-row align-items-center justify-content-start">
-                        <i class="fa fa-graduation-cap" aria-hidden="true"></i><span>Soutenance</span>
-                        <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>30 minutes</span></div>
-
-                          </li>
-
-                        </ul>
-                      </li>
-
-                    </ul>
-                  </div>
-                </div>
-              </div>
 
             </div>
           </div>
+        </div>
 
           <!-- Reviews -->
           <div class="tab_panel reviews">
@@ -667,7 +479,7 @@ freelance.
       <div class="col-lg-3">
         <div class="sidebar">
           <div class="sidebar_background"></div>
-          <div class="sidebar_top"><a data-toggle="modal" data-target="#myModal" href="#">s'inscrire</a></div>
+          <div class="sidebar_top"><a href="https://adams21.typeform.com/to/itKgiA">s'inscrire</a></div>
           <div class="sidebar_content">
 
             <!-- Features -->
@@ -679,13 +491,13 @@ freelance.
                   <!-- Feature -->
                   <li class="d-flex flex-row align-items-start justify-content-start">
                     <div class="feature_title"><i class="fa fa-clock-o" aria-hidden="true"></i><span>Durée</span></div>
-                    <div class="feature_text ml-auto">4 mois</div>
+                    <div class="feature_text ml-auto">3 mois</div>
                   </li>
 
                   <!-- Feature -->
                   <li class="d-flex flex-row align-items-start justify-content-start">
                     <div class="feature_title"><i class="fa fa-bell" aria-hidden="true"></i><span>Projets</span></div>
-                    <div class="feature_text ml-auto">7</div>
+                    <div class="feature_text ml-auto">3+</div>
                   </li>
 
                   <!-- Feature -->
@@ -723,10 +535,9 @@ freelance.
                 <!-- Like Item -->
                 <div class="like_item d-flex flex-row align-items-end justify-content-start">
                   <div class="like_title_container">
-                    <div class="like_title"> <a href="https://oschool.ci/course/formation-complete-developpeur-web-2/" target="_blank">Devenez développeur web en partant de zéro</a> </div>
+                    <div class="like_title"> <a href="https://oschool.ci/course/comment-installer-unity-et-coder-son-jeu/" target="_blank">Comment installer Unity et coder son jeu?</a> </div>
                     <div class="like_subtitle">Par Oschool</div>
                   </div>
-                  <div class="like_price ml-auto">20.000 FCFA</div>
                 </div>
 
               </div>
