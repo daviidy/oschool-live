@@ -34,7 +34,6 @@
             <div class="rating_r rating_r_4 intro_rating"><i></i><i></i><i></i><i></i><i></i></div>
             <div class="intro_title">Développeur Web Junior</div>
             <div class="intro_meta">
-              <div class="intro_image"><img style="width: 129%;"src="/new/images/dave_team.jpeg" alt=""></div>
               <div class="intro_instructors">Commence le <span><a href="#">lundi 8 octobre 2018 </a></span></div>
             </div>
           </div>
