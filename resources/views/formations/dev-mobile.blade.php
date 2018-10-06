@@ -13,7 +13,7 @@
           <ul class="breadcrumbs_list d-flex flex-row align-items-center justify-content-start">
             <li><a href="/">accueil</a></li>
             <li><a href="/cours">cours</a></li>
-            <li>social média</li>
+            <li>Flutter et Dart:Créez des applications pour Android et iOS</li>
           </ul>
         </div>
       </div>
@@ -24,7 +24,7 @@
 <!-- Intro -->
 
 <div class="intro">
-  <div class="intro_background parallax-window" data-parallax="scroll" data-image-src="/new/images/cours/devweb.png" data-speed="0.8"></div>
+  <div class="intro_background parallax-window" data-parallax="scroll" data-image-src="/new/images/cours/FlutterDart.png" data-speed="0.8"></div>
   <div class="container">
     <div class="row">
       <div class="col">
@@ -32,10 +32,9 @@
           <div class="intro_content">
             <div class="intro_price">Certifié</div>
             <div class="rating_r rating_r_4 intro_rating"><i></i><i></i><i></i><i></i><i></i></div>
-            <div class="intro_title">Développeur Web Junior</div>
+            <div class="intro_title">Flutter et Dart:Créez des applications pour Android et iOS</div>
             <div class="intro_meta">
-              <div class="intro_image"><img style="width: 129%;"src="/new/images/dave_team.jpeg" alt=""></div>
-              <div class="intro_instructors"><a href="instructors.html">David YAO</a> et <span><a href="#">5 autres formateurs </a></span></div>
+              <div class="intro_instructors">Commence le <span><a href="#">lundi 8 octobre 2018 </a></span></div>
             </div>
           </div>
         </div>
@@ -74,41 +73,49 @@
           <div class="tab_panel description active">
             <div class="panel_title">Début de la prochaine rentrée :</div>
             <div class="panel_text">
-              <p style="color: #2E21DF;margin-bottom: 20px;font-size: 20px;">Jeudi 1er novembre 2018</p>
-<h2>Qu’est-ce qu’un développeur web junior ?<h2>
-<p>Le développeur web junior est indispensable dans une équipe de développement.
-Il a pour mission de donner vie aux maquettes visuelles d’une application web réalisées souvent
-par le graphiste ou l’UX Designer.
-Il doit traduire, en langage web, ses recommandations graphiques en rédigeant du code HTML, CSS,
-mais aussi JavaScript et PHP. Il est chargé de :</p>
+              <p style="color: #2E21DF;margin-bottom: 20px;font-size: 20px;">lundi 8 octobre 2018</p>
+              <p> <strong>Connaissez vous Flutter?</strong><br> C’est le SDK (ou Kit de développement en français) de Google. 
+                Il permet de créer des applications à la fois pour Android et iOS.<br> <strong>Connaissez vous Dart?</strong>
+              </p>
+              <p> C’est un langage de programmation orienté objet développé par Google. Il est facile à comprendre et à prendre en main et
+                 se rapproche de langages tels que Java ou Swift par exemple.
+              </p>
+              <p> Dans ce cours nous allons ensemble apprendre à développer des applications à la fois pour iOS et Android avec Flutter et
+                  Dart. Nous partirons des bases pour créer au fil du cours des applications de plus en plus évoluées.
+              </p>
+              <p>Pour bien mettre en pratique vos nouvelles compétences, vous aurez des challenges à faire tout au long du cours, comme par 
+                 exemple créer une application de calcul de calories.
+              </p>
 
-<ul>
-<li> <p>- assembler les pages en HTML5 et CSS3 à partir de maquettes graphiques</p> </li>
-<li> <p>- intégrer des contenus textes, images, sons, vidéos dans le code HTML5</p> </li>
-<li> <p>- respecter les normes d’accessibilité et de référencement du W3C</p> </li>
-<li> <p>- assurer la compatibilité avec les différents navigateurs du marché</p> </li>
-<li> <p>- mettre en place une communication entre client et serveur avec JavaScript et PHP</p> </li>
-<li> <p>- organiser et gérer la base de données</p> </li>
-</ul>
+              <h3>Voici ce que vous allez apprendre durant ce cours:</h3>
 
-<h2>Ce que vous serez capable de faire<h2>
-
-<ul>
-<li> <p>- développer des sites comme Facebook, Airbnb, Netflix, Jumia etc.</p> </li>
-<li> <p>- gérer les comptes utilisateurs</p> </li>
-<li> <p>- faire réagir la page web en fonction des actions de l’utilisateur en JavaScript</p> </li>
-<li> <p>- monter rapidement des sites web avec Wordpress</p> </li>
-<li> <p>- créer, gérer et afficher le contenu d’une base de données</p> </li>
-<li> <p>- adapter l'apparence d'un site web sur n'importe quel type d'écran</p> </li>
-</ul>
+              <ul>
+                    <li> <p>- La prise en main d’Android Studio, le logiciel qui vous servira durant votre apprentissage.</p> </li>
+                    <li> <p>- Les bases de Dart.</p> </li>
+                    <li> <p>- La programmation orienté</p> </li>
+                    <li> <p>- Les Widgets basiques</p> </li>
+                    <li> <p>- Création d’un lecteur audio</p> </li>
+                    <li> <p>- Les Widgets Pop</p> </li>
+                    <li> <p>- Création d’un quizz</p> </li>
+                    <li> <p>- Les Widgets Interactifs</p> </li>
+                    <li> <p>- Création d’un calculateur de calories</p> </li>
+                    <li> <p>- Adapter les Widgets selon la plateforme(Android ou iOS)</p> </li>
+                    <li> <p>- Les listes</p> </li>
+                    <li> <p>- Les grilles</p> </li>
+                    <li> <p>- Création d’un Flux RSS</p> </li>
+                    <li> <p>- Les menus</p> </li>
+                    <li> <p>- La Geolocalisation</p> </li>
+                    <li> <p>- Utiliser une API</p> </li>
+                    <li> <p>- Création d’une application météo.</p> </li>
+              </ul>
             </div>
 
-            <!-- Instructors -->
+            <!-- Instructors ->
             <div class="instructors">
               <div class="panel_title">Formateur(s)</div>
               <div class="row instructors_row">
 
-                <!-- Instructor -->
+                <-- Instructor ->
                 <div class="col-lg-4 col-md-6">
                   <div class="instructor d-flex flex-row align-items-center justify-content-start">
                     <div class="instructor_image"><div><img src="/new/images/dave_team.jpeg" alt=""></div></div>
@@ -122,7 +129,7 @@ mais aussi JavaScript et PHP. Il est chargé de :</p>
 
 
               </div>
-            </div>
+            </div> -->
 
             <!-- FAQs -->
             <div class="faqs">
@@ -134,7 +141,7 @@ mais aussi JavaScript et PHP. Il est chargé de :</p>
                   <div class="accordion_container">
                     <div class="accordion d-flex flex-row align-items-center active"><div>Combien coûte la formation ?</div></div>
                     <div class="accordion_panel">
-                      <p>30.000 FCFA par mois sur 4 mois (durée de la formation), payables en ligne.</p>
+                      <p>30.000 FCFA par mois payables en ligne.</p>
                     </div>
                   </div>
 
@@ -188,15 +195,15 @@ mais aussi JavaScript et PHP. Il est chargé de :</p>
                   <div class="cur_contents">
                     <ul>
                       <li>
-                        <i class="fa fa-folder" aria-hidden="true"></i><span>Partie 0: Découvrir le développement web</span>
+                        <i class="fa fa-folder" aria-hidden="true"></i><span></span>
                         <ul>
 
                           <li class="d-flex flex-row align-items-center justify-content-start">
-                            <i class="fa fa-file" aria-hidden="true"></i><span>Section 1: Bienvenue !<a href="#"></a></span>
+                            <i class="fa fa-file" aria-hidden="true"></i><span> Section 1: Présentation de Flutter et Dart !<a href="#"></a></span>
                             <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
                           </li>
                           <li class="d-flex flex-row align-items-center justify-content-start">
-                            <i class="fa fa-file" aria-hidden="true"></i><span>Section 2: Comment fonctionne le web ?<a href="#"></a></span>
+                            <i class="fa fa-file" aria-hidden="true"></i><span>Section 2: Installation de Flutter<a href="#"></a></span>
                             <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
                           </li>
                         </ul>
@@ -217,16 +224,16 @@ mais aussi JavaScript et PHP. Il est chargé de :</p>
                   <div class="cur_contents">
                     <ul>
                       <li>
-                        <i class="fa fa-folder" aria-hidden="true"></i><span>Partie 1: Apprendre HTML et CSS</span>
+                        <i class="fa fa-folder" aria-hidden="true"></i><span></span>
                         <ul>
 
                           <li class="d-flex flex-row align-items-center justify-content-start">
-                            <i class="fa fa-file" aria-hidden="true"></i><span>Section 1: HTML: structure d'un site web
+                            <i class="fa fa-file" aria-hidden="true"></i><span>Section 3: Notre première application
                               <a href="#"></a></span>
                             <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
                           </li>
                           <li class="d-flex flex-row align-items-center justify-content-start">
-                            <i class="fa fa-file" aria-hidden="true"></i><span>Section 2: Un regard plus attentif sur CSS (Projet à réaliser en classe: présentation livre)<a href="#"></a></span>
+                            <i class="fa fa-file" aria-hidden="true"></i><span>Section 4: Les bases de Dart (partie1)<a href="#"></a></span>
                             <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
                           </li>
                         </ul>
@@ -249,15 +256,15 @@ mais aussi JavaScript et PHP. Il est chargé de :</p>
                   <div class="cur_contents">
                     <ul>
                       <li>
-                        <i class="fa fa-folder" aria-hidden="true"></i><span>Partie 1: Apprendre HTML et CSS</span>
+                        <i class="fa fa-folder" aria-hidden="true"></i><span></span>
                         <ul>
 
                           <li class="d-flex flex-row align-items-center justify-content-start">
-                            <i class="fa fa-file" aria-hidden="true"></i><span>Section 3: Bordures et espaces (Projet à réaliser en classe: la galerie d’amour)<a href="#"></a></span>
+                            <i class="fa fa-file" aria-hidden="true"></i><span>Section 5:Les bases de Dart (partie 2)<a href="#"></a></span>
                             <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
                           </li>
                           <li class="d-flex flex-row align-items-center justify-content-start">
-                            <i class="fa fa-file" aria-hidden="true"></i>Section 4: Construire avec bootstrap (Projet à réaliser en classe: maison des artisans)<span><a href="#"></a></span>
+                            <i class="fa fa-file" aria-hidden="true"></i>Section 6: La programmation orienté objet avec Dart<span><a href="#"></a></span>
                             <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
                           </li>
 
@@ -281,15 +288,15 @@ mais aussi JavaScript et PHP. Il est chargé de :</p>
                   <div class="cur_contents">
                     <ul>
                       <li>
-                        <i class="fa fa-folder" aria-hidden="true"></i><span>Partie 2: Apprendre Javascript</span>
+                        <i class="fa fa-folder" aria-hidden="true"></i><span></span>
                         <ul>
 
                           <li class="d-flex flex-row align-items-center justify-content-start">
-                            <i class="fa fa-file" aria-hidden="true"></i><span>Section 1: Créez un site web interactif: faire un menu déroulant <a href="#"></a></span>
+                            <i class="fa fa-file" aria-hidden="true"></i><span>Section 7: Les Widgets basiques<a href="#"></a></span>
                             <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>15 minutes</span></div>
                           </li>
                           <li class="d-flex flex-row align-items-center justify-content-start">
-                            <i class="fa fa-file" aria-hidden="true"></i><span>Section 2: Site Web interactif: Menu coulissant<a href="#"></a></span>
+                            <i class="fa fa-file" aria-hidden="true"></i><span>Section 8: Les Widgets basiques partie 2<a href="#"></a></span>
                             <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
                           </li>
 
@@ -313,15 +320,15 @@ mais aussi JavaScript et PHP. Il est chargé de :</p>
                   <div class="cur_contents">
                     <ul>
                       <li>
-                        <i class="fa fa-folder" aria-hidden="true"></i><span>Partie 2: Apprendre Javascript</span>
+                        <i class="fa fa-folder" aria-hidden="true"></i><span></span>
                         <ul>
 
                           <li class="d-flex flex-row align-items-center justify-content-start">
-                            <i class="fa fa-file" aria-hidden="true"></i><span>Section 3: Javascript: les bases<a href="#"></a></span>
+                            <i class="fa fa-file" aria-hidden="true"></i><span>Section 9: Créez une application de musique<a href="#"></a></span>
                             <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
                           </li>
                           <li class="d-flex flex-row align-items-center justify-content-start">
-                            <i class="fa fa-file" aria-hidden="true"></i><span>Section 4: Les événements <a href="#"></a></span>
+                            <i class="fa fa-file" aria-hidden="true"></i><span>Section 10: Pop up et Navigator<a href="#"></a></span>
                             <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
                           </li>
 
@@ -345,15 +352,15 @@ mais aussi JavaScript et PHP. Il est chargé de :</p>
                   <div class="cur_contents">
                     <ul>
                       <li>
-                        <i class="fa fa-folder" aria-hidden="true"></i><span>Partie 2: Apprendre Javascript</span>
+                        <i class="fa fa-folder" aria-hidden="true"></i><span></span>
                         <ul>
 
                           <li class="d-flex flex-row align-items-center justify-content-start">
-                            <i class="fa fa-file" aria-hidden="true"></i><span>Section 5 : Site web interactif: construisez un fil d'actualités <a href="#"></a></span>
-                            <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>15 minutes</span></div>
+                            <i class="fa fa-file" aria-hidden="true"></i><span>Section 11:Créez une application de Quizz<a href="#"></a></span>
+                            <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
                           </li>
                           <li class="d-flex flex-row align-items-center justify-content-start">
-                            <i class="fa fa-file" aria-hidden="true"></i><span>Section 6 : Le DOM<a href="#"></a></span>
+                            <i class="fa fa-file" aria-hidden="true"></i><span>Section 12:Les Widgets interactifs<a href="#"></a></span>
                             <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
                           </li>
 
@@ -377,15 +384,15 @@ mais aussi JavaScript et PHP. Il est chargé de :</p>
                   <div class="cur_contents">
                     <ul>
                       <li>
-                        <i class="fa fa-folder" aria-hidden="true"></i><span>Apprendre PHP</span>
+                        <i class="fa fa-folder" aria-hidden="true"></i><span></span>
                         <ul>
 
                           <li class="d-flex flex-row align-items-center justify-content-start">
-                            <i class="fa fa-file" aria-hidden="true"></i><span>Section 1: PHP : Introduction <a href="#"></a></span>
+                            <i class="fa fa-file" aria-hidden="true"></i><span>Section 13:Créez une application de calcul de calories<a href="#"></a></span>
                             <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
                           </li>
                           <li class="d-flex flex-row align-items-center justify-content-start">
-                            <i class="fa fa-file" aria-hidden="true"></i><span>Section 2: Les bases en PHP<a href="#"></a></span>
+                            <i class="fa fa-file" aria-hidden="true"></i><span>Section 14:Les Widgets Cupertino (style iOS)<a href="#"></a></span>
                             <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
                           </li>
 
@@ -409,15 +416,15 @@ mais aussi JavaScript et PHP. Il est chargé de :</p>
                   <div class="cur_contents">
                     <ul>
                       <li>
-                        <i class="fa fa-folder" aria-hidden="true"></i><span>Apprendre PHP</span>
+                        <i class="fa fa-folder" aria-hidden="true"></i><span></span>
                         <ul>
 
                           <li class="d-flex flex-row align-items-center justify-content-start">
-                            <i class="fa fa-file" aria-hidden="true"></i><span>Section 3 : Transmettre les données de page en page <a href="#"></a></span>
+                            <i class="fa fa-file" aria-hidden="true"></i><span>Section 15:Les scrollables - Listes et Grilles<a href="#"></a></span>
                             <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
                           </li>
                           <li class="d-flex flex-row align-items-center justify-content-start">
-                            <i class="fa fa-file" aria-hidden="true"></i><span>Section 4 : PHP MySQL <a href="#"></a></span>
+                            <i class="fa fa-file" aria-hidden="true"></i><span>Section 16:Créez une application de flux RSS <a href="#"></a></span>
                             <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
                           </li>
 
@@ -441,10 +448,19 @@ mais aussi JavaScript et PHP. Il est chargé de :</p>
                   <div class="cur_contents">
                     <ul>
                       <li>
-                        <i class="fa fa-folder" aria-hidden="true"></i><span>Partie 5: Wordpress</span>
-                        <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
-                      </li>
+                        <i class="fa fa-folder" aria-hidden="true"></i><span></span>
+                        <ul>
+                          <li class="d-flex flex-row align-items-center justify-content-start">
+                            <i class="fa fa-file" aria-hidden="true"></i><span>Section 17:CodaMeteo - Le Drawer <a href="#"></a></span>
+                            <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
+                          </li>
+                          <li class="d-flex flex-row align-items-center justify-content-start">
+                            <i class="fa fa-file" aria-hidden="true"></i><span>Section 18:CodaMeteo - Le SharedPreferences<a href="#"></a></span>
+                            <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
+                          </li>
 
+                        </ul>
+                      </li>
                     </ul>
                   </div>
                 </div>
@@ -462,21 +478,18 @@ mais aussi JavaScript et PHP. Il est chargé de :</p>
                   <div class="cur_contents">
                     <ul>
                       <li>
-                        <i class="fa fa-folder" aria-hidden="true"></i><span>Partie 6: Hébergement et noms de domaines</span>
-                        <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
-                        </li>
-
-
-                    </ul>
-                  </div>
-                  <div class="cur_contents">
-                    <ul>
-                      <li>
-                        <i class="fa fa-folder" aria-hidden="true"></i><span>Partie 7 : Qu'avons-nous appris dans ce cours ?</span>
-                        <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
-
+                        <i class="fa fa-folder" aria-hidden="true"></i><span></span>
+                        <ul>
+                          <li class="d-flex flex-row align-items-center justify-content-start">
+                            <i class="fa fa-file" aria-hidden="true"></i><span>Section 19: CodaMeteo - Json & API <a href="#"></a></span>
+                            <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
+                          </li>
+                          <li class="d-flex flex-row align-items-center justify-content-start">
+                            <i class="fa fa-file" aria-hidden="true"></i><span>Section 20: Enregistrer les données de façon permanente (Partie 1)<a href="#"></a></span>
+                            <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
+                          </li>
+                        </ul>
                       </li>
-
                     </ul>
                   </div>
                 </div>
@@ -494,20 +507,16 @@ mais aussi JavaScript et PHP. Il est chargé de :</p>
                   <div class="cur_contents">
                     <ul>
                       <li>
-                        <i class="fa fa-folder" aria-hidden="true"></i><span>Partie 8: Votre carrière</span>
+                        <i class="fa fa-folder" aria-hidden="true"></i><span></span>
                         <ul>
 
                           <li class="d-flex flex-row align-items-center justify-content-start">
-                            <i class="fa fa-file" aria-hidden="true"></i><span>Section 1: Devenir développeur web salarié<a href="#"></a></span>
-                            <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>15 minutes</span></div>
+                            <i class="fa fa-file" aria-hidden="true"></i><span>Section 21: SQFlite - Enregistrer les données de façon permanente (Partie 2)<a href="#"></a></span>
+                            <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
                           </li>
                           <li class="d-flex flex-row align-items-center justify-content-start">
-                            <i class="fa fa-file" aria-hidden="true"></i><span>Section 2 : Devenir développeur
-freelance.
-<a href="#"></a></span>
-<div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>15 minutes</span></div>
-
-
+                            <i class="fa fa-file" aria-hidden="true"></i><span>Section 22:ImagePicker - Utilisez l’appareil photo et la librairie<a href="#"></a></span>
+                            <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
                           </li>
 
                         </ul>
@@ -530,7 +539,7 @@ freelance.
                   <div class="cur_contents">
                     <ul>
                       <li>
-                        <i class="fa fa-folder" aria-hidden="true"></i><span>Partie 9: Préparation de la soutenance</span>
+                        <i class="fa fa-folder" aria-hidden="true"></i><span>Préparation de la soutenance</span>
                         <ul>
 
                           <li class="d-flex flex-row align-items-center justify-content-start">
@@ -554,7 +563,7 @@ freelance.
           <div class="tab_panel reviews">
             <div class="panel_title">Ce qu'ils en pensent</div>
             <div class="panel_text">
-              <p>Ils ont participé ou participent à la formation Développeur Web Junior. Et voici leurs avis sur ce parcours</p>
+              <p>Ils ont participé ou participent à la formation Développeur fornt-end. Et voici leurs avis sur ce parcours</p>
             </div>
             <div class="cur_ratings_container clearfix">
               <div class="cur_rating d-flex flex-column align-items-center justify-content-center">
@@ -715,12 +724,12 @@ freelance.
               <div class="cert_image"><img src="/new/images/certificats/devweb.png" alt=""></div>
             </div>
 
-            <!-- You may like -->
+            <!-- You may like ->
             <div class="sidebar_section like">
               <div class="sidebar_title">Cours associé :</div>
               <div class="like_items">
 
-                <!-- Like Item -->
+                <-- Like Item ->
                 <div class="like_item d-flex flex-row align-items-end justify-content-start">
                   <div class="like_title_container">
                     <div class="like_title"> <a href="https://oschool.ci/course/formation-complete-developpeur-web-2/" target="_blank">Devenez développeur web en partant de zéro</a> </div>
@@ -728,7 +737,7 @@ freelance.
                   </div>
                   <div class="like_price ml-auto">20.000 FCFA</div>
                 </div>
-
+                -->
               </div>
             </div>
           </div>

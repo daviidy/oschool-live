@@ -13,7 +13,7 @@
           <ul class="breadcrumbs_list d-flex flex-row align-items-center justify-content-start">
             <li><a href="/">accueil</a></li>
             <li><a href="/cours">cours</a></li>
-            <li>social média</li>
+            <li>Développeur Front-End</li>
           </ul>
         </div>
       </div>
@@ -24,7 +24,7 @@
 <!-- Intro -->
 
 <div class="intro">
-  <div class="intro_background parallax-window" data-parallax="scroll" data-image-src="/new/images/cours/devweb.png" data-speed="0.8"></div>
+  <div class="intro_background parallax-window" data-parallax="scroll" data-image-src="/new/images/cours/front-end.jpg" data-speed="0.8"></div>
   <div class="container">
     <div class="row">
       <div class="col">
@@ -32,10 +32,10 @@
           <div class="intro_content">
             <div class="intro_price">Certifié</div>
             <div class="rating_r rating_r_4 intro_rating"><i></i><i></i><i></i><i></i><i></i></div>
-            <div class="intro_title">Développeur Web Junior</div>
+            <div class="intro_title">Développeur Front-End</div>
             <div class="intro_meta">
-              <div class="intro_image"><img style="width: 129%;"src="/new/images/dave_team.jpeg" alt=""></div>
-              <div class="intro_instructors"><a href="instructors.html">David YAO</a> et <span><a href="#">5 autres formateurs </a></span></div>
+              <div class="intro_instructors">Commence le <span><a href="#">lundi 8 octobre 2018 </a></span>
+              </div>
             </div>
           </div>
         </div>
@@ -74,41 +74,46 @@
           <div class="tab_panel description active">
             <div class="panel_title">Début de la prochaine rentrée :</div>
             <div class="panel_text">
-              <p style="color: #2E21DF;margin-bottom: 20px;font-size: 20px;">Jeudi 1er novembre 2018</p>
-<h2>Qu’est-ce qu’un développeur web junior ?<h2>
-<p>Le développeur web junior est indispensable dans une équipe de développement.
-Il a pour mission de donner vie aux maquettes visuelles d’une application web réalisées souvent
-par le graphiste ou l’UX Designer.
-Il doit traduire, en langage web, ses recommandations graphiques en rédigeant du code HTML, CSS,
-mais aussi JavaScript et PHP. Il est chargé de :</p>
+                <p style="color: #2E21DF;margin-bottom: 20px;font-size: 20px;">Lundi 8 octobre 2018</p>
+                <h2>Qu’est-ce qu’un développeur Front-end ?<h2>
+                <p>Lorsque l'on parle de «Front-End», il s'agit finalement des éléments du site que l'on voit à l'écran et avec lesquels on
+                   peut interagir. Ces éléments sont composés de HTML, CSS et de Javascript contrôlés par le navigateur web de l'utilisateur.
+                </p>
+                <p>Le développeur Front-End est donc une personne qui peut être issue du milieu du web design en ayant renforcé ses connaissances en développement. Il peut aussi être un développeur qui a choisi de se spécialiser dans les technologies et langages du Front-End tels que :
+                </p>
+                <ul>
+                    <li><strong>HTML ET CSS</strong>  afin de : 
 
-<ul>
-<li> <p>- assembler les pages en HTML5 et CSS3 à partir de maquettes graphiques</p> </li>
-<li> <p>- intégrer des contenus textes, images, sons, vidéos dans le code HTML5</p> </li>
-<li> <p>- respecter les normes d’accessibilité et de référencement du W3C</p> </li>
-<li> <p>- assurer la compatibilité avec les différents navigateurs du marché</p> </li>
-<li> <p>- mettre en place une communication entre client et serveur avec JavaScript et PHP</p> </li>
-<li> <p>- organiser et gérer la base de données</p> </li>
-</ul>
+                      <ul>
+                        <li> <p>- assembler les pages à partir de maquettes graphiques</p> </li>
+                        <li> <p>- intégrer des contenus textes, images, sons, vidéos dans le code HTML5</p> </li>
+                        <li> <p>- respecter les normes d’accessibilité et de référencement du W3C</p> </li>
+                        <li> <p>- assurer la compatibilité avec les différents navigateurs du marché</p> </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <ul><strong>Javascript ET Jquery</strong>  afin de : 
+                        <li><p>- mettre en place une communication entre client et serveur avec JavaScript</p></li>
+                        <li><p>- créer des animations avec Jquery</p></li>
+                      </ul>
+                    </li>
+                  </ul>
 
-<h2>Ce que vous serez capable de faire<h2>
+                <h2>Ce que vous serez capable de faire<h2>
 
-<ul>
-<li> <p>- développer des sites comme Facebook, Airbnb, Netflix, Jumia etc.</p> </li>
-<li> <p>- gérer les comptes utilisateurs</p> </li>
-<li> <p>- faire réagir la page web en fonction des actions de l’utilisateur en JavaScript</p> </li>
-<li> <p>- monter rapidement des sites web avec Wordpress</p> </li>
-<li> <p>- créer, gérer et afficher le contenu d’une base de données</p> </li>
-<li> <p>- adapter l'apparence d'un site web sur n'importe quel type d'écran</p> </li>
-</ul>
+                <ul>
+                <li> <p>- développer des sites comme Facebook, Airbnb, Netflix, Jumia etc.</p> </li>
+                <li> <p>- faire réagir la page web en fonction des actions de l’utilisateur en JavaScript</p> </li>
+                <li> <p>- adapter l'apparence d'un site web sur n'importe quel type d'écran</p> </li>
+                </ul>
             </div>
 
-            <!-- Instructors -->
+            <!-- Instructors ->
             <div class="instructors">
               <div class="panel_title">Formateur(s)</div>
               <div class="row instructors_row">
 
-                <!-- Instructor -->
+                <-- Instructor ->
                 <div class="col-lg-4 col-md-6">
                   <div class="instructor d-flex flex-row align-items-center justify-content-start">
                     <div class="instructor_image"><div><img src="/new/images/dave_team.jpeg" alt=""></div></div>
@@ -122,7 +127,7 @@ mais aussi JavaScript et PHP. Il est chargé de :</p>
 
 
               </div>
-            </div>
+            </div>  -->
 
             <!-- FAQs -->
             <div class="faqs">
@@ -134,7 +139,7 @@ mais aussi JavaScript et PHP. Il est chargé de :</p>
                   <div class="accordion_container">
                     <div class="accordion d-flex flex-row align-items-center active"><div>Combien coûte la formation ?</div></div>
                     <div class="accordion_panel">
-                      <p>30.000 FCFA par mois sur 4 mois (durée de la formation), payables en ligne.</p>
+                      <p>30.000 FCFA par mois payables en ligne.</p>
                     </div>
                   </div>
 
@@ -188,15 +193,15 @@ mais aussi JavaScript et PHP. Il est chargé de :</p>
                   <div class="cur_contents">
                     <ul>
                       <li>
-                        <i class="fa fa-folder" aria-hidden="true"></i><span>Partie 0: Découvrir le développement web</span>
+                        <i class="fa fa-folder" aria-hidden="true"></i><span>Partie-1  HTML et CSS</span>
                         <ul>
 
                           <li class="d-flex flex-row align-items-center justify-content-start">
-                            <i class="fa fa-file" aria-hidden="true"></i><span>Section 1: Bienvenue !<a href="#"></a></span>
+                            <i class="fa fa-file" aria-hidden="true"></i><span>Section 1 Généralités du HTML <a href="#"></a></span>
                             <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
                           </li>
                           <li class="d-flex flex-row align-items-center justify-content-start">
-                            <i class="fa fa-file" aria-hidden="true"></i><span>Section 2: Comment fonctionne le web ?<a href="#"></a></span>
+                            <i class="fa fa-file" aria-hidden="true"></i><span>Section 2: Structure d'un document HTML<a href="#"></a></span>
                             <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
                           </li>
                         </ul>
@@ -217,16 +222,16 @@ mais aussi JavaScript et PHP. Il est chargé de :</p>
                   <div class="cur_contents">
                     <ul>
                       <li>
-                        <i class="fa fa-folder" aria-hidden="true"></i><span>Partie 1: Apprendre HTML et CSS</span>
+                        <i class="fa fa-folder" aria-hidden="true"></i><span>Partie-1 : HTML et CSS</span>
                         <ul>
 
                           <li class="d-flex flex-row align-items-center justify-content-start">
-                            <i class="fa fa-file" aria-hidden="true"></i><span>Section 1: HTML: structure d'un site web
+                            <i class="fa fa-file" aria-hidden="true"></i><span>Section 2: Structure d'un document HTML
                               <a href="#"></a></span>
                             <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
                           </li>
                           <li class="d-flex flex-row align-items-center justify-content-start">
-                            <i class="fa fa-file" aria-hidden="true"></i><span>Section 2: Un regard plus attentif sur CSS (Projet à réaliser en classe: présentation livre)<a href="#"></a></span>
+                            <i class="fa fa-file" aria-hidden="true"></i><span>Section 2: Travaux pratiques: Mise en oeuvre des techniques acquises <a href="#"></a></span>
                             <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
                           </li>
                         </ul>
@@ -249,16 +254,20 @@ mais aussi JavaScript et PHP. Il est chargé de :</p>
                   <div class="cur_contents">
                     <ul>
                       <li>
-                        <i class="fa fa-folder" aria-hidden="true"></i><span>Partie 1: Apprendre HTML et CSS</span>
+                        <i class="fa fa-folder" aria-hidden="true"></i><span>Partie-1 : HTML et CSS</span>
                         <ul>
 
                           <li class="d-flex flex-row align-items-center justify-content-start">
-                            <i class="fa fa-file" aria-hidden="true"></i><span>Section 3: Bordures et espaces (Projet à réaliser en classe: la galerie d’amour)<a href="#"></a></span>
+                            <i class="fa fa-file" aria-hidden="true"></i><span>Section 3: les styles physiques les caractères<a href="#"></a></span>
                             <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
                           </li>
                           <li class="d-flex flex-row align-items-center justify-content-start">
-                            <i class="fa fa-file" aria-hidden="true"></i>Section 4: Construire avec bootstrap (Projet à réaliser en classe: maison des artisans)<span><a href="#"></a></span>
-                            <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
+                            <i class="fa fa-file" aria-hidden="true"></i>Section 4: Les images et les couleurs <span><a href="#"></a></span>
+                            <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>30 Minutes</span></div>
+                          </li>
+                          <li class="d-flex flex-row align-items-center justify-content-start">
+                            <i class="fa fa-file" aria-hidden="true"></i>Section 5: Les tables <span><a href="#"></a></span>
+                            <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>30 Minutes</span></div>
                           </li>
 
                         </ul>
@@ -281,15 +290,15 @@ mais aussi JavaScript et PHP. Il est chargé de :</p>
                   <div class="cur_contents">
                     <ul>
                       <li>
-                        <i class="fa fa-folder" aria-hidden="true"></i><span>Partie 2: Apprendre Javascript</span>
+                        <i class="fa fa-folder" aria-hidden="true"></i><span>Partie-1 : HTML et CSS</span>
                         <ul>
 
                           <li class="d-flex flex-row align-items-center justify-content-start">
-                            <i class="fa fa-file" aria-hidden="true"></i><span>Section 1: Créez un site web interactif: faire un menu déroulant <a href="#"></a></span>
+                            <i class="fa fa-file" aria-hidden="true"></i><span>Section 6: Les formulaires <a href="#"></a></span>
                             <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>15 minutes</span></div>
                           </li>
                           <li class="d-flex flex-row align-items-center justify-content-start">
-                            <i class="fa fa-file" aria-hidden="true"></i><span>Section 2: Site Web interactif: Menu coulissant<a href="#"></a></span>
+                            <i class="fa fa-file" aria-hidden="true"></i><span>Section 7: Travaux pratiques: Réalisation de divers formulaires <a href="#"></a></span>
                             <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
                           </li>
 
@@ -313,15 +322,15 @@ mais aussi JavaScript et PHP. Il est chargé de :</p>
                   <div class="cur_contents">
                     <ul>
                       <li>
-                        <i class="fa fa-folder" aria-hidden="true"></i><span>Partie 2: Apprendre Javascript</span>
+                        <i class="fa fa-folder" aria-hidden="true"></i><span>Partie-1 : HTML et CSS</span>
                         <ul>
 
                           <li class="d-flex flex-row align-items-center justify-content-start">
-                            <i class="fa fa-file" aria-hidden="true"></i><span>Section 3: Javascript: les bases<a href="#"></a></span>
+                            <i class="fa fa-file" aria-hidden="true"></i><span>Section 8: Les feuilles de style CSS<a href="#"></a></span>
                             <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
                           </li>
                           <li class="d-flex flex-row align-items-center justify-content-start">
-                            <i class="fa fa-file" aria-hidden="true"></i><span>Section 4: Les événements <a href="#"></a></span>
+                            <i class="fa fa-file" aria-hidden="true"></i><span>Section 9: Travaux pratiques : Utilisation des feuilles CSS  <a href="#"></a></span>
                             <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
                           </li>
 
@@ -345,15 +354,15 @@ mais aussi JavaScript et PHP. Il est chargé de :</p>
                   <div class="cur_contents">
                     <ul>
                       <li>
-                        <i class="fa fa-folder" aria-hidden="true"></i><span>Partie 2: Apprendre Javascript</span>
+                        <i class="fa fa-folder" aria-hidden="true"></i><span>Partie-2 : Bootstrap</span>
                         <ul>
 
                           <li class="d-flex flex-row align-items-center justify-content-start">
-                            <i class="fa fa-file" aria-hidden="true"></i><span>Section 5 : Site web interactif: construisez un fil d'actualités <a href="#"></a></span>
-                            <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>15 minutes</span></div>
+                            <i class="fa fa-file" aria-hidden="true"></i><span>Section 1 : Les technologies Front End <a href="#"></a></span>
+                            <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
                           </li>
                           <li class="d-flex flex-row align-items-center justify-content-start">
-                            <i class="fa fa-file" aria-hidden="true"></i><span>Section 6 : Le DOM<a href="#"></a></span>
+                            <i class="fa fa-file" aria-hidden="true"></i><span>Section 2 : Mise en place de Bootstrap <a href="#"></a></span>
                             <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
                           </li>
 
@@ -377,15 +386,15 @@ mais aussi JavaScript et PHP. Il est chargé de :</p>
                   <div class="cur_contents">
                     <ul>
                       <li>
-                        <i class="fa fa-folder" aria-hidden="true"></i><span>Apprendre PHP</span>
+                        <i class="fa fa-folder" aria-hidden="true"></i><span>Partie-2 : Bootstrap</span>
                         <ul>
 
                           <li class="d-flex flex-row align-items-center justify-content-start">
-                            <i class="fa fa-file" aria-hidden="true"></i><span>Section 1: PHP : Introduction <a href="#"></a></span>
+                            <i class="fa fa-file" aria-hidden="true"></i><span>Section 3: Les bases <a href="#"></a></span>
                             <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
                           </li>
                           <li class="d-flex flex-row align-items-center justify-content-start">
-                            <i class="fa fa-file" aria-hidden="true"></i><span>Section 2: Les bases en PHP<a href="#"></a></span>
+                            <i class="fa fa-file" aria-hidden="true"></i><span>Section 3: Les bases<a href="#"></a></span>
                             <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
                           </li>
 
@@ -409,15 +418,15 @@ mais aussi JavaScript et PHP. Il est chargé de :</p>
                   <div class="cur_contents">
                     <ul>
                       <li>
-                        <i class="fa fa-folder" aria-hidden="true"></i><span>Apprendre PHP</span>
+                        <i class="fa fa-folder" aria-hidden="true"></i><span>Partie-3 :JavaScript </span>
                         <ul>
 
                           <li class="d-flex flex-row align-items-center justify-content-start">
-                            <i class="fa fa-file" aria-hidden="true"></i><span>Section 3 : Transmettre les données de page en page <a href="#"></a></span>
+                            <i class="fa fa-file" aria-hidden="true"></i><span>Section 1 : Introduction javascript <a href="#"></a></span>
                             <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
                           </li>
                           <li class="d-flex flex-row align-items-center justify-content-start">
-                            <i class="fa fa-file" aria-hidden="true"></i><span>Section 4 : PHP MySQL <a href="#"></a></span>
+                            <i class="fa fa-file" aria-hidden="true"></i><span>Section 2 : Le langage JavaScript <a href="#"></a></span>
                             <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
                           </li>
 
@@ -441,8 +450,23 @@ mais aussi JavaScript et PHP. Il est chargé de :</p>
                   <div class="cur_contents">
                     <ul>
                       <li>
-                        <i class="fa fa-folder" aria-hidden="true"></i><span>Partie 5: Wordpress</span>
-                        <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
+                        <i class="fa fa-folder" aria-hidden="true"></i><span>Partie-3: Javascript</span>
+                        <ul>
+
+                          <li class="d-flex flex-row align-items-center justify-content-start">
+                            <i class="fa fa-file" aria-hidden="true"></i><span>Section 3: Les objets du langage JavaScript<a href="#"></a></span>
+                            <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
+                          </li>
+                          <li class="d-flex flex-row align-items-center justify-content-start">
+                            <i class="fa fa-file" aria-hidden="true"></i><span>Section 4 : Javascript : Les objets de la page HTML <a href="#"></a></span>
+                            <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
+                          </li>
+                          <li class="d-flex flex-row align-items-center justify-content-start">
+                            <i class="fa fa-file" aria-hidden="true"></i><span>Section 5 : Manipulation de la page (DOM) <a href="#"></a></span>
+                            <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
+                          </li>
+
+                        </ul>
                       </li>
 
                     </ul>
@@ -462,20 +486,10 @@ mais aussi JavaScript et PHP. Il est chargé de :</p>
                   <div class="cur_contents">
                     <ul>
                       <li>
-                        <i class="fa fa-folder" aria-hidden="true"></i><span>Partie 6: Hébergement et noms de domaines</span>
-                        <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
-                        </li>
-
-
-                    </ul>
-                  </div>
-                  <div class="cur_contents">
-                    <ul>
-                      <li>
-                        <i class="fa fa-folder" aria-hidden="true"></i><span>Partie 7 : Qu'avons-nous appris dans ce cours ?</span>
-                        <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
-
+                        <i class="fa fa-folder" aria-hidden="true"></i><span>Partie-4 :Jquery </span>
+                        <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>2 Heure</span></div>
                       </li>
+
 
                     </ul>
                   </div>
@@ -494,23 +508,8 @@ mais aussi JavaScript et PHP. Il est chargé de :</p>
                   <div class="cur_contents">
                     <ul>
                       <li>
-                        <i class="fa fa-folder" aria-hidden="true"></i><span>Partie 8: Votre carrière</span>
-                        <ul>
-
-                          <li class="d-flex flex-row align-items-center justify-content-start">
-                            <i class="fa fa-file" aria-hidden="true"></i><span>Section 1: Devenir développeur web salarié<a href="#"></a></span>
-                            <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>15 minutes</span></div>
-                          </li>
-                          <li class="d-flex flex-row align-items-center justify-content-start">
-                            <i class="fa fa-file" aria-hidden="true"></i><span>Section 2 : Devenir développeur
-freelance.
-<a href="#"></a></span>
-<div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>15 minutes</span></div>
-
-
-                          </li>
-
-                        </ul>
+                        <i class="fa fa-folder" aria-hidden="true"></i><span>Partie-4 :Jquery </span>
+                        <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>2 Heure</span></div>
                       </li>
 
                     </ul>
@@ -726,7 +725,7 @@ freelance.
                     <div class="like_title"> <a href="https://oschool.ci/course/formation-complete-developpeur-web-2/" target="_blank">Devenez développeur web en partant de zéro</a> </div>
                     <div class="like_subtitle">Par Oschool</div>
                   </div>
-                  <div class="like_price ml-auto">20.000 FCFA</div>
+                  <!--div class="like_price ml-auto">20.000 FCFA</div-->
                 </div>
 
               </div>
