@@ -141,13 +141,15 @@
               </a>
           </li>
 
+          @endif
+
+          @if(Auth::user()->formations)
           <li class="mt">
             <a href="{{ url('projets') }}">
               <i class="fa fa-dashboard"></i>
-              <span>Mes projets</span>
+              <span>Liste des projets</span>
               </a>
           </li>
-
           @endif
 
 

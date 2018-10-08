@@ -68,4 +68,12 @@ class User extends Authenticatable
     {
         return $this->hasMany('App\Etatprojet');
     }
+
+    public function routeNotificationForSlack()
+
+   {
+
+       Return 'https://hooks.slack.com/services/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';
+
+   }
 }

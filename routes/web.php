@@ -11,6 +11,37 @@
 |
 */
 
+use App\Notifications\Newinfo;
+use App\Notifications\Newslack;
+
+Route::get('/slack', function () {
+
+
+
+$user = App\User::first();
+
+
+
+$user->notify(new Newslack());
+
+
+
+   echo "Juste une notif de oschool paths";
+
+
+
+});
+
+Route::get('/email', function () {
+
+$user = App\User::first();
+
+$user->notify(new Newinfo("A new user has visited on your application."));
+
+   return view('homepage');
+
+})->name('email');
+
 Route::get('/', 'UserController@accueil');
 
 Route::get('/online', function () {
@@ -50,7 +81,7 @@ Route::post('/envoi', 'AchatController@envoi')->name('envoi');
 Route::post('/notify', 'AchatController@notify')->name('notify');
 
 /*
-route pour les sessions ou classrooms 
+route pour les sessions ou classrooms
 */
 
 Route::get('/valider/{progression}', 'ProgressionController@valider')->name('valider');
