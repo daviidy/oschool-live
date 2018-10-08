@@ -104,14 +104,28 @@
           @if(Auth::user()->isAdmin())
           <li>
 
-            <a  style="border-radius:8px; color: #fff; background-color: green;" class="logout" href="{{ route('formations.create') }}">
+            <a  style="border-radius:8px; color: red; background-color: transparent;" class="logout" href="{{ route('projets.create') }}">
+                Créer un projet
+            </a>
+
+          </li>
+          <li>
+
+            <a  style="border-radius:8px; color: #967ADC; background-color: transparent;" class="logout" href="{{ route('progressions.create') }}">
+                Ajouter un support de cours
+            </a>
+
+          </li>
+          <li>
+
+            <a  style="border-radius:8px; color: #4D90CC; background-color: transparent;" class="logout" href="{{ route('formations.create') }}">
                 Créer une formation
             </a>
 
           </li>
           <li>
 
-            <a style="border-radius:8px; color: #fff; background-color: #F36A10;" class="logout" href="{{ route('categories.create') }}">
+            <a style="border-radius:8px; color: orange; background-color: transparent;" class="logout" href="{{ route('categories.create') }}">
                 Créer une catégorie de formation
             </a>
 
@@ -124,6 +138,13 @@
             <a href="{{ url('progression', Auth::user()) }}">
               <i class="fa fa-dashboard"></i>
               <span>Ma progression</span>
+              </a>
+          </li>
+
+          <li class="mt">
+            <a href="{{ url('projets') }}">
+              <i class="fa fa-dashboard"></i>
+              <span>Mes projets</span>
               </a>
           </li>
 

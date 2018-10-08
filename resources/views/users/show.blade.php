@@ -60,6 +60,9 @@
                   <li>
                     <a data-toggle="tab" href="#progressions">Les progressions de {{$user->name}}</a>
                   </li>
+                  <li>
+                    <a data-toggle="tab" href="#projets">Les projets de {{$user->name}}</a>
+                  </li>
                   @endif
                   @if (Auth::user()->isAdmin())
                   <li>
@@ -198,6 +201,74 @@
                                @endif
 
                              </td>
+                           </tr>
+                           @endforeach
+                         </tbody>
+                       </table>
+                     </div>
+                  </div>
+                  <!-- /tab-pane -->
+
+                  <div id="projets" class="tab-pane">
+                    <div class="container">
+                       <h2>Projets de {{$user->name}}</h2>
+                       <p>Formation : Développeur web</p>
+                       <table class="table">
+                         <thead>
+                           <tr>
+                             <th>Nom du projet</th>
+                             <th>Livrables</th>
+                             <th>Commentaire</th>
+                             <th>Statut</th>
+                           </tr>
+                         </thead>
+                         <tbody>
+                           @foreach($user->etatprojets as $etatprojet)
+                           <tr>
+                             <td>{{$etatprojet->projet}}</td>
+                             <td> <a href="{{$etatprojet->livrables}}">Voir les livrables</a> </td>
+                             <td> <a data-toggle="modal" data-target="#myModal{{$etatprojet->id}}" href="#">Voir les commentaires</a></td>
+                             <td style="display: flex; flex-wrap: wrap;">
+
+                               @if($etatprojet->statut == "Validé")
+                               <p style="color: green;">{{ $etatprojet->statut }}</p>
+                               @elseif($etatprojet->statut == "A refaire")
+                               <div style="margin-left: 15px;" class="dropdown">
+                                 <button type="button" class="btn btn-primary">
+                                   <a href="{{route('etatprojets.edit', $etatprojet)}}">Modifier</a>
+                                 </button>
+                               </div>
+                               @endif
+
+                             </td>
+                             <!-- The Modal -->
+                             <div class="modal fade" id="myModal{{$etatprojet->id}}">
+                             <div class="modal-dialog">
+                             <div class="modal-content">
+
+                             <!-- Modal Header -->
+                             <div class="modal-header">
+                             <h4 style="font-size: 24px;" class="modal-title">Commentaire sur le projet</h4>
+                             <button type="button" class="close" data-dismiss="modal">&times;</button>
+                             </div>
+
+                             <!-- Modal body -->
+                             <div class="modal-body">
+                               <div class="container">
+                                   {!! $etatprojet->commentaire !!}
+                               </div>
+                             </div>
+
+                             <!-- Modal footer -->
+                             <div class="modal-footer">
+                             <button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
+                             </div>
+
+                             </div>
+                             </div>
+                             </div>
+
+                             <!--end modal-->
                            </tr>
                            @endforeach
                          </tbody>
