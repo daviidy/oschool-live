@@ -13,7 +13,7 @@
           <ul class="breadcrumbs_list d-flex flex-row align-items-center justify-content-start">
             <li><a href="/">accueil</a></li>
             <li><a href="/cours">cours</a></li>
-            <li>développeur web junior</li>
+            <li>développeur Front-End</li>
           </ul>
         </div>
       </div>

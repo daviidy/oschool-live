@@ -50,7 +50,7 @@ Route::post('/envoi', 'AchatController@envoi')->name('envoi');
 Route::post('/notify', 'AchatController@notify')->name('notify');
 
 /*
-route pour les sessions ou classrooms
+route pour les sessions ou classrooms 
 */
 
 Route::get('/valider/{progression}', 'ProgressionController@valider')->name('valider');
@@ -107,3 +107,7 @@ Route::get('/cours', function () {
 Route::get('/documentsTeacher', 'UserController@documentsTeacher')->name('documentsTeacher');
 
 Route::get('/documentsStudent', 'UserController@documentsStudent')->name('documentsStudent');
+
+Route::resource('projets','ProjetController');
+
+Route::resource('etatprojets','EtatprojetController');

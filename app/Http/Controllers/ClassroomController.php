@@ -25,7 +25,7 @@ class ClassroomController extends Controller
         return view('classrooms.index');
       }
       else {
-        return redirect('/');
+        return redirect('home');
       }
 
 

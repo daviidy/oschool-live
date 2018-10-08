@@ -13,6 +13,6 @@ class Classroom extends Model
 
   public function teacher()
   {
-      return $this->belongsTo('App\Teacher');
+      return $this->belongsTo('App\User');
   }
 }
