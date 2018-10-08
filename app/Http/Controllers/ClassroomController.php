@@ -17,9 +17,12 @@ class ClassroomController extends Controller
      */
     public function index()
     {
-      if (Auth::check() && !Auth::user()->isTeacher() && !Auth::user()->isAdmin()) {
+      if (Auth::check()) {
+        if (!Auth::user()->isTeacher() && !Auth::user()->isAdmin()) {
           $classrooms = Classroom::where('etudiant', Auth::user()->name)->get();
           return view('classrooms.index', ['classrooms' => $classrooms]);
+        }
+        return view('classrooms.index');
       }
       else {
         return redirect('home');
