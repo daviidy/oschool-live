@@ -13,6 +13,6 @@ class Progression extends Model
 
   public function student()
   {
-      return $this->belongsTo('App\Teacher');
+      return $this->belongsTo('App\User');
   }
 }

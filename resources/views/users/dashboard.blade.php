@@ -34,16 +34,25 @@
             <div class="row content-panel">
               <div class="panel-heading">
                 <ul class="nav nav-tabs nav-justified">
+                  @auth
+                  @if (!Auth::user()->isAdmin())
                   <li class="active">
                     <a data-toggle="tab" href="#overview">A propos</a>
                   </li>
+                  @endif
+                  @endauth
                   <li>
                     <a data-toggle="tab" href="#contact" class="contact-map">Modifier le profil</a>
                   </li>
                   @auth
-                  @if (Auth::user()->isTeacher() || Auth::user()->isAdmin())
+                  @if (Auth::user()->isTeacher())
                   <li>
                     <a data-toggle="tab" href="#edit">Liste des étudiants</a>
+                  </li>
+                  @endif
+                  @if (!Auth::user()->isAdmin() && !Auth::user()->isTeacher())
+                  <li>
+                    <a data-toggle="tab" href="#projets">Etat de mes projets</a>
                   </li>
                   @endif
                   @endauth
@@ -57,9 +66,9 @@
 
                       <!-- /col-md-6 -->
                       <div class="col-md-6 detailed">
-                        <h4>A propos</h4>
                         @auth
-                        @if (Auth::user()->isTeacher() || Auth::user()->isAdmin())
+                        @if (Auth::user()->isTeacher())
+                        <h4>A propos</h4>
                         <div class="row centered mt mb">
                           <div class="col-sm-4">
                             <h1><i class="fa fa-user"></i></h1>
@@ -94,7 +103,7 @@
                           </div>
                         </div>
                         <!-- /row -->
-                        @else
+                        @elseif(!Auth::user()->isAdmin())
                         <div class="row centered mt mb">
                           <div class="col-sm-4">
                             <h1><i class="fa fa-user"></i></h1>
@@ -152,7 +161,7 @@
                             </div>
                           </div>
                           @auth
-                          @if(Auth::user()->isTeacher() || Auth::user()->isAdmin())
+                          @if(Auth::user()->isTeacher())
                           <div class="form-group">
                             <label class="col-lg-2 control-label">Capacité maximale d'étudiants</label>
                             <div class="col-lg-6">
@@ -209,6 +218,64 @@
                  </div>
                                    <!-- LISTE DES ETUDIANTS FIN -->
                 @endif
+                @if (!Auth::user()->isTeacher() && !Auth::user()->isAdmin())
+                <!-- LISTE DES ETUDIANTS -->
+                <div id="projets" class="tab-pane">
+                   <div class="container">
+                      <h2>MES PROJETS </h2>
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th>Nom du projet</th>
+                            <th>Livrables</th>
+                            <th>Commentaires</th>
+                            <th>Statut</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          @foreach(Auth::user()->etatprojets as $etatprojet)
+                          <tr>
+                            <td>{{$etatprojet->projet}}</td>
+                            <td> <a target="_blank" href="{{$etatprojet->livrables}}"> Voir vos livrables</a> </td>
+                            <td> <a data-toggle="modal" data-target="#myModal{{$etatprojet->id}}" href="#">Voir les commentaires</a></td>
+                            <td>{{$etatprojet->statut}}</td>
+                            <!-- The Modal -->
+                            <div class="modal fade" id="myModal{{$etatprojet->id}}">
+                            <div class="modal-dialog">
+                            <div class="modal-content">
+
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                            <h4 style="font-size: 24px;" class="modal-title">Commentaire sur le projet</h4>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+
+                            <!-- Modal body -->
+                            <div class="modal-body">
+                              <div class="container">
+                                  {!! $etatprojet->commentaire !!}
+                              </div>
+                            </div>
+
+                            <!-- Modal footer -->
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
+                            </div>
+
+                            </div>
+                            </div>
+                            </div>
+
+                            <!--end modal-->
+                          </tr>
+                          @endforeach
+                        </tbody>
+                      </table>
+                    </div>
+
+               </div>
+                                 <!-- LISTE DES ETUDIANTS FIN -->
+              @endif
                 @endauth
             <!-- /col-lg-12 -->
           </div>
