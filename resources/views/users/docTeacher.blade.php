@@ -39,6 +39,21 @@
             <p><span class="text-muted"> <a target="_blank" href="https://oschool.ci/wp-content/uploads/2018/09/Enseignez-Partagez-Souriez.pdf">Télécharger le guide</a> </span></p>
           </div>
           <div class="room-box">
+            <h5 class="text-primary"><a target="_blank" href="https://drive.google.com/open?id=1Rae0RAkXdhfIYSA-eQkw8kH4KGYaJ9KN0Tz5nA5EjN8">Réaliser ma session (session "rookie")</a></h5>
+            <p>Ce document vous montre comment agir lors de la première séance avec votre étudiant.e</p>
+            <p><span class="text-muted"> <a target="_blank" href="https://drive.google.com/open?id=1Rae0RAkXdhfIYSA-eQkw8kH4KGYaJ9KN0Tz5nA5EjN8">Télécharger le guide</a> </span></p>
+          </div>
+          <div class="room-box">
+            <h5 class="text-primary"><a target="_blank" href="https://drive.google.com/open?id=1BUKAE0iX0fvBcyMrO3cs1lCZoeLq0YWx552kE1wcG-w">Déroulement d'une session normale</a></h5>
+            <p>Ce document vous montre le déroulement d'une séance normale avec un.e étudiant.e</p>
+            <p><span class="text-muted"> <a target="_blank" href="https://drive.google.com/open?id=1BUKAE0iX0fvBcyMrO3cs1lCZoeLq0YWx552kE1wcG-w">Télécharger le guide</a> </span></p>
+          </div>
+          <div class="room-box">
+            <h5 class="text-primary"><a target="_blank" href="https://drive.google.com/open?id=1pNZcwgRCgtX0kvlsaj_Xl-eNiSg2coLHBlEfAdYgjYk">Gérer les sessions et projets des étudiant.es</a></h5>
+            <p>Ce document vous montre comment gérer les sessions et les projets de vos étudiant.es</p>
+            <p><span class="text-muted"> <a target="_blank" href="https://drive.google.com/open?id=1pNZcwgRCgtX0kvlsaj_Xl-eNiSg2coLHBlEfAdYgjYk">Télécharger le guide</a> </span></p>
+          </div>
+          <div class="room-box">
             <h5 class="text-primary"><a target="_blank" href="https://docs.google.com/document/d/e/2PACX-1vSd41Dq3-4LqHNtpAmPNYT3cwFD1yJWB-02OtRmJJ2k8_DgbLUGD7oxhwsfB3JUAa9NcY2hfA4khz0m/pub">Facturation</a></h5>
             <p>Dans ce document, nous vous expliquons comment vous gagnez
             concrètement de l'argent avec Oschool</p>

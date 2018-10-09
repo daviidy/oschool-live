@@ -20,4 +20,11 @@ class Formation extends Model
   {
       return $this->belongsToMany('App\Projet');
   }
+
+  //une formation a plusieurs supports de ccours
+
+  public function supportformations()
+  {
+      return $this->hasMany('App\Supportformation');
+  }
 }

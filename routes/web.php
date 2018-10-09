@@ -142,3 +142,5 @@ Route::get('/documentsStudent', 'UserController@documentsStudent')->name('docume
 Route::resource('projets','ProjetController');
 
 Route::resource('etatprojets','EtatprojetController');
+
+Route::resource('supportformations','SupportformationController');

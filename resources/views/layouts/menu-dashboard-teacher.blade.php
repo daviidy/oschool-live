@@ -111,7 +111,7 @@
           </li>
           <li>
 
-            <a  style="border-radius:8px; color: #967ADC; background-color: transparent;" class="logout" href="{{ route('progressions.create') }}">
+            <a  style="border-radius:8px; color: #967ADC; background-color: transparent;" class="logout" href="{{ route('supportformations.create') }}">
                 Ajouter un support de cours
             </a>
 
@@ -148,6 +148,13 @@
             <a href="{{ url('projets') }}">
               <i class="fa fa-dashboard"></i>
               <span>Liste des projets</span>
+              </a>
+          </li>
+
+          <li class="mt">
+            <a href="{{ url('supportformations') }}">
+              <i class="fa fa-dashboard"></i>
+              <span>Supports de cours</span>
               </a>
           </li>
           @endif
