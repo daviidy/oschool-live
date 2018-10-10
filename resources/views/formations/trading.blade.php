@@ -13,7 +13,7 @@
           <ul class="breadcrumbs_list d-flex flex-row align-items-center justify-content-start">
             <li><a href="/">accueil</a></li>
             <li><a href="/cours">cours</a></li>
-            <li>développeur web junior</li>
+            <li>Trading</li>
           </ul>
         </div>
       </div>
@@ -24,7 +24,7 @@
 <!-- Intro -->
 
 <div class="intro">
-  <div class="intro_background parallax-window" data-parallax="scroll" data-image-src="/new/images/cours/devweb.png" data-speed="0.8"></div>
+  <div class="intro_background parallax-window" data-parallax="scroll" data-image-src="/new/images/cours/devweb/.png" data-speed="0.8"></div>
   <div class="container">
     <div class="row">
       <div class="col">
@@ -32,10 +32,10 @@
           <div class="intro_content">
             <div class="intro_price">Certifié</div>
             <div class="rating_r rating_r_4 intro_rating"><i></i><i></i><i></i><i></i><i></i></div>
-            <div class="intro_title">Développeur Web Junior</div>
+            <div class="intro_title">Trading</div>
             <div class="intro_meta">
-              <div class="intro_image"><img style="width: 129%;"src="/new/images/dave_team.jpeg" alt=""></div>
-              <div class="intro_instructors"><a href="instructors.html">David YAO</a> et <span><a href="#">5 autres formateurs </a></span></div>
+              <!--<div class="intro_image"><img style="width: 129%;"src="/new/images/dave_team/.jpeg" alt=""></div>-->
+              <div class="intro_instructors"><a href="instructors.html">Commence le lundi 08 octobre 2018</a> <span><a href="#"></a></span></div>
             </div>
           </div>
         </div>
@@ -75,40 +75,33 @@
             <div class="panel_title">Début de la prochaine rentrée :</div>
             <div class="panel_text">
               <p style="color: #2E21DF;margin-bottom: 20px;font-size: 20px;">Jeudi 1er novembre 2018</p>
-<h2>Qu’est-ce qu’un développeur web junior ?<h2>
-<p>Le développeur web junior est indispensable dans une équipe de développement.
-Il a pour mission de donner vie aux maquettes visuelles d’une application web réalisées souvent
-par le graphiste ou l’UX Designer.
-Il doit traduire, en langage web, ses recommandations graphiques en rédigeant du code HTML, CSS,
-mais aussi JavaScript et PHP. Il est chargé de :</p>
+              <h2>Qu’est-ce que le trading ?<h2>
+              <p>En finance, le trading est l'activité d'achat et de vente des titres financiers. Trading en anglais veut dire commerce. Le trading est l'activité d'un trader, un commerce sur des instruments financiers. Le trading est le terme le plus souvent associé aux produits dérivés, sur lesquels on peut faire de l'achat et de la vente à découvert.
 
-<ul>
-<li> <p>- assembler les pages en HTML5 et CSS3 à partir de maquettes graphiques</p> </li>
-<li> <p>- intégrer des contenus textes, images, sons, vidéos dans le code HTML5</p> </li>
-<li> <p>- respecter les normes d’accessibilité et de référencement du W3C</p> </li>
-<li> <p>- assurer la compatibilité avec les différents navigateurs du marché</p> </li>
-<li> <p>- mettre en place une communication entre client et serveur avec JavaScript et PHP</p> </li>
-<li> <p>- organiser et gérer la base de données</p> </li>
-</ul>
+              Les roles du trader sont:</p>
 
-<h2>Ce que vous serez capable de faire<h2>
+              <ul>
+                <li> <p>- Acheter / vendre des titres, obligations, actions, devises, bons du trésor, matières premières...</p> </li>
+                <li> <p>- Définir ses stratégies financières</p> </li>
+                <li> <p>- Rechercher, analyser, structurer l'information</p> </li>
+                <li> <p>-  Identifier les risques et les opportunités</p> </li>
+                </ul>
 
-<ul>
-<li> <p>- développer des sites comme Facebook, Airbnb, Netflix, Jumia etc.</p> </li>
-<li> <p>- gérer les comptes utilisateurs</p> </li>
-<li> <p>- faire réagir la page web en fonction des actions de l’utilisateur en JavaScript</p> </li>
-<li> <p>- monter rapidement des sites web avec Wordpress</p> </li>
-<li> <p>- créer, gérer et afficher le contenu d’une base de données</p> </li>
-<li> <p>- adapter l'apparence d'un site web sur n'importe quel type d'écran</p> </li>
-</ul>
+                <h2>Ce que vous serez capable de faire<h2>
+
+                <ul>
+                <li> <p>- Analyser les tendances des différents marchés</p> </li>
+                <li> <p>- Informer en direct de l’évolution des marchés internationaux</p> </li>
+                <li> <p>- Acheter, vendre des produits ou titres sur un marché financier afin de réaliser des bénéfices</p> </li>
+              </ul>
             </div>
 
-            <!-- Instructors -->
+            <!-- Instructors 
             <div class="instructors">
               <div class="panel_title">Formateur(s)</div>
               <div class="row instructors_row">
 
-                <!-- Instructor -->
+             Instructor 
                 <div class="col-lg-4 col-md-6">
                   <div class="instructor d-flex flex-row align-items-center justify-content-start">
                     <div class="instructor_image"><div><img src="/new/images/dave_team.jpeg" alt=""></div></div>
@@ -123,6 +116,7 @@ mais aussi JavaScript et PHP. Il est chargé de :</p>
 
               </div>
             </div>
+          -->
 
             <!-- FAQs -->
             <div class="faqs">
@@ -178,7 +172,7 @@ mais aussi JavaScript et PHP. Il est chargé de :</p>
               <div class="cur_item">
                 <div class="cur_title_container d-flex flex-row align-items-start justify-content-start">
                   <div class="cur_title">Semaine 1</div>
-                  <div class="cur_num ml-auto">1/12</div>
+                  <div class="cur_num ml-auto">1/8</div>
                 </div>
                 <div class="cur_item_content">
                   <div class="cur_item_title"></div>
@@ -188,18 +182,20 @@ mais aussi JavaScript et PHP. Il est chargé de :</p>
                   <div class="cur_contents">
                     <ul>
                       <li>
-                        <i class="fa fa-folder" aria-hidden="true"></i><span>Partie 0: Découvrir le développement web</span>
+                        <i class="fa fa-folder" aria-hidden="true"></i><span>Section 1: Les fondamentaux</span>
                         <ul>
 
                           <li class="d-flex flex-row align-items-center justify-content-start">
-                            <i class="fa fa-file" aria-hidden="true"></i><span>Section 1: Bienvenue !<a href="#"></a></span>
+                            <i class="fa fa-file" aria-hidden="true"></i><span>Qu'est-ce qu'un stock / IPO?<a href="#"></a></span>
                             <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
                           </li>
                           <li class="d-flex flex-row align-items-center justify-content-start">
-                            <i class="fa fa-file" aria-hidden="true"></i><span>Section 2: Comment fonctionne le web ?<a href="#"></a></span>
+                            <i class="fa fa-file" aria-hidden="true"></i><span>Qu'est-ce qui fait ACTUELLEMENT monter et descendre les prix?<a href="#"></a></span>
                             <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
                           </li>
                         </ul>
+
+                       </li>
                       </ul>
                   </div>
                 </div>
@@ -207,7 +203,7 @@ mais aussi JavaScript et PHP. Il est chargé de :</p>
               <div class="cur_item">
                 <div class="cur_title_container d-flex flex-row align-items-start justify-content-start">
                   <div class="cur_title">Semaine 2</div>
-                  <div class="cur_num ml-auto">2/12</div>
+                  <div class="cur_num ml-auto">2/8</div>
                 </div>
                 <div class="cur_item_content">
                   <div class="cur_item_title"></div>
@@ -217,19 +213,20 @@ mais aussi JavaScript et PHP. Il est chargé de :</p>
                   <div class="cur_contents">
                     <ul>
                       <li>
-                        <i class="fa fa-folder" aria-hidden="true"></i><span>Partie 1: Apprendre HTML et CSS</span>
+                        <i class="fa fa-folder" aria-hidden="true"></i><span>Section 1: Les fondamentaux</span>
                         <ul>
 
                           <li class="d-flex flex-row align-items-center justify-content-start">
-                            <i class="fa fa-file" aria-hidden="true"></i><span>Section 1: HTML: structure d'un site web
+                            <i class="fa fa-file" aria-hidden="true"></i><span>Types d'ordres d'achat et de vente
                               <a href="#"></a></span>
                             <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
                           </li>
                           <li class="d-flex flex-row align-items-center justify-content-start">
-                            <i class="fa fa-file" aria-hidden="true"></i><span>Section 2: Un regard plus attentif sur CSS (Projet à réaliser en classe: présentation livre)<a href="#"></a></span>
+                            <i class="fa fa-file" aria-hidden="true"></i><span>Investissement à long terme vs Swing Trading vs Trading à la journée<a href="#"></a></span>
                             <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
                           </li>
                         </ul>
+                        
                       </li>
 
                     </ul>
@@ -239,7 +236,7 @@ mais aussi JavaScript et PHP. Il est chargé de :</p>
               <div class="cur_item">
                 <div class="cur_title_container d-flex flex-row align-items-start justify-content-start">
                   <div class="cur_title">Semaine 3</div>
-                  <div class="cur_num ml-auto">3/12</div>
+                  <div class="cur_num ml-auto">3/8</div>
                 </div>
                 <div class="cur_item_content">
                   <div class="cur_item_title"></div>
@@ -249,11 +246,11 @@ mais aussi JavaScript et PHP. Il est chargé de :</p>
                   <div class="cur_contents">
                     <ul>
                       <li>
-                        <i class="fa fa-folder" aria-hidden="true"></i><span>Partie 1: Apprendre HTML et CSS</span>
+                        <i class="fa fa-folder" aria-hidden="true"></i><span>Section 1: Les fondamentaux</span>
                         <ul>
 
                           <li class="d-flex flex-row align-items-center justify-content-start">
-                            <i class="fa fa-file" aria-hidden="true"></i><span>Section 3: Bordures et espaces (Projet à réaliser en classe: la galerie d’amour)<a href="#"></a></span>
+                            <i class="fa fa-file" aria-hidden="true"></i><span>Analyse technique contre analyse fondamentale<a href="#"></a></span>
                             <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
                           </li>
                           <li class="d-flex flex-row align-items-center justify-content-start">
@@ -262,6 +259,7 @@ mais aussi JavaScript et PHP. Il est chargé de :</p>
                           </li>
 
                         </ul>
+                        
                       </li>
 
                     </ul>
@@ -281,19 +279,20 @@ mais aussi JavaScript et PHP. Il est chargé de :</p>
                   <div class="cur_contents">
                     <ul>
                       <li>
-                        <i class="fa fa-folder" aria-hidden="true"></i><span>Partie 2: Apprendre Javascript</span>
+                        <i class="fa fa-folder" aria-hidden="true"></i><span>Section 2: Bien débuter</span>
                         <ul>
 
                           <li class="d-flex flex-row align-items-center justify-content-start">
-                            <i class="fa fa-file" aria-hidden="true"></i><span>Section 1: Créez un site web interactif: faire un menu déroulant <a href="#"></a></span>
-                            <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>15 minutes</span></div>
+                            <i class="fa fa-file" aria-hidden="true"></i><span>Psychologie du trader et mentalité<a href="#"></a></span>
+                            <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
                           </li>
                           <li class="d-flex flex-row align-items-center justify-content-start">
-                            <i class="fa fa-file" aria-hidden="true"></i><span>Section 2: Site Web interactif: Menu coulissant<a href="#"></a></span>
+                            <i class="fa fa-file" aria-hidden="true"></i><span>Analyser les nouvelles et le marché<a href="#"></a></span>
                             <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
                           </li>
 
                         </ul>
+                        
                       </li>
 
                     </ul>
@@ -313,19 +312,20 @@ mais aussi JavaScript et PHP. Il est chargé de :</p>
                   <div class="cur_contents">
                     <ul>
                       <li>
-                        <i class="fa fa-folder" aria-hidden="true"></i><span>Partie 2: Apprendre Javascript</span>
+                        <i class="fa fa-folder" aria-hidden="true"></i><span>Section 2: Bien débuter</span>
                         <ul>
 
                           <li class="d-flex flex-row align-items-center justify-content-start">
-                            <i class="fa fa-file" aria-hidden="true"></i><span>Section 3: Javascript: les bases<a href="#"></a></span>
+                            <i class="fa fa-file" aria-hidden="true"></i><span>Gestion des risques: techniques<a href="#"></a></span>
                             <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
                           </li>
                           <li class="d-flex flex-row align-items-center justify-content-start">
-                            <i class="fa fa-file" aria-hidden="true"></i><span>Section 4: Les événements <a href="#"></a></span>
+                            <i class="fa fa-file" aria-hidden="true"></i><span>Systèmes de cartographie populaires <a href="#"></a></span>
                             <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
                           </li>
 
                         </ul>
+                       
                       </li>
 
                     </ul>
@@ -345,19 +345,20 @@ mais aussi JavaScript et PHP. Il est chargé de :</p>
                   <div class="cur_contents">
                     <ul>
                       <li>
-                        <i class="fa fa-folder" aria-hidden="true"></i><span>Partie 2: Apprendre Javascript</span>
+                        <i class="fa fa-folder" aria-hidden="true"></i><span>Section 2: Bien débuter</span>
                         <ul>
 
                           <li class="d-flex flex-row align-items-center justify-content-start">
-                            <i class="fa fa-file" aria-hidden="true"></i><span>Section 5 : Site web interactif: construisez un fil d'actualités <a href="#"></a></span>
-                            <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>15 minutes</span></div>
+                            <i class="fa fa-file" aria-hidden="true"></i><span>Lecture et compréhension des graphiques <a href="#"></a></span>
+                            <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
                           </li>
                           <li class="d-flex flex-row align-items-center justify-content-start">
-                            <i class="fa fa-file" aria-hidden="true"></i><span>Section 6 : Le DOM<a href="#"></a></span>
+                            <i class="fa fa-file" aria-hidden="true"></i><span>Comprendre et utiliser EMA (The Magic Line)<a href="#"></a></span>
                             <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
                           </li>
 
                         </ul>
+                       
                       </li>
 
                     </ul>
@@ -367,7 +368,7 @@ mais aussi JavaScript et PHP. Il est chargé de :</p>
               <div class="cur_item">
                 <div class="cur_title_container d-flex flex-row align-items-start justify-content-start">
                   <div class="cur_title">Semaine 7</div>
-                  <div class="cur_num ml-auto">7/12</div>
+                  <div class="cur_num ml-auto">7/19</div>
                 </div>
                 <div class="cur_item_content">
                   <div class="cur_item_title"></div>
@@ -377,11 +378,11 @@ mais aussi JavaScript et PHP. Il est chargé de :</p>
                   <div class="cur_contents">
                     <ul>
                       <li>
-                        <i class="fa fa-folder" aria-hidden="true"></i><span>Apprendre PHP</span>
+                        <i class="fa fa-folder" aria-hidden="true"></i><span>Section 2: Bien débuter</span>
                         <ul>
 
                           <li class="d-flex flex-row align-items-center justify-content-start">
-                            <i class="fa fa-file" aria-hidden="true"></i><span>Section 1: PHP : Introduction <a href="#"></a></span>
+                            <i class="fa fa-file" aria-hidden="true"></i><span>Comprendre et utiliser EMA (The Magic Line) <a href="#"></a></span>
                             <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
                           </li>
                           <li class="d-flex flex-row align-items-center justify-content-start">
@@ -390,6 +391,7 @@ mais aussi JavaScript et PHP. Il est chargé de :</p>
                           </li>
 
                         </ul>
+
                       </li>
 
                     </ul>
@@ -399,7 +401,7 @@ mais aussi JavaScript et PHP. Il est chargé de :</p>
                 <div class="cur_item">
                 <div class="cur_title_container d-flex flex-row align-items-start justify-content-start">
                   <div class="cur_title">Semaine 8</div>
-                  <div class="cur_num ml-auto">8/12</div>
+                  <div class="cur_num ml-auto">8/18</div>
                 </div>
                 <div class="cur_item_content">
                   <div class="cur_item_title"></div>
@@ -409,29 +411,34 @@ mais aussi JavaScript et PHP. Il est chargé de :</p>
                   <div class="cur_contents">
                     <ul>
                       <li>
-                        <i class="fa fa-folder" aria-hidden="true"></i><span>Apprendre PHP</span>
+                        <i class="fa fa-folder" aria-hidden="true"></i><span>Section 2: Bien débuter</span>
                         <ul>
 
                           <li class="d-flex flex-row align-items-center justify-content-start">
-                            <i class="fa fa-file" aria-hidden="true"></i><span>Section 3 : Transmettre les données de page en page <a href="#"></a></span>
+                            <i class="fa fa-file" aria-hidden="true"></i><span>Technique #1 : La technique du gap up <a href="#"></a></span>
                             <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
                           </li>
                           <li class="d-flex flex-row align-items-center justify-content-start">
-                            <i class="fa fa-file" aria-hidden="true"></i><span>Section 4 : PHP MySQL <a href="#"></a></span>
+                            <i class="fa fa-file" aria-hidden="true"></i><span>Technique #2 : Formation de drapeau <a href="#"></a></span>
+                            <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
+                          </li>
+                          <li class="d-flex flex-row align-items-center justify-content-start">
+                            <i class="fa fa-file" aria-hidden="true"></i><span>Technique #3 : Bounce Back Reve <a href="#"></a></span>
                             <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
                           </li>
 
                         </ul>
+                        
                       </li>
 
                     </ul>
                   </div>
                 </div>
               </div>
-              <div class="cur_item">
+               <div class="cur_item">
                 <div class="cur_title_container d-flex flex-row align-items-start justify-content-start">
                   <div class="cur_title">Semaine 9</div>
-                  <div class="cur_num ml-auto">9/12</div>
+                  <div class="cur_num ml-auto">9/9</div>
                 </div>
                 <div class="cur_item_content">
                   <div class="cur_item_title"></div>
@@ -441,103 +448,13 @@ mais aussi JavaScript et PHP. Il est chargé de :</p>
                   <div class="cur_contents">
                     <ul>
                       <li>
-                        <i class="fa fa-folder" aria-hidden="true"></i><span>Partie 5: Wordpress</span>
-                        <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
-                      </li>
-
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="cur_item">
-                <div class="cur_title_container d-flex flex-row align-items-start justify-content-start">
-                  <div class="cur_title">Semaine 10</div>
-                  <div class="cur_num ml-auto">10/12</div>
-                </div>
-                <div class="cur_item_content">
-                  <div class="cur_item_title"></div>
-                  <div class="cur_item_text">
-
-                  </div>
-                  <div class="cur_contents">
-                    <ul>
-                      <li>
-                        <i class="fa fa-folder" aria-hidden="true"></i><span>Partie 6: Hébergement et noms de domaines</span>
-                        <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
-                        </li>
-
-
-                    </ul>
-                  </div>
-                  <div class="cur_contents">
-                    <ul>
-                      <li>
-                        <i class="fa fa-folder" aria-hidden="true"></i><span>Partie 7 : Qu'avons-nous appris dans ce cours ?</span>
-                        <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
-
-                      </li>
-
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="cur_item">
-                <div class="cur_title_container d-flex flex-row align-items-start justify-content-start">
-                  <div class="cur_title">Semaine 11</div>
-                  <div class="cur_num ml-auto">11/12</div>
-                </div>
-                <div class="cur_item_content">
-                  <div class="cur_item_title"></div>
-                  <div class="cur_item_text">
-
-                  </div>
-                  <div class="cur_contents">
-                    <ul>
-                      <li>
-                        <i class="fa fa-folder" aria-hidden="true"></i><span>Partie 8: Votre carrière</span>
+                        <i class="fa fa-folder" aria-hidden="true"></i><span>Projet de soutenance</span>
                         <ul>
-
-                          <li class="d-flex flex-row align-items-center justify-content-start">
-                            <i class="fa fa-file" aria-hidden="true"></i><span>Section 1: Devenir développeur web salarié<a href="#"></a></span>
-                            <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>15 minutes</span></div>
-                          </li>
-                          <li class="d-flex flex-row align-items-center justify-content-start">
-                            <i class="fa fa-file" aria-hidden="true"></i><span>Section 2 : Devenir développeur
-freelance.
-<a href="#"></a></span>
-<div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>15 minutes</span></div>
-
-
-                          </li>
-
-                        </ul>
-                      </li>
-
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="cur_item">
-                <div class="cur_title_container d-flex flex-row align-items-start justify-content-start">
-                  <div class="cur_title">Semaine 12</div>
-                  <div class="cur_num ml-auto">12/12</div>
-                </div>
-                <div class="cur_item_content">
-                  <div class="cur_item_title"></div>
-                  <div class="cur_item_text">
-
-                  </div>
-                  <div class="cur_contents">
-                    <ul>
-                      <li>
-                        <i class="fa fa-folder" aria-hidden="true"></i><span>Partie 9: Préparation de la soutenance</span>
-                        <ul>
-
-                          <li class="d-flex flex-row align-items-center justify-content-start">
-                        <i class="fa fa-graduation-cap" aria-hidden="true"></i><span>Soutenance</span>
-                        <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>30 minutes</span></div>
-
-                          </li>
+                         <li class="d-flex flex-row align-items-center justify-content-start">
+             <i class="fa fa-graduation-cap" aria-hidden="true"></i><span>Soutenance</span>
+             <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>30 minutes</span></div>
+            
+              </li>
 
                         </ul>
                       </li>
@@ -715,12 +632,12 @@ freelance.
               <div class="cert_image"><img src="/new/images/certificats/devweb.png" alt=""></div>
             </div>
 
-            <!-- You may like -->
+            <!-- You may like 
             <div class="sidebar_section like">
               <div class="sidebar_title">Cours associé :</div>
               <div class="like_items">
 
-                <!-- Like Item -->
+                Like Item
                 <div class="like_item d-flex flex-row align-items-end justify-content-start">
                   <div class="like_title_container">
                     <div class="like_title"> <a href="https://oschool.ci/course/formation-complete-developpeur-web-2/" target="_blank">Devenez développeur web en partant de zéro</a> </div>
@@ -731,6 +648,7 @@ freelance.
 
               </div>
             </div>
+            -->
           </div>
         </div>
       </div>

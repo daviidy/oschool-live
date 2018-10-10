@@ -24,7 +24,7 @@
 <!-- Intro -->
 
 <div class="intro">
-  <div class="intro_background parallax-window" data-parallax="scroll" data-image-src="/new/images/cours/devweb.png" data-speed="0.8"></div>
+  <div class="intro_background parallax-window" data-parallax="scroll" data-image-src="/new/images/cours/devweb/.png" data-speed="0.8"></div>
   <div class="container">
     <div class="row">
       <div class="col">
@@ -32,10 +32,10 @@
           <div class="intro_content">
             <div class="intro_price">Certifié</div>
             <div class="rating_r rating_r_4 intro_rating"><i></i><i></i><i></i><i></i><i></i></div>
-            <div class="intro_title">Développeur Web Junior</div>
+            <div class="intro_title">Social Media</div>
             <div class="intro_meta">
-              <div class="intro_image"><img style="width: 129%;"src="/new/images/dave_team.jpeg" alt=""></div>
-              <div class="intro_instructors"><a href="instructors.html">David YAO</a> et <span><a href="#">5 autres formateurs </a></span></div>
+             <!-- <div class="intro_image"><img style="width: 129%;"src="/new/images/dave_team.jpeg" alt=""></div>-->
+              <div class="intro_instructors"><a href="instructors.html">Commence le lundi 08 octobre 2018</a>  <span><a href="#"> </a></span></div>
             </div>
           </div>
         </div>
@@ -75,55 +75,31 @@
             <div class="panel_title">Début de la prochaine rentrée :</div>
             <div class="panel_text">
               <p style="color: #2E21DF;margin-bottom: 20px;font-size: 20px;">Jeudi 1er novembre 2018</p>
-<h2>Qu’est-ce qu’un développeur web junior ?<h2>
-<p>Le développeur web junior est indispensable dans une équipe de développement.
-Il a pour mission de donner vie aux maquettes visuelles d’une application web réalisées souvent
-par le graphiste ou l’UX Designer.
-Il doit traduire, en langage web, ses recommandations graphiques en rédigeant du code HTML, CSS,
-mais aussi JavaScript et PHP. Il est chargé de :</p>
+<h2>Qu’est-ce que le social media ?<h2>
+<p>Le Social Media Marketing est une forme de marketing sur Internet qui utilise les réseaux sociaux comme un outil de promotion. L’objectif du Social Media Marketing est de produire du contenu que les utilisateurs partageront sur leur compte social pour aider une entreprise à accroître sa visibilité et à élargir son audience.
+Le rôle et l’objectif principal du Social Media Marketing est de:</p>
 
 <ul>
-<li> <p>- assembler les pages en HTML5 et CSS3 à partir de maquettes graphiques</p> </li>
-<li> <p>- intégrer des contenus textes, images, sons, vidéos dans le code HTML5</p> </li>
-<li> <p>- respecter les normes d’accessibilité et de référencement du W3C</p> </li>
-<li> <p>- assurer la compatibilité avec les différents navigateurs du marché</p> </li>
-<li> <p>- mettre en place une communication entre client et serveur avec JavaScript et PHP</p> </li>
-<li> <p>- organiser et gérer la base de données</p> </li>
+<li> <p>- Définir des objectifs de socialisation d’une marque</p> </li>
+<li> <p>- Mettre en place de moyens et d’outils pour réaliser ces objectifs</p> </li>
+<li> <p>- Définir de charte d’utilisation</p> </li>
+<li> <p>- Gerer des influenceurs</p> </li>
+<li> <p>- Piloter et  suivre  la notoriété de l’entreprise sur le web</p> </li>
+<li> <p>- mettre en place un Social Media Planning</p> </li>
 </ul>
 
-<h2>Ce que vous serez capable de faire<h2>
+<h2>Ce que vous serez capable de faire <h2>
 
 <ul>
-<li> <p>- développer des sites comme Facebook, Airbnb, Netflix, Jumia etc.</p> </li>
-<li> <p>- gérer les comptes utilisateurs</p> </li>
-<li> <p>- faire réagir la page web en fonction des actions de l’utilisateur en JavaScript</p> </li>
-<li> <p>- monter rapidement des sites web avec Wordpress</p> </li>
-<li> <p>- créer, gérer et afficher le contenu d’une base de données</p> </li>
-<li> <p>- adapter l'apparence d'un site web sur n'importe quel type d'écran</p> </li>
+<li> <p>- identifier et de fidéliser des leaders d’opinion.</p> </li>
+<li> <p>- maîtriser l’environnement des réseaux sociaux</p> </li>
+<li> <p>- Maîtriser des outils du web 2.0</p> </li>
+<li> <p>- maîtrise des outils de mesure de l’e-reputation</p> </li>
+<li> <p>- maîtriser des techniques de veille et de recherche</p> </li>
 </ul>
             </div>
 
-            <!-- Instructors -->
-            <div class="instructors">
-              <div class="panel_title">Formateur(s)</div>
-              <div class="row instructors_row">
-
-                <!-- Instructor -->
-                <div class="col-lg-4 col-md-6">
-                  <div class="instructor d-flex flex-row align-items-center justify-content-start">
-                    <div class="instructor_image"><div><img src="/new/images/dave_team.jpeg" alt=""></div></div>
-                    <div class="instructor_content">
-                      <div class="instructor_name"><a href="instructors.html">David YAO</a></div>
-                      <div class="instructor_title">Développeur web</div>
-                    </div>
-                  </div>
-                </div>
-
-
-
-              </div>
-            </div>
-
+            
             <!-- FAQs -->
             <div class="faqs">
               <div class="panel_title">FAQs</div>
@@ -134,7 +110,7 @@ mais aussi JavaScript et PHP. Il est chargé de :</p>
                   <div class="accordion_container">
                     <div class="accordion d-flex flex-row align-items-center active"><div>Combien coûte la formation ?</div></div>
                     <div class="accordion_panel">
-                      <p>30.000 FCFA par mois sur 4 mois (durée de la formation), payables en ligne.</p>
+                      <p>30.000 FCFA par mois payables en ligne.</p>
                     </div>
                   </div>
 
@@ -178,7 +154,7 @@ mais aussi JavaScript et PHP. Il est chargé de :</p>
               <div class="cur_item">
                 <div class="cur_title_container d-flex flex-row align-items-start justify-content-start">
                   <div class="cur_title">Semaine 1</div>
-                  <div class="cur_num ml-auto">1/12</div>
+                  <div class="cur_num ml-auto">1/18</div>
                 </div>
                 <div class="cur_item_content">
                   <div class="cur_item_title"></div>
@@ -188,18 +164,21 @@ mais aussi JavaScript et PHP. Il est chargé de :</p>
                   <div class="cur_contents">
                     <ul>
                       <li>
-                        <i class="fa fa-folder" aria-hidden="true"></i><span>Partie 0: Découvrir le développement web</span>
+                        <i class="fa fa-folder" aria-hidden="true"></i><span>Section 1: Développer
+une stratégie de médias sociaux</span>
                         <ul>
 
                           <li class="d-flex flex-row align-items-center justify-content-start">
-                            <i class="fa fa-file" aria-hidden="true"></i><span>Section 1: Bienvenue !<a href="#"></a></span>
+                            <i class="fa fa-file" aria-hidden="true"></i><span>Pourquoi avez vous besoin d’une stratégie de médias sociaux?<a href="#"></a></span>
                             <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
                           </li>
                           <li class="d-flex flex-row align-items-center justify-content-start">
-                            <i class="fa fa-file" aria-hidden="true"></i><span>Section 2: Comment fonctionne le web ?<a href="#"></a></span>
+                            <i class="fa fa-file" aria-hidden="true"></i><span>Les différents médias sociaux<a href="#"></a></span>
                             <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
                           </li>
                         </ul>
+
+                      </li>
                       </ul>
                   </div>
                 </div>
@@ -207,7 +186,7 @@ mais aussi JavaScript et PHP. Il est chargé de :</p>
               <div class="cur_item">
                 <div class="cur_title_container d-flex flex-row align-items-start justify-content-start">
                   <div class="cur_title">Semaine 2</div>
-                  <div class="cur_num ml-auto">2/12</div>
+                  <div class="cur_num ml-auto">2/18</div>
                 </div>
                 <div class="cur_item_content">
                   <div class="cur_item_title"></div>
@@ -217,16 +196,21 @@ mais aussi JavaScript et PHP. Il est chargé de :</p>
                   <div class="cur_contents">
                     <ul>
                       <li>
-                        <i class="fa fa-folder" aria-hidden="true"></i><span>Partie 1: Apprendre HTML et CSS</span>
+                        <i class="fa fa-folder" aria-hidden="true"></i><span>Section 1: Développer
+une stratégie de médias sociaux</span>
                         <ul>
 
                           <li class="d-flex flex-row align-items-center justify-content-start">
-                            <i class="fa fa-file" aria-hidden="true"></i><span>Section 1: HTML: structure d'un site web
+                            <i class="fa fa-file" aria-hidden="true"></i><span>Jeter les bases du succès - établir des indicateurs clés de performance (KPI)
                               <a href="#"></a></span>
                             <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
                           </li>
                           <li class="d-flex flex-row align-items-center justify-content-start">
-                            <i class="fa fa-file" aria-hidden="true"></i><span>Section 2: Un regard plus attentif sur CSS (Projet à réaliser en classe: présentation livre)<a href="#"></a></span>
+                            <i class="fa fa-file" aria-hidden="true"></i><span>Pourquoi avez vous besoin d’une stratégie de médias sociaux?<a href="#"></a></span>
+                            <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
+                          </li>
+                          <li class="d-flex flex-row align-items-center justify-content-start">
+                            <i class="fa fa-file" aria-hidden="true"></i><span>Structurer votre équipe de médias sociaux pour le présent et l'avenir<a href="#"></a></span>
                             <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
                           </li>
                         </ul>
@@ -239,7 +223,7 @@ mais aussi JavaScript et PHP. Il est chargé de :</p>
               <div class="cur_item">
                 <div class="cur_title_container d-flex flex-row align-items-start justify-content-start">
                   <div class="cur_title">Semaine 3</div>
-                  <div class="cur_num ml-auto">3/12</div>
+                  <div class="cur_num ml-auto">3/18</div>
                 </div>
                 <div class="cur_item_content">
                   <div class="cur_item_title"></div>
@@ -249,19 +233,23 @@ mais aussi JavaScript et PHP. Il est chargé de :</p>
                   <div class="cur_contents">
                     <ul>
                       <li>
-                        <i class="fa fa-folder" aria-hidden="true"></i><span>Partie 1: Apprendre HTML et CSS</span>
+                        <i class="fa fa-folder" aria-hidden="true"></i><span>Section 1: Développer
+une stratégie de médias sociaux</span>
                         <ul>
 
                           <li class="d-flex flex-row align-items-center justify-content-start">
-                            <i class="fa fa-file" aria-hidden="true"></i><span>Section 3: Bordures et espaces (Projet à réaliser en classe: la galerie d’amour)<a href="#"></a></span>
+                            <i class="fa fa-file" aria-hidden="true"></i><span>Evaluer les meilleurs canaux en
+rapport avec vos objectifs.<a href="#"></a></span>
                             <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
                           </li>
                           <li class="d-flex flex-row align-items-center justify-content-start">
-                            <i class="fa fa-file" aria-hidden="true"></i>Section 4: Construire avec bootstrap (Projet à réaliser en classe: maison des artisans)<span><a href="#"></a></span>
+                            <i class="fa fa-file" aria-hidden="true"></i>Développer un budget et obtenir
+l'adhésion des dirigeants<span><a href="#"></a></span>
                             <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
                           </li>
 
                         </ul>
+                         
                       </li>
 
                     </ul>
@@ -271,7 +259,7 @@ mais aussi JavaScript et PHP. Il est chargé de :</p>
               <div class="cur_item">
                 <div class="cur_title_container d-flex flex-row align-items-start justify-content-start">
                   <div class="cur_title">Semaine 4</div>
-                  <div class="cur_num ml-auto">4/12</div>
+                  <div class="cur_num ml-auto">4/18</div>
                 </div>
                 <div class="cur_item_content">
                   <div class="cur_item_title"></div>
@@ -281,15 +269,22 @@ mais aussi JavaScript et PHP. Il est chargé de :</p>
                   <div class="cur_contents">
                     <ul>
                       <li>
-                        <i class="fa fa-folder" aria-hidden="true"></i><span>Partie 2: Apprendre Javascript</span>
+                        <i class="fa fa-folder" aria-hidden="true"></i><span>Section 2: Ecoute et
+suivi des médias sociaux</span>
                         <ul>
 
                           <li class="d-flex flex-row align-items-center justify-content-start">
-                            <i class="fa fa-file" aria-hidden="true"></i><span>Section 1: Créez un site web interactif: faire un menu déroulant <a href="#"></a></span>
+                            <i class="fa fa-file" aria-hidden="true"></i><span>Écoute et surveillance des médias
+sociaux: impératifs commerciaux <a href="#"></a></span>
                             <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>15 minutes</span></div>
                           </li>
                           <li class="d-flex flex-row align-items-center justify-content-start">
-                            <i class="fa fa-file" aria-hidden="true"></i><span>Section 2: Site Web interactif: Menu coulissant<a href="#"></a></span>
+                            <i class="fa fa-file" aria-hidden="true"></i><span>Le pouvoir de l'écoute sociale<a href="#"></a></span>
+                            <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
+                          </li>
+                          <li class="d-flex flex-row align-items-center justify-content-start">
+                            <i class="fa fa-file" aria-hidden="true"></i><span>Comprendre la conversation de
+marque<a href="#"></a></span>
                             <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
                           </li>
 
@@ -303,7 +298,7 @@ mais aussi JavaScript et PHP. Il est chargé de :</p>
               <div class="cur_item">
                 <div class="cur_title_container d-flex flex-row align-items-start justify-content-start">
                   <div class="cur_title">Semaine 5</div>
-                  <div class="cur_num ml-auto">5/12</div>
+                  <div class="cur_num ml-auto">5/18</div>
                 </div>
                 <div class="cur_item_content">
                   <div class="cur_item_title"></div>
@@ -313,19 +308,21 @@ mais aussi JavaScript et PHP. Il est chargé de :</p>
                   <div class="cur_contents">
                     <ul>
                       <li>
-                        <i class="fa fa-folder" aria-hidden="true"></i><span>Partie 2: Apprendre Javascript</span>
+                        <i class="fa fa-folder" aria-hidden="true"></i><span>Section 2: Ecoute et
+suivi des médias sociaux</span>
                         <ul>
 
                           <li class="d-flex flex-row align-items-center justify-content-start">
-                            <i class="fa fa-file" aria-hidden="true"></i><span>Section 3: Javascript: les bases<a href="#"></a></span>
+                            <i class="fa fa-file" aria-hidden="true"></i><span>Analyser la concurrence<a href="#"></a></span>
                             <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
                           </li>
                           <li class="d-flex flex-row align-items-center justify-content-start">
-                            <i class="fa fa-file" aria-hidden="true"></i><span>Section 4: Les événements <a href="#"></a></span>
+                            <i class="fa fa-file" aria-hidden="true"></i><span>Évaluation des outils et services d'écoute sociale et de suivi <a href="#"></a></span>
                             <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
                           </li>
 
                         </ul>
+                         
                       </li>
 
                     </ul>
@@ -335,7 +332,7 @@ mais aussi JavaScript et PHP. Il est chargé de :</p>
               <div class="cur_item">
                 <div class="cur_title_container d-flex flex-row align-items-start justify-content-start">
                   <div class="cur_title">Semaine 6</div>
-                  <div class="cur_num ml-auto">6/12</div>
+                  <div class="cur_num ml-auto">6/18</div>
                 </div>
                 <div class="cur_item_content">
                   <div class="cur_item_title"></div>
@@ -345,15 +342,18 @@ mais aussi JavaScript et PHP. Il est chargé de :</p>
                   <div class="cur_contents">
                     <ul>
                       <li>
-                        <i class="fa fa-folder" aria-hidden="true"></i><span>Partie 2: Apprendre Javascript</span>
+                        <i class="fa fa-folder" aria-hidden="true"></i><span>Section 3: construire
+une stratégie de contenu pour les médias sociaux</span>
                         <ul>
 
                           <li class="d-flex flex-row align-items-center justify-content-start">
-                            <i class="fa fa-file" aria-hidden="true"></i><span>Section 5 : Site web interactif: construisez un fil d'actualités <a href="#"></a></span>
+                            <i class="fa fa-file" aria-hidden="true"></i><span>Le Contenu - l'épine dorsale de votre
+stratégie sociale media <a href="#"></a></span>
                             <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>15 minutes</span></div>
                           </li>
                           <li class="d-flex flex-row align-items-center justify-content-start">
-                            <i class="fa fa-file" aria-hidden="true"></i><span>Section 6 : Le DOM<a href="#"></a></span>
+                            <i class="fa fa-file" aria-hidden="true"></i><span>Contenu des médias sociaux: les
+bases<a href="#"></a></span>
                             <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
                           </li>
 
@@ -367,7 +367,7 @@ mais aussi JavaScript et PHP. Il est chargé de :</p>
               <div class="cur_item">
                 <div class="cur_title_container d-flex flex-row align-items-start justify-content-start">
                   <div class="cur_title">Semaine 7</div>
-                  <div class="cur_num ml-auto">7/12</div>
+                  <div class="cur_num ml-auto">7/18</div>
                 </div>
                 <div class="cur_item_content">
                   <div class="cur_item_title"></div>
@@ -377,15 +377,21 @@ mais aussi JavaScript et PHP. Il est chargé de :</p>
                   <div class="cur_contents">
                     <ul>
                       <li>
-                        <i class="fa fa-folder" aria-hidden="true"></i><span>Apprendre PHP</span>
+                        <i class="fa fa-folder" aria-hidden="true"></i><span>Section 3: construire une stratégie de contenu pour les médias sociaux</span>
                         <ul>
 
                           <li class="d-flex flex-row align-items-center justify-content-start">
-                            <i class="fa fa-file" aria-hidden="true"></i><span>Section 1: PHP : Introduction <a href="#"></a></span>
+                            <i class="fa fa-file" aria-hidden="true"></i><span>Développez votre plan de contenu
+stratégique <a href="#"></a></span>
                             <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
                           </li>
                           <li class="d-flex flex-row align-items-center justify-content-start">
-                            <i class="fa fa-file" aria-hidden="true"></i><span>Section 2: Les bases en PHP<a href="#"></a></span>
+                            <i class="fa fa-file" aria-hidden="true"></i><span>Comment le ton et ce que vous dites
+font toute la différence?<a href="#"></a></span>
+                            <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
+                          </li>
+                          <li class="d-flex flex-row align-items-center justify-content-start">
+                            <i class="fa fa-file" aria-hidden="true"></i><span>Développez votre contenu social media<a href="#"></a></span>
                             <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
                           </li>
 
@@ -399,7 +405,7 @@ mais aussi JavaScript et PHP. Il est chargé de :</p>
                 <div class="cur_item">
                 <div class="cur_title_container d-flex flex-row align-items-start justify-content-start">
                   <div class="cur_title">Semaine 8</div>
-                  <div class="cur_num ml-auto">8/12</div>
+                  <div class="cur_num ml-auto">8/18</div>
                 </div>
                 <div class="cur_item_content">
                   <div class="cur_item_title"></div>
@@ -409,19 +415,21 @@ mais aussi JavaScript et PHP. Il est chargé de :</p>
                   <div class="cur_contents">
                     <ul>
                       <li>
-                        <i class="fa fa-folder" aria-hidden="true"></i><span>Apprendre PHP</span>
+                        <i class="fa fa-folder" aria-hidden="true"></i><span>Section 3: construire
+une stratégie de contenu pour les médias sociaux</span>
                         <ul>
 
                           <li class="d-flex flex-row align-items-center justify-content-start">
-                            <i class="fa fa-file" aria-hidden="true"></i><span>Section 3 : Transmettre les données de page en page <a href="#"></a></span>
+                            <i class="fa fa-file" aria-hidden="true"></i><span>Faire preuve de leadership dans l'industrie grâce à la curation de contenu <a href="#"></a></span>
                             <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
                           </li>
                           <li class="d-flex flex-row align-items-center justify-content-start">
-                            <i class="fa fa-file" aria-hidden="true"></i><span>Section 4 : PHP MySQL <a href="#"></a></span>
+                            <i class="fa fa-file" aria-hidden="true"></i><span>L'importance des tags, de l'originalitéet de l'analyse de votre contenu <a href="#"></a></span>
                             <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
                           </li>
 
                         </ul>
+                         
                       </li>
 
                     </ul>
@@ -431,7 +439,7 @@ mais aussi JavaScript et PHP. Il est chargé de :</p>
               <div class="cur_item">
                 <div class="cur_title_container d-flex flex-row align-items-start justify-content-start">
                   <div class="cur_title">Semaine 9</div>
-                  <div class="cur_num ml-auto">9/12</div>
+                  <div class="cur_num ml-auto">9/18</div>
                 </div>
                 <div class="cur_item_content">
                   <div class="cur_item_title"></div>
@@ -441,18 +449,35 @@ mais aussi JavaScript et PHP. Il est chargé de :</p>
                   <div class="cur_contents">
                     <ul>
                       <li>
-                        <i class="fa fa-folder" aria-hidden="true"></i><span>Partie 5: Wordpress</span>
-                        <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
+                        <i class="fa fa-folder" aria-hidden="true"></i><span>Section 4: étendre
+votre portée sur les réseaux sociaux</span>
+                        <ul>
                       </li>
-
+                      
+                      <li class="d-flex flex-row align-items-center justify-content-start">
+                            <i class="fa fa-file" aria-hidden="true"></i><span>Faites passer votre stratégie sociale au
+niveau supérieur <a href="#"></a></span>
+                            <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
+                          </li>
+                          <li class="d-flex flex-row align-items-center justify-content-start">
+                            <i class="fa fa-file" aria-hidden="true"></i><span>Les différentes nuances du marketing
+d'influence <a href="#"></a></span>
+                            <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
+                          </li>
+                          <li class="d-flex flex-row align-items-center justify-content-start">
+                            <i class="fa fa-file" aria-hidden="true"></i><span>Comment travailler avec des
+influenceurs <a href="#"></a></span>
+                            <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
+                          </li>
+                         </ul>
                     </ul>
                   </div>
                 </div>
               </div>
-              <div class="cur_item">
+                  <div class="cur_item">
                 <div class="cur_title_container d-flex flex-row align-items-start justify-content-start">
                   <div class="cur_title">Semaine 10</div>
-                  <div class="cur_num ml-auto">10/12</div>
+                  <div class="cur_num ml-auto">10/18</div>
                 </div>
                 <div class="cur_item_content">
                   <div class="cur_item_title"></div>
@@ -462,20 +487,22 @@ mais aussi JavaScript et PHP. Il est chargé de :</p>
                   <div class="cur_contents">
                     <ul>
                       <li>
-                        <i class="fa fa-folder" aria-hidden="true"></i><span>Partie 6: Hébergement et noms de domaines</span>
-                        <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
-                        </li>
+                        <i class="fa fa-folder" aria-hidden="true"></i><span>Section 4: étendre
+votre portée sur les réseaux sociaux</span>
+                        <ul>
 
+                          <li class="d-flex flex-row align-items-center justify-content-start">
+                            <i class="fa fa-file" aria-hidden="true"></i><span>Qu'est-ce que l'UGC et pourquoi est-ce important ? <a href="#"></a></span>
+                            <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
+                          </li>
+                          <li class="d-flex flex-row align-items-center justify-content-start">
+                            <i class="fa fa-file" aria-hidden="true"></i><span>Encouragez le contenu généré par
+l'utilisateur parmi votre public <a href="#"></a></span>
+                            <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
+                          </li>
 
-                    </ul>
-                  </div>
-                  <div class="cur_contents">
-                    <ul>
-                      <li>
-                        <i class="fa fa-folder" aria-hidden="true"></i><span>Partie 7 : Qu'avons-nous appris dans ce cours ?</span>
-                        <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
-
-                      </li>
+                        </ul>
+                                               </li>
 
                     </ul>
                   </div>
@@ -484,7 +511,7 @@ mais aussi JavaScript et PHP. Il est chargé de :</p>
               <div class="cur_item">
                 <div class="cur_title_container d-flex flex-row align-items-start justify-content-start">
                   <div class="cur_title">Semaine 11</div>
-                  <div class="cur_num ml-auto">11/12</div>
+                  <div class="cur_num ml-auto">11/18</div>
                 </div>
                 <div class="cur_item_content">
                   <div class="cur_item_title"></div>
@@ -494,20 +521,18 @@ mais aussi JavaScript et PHP. Il est chargé de :</p>
                   <div class="cur_contents">
                     <ul>
                       <li>
-                        <i class="fa fa-folder" aria-hidden="true"></i><span>Partie 8: Votre carrière</span>
+                        <i class="fa fa-folder" aria-hidden="true"></i><span>Section 5: Utiliser les
+médias sociaux pour établir des relations individuelles</span>
                         <ul>
 
                           <li class="d-flex flex-row align-items-center justify-content-start">
-                            <i class="fa fa-file" aria-hidden="true"></i><span>Section 1: Devenir développeur web salarié<a href="#"></a></span>
-                            <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>15 minutes</span></div>
+                            <i class="fa fa-file" aria-hidden="true"></i><span>Pourquoi l'engagement social est au
+coeur de votre stratégie sociale <a href="#"></a></span>
+                            <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
                           </li>
                           <li class="d-flex flex-row align-items-center justify-content-start">
-                            <i class="fa fa-file" aria-hidden="true"></i><span>Section 2 : Devenir développeur
-freelance.
-<a href="#"></a></span>
-<div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>15 minutes</span></div>
-
-
+                            <i class="fa fa-file" aria-hidden="true"></i><span>Soyez engagé <a href="#"></a></span>
+                            <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
                           </li>
 
                         </ul>
@@ -520,7 +545,7 @@ freelance.
               <div class="cur_item">
                 <div class="cur_title_container d-flex flex-row align-items-start justify-content-start">
                   <div class="cur_title">Semaine 12</div>
-                  <div class="cur_num ml-auto">12/12</div>
+                  <div class="cur_num ml-auto">12/18</div>
                 </div>
                 <div class="cur_item_content">
                   <div class="cur_item_title"></div>
@@ -530,15 +555,261 @@ freelance.
                   <div class="cur_contents">
                     <ul>
                       <li>
-                        <i class="fa fa-folder" aria-hidden="true"></i><span>Partie 9: Préparation de la soutenance</span>
+                        <i class="fa fa-folder" aria-hidden="true"></i><span>Section 5: Utiliser les
+médias sociaux pour établir des relations individuelles</span>
                         <ul>
 
                           <li class="d-flex flex-row align-items-center justify-content-start">
-                        <i class="fa fa-graduation-cap" aria-hidden="true"></i><span>Soutenance</span>
-                        <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>30 minutes</span></div>
-
+                            <i class="fa fa-file" aria-hidden="true"></i><span>Qu'est-ce que le service client social et
+devrais-je le faire? <a href="#"></a></span>
+                            <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
+                          </li>
+                          <li class="d-flex flex-row align-items-center justify-content-start">
+                            <i class="fa fa-file" aria-hidden="true"></i><span>Comment atteindre les objectifs
+commerciaux par la vente sociale <a href="#"></a></span>
+                            <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
                           </li>
 
+                        </ul>
+                      </li>
+                       
+                    </ul>
+                  </div>
+                </div>
+              </div>
+                <div class="cur_item">
+                <div class="cur_title_container d-flex flex-row align-items-start justify-content-start">
+                  <div class="cur_title">Semaine 13</div>
+                  <div class="cur_num ml-auto">13/18</div>
+                </div>
+                <div class="cur_item_content">
+                  <div class="cur_item_title"></div>
+                  <div class="cur_item_text">
+
+                  </div>
+                  <div class="cur_contents">
+                    <ul>
+                      <li>
+                        <i class="fa fa-folder" aria-hidden="true"></i><span>Section 6: Comprendre
+les bases de la publicité numérique</span>
+                        <ul>
+
+                          <li class="d-flex flex-row align-items-center justify-content-start">
+                            <i class="fa fa-file" aria-hidden="true"></i><span>Pourquoi la publicité numérique estelle
+importante pour votre stratégie entrante? <a href="#"></a></span>
+                            <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
+                          </li>
+                          <li class="d-flex flex-row align-items-center justify-content-start">
+                            <i class="fa fa-file" aria-hidden="true"></i><span>Comment créer un contenu publicitaire
+remarquable <a href="#"></a></span>
+                            <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
+                          </li>
+
+                        </ul>
+                      </li>
+
+                    </ul>
+                  </div>
+                </div>
+              </div>
+                <div class="cur_item">
+                <div class="cur_title_container d-flex flex-row align-items-start justify-content-start">
+                  <div class="cur_title">Semaine 14</div>
+                  <div class="cur_num ml-auto">14/18</div>
+                </div>
+                <div class="cur_item_content">
+                  <div class="cur_item_title"></div>
+                  <div class="cur_item_text">
+
+                  </div>
+                  <div class="cur_contents">
+                    <ul>
+                      <li>
+                        <i class="fa fa-folder" aria-hidden="true"></i><span>Section 6: Comprendre
+les bases de la publicité numérique</span>
+                        <ul>
+
+                          <li class="d-flex flex-row align-items-center justify-content-start">
+                            <i class="fa fa-file" aria-hidden="true"></i><span>Comprendre les possibilités des
+reseaux sociaux <a href="#"></a></span>
+                            <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
+                          </li>
+                          <li class="d-flex flex-row align-items-center justify-content-start">
+                            <i class="fa fa-file" aria-hidden="true"></i><span>Déterminer vos dépenses publicitaires <a href="#"></a></span>
+                            <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
+                          </li>
+
+                        </ul>
+                        </li>
+
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+<div class="cur_item">
+                <div class="cur_title_container d-flex flex-row align-items-start justify-content-start">
+                  <div class="cur_title">Semaine 15</div>
+                  <div class="cur_num ml-auto">15/18</div>
+                </div>
+                <div class="cur_item_content">
+                  <div class="cur_item_title"></div>
+                  <div class="cur_item_text">
+
+                  </div>
+                  <div class="cur_contents">
+                    <ul>
+                      <li>
+                        <i class="fa fa-folder" aria-hidden="true"></i><span>Section 7: Mesurer
+votre retour sur investissement social</span>
+                        <ul>
+
+                          <li class="d-flex flex-row align-items-center justify-content-start">
+                            <i class="fa fa-file" aria-hidden="true"></i><span>Pourquoi mesurer le retour sur
+investissement des médias sociaux? <a href="#"></a></span>
+                            <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
+                          </li>
+                          <li class="d-flex flex-row align-items-center justify-content-start">
+                            <i class="fa fa-file" aria-hidden="true"></i><span>L'audit des médias sociaux: comment
+comprendre votre succès avec les médias sociaux<a href="#"></a></span>
+                            <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
+                          </li>
+
+                        </ul>
+                      </li>
+
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="cur_item">
+                <div class="cur_title_container d-flex flex-row align-items-start justify-content-start">
+                  <div class="cur_title">Semaine 16</div>
+                  <div class="cur_num ml-auto">16/18</div>
+                </div>
+                <div class="cur_item_content">
+                  <div class="cur_item_title"></div>
+                  <div class="cur_item_text">
+
+                  </div>
+                  <div class="cur_contents">
+                    <ul>
+                      <li>
+                        <i class="fa fa-folder" aria-hidden="true"></i><span>Section 7: Mesurer
+votre retour sur investissement social</span>
+                        <ul>
+
+                          <li class="d-flex flex-row align-items-center justify-content-start">
+                            <i class="fa fa-file" aria-hidden="true"></i><span>Comment mesurer le ROI social? <a href="#"></a></span>
+                            <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
+                          </li>
+                          <li class="d-flex flex-row align-items-center justify-content-start">
+                            <i class="fa fa-file" aria-hidden="true"></i><span>Comment relier les mesures et
+transformer votre entreprise<a href="#"></a></span>
+                            <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
+                          </li>
+
+                        </ul>
+                        
+                      </li>
+
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="cur_item">
+                <div class="cur_title_container d-flex flex-row align-items-start justify-content-start">
+                  <div class="cur_title">Semaine 17</div>
+                  <div class="cur_num ml-auto">17/18</div>
+                </div>
+                <div class="cur_item_content">
+                  <div class="cur_item_title"></div>
+                  <div class="cur_item_text">
+
+                  </div>
+                  <div class="cur_contents">
+                    <ul>
+                      <li>
+                        <i class="fa fa-folder" aria-hidden="true"></i><span>Section 8: Quelques
+conseils pour un succès continu avec les médias sociaux</span>
+                        <ul>
+
+                          <li class="d-flex flex-row align-items-center justify-content-start">
+                            <i class="fa fa-file" aria-hidden="true"></i><span>Les médias sociaux ne s'arrêtent pas
+là ! <a href="#"></a></span>
+                            <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
+                          </li>
+                          <li class="d-flex flex-row align-items-center justify-content-start">
+                            <i class="fa fa-file" aria-hidden="true"></i><span>Comprendre la gouvernance des
+médias sociaux et les risques<a href="#"></a></span>
+                            <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
+                          </li>
+
+                        </ul>
+                      </li>
+
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="cur_item">
+                <div class="cur_title_container d-flex flex-row align-items-start justify-content-start">
+                  <div class="cur_title">Semaine 18</div>
+                  <div class="cur_num ml-auto">18/18</div>
+                </div>
+                <div class="cur_item_content">
+                  <div class="cur_item_title"></div>
+                  <div class="cur_item_text">
+
+                  </div>
+                  <div class="cur_contents">
+                    <ul>
+                      <li>
+                        <i class="fa fa-folder" aria-hidden="true"></i><span>Section 8: Quelques
+conseils pour un succès continu avec les médias sociaux</span>
+                        <ul>
+
+                          <li class="d-flex flex-row align-items-center justify-content-start">
+                            <i class="fa fa-file" aria-hidden="true"></i><span>Mettre en place un plan de gestion de
+crise<a href="#"></a></span>
+                            <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
+                          </li>
+                          <li class="d-flex flex-row align-items-center justify-content-start">
+                            <i class="fa fa-file" aria-hidden="true"></i><span>Construire un programme de plaidoyer
+des employés<a href="#"></a></span>
+                            <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
+                          </li>
+
+                        </ul>
+                         <li>
+                        
+                      </li>
+
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="cur_item">
+                <div class="cur_title_container d-flex flex-row align-items-start justify-content-start">
+                  <div class="cur_title">Semaine 19</div>
+                  <div class="cur_num ml-auto"></div>
+                </div>
+                <div class="cur_item_content">
+                  <div class="cur_item_title"></div>
+                  <div class="cur_item_text">
+
+                  </div>
+                  <div class="cur_contents">
+                    <ul>
+                      <li>
+                        <i class="fa fa-folder" aria-hidden="true"></i><span>Projet de soutenance</span>
+                        <ul>
+ <li class="d-flex flex-row align-items-center justify-content-start">
+             <i class="fa fa-graduation-cap" aria-hidden="true"></i><span>Soutenance</span>
+             <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>30 minutes</span></div>
+            
+              </li>
+                          
                         </ul>
                       </li>
 
@@ -715,12 +986,12 @@ freelance.
               <div class="cert_image"><img src="/new/images/certificats/devweb.png" alt=""></div>
             </div>
 
-            <!-- You may like -->
+            <!-- You may like 
             <div class="sidebar_section like">
               <div class="sidebar_title">Cours associé :</div>
               <div class="like_items">
 
-                <!-- Like Item -->
+               Like Item 
                 <div class="like_item d-flex flex-row align-items-end justify-content-start">
                   <div class="like_title_container">
                     <div class="like_title"> <a href="https://oschool.ci/course/formation-complete-developpeur-web-2/" target="_blank">Devenez développeur web en partant de zéro</a> </div>
@@ -731,6 +1002,7 @@ freelance.
 
               </div>
             </div>
+          -->
           </div>
         </div>
       </div>
