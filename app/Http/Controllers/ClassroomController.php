@@ -18,12 +18,12 @@ class ClassroomController extends Controller
     public function index()
     {
       if (Auth::check()) {
-        if (!Auth::user()->isTeacher() && !Auth::user()->isAdmin()) {
-          $classrooms = Classroom::orderby('date', 'asc')->where('etudiant', Auth::user()->name)->get();
+          $classrooms = Classroom::where('etudiant', Auth::user()->name)->orderby('date', 'asc')->get();
           return view('classrooms.index', ['classrooms' => $classrooms]);
         }
-        return view('classrooms.index');
-      }
+        elseif (Auth::user()->isTeacher()) {
+          return view('classrooms.index');
+        }      
       else {
         return redirect('home');
       }
