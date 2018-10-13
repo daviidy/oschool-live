@@ -29,7 +29,7 @@
                 @foreach(Auth::user()->sessions as $classroom)
                 <tr>
                   <td><a href="{{url('users', $classroom->idEtudiant)}}">{{$classroom->etudiant}}</a></td>
-                  <td> <a data-toggle="modal" data-target="#myModal{{$classroom->id}}" href="#">{{ Carbon\Carbon::parse($classroom->date)->format('d-m-Y H:i') }}</a></td>
+                  <td> <a data-toggle="modal" data-target="#myModal{{$classroom->id}}" href="#">{{ Carbon\Carbon::parse($classroom->date)->format('d-m-Y H:i') }}: voir le compte rendu</a></td>
                   <td style="display: flex; flex-wrap: wrap;">
 
                     @if($classroom->statut == "Planifié")
@@ -119,7 +119,7 @@
                 @foreach($classrooms as $classroom)
                 <tr>
                   <td><a href="{{url('users', $classroom->user_id)}}">{{$classroom->formateur}}</a></td>
-                  <td>{{ Carbon\Carbon::parse($classroom->date)->format('d-m-Y') }}</td>
+                  <td> <a data-toggle="modal" data-target="#myModal{{$classroom->id}}" href="#">{{ Carbon\Carbon::parse($classroom->date)->format('d-m-Y') }}: voir le compte rendu</a> </td>
                   <td style="display: flex; flex-wrap: wrap;">
 
                     @if($classroom->statut == "Planifié")
@@ -131,6 +131,34 @@
                     @endif
                   </td>
                 </tr>
+                <!-- The Modal -->
+                <div class="modal fade" id="myModal{{$classroom->id}}">
+                <div class="modal-dialog">
+                <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                <h4 style="font-size: 24px;" class="modal-title">Compte-rendu de la session</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                  <div class="container">
+                      {!! $classroom->commentaire !!}
+                  </div>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
+                </div>
+
+                </div>
+                </div>
+                </div>
+
+                <!--end modal-->
                 @endforeach
               </tbody>
             </table>

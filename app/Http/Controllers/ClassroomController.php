@@ -19,7 +19,7 @@ class ClassroomController extends Controller
     {
       if (Auth::check()) {
         if (!Auth::user()->isTeacher() && !Auth::user()->isAdmin()) {
-          $classrooms = Classroom::where('etudiant', Auth::user()->name)->get();
+          $classrooms = Classroom::orderby('date', 'asc')->where('etudiant', Auth::user()->name)->get();
           return view('classrooms.index', ['classrooms' => $classrooms]);
         }
         return view('classrooms.index');

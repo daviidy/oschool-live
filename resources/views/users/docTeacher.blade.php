@@ -39,7 +39,7 @@
             <p><span class="text-muted"> <a target="_blank" href="https://oschool.ci/wp-content/uploads/2018/09/Enseignez-Partagez-Souriez.pdf">Télécharger le guide</a> </span></p>
           </div>
           <div class="room-box">
-            <h5 class="text-primary"><a target="_blank" href="https://drive.google.com/open?id=1Rae0RAkXdhfIYSA-eQkw8kH4KGYaJ9KN0Tz5nA5EjN8">Réaliser ma session (session "rookie")</a></h5>
+            <h5 class="text-primary"><a target="_blank" href="https://drive.google.com/open?id=1Rae0RAkXdhfIYSA-eQkw8kH4KGYaJ9KN0Tz5nA5EjN8">Réaliser première ma session (session "rookie")</a></h5>
             <p>Ce document vous montre comment agir lors de la première séance avec votre étudiant.e</p>
             <p><span class="text-muted"> <a target="_blank" href="https://drive.google.com/open?id=1Rae0RAkXdhfIYSA-eQkw8kH4KGYaJ9KN0Tz5nA5EjN8">Télécharger le guide</a> </span></p>
           </div>

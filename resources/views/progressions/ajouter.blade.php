@@ -56,17 +56,17 @@
 						<div>
 							<select class="js-select2" name="section">
 								<option selected>Selectionner une partie</option>
-							    <option value="Partie 1">Partie 1</option>
-							    <option value="Partie 2">Partie 2</option>
-							    <option value="Partie 3">Partie 3</option>
-							    <option value="Partie 4">Partie 4</option>
-							    <option value="Partie 5">Partie 5</option>
-							    <option value="Partie 6">Partie 6</option>
-							    <option value="Partie 7">Partie 7</option>
-							    <option value="Partie 8">Partie 8</option>
-							    <option value="Partie 9">Partie 9</option>
-							    <option value="Partie 10">Partie 10</option>
-							    <option value="Partie 11 et 12">Partie 11 et 12</option>
+							    <option value="Semaine 1">Semaine 1</option>
+							    <option value="Semaine 2">Semaine 2</option>
+							    <option value="Semaine 3">Semaine 3</option>
+							    <option value="Semaine 4">Semaine 4</option>
+							    <option value="Semaine 5">Semaine 5</option>
+							    <option value="Semaine 6">Semaine 6</option>
+							    <option value="Semaine 7">Semaine 7</option>
+							    <option value="Semaine 8">Semaine 8</option>
+							    <option value="Semaine 9">Semaine 9</option>
+							    <option value="Semaine 10">Semaine 10</option>
+							    <option value="Semaine 11 et 12">Semaine 11 et 12</option>
 							</select>
 							<div class="dropDownSelect2"></div>
 						</div>
@@ -85,7 +85,7 @@
 							</div>
 
 							<div class="contact100-form-checkbox">
-								<input class="input-checkbox100" id="checkbox2" type="checkbox" name="session[]" value="fonctionne le web">
+								<input class="input-checkbox100" id="checkbox2" type="checkbox" name="session[]" value="Comment fonctionne le web?">
 								<label class="custom-control-label" for="checkbox2">
 									Comment fonctionne le web?
 								</label>
@@ -99,14 +99,14 @@
 							<span class="label-input100">Quelles sont les sections faites?</span>
 
 							<div class="contact100-form-checkbox m-t-15">
-								<input class="custom-control-label" id="checkbox1" type="checkbox" name="session[]" value="Structure">
+								<input class="custom-control-label" id="checkbox1" type="checkbox" name="session[]" value="HTML: Structure d'un site web">
 								<label class="label-checkbox100" for="checkbox1">
 									HTML: Structure d'un site web
 								</label>
 							</div>
 
 							<div class="contact100-form-checkbox">
-								<input class="input-checkbox100" id="checkbox2" type="checkbox" name="session[]" value="Un regard plus">
+								<input class="input-checkbox100" id="checkbox2" type="checkbox" name="session[]" value="Un regard plus attentif sur CSS">
 								<label class="custom-control-label" for="checkbox2">
 									Un regard plus attentif sur CSS
 								</label>
@@ -120,14 +120,14 @@
 							<span class="label-input100">Quelles sont les sections faites?</span>
 
 							<div class="contact100-form-checkbox m-t-15">
-								<input class="custom-control-label" id="checkbox1" type="checkbox" name="session[]" value="Bordures">
+								<input class="custom-control-label" id="checkbox1" type="checkbox" name="session[]" value="Bordures et espaces">
 								<label class="label-checkbox100" for="checkbox1">
 									Bordures et espaces
 								</label>
 							</div>
 
 							<div class="contact100-form-checkbox">
-								<input class="input-checkbox100" id="checkbox2" type="checkbox" name="session[]" value="Construire">
+								<input class="input-checkbox100" id="checkbox2" type="checkbox" name="session[]" value="Construire avec Bootstrap">
 								<label class="custom-control-label" for="checkbox2">
 									Construire avec Bootstrap
 								</label>
@@ -141,14 +141,14 @@
 							<span class="label-input100">Quelles sont les sections faites?</span>
 
 							<div class="contact100-form-checkbox m-t-15">
-								<input class="custom-control-label" id="checkbox1" type="checkbox" name="session[]" value="déroulant ">
+								<input class="custom-control-label" id="checkbox1" type="checkbox" name="session[]" value="Créez un site web interactif: Faire un menu déroulant">
 								<label class="label-checkbox100" for="checkbox1">
 									Créez un site web interactif: Faire un menu déroulant
 								</label>
 							</div>
 
 							<div class="contact100-form-checkbox">
-								<input class="input-checkbox100" id="checkbox2" type="checkbox" name="session[]" value="coulissant">
+								<input class="input-checkbox100" id="checkbox2" type="checkbox" name="session[]" value="Site web interactif: Menu coulissant">
 								<label class="custom-control-label" for="checkbox2">
 									Site web interactif: Menu coulissant
 								</label>
@@ -162,7 +162,7 @@
 							<span class="label-input100">Quelles sont les sections faites?</span>
 
 							<div class="contact100-form-checkbox m-t-15">
-								<input class="custom-control-label" id="checkbox1" type="checkbox" name="session[]" value="les bases">
+								<input class="custom-control-label" id="checkbox1" type="checkbox" name="session[]" value="Javascript: les bases">
 								<label class="label-checkbox100" for="checkbox1">
 									 Javascript: les bases
 								</label>
@@ -183,7 +183,7 @@
 							<span class="label-input100">Quelles sont les sections faites?</span>
 
 							<div class="contact100-form-checkbox m-t-15">
-								<input class="custom-control-label" id="checkbox1" type="checkbox" name="session[]" value="d'actualités">
+								<input class="custom-control-label" id="checkbox1" type="checkbox" name="session[]" value="Site web interactif : Construisez un fil d'actualités">
 								<label class="label-checkbox100" for="checkbox1">
 									 Site web interactif : Construisez un fil d'actualités
 								</label>
@@ -204,7 +204,7 @@
 							<span class="label-input100">Quelles sont les sections faites?</span>
 
 							<div class="contact100-form-checkbox m-t-15">
-								<input class="custom-control-label" id="checkbox1" type="checkbox" name="session[]" value="d'actualités">
+								<input class="custom-control-label" id="checkbox1" type="checkbox" name="session[]" value="Site web interactif: Construisons la page d'accueil de Flipboard">
 								<label class="label-checkbox100" for="checkbox1">
 									 Site web interactif: Construisons la page d'accueil de Flipboard
 
@@ -212,7 +212,7 @@
 							</div>
 
 							<div class="contact100-form-checkbox">
-								<input class="input-checkbox100" id="checkbox2" type="checkbox" name="session[]" value="PHP">
+								<input class="input-checkbox100" id="checkbox2" type="checkbox" name="session[]" value="PHP: Introduction">
 								<label class="custom-control-label" for="checkbox2">
 									PHP: Introduction
 								</label>
@@ -226,7 +226,7 @@
 							<span class="label-input100">Quelles sont les sections faites?</span>
 
 							<div class="contact100-form-checkbox m-t-15">
-								<input class="custom-control-label" id="checkbox1" type="checkbox" name="session[]" value="bases PHP">
+								<input class="custom-control-label" id="checkbox1" type="checkbox" name="session[]" value="Les bases en PHP">
 								<label class="label-checkbox100" for="checkbox1">
 									 Les bases en PHP
 
@@ -234,7 +234,7 @@
 							</div>
 
 							<div class="contact100-form-checkbox">
-								<input class="input-checkbox100" id="checkbox2" type="checkbox" name="session[]" value="LA page">
+								<input class="input-checkbox100" id="checkbox2" type="checkbox" name="session[]" value="Transmettre les données de page en page">
 								<label class="custom-control-label" for="checkbox2">
 									Transmettre les données de page en page
 								</label>
@@ -248,15 +248,15 @@
 							<span class="label-input100">Quelles sont les sections faites?</span>
 
 							<div class="contact100-form-checkbox m-t-15">
-								<input class="custom-control-label" id="checkbox1" type="checkbox" name="session[]" value="bases PHP">
+								<input class="custom-control-label" id="checkbox1" type="checkbox" name="session[]" value="PHP/MySQL">
 								<label class="label-checkbox100" for="checkbox1">
-									 PHP MySQL
+									 PHP/MySQL
 
 								</label>
 							</div>
 
 							<div class="contact100-form-checkbox">
-								<input class="input-checkbox100" id="checkbox2" type="checkbox" name="session[]" value="LA page">
+								<input class="input-checkbox100" id="checkbox2" type="checkbox" name="session[]" value="Wordpress">
 								<label class="custom-control-label" for="checkbox2">
 									Wordpress
 								</label>
@@ -270,7 +270,7 @@
 							<span class="label-input100">Quelles sont les sections faites?</span>
 
 							<div class="contact100-form-checkbox m-t-15">
-								<input class="custom-control-label" id="checkbox1" type="checkbox" name="session[]" value="bases PHP">
+								<input class="custom-control-label" id="checkbox1" type="checkbox" name="session[]" value="Hébergement et noms de domaines">
 								<label class="label-checkbox100" for="checkbox1">
 									 Hébergement et noms de domaines
 
@@ -278,7 +278,7 @@
 							</div>
 
 							<div class="contact100-form-checkbox">
-								<input class="input-checkbox100" id="checkbox2" type="checkbox" name="session[]" value="LA page">
+								<input class="input-checkbox100" id="checkbox2" type="checkbox" name="session[]" value="Qu'avons-nous appris de ce cours ?">
 								<label class="custom-control-label" for="checkbox2">
 									Qu'avons-nous appris de ce cours ?
 								</label>
@@ -292,7 +292,7 @@
 							<span class="label-input100">Quelles sont les sections faites?</span>
 
 							<div class="contact100-form-checkbox m-t-15">
-								<input class="custom-control-label" id="checkbox1" type="checkbox" name="session[]" value="bases PHP">
+								<input class="custom-control-label" id="checkbox1" type="checkbox" name="session[]" value="Projets">
 								<label class="label-checkbox100" for="checkbox1">
 									 Projets
 
@@ -300,7 +300,7 @@
 							</div>
 
 							<div class="contact100-form-checkbox">
-								<input class="input-checkbox100" id="checkbox2" type="checkbox" name="session[]" value="LA page">
+								<input class="input-checkbox100" id="checkbox2" type="checkbox" name="session[]" value="Soutenances">
 								<label class="custom-control-label" for="checkbox2">
 									Soutenances
 								</label>
@@ -376,67 +376,67 @@
 							$('.test').slideUp();
 						}
 
-	                    else if($(this).val() == "Partie 1") {
+	                    else if($(this).val() == "Semaine 1") {
 	                    	$('.test').slideUp();
 							$('.js-show-service1').slideUp();
 							$('.js-show-service1').slideDown();
 						}
 
-						else if($(this).val() == "Partie 2") {
+						else if($(this).val() == "Semaine 2") {
 							$('.test').slideUp();
 							$('.js-show-service2').slideUp();
 							$('.js-show-service2').slideDown();
 						}
 
-						else if($(this).val() == "Partie 3") {
+						else if($(this).val() == "Semaine 3") {
 							$('.test').slideUp();
 							$('.js-show-service3').slideUp();
 							$('.js-show-service3').slideDown();
 						}
 
-						else if($(this).val() == "Partie 4") {
+						else if($(this).val() == "Semaine 4") {
 							$('.test').slideUp();
 							$('.js-show-service4').slideUp();
 							$('.js-show-service4').slideDown();
 						}
 
-						else if($(this).val() == "Partie 5") {
+						else if($(this).val() == "Semaine 5") {
 							$('.test').slideUp();
 							$('.js-show-service5').slideUp();
 							$('.js-show-service5').slideDown();
 						}
 
-						else if($(this).val() == "Partie 6") {
+						else if($(this).val() == "Semaine 6") {
 							$('.test').slideUp();
 							$('.js-show-service6').slideUp();
 							$('.js-show-service6').slideDown();
 						}
 
-						else if($(this).val() == "Partie 7") {
+						else if($(this).val() == "Semaine 7") {
 							$('.test').slideUp();
 							$('.js-show-service7').slideUp();
 							$('.js-show-service7').slideDown();
 						}
 
-						else if($(this).val() == "Partie 8") {
+						else if($(this).val() == "Semaine 8") {
 							$('.test').slideUp();
 							$('.js-show-service8').slideUp();
 							$('.js-show-service8').slideDown();
 						}
 
-						else if($(this).val() == "Partie 9") {
+						else if($(this).val() == "Semaine 9") {
 							$('.test').slideUp();
 							$('.js-show-service9').slideUp();
 							$('.js-show-service9').slideDown();
 						}
 
-						else if($(this).val() == "Partie 10") {
+						else if($(this).val() == "Semaine 10") {
 							$('.test').slideUp();
 							$('.js-show-service10').slideUp();
 							$('.js-show-service10').slideDown();
 						}
 
-						else if($(this).val() == "Partie 11 et 12") {
+						else if($(this).val() == "Semaine 11 et 12") {
 							$('.test').slideUp();
 							$('.js-show-service11-12').slideUp();
 							$('.js-show-service11-12').slideDown();
