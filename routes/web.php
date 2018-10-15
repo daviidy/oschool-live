@@ -130,6 +130,10 @@ Route::get('/jeuxvideos', function () {
     return view('formations.jeux-videos');
 })->name('jeux-videos');
 
+Route::get('/android', function () {
+    return view('formations.android');
+})->name('android');
+
 Route::get('/cours', function () {
     return view('formations.cours');
 })->name('cours');
@@ -144,3 +148,7 @@ Route::resource('projets','ProjetController');
 Route::resource('etatprojets','EtatprojetController');
 
 Route::resource('supportformations','SupportformationController');
+
+Route::post('/mooc', function () {
+    return redirect('https://oschool.ci/');
+})->name('mooc');

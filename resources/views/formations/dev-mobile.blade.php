@@ -74,7 +74,7 @@
             <div class="panel_title">Début de la prochaine rentrée :</div>
             <div class="panel_text">
               <p style="color: #2E21DF;margin-bottom: 20px;font-size: 20px;">lundi 8 octobre 2018</p>
-              <p> <strong>Connaissez vous Flutter?</strong><br> C’est le SDK (ou Kit de développement en français) de Google. 
+              <p> <strong>Connaissez vous Flutter?</strong><br> C’est le SDK (ou Kit de développement en français) de Google.
                 Il permet de créer des applications à la fois pour Android et iOS.<br> <strong>Connaissez vous Dart?</strong>
               </p>
               <p> C’est un langage de programmation orienté objet développé par Google. Il est facile à comprendre et à prendre en main et
@@ -83,7 +83,7 @@
               <p> Dans ce cours nous allons ensemble apprendre à développer des applications à la fois pour iOS et Android avec Flutter et
                   Dart. Nous partirons des bases pour créer au fil du cours des applications de plus en plus évoluées.
               </p>
-              <p>Pour bien mettre en pratique vos nouvelles compétences, vous aurez des challenges à faire tout au long du cours, comme par 
+              <p>Pour bien mettre en pratique vos nouvelles compétences, vous aurez des challenges à faire tout au long du cours, comme par
                  exemple créer une application de calcul de calories.
               </p>
 
@@ -676,7 +676,7 @@
       <div class="col-lg-3">
         <div class="sidebar">
           <div class="sidebar_background"></div>
-          <div class="sidebar_top"><a data-toggle="modal" data-target="#myModal" href="#">s'inscrire</a></div>
+          <div class="sidebar_top"><a href="https://adams21.typeform.com/to/itKgiA">s'inscrire</a></div>
           <div class="sidebar_content">
 
             <!-- Features -->

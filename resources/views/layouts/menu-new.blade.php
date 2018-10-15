@@ -15,7 +15,7 @@
 <link rel="stylesheet" type="text/css" href="/new/styles/main_styles.css">
 <link rel="stylesheet" type="text/css" href="/new/styles/responsive.css">
 @endif
-@if(Request::path() == 'devweb' || Request::path() == 'trading' || Request::path() == 'webdesign' || Request::path() == 'frontend' || Request::path() == 'devmobile' || Request::path() == 'socialmedia' || Request::path() == 'blog' || Request::path() == 'jeuxvideos')
+@if(Request::path() == 'devweb' || Request::path() == 'trading' || Request::path() == 'webdesign' || Request::path() == 'frontend' || Request::path() == 'devmobile' || Request::path() == 'socialmedia' || Request::path() == 'blog' || Request::path() == 'jeuxvideos' || Request::path() == 'android')
 <link rel="stylesheet" type="text/css" href="/new/styles/course.css">
 <link rel="stylesheet" type="text/css" href="/new/styles/course_responsive.css">
 @endif
@@ -110,7 +110,7 @@
 								<!-- Hamburger -->
 
                 <a href="{{ route('login') }}" style="margin-left: 10px;" class="">
-                  Connexion
+                  Ma classe
                 </a>
 								<div class="hamburger menu_mm">
 									<i class="fa fa-bars menu_mm" aria-hidden="true"></i>
@@ -201,7 +201,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 @if(Request::path() == '/')
 <script src="/new/js/custom.js"></script>
 @endif
-@if(Request::path() == 'devweb' || Request::path() == 'trading' || Request::path() == 'webdesign' || Request::path() == 'frontend' || Request::path() == 'devmobile' || Request::path() == 'socialmedia' || Request::path() == 'blog' || Request::path() == 'jeuxvideos')
+@if(Request::path() == 'devweb' || Request::path() == 'trading' || Request::path() == 'webdesign' || Request::path() == 'frontend' || Request::path() == 'devmobile' || Request::path() == 'socialmedia' || Request::path() == 'blog' || Request::path() == 'jeuxvideos' || Request::path() == 'android')
 <script src="/new/plugins/parallax-js-master/parallax.min.js"></script>
 <script src="/new/plugins/progressbar/progressbar.min.js"></script>
 <script src="/new/js/course.js"></script>

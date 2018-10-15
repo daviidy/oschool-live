@@ -82,7 +82,7 @@
                 <p>Le développeur Front-End est donc une personne qui peut être issue du milieu du web design en ayant renforcé ses connaissances en développement. Il peut aussi être un développeur qui a choisi de se spécialiser dans les technologies et langages du Front-End tels que :
                 </p>
                 <ul>
-                    <li><strong>HTML ET CSS</strong>  afin de : 
+                    <li><strong>HTML ET CSS</strong>  afin de :
 
                       <ul>
                         <li> <p>- assembler les pages à partir de maquettes graphiques</p> </li>
@@ -92,7 +92,7 @@
                       </ul>
                     </li>
                     <li>
-                      <ul><strong>Javascript ET Jquery</strong>  afin de : 
+                      <ul><strong>Javascript ET Jquery</strong>  afin de :
                         <li><p>- mettre en place une communication entre client et serveur avec JavaScript</p></li>
                         <li><p>- créer des animations avec Jquery</p></li>
                       </ul>
@@ -666,7 +666,7 @@
       <div class="col-lg-3">
         <div class="sidebar">
           <div class="sidebar_background"></div>
-          <div class="sidebar_top"><a data-toggle="modal" data-target="#myModal" href="#">s'inscrire</a></div>
+          <div class="sidebar_top"><a href="https://adams21.typeform.com/to/itKgiA">s'inscrire</a></div>
           <div class="sidebar_content">
 
             <!-- Features -->

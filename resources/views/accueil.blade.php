@@ -271,13 +271,12 @@
       <div class="col-lg-6">
         <div class="register_form_container">
           <div class="register_form_title">Des doutes ? Laissez-vous convaincre par nos MOOC</div>
-          <form action="#" id="register_form" class="register_form">
             <div class="row register_row">
               <div class="col-lg-6 register_col">
-                <input type="text" class="form_input" placeholder="Nom" required="required">
+                <input type="text" class="form_input" placeholder="Nom" required>
               </div>
               <div class="col-lg-6 register_col">
-                <input type="email" class="form_input" placeholder="Email" required="required">
+                <input type="email" class="form_input" placeholder="Email" required>
               </div>
               <div class="col-lg-6 register_col">
                 <input type="tel" class="form_input" placeholder="Téléphone">
@@ -286,10 +285,11 @@
                 <input type="url" class="form_input" placeholder="Site (facultatif)">
               </div>
               <div class="col">
-                <button type="submit" class="form_button trans_200">Obtenir les cours	</button>
+                <a href="https://oschool.ci">
+                  <button type="submit" class="form_button trans_200">Obtenir les cours	</button>
+                </a>
               </div>
             </div>
-          </form>
         </div>
       </div>
 

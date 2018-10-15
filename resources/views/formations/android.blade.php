@@ -13,7 +13,7 @@
           <ul class="breadcrumbs_list d-flex flex-row align-items-center justify-content-start">
             <li><a href="/">accueil</a></li>
             <li><a href="/cours">cours</a></li>
-            <li>Trading</li>
+            <li>développeur android</li>
           </ul>
         </div>
       </div>
@@ -24,7 +24,7 @@
 <!-- Intro -->
 
 <div class="intro">
-  <div class="intro_background parallax-window" data-parallax="scroll" data-image-src="/new/images/cours/devweb/.png" data-speed="0.8"></div>
+  <div class="intro_background parallax-window" data-parallax="scroll" data-image-src="/new/images/cours/android.png" data-speed="0.8"></div>
   <div class="container">
     <div class="row">
       <div class="col">
@@ -32,10 +32,9 @@
           <div class="intro_content">
             <div class="intro_price">Certifié</div>
             <div class="rating_r rating_r_4 intro_rating"><i></i><i></i><i></i><i></i><i></i></div>
-            <div class="intro_title">Trading</div>
+            <div class="intro_title">Développeur d'Applications Android</div>
             <div class="intro_meta">
-              <!--<div class="intro_image"><img style="width: 129%;"src="/new/images/dave_team/.jpeg" alt=""></div>-->
-              <div class="intro_instructors"><a href="instructors.html">Commence le lundi 08 octobre 2018</a> <span><a href="#"></a></span></div>
+              <div class="intro_instructors">Commence le <span><a href="#">lundi 22 octobre 2018 </a></span></div>
             </div>
           </div>
         </div>
@@ -74,49 +73,22 @@
           <div class="tab_panel description active">
             <div class="panel_title">Début de la prochaine rentrée :</div>
             <div class="panel_text">
-              <p style="color: #2E21DF;margin-bottom: 20px;font-size: 20px;">Jeudi 1er novembre 2018</p>
-              <h2>Qu’est-ce que le trading ?<h2>
-              <p>En finance, le trading est l'activité d'achat et de vente des titres financiers. Trading en anglais veut dire commerce. Le trading est l'activité d'un trader, un commerce sur des instruments financiers. Le trading est le terme le plus souvent associé aux produits dérivés, sur lesquels on peut faire de l'achat et de la vente à découvert.
+              <p style="color: #2E21DF;margin-bottom: 20px;font-size: 20px;">Lundi 22 octobre 2018</p>
+<h2>Pourquoi s'inscrire à cette formation ?<h2>
+<p>Si vous vous inscrivez à cette formation, vous bénéficiez de conseils
+  et d'une aide tout au long des cours d'initiation d'Oschool pour Android.
+  Ce programme est un excellent moyen de créer votre premier portefeuille
+  d'applications et de gagner un certificat.</p>
 
-              Les roles du trader sont:</p>
 
-              <ul>
-                <li> <p>- Acheter / vendre des titres, obligations, actions, devises, bons du trésor, matières premières...</p> </li>
-                <li> <p>- Définir ses stratégies financières</p> </li>
-                <li> <p>- Rechercher, analyser, structurer l'information</p> </li>
-                <li> <p>-  Identifier les risques et les opportunités</p> </li>
-                </ul>
+<h2>Ce que vous trouverez dans cette formation ?<h2>
 
-                <h2>Ce que vous serez capable de faire<h2>
-
-                <ul>
-                <li> <p>- Analyser les tendances des différents marchés</p> </li>
-                <li> <p>- Informer en direct de l’évolution des marchés internationaux</p> </li>
-                <li> <p>- Acheter, vendre des produits ou titres sur un marché financier afin de réaliser des bénéfices</p> </li>
-              </ul>
+<p>Une série de cours gratuits, en ligne et à votre rythme, destinés aux développeurs Android
+  débutants sans expérience en programmation. Dans le premier cours, vous construisez votre première
+  application Android. Les derniers cours de la série vous apprendront comment ajouter plus de fonctionnalités
+  à votre application, vous connecter à Internet, configurer des bases de données et stocker des données dans votre application.</p>
             </div>
 
-            <!-- Instructors
-            <div class="instructors">
-              <div class="panel_title">Formateur(s)</div>
-              <div class="row instructors_row">
-
-             Instructor
-                <div class="col-lg-4 col-md-6">
-                  <div class="instructor d-flex flex-row align-items-center justify-content-start">
-                    <div class="instructor_image"><div><img src="/new/images/dave_team.jpeg" alt=""></div></div>
-                    <div class="instructor_content">
-                      <div class="instructor_name"><a href="instructors.html">David YAO</a></div>
-                      <div class="instructor_title">Développeur web</div>
-                    </div>
-                  </div>
-                </div>
-
-
-
-              </div>
-            </div>
-          -->
 
             <!-- FAQs -->
             <div class="faqs">
@@ -128,14 +100,14 @@
                   <div class="accordion_container">
                     <div class="accordion d-flex flex-row align-items-center active"><div>Combien coûte la formation ?</div></div>
                     <div class="accordion_panel">
-                      <p>30.000 FCFA par mois sur 4 mois (durée de la formation), payables en ligne.</p>
+                      <p>30.000 FCFA par mois, payables en ligne.</p>
                     </div>
                   </div>
 
                   <div class="accordion_container">
                     <div class="accordion d-flex flex-row align-items-center"><div>Quelle est la politique de remboursement ?</div></div>
                     <div class="accordion_panel">
-                      <p>Elle se base sur la garntie de satisfaction inconditionnelle de 14 jours. Ce qui veut dire qu'au bout de
+                      <p>Elle se base sur la garantie de satisfaction inconditionnelle de 14 jours. Ce qui veut dire qu'au bout de
                       14 jours, si vous n'êtes pas satisfait de la formation et sans avoir à en donner les raisons, nous vous
                     remboursons votre argent.</p>
                     </div>
@@ -145,7 +117,7 @@
                     <div class="accordion d-flex flex-row align-items-center"><div>Quels sont les prérequis ?</div></div>
                     <div class="accordion_panel">
                       <p>Même si une connaissance en informatique serait l'idéal, il n'est pas nécessaire
-                        de s'y connaitre pour entrer dans la fprmation <br> Par contre, il faut un ordinateru (bureau ou portable)
+                        de s'y connaitre pour entrer dans la formation <br> Par contre, il faut un ordinateru (bureau ou portable)
                       et une connexion Internet. <br> De plus, il faut être quelqu'un de sérieux et déterminé. Voilà pourquoi Oschool
                     enlèvera du parcours, tout étudiant présentant de freéquentes absences et un manque évident de motivation. </p>
                     </div>
@@ -171,8 +143,8 @@
             <div class="curriculum_items">
               <div class="cur_item">
                 <div class="cur_title_container d-flex flex-row align-items-start justify-content-start">
-                  <div class="cur_title">Semaine 1</div>
-                  <div class="cur_num ml-auto">1/8</div>
+                  <div class="cur_title">Mois 1 et 2</div>
+                  <div class="cur_num ml-auto">1-2/12</div>
                 </div>
                 <div class="cur_item_content">
                   <div class="cur_item_title"></div>
@@ -182,28 +154,15 @@
                   <div class="cur_contents">
                     <ul>
                       <li>
-                        <i class="fa fa-folder" aria-hidden="true"></i><span>Section 1: Les fondamentaux</span>
-                        <ul>
-
-                          <li class="d-flex flex-row align-items-center justify-content-start">
-                            <i class="fa fa-file" aria-hidden="true"></i><span>Qu'est-ce qu'un stock / IPO?<a href="#"></a></span>
-                            <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
-                          </li>
-                          <li class="d-flex flex-row align-items-center justify-content-start">
-                            <i class="fa fa-file" aria-hidden="true"></i><span>Qu'est-ce qui fait ACTUELLEMENT monter et descendre les prix?<a href="#"></a></span>
-                            <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
-                          </li>
-                        </ul>
-
-                       </li>
+                        <i class="fa fa-folder" aria-hidden="true"></i><span>Partie 1: Bienvenue / Interface utilisateur</span>
                       </ul>
                   </div>
                 </div>
               </div>
               <div class="cur_item">
                 <div class="cur_title_container d-flex flex-row align-items-start justify-content-start">
-                  <div class="cur_title">Semaine 2</div>
-                  <div class="cur_num ml-auto">2/8</div>
+                  <div class="cur_title">Mois 3 et 4</div>
+                  <div class="cur_num ml-auto">3-4/12</div>
                 </div>
                 <div class="cur_item_content">
                   <div class="cur_item_title"></div>
@@ -213,19 +172,7 @@
                   <div class="cur_contents">
                     <ul>
                       <li>
-                        <i class="fa fa-folder" aria-hidden="true"></i><span>Section 1: Les fondamentaux</span>
-                        <ul>
-
-                          <li class="d-flex flex-row align-items-center justify-content-start">
-                            <i class="fa fa-file" aria-hidden="true"></i><span>Types d'ordres d'achat et de vente
-                              <a href="#"></a></span>
-                            <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
-                          </li>
-                          <li class="d-flex flex-row align-items-center justify-content-start">
-                            <i class="fa fa-file" aria-hidden="true"></i><span>Investissement à long terme vs Swing Trading vs Trading à la journée<a href="#"></a></span>
-                            <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
-                          </li>
-                        </ul>
+                        <i class="fa fa-folder" aria-hidden="true"></i><span>Partie 2: Les entrées utilisateur</span>
 
                       </li>
 
@@ -235,73 +182,7 @@
               </div>
               <div class="cur_item">
                 <div class="cur_title_container d-flex flex-row align-items-start justify-content-start">
-                  <div class="cur_title">Semaine 3</div>
-                  <div class="cur_num ml-auto">3/8</div>
-                </div>
-                <div class="cur_item_content">
-                  <div class="cur_item_title"></div>
-                  <div class="cur_item_text">
-
-                  </div>
-                  <div class="cur_contents">
-                    <ul>
-                      <li>
-                        <i class="fa fa-folder" aria-hidden="true"></i><span>Section 1: Les fondamentaux</span>
-                        <ul>
-
-                          <li class="d-flex flex-row align-items-center justify-content-start">
-                            <i class="fa fa-file" aria-hidden="true"></i><span>Analyse technique contre analyse fondamentale<a href="#"></a></span>
-                            <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
-                          </li>
-                          <li class="d-flex flex-row align-items-center justify-content-start">
-                            <i class="fa fa-file" aria-hidden="true"></i>Section 4: Construire avec bootstrap (Projet à réaliser en classe: maison des artisans)<span><a href="#"></a></span>
-                            <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
-                          </li>
-
-                        </ul>
-
-                      </li>
-
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="cur_item">
-                <div class="cur_title_container d-flex flex-row align-items-start justify-content-start">
-                  <div class="cur_title">Semaine 4</div>
-                  <div class="cur_num ml-auto">4/12</div>
-                </div>
-                <div class="cur_item_content">
-                  <div class="cur_item_title"></div>
-                  <div class="cur_item_text">
-
-                  </div>
-                  <div class="cur_contents">
-                    <ul>
-                      <li>
-                        <i class="fa fa-folder" aria-hidden="true"></i><span>Section 2: Bien débuter</span>
-                        <ul>
-
-                          <li class="d-flex flex-row align-items-center justify-content-start">
-                            <i class="fa fa-file" aria-hidden="true"></i><span>Psychologie du trader et mentalité<a href="#"></a></span>
-                            <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
-                          </li>
-                          <li class="d-flex flex-row align-items-center justify-content-start">
-                            <i class="fa fa-file" aria-hidden="true"></i><span>Analyser les nouvelles et le marché<a href="#"></a></span>
-                            <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
-                          </li>
-
-                        </ul>
-
-                      </li>
-
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="cur_item">
-                <div class="cur_title_container d-flex flex-row align-items-start justify-content-start">
-                  <div class="cur_title">Semaine 5</div>
+                  <div class="cur_title">Mois 5</div>
                   <div class="cur_num ml-auto">5/12</div>
                 </div>
                 <div class="cur_item_content">
@@ -312,19 +193,7 @@
                   <div class="cur_contents">
                     <ul>
                       <li>
-                        <i class="fa fa-folder" aria-hidden="true"></i><span>Section 2: Bien débuter</span>
-                        <ul>
-
-                          <li class="d-flex flex-row align-items-center justify-content-start">
-                            <i class="fa fa-file" aria-hidden="true"></i><span>Gestion des risques: techniques<a href="#"></a></span>
-                            <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
-                          </li>
-                          <li class="d-flex flex-row align-items-center justify-content-start">
-                            <i class="fa fa-file" aria-hidden="true"></i><span>Systèmes de cartographie populaires <a href="#"></a></span>
-                            <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
-                          </li>
-
-                        </ul>
+                        <i class="fa fa-folder" aria-hidden="true"></i><span>Partie 3: Applications multi-écrans</span>
 
                       </li>
 
@@ -334,8 +203,8 @@
               </div>
               <div class="cur_item">
                 <div class="cur_title_container d-flex flex-row align-items-start justify-content-start">
-                  <div class="cur_title">Semaine 6</div>
-                  <div class="cur_num ml-auto">6/12</div>
+                  <div class="cur_title">Mois 6</div>
+                  <div class="cur_num ml-auto">4/12</div>
                 </div>
                 <div class="cur_item_content">
                   <div class="cur_item_title"></div>
@@ -345,19 +214,7 @@
                   <div class="cur_contents">
                     <ul>
                       <li>
-                        <i class="fa fa-folder" aria-hidden="true"></i><span>Section 2: Bien débuter</span>
-                        <ul>
-
-                          <li class="d-flex flex-row align-items-center justify-content-start">
-                            <i class="fa fa-file" aria-hidden="true"></i><span>Lecture et compréhension des graphiques <a href="#"></a></span>
-                            <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
-                          </li>
-                          <li class="d-flex flex-row align-items-center justify-content-start">
-                            <i class="fa fa-file" aria-hidden="true"></i><span>Comprendre et utiliser EMA (The Magic Line)<a href="#"></a></span>
-                            <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
-                          </li>
-
-                        </ul>
+                        <i class="fa fa-folder" aria-hidden="true"></i><span>Partie 4: Connecter votre application au réseau</span>
 
                       </li>
 
@@ -367,8 +224,8 @@
               </div>
               <div class="cur_item">
                 <div class="cur_title_container d-flex flex-row align-items-start justify-content-start">
-                  <div class="cur_title">Semaine 7</div>
-                  <div class="cur_num ml-auto">7/19</div>
+                  <div class="cur_title">Mois 7</div>
+                  <div class="cur_num ml-auto">7/12</div>
                 </div>
                 <div class="cur_item_content">
                   <div class="cur_item_title"></div>
@@ -378,30 +235,17 @@
                   <div class="cur_contents">
                     <ul>
                       <li>
-                        <i class="fa fa-folder" aria-hidden="true"></i><span>Section 2: Bien débuter</span>
-                        <ul>
-
-                          <li class="d-flex flex-row align-items-center justify-content-start">
-                            <i class="fa fa-file" aria-hidden="true"></i><span>Comprendre et utiliser EMA (The Magic Line) <a href="#"></a></span>
-                            <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
-                          </li>
-                          <li class="d-flex flex-row align-items-center justify-content-start">
-                            <i class="fa fa-file" aria-hidden="true"></i><span>Section 2: Les bases en PHP<a href="#"></a></span>
-                            <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
-                          </li>
-
-                        </ul>
-
+                        <i class="fa fa-folder" aria-hidden="true"></i><span>Partie 5: Stocker les informations de votre application</span>
                       </li>
 
                     </ul>
                   </div>
                 </div>
               </div>
-                <div class="cur_item">
+              <div class="cur_item">
                 <div class="cur_title_container d-flex flex-row align-items-start justify-content-start">
-                  <div class="cur_title">Semaine 8</div>
-                  <div class="cur_num ml-auto">8/18</div>
+                  <div class="cur_title">Mois 8</div>
+                  <div class="cur_num ml-auto">8/12</div>
                 </div>
                 <div class="cur_item_content">
                   <div class="cur_item_title"></div>
@@ -411,23 +255,7 @@
                   <div class="cur_contents">
                     <ul>
                       <li>
-                        <i class="fa fa-folder" aria-hidden="true"></i><span>Section 2: Bien débuter</span>
-                        <ul>
-
-                          <li class="d-flex flex-row align-items-center justify-content-start">
-                            <i class="fa fa-file" aria-hidden="true"></i><span>Technique #1 : La technique du gap up <a href="#"></a></span>
-                            <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
-                          </li>
-                          <li class="d-flex flex-row align-items-center justify-content-start">
-                            <i class="fa fa-file" aria-hidden="true"></i><span>Technique #2 : Formation de drapeau <a href="#"></a></span>
-                            <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
-                          </li>
-                          <li class="d-flex flex-row align-items-center justify-content-start">
-                            <i class="fa fa-file" aria-hidden="true"></i><span>Technique #3 : Bounce Back Reve <a href="#"></a></span>
-                            <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>1 Heure</span></div>
-                          </li>
-
-                        </ul>
+                        <i class="fa fa-graduation-cap" aria-hidden="true"></i><span>Partie 6: Projets/Soutenances</span>
 
                       </li>
 
@@ -435,34 +263,7 @@
                   </div>
                 </div>
               </div>
-               <div class="cur_item">
-                <div class="cur_title_container d-flex flex-row align-items-start justify-content-start">
-                  <div class="cur_title">Semaine 9</div>
-                  <div class="cur_num ml-auto">9/9</div>
-                </div>
-                <div class="cur_item_content">
-                  <div class="cur_item_title"></div>
-                  <div class="cur_item_text">
 
-                  </div>
-                  <div class="cur_contents">
-                    <ul>
-                      <li>
-                        <i class="fa fa-folder" aria-hidden="true"></i><span>Projet de soutenance</span>
-                        <ul>
-                         <li class="d-flex flex-row align-items-center justify-content-start">
-             <i class="fa fa-graduation-cap" aria-hidden="true"></i><span>Soutenance</span>
-             <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>30 minutes</span></div>
-
-              </li>
-
-                        </ul>
-                      </li>
-
-                    </ul>
-                  </div>
-                </div>
-              </div>
 
             </div>
           </div>
@@ -596,13 +397,13 @@
                   <!-- Feature -->
                   <li class="d-flex flex-row align-items-start justify-content-start">
                     <div class="feature_title"><i class="fa fa-clock-o" aria-hidden="true"></i><span>Durée</span></div>
-                    <div class="feature_text ml-auto">4 mois</div>
+                    <div class="feature_text ml-auto">8 mois</div>
                   </li>
 
                   <!-- Feature -->
                   <li class="d-flex flex-row align-items-start justify-content-start">
                     <div class="feature_title"><i class="fa fa-bell" aria-hidden="true"></i><span>Projets</span></div>
-                    <div class="feature_text ml-auto">7</div>
+                    <div class="feature_text ml-auto">5</div>
                   </li>
 
                   <!-- Feature -->
@@ -632,23 +433,6 @@
               <div class="cert_image"><img src="/new/images/certificats/devweb.png" alt=""></div>
             </div>
 
-            <!-- You may like
-            <div class="sidebar_section like">
-              <div class="sidebar_title">Cours associé :</div>
-              <div class="like_items">
-
-                Like Item
-                <div class="like_item d-flex flex-row align-items-end justify-content-start">
-                  <div class="like_title_container">
-                    <div class="like_title"> <a href="https://oschool.ci/course/formation-complete-developpeur-web-2/" target="_blank">Devenez développeur web en partant de zéro</a> </div>
-                    <div class="like_subtitle">Par Oschool</div>
-                  </div>
-                  <div class="like_price ml-auto">20.000 FCFA</div>
-                </div>
-
-              </div>
-            </div>
-            -->
           </div>
         </div>
       </div>

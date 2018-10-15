@@ -99,7 +99,7 @@ Le rôle et l’objectif principal du Social Media Marketing est de:</p>
 </ul>
             </div>
 
-            
+
             <!-- FAQs -->
             <div class="faqs">
               <div class="panel_title">FAQs</div>
@@ -249,7 +249,7 @@ l'adhésion des dirigeants<span><a href="#"></a></span>
                           </li>
 
                         </ul>
-                         
+
                       </li>
 
                     </ul>
@@ -322,7 +322,7 @@ suivi des médias sociaux</span>
                           </li>
 
                         </ul>
-                         
+
                       </li>
 
                     </ul>
@@ -429,7 +429,7 @@ une stratégie de contenu pour les médias sociaux</span>
                           </li>
 
                         </ul>
-                         
+
                       </li>
 
                     </ul>
@@ -453,7 +453,7 @@ une stratégie de contenu pour les médias sociaux</span>
 votre portée sur les réseaux sociaux</span>
                         <ul>
                       </li>
-                      
+
                       <li class="d-flex flex-row align-items-center justify-content-start">
                             <i class="fa fa-file" aria-hidden="true"></i><span>Faites passer votre stratégie sociale au
 niveau supérieur <a href="#"></a></span>
@@ -572,7 +572,7 @@ commerciaux par la vente sociale <a href="#"></a></span>
 
                         </ul>
                       </li>
-                       
+
                     </ul>
                   </div>
                 </div>
@@ -710,7 +710,7 @@ transformer votre entreprise<a href="#"></a></span>
                           </li>
 
                         </ul>
-                        
+
                       </li>
 
                     </ul>
@@ -782,7 +782,7 @@ des employés<a href="#"></a></span>
 
                         </ul>
                          <li>
-                        
+
                       </li>
 
                     </ul>
@@ -807,9 +807,9 @@ des employés<a href="#"></a></span>
  <li class="d-flex flex-row align-items-center justify-content-start">
              <i class="fa fa-graduation-cap" aria-hidden="true"></i><span>Soutenance</span>
              <div class="cur_time ml-auto"><i class="fa fa-clock-o" aria-hidden="true"></i><span>30 minutes</span></div>
-            
+
               </li>
-                          
+
                         </ul>
                       </li>
 
@@ -938,7 +938,7 @@ des employés<a href="#"></a></span>
       <div class="col-lg-3">
         <div class="sidebar">
           <div class="sidebar_background"></div>
-          <div class="sidebar_top"><a data-toggle="modal" data-target="#myModal" href="#">s'inscrire</a></div>
+          <div class="sidebar_top"><a href="https://adams21.typeform.com/to/itKgiA">s'inscrire</a></div>
           <div class="sidebar_content">
 
             <!-- Features -->
@@ -986,12 +986,12 @@ des employés<a href="#"></a></span>
               <div class="cert_image"><img src="/new/images/certificats/devweb.png" alt=""></div>
             </div>
 
-            <!-- You may like 
+            <!-- You may like
             <div class="sidebar_section like">
               <div class="sidebar_title">Cours associé :</div>
               <div class="like_items">
 
-               Like Item 
+               Like Item
                 <div class="like_item d-flex flex-row align-items-end justify-content-start">
                   <div class="like_title_container">
                     <div class="like_title"> <a href="https://oschool.ci/course/formation-complete-developpeur-web-2/" target="_blank">Devenez développeur web en partant de zéro</a> </div>
