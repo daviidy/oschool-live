@@ -24,7 +24,7 @@
               </thead>
               <tbody>
                 @foreach(Auth::user()->formations as $formation)
-                  @foreach($formation->supportformations as $supportformation)
+                  @foreach($formation->supportformations->sortBy('titre') as $supportformation)
                 <tr>
                   <td><a href="#">{{$supportformation->titre}}</a></td>
                   <td> <a target="_blank" href="{{$supportformation->lien}}">Voir le document</a></td>
