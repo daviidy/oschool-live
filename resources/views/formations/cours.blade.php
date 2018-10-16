@@ -225,6 +225,31 @@
           </div>
         </div>
       </div>
+
+      <!-- Course -->
+      <div class="col-lg-4 course_col">
+        <div class="course">
+          <div class="course_image"><img src="/new/images/cours/python.png" alt=""></div>
+          <div class="course_body">
+            <div class="course_title"><a href="{{url('python')}}">Développeur d'Applications Python</a></div>
+            <div class="course_info">
+              <ul>
+                <li><a href="#">Programmation et développement</a></li>
+                <li><a href="#">4 mois</a></li>
+              </ul>
+            </div>
+            <div class="course_text">
+              <p>Maîtrisez Python, le langage des startups et des scientifiques, pour réaliser vos propres applications web !</p>
+            </div>
+          </div>
+          <div class="course_footer d-flex flex-row align-items-center justify-content-start">
+            <div class="course_students"><i class="fa fa-user" aria-hidden="true"></i><span>20</span></div>
+            <div class="course_rating ml-auto"><i class="fa fa-star" aria-hidden="true"></i><span>4,5</span></div>
+            <div class="course_mark course_free trans_200"><a href="#">Certifié</a></div>
+          </div>
+        </div>
+      </div>
+
       <!-- Course -->
       <div class="col-lg-4 course_col">
         <div class="course">

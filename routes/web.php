@@ -134,6 +134,10 @@ Route::get('/android', function () {
     return view('formations.android');
 })->name('android');
 
+Route::get('/python', function () {
+    return view('formations.python');
+})->name('python');
+
 Route::get('/cours', function () {
     return view('formations.cours');
 })->name('cours');

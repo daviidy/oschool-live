@@ -18,7 +18,7 @@ class ProjetController extends Controller
     public function index()
     {
       if (Auth::check()) {
-          $projets = Projet::orderby('id','asc');
+          $projets = Projet::orderby('titre','asc'); 
           return view('projets.index', ['projets' => $projets]);
       }
       else {

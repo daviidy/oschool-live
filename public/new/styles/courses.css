@@ -68,7 +68,7 @@ p
 	font-size: 14px;
 	line-height: 1.71;
 	font-weight: 400;
-	color: rgba(0,0,0,0.5);
+	color: #000;
 	-webkit-font-smoothing: antialiased;
 	-webkit-text-shadow: rgba(0,0,0,.01) 0 0 1px;
 	text-shadow: rgba(0,0,0,.01) 0 0 1px;
@@ -112,11 +112,11 @@ p a:hover::after
 }
 ::selection
 {
-	
+
 }
 p::selection
 {
-	
+
 }
 h1{font-size: 40px;}
 h2{font-size: 30px;}
@@ -132,14 +132,14 @@ h1, h2, h3, h4, h5, h6
 	-webkit-text-shadow: rgba(0,0,0,.01) 0 0 1px;
 	text-shadow: rgba(0,0,0,.01) 0 0 1px;
 }
-h1::selection, 
-h2::selection, 
-h3::selection, 
-h4::selection, 
-h5::selection, 
+h1::selection,
+h2::selection,
+h3::selection,
+h4::selection,
+h5::selection,
 h6::selection
 {
-	
+
 }
 .form-control
 {
@@ -282,7 +282,7 @@ section
 }
 .top_bar_phone
 {
-	
+
 }
 .top_bar_title
 {
@@ -292,7 +292,7 @@ section
 }
 .top_bar_lang
 {
-	display: inline-block;	
+	display: inline-block;
 }
 .lang_list
 {
@@ -344,8 +344,8 @@ section
 .lang_list > li ul li
 {
 	text-align: right;
-	
-	
+
+
 }
 .lang_list > li ul li a
 {
@@ -572,9 +572,9 @@ section
 	font-size: 14px !important;
 	font-weight: 500 !important;
 	color: rgba(0,0,0,0.15) !important;
-} 
+}
 .header_search_input:-ms-input-placeholder
-{ 
+{
 	font-family: 'Poppins', sans-serif;
 	font-size: 14px !important;
 	font-weight: 500 !important;
@@ -822,9 +822,9 @@ section
 	font-size: 14px !important;
 	font-weight: 500 !important;
 	color: rgba(0,0,0,0.15) !important;
-} 
+}
 .menu .search_input:-ms-input-placeholder
-{ 
+{
 	font-family: 'Poppins', sans-serif;
 	font-size: 14px !important;
 	font-weight: 500 !important;
@@ -1098,6 +1098,7 @@ section
 	padding-bottom: 150px;
 	background: #f8f8f8;
 	padding-top: 19px;
+
 }
 .course_col
 {
@@ -1105,6 +1106,7 @@ section
 }
 .course
 {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	border: solid 1px #f1f1f1;
 }
 .course_image
@@ -1361,9 +1363,9 @@ section
 	-ms-transition: all 200ms ease;
 	-o-transition: all 200ms ease;
 	transition: all 200ms ease;
-} 
+}
 .newsletter_input:-ms-input-placeholder
-{ 
+{
 	font-size: 14px !important;
 	font-weight: 600 !important;
 	color: rgba(255,255,255,0.4) !important;
@@ -1400,10 +1402,10 @@ section
 .newsletter_input:focus::-moz-placeholder
 {
 	color: rgba(255,255,255,1) !important;
-} 
+}
 .newsletter_input:hover:-ms-input-placeholder,
 .newsletter_input:focus:-ms-input-placeholder
-{ 
+{
 	color: rgba(255,255,255,1) !important;
 }
 .newsletter_input:hover::input-placeholder,

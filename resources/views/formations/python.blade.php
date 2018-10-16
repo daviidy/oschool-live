@@ -13,7 +13,7 @@
           <ul class="breadcrumbs_list d-flex flex-row align-items-center justify-content-start">
             <li><a href="/">accueil</a></li>
             <li><a href="/cours">cours</a></li>
-            <li>développeur android</li>
+            <li>développeur python</li>
           </ul>
         </div>
       </div>
@@ -24,7 +24,7 @@
 <!-- Intro -->
 
 <div class="intro">
-  <div class="intro_background parallax-window" data-parallax="scroll" data-image-src="/new/images/cours/android.png" data-speed="0.8"></div>
+  <div class="intro_background parallax-window" data-parallax="scroll" data-image-src="/new/images/cours/python.png" data-speed="0.8"></div>
   <div class="container">
     <div class="row">
       <div class="col">
@@ -32,9 +32,9 @@
           <div class="intro_content">
             <div class="intro_price">Certifié</div>
             <div class="rating_r rating_r_4 intro_rating"><i></i><i></i><i></i><i></i><i></i></div>
-            <div class="intro_title">Développeur d'Applications Android</div>
+            <div class="intro_title">Développeur d'Applications Python</div>
             <div class="intro_meta">
-              <div class="intro_instructors">Commence le <span><a href="#">lundi 22 octobre 2018 </a></span></div>
+              <div class="intro_instructors">Commence <span><a href="#">à partir de Novembre 2018</a></span></div>
             </div>
           </div>
         </div>
@@ -73,33 +73,47 @@
           <div class="tab_panel description active">
             <div class="panel_title">Début de la prochaine rentrée :</div>
             <div class="panel_text">
-              <p style="color: #2E21DF;margin-bottom: 20px;font-size: 20px;">Lundi 22 octobre 2018</p>
+              <p style="color: #2E21DF;margin-bottom: 20px;font-size: 20px;">Novembre 2018</p>
 <h2>Pourquoi s'inscrire à cette formation ?<h2>
-<p>Si vous vous inscrivez à cette formation, vous bénéficiez de conseils
-  et d'une aide tout au long des cours d'initiation d'Oschool pour Android.
-  Ce programme est un excellent moyen de créer votre premier portefeuille
-  d'applications et de gagner un certificat.</p>
+<p>Dans ce cours d'introduction à la programmation, vous apprendrez la programmation orientée objet,
+  technique indispensable pour les ingénieurs en logiciel, qui vous permettra de réutiliser et de partager
+  facilement du code. Vous apprendrez en agissant et vous construirez des mini-projets (ha!)
+  De la taille d'un octet dans chaque leçon pour apprendre et mettre en pratique les concepts de programmation. <br><br>
+
+Nous avons entendu dire que la programmation peut être intimidante pour les nouveaux arrivants
+et nous avons créé ce cours pour vous assurer une expérience d'apprentissage enrichissante!
+Vous apprendrez activement avec nos mini-projets (voir la liste ci-dessous) que vous pourrez
+partager fièrement avec vos amis. Vous apprendrez également les concepts de programmation importants,
+l'un après l'autre, sans surprises ni sauts de logique. <br><br>
+
+Dans ce cours, vous trouverez d’excellents outils pour votre boîte à outils de programmation! Vous saurez: <br>
+
+- Commencez à coder dans le langage de programmation Python; <br>
+- Réutiliser et partager le code avec la programmation orientée objet; <br>
+- Créez et partagez d’incroyables projets de piratage de la vie! <br>
+- Ce cours d'introduction s'adresse à vous si vous souhaitez devenir un ingénieur en
+logiciel ou si vous souhaitez collaborer avec des programmeurs. <br>
+- La maîtrise de la programmation orientée objet propulse votre carrière dans la technologie,
+mais constitue également un excellent moyen d'apprendre comment les ingénieurs en logiciel pensent résoudre les problèmes.</p>
 
 
-<h2>Ce que vous trouverez dans cette formation ?<h2>
+<h2>Ce que vous serez capable de faire à la fin de cette formation<h2>
 
-<p>Une série de cours gratuits, en ligne et à votre rythme, destinés aux développeurs Android
-  débutants sans expérience en programmation. Dans le premier cours, vous construisez votre première
-  application Android. Les derniers cours de la série vous apprendront comment ajouter plus de fonctionnalités
-  à votre application, vous connecter à Internet, configurer des bases de données et stocker des données dans votre application.</p>
+<p>Analyser un cahier des charges et choisir une solution technique adaptée parmi les solutions existantes <br>
+Créer des projets web dynamiques grâce à Python <br>
+Communiquer avec une base de données pour stocker et requêter des informations <br>
+Utiliser les outils les plus connus d’intégration continue <br>
+Produire une documentation technique et fonctionnelle de l’application</p>
 
+<h3>Quelques projets que vous allez réaliser dans ce cours:</h3>
 
-  <h3>Quelques projets que vous allez réaliser dans ce cours:</h3>
+<img class="images" src="/new/images/projets/python-1.png" alt="">
 
-  <img class="images" src="/new/images/projets/android-1.png" alt="">
+<img class="images" src="/new/images/projets/python-2.png" alt="">
 
-  <img class="images" src="/new/images/projets/android-2.png" alt="">
+<img class="images" src="/new/images/projets/python-3.png" alt="">
 
-  <img class="images" src="/new/images/projets/android-3.png" alt="">
-
-  <img class="images" src="/new/images/projets/android-4.png" alt="">
-
-  <img class="images" src="/new/images/projets/android-5.png" alt="">
+<img class="images" src="/new/images/projets/python-4.png" alt="">
 
 
             </div>
@@ -158,8 +172,8 @@
             <div class="curriculum_items">
               <div class="cur_item">
                 <div class="cur_title_container d-flex flex-row align-items-start justify-content-start">
-                  <div class="cur_title">Mois 1 et 2</div>
-                  <div class="cur_num ml-auto">1-2/8</div>
+                  <div class="cur_title">Semaine 1 et 2</div>
+                  <div class="cur_num ml-auto">1-2/10</div>
                 </div>
                 <div class="cur_item_content">
                   <div class="cur_item_title"></div>
@@ -169,15 +183,15 @@
                   <div class="cur_contents">
                     <ul>
                       <li>
-                        <i class="fa fa-folder" aria-hidden="true"></i><span>Partie 1: Bienvenue / Interface utilisateur</span>
+                        <i class="fa fa-folder" aria-hidden="true"></i><span>Lecon 1: Introductions</span>
                       </ul>
                   </div>
                 </div>
               </div>
               <div class="cur_item">
                 <div class="cur_title_container d-flex flex-row align-items-start justify-content-start">
-                  <div class="cur_title">Mois 3 et 4</div>
-                  <div class="cur_num ml-auto">3-4/8</div>
+                  <div class="cur_title">Semaine 3</div>
+                  <div class="cur_num ml-auto">3/10</div>
                 </div>
                 <div class="cur_item_content">
                   <div class="cur_item_title"></div>
@@ -187,7 +201,7 @@
                   <div class="cur_contents">
                     <ul>
                       <li>
-                        <i class="fa fa-folder" aria-hidden="true"></i><span>Partie 2: Les entrées utilisateur</span>
+                        <i class="fa fa-folder" aria-hidden="true"></i><span>Lecon 2: Utilisation des fonctions</span>
 
                       </li>
 
@@ -197,8 +211,8 @@
               </div>
               <div class="cur_item">
                 <div class="cur_title_container d-flex flex-row align-items-start justify-content-start">
-                  <div class="cur_title">Mois 5</div>
-                  <div class="cur_num ml-auto">5/8</div>
+                  <div class="cur_title">Semaine 4</div>
+                  <div class="cur_num ml-auto">4/10</div>
                 </div>
                 <div class="cur_item_content">
                   <div class="cur_item_title"></div>
@@ -208,7 +222,7 @@
                   <div class="cur_contents">
                     <ul>
                       <li>
-                        <i class="fa fa-folder" aria-hidden="true"></i><span>Partie 3: Applications multi-écrans</span>
+                        <i class="fa fa-folder" aria-hidden="true"></i><span>Lecon 3: Utilisation des classes | Dessiner des tortues</span>
 
                       </li>
 
@@ -218,8 +232,8 @@
               </div>
               <div class="cur_item">
                 <div class="cur_title_container d-flex flex-row align-items-start justify-content-start">
-                  <div class="cur_title">Mois 6</div>
-                  <div class="cur_num ml-auto">4/8</div>
+                  <div class="cur_title">Semaine 5</div>
+                  <div class="cur_num ml-auto">5/10</div>
                 </div>
                 <div class="cur_item_content">
                   <div class="cur_item_title"></div>
@@ -229,7 +243,7 @@
                   <div class="cur_contents">
                     <ul>
                       <li>
-                        <i class="fa fa-folder" aria-hidden="true"></i><span>Partie 4: Connecter votre application au réseau</span>
+                        <i class="fa fa-folder" aria-hidden="true"></i><span>Lecon 4: Utilisation des classes: envoyer un texto</span>
 
                       </li>
 
@@ -239,8 +253,8 @@
               </div>
               <div class="cur_item">
                 <div class="cur_title_container d-flex flex-row align-items-start justify-content-start">
-                  <div class="cur_title">Mois 7</div>
-                  <div class="cur_num ml-auto">7/8</div>
+                  <div class="cur_title">Semaine 6</div>
+                  <div class="cur_num ml-auto">6/10</div>
                 </div>
                 <div class="cur_item_content">
                   <div class="cur_item_title"></div>
@@ -250,7 +264,7 @@
                   <div class="cur_contents">
                     <ul>
                       <li>
-                        <i class="fa fa-folder" aria-hidden="true"></i><span>Partie 5: Stocker les informations de votre application</span>
+                        <i class="fa fa-folder" aria-hidden="true"></i><span>Lecon 5: Utilisation des classes: éditeur de jurons</span>
                       </li>
 
                     </ul>
@@ -259,8 +273,8 @@
               </div>
               <div class="cur_item">
                 <div class="cur_title_container d-flex flex-row align-items-start justify-content-start">
-                  <div class="cur_title">Mois 8</div>
-                  <div class="cur_num ml-auto">8/ 8</div>
+                  <div class="cur_title">Semaine 7</div>
+                  <div class="cur_num ml-auto">7/10</div>
                 </div>
                 <div class="cur_item_content">
                   <div class="cur_item_title"></div>
@@ -270,8 +284,49 @@
                   <div class="cur_contents">
                     <ul>
                       <li>
-                        <i class="fa fa-graduation-cap" aria-hidden="true"></i><span>Partie 6: Projets/Soutenances</span>
+                        <i class="fa fa-folder" aria-hidden="true"></i><span>Lecon 6: Créer des classes: site de film</span>
 
+                      </li>
+
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="cur_item">
+                <div class="cur_title_container d-flex flex-row align-items-start justify-content-start">
+                  <div class="cur_title">Semaine 8</div>
+                  <div class="cur_num ml-auto">8/10</div>
+                </div>
+                <div class="cur_item_content">
+                  <div class="cur_item_title"></div>
+                  <div class="cur_item_text">
+
+                  </div>
+                  <div class="cur_contents">
+                    <ul>
+                      <li>
+                        <i class="fa fa-folder" aria-hidden="true"></i><span>Lecon 7: Approfondissez la création des classes</span>
+                      </li>
+
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="cur_item">
+                <div class="cur_title_container d-flex flex-row align-items-start justify-content-start">
+                  <div class="cur_title">Semaine 9-10</div>
+                  <div class="cur_num ml-auto">9-10/10</div>
+                </div>
+                <div class="cur_item_content">
+                  <div class="cur_item_title"></div>
+                  <div class="cur_item_text">
+
+                  </div>
+                  <div class="cur_contents">
+                    <ul>
+                      <li>
+                        <i class="fa fa-folder" aria-hidden="true"></i><span>Projets/Soutenances</span>
                       </li>
 
                     </ul>
@@ -412,13 +467,13 @@
                   <!-- Feature -->
                   <li class="d-flex flex-row align-items-start justify-content-start">
                     <div class="feature_title"><i class="fa fa-clock-o" aria-hidden="true"></i><span>Durée</span></div>
-                    <div class="feature_text ml-auto">8 mois</div>
+                    <div class="feature_text ml-auto">3 mois</div>
                   </li>
 
                   <!-- Feature -->
                   <li class="d-flex flex-row align-items-start justify-content-start">
                     <div class="feature_title"><i class="fa fa-bell" aria-hidden="true"></i><span>Projets</span></div>
-                    <div class="feature_text ml-auto">5</div>
+                    <div class="feature_text ml-auto">4</div>
                   </li>
 
                   <!-- Feature -->

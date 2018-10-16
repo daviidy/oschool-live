@@ -100,6 +100,19 @@ mais aussi JavaScript et PHP. Il est chargé de :</p>
 <li> <p>- créer, gérer et afficher le contenu d’une base de données</p> </li>
 <li> <p>- adapter l'apparence d'un site web sur n'importe quel type d'écran</p> </li>
 </ul>
+
+<h3>Quelques projets que vous allez réaliser dans ce cours:</h3>
+
+<img class="images" src="/new/images/projets/devweb-1.png" alt="">
+
+<img class="images" src="/new/images/projets/devweb-2.png" alt="">
+
+<img class="images" src="/new/images/projets/devweb-3.png" alt="">
+
+<img class="images" src="/new/images/projets/devweb-4.png" alt="">
+
+<img class="images" src="/new/images/projets/devweb-5.png" alt="">
+
             </div>
 
 
@@ -664,7 +677,7 @@ freelance.
                   <!-- Feature -->
                   <li class="d-flex flex-row align-items-start justify-content-start">
                     <div class="feature_title"><i class="fa fa-bell" aria-hidden="true"></i><span>Projets</span></div>
-                    <div class="feature_text ml-auto">7</div>
+                    <div class="feature_text ml-auto">5</div>
                   </li>
 
                   <!-- Feature -->

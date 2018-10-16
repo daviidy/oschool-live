@@ -72,7 +72,7 @@ p
 	font-size: 14px;
 	line-height: 1.71;
 	font-weight: 400;
-	color: rgba(0,0,0,0.5);
+	color: #000;
 	-webkit-font-smoothing: antialiased;
 	-webkit-text-shadow: rgba(0,0,0,.01) 0 0 1px;
 	text-shadow: rgba(0,0,0,.01) 0 0 1px;
@@ -1101,6 +1101,7 @@ section
 }
 .course
 {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	border: solid 1px #f1f1f1;
 }
 .course_image
