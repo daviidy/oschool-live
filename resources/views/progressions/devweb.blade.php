@@ -35,18 +35,13 @@
 		<div class="container-contact100">
 			<div class="wrap-contact100">
 				<img style="width: 40%;display: block;margin-left: auto;margin-right: auto;" src="/new/images/dashboard.png" alt="">
-				<h2 style="margin: 25px 0px;">Marquer la progression d'un étudiant</h2>
+				<h2 style="margin: 25px 0px;">Marquer la progression d'un étudiant pour la formation {{$formation}}</h2>
 				<form method="post" enctype="multipart/form-data" action="{{ route('progressions.store') }}" class="contact100-form validate-form">
 					{{ csrf_field() }}
 					<div class="wrap-input100 input100-select bg1">
-						<span class="label-input100">De quelle formation s'agit-il ?</span>
+						<span class="label-input100">Formation concernée</span>
 						<div>
-							<select class="js-select3" name="formation">
-								@foreach(Auth::user()->formations as $formation)
-							    <option value="{{ $formation->nom }}">{{ $formation->nom }}</option>
-								@endforeach
-							</select>
-							<div class="dropDownSelect3"></div>
+							<input disabled type="text" class="form-control" id="inputWarning2" name="formation" value="{{$formation}}">
 						</div>
 					</div>
 
@@ -372,7 +367,7 @@
 
 				$(".js-select2").each(function(){
 					$(this).on('select2:close', function (e){
-						if($(this).val() == "Selectioner une partie") {
+						if($(this).val() == "Selectionner une partie") {
 							$('.test').slideUp();
 						}
 

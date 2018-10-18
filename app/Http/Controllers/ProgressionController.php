@@ -26,11 +26,39 @@ class ProgressionController extends Controller
      */
     public function create()
     {
-      if (Auth::check() && Auth::user()->isTeacher()) {
-        return view('progressions.ajouter');
+      if (Auth::check() && Auth::user()->isTeacher() && Auth::user()->formations()) {
+
+
+              return view('progressions.ajouter');
+
+
+        }
+      else {
+        return redirect('home');
+      }
+    }
+
+    public function progression(Request $request)
+    {
+      $formation = $request['formation'];
+      if (Auth::check() && Auth::user()->isTeacher() && Auth::user()->formations()) {
+
+        if ($formation == 'Développeur Web Junior') {
+          return view('progressions.devweb')->with('formation', $formation);
+        }
+        elseif ($formation == 'Social Media') {
+          return view('progressions.socialmedia')->with('formation', $formation);
+        }
+        elseif ($formation == 'Développement Mobile') {
+          return view('progressions.devmobile')->with('formation', $formation);
+        }
+        elseif ($formation == 'Développement Android') {
+          return view('progressions.android')->with('formation', $formation);
+        }
+
       }
       else {
-        return redirect('home')->with('status', 'La progression a bien été enregistrée');
+        return redirect('home');
       }
     }
 

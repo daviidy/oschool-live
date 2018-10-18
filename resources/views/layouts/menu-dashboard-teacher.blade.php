@@ -94,7 +94,7 @@
           </li>
           <li>
 
-            <a style="border-radius:8px; color: #fff; background-color: #F36A10;" class="logout" href="{{ route('progressions.create') }}">
+            <a data-toggle="modal" data-target="#popup" style="border-radius:8px; color: #fff; background-color: #F36A10;" class="logout" href="{{ route('progressions.create') }}">
                 Marquer une progression
             </a>
 
@@ -222,6 +222,47 @@
       </div>
     </aside>
     <!--sidebar end-->
+
+    <!-- The Modal -->
+    <div class="modal fade" id="popup">
+    <div class="modal-dialog">
+    <div class="modal-content">
+
+    <!-- Modal Header -->
+    <div class="modal-header">
+    <h4 style="font-size: 24px;" class="modal-title">Commentaire sur le projet</h4>
+    <button type="button" class="close" data-dismiss="modal">&times;</button>
+    </div>
+
+    <!-- Modal body -->
+    <div class="modal-body">
+      <form method="post" action="{{url('progression')}}">
+      {{ csrf_field() }}
+
+      <div class="form-group">
+        <label for="">De quelle formation s'agit-il ?</label>
+        <select class="js-select3" name="formation">
+          @foreach(Auth::user()->formations as $formation)
+            <option value="{{ $formation->nom }}">{{ $formation->nom }}</option>
+          @endforeach
+        </select>
+      </div>
+      <button type="submit" class="btn btn-primary">Envoyer</button>
+      </form>
+    </div>
+
+    <!-- Modal footer -->
+    <div class="modal-footer">
+    <button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
+    </div>
+
+    </div>
+    </div>
+    </div>
+
+    <!--end modal-->
+
+
 
     @yield('content')
 

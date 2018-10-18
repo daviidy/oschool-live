@@ -78,6 +78,8 @@ Route::resource('achats','AchatController');
 
 Route::post('/envoi', 'AchatController@envoi')->name('envoi');
 
+Route::post('/progression', 'ProgressionController@progression')->name('progression');
+
 Route::post('/notify', 'AchatController@notify')->name('notify');
 
 /*
