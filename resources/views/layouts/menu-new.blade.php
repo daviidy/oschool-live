@@ -19,7 +19,7 @@
 <link rel="stylesheet" type="text/css" href="/new/styles/course.css">
 <link rel="stylesheet" type="text/css" href="/new/styles/course_responsive.css">
 @endif
-@if(Request::path() == 'cours')
+@if(Request::path() == 'cours' || Request::path() == 'ecoleprog' || Request::path() == 'ecolemarketing' || Request::path() == 'ecolebusiness' || Request::path() == 'ecoleai' || Request::path() == 'ecoledatascience' || Request::path() == 'ecolelang')
 <link rel="stylesheet" type="text/css" href="/new/styles/courses.css">
 <link rel="stylesheet" type="text/css" href="/new/styles/courses_responsive.css">
 @endif
@@ -110,7 +110,7 @@
 								<!-- Hamburger -->
 
                 <a href="{{ route('login') }}" style="margin-left: 10px;" class="">
-                  Ma classe
+                  Ma salle de classe
                 </a>
 								<div class="hamburger menu_mm">
 									<i class="fa fa-bars menu_mm" aria-hidden="true"></i>
@@ -206,7 +206,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 <script src="/new/plugins/progressbar/progressbar.min.js"></script>
 <script src="/new/js/course.js"></script>
 @endif
-@if(Request::path() == 'cours')
+@if(Request::path() == 'cours' || Request::path() == 'ecoleprog' || Request::path() == 'ecolemarketing' || Request::path() == 'ecolebusiness' || Request::path() == 'ecoleai' || Request::path() == 'ecoledatascience' || Request::path() == 'ecolelang')
 <script src="/new/js/courses.js"></script>
 @endif
 </body>

@@ -147,7 +147,7 @@
             <div class="course_mark course_free trans_200"><a href="#">Certifié</a></div>
           </div>
         </div>
-      </div> 
+      </div>
 
       <!-- Course -->
       <div class="col-lg-4 course_col">

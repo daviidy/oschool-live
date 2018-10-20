@@ -68,6 +68,10 @@
                   <li>
                     <a data-toggle="tab" href="#classrooms">Les sessions de {{$user->name}}</a>
                   </li>
+
+                  <li>
+                    <a data-toggle="tab" href="#delete">Supprimer cet utilisateur</a>
+                  </li>
                   @endif
                   @endauth
                 </ul>
@@ -99,6 +103,25 @@
                             <h6>{{$formation->nom}}</h6>
                             @endforeach
                           </div>
+                          @if($user->type == 'default')
+                          <div class="col-sm-4">
+                            <h1><i class="fa fa-laptop"></i></h1>
+                            <h3>Formateur</h3>
+                            @if(empty($user->teacher))
+                            <h6>Aucun formateur</h6>
+                            @else
+                            <h6>{{$user->teacher->name}}</h6>
+                            @endif
+                          </div>
+                          @endif
+                          @if($user->type == 'teacher')
+                          <div class="col-sm-4">
+                            <h1><i class="fa fa-laptop"></i></h1>
+                            <h3>Stats</h3>
+                            <h6>Max d'étudiants acceptés: {{$user->max_students}}</h6> <br>
+                            <h6>Places restantes: {{$user->max_students - $user->students->count()}}</h6>
+                          </div>
+                          @endif
 
                         </div>
                         <!-- /row -->
@@ -120,6 +143,7 @@
                             <label class="col-lg-2 control-label">Attribuer un formateur</label>
                             <div class="col-lg-6">
                               <select class="" name="user_id">
+                                <option value="0">Personne</option>
                                 @foreach($teachers as $teacher)
                                 <option value="{{$teacher->id}}">{{$teacher->name}}</option>
                                 @endforeach
@@ -294,7 +318,7 @@
                          <tbody>
                            @foreach($classroomsstudents->sortBy('date') as $classroom)
                            <tr>
-                             <td><a href="{{url('users', $classroom->idEtudiant)}}">{{$classroom->etudiant}}</a></td>
+                             <td><a href="{{url('users', $classroom->user_id)}}">{{$classroom->formateur}}</a></td>
                              <td> <a data-toggle="modal" data-target="#myModal{{$classroom->id}}" href="#">{{ Carbon\Carbon::parse($classroom->date)->format('d-m-Y H:i') }}: voir le compte-rendu</a></td>
                              <td style="display: flex; flex-wrap: wrap;">
 
@@ -393,6 +417,24 @@
                          @endif
                          @endauth
                        </table>
+                     </div>
+                  </div>
+                  <!-- /tab-pane -->
+
+
+                  <div id="delete" class="tab-pane">
+                    <div class="container">
+                       <h2>Supprimer {{$user->name}}</h2>
+                       <div class="form-group row">
+                         <label class="col-lg-3 col-form-label form-control-label">(Attention cette action est irréversible ! )</label>
+                         <form action="{{ route('users.destroy', $user) }}" method="post">
+                             {{ csrf_field() }}
+                             {{ method_field('delete') }}
+                             <button class="btn btn-danger" type="submit">Supprimer ce compte utilisateur</button>
+                         </form>
+
+                       </div>
+
                      </div>
                   </div>
                   <!-- /tab-pane -->
