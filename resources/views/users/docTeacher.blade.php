@@ -21,10 +21,10 @@
           <h4 class="pull-left">Pour bien commencer votre carrière de formateur Oschool</h4>
           <a href="#" class="pull-right btn btn-theme02">+ Formez-vous avec Oschool</a>
           <div class="room-box">
-            <h5 class="text-primary"><a target="_blank" href="https://join.slack.com/t/oschoolgroupe/shared_invite/enQtMjkzMjE5ODIyNTY1LTJhYjIyZDI4YWUzMTgzMjkwOWFlMTkyNWMyMDQwZWI0OGU4NWVmYTllY2RkOGQ0MjQ0ODVlMmJlZDI0NjIzYjk">Rejoignez le groupe Slack des formateurs</a></h5><br>
+            <h5 class="text-primary"><a target="_blank" href="https://join.slack.com/t/oschoolgroupe/shared_invite/enQtNDU5OTkxODQ2NjczLTVhN2VlMWY2Y2ZmYjU2ZTYzOGVhM2RiZmU0ODlmOGZlNGVjNGRiOGJjMDQzZjVhMTFkZmIxZmI0NjFmOTNhYjE">Rejoignez le groupe Slack des formateurs</a></h5><br>
             <img width="150" src="http://www.stickpng.com/assets/images/5900c77916ae4b3fc58f4823.png" alt=""><br><br>
             <p>Vous pourrez échanger avec d'autres formateurs et poser toutes vos questions relatives à l'enseignement sur Oschool !</p>
-            <p><span class="text-muted"> <a target="_blank" href="https://join.slack.com/t/oschoolgroupe/shared_invite/enQtMjkzMjE5ODIyNTY1LTJhYjIyZDI4YWUzMTgzMjkwOWFlMTkyNWMyMDQwZWI0OGU4NWVmYTllY2RkOGQ0MjQ0ODVlMmJlZDI0NjIzYjk">Rejoindre le groupe</a> </span></p>
+            <p><span class="text-muted"> <a target="_blank" href="https://join.slack.com/t/oschoolgroupe/shared_invite/enQtNDU5OTkxODQ2NjczLTVhN2VlMWY2Y2ZmYjU2ZTYzOGVhM2RiZmU0ODlmOGZlNGVjNGRiOGJjMDQzZjVhMTFkZmIxZmI0NjFmOTNhYjE">Rejoindre le groupe</a> </span></p>
           </div>
           <div class="room-box">
             <h5 class="text-primary"><a target="_blank" href="https://oschool.ci/wp-content/uploads/2018/09/guide-formateurs-tele-presentiel.pdf">Guide formateurs (format PDF)</a></h5>
