@@ -11,7 +11,7 @@
     <div class="container">
       <div class="row">
         <div class="col text-center">
-          <h1 class="home_title">Apprenez à votre rythme le sujet que vous souhaitez. Avec un formateur dédié en télé présentiel</h1>
+          <h1 class="home_title">Apprenez à votre rythme le sujet de votre choix. Avec un formateur dédié en télé présentiel</h1>
           <div class="home_button trans_200"><a href="#">Commencez</a></div>
         </div>
       </div>
@@ -120,7 +120,7 @@
   <div class="container">
     <div class="row">
       <div class="col">
-        <h2 class="section_title text-center">Métiers en vogue</h2>
+        <h2 class="section_title text-center">Construisez votre futur carrière dans nos écoles</h2>
       </div>
     </div>
     <div class="row courses_row">
@@ -131,22 +131,10 @@
         <div class="course">
           <div class="course_image"><img src="/new/images/cours/devweb.png" alt=""></div>
           <div class="course_body">
-            <div class="course_title"><a href="/devweb">Développeur web</a></div>
-            <div class="course_info">
-              <ul>
-                <li><a href="#">Programmation et développement</a></li>
-                <li><a href="#">4 mois</a></li>
-              </ul>
-            </div>
-            <div class="course_text">
-              <p>Faites vos premiers pas dans le monde du développement web : créez des sites web et donnez vie aux maquettes !</p>
-            </div>
+            <div class="course_title"><a href="ecoleprog">Ecole de Programmation</a></div>
+
           </div>
-          <div class="course_footer d-flex flex-row align-items-center justify-content-start">
-            <div class="course_students"><i class="fa fa-user" aria-hidden="true"></i><span>20</span></div>
-            <div class="course_rating ml-auto"><i class="fa fa-star" aria-hidden="true"></i><span>4,5</span></div>
-            <div class="course_mark course_free trans_200"><a href="#">Certifié</a></div>
-          </div>
+
         </div>
       </div>
 
@@ -155,48 +143,65 @@
         <div class="course">
           <div class="course_image"><img src="/new/images/cours/cm.png" alt=""></div>
           <div class="course_body">
-            <div class="course_title"><a href="course.html">Community Manager</a></div>
-            <div class="course_info">
-              <ul>
-                <li><a href="instructors.html">Web Marketing</a></li>
-                <li><a href="#">4 mois</a></li>
-              </ul>
-            </div>
-            <div class="course_text">
-              <p>Gérer la présence des marques sur les réseaux sociaux</p>
-            </div>
+            <div class="course_title"><a href="ecolemarketing">Ecole du Web Marketing</a></div>
           </div>
-          <div class="course_footer d-flex flex-row align-items-center justify-content-start">
-            <div class="course_students"><i class="fa fa-user" aria-hidden="true"></i><span>10</span></div>
-            <div class="course_rating ml-auto"><i class="fa fa-star" aria-hidden="true"></i><span>4,5</span></div>
-            <div class="course_mark course_free trans_200"><a href="#">Certifié</a></div>
-          </div>
+
         </div>
       </div>
 
       <!-- Course -->
       <div class="col-lg-4 course_col">
         <div class="course">
-          <div class="course_image"><img src="/new/images/cours/webmobile.png" alt=""></div>
+          <div class="course_image"><img src="/new/images/cours/business.png" alt=""></div>
           <div class="course_body">
-            <div class="course_title"><a href="course.html">Développeur d'applications mobiles</a></div>
-            <div class="course_info">
-              <ul>
-                <li><a href="instructors.html">Programmation et développement</a></li>
-                <li><a href="#">4 mois</a></li>
-              </ul>
-            </div>
-            <div class="course_text">
-              <p>Avec Ionic, vous allez pouvoir profiter de vos connaissances du développement Angular pour développer des applications mobiles multi-plateformes.</p>
-            </div>
+            <div class="course_title"><a href="/ecolebusiness">Ecole du business</a></div>
+
           </div>
-          <div class="course_footer d-flex flex-row align-items-center justify-content-start">
-            <div class="course_students"><i class="fa fa-user" aria-hidden="true"></i><span>10</span></div>
-            <div class="course_rating ml-auto"><i class="fa fa-star" aria-hidden="true"></i><span>4,5</span></div>
-            <div class="course_mark course_free trans_200"><a href="#">Bientôt</a></div>
-          </div>
+
         </div>
       </div>
+
+
+    </div>
+
+    <div class="row courses_row">
+
+
+      <!-- Course -->
+      <div class="col-lg-4 course_col">
+        <div class="course">
+          <div class="course_image"><img src="/new/images/cours/datascience.png" alt=""></div>
+          <div class="course_body">
+            <div class="course_title"><a href="#">Ecole de la Data Science</a></div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Course -->
+      <div class="col-lg-4 course_col">
+        <div class="course">
+          <div class="course_image"><img src="/new/images/cours/ai.png" alt=""></div>
+          <div class="course_body">
+            <div class="course_title"><a href="#">Ecole de l'Intelligence Artificielle</a></div>
+
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Course -->
+      <div class="col-lg-4 course_col">
+        <div class="course">
+          <div class="course_image"><img src="/new/images/cours/langues.png" alt=""></div>
+          <div class="course_body">
+            <div class="course_title"><a href="/ecolelang">Ecole des Langues</a></div>
+
+          </div>
+
+        </div>
+      </div>
+
 
     </div>
   </div>
@@ -264,7 +269,7 @@
 
 <div class="register">
   <div class="container">
-    <div class="row">
+    <div class="row espace">
 
       <!-- Register Form -->
 
@@ -272,18 +277,6 @@
         <div class="register_form_container">
           <div class="register_form_title">Des doutes ? Laissez-vous convaincre par nos MOOC</div>
             <div class="row register_row">
-              <div class="col-lg-6 register_col">
-                <input type="text" class="form_input" placeholder="Nom" required>
-              </div>
-              <div class="col-lg-6 register_col">
-                <input type="email" class="form_input" placeholder="Email" required>
-              </div>
-              <div class="col-lg-6 register_col">
-                <input type="tel" class="form_input" placeholder="Téléphone">
-              </div>
-              <div class="col-lg-6 register_col">
-                <input type="url" class="form_input" placeholder="Site (facultatif)">
-              </div>
               <div class="col">
                 <a href="https://oschool.ci">
                   <button type="submit" class="form_button trans_200">Obtenir les cours	</button>
@@ -296,7 +289,7 @@
       <!-- Register Timer -->
 
       <div class="col-lg-6">
-        <img width="600" src="/new/images/dashboard.png" alt="">
+        <img width="400" src="/new/images/dashboard.png" alt="">
         <!--
         <div class="register_timer_container">
           <div class="register_timer_title">Register Now</div>
@@ -314,7 +307,55 @@
         </div>
       -->
       </div>
+    </div> <!--fin row-->
+
+    <div class="row espace">
+
+      <div class="col-lg-6">
+
+        <img width="450" src="/new/images/img-programme.jpg" alt="">
+
+      </div>
+      <div class="col-lg-6" style="padding: 70px;">
+        <div class="register_form_title">Programme Immersif</div>
+        <p class="text">Un programme qui vous permet d'apprendre vite.
+          Apprentissage pratique, contenu interactif, progrès mesurables. Et
+          réalisez des projets du monde réel avec des projets conçus par l'industrie,
+            une expertise, des résultats prêts pour un beau portfolio.</p>
+      </div>
+
     </div>
+
+    <div class="row espace">
+
+      <div class="col-lg-6" style="padding: 70px;">
+        <div class="register_form_title">Vous n'êtes pas seul dans votre apprentissage</div>
+        <p class="text">Formateurs engagés, conseils d'experts et aide de notre communauté d'étudiants</p>
+      </div>
+
+      <div class="col-lg-6">
+
+        <img width="450" src="/new/images/chat.png" alt="">
+
+      </div>
+
+    </div>
+
+
+    <div class="row espace">
+
+      <div class="col-lg-6">
+
+        <img width="450" src="/new/images/img-career.jpg" alt="">
+
+      </div>
+      <div class="col-lg-6" style="padding: 70px;">
+        <div class="register_form_title">Votre carrière</div>
+        <p class="text">Préparation aux entretiens, conseils d'expert, création de votre CV</p>
+      </div>
+
+    </div>
+
   </div>
 </div>
 

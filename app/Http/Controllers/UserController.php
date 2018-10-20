@@ -218,6 +218,7 @@ class UserController extends Controller
      */
     public function destroy(User $user)
     {
-        //
+      $user->delete();
+      return redirect('home')->with('status', 'L\'utilisateur a bien été supprimé');;
     }
 }

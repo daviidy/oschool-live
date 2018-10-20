@@ -33,6 +33,28 @@
 2. Body and some general stuff
 *********************************/
 
+.home_button {
+    width: 225px;
+    height: 43px;
+    background: #4D90CC;
+    text-align: center;
+    border-radius: 3px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+.home_button a {
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-weight: 600;
+    line-height: 43px;
+    letter-spacing: 0.3em;
+}
+
 *
 {
 	margin: 0;

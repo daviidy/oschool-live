@@ -144,6 +144,30 @@ Route::get('/cours', function () {
     return view('formations.cours');
 })->name('cours');
 
+Route::get('/ecoleprog', function () {
+    return view('formations.ecoleprog');
+});
+
+Route::get('/ecolemarketing', function () {
+    return view('formations.ecolemarketing');
+});
+
+Route::get('/ecolelang', function () {
+    return view('formations.ecolelang');
+});
+
+Route::get('/ecolebusiness', function () {
+    return view('formations.ecolebusiness');
+});
+
+Route::get('/ecoleai', function () {
+    return view('formations.ecoleai');
+});
+
+Route::get('/ecoledatascience', function () {
+    return view('formations.ecoledatascience');
+});
+
 
 Route::get('/documentsTeacher', 'UserController@documentsTeacher')->name('documentsTeacher');
 
