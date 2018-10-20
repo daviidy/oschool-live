@@ -230,7 +230,7 @@
 
     <!-- Modal Header -->
     <div class="modal-header">
-    <h4 style="font-size: 24px;" class="modal-title">Commentaire sur le projet</h4>
+    <h4 style="font-size: 24px;" class="modal-title">Formation concernée</h4>
     <button type="button" class="close" data-dismiss="modal">&times;</button>
     </div>
 

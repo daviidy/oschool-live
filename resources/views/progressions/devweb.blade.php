@@ -41,7 +41,7 @@
 					<div class="wrap-input100 input100-select bg1">
 						<span class="label-input100">Formation concernée</span>
 						<div>
-							<input disabled type="text" class="form-control" id="inputWarning2" name="formation" value="{{$formation}}">
+							<input type="text" class="form-control" id="inputWarning2" name="formation" value="{{$formation}}">
 						</div>
 					</div>
 
