@@ -259,7 +259,7 @@
                                @elseif($etatprojet->statut == "A refaire")
                                <div style="margin-left: 15px;" class="dropdown">
                                  <button type="button" class="btn btn-primary">
-                                   <a href="{{route('etatprojets.edit', $etatprojet)}}">Modifier</a>
+                                   <a style="color: white;" href="{{route('etatprojets.edit', $etatprojet)}}">Modifier</a>
                                  </button>
                                </div>
                                @endif
