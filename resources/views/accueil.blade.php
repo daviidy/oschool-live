@@ -421,18 +421,18 @@
 
 <!-- Blog -->
 
+<!--
 <div class="blog">
   <div class="container">
     <div class="row row-lg-eq-height">
 
-      <!-- Blog Left -->
+
       <div class="col-lg-6">
         <div class="blog_left">
           <div style="font-size: 20px;" class="blog_title">Apprenez maintenant les compétences les plus recherchées dans ces domaines</div>
           <div class="blog_categories">
             <div class="row categories_row">
 
-              <!-- Category -->
               <div class="col-md-4 blog_category_col">
                 <a href="blog.html">
                   <div class="blog_category">
@@ -442,7 +442,6 @@
                 </a>
               </div>
 
-              <!-- Category -->
               <div class="col-md-4 blog_category_col">
                 <a href="blog.html">
                   <div class="blog_category">
@@ -452,7 +451,6 @@
                 </a>
               </div>
 
-              <!-- Category -->
               <div class="col-md-4 blog_category_col">
                 <a href="blog.html">
                   <div class="blog_category">
@@ -462,7 +460,6 @@
                 </a>
               </div>
 
-              <!-- Category -->
               <div class="col-md-4 blog_category_col">
                 <a href="blog.html">
                   <div class="blog_category">
@@ -472,7 +469,6 @@
                 </a>
               </div>
 
-              <!-- Category -->
               <div class="col-md-4 blog_category_col">
                 <a href="blog.html">
                   <div class="blog_category">
@@ -483,6 +479,7 @@
               </div>
 
               <!-- Category -->
+              <!--
               <div class="col-md-4 blog_category_col">
                 <a href="blog.html">
                   <div class="blog_category">
@@ -498,6 +495,7 @@
       </div>
 
       <!-- Blog Right -->
+      <!--
 
       <div class="col-lg-6">
         <div class="blog_right">
@@ -515,7 +513,7 @@
       </div>
     </div>
   </div>
-</div>
+</div> -->
 
 
 

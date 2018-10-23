@@ -186,12 +186,12 @@
           </li>
           @endif
         @endauth
-          <li class="mt">
+      <!--    <li class="mt">
             <a href="/programme">
               <i class="fa fa-calendar"></i>
               <span>Programme de la formation</span>
               </a>
-          </li>
+          </li> -->
           @auth
           @if(Auth::user()->isTeacher() || Auth::user()->isAdmin())
           <li class="mt">
