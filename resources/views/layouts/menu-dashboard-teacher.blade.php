@@ -7,7 +7,7 @@
   <meta name="description" content="">
   <meta name="author" content="Rikudo Technologies">
   <meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
-  <title>Tableau de bord Utilisateur | Oschool code</title>
+  <title>Tableau de bord Utilisateur | Oschool Parcours</title>
 
   <!-- Favicons -->
   <link href="/dashboard/img/image-profil.png" rel="icon">
@@ -36,18 +36,54 @@
             {{ session('status') }}
         </div>
     @endif
+    @if(!count(Auth::user()->formations))
+    <div style="position: fixed; width: 100%;top: 0; z-index: 2000; color: #000;" class="alert alert-info">
+        La meilleure facon d'apprécier l'expérience Oschool, est de rejoindre un
+        de nos parcours. <a style="color: red;" href="https://code.oschool.ci">Rejoignez-nous maintenant !</a>
+    </div>
+    @endif
     <!-- **********************************************************************************************************************************************************
         TOP BAR CONTENT & NOTIFICATIONS
         *********************************************************************************************************************************************************** -->
     <!--header start-->
-    <header class="header black-bg">
+    <header style="{{ !count(Auth::user()->formations) ? 'top: 50px;' : '' }}" class="header black-bg">
       <div class="sidebar-toggle-box">
         <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
       </div>
       <!--logo start-->
-      <a href="{{url('home')}}" class="logo"><img width="100" src="/dashboard/img/thumbnail.png"></a>
+      <a href="{{url('/')}}" class="logo"><img width="100" src="/dashboard/img/thumbnail.png"></a>
       <!--logo end-->
+      @if(Auth::user()->fin_abonnement->subDays(10) <= Carbon\Carbon::now())
+      <div class="nav notify-row" id="top_menu">
+        <!--  notification start -->
+        <ul class="nav top-menu">
+          <!-- notification dropdown start-->
+          <li id="header_notification_bar" class="dropdown">
+            <a data-toggle="dropdown" class="dropdown-toggle" href="index.html#">
+              <i class="fa fa-bell-o"></i>
+              <span class="badge bg-warning">1</span>
+              </a>
+            <ul class="dropdown-menu extended notification">
+              <div class="notify-arrow notify-arrow-yellow"></div>
+              <li>
+                <p class="yellow">Vous avez une nouvellenotification</p>
+              </li>
+              <li>
+                <a href="#" data-toggle="modal" data-target="#myModal">
+                  <span class="label label-danger"><i class="fa fa-bolt"></i></span>
+                  Votre abonnement expire le {{Carbon\Carbon::parse(Auth::user()->fin_abonnement->subDays(10))->format('d-m-Y H:i')}}.
+                  </a>
+              </li>
+
+            </ul>
+          </li>
+          <!-- notification dropdown end -->
+        </ul>
+        <!--  notification end -->
+      </div>
+      @endif
       <div class="top-menu">
+
         <ul class="nav pull-right top-menu">
 
           <li>
@@ -74,7 +110,7 @@
     <aside>
       <div id="sidebar" class="nav-collapse ">
         <!-- sidebar menu start-->
-        <ul class="sidebar-menu" id="nav-accordion">
+        <ul style="{{ !count(Auth::user()->formations) ? 'margin-top: 120px;' : '' }}" class="sidebar-menu" id="nav-accordion">
           <p class="centered"><a href="{{url('home')}}"><img src="/avatars/users/{{Auth::user()->photo}}" class="img-circle" width="80"></a></p>
           <h5 class="centered">{{Auth::user()->name}}</h5>
           <li class="mt">
@@ -83,18 +119,24 @@
               <span>Profil</span>
               </a>
           </li>
+          <li class="mt">
+            <a target="_blank" href="https://discord.gg/hhbzcHE">
+              <i class="fa fa-group"></i>
+              <span>Forum des étudiants</span>
+              </a>
+          </li>
           @auth
           @if(Auth::user()->isTeacher())
           <li>
 
-            <a  style="border-radius:8px; color: #fff; background-color: green;" class="logout" href="{{ route('classrooms.create') }}">
+            <a  style="border-radius:8px; color: green;" class="logout" href="{{ route('classrooms.create') }}">
                 Planifier une session
             </a>
 
           </li>
           <li>
 
-            <a data-toggle="modal" data-target="#popup" style="border-radius:8px; color: #fff; background-color: #F36A10;" class="logout" href="{{ route('progressions.create') }}">
+            <a data-toggle="modal" data-target="#popup" style="border-radius:8px; color: #F36A10;" class="logout" href="{{ route('progressions.create') }}">
                 Marquer une progression
             </a>
 
@@ -132,7 +174,7 @@
           </li>
           @endif
 
-          @if(!Auth::user()->isAdmin() && !Auth::user()->isTeacher())
+          @if(!Auth::user()->isAdmin() && !Auth::user()->isTeacher() && count(Auth::user()->formations))
 
           <li class="mt">
             <a href="{{ url('progression', Auth::user()) }}">
@@ -143,7 +185,7 @@
 
           @endif
 
-          @if(Auth::user()->formations)
+          @if(count(Auth::user()->formations))
           <li class="mt">
             <a href="{{ url('projets') }}">
               <i class="fa fa-dashboard"></i>
@@ -160,7 +202,7 @@
           @endif
 
 
-          @if(!Auth::user()->isAdmin())
+          @if(!Auth::user()->isAdmin() && count(Auth::user()->formations))
           <li class="mt">
             <a href="{{route('classrooms.index')}}">
               <i class="fa fa-dashboard"></i>
@@ -173,6 +215,14 @@
             <a href="#">
               <i class="fa fa-money"></i>
               <span>Facturation</span>
+            </a>
+          </li>
+          @endif
+          @if(!Auth::user()->isTeacher() && !Auth::user()->isAdmin() && count(Auth::user()->formations))
+          <li class="mt">
+            <a href="{{url('achats')}}">
+              <i class="fa fa-money"></i>
+              <span>Etat de mon abonnement</span>
             </a>
           </li>
           @endif
@@ -254,6 +304,77 @@
     <!-- Modal footer -->
     <div class="modal-footer">
     <button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
+    </div>
+
+    </div>
+    </div>
+    </div>
+
+    <!--end modal-->
+
+    <!-- The Modal -->
+    <div class="modal fade" id="myModal">
+    <div class="modal-dialog">
+    <div class="modal-content">
+
+    <!-- Modal Header -->
+    <div class="modal-header">
+    <h4 style="font-size: 24px;" class="modal-title">Remplissez ce formulaire pour vous réabonner à la formation</h4>
+    <button type="button" class="close" data-dismiss="modal">&times;</button>
+    </div>
+
+    <!-- Modal body -->
+    <div class="modal-body">
+    <form method="post" action="{{url('envoi')}}">
+    {{ csrf_field() }}
+
+    <div class="form-group">
+      <label for="">Email:</label>
+      <input value="{{Auth::check() ? Auth::user()->email : ''}}" type="email" class="form-control" id="" placeholder="Email" name="email" required>
+    </div>
+    <div class="form-group">
+      <label for="">Nom</label>
+      <input type="text" class="form-control" id="" placeholder="Nom" name="nom" required>
+    </div>
+    <div class="form-group">
+      <label for="">Prénoms</label>
+      <input type="text" class="form-control" id="" placeholder="Prénoms" name="prenoms" required>
+    </div>
+    <div class="form-group">
+      <label for="">Numéro de téléphone</label>
+      <input type="text" class="form-control" id="" placeholder="Téléphone" name="tel" required>
+    </div>
+
+    <div class="form-group">
+      <label for="">Formation</label>
+      @auth
+      @if(count(Auth::user()->formations))
+        @foreach(Auth::user()->formations as $formation)
+        <select class="" name="formation">
+          <option value="{{$formation->nom}}">{{$formation->nom}}</option>
+        </select>
+        @endforeach
+      @endif
+      @else
+      <select class="" name="formation">
+        <option value="Développeur Web Junior">Développeur Web Junior</option>
+      </select>
+      @endauth
+    </div>
+
+    <div class="form-group">
+      <label for="">Prix</label>
+      <select class="" name="montant">
+        <option value="30000">30.000 FCFA</option>
+      </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Envoyer</button>
+    </form>
+    </div>
+
+    <!-- Modal footer -->
+    <div class="modal-footer">
+    <button type="button" class="btn btn-danger" data-dismiss="modal">Annuler</button>
     </div>
 
     </div>

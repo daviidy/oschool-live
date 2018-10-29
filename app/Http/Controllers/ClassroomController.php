@@ -13,7 +13,7 @@ class ClassroomController extends Controller
     /**
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\Response 
      */
     public function index()
     {
@@ -23,7 +23,7 @@ class ClassroomController extends Controller
         }
         elseif (Auth::user()->isTeacher()) {
           return view('classrooms.index');
-        }      
+        }
       else {
         return redirect('home');
       }

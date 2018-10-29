@@ -40,7 +40,22 @@
 						<div class="col">
 							<div class="top_bar_content d-flex flex-row align-items-center justify-content-start">
 								<div class="top_bar_phone"><span class="top_bar_title">question ?</span>info@oschool.ci</div>
+								<div class="header_content_right ml-auto text-right">
+									<div class="header_search">
+										<div class="search_form_container">
+											<form action="#" id="search_form" class="search_form trans_400">
+												<input type="search" class="header_search_input trans_400" placeholder="Faire une recherche" required="required">
+												<div class="search_button">
+													<i class="fa fa-search" aria-hidden="true"></i>
+												</div>
+											</form>
+										</div>
+									</div>
+
+	                </div>
 								<div class="top_bar_right ml-auto">
+
+
 
 									<!-- Language -->
 									<div class="top_bar_lang">
@@ -91,21 +106,10 @@
 									<li><a href="/cours">Toutes les formations</a></li>
 									<li><a target="_blank" href="https://events.oschool.ci">Evénements</a></li>
 									<li><a target="_blank" href="https://oschool.ci/blog/">Blog</a></li>
+									<li><a class="demo" href="#">Demandez une démo</a></li>
 								</ul>
 							</nav>
-							<div class="header_content_right ml-auto text-right">
-								<div class="header_search">
-									<div class="search_form_container">
-										<form action="#" id="search_form" class="search_form trans_400">
-											<input type="search" class="header_search_input trans_400" placeholder="Faire une recherche" required="required">
-											<div class="search_button">
-												<i class="fa fa-search" aria-hidden="true"></i>
-											</div>
-										</form>
-									</div>
-								</div>
 
-                </div>
 
 								<!-- Hamburger -->
 

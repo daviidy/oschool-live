@@ -73,13 +73,13 @@ class RegisterController extends Controller
             'type' => User::DEFAULT_TYPE,
         ]);
 
-        //envoi mail inscrit
+        //envoi mail inscrit (mail bienvenue)
         Mail::send('mails.inscription-utilisateur', ['user' => $user], function($message) use ($user){
           $message->to($user->email, 'Bienvenue à Oschool !')->subject('Votre compte pour les cours en télé présentiel a été crée');
           $message->from('eventsoschool@gmail.com', 'Oschool');
         });
 
-        //envoi mail admin
+        //envoi mail admin (mail bienvenue)
         Mail::send('mailsAdmin.inscription-utilisateur', ['user' => $user], function($message) use ($user){
           $message->to('yaodavidarmel@gmail.com', 'A David')->subject('Il y a un nouvel utilisateur sur Oschool Live !');
           $message->from('eventsoschool@gmail.com', 'Oschool');

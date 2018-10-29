@@ -3120,7 +3120,7 @@ ul.chat-available-user li a:hover {
 }
 
 .badge.bg-warning {
-    background: #FCB322;
+    background: red;
 }
 
 .badge.bg-important {

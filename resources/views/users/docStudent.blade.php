@@ -26,15 +26,15 @@
             <p><span class="text-muted"> <a target="_blank" href="https://docs.google.com/document/d/1-xKgvHNuEIkalz4v0AUNT4dPZO-Z1-ixncv_uyzJv-0/edit?usp=sharing">Télécharger le guide</a> </span></p>
           </div>
           <div class="room-box">
-            <h5 class="text-primary"><a target="_blank" href="https://oschool.ci/wp-content/uploads/2018/10/GuideEtudiantstlprsentiel.pdf">Guide étudiants du télé présentiel (A lire obligatoirement)</a></h5>
+            <h5 class="text-primary"><a target="_blank" href="https://docs.google.com/document/d/1-nYSwE-ZM86VICWgtBYKRuW1gqYu3g-Lqg-GpbdPZUo/edit?usp=sharing">Guide étudiants du télé présentiel (A lire obligatoirement)</a></h5>
             <p>Il faut absolument lire ce guide pour savoir comment t'en sortir dans ta formation</p>
-            <p><span class="text-muted"> <a target="_blank" href="https://oschool.ci/wp-content/uploads/2018/10/GuideEtudiantstlprsentiel.pdf">Télécharger le guide</a> </span></p>
+            <p><span class="text-muted"> <a target="_blank" href="https://docs.google.com/document/d/1-nYSwE-ZM86VICWgtBYKRuW1gqYu3g-Lqg-GpbdPZUo/edit?usp=sharing">Télécharger le guide</a> </span></p>
           </div>
           <div class="room-box">
-            <h5 class="text-primary"><a target="_blank" href="https://oschool.ci/wp-content/uploads/2018/10/prerequis-etudiants.pdf">Outils pour suivre les formations</a></h5>
+            <h5 class="text-primary"><a target="_blank" href="https://drive.google.com/file/d/1ihKHmukvYioQ6VfS_eaqSuIq4gOgnxcA/view?usp=sharing">Outils pour suivre les formations</a></h5>
             <p>Ce document vous montre quels sont les outils requis pour suivre convenablement
             les formations en télé présentiel sur Oschool</p>
-            <p><span class="text-muted"> <a target="_blank" href="https://oschool.ci/wp-content/uploads/2018/10/prerequis-etudiants.pdf">Télécharger le guide</a> </span></p>
+            <p><span class="text-muted"> <a target="_blank" href="https://drive.google.com/file/d/1ihKHmukvYioQ6VfS_eaqSuIq4gOgnxcA/view?usp=sharing">Télécharger le guide</a> </span></p>
           </div>
         </div>
 

@@ -17,7 +17,7 @@ class CreateEtatprojetsTable extends Migration
             $table->increments('id');
             $table->string('statut');
             $table->string('livrable');
-            $table->string('commentaire');
+            $table->string('commentaire'); 
             $table->string('projet');
             $table->integer('user_id')->unsigned()->nullable();
             $table->foreign('user_id')->references('id')->on('users');

@@ -14,14 +14,17 @@
       <form method="post" enctype="multipart/form-data" action="https://secure.cinetpay.com/" class="login100-form validate-form">
         <span class="login100-form-title">
           Veuillez vérifier les informations ci-dessous avant de valider votre achat.<br><br>
-          Vous paierez 30.000 FCFA.<br><br>
-          Important: cliquer sur "Retourner sur Oschool pour valider l'inscription" !
+          Vous paierez {{session('montant')}} FCFA<br><br>
+          Important: cliquer sur "Retourner sur Oschool pour valider le paiement" !
         </span>
+        <!--
         <p style="color: red;">Rappel: il ne reste que {{5 - $achats->count()}} places !</p><br>
+      -->
         <ul>
           <li>Nom: <strong>{{session('name')}}</strong> </li>
           <li>Prénoms: <strong>{{session('prenoms')}}</strong> </li>
           <li>Email: <strong>{{session('email')}}</strong> </li>
+          <li>Formation: <strong>{{session('formation')}}</strong> </li>
         </ul><br>
         {{ csrf_field() }}
         <div style="display: none;" class="form-group">
@@ -31,7 +34,7 @@
         </div>
         <div style="display: none;" class="form-group">
           <select class="" name="cpm_amount">
-            <option value="30000">montant</option>
+            <option value="{{session('montant')}}">montant</option>
           </select>
         </div>
         <div style="display: none;" class="form-group">
@@ -102,8 +105,8 @@
 
 
         <div class="text-center p-t-136">
-          <a class="txt2" href="/">
-            Allez à la page d'accueil
+          <a class="txt2" href="{{ url()->previous() }}">
+            Annuler
             <i class="fa fa-long-arrow-right m-l-5" aria-hidden="true"></i>
           </a>
         </div>
