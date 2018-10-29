@@ -106,7 +106,7 @@
 									<li><a href="/cours">Toutes les formations</a></li>
 									<li><a target="_blank" href="https://events.oschool.ci">Evénements</a></li>
 									<li><a target="_blank" href="https://oschool.ci/blog/">Blog</a></li>
-									<li><a class="demo" href="#">Demandez une démo</a></li>
+									<li><a target="_blank" class="demo" href="https://calendly.com/oschool_e-learning/demo-oschool-code">Demandez une démo</a></li>
 								</ul>
 							</nav>
 
