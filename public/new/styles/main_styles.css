@@ -923,6 +923,21 @@ section
 /*********************************
 5. Home
 *********************************/
+.demo
+{
+	width: 7.75rem;
+    box-shadow: 8px 10px 20px 0 rgba(46,61,73,.15);
+    background-color: #02b3e4;
+		color: white !important;
+		padding: 10px;
+    border-radius: 5px;
+}
+
+.demo:hover
+{
+	box-shadow: 2px 4px 8px 0 rgba(46,61,73,.2);
+	background-color: #02b7e9;
+}
 
 .home
 {

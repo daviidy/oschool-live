@@ -17,7 +17,7 @@ class FormationController extends Controller
      */
     public function index()
     {
-        $formations = Formation::orderby('id','asc');
+        $formations = Formation::orderby('id','asc')->paginate(30);
         return view('formations.index', ['formations' => $formations]);
     }
 

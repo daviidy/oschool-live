@@ -88,7 +88,7 @@ class UserController extends Controller
     /**
      * Inscrire un étudiant à une formation
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param  \Illuminate\Http\Request  $request 
      * @return \Illuminate\Http\Response
      */
 

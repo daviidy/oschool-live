@@ -659,7 +659,14 @@ freelance.
       <div class="col-lg-3">
         <div class="sidebar">
           <div class="sidebar_background"></div>
-          <div class="sidebar_top"><a href="https://adams21.typeform.com/to/itKgiA">s'inscrire</a></div>
+          <div class="sidebar_top">
+            @auth
+            <a href="#" data-toggle="modal" data-target="#myModal">s'inscrire</a>
+            @endauth
+            @guest
+            <a href="/login">s'inscrire</a>
+            @endauth
+          </div>
           <div class="sidebar_content">
 
             <!-- Features -->
@@ -748,7 +755,7 @@ freelance.
 
 <div class="form-group">
   <label for="">Email:</label>
-  <input type="email" class="form-control" id="" placeholder="Email" name="email" required>
+  <input value="{{Auth::check() ? Auth::user()->email : ''}}" type="email" class="form-control" id="" placeholder="Email" name="email" required>
 </div>
 <div class="form-group">
   <label for="">Nom</label>
@@ -761,6 +768,30 @@ freelance.
 <div class="form-group">
   <label for="">Numéro de téléphone</label>
   <input type="text" class="form-control" id="" placeholder="Téléphone" name="tel" required>
+</div>
+
+<div class="form-group">
+  <label for="">Formation</label>
+  @auth
+  @if(count(Auth::user()->formations))
+    @foreach(Auth::user()->formations as $formation)
+    <select class="" name="formation">
+      <option value="{{$formation->nom}}">{{$formation->nom}}</option>
+    </select>
+    @endforeach 
+  @endif
+  @else
+  <select class="" name="formation">
+    <option value="Développeur Web Junior">Développeur Web Junior</option>
+  </select>
+  @endauth
+</div>
+
+<div class="form-group">
+  <label for="">Prix</label>
+  <select class="" name="montant">
+    <option value="30000">30.000 FCFA</option>
+  </select>
 </div>
 <button type="submit" class="btn btn-primary">Envoyer</button>
 </form>

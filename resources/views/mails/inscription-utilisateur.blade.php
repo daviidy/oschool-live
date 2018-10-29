@@ -36,7 +36,8 @@
 
     <tr>
       <td style="padding: 20px 7.5% 0;">
-        N'hésitez pas à consultez nos différents parcours en télé présentiel. Votre futur, c'est maintenant :<br>
+        Développez les compétences d'aujourd'hui et de demain avec
+        nos formations en télé présentiel :<br>
         <a href="https://code.oschool.ci/home">Consultez votre tableau de bord</a><br>
         <a href="https://code.oschool.ci/cours">Voir nos différents parcours</a><br>
       </td>

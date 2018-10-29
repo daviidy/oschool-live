@@ -66,6 +66,12 @@
         </div>
 
         <div class="w-full text-center p-t-55">
+          <a href="/register" class="txt2 bo1">
+            Nouveau ? Inscrivez-vous gratuitement
+          </a>
+        </div>
+
+        <div class="w-full text-center p-t-55">
           <a href="/" class="txt2 bo1">
             Retour à la page d'accueil
           </a>

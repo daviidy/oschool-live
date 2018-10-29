@@ -27,8 +27,10 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password', 'nom', 'prenoms', 'photo', 'user_id', 'max_students'
+        'name', 'email', 'password', 'nom', 'prenoms', 'photo', 'user_id', 'max_students', 'fin_abonnement', 'statut'
     ];
+
+    protected $dates = ['fin_abonnement'];
 
     /**
      * The attributes that should be hidden for arrays.
@@ -67,6 +69,11 @@ class User extends Authenticatable
     public function etatprojets()
     {
         return $this->hasMany('App\Etatprojet');
+    }
+
+    public function achats()
+    {
+        return $this->hasMany('App\Achat');
     }
 
     public function routeNotificationForSlack()

@@ -115,7 +115,7 @@
 
 <!-- Courses -->
 
-<div class="courses">
+<div id="schools" class="courses">
   <div class="courses_background"></div>
   <div class="container">
     <div class="row">
@@ -269,6 +269,20 @@
 
 <div class="register">
   <div class="container">
+
+    <div class="row espace">
+
+      <!-- Register Form -->
+
+      <div class="col-lg-12 text-center">
+          <h2>Oschool a changé leur vie</h2>
+                <iframe style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" src="https://player.vimeo.com/video/297699968?title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      </div>
+    </div> <!--fin row-->
+
+
+
+
     <div class="row espace">
 
       <!-- Register Form -->
@@ -375,8 +389,8 @@
         <div class="event">
           <div class="event_image"><img src="/new/images/fblive.png" alt=""></div>
           <div class="event_date d-flex flex-column align-items-center justify-content-center">
-            <div class="event_day">26</div>
-            <div class="event_month">aug</div>
+            <div class="event_day">5</div>
+            <div class="event_month">nov</div>
           </div>
           <div class="event_body d-flex flex-row align-items-center justify-content-start">
             <div class="event_title"><a href="#">Facebook Live</a></div>
@@ -390,12 +404,11 @@
         <div class="event">
           <div class="event_image"><img src="/new/images/cours/jeux.png" alt=""></div>
           <div class="event_date d-flex flex-column align-items-center justify-content-center">
-            <div class="event_day">26</div>
-            <div class="event_month">aug</div>
+            <div class="event_day">23</div>
+            <div class="event_month">nov</div>
           </div>
           <div class="event_body d-flex flex-row align-items-center justify-content-start">
-            <div class="event_title"><a href="#">Orange Gaming Tour</a></div>
-            <div class="event_tag ml-auto">2000FCFA</div>
+            <div class="event_title"><a href="#">Festival de l'Electronique et du Jeu Vidéo d'Abidjan</a></div>
           </div>
         </div>
       </div>
@@ -405,12 +418,12 @@
         <div class="event">
           <div class="event_image"><img src="/new/images/event_3.jpg" alt=""></div>
           <div class="event_date d-flex flex-column align-items-center justify-content-center">
-            <div class="event_day">26</div>
-            <div class="event_month">aug</div>
+            <div class="event_day">14</div>
+            <div class="event_month">dec</div>
           </div>
           <div class="event_body d-flex flex-row align-items-center justify-content-start">
-            <div class="event_title"><a href="#">Meetup</a></div>
-            <div class="event_tag ml-auto">Free</div>
+            <div class="event_title"><a href="#">Meetup de la team Oschool</a></div>
+            <div class="event_tag ml-auto">Gratuit</div>
           </div>
         </div>
       </div>

@@ -37,6 +37,20 @@
     </tr>
 
     <tr>
+      <td style="padding: 20px 7.5% 0;">Comment réussir votre formation ?</td>
+    </tr>
+
+    <tr>
+      <td style="padding: 20px 7.5% 0;">
+        <b style="margin: 0;text-decoration:none;">Lisez le "Guide étudiants"</b> <br>
+        Pour avoir une meilleure expérience Oschool <a href="https://code.oschool.ci/documentsStudent">lisez ce guide</a>
+      </td>
+      <td style="padding: 20px 7.5% 0;">
+        Votre formateur vous contactera sous peu pour démarrer la formation avec vous.
+      </td>
+    </tr>
+
+    <tr>
       <td style="padding: 20px 7.5% 117px;">Cordialement,<br>Oschool</td>
     </tr>
 

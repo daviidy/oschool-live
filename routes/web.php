@@ -182,3 +182,5 @@ Route::resource('supportformations','SupportformationController');
 Route::post('/mooc', function () {
     return redirect('https://oschool.ci/');
 })->name('mooc');
+
+Route::resource('achats','AchatController');

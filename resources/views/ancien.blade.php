@@ -452,7 +452,7 @@
               <li><i class="ion-android-checkmark-circle"></i> Accès aux fichiers PDF</li>
               <li><i class="ion-android-checkmark-circle"></i> Accès à un compte Oschool normal</li>
               <li><i class="ion-android-checkmark-circle"></i> Accès au cours DEVELOPPEUR WEB sur oschool.ci</li>
-            </ul> 
+            </ul>
             <a data-toggle="modal" data-target="#myModal" href="#" style="width: 173px; height: 35px; background: #FFB400;" class="get-started-btn">Je m'inscris !</a>
           </div>
         </div>
@@ -460,7 +460,7 @@
         <!-- The Modal -->
 <div class="modal fade" id="myModal">
 <div class="modal-dialog">
-  <div class="modal-content">
+  <div class="modal-content"> 
 
     <!-- Modal Header -->
     <div class="modal-header">
