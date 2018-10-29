@@ -53,7 +53,7 @@
       <!--logo start-->
       <a href="{{url('/')}}" class="logo"><img width="100" src="/dashboard/img/thumbnail.png"></a>
       <!--logo end-->
-      @if(Auth::user()->fin_abonnement->subDays(10) <= Carbon\Carbon::now())
+      @if(!Auth::user()->isTeacher() && !Auth::user()->isAdmin() && Auth::user()->fin_abonnement->subDays(10) <= Carbon\Carbon::now())
       <div class="nav notify-row" id="top_menu">
         <!--  notification start -->
         <ul class="nav top-menu">

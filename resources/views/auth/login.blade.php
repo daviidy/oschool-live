@@ -8,7 +8,7 @@
     <div class="wrap-login100 p-l-110 p-r-110 p-t-62 p-b-33">
       <form class="login100-form validate-form flex-sb flex-w" method="POST" action="{{ route('login') }}">
         <span style="padding-bottom: 0px;" class="login100-form-title p-b-53">
-          Connectez-vous à votre espace membre Oschool.
+          Connectez-vous à votre espace membre VIP Oschool.
         </span>
 
 

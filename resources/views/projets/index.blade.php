@@ -19,7 +19,6 @@
               <thead>
                 <tr>
                   <th>Titre du projet</th>
-                  <th>Enoncé</th>
                   <th>Statut</th>
                   <th>Livrables</th>
                 </tr>
@@ -28,8 +27,7 @@
                 @foreach(Auth::user()->formations as $formation)
                   @foreach($formation->projets as $projet)
                 <tr>
-                  <td><a href="#">{{$projet->titre}}</a></td>
-                  <td> <a target="_blank" href="{{$projet->enonce}}">Voir l'énoncé</a></td>
+                  <td><a target="_blank" href="{{$projet->enonce}}">{{$projet->titre}}</a></td>
                   <td>{{$projet->formation_id}}</td>
                   <td><a href="{{url('projets', $projet)}}">Envoyez vos livrables</a></td>
                 </tr>

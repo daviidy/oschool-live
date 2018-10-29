@@ -19,15 +19,13 @@
               <thead>
                 <tr>
                   <th>Titre du document</th>
-                  <th>Lien</th>
                 </tr>
               </thead>
               <tbody>
                 @foreach(Auth::user()->formations as $formation)
                   @foreach($formation->supportformations->sortBy('titre') as $supportformation)
                 <tr>
-                  <td><a href="#">{{$supportformation->titre}}</a></td>
-                  <td> <a target="_blank" href="{{$supportformation->lien}}">Voir le document</a></td>
+                  <td><a target="_blank" href="{{$supportformation->lien}}">{{$supportformation->titre}}</a></td>
                 </tr>
                 @endforeach
                 @endforeach
