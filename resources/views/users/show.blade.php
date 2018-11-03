@@ -262,7 +262,7 @@
                                    Action
                                  </button>
                                  <div class="dropdown-menu">
-                                   <a class="dropdown-item" style="color: white;" href="{{route('etatprojets.edit', $etatprojet)}}">Modifier</a>
+                                   <a class="dropdown-item" href="{{route('etatprojets.edit', $etatprojet)}}">Modifier</a>
                                    <form action="{{ route('etatprojets.destroy', $etatprojet) }}" method="post">
                                        {{ csrf_field() }}
                                        {{ method_field('delete') }}
