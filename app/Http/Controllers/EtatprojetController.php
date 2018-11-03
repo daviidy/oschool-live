@@ -116,6 +116,7 @@ class EtatprojetController extends Controller
      */
     public function destroy(Etatprojet $etatprojet)
     {
-        //
+      $etatprojet->delete();
+      return back()->with('status', 'Les livrables ont bien été supprimés');
     }
 }

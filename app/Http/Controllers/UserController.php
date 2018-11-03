@@ -88,7 +88,7 @@ class UserController extends Controller
     /**
      * Inscrire un étudiant à une formation
      *
-     * @param  \Illuminate\Http\Request  $request 
+     * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
 
@@ -219,6 +219,6 @@ class UserController extends Controller
     public function destroy(User $user)
     {
       $user->delete();
-      return redirect('home')->with('status', 'L\'utilisateur a bien été supprimé');;
+      return redirect('home')->with('status', 'L\'utilisateur a bien été supprimé');
     }
 }
