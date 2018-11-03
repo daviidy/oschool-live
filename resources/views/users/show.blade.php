@@ -250,7 +250,7 @@
                            @foreach($user->etatprojets as $etatprojet)
                            <tr>
                              <td>{{$etatprojet->projet}}</td>
-                             <td> <a href="{{$etatprojet->livrables}}">Voir les livrables</a> </td>
+                             <td> <a target="_blank" href="{{$etatprojet->livrables}}">Voir les livrables</a> </td>
                              <td> <a data-toggle="modal" data-target="#myModal{{$etatprojet->id}}" href="#">Voir les commentaires</a></td>
                              <td style="display: flex; flex-wrap: wrap;">
 
@@ -258,9 +258,17 @@
                                <p style="color: green;">{{ $etatprojet->statut }}</p>
                                @elseif($etatprojet->statut == "A refaire")
                                <div style="margin-left: 15px;" class="dropdown">
-                                 <button type="button" class="btn btn-primary">
-                                   <a style="color: white;" href="{{route('etatprojets.edit', $etatprojet)}}">Modifier</a>
+                                 <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                                   Action
                                  </button>
+                                 <div class="dropdown-menu">
+                                   <a class="dropdown-item" style="color: white;" href="{{route('etatprojets.edit', $etatprojet)}}">Modifier</a>
+                                   <form action="{{ route('etatprojets.destroy', $etatprojet) }}" method="post">
+                                       {{ csrf_field() }}
+                                       {{ method_field('delete') }}
+                                       <button class="btn btn-danger" type="submit">Supprimer ces livrables</button>
+                                   </form>
+                                 </div>
                                </div>
                                @endif
 

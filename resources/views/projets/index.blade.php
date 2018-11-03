@@ -19,7 +19,6 @@
               <thead>
                 <tr>
                   <th>Titre du projet</th>
-                  <th>Statut</th>
                   <th>Livrables</th>
                 </tr>
               </thead>
@@ -28,7 +27,6 @@
                   @foreach($formation->projets as $projet)
                 <tr>
                   <td><a target="_blank" href="{{$projet->enonce}}">{{$projet->titre}}</a></td>
-                  <td>{{$projet->formation_id}}</td>
                   <td><a href="{{url('projets', $projet)}}">Envoyez vos livrables</a></td>
                 </tr>
                 @endforeach
