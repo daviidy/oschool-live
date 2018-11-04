@@ -51,7 +51,7 @@
 
         <div class="container-login100-form-btn">
           <button class="login100-form-btn">
-            Ajouter le parcours
+            Ajouter le parcours 
           </button>
         </div>
 

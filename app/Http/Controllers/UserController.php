@@ -21,8 +21,8 @@ class UserController extends Controller
     public function index()
     {
       if (Auth::user()->isAdmin()) {
-        $teachers = User::orderby ('id','asc')->where('type', 'teacher')->paginate(30);
-        $students = User::orderby ('id','asc')->where('type', 'default')->paginate(30);
+        $teachers = User::orderby ('id','asc')->where('type', 'teacher')->paginate(1000);
+        $students = User::orderby ('id','asc')->where('type', 'default')->paginate(1000);
         return view('users.list', ['teachers' => $teachers, 'students' => $students]);
       }
       else {
