@@ -5,6 +5,7 @@ namespace App\Console\Commands;
 use Illuminate\Console\Command;
 use Carbon\Carbon;
 use Mail;
+use App\User;
 
 class SendSubscriptionEmail extends Command
 {
@@ -41,13 +42,13 @@ class SendSubscriptionEmail extends Command
     {
         $date = Carbon::now();
         //get users which subscription expires in 10 days
-        $users = User::orderby('id', 'asc')->get();
+        $users = User::where('type', 'default')->orderby('id', 'asc')->paginate(1000);
 
         foreach ($users as $user) {
-          if ($user->fin_abonnement->subDays(10) <= $date ) {
+          if ($user->fin_abonnement->subDays(10) <= $date && $user->fin_abonnement >= $date) {
             //Send email to the users
-            Mail::send('mailsAchat.echec', function($message) use ($user){
-              $message->to($user->email, 'Cher(ère) Etudiant(e)')->subject('Votre paiement a bien été pris en compte !');
+            Mail::send('mails.fin-abonnement', ['user' => $user], function($message) use ($user){
+              $message->to($user->email, 'Oschool')->subject('Votre abonnement va bientôt prendre fin !');
               $message->from('eventsoschool@gmail.com', 'Oschool');
             });
           }

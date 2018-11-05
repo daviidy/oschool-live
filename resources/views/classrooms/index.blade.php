@@ -11,6 +11,7 @@
 @if(Auth::user()->isTeacher())
 <section id="main-content">
   <section class="wrapper">
+    <img width="300" src="/dashboard/img/classroom.png" alt="">
     <h3><i class="fa fa-angle-right"></i> Liste de vos sessions</h3>
     <div class="row mt">
       <div class="col-lg-12">
