@@ -53,7 +53,8 @@
       <!--logo start-->
       <a href="{{url('/')}}" class="logo"><img width="100" src="/dashboard/img/thumbnail.png"></a>
       <!--logo end-->
-      @if(!Auth::user()->isTeacher() && !Auth::user()->isAdmin() && Auth::user()->fin_abonnement->subDays(10) <= Carbon\Carbon::now())
+      <!--si la date d'expiration - 10 jours est inférieur ou égal à aujourd'hui et si la date d'expiration est supérieure ou égale à aujourd'hui-->
+      @if(!Auth::user()->isTeacher() && !Auth::user()->isAdmin() && Auth::user()->fin_abonnement->subDays(10) <= Carbon\Carbon::now() && Auth::user()->fin_abonnement >= Carbon\Carbon::now())
       <div class="nav notify-row" id="top_menu">
         <!--  notification start -->
         <ul class="nav top-menu">
@@ -71,7 +72,39 @@
               <li>
                 <a href="#" data-toggle="modal" data-target="#myModal">
                   <span class="label label-danger"><i class="fa fa-bolt"></i></span>
-                  Votre abonnement expire le {{Carbon\Carbon::parse(Auth::user()->fin_abonnement->subDays(10))->format('d-m-Y H:i')}}.
+                  Votre abonnement expire <br>
+                  le {{Carbon\Carbon::parse(Auth::user()->fin_abonnement)->format('d-m-Y H:i')}}.
+                  </a>
+              </li>
+
+            </ul>
+          </li>
+          <!-- notification dropdown end -->
+        </ul>
+        <!--  notification end -->
+      </div>
+
+      <!--sinon si la date d'expiration est inférieure à aujourd'hui-->
+      @elseif(!Auth::user()->isTeacher() && !Auth::user()->isAdmin() && Auth::user()->fin_abonnement < Carbon\Carbon::now())
+      <div class="nav notify-row" id="top_menu">
+        <!--  notification start -->
+        <ul class="nav top-menu">
+          <!-- notification dropdown start-->
+          <li id="header_notification_bar" class="dropdown">
+            <a data-toggle="dropdown" class="dropdown-toggle" href="index.html#">
+              <i class="fa fa-bell-o"></i>
+              <span class="badge bg-warning">1</span>
+              </a>
+            <ul class="dropdown-menu extended notification">
+              <div class="notify-arrow notify-arrow-yellow"></div>
+              <li>
+                <p class="yellow">Vous avez une nouvellenotification</p>
+              </li>
+              <li>
+                <a href="#" data-toggle="modal" data-target="#myModal">
+                  <span class="label label-danger"><i class="fa fa-bolt"></i></span>
+                  Votre abonnement a expiré. <br>
+                  Merci de le renouveler.
                   </a>
               </li>
 
@@ -212,7 +245,7 @@
           @endif
           @if(Auth::user()->isTeacher())
           <li class="mt">
-            <a href="#">
+            <a href="/factures">
               <i class="fa fa-money"></i>
               <span>Facturation</span>
             </a>

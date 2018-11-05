@@ -13,7 +13,7 @@ class ClassroomController extends Controller
     /**
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Http\Response 
+     * @return \Illuminate\Http\Response
      */
     public function index()
     {
@@ -71,7 +71,7 @@ class ClassroomController extends Controller
         $message->from('eventsoschool@gmail.com', 'Oschool');
       });
 
-      return redirect('classrooms')->with('status', 'La session a bien été créée. Rendez-vous dans la progression de l\'étudiant pour marquer ses progrès');
+      return redirect('classrooms')->with('status', 'La session a bien été créée.');
     }
 
     /**

@@ -168,6 +168,10 @@ Route::get('/ecoledatascience', function () {
     return view('formations.ecoledatascience');
 });
 
+Route::get('/factures', function () {
+    return view('users.factures');
+});
+
 
 Route::get('/documentsTeacher', 'UserController@documentsTeacher')->name('documentsTeacher');
 
