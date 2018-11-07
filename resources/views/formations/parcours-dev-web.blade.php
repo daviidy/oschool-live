@@ -706,5 +706,7 @@
   </div><!-- /.modal-container -->
 </div><!-- /.modal -->
 
+</div>
+
 
 @endsection
