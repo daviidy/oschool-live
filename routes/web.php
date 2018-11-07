@@ -101,7 +101,7 @@ Route::post('/inscription', 'UserController@inscription')->name('inscription');
 Route::get('/inscrire/{user}', 'UserController@inscrire')->name('inscrire');
 
 Route::get('/devweb', function () {
-    return view('formations.dev-web');
+    return view('formations.parcours-dev-web');
 })->name('devweb');
 
 Route::get('/socialmedia', function () {

@@ -103,7 +103,7 @@
 							<nav class="main_nav_contaner">
 								<ul class="main_nav">
 									<li class="active"><a href="/">Accueil</a></li>
-									<li><a href="/cours">Toutes les formations</a></li>
+									<li><a href="/#schools">Toutes les formations</a></li>
 									<li><a target="_blank" href="https://events.oschool.ci">Evénements</a></li>
 									<li><a target="_blank" href="https://oschool.ci/blog/">Blog</a></li>
 									<li><a target="_blank" class="demo" href="https://calendly.com/oschool_e-learning/demo-oschool-code">Demandez une démo</a></li>
@@ -145,7 +145,7 @@
 		<nav class="menu_nav">
 			<ul class="menu_mm">
 				<li class="menu_mm"><a href="/">Accueil</a></li>
-				<li class="menu_mm"><a href="/cours">Toutes nos formations</a></li>
+				<li class="menu_mm"><a href="/#schools">Toutes nos formations</a></li>
 				<li class="menu_mm"><a target="_blank" href="https://events.oschool.ci">Evénements</a></li>
 				<li class="menu_mm"><a target="_blank" href="https://oschool.ci/blog/">Blog</a></li>
 			</ul>
