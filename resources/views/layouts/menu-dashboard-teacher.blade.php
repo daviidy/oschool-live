@@ -54,7 +54,7 @@
       <a href="{{url('/')}}" class="logo"><img width="100" src="/dashboard/img/thumbnail.png"></a>
       <!--logo end-->
       <!--si la date d'expiration - 10 jours est inférieur ou égal à aujourd'hui et si la date d'expiration est supérieure ou égale à aujourd'hui-->
-      @if(!Auth::user()->isTeacher() && !Auth::user()->isAdmin() && Auth::user()->fin_abonnement->subDays(10) <= Carbon\Carbon::now() && Auth::user()->fin_abonnement >= Carbon\Carbon::now())
+      @if(count(Auth::user()->formations) && !Auth::user()->isTeacher() && !Auth::user()->isAdmin() && Auth::user()->fin_abonnement->subDays(10) <= Carbon\Carbon::now() && Auth::user()->fin_abonnement >= Carbon\Carbon::now())
       <div class="nav notify-row" id="top_menu">
         <!--  notification start -->
         <ul class="nav top-menu">
@@ -85,7 +85,7 @@
       </div>
 
       <!--sinon si la date d'expiration est inférieure à aujourd'hui-->
-      @elseif(!Auth::user()->isTeacher() && !Auth::user()->isAdmin() && Auth::user()->fin_abonnement < Carbon\Carbon::now())
+      @elseif(count(Auth::user()->formations) && !Auth::user()->isTeacher() && !Auth::user()->isAdmin() && Auth::user()->fin_abonnement < Carbon\Carbon::now())
       <div class="nav notify-row" id="top_menu">
         <!--  notification start -->
         <ul class="nav top-menu">
