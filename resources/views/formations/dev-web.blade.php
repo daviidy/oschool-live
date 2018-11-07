@@ -653,7 +653,7 @@ freelance.
         -->
 
         </div>
-      </div>
+      </div> 
 
       <!-- Sidebar -->
       <div class="col-lg-3">
@@ -778,7 +778,7 @@ freelance.
     <select class="" name="formation">
       <option value="{{$formation->nom}}">{{$formation->nom}}</option>
     </select>
-    @endforeach 
+    @endforeach
   @endif
   @else
   <select class="" name="formation">

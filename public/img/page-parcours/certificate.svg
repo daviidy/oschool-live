@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="98" height="100" viewBox="0 0 98 100" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <circle id="b" cx="31" cy="31" r="31"/>
+    <filter id="a" width="206.5%" height="206.5%" x="-40.3%" y="-38.7%" filterUnits="objectBoundingBox">
+      <feOffset dx="8" dy="9" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur stdDeviation="9.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+      <feColorMatrix values="0 0 0 0 0.180392157 0 0 0 0 0.239215686 0 0 0 0 0.28627451 0 0 0 0.12 0" in="shadowBlurOuter1"/>
+    </filter>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <g transform="translate(10 10)">
+      <use fill="#000" filter="url(#a)" xlink:href="#b"/>
+      <use fill="#FFF" xlink:href="#b"/>
+    </g>
+    <path fill="#FF5483" fill-rule="nonzero" d="M29 48h24V32H29v16zm-2-16.01c0-1.1.9-1.99 1.99-1.99h24.02c1.098 0 1.99.898 1.99 1.99v16.02c0 1.1-.9 1.99-1.99 1.99H28.99c-1.098 0-1.99-.898-1.99-1.99V31.99z"/>
+    <path fill="#FF5483" fill-rule="nonzero" d="M44.227 54.768l-.907-2.308-2.31-.907.992-2.273-.99-2.274 2.308-.907.907-2.31 2.273.99 2.273-.99.907 2.307 2.31.906-.992 2.274.99 2.273-2.308.908-.907 2.308-2.273-.99"/>
+    <path fill="#FFF" d="M46.5 51.596l1.17.51.468-1.19 1.188-.466-.51-1.17.51-1.17-1.188-.468-.467-1.188-1.17.51-1.17-.51-.466 1.188-1.188.467.51 1.17-.51 1.17 1.188.465.467 1.19"/>
+    <path fill="#FF5483" fill-rule="nonzero" d="M35 42h12v-2H35m-3-2h18v-2H32"/>
+  </g>
+</svg>
