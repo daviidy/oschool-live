@@ -1,6 +1,6 @@
 @extends('layouts.menu-parcours')
 
-@section('title', 'Développeur Web Junior')
+@section('title', 'Apprendre l\'Anglais avec un tuteur en ligne')
 
 @section('content')
 
@@ -8,18 +8,17 @@
     <div class="row c-how__heading align-row">
       <div class="col-xs-12 col-sm-6 c-how__headingLeft">
         <!-- <h2 class="h2 u-bold text-primary">Hack & Learn <em>React</em></h2> -->
-        <h1 class="h2 u-bold">Deviens Développeur web en partant de zéro</h1>
-        <p class="u-margin-t-md subHeading">Du débutant au professionnel rémunéré.<br>
-          Apprenez à créer des applications Web à partir de zéro</p>
+        <h1 class="h2 u-bold">Apprenez l'Anglais avec des tuteurs en ligne</h1>
+        <p class="u-margin-t-md subHeading">Maitrisez cette langue et ouvrez vous les portes de l'international</p>
         <a class="home_button" href="#payment">
           Inscrivez-vous maintenant
         </a>
         <p class="u-margin-t-md subHeading">
-          Construisez-vous un excellent portfolio en réalisant des projets de la vie réelle.
+          Suivez des leçons individuelles dispensées par des professeurs de la langue et rejoignez une communauté de centaine de personnes étudiant l'Anglais.
         </p>
       </div>
       <div class="col-xs-12 col-sm-6 c-how__headingRight">
-        <img src="/img/page-parcours/asset.svg" />
+        <img src="/img/page-parcours/anglais4.svg" />
       </div>
     </div>
   </div>
@@ -72,7 +71,7 @@
     </ir-modal>
     <h6 class="details" _ngcontent-c29="" class="ng-star-inserted">Prérequis</h6>
     <!---->
-    <h5 _ngcontent-c29="" class="ng-star-inserted">Un ordinateur ayant un accès Internet</h5>
+    <h5 _ngcontent-c29="" class="ng-star-inserted">Un terminal ayant accès à Internet</h5>
     <p _ngcontent-c29="" class="x-small ng-star-inserted"><a href="https://drive.google.com/open?id=1ihKHmukvYioQ6VfS_eaqSuIq4gOgnxcA" target="_blank" _ngcontent-c29="">Voir les prérequis en détail</a></p>
     <!---->
     <!---->
@@ -84,9 +83,10 @@
     <!---->
     <h6 class="details" _ngcontent-c29="" class="ng-star-inserted">Langue</h6>
     <!---->
-    <h5 _ngcontent-c29="" class="ng-star-inserted">Francais</h5>
+    <h5 _ngcontent-c29="" class="ng-star-inserted">Anglais</h5>
     <!---->
-    <!---->
+    <!--
+    <p _ngcontent-c29="" class="x-small ng-star-inserted">Découvrir les matériels requis pour suivre la formation</p>
     <!---->
     <!---->
     <!---->
@@ -105,7 +105,7 @@
   <div class="container alt section-space">
     <div class="row">
       <div class="col-xs-12 text-center">
-        <h3 class="h3 u-bold text-center u-margin-b-sm">Suivez le parcours certifiant Développeur Web, et démarrez une nouvelle carrière.</h3>
+        <h3 class="h3 u-bold text-center u-margin-b-sm">Suivez le parcours Apprendre l'anglais, pour obtenir un job, préparer un examen, obtenir une bourse, ou pour le plaisir.</h3>
         <div class="c-browser">
           <div class="c-browser__chrome">
             <div class="c-browser__buttons">
@@ -115,7 +115,7 @@
             </div>
           </div>
           <div class="c-browser__image">
-            <img src="/img/page-parcours/ordi.png" />
+            <img src="/img/page-parcours/anglais2.gif" />
           </div>
         </div>
 
@@ -124,11 +124,15 @@
           <div class="col-xs-12 col-sm-6">
             <div style="text-align: left !important;" class="c-how__sectionContent">
               <h4 class="h4 u-bold">Pourquoi suivre ce parcours ?</h4>
-              <p class="u-margin-t-md subHeading">La demande de développeurs web est généralisée dans tous
-                les secteurs et continue d'augmenter. En maîtrisant les précieuses compétences enseignées dans
-                le cadre de ce programme, vous serez prêt à occuper des postes dans un large éventail d’entreprises,
-                des startups aux organisations mondiales. Les projets que vous construirez et le
-                portefeuille que vous développerez fourniront de nombreuses preuves de votre expertise.</p>
+              <p class="u-margin-t-md subHeading">L’anglais s’est établi comme la langue de l’international
+                par excellence. Si vous voyagez à l’étranger, que vous vous installez dans un pays non
+                francophone, que vous vivez dans un environnement multiculturel, l’anglais est très
+                souvent un terrain linguistique partagé. Dans le contexte mondial actuel,
+                où l’information passe de plus en plus par Internet, où les échanges
+                s’accélèrent sans s’arrêter aux frontières, où le commerce international
+                s’intensifie, il devient difficile de faire l’impasse sur l’anglais.
+                Cette langue est devenue une condition de recrutement pour beaucoup d’entreprises,
+                voire, chez certaines, la langue de travail. Ce serait dommage de gâcher vos chances !</p>
             </div>
           </div>
           <div _ngcontent-c33="" class="col-xs-12 col-sm-6 stat ng-star-inserted">
@@ -138,7 +142,7 @@
                 <h4 _ngcontent-c33="" class="light ng-star-inserted">
                   <h4 class="light">
                     <font style="vertical-align: inherit;">
-                      <font style="vertical-align: inherit;">JavaScript et PHP sont les langages de code les plus demandés par les entreprises</font>
+                      <font style="vertical-align: inherit;">L'Anglais est devenue une condition de recrutement pour beaucoup d’entreprises</font>
                     </font>
                   </h4>
                 </h4>
@@ -167,7 +171,7 @@
       <div class="col-xs-12 col-sm-6">
         <div class="c-how__section">
           <div class="c-how__sectionImages">
-            <img src="/img/page-parcours/feature1.png" />
+            <img src="/img/page-parcours/anglais5.gif" />
           </div>
         </div>
       </div>
@@ -179,32 +183,15 @@
         </div>
               <h4>
                 <font style="vertical-align: inherit;">
-                  <font style="vertical-align: inherit;">Apprenez chaque semaine en télé présentiel, avec un formateur dédié.</font>
+                  <font style="vertical-align: inherit;">Recevez un professeur</font>
                 </font>
               </h4>
               <p style="margin-bottom: 5rem;">
                 <font style="vertical-align: inherit;">
-                  <font style="vertical-align: inherit;">Votre formateur se fera un plaisir de vous dispenser les cours, selon ton emploi du temps, et ce, peu importe où vous êtes, du moment où vous avez l'accès Internet. </font>
-                  <font style="vertical-align: inherit;">Des experts examineront votre travail et vous fourniront des commentaires concrets pour vous aider à progresser avec succès dans le programme.</font>
+                  <font style="vertical-align: inherit;">Après inscription, nous vous attribuons un formateur qui prendra contact immédiatement avec vous.</font>
                 </font>
               </p>
-              <div class="text-center">
-                <img alt="Construire un portefeuille de CV Digne de projets" src="/img/page-parcours/talk.svg"
-                    srcset="/img/page-parcours/talk.svg 1x">
-              </div>
 
-              <h4>
-                <font style="vertical-align: inherit;">
-                  <font style="vertical-align: inherit;">Construisez un portfolio en réalisant des projets de la vie réelle</font>
-                </font>
-              </h4>
-              <!---->
-              <p class="ng-star-inserted">
-                <font style="vertical-align: inherit;">
-                  <font style="vertical-align: inherit;">Vous construirez de vrais projets démontrant votre maîtrise des compétences enseignées. Ces projets constitueront un portefeuille pouvant être partagé avec des employeurs potentiels. </font>
-                  <font style="vertical-align: inherit;">Nos partenaires d'embauche examinent régulièrement ces portefeuilles lorsqu'ils recherchent des candidats qualifiés.</font>
-                </font>
-              </p>
             </div>
           </div>
 
@@ -217,41 +204,53 @@
               </div>
                     <h4>
                       <font style="vertical-align: inherit;">
-                        <font style="vertical-align: inherit;">Réalisez les projets de la formation et soumettez-les</font>
+                        <font style="vertical-align: inherit;">Fixer une date et une heure</font>
                       </font>
                     </h4>
                     <p style="margin-bottom: 5rem;">
                       <font style="vertical-align: inherit;">
-                        <font style="vertical-align: inherit;">Vous rejoindrez une communauté dynamique d'apprenants engagés dans une expérience d'apprentissage intensive et productive de plusieurs mois. </font>
-                        <font style="vertical-align: inherit;">Vous allez donner et recevoir un soutien, établir des liens et rester au courant des tendances dans votre domaine. Nos diplômés citent régulièrement la communauté comme l'une des caractéristiques les plus précieuses de leur expérience dans le programme de formation Oschool.</font>
+                        <font style="vertical-align: inherit;">Choisissez le jour et l'heure qui vous conviennent.</font>
                       </font>
                     </p>
-                    <div class="text-center">
-                      <img alt="Construire un portefeuille de CV Digne de projets" src="/img/page-parcours/members.svg"
-                          srcset="/img/page-parcours/members.svg 1x">
-                    </div>
 
-                    <h4>
-                      <font style="vertical-align: inherit;">
-                        <font style="vertical-align: inherit;">Accès à la communauté dynamique Oschool</font>
-                      </font>
-                    </h4>
-                    <!---->
-                    <p class="ng-star-inserted">
-                      <font style="vertical-align: inherit;">
-                        <font style="vertical-align: inherit;">Vous construirez de vrais projets démontrant votre maîtrise de vos compétences. Ces projets constitueront un portefeuille pouvant être partagé avec des employeurs potentiels. </font>
-                        <font style="vertical-align: inherit;">Nos partenaires d'embauche examinent régulièrement ces portefeuilles lorsqu'ils recherchent des candidats qualifiés.</font>
-                      </font>
-                    </p>
                   </div>
                   <div class="col-xs-12 col-sm-6">
                     <div class="c-how__section">
                       <div class="c-how__sectionImages">
-                        <img src="/img/page-parcours/feature2.png" />
+                        <img src="/img/page-parcours/anglais6.gif" />
                       </div>
                     </div>
                   </div>
                 </div>
+
+
+                <div class="row u-margin-t-xxx-lg align-row">
+                  <div class="col-xs-12 col-sm-6">
+                    <div class="c-how__section">
+                      <div class="c-how__sectionImages">
+                        <img src="/img/page-parcours/anglais2.gif" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-6">
+                    <div class="text-center">
+                      <img alt="Soutien aux mentors et révision du code professionnel" src="/img/page-parcours/video.svg"
+                              srcset="/img/page-parcours/video.svg 1x">
+
+                    </div>
+                          <h4>
+                            <font style="vertical-align: inherit;">
+                              <font style="vertical-align: inherit;">Connectez-vous et apprenez</font>
+                            </font>
+                          </h4>
+                          <p style="margin-bottom: 5rem;">
+                            <font style="vertical-align: inherit;">
+                              <font style="vertical-align: inherit;">Suivez chaque semaine votre leçon sur Skype ou par le biais de tout autre logiciel de communication vidéo.</font>
+                            </font>
+                          </p>
+
+                        </div>
+                      </div>
 
 
 
@@ -269,30 +268,29 @@
       <!---->
       <h2 style="font-size: 4rem;font-weight: 300;" _ngcontent-c47="" class="white ng-star-inserted">Développez cette compétence pour aujourd'hui et demain</h2>
       <!---->
-      <p _ngcontent-c47="" class="white ng-star-inserted"><span class="hidden-md-down">Ce parcours Développeur Web Junior est conçu
+      <p _ngcontent-c47="" class="white ng-star-inserted"><span class="hidden-md-down">Ce parcours d'apprentissage de l'Anglais est conçu
         pour assurer votre succès à long terme sur le terrain. Les compétences acquises vous prépareront à des
-        emplois dans le monde de la programmation web, et vous serez prêt à apporter une valeur immédiate
+        emplois dans le monde professionnel, et vous serez prêt à apporter une valeur immédiate
         à toute organisation. Nous vous soutiendrons tout au long de votre parcours d'apprentissage.
-        De l'acquisition des compétences techniques et professionnelles précieuses,
-        jusqu'à l'obtention de l'emploi de vos rêves.</span></p>
+        </span></p>
     </div>
     <div _ngcontent-c47="" class="feature-card mb-4 ng-star-inserted">
       <!---->
       <div _ngcontent-c47="" class="card ng-star-inserted">
         <div _ngcontent-c47="" class="line bg-turquoise"></div>
         <!---->
-        <h5 _ngcontent-c47="" class="title mb-1 ng-star-inserted"><span class="hidden-md-down">Rencontrez nos partenaires d'embauche</span><span class="hidden-lg-up">Rencontrez nos partenaires d'embauche</span></h5>
+        <h5 _ngcontent-c47="" class="title mb-1 ng-star-inserted"><span class="hidden-md-down">Apprentissage personnalisé</span><span class="hidden-lg-up">Apprentissage personnalisé</span></h5>
         <!---->
-        <p _ngcontent-c47="" class="x-small ng-star-inserted"><span class="hidden-md-down">Les développeurs Web front-end sont en forte demande. Créez votre portefeuille professionnel avec Oschool et ouvrez un monde d'opportunités. Nos partenaires d'embauche sont impatients de vous rencontrer.</span>
-          <span class="hidden-lg-up">Les développeurs Web front-end sont en forte demande. Créez votre portefeuille professionnel avec Oschool et ouvrez un monde d'opportunités. Nos partenaires d'embauche sont impatients de vous rencontrer.</span></p>
+        <p _ngcontent-c47="" class="x-small ng-star-inserted"><span class="hidden-md-down">Suivez des leçons individuelles en accord avec vos objectifs et vos centres d'intérêt.</span>
+          <span class="hidden-lg-up">Suivez des leçons individuelles en accord avec vos objectifs et vos centres d'intérêt.</span></p>
       </div>
       <div _ngcontent-c47="" class="card ng-star-inserted">
         <div _ngcontent-c47="" class="line bg-magenta"></div>
         <!---->
-        <h5 _ngcontent-c47="" class="title mb-1 ng-star-inserted"><span class="hidden-md-down">Réussir avec les recruteurs</span><span class="hidden-lg-up">Réussir avec les recruteurs</span></h5>
+        <h5 _ngcontent-c47="" class="title mb-1 ng-star-inserted"><span class="hidden-md-down">N’importe où, n’importe quand</span><span class="hidden-lg-up">N’importe où, n’importe quand</span></h5>
         <!---->
-        <p _ngcontent-c47="" class="x-small ng-star-inserted"><span class="hidden-md-down">Travaillez avec des professionnels expérimentés pour obtenir des conseils personnalisés sur la manière d’améliorer votre recherche et d’impressionner les recruteurs. Nous vous aidons à peaufiner votre compte LinkedIn et votre CV.</span>
-        <span class="hidden-lg-up">Travaillez avec des professionnels expérimentés pour obtenir des conseils personnalisés sur la manière d’améliorer votre recherche et d’impressionner les recruteurs. Nous vous aidons à peaufiner votre compte LinkedIn et votre CV.</span></p>
+        <p _ngcontent-c47="" class="x-small ng-star-inserted"><span class="hidden-md-down">Suivez des leçons en ligne quand et où vous le souhaitez.</span>
+        <span class="hidden-lg-up">Suivez des leçons en ligne quand et où vous le souhaitez.</span></p>
       </div>
       <div _ngcontent-c47="" class="card ng-star-inserted">
         <div _ngcontent-c47="" class="line bg-purple"></div>
@@ -319,31 +317,28 @@
     <!---->
     <!---->
     <!---->
-    <!----><a _ngcontent-c55="" class="button--secondary lg syllabus-download-button ng-star-inserted" target="_blank" href="https://s3.amazonaws.com/video.udacity-data.com/topher/2018/June/5b189d8e_fend-syllabus-9.0.0/fend-syllabus-9.0.0.pdf">
+    <!----><a _ngcontent-c55="" class="button--secondary lg syllabus-download-button ng-star-inserted" target="_blank" href="https://docs.google.com/spreadsheets/d/1A7JIYcWvM_6oQ44ykW_5pDofQVzc_fekCzf_FrMSN1Y/edit?usp=sharing">
     Télécharger le programme
     </a>
     <!---->
     <!---->
     <div _ngcontent-c55="" class="nd-syllabus-term__card">
       <section _ngcontent-c55="" class="nd-syllabus-term__header collapse in">
-        <div _ngcontent-c55="" class="nd-syllabus-term__header__image" irdeferbgimage="" style="background-image: url(&quot;https://d125fmws0bore1.cloudfront.net/assets/pages/ndop/nd001/image-syllabus-01@2x-f4be2598bea724657d8f295449bb8f45a954581306292393cb71a8417acf3cd3.jpg&quot;);">
+        <div _ngcontent-c55="" class="nd-syllabus-term__header__image" irdeferbgimage="" style="background-image: url(&quot;https://images.unsplash.com/photo-1524326192993-7e93bba833f7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=49bd79e5c53816a6fa3bfaa649a4baf7&auto=format&fit=crop&w=334&q=80&quot;);">
           <!---->
         </div>
         <div _ngcontent-c55="" class="nd-syllabus-term__header__content">
           <!---->
           <h6 _ngcontent-c55="" class="ng-star-inserted">PROGRAMME</h6>
-          <h2 _ngcontent-c55="" class="h3">Développeur Web</h2>
+          <h2 _ngcontent-c55="" class="h3">Apprendre l'Anglais</h2>
           <!---->
-          <p _ngcontent-c55="" class="small hidden-md-down ng-star-inserted">Le programme Développeur Web Junior
-            est composé de huit projets. Avec chaque projet,
-            vous allez créer quelque chose qui démontre votre maîtrise des compétences recherchées.
-            La complexité des projets varie. En fin de compte,
-            vous aurez un portefeuille de projets et un CV digne d'être aprréciés par des employeurs potentiels.</p>
+          <p _ngcontent-c55="" class="small hidden-md-down ng-star-inserted">Le programme d'apprentissage de l'Anglais
+            est composé de 6 sections. Avec chaque section, vous apprendrez à manier la langue dans les domaines les
+          plus courants de la vie.</p>
           <!---->
-          <p _ngcontent-c55="" class="small hidden-lg-up ng-star-inserted">Le programme Développeur Web Junior
-            est composé de huit projets. Avec chaque projet,
-            vous allez créer quelque chose qui démontre votre maîtrise des compétences recherchées.
-            La complexité des projets varie.</p>
+          <p _ngcontent-c55="" class="small hidden-lg-up ng-star-inserted">Le programme d'apprentissage de l'Anglais
+            est composé de 6 sections. Avec chaque section, vous apprendrez à manier la langue dans les domaines les
+          plus courants de la vie.</p>
           <!---->
           <!---->
           <!---->
@@ -379,10 +374,9 @@
                     <div _ngcontent-c95="" class="part">
                       <header _ngcontent-c95="" class="part__header mb-half">
                         <!---->
-                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted">Fondations du Web</h4>
+                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted">Section 1: VOCABULAIRE</h4>
                         <!---->
                       </header>
-                      <p _ngcontent-c95="" class="small mb-half">Découvre comment fonctionne le web, et installe tes outils de formation !</p>
                       <!---->
                       <!---->
                       <!---->
@@ -396,15 +390,14 @@
                     <div _ngcontent-c95="" class="part">
                       <header _ngcontent-c95="" class="part__header mb-half">
                         <!---->
-                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted">Apprendre HTML et CSS</h4>
+                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted">Section 2: GRAMMAIRE</h4>
                         <!---->
                       </header>
-                      <p _ngcontent-c95="" class="small mb-half">Apprenez à utiliser les 2 langages de bases de la programmation web: HTML pour la structure d'une page web, et CSS pour gérer l'apparence de cette page</p>
                       <!---->
                       <!---->
                       <!---->
                       <!----><span _ngcontent-c95="" class="part__project text-only ng-star-inserted"><img _ngcontent-c95="" class="icon-middle" src="/img/page-parcours/icon-project.svg"><span
-                          _ngcontent-c95="">Créez un article de blog / La galerie de l'amour</span></span>
+                          _ngcontent-c95="">Projet/Exercice</span></span>
                       <!---->
                       <!---->
                     </div>
@@ -413,14 +406,13 @@
                     <div _ngcontent-c95="" class="part">
                       <header _ngcontent-c95="" class="part__header mb-half">
                         <!---->
-                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted">Apprendre Javascript</h4>
+                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted">Section 3: PRONONCIATION</h4>
                         <!---->
                       </header>
-                      <p _ngcontent-c95="" class="small mb-half">Apprenez les bases de JavaScript dont vous aurez besoin pour le développement front-end ou back-end.
 
                       </p>
                       <span _ngcontent-c95="" class="part__project text-only ng-star-inserted"><img _ngcontent-c95="" class="icon-middle" src="/img/page-parcours/icon-project.svg"><span
-                          _ngcontent-c95="">Améliorez la page d'accueil d'un magazine</span></span>
+                          _ngcontent-c95="">Projet/Exercice</span></span>
                       <!---->
                     </div>
                   </li>
@@ -428,34 +420,14 @@
                     <div _ngcontent-c95="" class="part">
                       <header _ngcontent-c95="" class="part__header mb-half">
                         <!---->
-                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted">PHP et MySQL</h4>
+                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted">Section 4: ARGUMENTATION</h4>
                         <!---->
                       </header>
-                      <p _ngcontent-c95="" class="small mb-half">C'est maintenant le temps de se plonger du côté Back-End. Vous apprendrez PHP pour générer des pages dynamiques et interroger des bases de données avec PHP. Vous </p>
                       <!---->
                       <!---->
                       <!---->
                       <!----><span _ngcontent-c95="" class="part__project text-only ng-star-inserted"><img _ngcontent-c95="" class="icon-middle" src="/img/page-parcours/icon-project.svg"><span
-                          _ngcontent-c95="">Créez une application pour inscrire les étudiants de votre école</span></span>
-                      <!---->
-                      <!---->
-                    </div>
-                  </li>
-                  <li _ngcontent-c95="" class="ng-star-inserted">
-                    <div _ngcontent-c95="" class="part">
-                      <header _ngcontent-c95="" class="part__header mb-half">
-                        <!---->
-                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted">Allez plus vite avec Wordpress</h4>
-                        <!---->
-                      </header>
-                      <p _ngcontent-c95="" class="small mb-half">
-                        Entrez dans l'univers des CMS et développez
-                        plus vite des sites e-commerces, des blogs etc. en prenant en main Wordpress (le plus populaire).</p>
-                      <!---->
-                      <!---->
-                      <!---->
-                      <!----><span _ngcontent-c95="" class="part__project text-only ng-star-inserted"><img _ngcontent-c95="" class="icon-middle" src="/img/page-parcours/icon-project.svg"><span
-                          _ngcontent-c95="">Créez votre site personnel</span></span>
+                          _ngcontent-c95="">Projet/Exercice</span></span>
                       <!---->
                       <!---->
                     </div>
@@ -464,16 +436,31 @@
                     <div _ngcontent-c95="" class="part">
                       <header _ngcontent-c95="" class="part__header mb-half">
                         <!---->
-                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted">Votre carrière</h4>
+                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted">Section 5: RÉUNION (vocabulaire spécifique au monde professionnel)</h4>
                         <!---->
                       </header>
-                      <p _ngcontent-c95="" class="small mb-half">Vous voici à la fin de cette formation. Mais c'est
-                      maintenant que les choses sérieuses vont commencer. Vous apprendrez à obtenir un emploi avec votre qualification.</p>
+
                       <!---->
                       <!---->
                       <!---->
                       <!----><span _ngcontent-c95="" class="part__project text-only ng-star-inserted"><img _ngcontent-c95="" class="icon-middle" src="/img/page-parcours/icon-project.svg"><span
-                          _ngcontent-c95="">Mise en ligne de votre site personnel / Soutenance</span></span>
+                          _ngcontent-c95="">Projet/Exercice</span></span>
+                      <!---->
+                      <!---->
+                    </div>
+                  </li>
+                  <li _ngcontent-c95="" class="ng-star-inserted">
+                    <div _ngcontent-c95="" class="part">
+                      <header _ngcontent-c95="" class="part__header mb-half">
+                        <!---->
+                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted">Section 6: CORRESPONDANCE COMMERCIALE</h4>
+                        <!---->
+                      </header>
+                      <!---->
+                      <!---->
+                      <!---->
+                      <!----><span _ngcontent-c95="" class="part__project text-only ng-star-inserted"><img _ngcontent-c95="" class="icon-middle" src="/img/page-parcours/icon-project.svg"><span
+                          _ngcontent-c95="">Soutenance</span></span>
                       <!---->
                       <!---->
                     </div>
@@ -494,10 +481,9 @@
                   <!---->Besoin de vous préparer ?</h6>
                 <!---->
                 <!---->
-                <p _ngcontent-c95="" class="small">Voici quelques cours gratuits qui pourraient vous aider<ul>
-                    <li><a href="/course/intro-to-programming-nanodegree--nd000">Intro to Programming</a></li>
-                    <li><a href="/course/intro-to-html-and-css--ud001">Intro to HTML and CSS</a></li>
-                    <li><a href="/course/intro-to-javascript--ud803">Intro to JavaScript</a></li>
+                <p _ngcontent-c95="" class="small">Intégrez le groupe Whatsapp <strong>Oschool English</strong>, pour vous mettre en jambe. VOus ferez la rencontre de centaines d'apprenants de cette langue <ul>
+                    <li > <img width="50" src="http://www.stickpng.com/assets/images/580b57fcd9996e24bc43c543.png" alt=""> </li>
+                    <li><a target="_blank "href="https://chat.whatsapp.com/HqIgLBNoepuKtkUnmChlwT">Rejoindre le groupe gratuitement</a></li>
                   </ul>
                 </p>
                 <!---->
@@ -647,15 +633,16 @@
         <div _ngcontent-c77="" class="nd-bottom-cta-container">
             <div _ngcontent-c77="" class="nd-bottom-cta-content">
                 <!---->
+
                 <h4 _ngcontent-c77="" class="h2 nd-bottom-cta-content__title ng-star-inserted">
                     <font style="vertical-align: inherit;">
-                        <font style="vertical-align: inherit;">Devenez Développeur Web Junior</font>
+                        <font style="vertical-align: inherit;">Apprenez l'Anglais maintenant avec nos professeurs en ligne</font>
                     </font>
                 </h4>
                 <!---->
                 <p _ngcontent-c77="" class="nd-bottom-cta-content__subtitle ng-star-inserted">
                     <font style="vertical-align: inherit;">
-                        <font style="vertical-align: inherit;">Construisez-vous un excellent portfolio en réalisant des projets de la vie réelle.</font>
+                        <font style="vertical-align: inherit;">Oschool vous permet de maîtriser une compétence intemporelle, d'élargir vos horizons et de faire connaissance avec des individus du monde entier.</font>
                     </font>
                 </p>
                 <div _ngcontent-c77="" class="nd-bottom-cta-content__btn-wrapper">
@@ -750,7 +737,7 @@
             <div class="form-group password-form-group">
               <div class="input-with-icon">
                 <select class="form-control" name="formation">
-                  <option value="Développeur Web Junior">Développeur Web Junior</option>
+                  <option value="Anglais">Anglais</option>
                 </select>
                 <i class="input-icon ion-person-stalker"></i>
               </div>
