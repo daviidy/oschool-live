@@ -1,3 +1,52 @@
+.color-overlay {
+  width: 100%;
+  height: 100%;
+  background: blue;
+  opacity: .6;
+  position: absolute;
+}
+
+
+
+/*section appel a l'action*/
+
+/*! CSS Used from: https://eu.udacity.com/styles.cd049525371f607387d9.css */
+
+.button--primary{display:block;cursor:pointer;-webkit-appearance:none;-moz-appearance:none;appearance:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;text-align:center;white-space:nowrap;text-decoration:none;vertical-align:middle;height:3rem;padding:0 .5rem;text-transform:uppercase;font-weight:600;font-size:.8125rem;line-height:2.625rem;-webkit-font-smoothing:antialiased;border-radius:.25rem;letter-spacing:.125rem;transition:.3s;}
+.button--primary{box-shadow:8px 10px 20px 0 rgba(46,61,73,.15);}
+.button--primary:hover{box-shadow:2px 4px 8px 0 rgba(46,61,73,.2);}
+.button--primary{width:13.75rem;color:#fff;background-color:#02b3e4;border:.125rem solid transparent;}
+.button--primary:focus,.button--primary:hover{outline:0;color:#fff;border-color:transparent;background-color:#029fcb;}
+.button--primary.inline{display:inline-block;}
+/*! CSS Used from: Embedded */
+*[_ngcontent-c11],[_ngcontent-c11]::after,[_ngcontent-c11]::before{box-sizing:inherit;}
+[_nghost-c11]{display:block;overflow:hidden;}
+/*! CSS Used from: Embedded */
+*[_ngcontent-c18],[_ngcontent-c18]::after,[_ngcontent-c18]::before{box-sizing:inherit;}
+/*! CSS Used from: Embedded */
+*[_ngcontent-c77],[_ngcontent-c77]::after,[_ngcontent-c77]::before{box-sizing:inherit;}
+.nd-bottom-cta-container[_ngcontent-c77]{background-image:url(https://eu.udacity.com/assets/iridium/images/nanodegree-overview/shared/nd-bottom-cta-section/generic.jpg);background-repeat:no-repeat;background-size:cover;height:375px;width:100%;text-align:center;color:#fff;}
+.nd-bottom-cta-container[_ngcontent-c77]   .nd-bottom-cta-content[_ngcontent-c77]{padding-top:8.5rem;}
+.nd-bottom-cta-container[_ngcontent-c77]   .nd-bottom-cta-content__subtitle[_ngcontent-c77],.nd-bottom-cta-container[_ngcontent-c77]   .nd-bottom-cta-content__title[_ngcontent-c77]{color:#fff;}
+.nd-bottom-cta-container[_ngcontent-c77]   .nd-bottom-cta-content__title[_ngcontent-c77]{font-size:40px;margin-bottom:1.5rem;font-weight: 300;}
+.nd-bottom-cta-container[_ngcontent-c77]   .nd-bottom-cta-content__subtitle[_ngcontent-c77]{font-size:18px;margin-bottom:3rem;}
+.nd-bottom-cta-container[_ngcontent-c77]   .nd-bottom-cta-content__btn-wrapper[_ngcontent-c77]{display:flex;justify-content:center;}
+/*! CSS Used from: Embedded */
+*[_ngcontent-c88],[_ngcontent-c88]::after,[_ngcontent-c88]::before{box-sizing:inherit;}
+/*! CSS Used from: Embedded */
+*[_ngcontent-c83],[_ngcontent-c83]::after,[_ngcontent-c83]::before{box-sizing:inherit;}
+.btn[_ngcontent-c83]{width:auto;padding-left:1rem;padding-right:1rem;min-width:17.5rem;}
+.cta-button[_ngcontent-c83]{margin:auto;display:block;}
+@media screen and (min-width:48rem){
+.cta-button[_ngcontent-c83]{display:inline-block;}
+}
+
+/*fin appel a l'action*/
+
+
+
+
+
 .home_button {
         width: 100;
     height: 43px;
