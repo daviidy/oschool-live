@@ -129,12 +129,16 @@ Route::get('/blog', function () {
 })->name('blog');
 
 Route::get('/jeuxvideos', function () {
-    return view('formations.jeux-videos');
+    return view('formations.parcours-jv');
 })->name('jeux-videos');
 
 Route::get('/android', function () {
-    return view('formations.android');
+    return view('formations.parcours-android');
 })->name('android');
+
+Route::get('/anglais', function () {
+    return view('formations.parcours-anglais');
+})->name('anglais');
 
 Route::get('/python', function () {
     return view('formations.python');
