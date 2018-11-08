@@ -1,6 +1,6 @@
 @extends('layouts.menu-parcours')
 
-@section('title', 'Social Media Marketing')
+@section('title', 'After Effects')
 
 @section('content')
 
@@ -8,9 +8,9 @@
     <div class="row c-how__heading align-row">
       <div class="col-xs-12 col-sm-6 c-how__headingLeft">
         <!-- <h2 class="h2 u-bold text-primary">Hack & Learn <em>React</em></h2> -->
-        <h1 class="h2 u-bold">Deviens Social Média Manager en passant de Zéro à Héro</h1>
+        <h1 class="h2 u-bold">Cette formation complète vous permettra de bien débuter et devenir un expert sur After Effects</h1>
         <p class="u-margin-t-md subHeading">Du débutant au professionnel rémunéré.<br>
-           Devenez facilement influenceur et soyez un pro de la communication en ligne.</p>
+				Dédiée aux grands débutants, cette formation vous permettra de devenir totalement autonome et un expert du Motion Design, des trucages numériques et de l'animation.</p>
         <a class="home_button" href="#payment">
           Inscrivez-vous maintenant
         </a>
@@ -116,7 +116,7 @@
             </div>
           </div>
           <div class="c-browser__image">
-            <img src="/img/page-parcours/social-network.jpg" />
+            <img src="/img/page-parcours/Social-Media-Manager-Marketer.jpg" />
           </div>
         </div>
 

@@ -136,6 +136,10 @@ Route::get('/android', function () {
     return view('formations.android');
 })->name('android');
 
+Route::get('/after-effects', function () {
+    return view('formations.after-effects');
+})->name('android');
+
 Route::get('/python', function () {
     return view('formations.python');
 })->name('python');

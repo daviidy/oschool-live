@@ -204,7 +204,7 @@ a:active,a:focus,a:hover{color:#24292d;}
 @media screen and (min-width:48rem){
 .nd-syllabus-term__header__image[_ngcontent-c55]{border-top-left-radius:0;border-bottom-right-radius:.375rem;float:right;height:100%;width:33.89831%;}
 }
-@media screen and (min-width:62rem){
+@media screen and (min-width:62rem){ 
 .nd-syllabus-term__header__image[_ngcontent-c55]{width:42.37288%;}
 }
 .nd-syllabus-term__header__content[_ngcontent-c55]{padding:3.75rem 1.5rem 0;overflow:hidden;position:relative;}
