@@ -40,31 +40,16 @@
             <div class="owl-item language_item">
               <a href="#">
                 <div class="flag"><img src="/new/images/icones/web-dev.png" alt=""></div>
-                <div class="lang_name">Développement web</div>
+                <div class="lang_name">Ecole de programmation</div>
               </a>
             </div>
 
-            <!-- Flag -->
-            <div class="owl-item language_item">
-              <a href="#">
-                <div class="flag"><img src="/new/images/icones/mobile-dev.png" alt=""></div>
-                <div class="lang_name">Android/iOS</div>
-              </a>
-            </div>
-
-            <!-- Flag -->
-            <div class="owl-item language_item">
-              <a href="#">
-                <div class="flag"><img src="/new/images/icones/design.png" alt=""></div>
-                <div class="lang_name">Front-end</div>
-              </a>
-            </div>
 
             <!-- Flag -->
             <div class="owl-item language_item">
               <a href="#">
                 <div class="flag"><img src="/new/images/icones/photoshop.png" alt=""></div>
-                <div class="lang_name">Design numérique</div>
+                <div class="lang_name">Ecole du design</div>
               </a>
             </div>
 
@@ -72,39 +57,40 @@
             <div class="owl-item language_item">
               <a href="#">
                 <div class="flag"><img src="/new/images/icones/cm.png" alt=""></div>
-                <div class="lang_name">Community management</div>
+                <div class="lang_name">Ecole du Web Marketing</div>
               </a>
             </div>
 
-            <!-- Flag -->
-            <div class="owl-item language_item">
-              <a href="#">
-                <div class="flag"><img src="/new/images/icones/social.png" alt=""></div>
-                <div class="lang_name">Social Média</div>
-              </a>
-            </div>
-
-            <!-- Flag -->
-            <div class="owl-item language_item">
-              <a href="#">
-                <div class="flag"><img src="/new/images/icones/blog.png" alt=""></div>
-                <div class="lang_name">Blogging</div>
-              </a>
-            </div>
-
-            <!-- Flag -->
-            <div class="owl-item language_item">
-              <a href="#">
-                <div class="flag"><img src="/new/images/icones/photo.png" alt=""></div>
-                <div class="lang_name">Photographie</div>
-              </a>
-            </div>
 
             <!-- Flag -->
             <div class="owl-item language_item">
               <a href="#">
                 <div class="flag"><img src="/new/images/icones/bourse.png" alt=""></div>
-                <div class="lang_name">Investissement en bourse</div>
+                <div class="lang_name">Ecole du Business</div>
+              </a>
+            </div>
+
+            <!-- Flag -->
+            <div class="owl-item language_item">
+              <a href="#">
+                <div class="flag"><img src="https://cdn1.iconfinder.com/data/icons/world-flags-circular/1000/Flag_of_United_Kingdom_-_Circle-512.png" alt=""></div>
+                <div class="lang_name">Ecole des langues</div>
+              </a>
+            </div>
+
+            <!-- Flag -->
+            <div class="owl-item language_item">
+              <a href="#">
+                <div class="flag"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdjYVAAeHxJxhw1JZk_0m4E5PjMLv5VkxBrqCM-3Y6K9JrAFlr" alt=""></div>
+                <div class="lang_name">Ecole de la data science</div>
+              </a>
+            </div>
+
+            <!-- Flag -->
+            <div class="owl-item language_item">
+              <a href="#">
+                <div class="flag"><img src="https://cdn2.vectorstock.com/i/1000x1000/52/41/artificial-intelligence-brain-icon-ai-vector-21645241.jpg" alt=""></div>
+                <div class="lang_name">Ecole de l'intelligence Artificielle</div>
               </a>
             </div>
 
@@ -151,7 +137,7 @@
 
 
 
-      <!-- Course -->
+      <!-- Course
       <div class="col-lg-4 course_col">
         <div class="course">
           <div class="course_image"><img src="/new/images/cours/webmobile.png" alt=""></div>
@@ -204,7 +190,7 @@
         </div>
       </div>
 
-      <!-- Course -->
+      <!-- Course
       <div class="col-lg-4 course_col">
         <div class="course">
           <div class="course_image"><img src="/new/images/cours/python.png" alt=""></div>
@@ -229,7 +215,7 @@
       </div>
 
 
-      <!-- Course -->
+      <!-- Course
       <div class="col-lg-4 course_col">
         <div class="course">
           <div class="course_image"><img src="/new/images/cours/frontend.png" alt=""></div>
@@ -278,29 +264,6 @@
       </div>
 
 
-      <!-- Course -->
-      <div class="col-lg-4 course_col">
-        <div class="course">
-          <div class="course_image"><img src="/new/images/cours/webdesign.png" alt=""></div>
-          <div class="course_body">
-            <div class="course_title"><a href="{{url('webdesign')}}">Web Design</a></div>
-            <div class="course_info">
-              <ul>
-                <li><a href="#">Programmation et Développement</a></li>
-                <li><a href="#">4 mois</a></li>
-              </ul>
-            </div>
-            <div class="course_text">
-              <p>vous apprendrez à concevoir et à créer de beaux sites Web en apprenant les principes de base de la conception, comme la stratégie de marque, la théorie des couleurs et la typographie, qui sont tous essentiels au processus de conception d’un site Web.</p>
-            </div>
-          </div>
-          <div class="course_footer d-flex flex-row align-items-center justify-content-start">
-            <div class="course_students"><i class="fa fa-user" aria-hidden="true"></i><span>10</span></div>
-            <div class="course_rating ml-auto"><i class="fa fa-star" aria-hidden="true"></i><span>4,5</span></div>
-            <div class="course_mark course_free trans_200"><a href="#">Certifié</a></div>
-          </div>
-        </div>
-      </div>
 
 
 
@@ -308,7 +271,7 @@
 
     <div class="row">
       <div class="col">
-        <div class="home_button"><a href="#">Voir plus de cours</a></div>
+        <div class="home_button"><a href="/#schools">Voir les autres écoles</a></div>
       </div>
     </div>
   </div>

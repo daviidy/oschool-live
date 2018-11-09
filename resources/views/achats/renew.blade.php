@@ -1,5 +1,5 @@
 @extends('layouts.menu-login')
-@section('title', 'Inscription à une formation')
+@section('title', 'Renouvellement de votre abonnement')
 
 @section('content')
 
@@ -8,12 +8,12 @@
   <div class="container-login100">
     <div class="wrap-login100">
       <div class="login100-pic js-tilt" data-tilt>
-        <img src="/formcreate/images/cup.jpg" alt="IMG">
+        <img src="/img/page-parcours/card.png" alt="IMG">
       </div>
 
       <form method="post" enctype="multipart/form-data" action="https://secure.cinetpay.com/" class="login100-form validate-form">
         <span class="login100-form-title">
-          Veuillez vérifier les informations ci-dessous avant de valider votre achat.<br><br>
+          Veuillez vérifier les informations ci-dessous avant de renouveler votre abonnement<br><br>
           Vous paierez {{session('montant')}} FCFA<br><br>
           Important: cliquer sur "Retourner sur Oschool pour valider le paiement" !
         </span>
@@ -89,7 +89,7 @@
         </div>
         <div style="display: none;" class="form-group">
           <select class="" name="return_url">
-            <option value="{{ route('achats.store') }}">url retour</option>
+            <option value="{{ url('renew') }}">url retour</option>
           </select>
         </div>
         <div style="display: none;" class="form-group">

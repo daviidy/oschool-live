@@ -69,7 +69,7 @@
 										<div style="font-size:0pt; line-height:0pt; height:15px"><img src="/email/images/empty.gif" width="1" height="15" style="height:15px" alt="" /></div>
 
 
-										<div>Ton inscription à la formation qualifiante Développeur Web Junior en télé présentiel, a été enregistrée avec succès ! Voici les étapes à effectuer prochainement</div>
+										<div>Ton inscription à la formation qualifiante {{$achat->formation}} en télé présentiel, a été enregistrée avec succès ! Voici les étapes à effectuer prochainement</div>
 										<div style="font-size:0pt; line-height:0pt; height:2px"><img src="/email/images/empty.gif" width="1" height="2" style="height:2px" alt="" /></div>
 
 										<div style="font-size:0pt; line-height:0pt; height:40px"><img src="/email/images/empty.gif" width="1" height="40" style="height:40px" alt="" /></div>
@@ -99,7 +99,7 @@
 														Tu auras accès à un compte privé pour suivre ta progression. Voici les infos du compte
 														<ul>
 															<li>Email: {{$achat->email}}</li>
-															<li>Mot de passe: Oschool@2018</li>
+															<li>Mot de passe: Ton mot de passe</li>
 														</ul>
 													</div>
 													<div style="font-size:0pt; line-height:0pt; height:10px"><img src="/email/images/empty.gif" width="1" height="10" style="height:10px" alt="" /></div>
@@ -138,7 +138,7 @@
 													<div style="font-size:0pt; line-height:0pt; height:10px"><img src="/email/images/empty.gif" width="1" height="10" style="height:10px" alt="" /></div>
 
 													<div>
-														Le 1er Octobre nous organiserons une réunion de rentrée, en ligne. Il est très important d'assister
+														Nous organiserons une réunion de rentrée, en ligne. Il est très important d'assister
 														à cette réunion. Nous vous annoncerons l'heure exacte. Mais ce sera surement en soirée.<br>
 														Merci de prendre vos dispositions par rapport à cette réunion.
 													</div>

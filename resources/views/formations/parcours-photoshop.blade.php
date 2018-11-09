@@ -1,6 +1,6 @@
 @extends('layouts.menu-parcours')
 
-@section('title', 'Développeur de Jeux Vidéos Unity')
+@section('title', 'Apprendre Photoshop de A à Z')
 
 @section('content')
 
@@ -8,17 +8,18 @@
     <div class="row c-how__heading align-row">
       <div class="col-xs-12 col-sm-6 c-how__headingLeft">
         <!-- <h2 class="h2 u-bold text-primary">Hack & Learn <em>React</em></h2> -->
-        <h1 class="h2 u-bold">Deviens Développeur de Jeux Vidéos Unity, avec un formateur dédié en télé présentiel</h1>
-        <p class="u-margin-t-md subHeading">Cette formation est le moyen le plus rapide de créer des jeux. Nous utiliserons le moteur Unity car il est puissant et gratuit. </p>
+        <h1 class="h2 u-bold">Apprenez Photoshop de A à Z, avec un formateur dédié en télé présentiel</h1>
+        <p class="u-margin-t-md subHeading">Suivez nos formations Photoshop enseignés
+          par des experts et apprenez à retoucher et corriger des images,
+          quel que soit leur niveau. Découvrez comment utiliser les formes et les
+          calques Photoshop, comment retoucher des photos, etc.</p>
         <a class="home_button" href="#payment">
           Inscrivez-vous maintenant
         </a>
-        <p class="u-margin-t-md subHeading">
-          Il est temps de changer de camp. Passez de joueur à développeur avec Oschool.
-        </p>
+
       </div>
       <div class="col-xs-12 col-sm-6 c-how__headingRight">
-        <img src="https://png2.kisspng.com/20180404/xbe/kisspng-software-developer-web-development-web-developer-s-developer-5ac53c6a6ec685.3751279915228754984538.png" />
+        <img src="http://www.elucidate-designs.com/img/workstation.png" />
       </div>
     </div>
   </div>
@@ -104,7 +105,7 @@
   <div class="container alt section-space">
     <div class="row">
       <div class="col-xs-12 text-center">
-        <h3 class="h3 u-bold text-center u-margin-b-sm">Suivez le parcours certifiant Développeur de Jeux Vidéos Unity, et démarrez une nouvelle carrière.</h3>
+        <h3 class="h3 u-bold text-center u-margin-b-sm">Suivez le parcours certifiant Designer Photoshop, et démarrez une nouvelle carrière.</h3>
         <div class="c-browser">
           <div class="c-browser__chrome">
             <div class="c-browser__buttons">
@@ -114,7 +115,7 @@
             </div>
           </div>
           <div class="c-browser__image">
-            <img src="https://images.unsplash.com/photo-1529154691717-3306083d869e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=d706bd2801c6753fb5f4c9d1440a84ae&auto=format&fit=crop&w=750&q=80" />
+            <img src="https://cms-assets.tutsplus.com/uploads/users/107/posts/29159/image/41-flat-designer-character.jpg" />
           </div>
         </div>
 
@@ -123,14 +124,15 @@
           <div class="col-xs-12 col-sm-6">
             <div style="text-align: left !important;" class="c-how__sectionContent">
               <h4 class="h4 u-bold">Pourquoi suivre ce parcours ?</h4>
-              <p class="u-margin-t-md subHeading">Il existe tellement de tutoriels, de guides et de
-                cours qu'il est difficile de savoir comment commencer à apprendre à coder,
-                à développer des jeux, et encore plus difficile à savoir dans quel ordre suivre les cours.
-                Nous avons décidé de nous concentrer sur Unity plutôt que sur d'autres plates-formes,
-                car l'équipe derrière Unity a une grande vision. Ils sont toujours au top des choses.
-                Nous pensons que vous devriez également
-                vous concentrer sur Unity. Nous voulons nous assurer que vous le faites
-                en vous fournissant le meilleur matériel d'apprentissage au meilleur prix.</p>
+              <p class="u-margin-t-md subHeading">Pour ceux qui viennent d'entrer sur le marché du travail,
+                Photoshop peut être une grande compétence pour vous aider à trouver un emploi.
+                De nombreux travaux requièrent des compétences en Photoshop,
+                et cela est particulièrement vrai pour les rôles de conception
+                tels que concepteur graphique, concepteur Web ou concepteur d'interface utilisateur.
+                Les rôles de marketing préfèrent souvent aussi quelqu'un qui peut
+                travailler efficacement avec Photoshop.
+                L’acquisition des compétences de Photoshop peut vous aider
+                à vous différencier des autres candidats sur un marché de travail concurrentiel.</p>
             </div>
           </div>
           <div _ngcontent-c33="" class="col-xs-12 col-sm-6 stat ng-star-inserted">
@@ -140,8 +142,7 @@
                 <h4 _ngcontent-c33="" class="light ng-star-inserted">
                   <h4 class="light">
                     <font style="vertical-align: inherit;">
-                      <font style="vertical-align: inherit;">L'industrie du jeu vidéo, c'est près de 100 milliards de dollars par an. <br><br>
-                        Faites vous une place, en tant que freelance ou fournisseur de contenu pour les entreprises de cette industrie.</font>
+                      <font style="vertical-align: inherit;">L'apprentissage de Photoshop est essentiel si vous travaillez dans un rôle de conception graphique, de conception Web ou d'expérience utilisateur. </font>
                     </font>
                   </h4>
                 </h4>
@@ -272,11 +273,12 @@
       <!---->
       <h2 style="font-size: 4rem;font-weight: 300;" _ngcontent-c47="" class="white ng-star-inserted">Développez cette compétence pour aujourd'hui et demain</h2>
       <!---->
-      <p _ngcontent-c47="" class="white ng-star-inserted"><span class="hidden-md-down">Ce parcours Développeur de Jeux Vidéos Unity est conçu
+      <p _ngcontent-c47="" class="white ng-star-inserted"><span class="hidden-md-down">Ce parcours Designer Photoshop est conçu
         pour assurer votre succès à long terme sur le terrain. Les compétences acquises vous prépareront à des
-        emplois dans le monde de la programmation de jeux, et vous serez prêt à apporter une valeur immédiate
+        emplois sur le marché du travail, et vous serez prêt à apporter une valeur immédiate
         à toute organisation. Nous vous soutiendrons tout au long de votre parcours d'apprentissage.
-        </span></p>
+        De l'acquisition des compétences techniques et professionnelles précieuses,
+        jusqu'à l'obtention de l'emploi de vos rêves.</span></p>
     </div>
     <div _ngcontent-c47="" class="feature-card mb-4 ng-star-inserted">
       <!---->
@@ -285,8 +287,8 @@
         <!---->
         <h5 _ngcontent-c47="" class="title mb-1 ng-star-inserted"><span class="hidden-md-down">Rencontrez nos partenaires d'embauche</span><span class="hidden-lg-up">Rencontrez nos partenaires d'embauche</span></h5>
         <!---->
-        <p _ngcontent-c47="" class="x-small ng-star-inserted"><span class="hidden-md-down">Les développeurs de Jeux Vidéos sont en forte demande. Créez votre portefeuille professionnel avec Oschool et ouvrez un monde d'opportunités. Nos partenaires d'embauche sont impatients de vous rencontrer.</span>
-          <span class="hidden-lg-up">Les développeurs de Jeux Vidéos sont en forte demande. Créez votre portefeuille professionnel avec Oschool et ouvrez un monde d'opportunités. Nos partenaires d'embauche sont impatients de vous rencontrer.</span></p>
+        <p _ngcontent-c47="" class="x-small ng-star-inserted"><span class="hidden-md-down">Les designers sont en forte demande. Créez votre portefeuille professionnel avec Oschool et ouvrez un monde d'opportunités. Nos partenaires d'embauche sont impatients de vous rencontrer.</span>
+          <span class="hidden-lg-up">Les designers sont en forte demande. Créez votre portefeuille professionnel avec Oschool et ouvrez un monde d'opportunités. Nos partenaires d'embauche sont impatients de vous rencontrer.</span></p>
       </div>
       <div _ngcontent-c47="" class="card ng-star-inserted">
         <div _ngcontent-c47="" class="line bg-magenta"></div>
@@ -582,7 +584,7 @@
             <!---->
             <h6 _ngcontent-c101="" class="card__flag ng-star-inserted">Abonnement</h6>
             <div _ngcontent-c101="" class="card--pricing__header">
-              <h5 _ngcontent-c101="">Développeur de Jeux Vidéos Unity</h5>
+              <h5 _ngcontent-c101="">Photoshop</h5>
               <!---->
               <div _ngcontent-c101="" class="card__price ng-star-inserted">
                 <!----><span _ngcontent-c101="" class="card__price--current">30.000 FCFA / mois
@@ -651,13 +653,13 @@
                 <!---->
                 <h4 _ngcontent-c77="" class="h2 nd-bottom-cta-content__title ng-star-inserted">
                     <font style="vertical-align: inherit;">
-                        <font style="vertical-align: inherit;">Devenez Développeur de Jeux Vidéos Unity</font>
+                        <font style="vertical-align: inherit;">Apprenez Photoshop de A à Z avec un formateur dédié en télé présentiel</font>
                     </font>
                 </h4>
                 <!---->
                 <p _ngcontent-c77="" class="nd-bottom-cta-content__subtitle ng-star-inserted">
                     <font style="vertical-align: inherit;">
-                        <font style="vertical-align: inherit;">Passez de l'autre côté de l'écran, et découvrez comment vos jeux préférés sont concus</font>
+                        <font style="vertical-align: inherit;">L'apprentissage de Photoshop est essentiel si vous travaillez dans un rôle de conception graphique, de conception Web ou d'expérience utilisateur. </font>
                     </font>
                 </p>
                 <div _ngcontent-c77="" class="nd-bottom-cta-content__btn-wrapper">
@@ -752,7 +754,7 @@
             <div class="form-group password-form-group">
               <div class="input-with-icon">
                 <select class="form-control" name="formation">
-                  <option value="Développeur Web Junior">Développeur Web Junior</option>
+                  <option value="Photoshop">Photoshop</option>
                 </select>
                 <i class="input-icon ion-person-stalker"></i>
               </div>

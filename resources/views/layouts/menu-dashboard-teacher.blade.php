@@ -7,7 +7,7 @@
   <meta name="description" content="">
   <meta name="author" content="Rikudo Technologies">
   <meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
-  <title>Tableau de bord Utilisateur | Oschool Parcours</title>
+  <title>Tableau de bord Utilisateur | Parcours Oschool</title>
 
   <!-- Favicons -->
   <link href="/dashboard/img/image-profil.png" rel="icon">
@@ -17,9 +17,12 @@
   <link href="/dashboard/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <!--external css-->
   <link href="/dashboard/lib/font-awesome/css/font-awesome.css" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="/dashboard/css/zabuto_calendar.css">
+  <link rel="stylesheet" type="text/css" href="/dashboard/lib/gritter/css/jquery.gritter.css" />
   <!-- Custom styles for this template -->
   <link href="/dashboard/css/style.css" rel="stylesheet">
   <link href="/dashboard/css/style-responsive.css" rel="stylesheet">
+  <script src="/dashboard/lib/chart-master/Chart.js"></script>
 
   <!-- =======================================================
     Template Name: Dashio
@@ -67,7 +70,7 @@
             <ul class="dropdown-menu extended notification">
               <div class="notify-arrow notify-arrow-yellow"></div>
               <li>
-                <p class="yellow">Vous avez une nouvellenotification</p>
+                <p class="yellow">Vous avez une nouvelle notification</p>
               </li>
               <li>
                 <a href="#" data-toggle="modal" data-target="#myModal">
@@ -160,51 +163,78 @@
           </li>
           @auth
           @if(Auth::user()->isTeacher())
-          <li>
+          <li class="sub-menu">
+            <a href="javascript:;">
+              <i class="fa fa-desktop"></i>
+              <span>Outils pédagogiques</span>
+              </a>
+            <ul class="sub">
+              <li>
 
-            <a  style="border-radius:8px; color: green;" class="logout" href="{{ route('classrooms.create') }}">
-                Planifier une session
-            </a>
+                <a  style="border-radius:8px; color: green;" class="logout" href="{{ route('classrooms.create') }}">
+                    Planifier une session
+                </a>
 
-          </li>
-          <li>
+              </li>
+              <li>
 
-            <a data-toggle="modal" data-target="#popup" style="border-radius:8px; color: #F36A10;" class="logout" href="{{ route('progressions.create') }}">
-                Marquer une progression
-            </a>
+                <a data-toggle="modal" data-target="#popup" style="border-radius:8px; color: #F36A10;" class="logout" href="{{ route('progressions.create') }}">
+                    Marquer une progression
+                </a>
 
+              </li>
+            </ul>
           </li>
           @endif
 
           @if(Auth::user()->isAdmin())
-          <li>
+          <li class="sub-menu">
+            <a href="javascript:;">
+              <i class="fa fa-desktop"></i>
+              <span>Formations</span>
+              </a>
+            <ul class="sub">
 
-            <a  style="border-radius:8px; color: red; background-color: transparent;" class="logout" href="{{ route('projets.create') }}">
-                Créer un projet
-            </a>
+              <li>
 
+                <a  style="border-radius:8px; color: red; background-color: transparent;" class="logout" href="{{ route('projets.create') }}">
+                    Créer un projet
+                </a>
+
+              </li>
+              <li>
+
+                <a  style="border-radius:8px; color: #967ADC; background-color: transparent;" class="logout" href="{{ route('supportformations.create') }}">
+                    Ajouter un support de cours
+                </a>
+
+              </li>
+              <li>
+
+                <a  style="border-radius:8px; color: #4D90CC; background-color: transparent;" class="logout" href="{{ route('formations.create') }}">
+                    Créer une formation
+                </a>
+
+              </li>
+              <li>
+
+                <a style="border-radius:8px; color: orange; background-color: transparent;" class="logout" href="{{ route('categories.create') }}">
+                    Créer une catégorie
+                </a>
+
+              </li>
+
+              <li>
+
+                <a style="border-radius:8px; background-color: transparent;" class="logout" href="{{ route('achats.create') }}">
+                    Ajouter un achat
+                </a>
+
+              </li>
+
+            </ul>
           </li>
-          <li>
 
-            <a  style="border-radius:8px; color: #967ADC; background-color: transparent;" class="logout" href="{{ route('supportformations.create') }}">
-                Ajouter un support de cours
-            </a>
-
-          </li>
-          <li>
-
-            <a  style="border-radius:8px; color: #4D90CC; background-color: transparent;" class="logout" href="{{ route('formations.create') }}">
-                Créer une formation
-            </a>
-
-          </li>
-          <li>
-
-            <a style="border-radius:8px; color: orange; background-color: transparent;" class="logout" href="{{ route('categories.create') }}">
-                Créer une catégorie de formation
-            </a>
-
-          </li>
           @endif
 
           @if(!Auth::user()->isAdmin() && !Auth::user()->isTeacher() && count(Auth::user()->formations))
@@ -358,7 +388,7 @@
 
     <!-- Modal body -->
     <div class="modal-body">
-    <form method="post" action="{{url('envoi')}}">
+    <form method="post" action="{{url('envoiRenew')}}">
     {{ csrf_field() }}
 
     <div class="form-group">
@@ -445,7 +475,7 @@
   <!-- js placed at the end of the document so the pages load faster -->
   <script src="/dashboard/lib/jquery/jquery.min.js"></script>
   <script src="/dashboard/lib/bootstrap/js/bootstrap.min.js"></script>
-  <script class="include" type="text/javascript" src="lib/jquery.dcjqaccordion.2.7.js"></script>
+  <script class="include" type="text/javascript" src="/dashboard/lib/jquery.dcjqaccordion.2.7.js"></script>
   <script src="/dashboard/lib/jquery.scrollTo.min.js"></script>
   <script src="/dashboard/lib/jquery.nicescroll.js" type="text/javascript"></script>
   <!--common script for all pages-->
