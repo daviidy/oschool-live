@@ -10,6 +10,7 @@ use Mail;
 use Carbon\Carbon;
 use Exception;
 use Illuminate\Support\Facades\Session;
+use Auth;
 
 class AchatController extends Controller
 {
@@ -32,6 +33,11 @@ class AchatController extends Controller
      */
     public function create()
     {
+      if (Auth::check() && Auth::user()->isAdmin()) {
+        $users = User::orderby('id','asc')->paginate(30);
+        $formations = Formation::orderby('id','asc')->paginate(30);
+        return view('achats.ajout', ['users' => $users, 'formations' => $formations]);
+      }
 
     }
 
@@ -111,6 +117,94 @@ class AchatController extends Controller
 
 
         return view('achats.create',['signature' => str_replace('"',"",$resultat),
+                                     'temps' => $temps,
+                                     'time' => $time,
+                                     'achats' => $achats,
+                                     'montant' => Session::get('montant'),
+                                     'formations' => $formations,
+                                   ]);
+
+    }
+
+
+    //fonction pour afficher formulaire de renouvellement d'un abonnement
+
+    public function envoiRenew(Request $request)
+    {
+      Session::put('name', $request['nom']);
+      Session::put('prenoms', $request['prenoms']);
+      Session::put('email', $request['email']);
+      Session::put('tel', $request['tel']);
+      Session::put('montant', $request['montant']);
+      Session::put('formation', $request['formation']);
+
+      function postData($params, $url)
+          {
+           try {
+           $curl = curl_init();
+           $postfield = '';
+           foreach ($params as $index => $value) {
+           $postfield .= $index . '=' . $value . "&";
+           }
+           $postfield = substr($postfield, 0, -1);
+           curl_setopt_array($curl, array(
+           CURLOPT_URL => $url,
+           CURLOPT_RETURNTRANSFER => true,
+           CURLOPT_ENCODING => "",
+           CURLOPT_MAXREDIRS => 10,
+           CURLOPT_TIMEOUT => 45,
+           CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+           CURLOPT_CUSTOMREQUEST => "POST",
+           CURLOPT_POSTFIELDS => $postfield,
+           CURLOPT_SSL_VERIFYPEER => false,
+           CURLOPT_HTTPHEADER => array(
+           "cache-control: no-cache",
+           "content-type: application/x-www-form-urlencoded",
+           ),
+           ));
+           $response = curl_exec($curl);
+           $err = curl_error($curl);
+           curl_close($curl);
+           if ($err) {
+           throw new Exception("cURL Error #:" . $err);
+           return $err;
+           } else {
+           return $response;
+           }
+           } catch (Exception $e) {
+           throw new Exception($e);
+           }
+          }
+          $time = Carbon::now();
+          $temps = date("YmdHis");
+        $params = array('cpm_amount' => Session::get('montant'),
+                        'cpm_currency' => 'CFA',
+                        'cpm_site_id' => '113043',
+                        'cpm_trans_id' => $temps,
+                        'cpm_trans_date' => $time,
+                        'cpm_payment_config' => 'SINGLE',
+                        'cpm_page_action' => 'PAYMENT',
+                        'cpm_version' => 'V1',
+                        'cpm_language' => 'fr',
+                        'cpm_designation' => 'Achat Oschool Live',
+                        'apikey' => '134714631658c289ed716950.86091611',
+                        );
+        $url = "https://api.cinetpay.com/v1/?method=getSignatureByPost";
+        //Appel de fonction postData()
+        $resultat = postData($params, $url) ;
+        $signature = json_decode($resultat, true);
+
+        $achats= Achat::orderby('id','asc')->paginate(30);
+
+/*
+        Session::put('trans_id', $temps);
+
+        */
+        Session::put('signature', str_replace('"',"",$resultat));
+        $formations = Formation::orderby('id','asc')->paginate(30);
+
+
+        return view('achats.renew',['signature' => str_replace('"',"",$resultat),
                                      'temps' => $temps,
                                      'time' => $time,
                                      'achats' => $achats,
@@ -225,6 +319,7 @@ class AchatController extends Controller
     }
 
     /**
+     * Pour une nouvelle inscription
      * Store a newly created resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
@@ -247,38 +342,121 @@ class AchatController extends Controller
       $date_paiement = Carbon::now();
       Auth::user()->fin_abonnement = $date_paiement->addDays(30);
       Auth::user()->statut = 'OK';
-      Auth::user()->save;
+      Auth::user()->save();
 
       //on met aussi a jour les informations du user comme son nom et prenoms
       if (Auth::user()->nom == "aucun nom") {
         Auth::user()->nom = $request['nom'];
-        Auth::user()->save;
+        Auth::user()->save();
       }
 
       if (Auth::user()->prenoms == "aucun prénom") {
         Auth::user()->prenoms = $request['prenoms'];
-        Auth::user()->save;
+        Auth::user()->save();
       }
 
-     //envoi mail utilisateur (mail assignation formation)
+     //envoi mail utilisateur pour notification de paiement
       Mail::send('mailsAchat.mail', ['achat' => $achat], function($message) use ($achat){
         $message->to($achat->email, 'Cher(ère) Etudiant(e)')->subject('Votre paiement a bien été pris en compte !');
         $message->from('eventsoschool@gmail.com', 'Oschool');
       });
 
-      //envoi mail admin (mail assignation formation)
+      //envoi mail admin pour notification de paiement
       Mail::send('mailsAchat.mail-admin', ['achat' => $achat], function($message) use ($achat){
         $message->to('yaodavidarmel@gmail.com', 'A David')->subject('Notification pour nouveau paiement à Oschool Parcours');
         $message->from('eventsoschool@gmail.com', 'Oschool');
       });
 
+      //étant donné que c'est un premier et nouvel achat, on suppose que l'étudiant n'est pas
+      //encore inscrit à la formation, donc
+      //inscrire etudiant a la formation
 
+        $formation = Formation::where('nom', $request['formation'])->get();
+        $user = User::find($request['user_id']);
+        $user->formations()->attach($formation);
+
+        //envoi mail pour notifier l'ajout à une formation
+        Mail::send('mails.inscription-formation', ['user' => $user, 'formation' => $formation], function($message) use ($user){
+          $message->to($user->email, 'Cher(ère) Utilisateur(trice)')->subject('Vous avez été ajouté à une formation');
+          $message->from('eventsoschool@gmail.com', 'Oschool');
+        });
+
+        //envoi mail admin pour notifier l'ajout à une formation
+        Mail::send('mailsAdmin.inscription-formation', ['user' => $user, 'formation' => $formation], function($message) use ($user){
+          $message->to('yaodavidarmel@gmail.com', 'A David')->subject('Notification pour nouvelle inscription à une formation');
+          $message->from('eventsoschool@gmail.com', 'Oschool');
+        });
+
+      return redirect('home')->with('status', 'Achat validé ! Suivez immédiatement les instructions que nous vous avons laissées dans votre boîte de réception.');
+
+    }
+
+    /*fonction pour ajouter un achat manuellement*/
+
+    public function achat(Request $request)
+    {
+
+
+      //on crée l'achat
+      $achat=Achat::create($request->all());
+      //on ajoute 30 jours à la date actuelle pour déterminer la date d'expiration de l'abonnement
+      //et on met a jour le statut de l'étudiant
+
+      $date_paiement = Carbon::parse($request['date']);
+      $user = User::where('id', $request['user_id'])->first();
+      $user->fin_abonnement = $date_paiement->addDays(30);
+      $user->statut = 'OK';
+      $user->save();
+
+      //on met aussi a jour les informations du user comme son nom et prenoms
+      if ($user->nom == "aucun nom") {
+        $user->nom = $request['nom'];
+        $user->save();
+      }
+
+      if ($user->prenoms == "aucun prénom") {
+        $user->prenoms = $request['prenoms'];
+        $user->save();
+      }
+
+      /*
+     //envoi mail utilisateur (mail notification achat)
+      Mail::send('mailsAchat.mail', ['achat' => $achat], function($message) use ($achat){
+        $message->to($achat->email, 'Cher(ère) Etudiant(e)')->subject('Votre paiement a été effectué avec succès !');
+        $message->from('eventsoschool@gmail.com', 'Oschool');
+      });
+      */
+
+      //envoi mail admin (mail notification achat)
+      Mail::send('mailsAchat.mail-admin', ['achat' => $achat], function($message) use ($achat){
+        $message->to('yaodavidarmel@gmail.com', 'A David')->subject('Notification pour ajout manuel d\'un achat de Parcours Oschool');
+        $message->from('eventsoschool@gmail.com', 'Oschool');
+      });
+
+      //étant donné que c'est l'admin qui fait cet ajout
+      //pas besoin d'inscrire l'étudiant à la formation
+      //l'admin le fera manuellement
+
+
+      /*
       //inscrire etudiant a une formation si il n'est pas inscrit à une formation
-      if(!count(Auth::user()->formations()))
+      if(!Auth::user()->formations())
       {
         $formation = Formation::where('nom', $request['formation'])->get();
         $user = User::find($request['user_id']);
         $user->formations()->attach($formation);
+
+        //envoi mail pour notifier l'ajout à une formation
+        Mail::send('mails.inscription-formation', ['user' => $user, 'formation' => $formation], function($message) use ($user){
+          $message->to($user->email, 'Cher(ère) Utilisateur(trice)')->subject('Vous avez été ajouté à une formation');
+          $message->from('eventsoschool@gmail.com', 'Oschool');
+        });
+
+        //envoi mail admin pour notifier l'ajout à une formation
+        Mail::send('mailsAdmin.inscription-formation', ['user' => $user, 'formation' => $formation], function($message) use ($user){
+          $message->to('yaodavidarmel@gmail.com', 'A David')->subject('Notification pour nouvelle inscription à une formation');
+          $message->from('eventsoschool@gmail.com', 'Oschool');
+        });
       }
 
       //sinon si il est inscrit a une ou plusieurs formations
@@ -287,16 +465,71 @@ class AchatController extends Controller
         $formation = Formation::where('nom', $request['formation'])->get();
         $user = User::find($request['user_id']);
         $user->formations()->attach($formation);
+
+        //envoi mail pour notifier l'ajout à une formation
+        Mail::send('mails.inscription-formation', ['user' => $user, 'formation' => $formation], function($message) use ($user){
+          $message->to($user->email, 'Cher(ère) Utilisateur(trice)')->subject('Vous avez été ajouté à une formation');
+          $message->from('eventsoschool@gmail.com', 'Oschool');
+        });
+
+        //envoi mail admin pour notifier l'ajout à une formation
+        Mail::send('mailsAdmin.inscription-formation', ['user' => $user, 'formation' => $formation], function($message) use ($user){
+          $message->to('yaodavidarmel@gmail.com', 'A David')->subject('Notification pour nouvelle inscription à une formation');
+          $message->from('eventsoschool@gmail.com', 'Oschool');
+        });
       }
+      */
 
       return redirect('home')->with('status', 'Achat validé ! Suivez immédiatement les instructions que nous vous avons laissées dans votre boîte de réception.');
 
+
     }
 
-    public function achat()
+/*fonction pour renouveler son abonnement */
+    public function renew(Request $request)
     {
 
+      //on crée l'achat
+      $achat=Achat::create($request->all());
+      //on ajoute 30 jours à la date actuelle pour déterminer la date d'expiration de l'abonnement
+      //et on met a jour le statut de l'étudiant
+      $date_paiement = Carbon::now();
+      Auth::user()->fin_abonnement = $date_paiement->addDays(30);
+      Auth::user()->statut = 'OK';
+      Auth::user()->save();
+
+      //on met aussi a jour les informations du user comme son nom et prenoms
+      if (Auth::user()->nom == "aucun nom") {
+        Auth::user()->nom = $request['nom'];
+        Auth::user()->save();
+      }
+
+      if (Auth::user()->prenoms == "aucun prénom") {
+        Auth::user()->prenoms = $request['prenoms'];
+        Auth::user()->save();
+      }
+
+     //envoi mail utilisateur (mail assignation formation)
+      Mail::send('mailsAchat.renew', ['achat' => $achat], function($message) use ($achat){
+        $message->to($achat->email, 'Cher(ère) Etudiant(e)')->subject('Votre renouvellement a été effectué avec succès !');
+        $message->from('eventsoschool@gmail.com', 'Oschool');
+      });
+
+      //envoi mail admin (mail assignation formation)
+      Mail::send('mailsAchat.renew-admin', ['achat' => $achat], function($message) use ($achat){
+        $message->to('yaodavidarmel@gmail.com', 'A David')->subject('Renouvellement à un Parcours Oschool');
+        $message->from('eventsoschool@gmail.com', 'Oschool');
+      });
+
+
+
+      return redirect('home')->with('status', 'Renouvellment effectué ! Votre abonnement est valide jusqu\'au '.Carbon::parse(Auth::user()->fin_abonnement)->format('d-m-Y H:i'));
+
+
     }
+
+
+
 
     /**
      * Display the specified resource.

@@ -8,7 +8,7 @@
     <div class="row c-how__heading align-row">
       <div class="col-xs-12 col-sm-6 c-how__headingLeft">
         <!-- <h2 class="h2 u-bold text-primary">Hack & Learn <em>React</em></h2> -->
-        <h1 class="h2 u-bold">Deviens Développeur d'Applications Android</h1>
+        <h1 class="h2 u-bold">Deviens Développeur d'Applications Android, avec un formateur dédié en télé présentiel</h1>
         <p class="u-margin-t-md subHeading">Développe de puissantes applications Android.</p>
         <a class="home_button" href="#payment">
           Inscrivez-vous maintenant

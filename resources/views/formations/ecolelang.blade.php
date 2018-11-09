@@ -40,31 +40,16 @@
             <div class="owl-item language_item">
               <a href="#">
                 <div class="flag"><img src="/new/images/icones/web-dev.png" alt=""></div>
-                <div class="lang_name">Développement web</div>
+                <div class="lang_name">Ecole de programmation</div>
               </a>
             </div>
 
-            <!-- Flag -->
-            <div class="owl-item language_item">
-              <a href="#">
-                <div class="flag"><img src="/new/images/icones/mobile-dev.png" alt=""></div>
-                <div class="lang_name">Android/iOS</div>
-              </a>
-            </div>
-
-            <!-- Flag -->
-            <div class="owl-item language_item">
-              <a href="#">
-                <div class="flag"><img src="/new/images/icones/design.png" alt=""></div>
-                <div class="lang_name">Front-end</div>
-              </a>
-            </div>
 
             <!-- Flag -->
             <div class="owl-item language_item">
               <a href="#">
                 <div class="flag"><img src="/new/images/icones/photoshop.png" alt=""></div>
-                <div class="lang_name">Design numérique</div>
+                <div class="lang_name">Ecole du design</div>
               </a>
             </div>
 
@@ -72,39 +57,40 @@
             <div class="owl-item language_item">
               <a href="#">
                 <div class="flag"><img src="/new/images/icones/cm.png" alt=""></div>
-                <div class="lang_name">Community management</div>
+                <div class="lang_name">Ecole du Web Marketing</div>
               </a>
             </div>
 
-            <!-- Flag -->
-            <div class="owl-item language_item">
-              <a href="#">
-                <div class="flag"><img src="/new/images/icones/social.png" alt=""></div>
-                <div class="lang_name">Social Média</div>
-              </a>
-            </div>
-
-            <!-- Flag -->
-            <div class="owl-item language_item">
-              <a href="#">
-                <div class="flag"><img src="/new/images/icones/blog.png" alt=""></div>
-                <div class="lang_name">Blogging</div>
-              </a>
-            </div>
-
-            <!-- Flag -->
-            <div class="owl-item language_item">
-              <a href="#">
-                <div class="flag"><img src="/new/images/icones/photo.png" alt=""></div>
-                <div class="lang_name">Photographie</div>
-              </a>
-            </div>
 
             <!-- Flag -->
             <div class="owl-item language_item">
               <a href="#">
                 <div class="flag"><img src="/new/images/icones/bourse.png" alt=""></div>
-                <div class="lang_name">Investissement en bourse</div>
+                <div class="lang_name">Ecole du Business</div>
+              </a>
+            </div>
+
+            <!-- Flag -->
+            <div class="owl-item language_item">
+              <a href="#">
+                <div class="flag"><img src="https://cdn1.iconfinder.com/data/icons/world-flags-circular/1000/Flag_of_United_Kingdom_-_Circle-512.png" alt=""></div>
+                <div class="lang_name">Ecole des langues</div>
+              </a>
+            </div>
+
+            <!-- Flag -->
+            <div class="owl-item language_item">
+              <a href="#">
+                <div class="flag"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdjYVAAeHxJxhw1JZk_0m4E5PjMLv5VkxBrqCM-3Y6K9JrAFlr" alt=""></div>
+                <div class="lang_name">Ecole de la data science</div>
+              </a>
+            </div>
+
+            <!-- Flag -->
+            <div class="owl-item language_item">
+              <a href="#">
+                <div class="flag"><img src="https://cdn2.vectorstock.com/i/1000x1000/52/41/artificial-intelligence-brain-icon-ai-vector-21645241.jpg" alt=""></div>
+                <div class="lang_name">Ecole de l'intelligence Artificielle</div>
               </a>
             </div>
 
@@ -130,7 +116,7 @@
         <div class="course">
           <div class="course_image"><img src="/new/images/cours/anglais.png" alt=""></div>
           <div class="course_body">
-            <div class="course_title"><a href="/devweb">Parlez couramment l'Anglais</a></div>
+            <div class="course_title"><a href="/anglais">Parlez couramment l'Anglais</a></div>
             <div class="course_info">
               <ul>
                 <li><a href="#">Langue</a></li>
@@ -156,7 +142,7 @@
 
     <div class="row">
       <div class="col">
-        <div class="home_button"><a href="#">Voir plus de cours</a></div>
+        <div class="home_button"><a href="/#schools">Voir nos écoles</a></div>
       </div>
     </div>
   </div>
