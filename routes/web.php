@@ -78,6 +78,10 @@ Route::resource('achats','AchatController');
 
 Route::post('/envoi', 'AchatController@envoi')->name('envoi');
 
+Route::post('/envoiRenew', 'AchatController@envoiRenew');
+
+Route::post('renew', 'AchatController@renew');
+
 Route::post('/progression', 'ProgressionController@progression')->name('progression');
 
 Route::post('/notify', 'AchatController@notify')->name('notify');
@@ -143,6 +147,10 @@ Route::get('/anglais', function () {
     return view('formations.parcours-anglais');
 })->name('anglais');
 
+Route::get('/photoshop', function () {
+    return view('formations.parcours-photoshop');
+})->name('photoshop');
+
 Route::get('/python', function () {
     return view('formations.python');
 })->name('python');
@@ -190,8 +198,6 @@ Route::resource('etatprojets','EtatprojetController');
 
 Route::resource('supportformations','SupportformationController');
 
-Route::post('/mooc', function () {
-    return redirect('https://oschool.ci/');
-})->name('mooc');
-
 Route::resource('achats','AchatController');
+
+Route::post('/ajout-achat', 'AchatController@achat')->name('ajout-achat');

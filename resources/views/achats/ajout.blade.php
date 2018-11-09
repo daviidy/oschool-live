@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="fr">
 	<head>
-		<title>Parcours Oschool | Annuler une session ou en faire le compte-rendu</title>
+		<title>Parcours Oschool | Ajouter un achat</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!--===============================================================================================-->
 		<link rel="icon" type="image/png" href="/sessions/images/icons/image-profil.png"/>
-	<!--===============================================================================================-->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote-bs4.css" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote-bs4.js"></script>
+    <!--===============================================================================================-->
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote-bs4.css" rel="stylesheet">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote-bs4.js"></script>
 	<!--===============================================================================================-->
 		<link rel="stylesheet" type="text/css" href="/sessions/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
 	<!--===============================================================================================-->
@@ -41,65 +41,72 @@
 
 		<div class="container-contact100">
 			<div class="wrap-contact100">
-				<img style="width: 40%;display: block;margin-left: auto;margin-right: auto;" src="/formcreate/images/img-01.png" alt="">
-				<h2 style="margin: 25px 0px;">Annuler une session ou faire le compte-rendu</h2>
-				<form method="post" enctype="multipart/form-data" action="{{ url('classrooms', $classroom) }}" class="contact100-form validate-form">
+				<img style="width: 40%;display: block;margin:auto;" src="/img/page-parcours/card.png" alt="">
+				<h2 style="margin: 25px 0px;">Ajouter un achat manuellement</h2>
+				<form method="post" enctype="multipart/form-data" action="{{url('ajout-achat')}}" class="contact100-form validate-form">
 					{{ csrf_field() }}
-          {{ method_field('patch') }}
-          <div style="display: none;" class="wrap-input100 input100-select bg1">
-            <span class="label-input100">Formateur</span>
-            <div>
-              <input class="input100" type="text" name="formateur" value="{{Auth::user()->name}}">
-            </div>
-          </div>
-
-          <div style="display: none;" class="wrap-input100 input100-select bg1">
-            <span class="label-input100">User Id</span>
-            <div>
-              <input class="input100" type="text" name="user_id" value="{{Auth::user()->id}}">
-            </div>
-          </div>
-
-
           <div class="wrap-input100 input100-select bg1">
-            <span class="label-input100">Date prévue</span>
-            <div>
-              <input class="input100" type="text" name="date" value="{{$classroom->date}}" placeholder="{{$classroom->date}}" disabled>
-            </div>
+            <span class="label-input100">Nom</span>
+              <input class="input100" type="text" name="nom" value="" required>
           </div>
 
           <div class="wrap-input100 input100-select bg1">
-            <span class="label-input100">Etudiant</span>
+            <span class="label-input100">Prénoms</span>
+              <input class="input100" type="text" name="prenoms" value="" required>
+          </div>
+
+          <div class="wrap-input100 input100-select bg1">
+            <span class="label-input100">Email</span>
+              <input class="input100" type="email" name="email" value="" required>
+          </div>
+
+          <div class="wrap-input100 input100-select bg1">
+            <span class="label-input100">Numéro de téléphone</span>
+              <input class="input100" type="tel" name="tel" value="" required>
+          </div>
+
+					<div class="wrap-input100 input100-select bg1">
+						<span class="label-input100">Date</span>
+                <div class="form-group has-warning has-feedback">
+                <label for="inputWarning2">Selectionner la date ET l'heure</label>
+                <input class="input100" name="date" type="date" class="form-control" id="inputWarning2" required>
+                <span class="glyphicon glyphicon-warning-sign form-control-feedback"></span>
+            </div>
+					</div>
+
+          <div class="wrap-input100 input100-select bg1">
+            <span class="label-input100">Nom d'utilisateur</span>
             <div>
-              <input class="input100" type="text" name="etudiant" value="{{$classroom->etudiant}}" placeholder="{{$classroom->etudiant}}" disabled>
+              <select class="js-select3" name="user_id">
+                @foreach($users as $user)
+                <option value="{{$user->id}}">{{$user->name}}</option>
+                @endforeach
+              </select>
+              <div class="dropDownSelect3"></div>
             </div>
           </div>
 
           <div class="wrap-input100 input100-select bg1">
-            <span class="label-input100">Id Etudiant</span>
-            <div>
-              <input class="input100" type="text" name="date" value="{{$classroom->idEtudiant}}" placeholder="{{$classroom->idEtudiant}}" disabled>
-            </div>
-          </div>
-
-          <div class="wrap-input100 input100-select bg1">
-						<span class="label-input100">Statut*</span>
+						<span class="label-input100">Montant</span>
 						<div>
-							<select class="js-select3" name="statut">
-							    <option>Réalisée</option>
-							    <option>Annulée</option>
+							<select class="js-select3" name="montant">
+							    <option>30000</option>
 							</select>
 							<div class="dropDownSelect3"></div>
 						</div>
 					</div>
 
-					<div class="wrap-input100 validate-input bg0 rs1-alert-validate" data-validate = "S'il vous plait, veuillez remplir ce champ">
-						<span class="label-input100">Commentaire sur la séance</span>
-						<textarea id="summernote" required class="input100" name="commentaire" placeholder="Faites ici un commentaire de la séance ...."></textarea>
-					</div>
-
-					<textarea name="editordata"></textarea>
-
+          <div class="wrap-input100 input100-select bg1">
+            <span class="label-input100">Formation</span>
+            <div>
+              <select class="js-select3" name="">
+                @foreach($formations as $formation)
+                <option value="{{$formation->nom}}">{{$formation->nom}}</option>
+                @endforeach
+              </select>
+              <div class="dropDownSelect3"></div>
+            </div>
+          </div>
 
 
 
