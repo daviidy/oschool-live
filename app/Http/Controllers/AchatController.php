@@ -34,7 +34,7 @@ class AchatController extends Controller
     public function create()
     {
       if (Auth::check() && Auth::user()->isAdmin()) {
-        $users = User::orderby('id','asc')->paginate(30);
+        $users = User::orderby('id','asc')->paginate(1000);
         $formations = Formation::orderby('id','asc')->paginate(30);
         return view('achats.ajout', ['users' => $users, 'formations' => $formations]);
       }
