@@ -136,15 +136,12 @@ Route::get('/android', function () {
     return view('formations.parcours-android');
 })->name('android');
 
-<<<<<<< HEAD
 Route::get('/after-effects', function () {
     return view('formations.after-effects');
 })->name('android');
-=======
 Route::get('/anglais', function () {
     return view('formations.parcours-anglais');
 })->name('anglais');
->>>>>>> 2d7f65ec1c397a34a21c4fbfe179dfa9e4eefb49
 
 Route::get('/python', function () {
     return view('formations.python');

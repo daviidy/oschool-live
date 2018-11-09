@@ -576,7 +576,7 @@
             <!---->
             <h6 _ngcontent-c101="" class="card__flag ng-star-inserted">Abonnement</h6>
             <div _ngcontent-c101="" class="card--pricing__header">
-              <h5 _ngcontent-c101="">Développeur Web</h5>
+              <h5 _ngcontent-c101="">Social Media Marketing</h5>
               <!---->
               <div _ngcontent-c101="" class="card__price ng-star-inserted">
                 <!----><span _ngcontent-c101="" class="card__price--current">30.000 FCFA / mois
@@ -630,6 +630,77 @@
 </section>
 
 <!--fin section prix-->
+
+
+<!--section appel a l'action-->
+
+<section _ngcontent-c18="" class="ng-star-inserted">
+    <ir-nd-bottom-cta-section _ngcontent-c18="" _nghost-c77="">
+        <div _ngcontent-c77="" class="nd-bottom-cta-container">
+            <div _ngcontent-c77="" class="nd-bottom-cta-content">
+                <!---->
+                <h4 _ngcontent-c77="" class="h2 nd-bottom-cta-content__title ng-star-inserted">
+                    <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">Devenez Développeur Marketeur</font>
+                    </font>
+                </h4>
+                <!---->
+                <p _ngcontent-c77="" class="nd-bottom-cta-content__subtitle ng-star-inserted">
+                    <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">Construisez-vous un excellent portfolio en réalisant des projets de la vie réelle.</font>
+                    </font>
+                </p>
+                <div _ngcontent-c77="" class="nd-bottom-cta-content__btn-wrapper">
+                    <!---->
+                    <!---->
+                    <!---->
+                    <!---->
+                    <!---->
+                    <ir-nanodegree-enroll-button-in _ngcontent-c77="" _nghost-c83="" class="ng-star-inserted">
+                        <!---->
+                        <!---->
+                        <!---->
+                        <!---->
+                        <!---->
+                        <!---->
+                        <!---->
+                        <!---->
+                        <!---->
+                        <!---->
+                        <!----><a _ngcontent-c83="" class="home_button" href="#payment">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Inscrivez-vous maintenant </font>
+                            </font>
+                        </a>
+                        <!---->
+                        <!---->
+                    </ir-nanodegree-enroll-button-in>
+                    <!---->
+                    <!---->
+                </div>
+            </div>
+        </div>
+        <ir-request-syllabus-modal _ngcontent-c77="" _nghost-c88="">
+            <ir-modal _ngcontent-c88="" _nghost-c11="" class="ng-tns-c11-5">
+                <div _ngcontent-c11="" class="wrapper">
+                    <!---->
+                    <!---->
+                </div>
+            </ir-modal>
+        </ir-request-syllabus-modal>
+    </ir-nd-bottom-cta-section>
+</section>
+
+<!--fin section appel a l'action-->
+
+
+
+
+
+
+
+
+
 
 <div id="modalSignUp" class="modal full-page-modal" tabindex="-1" role="dialog" aria-hidden="false">
   <!-- <button type="button" class="modal-action-btn action-left back-to-signin" style="opacity: 0;"><i class="ion-ios-arrow-back"></i></button> -->

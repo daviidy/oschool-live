@@ -15,11 +15,12 @@
           Inscrivez-vous maintenant
         </a>
         <p class="u-margin-t-md subHeading">
-           Apprennez à construire des stratégies efficaces de marketing des médias sociaux sur différentes plateformes.
+           Créer des animations incroyables comme une scène de STAR WARS en 3D ou encore l'outro des dessins animés Looney Tunes!
+
         </p>
       </div>
       <div class="col-xs-12 col-sm-6 c-how__headingRight">
-        <img src="/img/page-parcours/Social-media-marketing-gt-service.png" />
+        <img src="/img/page-parcours/img-1-after-effects.jpg" />
       </div>
     </div>
   </div>
@@ -72,7 +73,7 @@
     </ir-modal>
     <h6 class="details" _ngcontent-c29="" class="ng-star-inserted">Prérequis</h6>
     <!---->
-    <h5 _ngcontent-c29="" class="ng-star-inserted">Un ordinateur ou un smartphone avec connexion internet</h5>
+    <h5 _ngcontent-c29="" class="ng-star-inserted">Un ordinateur  avec connexion internet</h5>
    <!--  <p _ngcontent-c29="" class="x-small ng-star-inserted"><a _ngcontent-c29="">Voir les prérequis en détail</a></p> -->
     <!---->
     <!---->
@@ -100,13 +101,10 @@
 
 
 
-
-
-
   <div class="container alt section-space">
     <div class="row">
       <div class="col-xs-12 text-center">
-        <h3 class="h3 u-bold text-center u-margin-b-sm">Suivez le parcours certifiant de Social Média Marketing et démarrez une nouvelle carrière.</h3>
+        <h3 class="h3 u-bold text-center u-margin-b-sm">Suivez le parcours certifiant d'After Effects et démarrez une nouvelle carrière.</h3>
         <div class="c-browser">
           <div class="c-browser__chrome">
             <div class="c-browser__buttons">
@@ -116,7 +114,7 @@
             </div>
           </div>
           <div class="c-browser__image">
-            <img src="/img/page-parcours/Social-Media-Manager-Marketer.jpg" />
+            <img src="/img/page-parcours/img-2-after-effects.jpg" />
           </div>
         </div>
 
@@ -125,11 +123,7 @@
           <div class="col-xs-12 col-sm-6">
             <div style="text-align: left !important;" class="c-how__sectionContent">
               <h4 class="h4 u-bold">Pourquoi suivre ce parcours ?</h4>
-              <p class="u-margin-t-md subHeading">Souhaitez-vous connaître les  raccourcis vers le succès  en obtenant plus de ventes, du trafic sur votre site Web, la notoriété de la marque et la croissance d'une entreprise à l'aide du marketing par médias sociaux? 
-
-            Aujourd'hui, vous pouvez commercialiser GRATUITEMENT  vos produits, vos services et développer une entreprise en ligne en utilisant les médias sociaux - à des milliards de personnes!
-
-            Êtes-vous prêt à vendre plus de produits, à avoir plus de clients et à développer votre entreprise en utilisant les médias sociaux?</p>
+              <p class="u-margin-t-md subHeading">Pourquoi After Effects ? Le Motion Graphics et les effets visuels deviennent de plus en plus précieux et important dans toute vidéo créée. Apprendre à créer ces animations en utilisant  After Effects est devenu essentiel. Les talents pour créer ce genre d'animations et d'effets sont de plus en plus demandés dans différents domaines (cinéma, vidéos Youtube, sociétés d'animation...).</p>
             </div>
           </div>
           <div _ngcontent-c33="" class="col-xs-12 col-sm-6 stat ng-star-inserted">
@@ -139,7 +133,7 @@
                 <h4 _ngcontent-c33="" class="light ng-star-inserted">
                   <h4 class="light">
                     <font style="vertical-align: inherit;">
-                      <font style="vertical-align: inherit;">Développez une audience ciblée avec des centaines, des milliers ou des millions de personnes - à partir de zéro!</font>
+                      <font style="vertical-align: inherit;">Ce cours vous offre la chance de comprendre, de pratiquer et de développer vos compétences en tant qu'artiste des effets visuels, du temps et du mouvement.</font>
                     </font>
                   </h4>
                 </h4>
@@ -267,7 +261,7 @@
       <!---->
       <h2 style="font-size: 4rem;font-weight: 300;" _ngcontent-c47="" class="white ng-star-inserted">Développez cette compétence pour aujourd'hui et demain</h2>
       <!---->
-      <p _ngcontent-c47="" class="white ng-star-inserted"><span class="hidden-md-down">Ce parcours de Social Media Marketing  est conçu
+      <p _ngcontent-c47="" class="white ng-star-inserted"><span class="hidden-md-down">Ce parcours d'After Effects est conçu
         pour assurer votre succès à long terme sur le terrain. Les compétences acquises vous prépareront à des
         emplois dans le monde des médias sociaux, et vous serez prêt à apporter une valeur immédiate
         à toute organisation. Nous vous soutiendrons tout au long de votre parcours d'apprentissage.
@@ -324,16 +318,16 @@
     <!---->
     <div _ngcontent-c55="" class="nd-syllabus-term__card">
       <section _ngcontent-c55="" class="nd-syllabus-term__header collapse in">
-        <div _ngcontent-c55="" class="nd-syllabus-term__header__image" irdeferbgimage="" style="background-image: url(&quot;https://www.brafton.com/wp-content/uploads/2014/01/Social-Media-Marketing-Trends-350x350.jpg&quot;);">
+        <div _ngcontent-c55="" class="nd-syllabus-term__header__image" irdeferbgimage="" style="background-image: url(&quot;http://akcion.hu/projectSetup/couponImages/870-1510255276-8938.jpg&quot;);">
           <!---->
         </div>
         <div _ngcontent-c55="" class="nd-syllabus-term__header__content">
           <!---->
           <h6 _ngcontent-c55="" class="ng-star-inserted">PROGRAMME</h6>
-          <h2 _ngcontent-c55="" class="h3">Social Media Marketing</h2>
+          <h2 _ngcontent-c55="" class="h3">After Effects</h2>
           <!---->
-          <p _ngcontent-c55="" class="small hidden-md-down ng-star-inserted">Le programme de Social Media Marketing Junior
-            est composé de 7 projets. Avec chaque projet,
+          <p _ngcontent-c55="" class="small hidden-md-down ng-star-inserted">Le programme d'After Effects
+            est composé de 4 atéliers pratiques. Avec chaque atélier,
             vous allez créer quelque chose qui démontre votre maîtrise des compétences recherchées.
             La complexité des projets varie. En fin de compte,
             vous aurez un portefeuille de projets et un CV digne d'être aprréciés par des employeurs potentiels.</p>
@@ -361,10 +355,10 @@
               <!---->
               <h6 _ngcontent-c95="" class="mb-half ng-star-inserted">Outils requis</h6>
               <p _ngcontent-c95="" class="small mb-2 ng-star-inserted">
-                <!----><span _ngcontent-c95="" class="degree-syllabus-preview__content--term-prereq ng-star-inserted">Vous devez disposer d'un ordinateur portable ou d'un smartphone, et d'une bonne connexion Internet pour suivre cette formation</span>
+                <!----><span _ngcontent-c95="" class="degree-syllabus-preview__content--term-prereq ng-star-inserted">Vous devez disposer d'un ordinateur portable ou d'un smartphone et d'une connexion Internet pour suivre cette formation</span>
                 <!---->
                 <!---->
-                <!----><a _ngcontent-c95="" class="pointer ng-star-inserted">Voir les outils requis.</a>
+                <!----><!-- <a _ngcontent-c95="" class="pointer ng-star-inserted">Voir les outils requis.</a> -->
                 <!---->
               </p>
               <section _ngcontent-c95="" class="degree-syllabus-preview__content--parts">
@@ -377,10 +371,10 @@
                     <div _ngcontent-c95="" class="part">
                       <header _ngcontent-c95="" class="part__header mb-half">
                         <!---->
-                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted">Développer une stratégie de médias sociaux</h4>
+                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted">Introduction à la Formation</h4>
                         <!---->
                       </header>
-                      <p _ngcontent-c95="" class="small mb-half">Découvre comment mettre en place une stratégie de social media marketeur et quels sont les différents médias sociaux</p>
+                      <p _ngcontent-c95="" class="small mb-half">Dans cette partie nous présenterons la formation sur After Effects.</p>
                       <!---->
                       <!---->
                       <!---->
@@ -394,10 +388,10 @@
                     <div _ngcontent-c95="" class="part">
                       <header _ngcontent-c95="" class="part__header mb-half">
                         <!---->
-                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted">Ecoute et suivi des médias sociaux</h4>
+                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted">L'interface</h4>
                         <!---->
                       </header>
-                      <p _ngcontent-c95="" class="small mb-half">Développez des techniques d'écoutes des médias sociaux ainsi que des stratégies de compréhension de conversation de marque.</p>
+                      <p _ngcontent-c95="" class="small mb-half">Nous téléchargeront et installeront le logiciel After Effects et decouvir les différents menus (fichier, édition,compisition,calque,effet,animation,affichage), les outils,les préferences ainsi que les fenêtres projet,composition,montage et prévisualisation.</p>
                       <!---->
                       <!---->
                       <!---->
@@ -411,10 +405,10 @@
                     <div _ngcontent-c95="" class="part">
                       <header _ngcontent-c95="" class="part__header mb-half">
                         <!---->
-                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted">Construire une stratégie de contenu des médias sociaux</h4>
+                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted">Calques, Animation et Temps</h4>
                         <!---->
                       </header>
-                      <p _ngcontent-c95="" class="small mb-half">Le contenu étant l'épine dorsale de votre stratégie de social média, nous commencerons ici par vous montrer les bases de la création de contenu.
+                      <p _ngcontent-c95="" class="small mb-half">Nous verons comment importer un fichier,transformer les calques, les animer,la modification et le montage de  vidéos, la déformation temporelle, le remappage temporel.
                       </p>
                       <span _ngcontent-c95="" class="part__project text-only ng-star-inserted"><img _ngcontent-c95="" class="icon-middle" src="/img/page-parcours/icon-project.svg"><span
                           _ngcontent-c95="">Améliorez la page d'accueil d'un magazine</span></span>
@@ -425,10 +419,10 @@
                     <div _ngcontent-c95="" class="part">
                       <header _ngcontent-c95="" class="part__header mb-half">
                         <!---->
-                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted">Etendre votre portée </h4>
+                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted">Les masques </h4>
                         <!---->
                       </header>
-                      <p _ngcontent-c95="" class="small mb-half">Faites votre stratégie de communication au niveau supérieur, apprenez les différentes nuances du marketing d'influence et ainsi, vous pourrez travailler avec des influenceurs. </p>
+                      <p _ngcontent-c95="" class="small mb-half">Nous verrons comment créer des masques,le vignettage, l'animation des masques, le détourage d'un personnage en mouvement et les calques de forme. </p>
                       <!---->
                       <!---->
                       <!---->
@@ -442,11 +436,11 @@
                     <div _ngcontent-c95="" class="part">
                       <header _ngcontent-c95="" class="part__header mb-half">
                         <!---->
-                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted"> Etablissez des relations individuelles</h4>
+                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted"> Les effets</h4>
                         <!---->
                       </header>
                       <p _ngcontent-c95="" class="small mb-half">
-                       Vous saurez pourquoi l'engagement est au coeur de votre stratégie sociale, ainsi vous pourrez atteindre des objectifs commerciaux par la vente sociale.</p>
+                       Vous saurez comment par exemple créer des effets audio, de bruit et de grain, les effets caches, de correction colorimétrique, les effets couches, les effets de déformation, de temps.</p>
                       <!---->
                       <!---->
                       <!---->
@@ -456,6 +450,66 @@
                       <!---->
                     </div>
                   </li>
+
+                  <li _ngcontent-c95="" class="ng-star-inserted">
+                    <div _ngcontent-c95="" class="part">
+                      <header _ngcontent-c95="" class="part__header mb-half">
+                        <!---->
+                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted"> La 3D</h4>
+                        <!---->
+                      </header>
+                      <p _ngcontent-c95="" class="small mb-half">
+                       Avec la troisième dimension (3D), vous saurez entre autres comment utiliser la caméro 3D, faire des texte en 3D,utiliser les lumières, manipuler les couleurs et l'environnement.</p>
+                      <!---->
+                      <!---->
+                      <!---->
+                      <!----><span _ngcontent-c95="" class="part__project text-only ng-star-inserted"><img _ngcontent-c95="" class="icon-middle" src="/img/page-parcours/icon-project.svg"><span
+                          _ngcontent-c95="">Créez votre site personnel</span></span>
+                      <!---->
+                      <!---->
+                    </div>
+                  </li>
+
+ 				<li _ngcontent-c95="" class="ng-star-inserted">
+                    <div _ngcontent-c95="" class="part">
+                      <header _ngcontent-c95="" class="part__header mb-half">
+                        <!---->
+                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted"> Le suivi de mouvement et de stabilisation</h4>
+                        <!---->
+                      </header>
+                      <p _ngcontent-c95="" class="small mb-half">
+                       Vous serrez capable de faire du tracking 2D par la transformatiion, de faire la transformation en position, rotation et échelle et faire de la stabilisation et la déformation visuelle.</p>
+                      <!---->
+                      <!---->
+                      <!---->
+                      <!----><span _ngcontent-c95="" class="part__project text-only ng-star-inserted"><img _ngcontent-c95="" class="icon-middle" src="/img/page-parcours/icon-project.svg"><span
+                          _ngcontent-c95="">Créez votre site personnel</span></span>
+                      <!---->
+                      <!---->
+                    </div>
+                  </li>
+
+
+                  <li _ngcontent-c95="" class="ng-star-inserted">
+                    <div _ngcontent-c95="" class="part">
+                      <header _ngcontent-c95="" class="part__header mb-half">
+                        <!---->
+                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted"> Les atéliers pratiques</h4>
+                        <!---->
+                      </header>
+                      <p _ngcontent-c95="" class="small mb-half">
+                       Dans cette partie, nous passerons aux travaux pratiques sur différentes thématiques : Split screen dynamique, le texte tremblant,le motion design (Logo Hipster) et le time Freeze.</p>
+                      <!---->
+                      <!---->
+                      <!---->
+                      <!----><span _ngcontent-c95="" class="part__project text-only ng-star-inserted"><img _ngcontent-c95="" class="icon-middle" src="/img/page-parcours/icon-project.svg"><span
+                          _ngcontent-c95="">Créez votre site personnel</span></span>
+                      <!---->
+                      <!---->
+                    </div>
+                  </li>
+
+
                   <li _ngcontent-c95="" class="ng-star-inserted">
                     <div _ngcontent-c95="" class="part">
                       <header _ngcontent-c95="" class="part__header mb-half">
@@ -576,7 +630,7 @@
             <!---->
             <h6 _ngcontent-c101="" class="card__flag ng-star-inserted">Abonnement</h6>
             <div _ngcontent-c101="" class="card--pricing__header">
-              <h5 _ngcontent-c101="">Développeur Web</h5>
+              <h5 _ngcontent-c101="">After Effects</h5>
               <!---->
               <div _ngcontent-c101="" class="card__price ng-star-inserted">
                 <!----><span _ngcontent-c101="" class="card__price--current">30.000 FCFA / mois
@@ -630,6 +684,71 @@
 </section>
 
 <!--fin section prix-->
+
+
+<!--section appel a l'action-->
+
+<section _ngcontent-c18="" class="ng-star-inserted">
+    <ir-nd-bottom-cta-section _ngcontent-c18="" _nghost-c77="">
+        <div _ngcontent-c77="" class="nd-bottom-cta-container">
+            <div _ngcontent-c77="" class="nd-bottom-cta-content">
+                <!---->
+                <h4 _ngcontent-c77="" class="h2 nd-bottom-cta-content__title ng-star-inserted">
+                    <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">Maîtrisez les techniques plus avancées que vous offre After Effects et libérez votre créativité</font>
+                    </font>
+                </h4>
+                <!---->
+                <p _ngcontent-c77="" class="nd-bottom-cta-content__subtitle ng-star-inserted">
+                    <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">Construisez-vous un excellent portfolio en réalisant des projets de la vie réelle.</font>
+                    </font>
+                </p>
+                <div _ngcontent-c77="" class="nd-bottom-cta-content__btn-wrapper">
+                    <!---->
+                    <!---->
+                    <!---->
+                    <!---->
+                    <!---->
+                    <ir-nanodegree-enroll-button-in _ngcontent-c77="" _nghost-c83="" class="ng-star-inserted">
+                        <!---->
+                        <!---->
+                        <!---->
+                        <!---->
+                        <!---->
+                        <!---->
+                        <!---->
+                        <!---->
+                        <!---->
+                        <!---->
+                        <!----><a _ngcontent-c83="" class="home_button" href="#payment">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Inscrivez-vous maintenant </font>
+                            </font>
+                        </a>
+                        <!---->
+                        <!---->
+                    </ir-nanodegree-enroll-button-in>
+                    <!---->
+                    <!---->
+                </div>
+            </div>
+        </div>
+        <ir-request-syllabus-modal _ngcontent-c77="" _nghost-c88="">
+            <ir-modal _ngcontent-c88="" _nghost-c11="" class="ng-tns-c11-5">
+                <div _ngcontent-c11="" class="wrapper">
+                    <!---->
+                    <!---->
+                </div>
+            </ir-modal>
+        </ir-request-syllabus-modal>
+    </ir-nd-bottom-cta-section>
+</section>
+
+<!--fin section appel a l'action-->
+
+
+
 
 <div id="modalSignUp" class="modal full-page-modal" tabindex="-1" role="dialog" aria-hidden="false">
   <!-- <button type="button" class="modal-action-btn action-left back-to-signin" style="opacity: 0;"><i class="ion-ios-arrow-back"></i></button> -->

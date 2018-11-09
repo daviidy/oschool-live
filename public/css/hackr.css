@@ -30030,7 +30030,9 @@ p.username-error-block {
 
 .c-how__headingRight img {
   width: 100%;
-  height: auto
+  height: auto;
+  position: relative;
+  top: -100px;
 }
 
 .c-how__section {
