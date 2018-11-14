@@ -148,6 +148,10 @@ Route::get('/photoshop', function () {
     return view('formations.parcours-photoshop');
 })->name('photoshop');
 
+Route::get('/after-effects', function () {
+    return view('formations.parcours-after-effects');
+})->name('photoshop');
+
 Route::get('/python', function () {
     return view('formations.python');
 })->name('python');
@@ -180,9 +184,9 @@ Route::get('/ecoledatascience', function () {
     return view('formations.ecoledatascience');
 });
 
-Route::get('/factures', function () {
-    return view('users.factures');
-});
+Route::get('/factures', 'UserController@factures');
+
+Route::post('/moisFactures', 'UserController@moisFactures');
 
 
 Route::get('/documentsTeacher', 'UserController@documentsTeacher')->name('documentsTeacher');

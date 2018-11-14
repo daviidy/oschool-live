@@ -24,6 +24,11 @@
   <link href="/dashboard/css/style-responsive.css" rel="stylesheet">
   <script src="/dashboard/lib/chart-master/Chart.js"></script>
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.7.5/css/bootstrap-select.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.7.5/js/bootstrap-select.min.js"></script>
+
+
   <!-- =======================================================
     Template Name: Dashio
     Template URL: https://templatemag.com/dashio-bootstrap-admin-template/
@@ -101,7 +106,7 @@
             <ul class="dropdown-menu extended notification">
               <div class="notify-arrow notify-arrow-yellow"></div>
               <li>
-                <p class="yellow">Vous avez une nouvellenotification</p>
+                <p class="yellow">Vous avez une nouvelle notification</p>
               </li>
               <li>
                 <a href="#" data-toggle="modal" data-target="#myModal">
@@ -161,31 +166,16 @@
               <span>Forum des étudiants</span>
               </a>
           </li>
-          @auth
-          @if(Auth::user()->isTeacher())
-          <li class="sub-menu">
-            <a href="javascript:;">
-              <i class="fa fa-desktop"></i>
-              <span>Outils pédagogiques</span>
+          @if(!Auth::user()->isAdmin() && count(Auth::user()->formations))
+          <li class="mt">
+            <a href="{{route('classrooms.index')}}">
+              <i class="fa fa-dashboard"></i>
+              <span>Mes sessions</span>
               </a>
-            <ul class="sub">
-              <li>
-
-                <a  style="border-radius:8px; color: green;" class="logout" href="{{ route('classrooms.create') }}">
-                    Planifier une session
-                </a>
-
-              </li>
-              <li>
-
-                <a data-toggle="modal" data-target="#popup" style="border-radius:8px; color: #F36A10;" class="logout" href="{{ route('progressions.create') }}">
-                    Marquer une progression
-                </a>
-
-              </li>
-            </ul>
           </li>
           @endif
+
+          @auth
 
           @if(Auth::user()->isAdmin())
           <li class="sub-menu">
@@ -265,14 +255,7 @@
           @endif
 
 
-          @if(!Auth::user()->isAdmin() && count(Auth::user()->formations))
-          <li class="mt">
-            <a href="{{route('classrooms.index')}}">
-              <i class="fa fa-dashboard"></i>
-              <span>Mes sessions</span>
-              </a>
-          </li>
-          @endif
+
           @if(Auth::user()->isTeacher())
           <li class="mt">
             <a href="/factures">

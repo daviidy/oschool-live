@@ -11,7 +11,23 @@
 @if(Auth::user()->isTeacher())
 <section id="main-content">
   <section class="wrapper">
-    <img width="300" src="/dashboard/img/classroom.png" alt="">
+    <div class="row">
+
+      <div class="col-lg-4 col-xs-12">
+        <img width="300" src="/dashboard/img/classroom.png" alt="">
+      </div>
+
+      <div class="col-lg-4 col-xs-12">
+        <div style="height:auto;" class="home_button"><a style="line-height:20px;" href="{{ route('classrooms.create') }}">Planifier une session</a></div>
+      </div>
+
+      <div class="col-lg-4 col-xs-12">
+        <div style="height:auto; background:#F55F44;" class="home_button"><a style="line-height:20px;" href="{{ route('progressions.create') }}">Marquer une progression</a></div>
+      </div>
+
+
+    </div>
+
     <h3><i class="fa fa-angle-right"></i> Liste de vos sessions</h3>
     <div class="row mt">
       <div class="col-lg-12">

@@ -98,7 +98,7 @@ class AchatController extends Controller
                         'cpm_page_action' => 'PAYMENT',
                         'cpm_version' => 'V1',
                         'cpm_language' => 'fr',
-                        'cpm_designation' => 'Achat Oschool Live',
+                        'cpm_designation' => 'Achat Parcours Oschool',
                         'apikey' => '134714631658c289ed716950.86091611',
                         );
         $url = "https://api.cinetpay.com/v1/?method=getSignatureByPost";
@@ -186,7 +186,7 @@ class AchatController extends Controller
                         'cpm_page_action' => 'PAYMENT',
                         'cpm_version' => 'V1',
                         'cpm_language' => 'fr',
-                        'cpm_designation' => 'Achat Oschool Live',
+                        'cpm_designation' => 'Achat Parcours Oschool',
                         'apikey' => '134714631658c289ed716950.86091611',
                         );
         $url = "https://api.cinetpay.com/v1/?method=getSignatureByPost";

@@ -24,6 +24,9 @@ class ProgressionController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
+     //formulaire pour afficher le formulaire pour
+     //marquer une progression
     public function create()
     {
       if (Auth::check() && Auth::user()->isTeacher() && Auth::user()->formations()) {
@@ -37,6 +40,9 @@ class ProgressionController extends Controller
         return redirect('home');
       }
     }
+
+    //fonction qui redirige le prof vers le bon formulaire
+    //en fonction de la formation qu'il a
 
     public function progression(Request $request)
     {
