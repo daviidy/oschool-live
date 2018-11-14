@@ -319,14 +319,14 @@
 						</div>
 					</div>
 
-					<h3>Statut</h3>
-
-					<div class="wrap-contact100-form-radio">
-						<div class="contact100-form-radio m-t-15">
-							<input class="input-radio100" id="radio4" type="radio" name="statut" value="A revoir" checked="checked">
-							<label class="label-radio100" for="radio4">
-								A revoir
-							</label>
+					<div class="wrap-input100 input100-select bg1">
+						<span class="label-input100">Statut</span>
+						<div>
+							<select class="js-select3" name="statut">
+							   <option value="Validé">Validé</option>
+								 <option value="A revoir">A revoir</option>
+							</select>
+							<div class="dropDownSelect3"></div>
 						</div>
 					</div>
 
