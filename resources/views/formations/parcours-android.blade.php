@@ -648,6 +648,7 @@
             <div _ngcontent-c101="" class="card__triangle"></div>
             <!---->
             <h6 _ngcontent-c101="" class="card__flag ng-star-inserted">Offre #2</h6>
+            <h3 _ngcontent-c101="" style="margin-top: 3rem;color: orange;background: #EAEAEA;" class="card__flag ng-star-inserted">La plus vendue</h3>
             <div _ngcontent-c101="" class="card--pricing__header">
               <h5 _ngcontent-c101="">Développeur Web</h5>
               <!---->
