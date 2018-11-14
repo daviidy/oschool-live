@@ -10,6 +10,7 @@ use App\Classroom;
 use App\Progression;
 use App\Formation;
 use Mail;
+use DB;
 
 class UserController extends Controller
 {
@@ -38,6 +39,34 @@ class UserController extends Controller
         $formations = Formation::orderby ('id','asc')->paginate(30);
         return view('accueil', ['formations' => $formations]);
 
+    }
+
+    //fonction pour voir la page factures (ou on demandera au prof de choisir un mois
+    //et une annee)
+    public function factures(Request $request)
+
+    {
+      if (Auth::check() && Auth::user()->isTeacher()) {
+        return view('users.factures');
+      }
+      else {
+        return redirect('home');
+      }
+
+    }
+
+
+    //fonction pour voir la page facturation du professeur
+    public function moisFactures(Request $request)
+
+    {
+      //on récupere le mois et l'annee choisi par le prof, et on les caste en entier
+      //ensuite on selectionne toutes les sessions du mois, de l'annee et appartenant
+      //au prof
+      $mois = (int)$request['month'];
+      $an = (int)$request['year'];
+      $classrooms = Classroom::whereMonth('date', '=', $mois)->whereYear('date', '=', $an)->where('user_id', Auth::user()->id)->get();
+      return view('users.moisFactures', ['classrooms' => $classrooms, 'mois' => $mois, 'an' => $an]);
     }
 
     //montrer les guides formateurs aux formateurs

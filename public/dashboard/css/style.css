@@ -15,6 +15,41 @@ Website: http://Alvarez.is/
 @import url(http://fonts.googleapis.com/css?family=Ruda:400,700,900);
 
 /* BASIC THEME CONFIGURATION */
+
+
+.home_button
+{
+	width: 225px;
+	height: 43px;
+	background: #4D90CC;
+	text-align: center;
+	border-radius: 3px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+}
+.home_button:hover
+{
+	box-shadow: 0px 10px 40px rgba(0,0,0,0.3);
+}
+.home_button a
+{
+	display: block;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 12px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	font-weight: 600;
+	line-height: 43px;
+	letter-spacing: 0.3em;
+}
+
+.blind{
+vertical-align: top;
+
+}
+
+
 body {
     color: #797979;
 	background: #eaeaea;

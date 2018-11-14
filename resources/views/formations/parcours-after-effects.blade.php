@@ -1,24 +1,26 @@
 @extends('layouts.menu-parcours')
 
-@section('title', 'Apprendre l\'Anglais avec un tuteur en ligne')
+@section('title', 'After Effects')
 
 @section('content')
 
-  <div class="container alt section-space">
+   <div class="container alt section-space">
     <div class="row c-how__heading align-row">
       <div class="col-xs-12 col-sm-6 c-how__headingLeft">
         <!-- <h2 class="h2 u-bold text-primary">Hack & Learn <em>React</em></h2> -->
-        <h1 class="h2 u-bold">Apprenez l'Anglais avec des tuteurs en ligne</h1>
-        <p class="u-margin-t-md subHeading">Maitrisez cette langue et ouvrez vous les portes de l'international</p>
+        <h1 class="h2 u-bold">Devenez un expert sur After Effects, avec un formateur dédié en télé présentiel</h1>
+        <p class="u-margin-t-md subHeading">Du débutant au professionnel rémunéré.<br>
+				Dédiée aux grands débutants, cette formation vous permettra de devenir totalement autonome et un expert du Motion Design, des trucages numériques et de l'animation.</p>
         <a class="home_button" href="#payment">
           Inscrivez-vous maintenant
         </a>
         <p class="u-margin-t-md subHeading">
-          Suivez des leçons individuelles dispensées par des professeurs de la langue et rejoignez une communauté de centaine de personnes étudiant l'Anglais.
+           Créer des animations incroyables comme une scène de STAR WARS en 3D ou encore l'outro des dessins animés Looney Tunes!
+
         </p>
       </div>
       <div class="col-xs-12 col-sm-6 c-how__headingRight">
-        <img src="/img/page-parcours/anglais4.svg" />
+        <img src="https://uploads-ssl.webflow.com/5b5554ec45c6a346364b3a75/5b6155306d61a022359d830f_5b44330a05b1ce09edcc052e_home_designer.png" />
       </div>
     </div>
   </div>
@@ -71,8 +73,8 @@
     </ir-modal>
     <h6 class="details" _ngcontent-c29="" class="ng-star-inserted">Prérequis</h6>
     <!---->
-    <h5 _ngcontent-c29="" class="ng-star-inserted">Un terminal ayant accès à Internet</h5>
-    <p _ngcontent-c29="" class="x-small ng-star-inserted"><a href="https://drive.google.com/open?id=1ihKHmukvYioQ6VfS_eaqSuIq4gOgnxcA" target="_blank" _ngcontent-c29="">Voir les prérequis en détail</a></p>
+    <h5 _ngcontent-c29="" class="ng-star-inserted">Un ordinateur  avec connexion internet</h5>
+   <!--  <p _ngcontent-c29="" class="x-small ng-star-inserted"><a _ngcontent-c29="">Voir les prérequis en détail</a></p> -->
     <!---->
     <!---->
   </li>
@@ -83,10 +85,10 @@
     <!---->
     <h6 class="details" _ngcontent-c29="" class="ng-star-inserted">Langue</h6>
     <!---->
-    <h5 _ngcontent-c29="" class="ng-star-inserted">Anglais</h5>
+    <h5 _ngcontent-c29="" class="ng-star-inserted">Francais</h5>
     <!---->
-    <!--
-    <p _ngcontent-c29="" class="x-small ng-star-inserted">Découvrir les matériels requis pour suivre la formation</p>
+    <!---->
+   <!--  <p _ngcontent-c29="" class="x-small ng-star-inserted">Découvrir les matériels requis pour suivre la formation</p> -->
     <!---->
     <!---->
     <!---->
@@ -99,13 +101,10 @@
 
 
 
-
-
-
   <div class="container alt section-space">
     <div class="row">
       <div class="col-xs-12 text-center">
-        <h3 class="h3 u-bold text-center u-margin-b-sm">Suivez le parcours Apprendre l'anglais, pour obtenir un job, préparer un examen, obtenir une bourse, ou pour le plaisir.</h3>
+        <h3 class="h3 u-bold text-center u-margin-b-sm">Suivez le parcours certifiant d'After Effects et démarrez une nouvelle carrière.</h3>
         <div class="c-browser">
           <div class="c-browser__chrome">
             <div class="c-browser__buttons">
@@ -115,7 +114,7 @@
             </div>
           </div>
           <div class="c-browser__image">
-            <img src="/img/page-parcours/anglais2.gif" />
+            <img src="https://assets.rocketstock.com/uploads/AE-Post-Featured-Image-1000x576.jpg" />
           </div>
         </div>
 
@@ -124,15 +123,7 @@
           <div class="col-xs-12 col-sm-6">
             <div style="text-align: left !important;" class="c-how__sectionContent">
               <h4 class="h4 u-bold">Pourquoi suivre ce parcours ?</h4>
-              <p class="u-margin-t-md subHeading">L’anglais s’est établi comme la langue de l’international
-                par excellence. Si vous voyagez à l’étranger, que vous vous installez dans un pays non
-                francophone, que vous vivez dans un environnement multiculturel, l’anglais est très
-                souvent un terrain linguistique partagé. Dans le contexte mondial actuel,
-                où l’information passe de plus en plus par Internet, où les échanges
-                s’accélèrent sans s’arrêter aux frontières, où le commerce international
-                s’intensifie, il devient difficile de faire l’impasse sur l’anglais.
-                Cette langue est devenue une condition de recrutement pour beaucoup d’entreprises,
-                voire, chez certaines, la langue de travail. Ce serait dommage de gâcher vos chances !</p>
+              <p class="u-margin-t-md subHeading">Pourquoi After Effects ? Le Motion Graphics et les effets visuels deviennent de plus en plus précieux et important dans toute vidéo créée. Apprendre à créer ces animations en utilisant  After Effects est devenu essentiel. Les talents pour créer ce genre d'animations et d'effets sont de plus en plus demandés dans différents domaines (cinéma, vidéos Youtube, sociétés d'animation...).</p>
             </div>
           </div>
           <div _ngcontent-c33="" class="col-xs-12 col-sm-6 stat ng-star-inserted">
@@ -142,7 +133,7 @@
                 <h4 _ngcontent-c33="" class="light ng-star-inserted">
                   <h4 class="light">
                     <font style="vertical-align: inherit;">
-                      <font style="vertical-align: inherit;">L'Anglais est devenue une condition de recrutement pour beaucoup d’entreprises</font>
+                      <font style="vertical-align: inherit;">Ce cours vous offre la chance de comprendre, de pratiquer et de développer vos compétences en tant qu'artiste des effets visuels, du temps et du mouvement.</font>
                     </font>
                   </h4>
                 </h4>
@@ -171,7 +162,7 @@
       <div class="col-xs-12 col-sm-6">
         <div class="c-how__section">
           <div class="c-how__sectionImages">
-            <img src="/img/page-parcours/anglais5.gif" />
+            <img src="/img/page-parcours/feature1.png" />
           </div>
         </div>
       </div>
@@ -183,15 +174,32 @@
         </div>
               <h4>
                 <font style="vertical-align: inherit;">
-                  <font style="vertical-align: inherit;">Recevez un professeur</font>
+                  <font style="vertical-align: inherit;">Apprenez chaque semaine en télé présentiel, avec un formateur dédié.</font>
                 </font>
               </h4>
               <p style="margin-bottom: 5rem;">
                 <font style="vertical-align: inherit;">
-                  <font style="vertical-align: inherit;">Après inscription, nous vous attribuons un formateur qui prendra contact immédiatement avec vous.</font>
+                  <font style="vertical-align: inherit;">Votre formateur se fera un plaisir de vous dispenser les cours, selon ton emploi du temps, et ce, peu importe où vous êtes, du moment où vous avez l'accès Internet. </font>
+                  <font style="vertical-align: inherit;">Des experts examineront votre travail et vous fourniront des commentaires concrets pour vous aider à progresser avec succès dans le programme.</font>
                 </font>
               </p>
+              <div class="text-center">
+                <img alt="Construire un portefeuille de CV Digne de projets" src="/img/page-parcours/talk.svg"
+                    srcset="/img/page-parcours/talk.svg 1x">
+              </div>
 
+              <h4>
+                <font style="vertical-align: inherit;">
+                  <font style="vertical-align: inherit;">Construisez un portfolio en réalisant des projets de la vie réelle</font>
+                </font>
+              </h4>
+              <!---->
+              <p class="ng-star-inserted">
+                <font style="vertical-align: inherit;">
+                  <font style="vertical-align: inherit;">Vous construirez de vrais projets démontrant votre maîtrise des compétences enseignées. Ces projets constitueront un portefeuille pouvant être partagé avec des employeurs potentiels. </font>
+                  <font style="vertical-align: inherit;">Nos partenaires d'embauche examinent régulièrement ces portefeuilles lorsqu'ils recherchent des candidats qualifiés.</font>
+                </font>
+              </p>
             </div>
           </div>
 
@@ -204,56 +212,41 @@
               </div>
                     <h4>
                       <font style="vertical-align: inherit;">
-                        <font style="vertical-align: inherit;">Fixer une date et une heure</font>
+                        <font style="vertical-align: inherit;">Réalisez les projets de la formation et soumettez-les</font>
                       </font>
                     </h4>
                     <p style="margin-bottom: 5rem;">
                       <font style="vertical-align: inherit;">
-                        <font style="vertical-align: inherit;">Choisissez le jour et l'heure qui vous conviennent.</font>
+                        <font style="vertical-align: inherit;">Vous rejoindrez une communauté dynamique d'apprenants engagés dans une expérience d'apprentissage intensive et productive de plusieurs mois. </font>
+                        <font style="vertical-align: inherit;">Vous allez donner et recevoir un soutien, établir des liens et rester au courant des tendances dans votre domaine. Nos diplômés citent régulièrement la communauté comme l'une des caractéristiques les plus précieuses de leur expérience dans le programme de formation Oschool.</font>
                       </font>
                     </p>
+                    <div class="text-center">
+                      <img alt="Construire un portefeuille de CV Digne de projets" src="/img/page-parcours/members.svg"
+                          srcset="/img/page-parcours/members.svg 1x">
+                    </div>
 
+                    <h4>
+                      <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">Accès à la communauté dynamique Oschool</font>
+                      </font>
+                    </h4>
+                    <!---->
+                    <p class="ng-star-inserted">
+                      <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">Vous construirez de vrais projets démontrant votre maîtrise de vos compétences. Ces projets constitueront un portefeuille pouvant être partagé avec des employeurs potentiels. </font>
+                        <font style="vertical-align: inherit;">Nos partenaires d'embauche examinent régulièrement ces portefeuilles lorsqu'ils recherchent des candidats qualifiés.</font>
+                      </font>
+                    </p>
                   </div>
                   <div class="col-xs-12 col-sm-6">
                     <div class="c-how__section">
                       <div class="c-how__sectionImages">
-                        <img src="/img/page-parcours/anglais6.gif" />
+                        <img src="/img/page-parcours/feature2.png" />
                       </div>
                     </div>
                   </div>
                 </div>
-
-
-                <div class="row u-margin-t-xxx-lg align-row">
-                  <div class="col-xs-12 col-sm-6">
-                    <div class="c-how__section">
-                      <div class="c-how__sectionImages">
-                        <img src="/img/page-parcours/anglais2.gif" />
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-xs-12 col-sm-6">
-                    <div class="text-center">
-                      <img alt="Soutien aux mentors et révision du code professionnel" src="/img/page-parcours/video.svg"
-                              srcset="/img/page-parcours/video.svg 1x">
-
-                    </div>
-                          <h4>
-                            <font style="vertical-align: inherit;">
-                              <font style="vertical-align: inherit;">Connectez-vous et apprenez</font>
-                            </font>
-                          </h4>
-                          <p style="margin-bottom: 5rem;">
-                            <font style="vertical-align: inherit;">
-                              <font style="vertical-align: inherit;">Suivez chaque semaine votre leçon sur Skype ou par le biais de tout autre logiciel de communication vidéo.</font>
-                            </font>
-                          </p>
-
-                        </div>
-                      </div>
-
-
-
         </div>
       </div>
     </div>
@@ -268,29 +261,30 @@
       <!---->
       <h2 style="font-size: 4rem;font-weight: 300;" _ngcontent-c47="" class="white ng-star-inserted">Développez cette compétence pour aujourd'hui et demain</h2>
       <!---->
-      <p _ngcontent-c47="" class="white ng-star-inserted"><span class="hidden-md-down">Ce parcours d'apprentissage de l'Anglais est conçu
+      <p _ngcontent-c47="" class="white ng-star-inserted"><span class="hidden-md-down">Ce parcours d'After Effects est conçu
         pour assurer votre succès à long terme sur le terrain. Les compétences acquises vous prépareront à des
-        emplois dans le monde professionnel, et vous serez prêt à apporter une valeur immédiate
+        emplois dans le monde des médias sociaux, et vous serez prêt à apporter une valeur immédiate
         à toute organisation. Nous vous soutiendrons tout au long de votre parcours d'apprentissage.
-        </span></p>
+        De l'acquisition des compétences techniques et professionnelles précieuses,
+        jusqu'à l'obtention de l'emploi de vos rêves.</span></p>
     </div>
     <div _ngcontent-c47="" class="feature-card mb-4 ng-star-inserted">
       <!---->
       <div _ngcontent-c47="" class="card ng-star-inserted">
         <div _ngcontent-c47="" class="line bg-turquoise"></div>
         <!---->
-        <h5 _ngcontent-c47="" class="title mb-1 ng-star-inserted"><span class="hidden-md-down">Apprentissage personnalisé</span><span class="hidden-lg-up">Apprentissage personnalisé</span></h5>
+        <h5 _ngcontent-c47="" class="title mb-1 ng-star-inserted"><span class="hidden-md-down">Rencontrez nos partenaires d'embauche</span><span class="hidden-lg-up">Rencontrez nos partenaires d'embauche</span></h5>
         <!---->
-        <p _ngcontent-c47="" class="x-small ng-star-inserted"><span class="hidden-md-down">Suivez des leçons individuelles en accord avec vos objectifs et vos centres d'intérêt.</span>
-          <span class="hidden-lg-up">Suivez des leçons individuelles en accord avec vos objectifs et vos centres d'intérêt.</span></p>
+        <p _ngcontent-c47="" class="x-small ng-star-inserted"><span class="hidden-md-down">Les développeurs Web front-end sont en forte demande. Créez votre portefeuille professionnel avec Oschool et ouvrez un monde d'opportunités. Nos partenaires d'embauche sont impatients de vous rencontrer.</span>
+          <span class="hidden-lg-up">Les développeurs Web front-end sont en forte demande. Créez votre portefeuille professionnel avec Oschool et ouvrez un monde d'opportunités. Nos partenaires d'embauche sont impatients de vous rencontrer.</span></p>
       </div>
       <div _ngcontent-c47="" class="card ng-star-inserted">
         <div _ngcontent-c47="" class="line bg-magenta"></div>
         <!---->
-        <h5 _ngcontent-c47="" class="title mb-1 ng-star-inserted"><span class="hidden-md-down">N’importe où, n’importe quand</span><span class="hidden-lg-up">N’importe où, n’importe quand</span></h5>
+        <h5 _ngcontent-c47="" class="title mb-1 ng-star-inserted"><span class="hidden-md-down">Réussir avec les recruteurs</span><span class="hidden-lg-up">Réussir avec les recruteurs</span></h5>
         <!---->
-        <p _ngcontent-c47="" class="x-small ng-star-inserted"><span class="hidden-md-down">Suivez des leçons en ligne quand et où vous le souhaitez.</span>
-        <span class="hidden-lg-up">Suivez des leçons en ligne quand et où vous le souhaitez.</span></p>
+        <p _ngcontent-c47="" class="x-small ng-star-inserted"><span class="hidden-md-down">Travaillez avec des professionnels expérimentés pour obtenir des conseils personnalisés sur la manière d’améliorer votre recherche et d’impressionner les recruteurs. Nous vous aidons à peaufiner votre compte LinkedIn et votre CV.</span>
+        <span class="hidden-lg-up">Travaillez avec des professionnels expérimentés pour obtenir des conseils personnalisés sur la manière d’améliorer votre recherche et d’impressionner les recruteurs. Nous vous aidons à peaufiner votre compte LinkedIn et votre CV.</span></p>
       </div>
       <div _ngcontent-c47="" class="card ng-star-inserted">
         <div _ngcontent-c47="" class="line bg-purple"></div>
@@ -317,28 +311,31 @@
     <!---->
     <!---->
     <!---->
-    <!----><a _ngcontent-c55="" class="button--secondary lg syllabus-download-button ng-star-inserted" target="_blank" href="https://docs.google.com/spreadsheets/d/1A7JIYcWvM_6oQ44ykW_5pDofQVzc_fekCzf_FrMSN1Y/edit?usp=sharing">
+    <!----><a _ngcontent-c55="" class="button--secondary lg syllabus-download-button ng-star-inserted" target="_blank" href="https://s3.amazonaws.com/video.udacity-data.com/topher/2018/June/5b189d8e_fend-syllabus-9.0.0/fend-syllabus-9.0.0.pdf">
     Télécharger le programme
     </a>
     <!---->
     <!---->
     <div _ngcontent-c55="" class="nd-syllabus-term__card">
       <section _ngcontent-c55="" class="nd-syllabus-term__header collapse in">
-        <div _ngcontent-c55="" class="nd-syllabus-term__header__image" irdeferbgimage="" style="background-image: url(&quot;https://images.unsplash.com/photo-1524326192993-7e93bba833f7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=49bd79e5c53816a6fa3bfaa649a4baf7&auto=format&fit=crop&w=334&q=80&quot;);">
+        <div _ngcontent-c55="" class="nd-syllabus-term__header__image" irdeferbgimage="" style="background-image: url(&quot;http://akcion.hu/projectSetup/couponImages/870-1510255276-8938.jpg&quot;);">
           <!---->
         </div>
         <div _ngcontent-c55="" class="nd-syllabus-term__header__content">
           <!---->
           <h6 _ngcontent-c55="" class="ng-star-inserted">PROGRAMME</h6>
-          <h2 _ngcontent-c55="" class="h3">Apprendre l'Anglais</h2>
+          <h2 _ngcontent-c55="" class="h3">After Effects</h2>
           <!---->
-          <p _ngcontent-c55="" class="small hidden-md-down ng-star-inserted">Le programme d'apprentissage de l'Anglais
-            est composé de 6 sections. Avec chaque section, vous apprendrez à manier la langue dans les domaines les
-          plus courants de la vie.</p>
+          <p _ngcontent-c55="" class="small hidden-md-down ng-star-inserted">Le programme d'After Effects
+            est composé de 4 atéliers pratiques. Avec chaque atélier,
+            vous allez créer quelque chose qui démontre votre maîtrise des compétences recherchées.
+            La complexité des projets varie. En fin de compte,
+            vous aurez un portefeuille de projets et un CV digne d'être aprréciés par des employeurs potentiels.</p>
           <!---->
-          <p _ngcontent-c55="" class="small hidden-lg-up ng-star-inserted">Le programme d'apprentissage de l'Anglais
-            est composé de 6 sections. Avec chaque section, vous apprendrez à manier la langue dans les domaines les
-          plus courants de la vie.</p>
+          <p _ngcontent-c55="" class="small hidden-lg-up ng-star-inserted">Le programme After Effects
+            est composé de sept projets. Avec chaque projet,
+            vous allez créer quelque chose qui démontre votre maîtrise des compétences recherchées.
+            La complexité des projets varie.</p>
           <!---->
           <!---->
           <!---->
@@ -358,10 +355,10 @@
               <!---->
               <h6 _ngcontent-c95="" class="mb-half ng-star-inserted">Outils requis</h6>
               <p _ngcontent-c95="" class="small mb-2 ng-star-inserted">
-                <!----><span _ngcontent-c95="" class="degree-syllabus-preview__content--term-prereq ng-star-inserted">Vous devez disposer d'un ordinateur portable, et d'une bonne connexion Internet pour suivre cette formation</span>
+                <!----><span _ngcontent-c95="" class="degree-syllabus-preview__content--term-prereq ng-star-inserted">Vous devez disposer d'un ordinateur portable ou d'un smartphone et d'une connexion Internet pour suivre cette formation</span>
                 <!---->
                 <!---->
-                <!----><a _ngcontent-c95="" class="pointer ng-star-inserted">Voir les outils requis.</a>
+                <!----><!-- <a _ngcontent-c95="" class="pointer ng-star-inserted">Voir les outils requis.</a> -->
                 <!---->
               </p>
               <section _ngcontent-c95="" class="degree-syllabus-preview__content--parts">
@@ -374,9 +371,10 @@
                     <div _ngcontent-c95="" class="part">
                       <header _ngcontent-c95="" class="part__header mb-half">
                         <!---->
-                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted">Section 1: VOCABULAIRE</h4>
+                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted">Introduction à la Formation</h4>
                         <!---->
                       </header>
+                      <p _ngcontent-c95="" class="small mb-half">Dans cette partie nous présenterons la formation sur After Effects.</p>
                       <!---->
                       <!---->
                       <!---->
@@ -390,14 +388,15 @@
                     <div _ngcontent-c95="" class="part">
                       <header _ngcontent-c95="" class="part__header mb-half">
                         <!---->
-                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted">Section 2: GRAMMAIRE</h4>
+                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted">L'interface</h4>
                         <!---->
                       </header>
+                      <p _ngcontent-c95="" class="small mb-half">Nous téléchargeront et installeront le logiciel After Effects et decouvir les différents menus (fichier, édition,compisition,calque,effet,animation,affichage), les outils,les préferences ainsi que les fenêtres projet,composition,montage et prévisualisation.</p>
                       <!---->
                       <!---->
                       <!---->
                       <!----><span _ngcontent-c95="" class="part__project text-only ng-star-inserted"><img _ngcontent-c95="" class="icon-middle" src="/img/page-parcours/icon-project.svg"><span
-                          _ngcontent-c95="">Projet/Exercice</span></span>
+                          _ngcontent-c95="">Projet</span></span>
                       <!---->
                       <!---->
                     </div>
@@ -406,13 +405,13 @@
                     <div _ngcontent-c95="" class="part">
                       <header _ngcontent-c95="" class="part__header mb-half">
                         <!---->
-                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted">Section 3: PRONONCIATION</h4>
+                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted">Calques, Animation et Temps</h4>
                         <!---->
                       </header>
-
+                      <p _ngcontent-c95="" class="small mb-half">Nous verons comment importer un fichier,transformer les calques, les animer,la modification et le montage de  vidéos, la déformation temporelle, le remappage temporel.
                       </p>
                       <span _ngcontent-c95="" class="part__project text-only ng-star-inserted"><img _ngcontent-c95="" class="icon-middle" src="/img/page-parcours/icon-project.svg"><span
-                          _ngcontent-c95="">Projet/Exercice</span></span>
+                          _ngcontent-c95="">Projet</span></span>
                       <!---->
                     </div>
                   </li>
@@ -420,14 +419,15 @@
                     <div _ngcontent-c95="" class="part">
                       <header _ngcontent-c95="" class="part__header mb-half">
                         <!---->
-                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted">Section 4: ARGUMENTATION</h4>
+                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted">Les masques </h4>
                         <!---->
                       </header>
+                      <p _ngcontent-c95="" class="small mb-half">Nous verrons comment créer des masques,le vignettage, l'animation des masques, le détourage d'un personnage en mouvement et les calques de forme. </p>
                       <!---->
                       <!---->
                       <!---->
                       <!----><span _ngcontent-c95="" class="part__project text-only ng-star-inserted"><img _ngcontent-c95="" class="icon-middle" src="/img/page-parcours/icon-project.svg"><span
-                          _ngcontent-c95="">Projet/Exercice</span></span>
+                          _ngcontent-c95="">Projet</span></span>
                       <!---->
                       <!---->
                     </div>
@@ -436,31 +436,94 @@
                     <div _ngcontent-c95="" class="part">
                       <header _ngcontent-c95="" class="part__header mb-half">
                         <!---->
-                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted">Section 5: RÉUNION (vocabulaire spécifique au monde professionnel)</h4>
+                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted"> Les effets</h4>
                         <!---->
                       </header>
+                      <p _ngcontent-c95="" class="small mb-half">
+                       Vous saurez comment par exemple créer des effets audio, de bruit et de grain, les effets caches, de correction colorimétrique, les effets couches, les effets de déformation, de temps.</p>
+                      <!---->
+                      <!---->
+                      <!---->
+                      <!----><span _ngcontent-c95="" class="part__project text-only ng-star-inserted"><img _ngcontent-c95="" class="icon-middle" src="/img/page-parcours/icon-project.svg"><span
+                          _ngcontent-c95="">Projet</span></span>
+                      <!---->
+                      <!---->
+                    </div>
+                  </li>
 
-                      <!---->
-                      <!---->
-                      <!---->
-                      <!----><span _ngcontent-c95="" class="part__project text-only ng-star-inserted"><img _ngcontent-c95="" class="icon-middle" src="/img/page-parcours/icon-project.svg"><span
-                          _ngcontent-c95="">Projet/Exercice</span></span>
-                      <!---->
-                      <!---->
-                    </div>
-                  </li>
                   <li _ngcontent-c95="" class="ng-star-inserted">
                     <div _ngcontent-c95="" class="part">
                       <header _ngcontent-c95="" class="part__header mb-half">
                         <!---->
-                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted">Section 6: CORRESPONDANCE COMMERCIALE</h4>
+                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted"> La 3D</h4>
                         <!---->
                       </header>
+                      <p _ngcontent-c95="" class="small mb-half">
+                       Avec la troisième dimension (3D), vous saurez entre autres comment utiliser la caméro 3D, faire des texte en 3D,utiliser les lumières, manipuler les couleurs et l'environnement.</p>
                       <!---->
                       <!---->
                       <!---->
                       <!----><span _ngcontent-c95="" class="part__project text-only ng-star-inserted"><img _ngcontent-c95="" class="icon-middle" src="/img/page-parcours/icon-project.svg"><span
-                          _ngcontent-c95="">Soutenance</span></span>
+                          _ngcontent-c95="">Projet</span></span>
+                      <!---->
+                      <!---->
+                    </div>
+                  </li>
+
+ 				<li _ngcontent-c95="" class="ng-star-inserted">
+                    <div _ngcontent-c95="" class="part">
+                      <header _ngcontent-c95="" class="part__header mb-half">
+                        <!---->
+                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted"> Le suivi de mouvement et de stabilisation</h4>
+                        <!---->
+                      </header>
+                      <p _ngcontent-c95="" class="small mb-half">
+                       Vous serrez capable de faire du tracking 2D par la transformatiion, de faire la transformation en position, rotation et échelle et faire de la stabilisation et la déformation visuelle.</p>
+                      <!---->
+                      <!---->
+                      <!---->
+                      <!----><span _ngcontent-c95="" class="part__project text-only ng-star-inserted"><img _ngcontent-c95="" class="icon-middle" src="/img/page-parcours/icon-project.svg"><span
+                          _ngcontent-c95="">Projet</span></span>
+                      <!---->
+                      <!---->
+                    </div>
+                  </li>
+
+
+                  <li _ngcontent-c95="" class="ng-star-inserted">
+                    <div _ngcontent-c95="" class="part">
+                      <header _ngcontent-c95="" class="part__header mb-half">
+                        <!---->
+                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted"> Les atéliers pratiques</h4>
+                        <!---->
+                      </header>
+                      <p _ngcontent-c95="" class="small mb-half">
+                       Dans cette partie, nous passerons aux travaux pratiques sur différentes thématiques : Split screen dynamique, le texte tremblant,le motion design (Logo Hipster) et le time Freeze.</p>
+                      <!---->
+                      <!---->
+                      <!---->
+                      <!----><span _ngcontent-c95="" class="part__project text-only ng-star-inserted"><img _ngcontent-c95="" class="icon-middle" src="/img/page-parcours/icon-project.svg"><span
+                          _ngcontent-c95="">Projet</span></span>
+                      <!---->
+                      <!---->
+                    </div>
+                  </li>
+
+
+                  <li _ngcontent-c95="" class="ng-star-inserted">
+                    <div _ngcontent-c95="" class="part">
+                      <header _ngcontent-c95="" class="part__header mb-half">
+                        <!---->
+                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted">Votre carrière</h4>
+                        <!---->
+                      </header>
+                      <p _ngcontent-c95="" class="small mb-half">Vous voici à la fin de cette formation. Mais c'est
+                      maintenant que les choses sérieuses vont commencer. Vous apprendrez à obtenir un emploi avec votre qualification.</p>
+                      <!---->
+                      <!---->
+                      <!---->
+                      <!----><span _ngcontent-c95="" class="part__project text-only ng-star-inserted"><img _ngcontent-c95="" class="icon-middle" src="/img/page-parcours/icon-project.svg"><span
+                          _ngcontent-c95="">Mise en ligne de votre site personnel / Soutenance</span></span>
                       <!---->
                       <!---->
                     </div>
@@ -481,9 +544,10 @@
                   <!---->Besoin de vous préparer ?</h6>
                 <!---->
                 <!---->
-                <p _ngcontent-c95="" class="small">Intégrez le groupe Whatsapp <strong>Oschool English</strong>, pour vous mettre en jambe. VOus ferez la rencontre de centaines d'apprenants de cette langue <ul>
-                    <li > <img width="50" src="http://www.stickpng.com/assets/images/580b57fcd9996e24bc43c543.png" alt=""> </li>
-                    <li><a target="_blank "href="https://chat.whatsapp.com/HqIgLBNoepuKtkUnmChlwT">Rejoindre le groupe gratuitement</a></li>
+                <p _ngcontent-c95="" class="small">Voici quelques cours gratuits qui pourraient vous aider<ul>
+                    <li><a href="/course/intro-to-programming-nanodegree--nd000">Intro to Programming</a></li>
+                    <li><a href="/course/intro-to-html-and-css--ud001">Intro to HTML and CSS</a></li>
+                    <li><a href="/course/intro-to-javascript--ud803">Intro to JavaScript</a></li>
                   </ul>
                 </p>
                 <!---->
@@ -564,62 +628,15 @@
           <div _ngcontent-c101="" class="card card--pricing primary selected more-padding-top">
             <div _ngcontent-c101="" class="card__triangle"></div>
             <!---->
-            <h6 _ngcontent-c101="" class="card__flag ng-star-inserted">Offre #1</h6>
+            <h6 _ngcontent-c101="" class="card__flag ng-star-inserted">Abonnement</h6>
             <div _ngcontent-c101="" class="card--pricing__header">
-              <h5 _ngcontent-c101="">Développeur Web</h5>
-              <!---->
-              <div _ngcontent-c101="" class="card__price ng-star-inserted">
-                <!----><span _ngcontent-c101="" class="card__price--current">0 FCFA
-                  <!----></span></div>
-              <p _ngcontent-c101="">
-                <!----><span _ngcontent-c101="" class="ng-star-inserted">Gratuit</span>
-                <!---->
-                <!---->
-              </p>
-              <!---->
-              <!---->
-            </div>
-            <div _ngcontent-c101="" class="card--pricing__body">
-              <!---->
-              <ul class="list-pricing">
-                <li>Accès au groupe d'apprentissage sur Whatsapp </li>
-              </ul>
-              <!---->
-              <!---->
-            </div>
-            <!---->
-            <!---->
-            <!---->
-            <div _ngcontent-c101="" class="button-wrapper ng-star-inserted">
-              <!---->
-              <!---->
-              <!---->
-              <a _ngcontent-c101="" class="button--primary mb-1 center ng-star-inserted" href="https://chat.whatsapp.com/HqIgLBNoepuKtkUnmChlwT" target="_blank">Accéder au groupe</a>
-              <!---->
-              <!---->
-              <!---->
-              <!---->
-              <!---->
-              <!---->
-            </div>
-            <!---->
-          </div>
-        </ir-degree-pricing-card>
-
-
-        <ir-degree-pricing-card _ngcontent-c63="" _nghost-c101="" class="ng-star-inserted">
-          <div _ngcontent-c101="" class="card card--pricing primary selected more-padding-top">
-            <div _ngcontent-c101="" class="card__triangle"></div>
-            <!---->
-            <h6 _ngcontent-c101="" class="card__flag ng-star-inserted">Offre #2</h6>
-            <div _ngcontent-c101="" class="card--pricing__header">
-              <h5 _ngcontent-c101="">Développeur Web</h5>
+              <h5 _ngcontent-c101="">After Effects</h5>
               <!---->
               <div _ngcontent-c101="" class="card__price ng-star-inserted">
                 <!----><span _ngcontent-c101="" class="card__price--current">30.000 FCFA / mois
                   <!----></span></div>
               <p _ngcontent-c101="">
-                <!----><span _ngcontent-c101="" class="ng-star-inserted">Intermédiaire</span>
+                <!----><span _ngcontent-c101="" class="ng-star-inserted">pendant 4 mois</span>
                 <!---->
                 <!---->
               </p>
@@ -628,11 +645,7 @@
             </div>
             <div _ngcontent-c101="" class="card--pricing__body">
               <!---->
-              <ul class="list-pricing">
-                <li>Accès à tout le contenu (vidéos, textes, documents et autres ressources)</li>
-                <li>Coaching en live chaque semaine selon votre planning</li>
-                <li>Suivi pour la réalisation des mini-projets</li>
-              </ul>
+              <p _ngcontent-c101="" class="small ng-star-inserted">Durant votre abonnement, vous aurez accès aux supports de cours, ressources. Et vous bénéficierez d'un formateur personnel pour vous aider à apprendre</p>
               <!---->
               <!---->
             </div>
@@ -659,65 +672,6 @@
             <!---->
           </div>
         </ir-degree-pricing-card>
-
-        <ir-degree-pricing-card _ngcontent-c63="" _nghost-c101="" class="ng-star-inserted">
-          <div _ngcontent-c101="" class="card card--pricing primary selected more-padding-top">
-            <div _ngcontent-c101="" class="card__triangle"></div>
-            <!---->
-            <h6 _ngcontent-c101="" class="card__flag ng-star-inserted">Ofrre #3</h6>
-            <div _ngcontent-c101="" class="card--pricing__header">
-              <h5 _ngcontent-c101="">Développeur Web</h5>
-              <!---->
-              <div _ngcontent-c101="" class="card__price ng-star-inserted">
-                <!----><span _ngcontent-c101="" class="card__price--current">60.000 FCFA / mois
-                  <!----></span></div>
-              <p _ngcontent-c101="">
-                <!----><span _ngcontent-c101="" class="ng-star-inserted">Expert</span>
-                <!---->
-                <!---->
-              </p>
-              <!---->
-              <!---->
-            </div>
-            <div _ngcontent-c101="" class="card--pricing__body">
-              <!---->
-              <ul class="list-pricing">
-                <li>Accès à tout le contenu (vidéos, textes, documents et autres ressources)</li>
-                <li>Coaching en live chaque semaine selon votre planning</li>
-                <li>Suivi pour la réalisation des mini-projets</li>
-                <li>Suivi pour la réalisation d'un projet de soutenance</li>
-                <li>Obtention d'un certificat</li>
-                <li>Accompagnement pour bâtir un profil de carrière et obtenir un emploi</li>
-              </ul>
-              <!---->
-              <!---->
-            </div>
-            <!---->
-            <!---->
-            <!---->
-            <div _ngcontent-c101="" class="button-wrapper ng-star-inserted">
-              <!---->
-              <!---->
-              <!---->
-              @auth
-              <a _ngcontent-c101="" class="button--primary mb-1 center ng-star-inserted" data-toggle="modal" data-target="#modalSignUp">S'inscrire maintenant</a>
-              @endauth
-              @guest
-              <a _ngcontent-c101="" class="button--primary mb-1 center ng-star-inserted" href="/login">S'inscrire maintenant</a>
-              @endguest
-              <!---->
-              <!---->
-              <!---->
-              <!---->
-              <!---->
-              <!---->
-            </div>
-            <!---->
-          </div>
-        </ir-degree-pricing-card>
-
-
-
         <!---->
         <!---->
         <!---->
@@ -732,10 +686,6 @@
 <!--fin section prix-->
 
 
-
-
-
-
 <!--section appel a l'action-->
 
 <section _ngcontent-c18="" class="ng-star-inserted">
@@ -743,16 +693,15 @@
         <div _ngcontent-c77="" class="nd-bottom-cta-container">
             <div _ngcontent-c77="" class="nd-bottom-cta-content">
                 <!---->
-
                 <h4 _ngcontent-c77="" class="h2 nd-bottom-cta-content__title ng-star-inserted">
                     <font style="vertical-align: inherit;">
-                        <font style="vertical-align: inherit;">Apprenez l'Anglais maintenant avec nos professeurs en ligne</font>
+                        <font style="vertical-align: inherit;">Maîtrisez les techniques plus avancées que vous offre After Effects et libérez votre créativité</font>
                     </font>
                 </h4>
                 <!---->
                 <p _ngcontent-c77="" class="nd-bottom-cta-content__subtitle ng-star-inserted">
                     <font style="vertical-align: inherit;">
-                        <font style="vertical-align: inherit;">Oschool vous permet de maîtriser une compétence intemporelle, d'élargir vos horizons et de faire connaissance avec des individus du monde entier.</font>
+                        <font style="vertical-align: inherit;">Construisez-vous un excellent portfolio en réalisant des projets de la vie réelle.</font>
                     </font>
                 </p>
                 <div _ngcontent-c77="" class="nd-bottom-cta-content__btn-wrapper">
@@ -801,9 +750,6 @@
 
 
 
-
-
-
 <div id="modalSignUp" class="modal full-page-modal" tabindex="-1" role="dialog" aria-hidden="false">
   <!-- <button type="button" class="modal-action-btn action-left back-to-signin" style="opacity: 0;"><i class="ion-ios-arrow-back"></i></button> -->
   <button type="button" class="modal-action-btn action-right close-modal" data-dismiss="modal"><i class="ion-android-close"></i></button>
@@ -847,7 +793,7 @@
             <div class="form-group password-form-group">
               <div class="input-with-icon">
                 <select class="form-control" name="formation">
-                  <option value="Anglais">Anglais</option>
+                  <option value="Social Media">Social Media</option>
                 </select>
                 <i class="input-icon ion-person-stalker"></i>
               </div>
@@ -856,7 +802,6 @@
               <div class="input-with-icon">
                 <select class="form-control" name="montant">
                   <option value="30000">30.000 FCFA</option>
-                  <option value="60000">60.000 FCFA</option>
                 </select>
                 <i class="input-icon ion-person-stalker"></i>
               </div>
@@ -874,7 +819,7 @@
     </div><!-- /.modal-dialog -->
   </div><!-- /.modal-container -->
 </div><!-- /.modal -->
-
+</div>
 </div>
 
 

@@ -330,21 +330,21 @@
     <!---->
     <div _ngcontent-c55="" class="nd-syllabus-term__card">
       <section _ngcontent-c55="" class="nd-syllabus-term__header collapse in">
-        <div _ngcontent-c55="" class="nd-syllabus-term__header__image" irdeferbgimage="" style="background-image: url(&quot;https://d125fmws0bore1.cloudfront.net/assets/pages/ndop/nd001/image-syllabus-01@2x-f4be2598bea724657d8f295449bb8f45a954581306292393cb71a8417acf3cd3.jpg&quot;);">
+        <div _ngcontent-c55="" class="nd-syllabus-term__header__image" irdeferbgimage="" style="background-image: url(&quot;https://udemy-images.udemy.com/course/750x422/599170_aa50_3.jpg&quot;);">
           <!---->
         </div>
         <div _ngcontent-c55="" class="nd-syllabus-term__header__content">
           <!---->
           <h6 _ngcontent-c55="" class="ng-star-inserted">PROGRAMME</h6>
-          <h2 _ngcontent-c55="" class="h3">Développeur Web</h2>
+          <h2 _ngcontent-c55="" class="h3">Designer Photoshop</h2>
           <!---->
-          <p _ngcontent-c55="" class="small hidden-md-down ng-star-inserted">Le programme Développeur Web Junior
-            est composé de huit projets. Avec chaque projet,
+          <p _ngcontent-c55="" class="small hidden-md-down ng-star-inserted">Le programme Designer Photoshop
+            est composé de 8 atéliers pratique. Avec chaque atélier,
             vous allez créer quelque chose qui démontre votre maîtrise des compétences recherchées.
             La complexité des projets varie. En fin de compte,
             vous aurez un portefeuille de projets et un CV digne d'être aprréciés par des employeurs potentiels.</p>
           <!---->
-          <p _ngcontent-c55="" class="small hidden-lg-up ng-star-inserted">Le programme Développeur Web Junior
+          <p _ngcontent-c55="" class="small hidden-lg-up ng-star-inserted">Le programme Designer Photoshop
             est composé de huit projets. Avec chaque projet,
             vous allez créer quelque chose qui démontre votre maîtrise des compétences recherchées.
             La complexité des projets varie.</p>
@@ -367,7 +367,7 @@
               <!---->
               <h6 _ngcontent-c95="" class="mb-half ng-star-inserted">Outils requis</h6>
               <p _ngcontent-c95="" class="small mb-2 ng-star-inserted">
-                <!----><span _ngcontent-c95="" class="degree-syllabus-preview__content--term-prereq ng-star-inserted">Vous devez disposer d'un ordinateur portable, et d'une bonne connexion Internet pour suivre cette formation</span>
+                <!----><span _ngcontent-c95="" class="degree-syllabus-preview__content--term-prereq ng-star-inserted">Vous devez disposer d'un ordinateur portable et d'une bonne connexion Internet pour suivre cette formation</span>
                 <!---->
                 <!---->
                 <!----><a _ngcontent-c95="" class="pointer ng-star-inserted">Voir les outils requis.</a>
@@ -383,10 +383,10 @@
                     <div _ngcontent-c95="" class="part">
                       <header _ngcontent-c95="" class="part__header mb-half">
                         <!---->
-                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted">Fondations du Web</h4>
+                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted">Outils de base de photoshop</h4>
                         <!---->
                       </header>
-                      <p _ngcontent-c95="" class="small mb-half">Découvre comment fonctionne le web, et installe tes outils de formation !</p>
+                      <p _ngcontent-c95="" class="small mb-half">Nous verrons ici à quoi sert photoshop, les calques, la présentation des différents outils.</p>
                       <!---->
                       <!---->
                       <!---->
@@ -400,15 +400,15 @@
                     <div _ngcontent-c95="" class="part">
                       <header _ngcontent-c95="" class="part__header mb-half">
                         <!---->
-                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted">Apprendre HTML et CSS</h4>
+                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted">ATELIER 1 - NINA RICCI</h4>
                         <!---->
                       </header>
-                      <p _ngcontent-c95="" class="small mb-half">Apprenez à utiliser les 2 langages de bases de la programmation web: HTML pour la structure d'une page web, et CSS pour gérer l'apparence de cette page</p>
+                      <p _ngcontent-c95="" class="small mb-half">Nous allons presenter l'atélier, faire le detourage du flacon du parfum, créer un reflet et un dégradé de fond.</p>
                       <!---->
                       <!---->
                       <!---->
                       <!----><span _ngcontent-c95="" class="part__project text-only ng-star-inserted"><img _ngcontent-c95="" class="icon-middle" src="/img/page-parcours/icon-project.svg"><span
-                          _ngcontent-c95="">Créez un article de blog / La galerie de l'amour</span></span>
+                          _ngcontent-c95="">Projet</span></span>
                       <!---->
                       <!---->
                     </div>
@@ -417,53 +417,169 @@
                     <div _ngcontent-c95="" class="part">
                       <header _ngcontent-c95="" class="part__header mb-half">
                         <!---->
-                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted">Apprendre Javascript</h4>
-                        <!---->
-                      </header>
-                      <p _ngcontent-c95="" class="small mb-half">Apprenez les bases de JavaScript dont vous aurez besoin pour le développement front-end ou back-end.
-
-                      </p>
-                      <span _ngcontent-c95="" class="part__project text-only ng-star-inserted"><img _ngcontent-c95="" class="icon-middle" src="/img/page-parcours/icon-project.svg"><span
-                          _ngcontent-c95="">Améliorez la page d'accueil d'un magazine</span></span>
-                      <!---->
-                    </div>
-                  </li>
-                  <li _ngcontent-c95="" class="ng-star-inserted">
-                    <div _ngcontent-c95="" class="part">
-                      <header _ngcontent-c95="" class="part__header mb-half">
-                        <!---->
-                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted">PHP et MySQL</h4>
-                        <!---->
-                      </header>
-                      <p _ngcontent-c95="" class="small mb-half">C'est maintenant le temps de se plonger du côté Back-End. Vous apprendrez PHP pour générer des pages dynamiques et interroger des bases de données avec PHP. Vous </p>
-                      <!---->
-                      <!---->
-                      <!---->
-                      <!----><span _ngcontent-c95="" class="part__project text-only ng-star-inserted"><img _ngcontent-c95="" class="icon-middle" src="/img/page-parcours/icon-project.svg"><span
-                          _ngcontent-c95="">Créez une application pour inscrire les étudiants de votre école</span></span>
-                      <!---->
-                      <!---->
-                    </div>
-                  </li>
-                  <li _ngcontent-c95="" class="ng-star-inserted">
-                    <div _ngcontent-c95="" class="part">
-                      <header _ngcontent-c95="" class="part__header mb-half">
-                        <!---->
-                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted">Allez plus vite avec Wordpress</h4>
+                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted">ATELIER 2 - Modification du flacon de parfum Nina Ricci</h4>
                         <!---->
                       </header>
                       <p _ngcontent-c95="" class="small mb-half">
-                        Entrez dans l'univers des CMS et développez
-                        plus vite des sites e-commerces, des blogs etc. en prenant en main Wordpress (le plus populaire).</p>
+                        Nous verrons cette fois-ci, faire le masque de fusion du parfum et créer des pois sur le flacon.
+                      </p>
+                      <span _ngcontent-c95="" class="part__project text-only ng-star-inserted"><img _ngcontent-c95="" class="icon-middle" src="/img/page-parcours/icon-project.svg"><span
+                          _ngcontent-c95="">Projet</span></span>
+                      <!---->
+                    </div>
+                  </li>
+                  <li _ngcontent-c95="" class="ng-star-inserted">
+                    <div _ngcontent-c95="" class="part">
+                      <header _ngcontent-c95="" class="part__header mb-half">
+                        <!---->
+                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted"> ATELIER 3 - PARIS D'ANTAN </h4>
+                        <!---->
+                      </header>
+                      <p _ngcontent-c95="" class="small mb-half">Nous verront comment mettre en bichromie la photo ce l'atélier,faire de l'incrustation de l'effet matière papier et le recadrage et l'écriture de texte. </p>
                       <!---->
                       <!---->
                       <!---->
                       <!----><span _ngcontent-c95="" class="part__project text-only ng-star-inserted"><img _ngcontent-c95="" class="icon-middle" src="/img/page-parcours/icon-project.svg"><span
-                          _ngcontent-c95="">Créez votre site personnel</span></span>
+                          _ngcontent-c95="">Projet</span></span>
                       <!---->
                       <!---->
                     </div>
                   </li>
+                  <li _ngcontent-c95="" class="ng-star-inserted">
+                    <div _ngcontent-c95="" class="part">
+                      <header _ngcontent-c95="" class="part__header mb-half">
+                        <!---->
+                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted"> ATELIER 4 - Tour Eiffel - AVANT/APRES</h4>
+                        <!---->
+                      </header>
+                      <p _ngcontent-c95="" class="small mb-half">
+                        Les thèmes abordés ici seront:Le réglage du contraste et importation de la photo d’époque, le calage des 2 Tour Eiffel, le ecadrage de la tour Eiffel – Photo d’époque et l'ajout du contour et ombre portée sur la photo d’époque.</p>
+                      <!---->
+                      <!---->
+                      <!---->
+                      <!----><span _ngcontent-c95="" class="part__project text-only ng-star-inserted"><img _ngcontent-c95="" class="icon-middle" src="/img/page-parcours/icon-project.svg"><span
+                          _ngcontent-c95="">Projet</span></span>
+                      <!---->
+                      <!---->
+                    </div>
+                  </li>
+
+                     <li _ngcontent-c95="" class="ng-star-inserted">
+                    <div _ngcontent-c95="" class="part">
+                      <header _ngcontent-c95="" class="part__header mb-half">
+                        <!---->
+                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted">OUTILS - De nouvelles fonctionnalités</h4>
+                        <!---->
+                      </header>
+                      <p _ngcontent-c95="" class="small mb-half">
+                       Nous verrons entre autres comment organiser son espace de travail, comprendre la notion de pixel, les différentes couleurs, les couches de couleurs ainsi que les styles de calque – Ombres portées et lueurs.
+
+                      </p>
+                      <!---->
+                      <!---->
+                      <!---->
+                      <!----><span _ngcontent-c95="" class="part__project text-only ng-star-inserted"><img _ngcontent-c95="" class="icon-middle" src="/img/page-parcours/icon-project.svg"><span
+                          _ngcontent-c95="">Projet</span></span>
+                      <!---->
+                      <!---->
+                    </div>
+                  </li>
+
+              </li>
+
+                     <li _ngcontent-c95="" class="ng-star-inserted">
+                    <div _ngcontent-c95="" class="part">
+                      <header _ngcontent-c95="" class="part__header mb-half">
+                        <!---->
+                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted">ATELIER 5 - Banana Style</h4>
+                        <!---->
+                      </header>
+                      <p _ngcontent-c95="" class="small mb-half">
+                       Vous saurez comment créer un nouveau document et le détourage de la banane, le découpage de la forme « crayon » sur la banane et l'ajout du texte » Banana Style ».
+
+                      </p>
+                      <!---->
+                      <!---->
+                      <!---->
+                      <!----><span _ngcontent-c95="" class="part__project text-only ng-star-inserted"><img _ngcontent-c95="" class="icon-middle" src="/img/page-parcours/icon-project.svg"><span
+                          _ngcontent-c95="">Projet</span></span>
+                      <!---->
+                      <!---->
+                    </div>
+                  </li>
+
+                  <li _ngcontent-c95="" class="ng-star-inserted">
+                    <div _ngcontent-c95="" class="part">
+                      <header _ngcontent-c95="" class="part__header mb-half">
+                        <!---->
+                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted"> ATELIER 6 - Ratatouille</h4>
+                        <!---->
+                      </header>
+                      <p _ngcontent-c95="" class="small mb-half">
+                       Vous saurez comment faire le détourage de la souris, sa mise à l'échelle, le détourage de la toque de chef, l'ajustement de la toque  et la création de l’ombre portée de la souris.
+
+                      </p>
+                      <!---->
+                      <!---->
+                      <!---->
+                      <!----><span _ngcontent-c95="" class="part__project text-only ng-star-inserted"><img _ngcontent-c95="" class="icon-middle" src="/img/page-parcours/icon-project.svg"><span
+                          _ngcontent-c95="">Projet</span></span>
+                      <!---->
+                      <!---->
+                    </div>
+                  </li>
+
+
+                  <li _ngcontent-c95="" class="ng-star-inserted">
+                    <div _ngcontent-c95="" class="part">
+                      <header _ngcontent-c95="" class="part__header mb-half">
+                        <!---->
+                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted">ATELIER 7 - Visuel Coca-Cola</h4>
+                        <!---->
+                      </header>
+                      <p _ngcontent-c95="" class="small mb-half">
+                      Nous allons faire le détourage de la bouteille à la plume, la transformation du tracé en selection, la mise à l'échelle des bouteilles, la création de dégradé de fond et la mise en place du logo Coca-Cola.
+
+                      </p>
+                      <!---->
+                      <!---->
+                      <!---->
+                      <!----><span _ngcontent-c95="" class="part__project text-only ng-star-inserted"><img _ngcontent-c95="" class="icon-middle" src="/img/page-parcours/icon-project.svg"><span
+                          _ngcontent-c95="">Projet</span></span>
+                      <!---->
+                      <!---->
+                    </div>
+                  </li>
+
+                      <li _ngcontent-c95="" class="ng-star-inserted">
+                    <div _ngcontent-c95="" class="part">
+                      <header _ngcontent-c95="" class="part__header mb-half">
+                        <!---->
+                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted">ATELIER 8 - Villes suspendues</h4>
+                        <!---->
+                      </header>
+                      <p _ngcontent-c95="" class="small mb-half">
+                      Vous verrez comment créer un nouveau document et l'ouverture de la mer et ciel, la création du fond ciel et mer, le détourage des montagnes, des villes de Manhattan, de Shangai, de la Tour Eiffel et de la statue de la liberté et la création du filtre dégradé.
+
+                      </p>
+                      <!---->
+                      <!---->
+                      <!---->
+                      <!----><span _ngcontent-c95="" class="part__project text-only ng-star-inserted"><img _ngcontent-c95="" class="icon-middle" src="/img/page-parcours/icon-project.svg"><span
+                          _ngcontent-c95="">Projet</span></span>
+                      <!---->
+                      <!---->
+                    </div>
+                  </li>
+
+
+
+
+
+
+
+
+
                   <li _ngcontent-c95="" class="ng-star-inserted">
                     <div _ngcontent-c95="" class="part">
                       <header _ngcontent-c95="" class="part__header mb-half">
