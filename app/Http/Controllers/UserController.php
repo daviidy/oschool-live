@@ -65,7 +65,7 @@ class UserController extends Controller
       //au prof
       $mois = (int)$request['month'];
       $an = (int)$request['year'];
-      $classrooms = Classroom::whereMonth('date', '=', $mois)->whereYear('date', '=', $an)->where('user_id', Auth::user()->id)->get();
+      $classrooms = Classroom::whereMonth('date', '=', $mois)->whereYear('date', '=', $an)->where('user_id', Auth::user()->id)->where('statut', 'Réalisée')->get();
       return view('users.moisFactures', ['classrooms' => $classrooms, 'mois' => $mois, 'an' => $an]);
     }
 
