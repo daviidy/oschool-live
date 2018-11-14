@@ -22,7 +22,7 @@
       </div>
 
       <div class="col-lg-4 col-xs-12">
-        <div style="height:auto; background:#F55F44;" class="home_button"><a style="line-height:20px;" href="{{ route('progressions.create') }}">Marquer une progression</a></div>
+        <div style="height:auto; background:#F55F44;" class="home_button"><a data-toggle="modal" data-target="#popup" style="line-height:20px;" href="#">Marquer une progression</a></div>
       </div>
 
 
