@@ -1,3 +1,41 @@
+/* collaboration section*/
+
+
+/*! CSS Used from: https://eu.udacity.com/styles.cd049525371f607387d9.css */
+section{display:block;}
+img{border-style:none;}
+.mb-0{margin-bottom:0!important;}
+.text-center{text-align:center!important;}
+*,::after,::before{box-sizing:inherit;}
+.contain{max-width:73.75rem;margin-left:auto;margin-right:auto;padding:3rem 1.5rem;}
+.contain::after{clear:both;content:"";display:table;}
+@media screen and (min-width:48rem){
+.contain{padding-top:6rem;padding-bottom:6rem;}
+}
+@media screen and (min-width:73.75rem){
+.contain{padding-left:0;padding-right:0;}
+}
+/*! CSS Used from: Embedded */
+*[_ngcontent-c18],[_ngcontent-c18]::after,[_ngcontent-c18]::before{box-sizing:inherit;}
+/*! CSS Used from: Embedded */
+*[_ngcontent-c30],[_ngcontent-c30]::after,[_ngcontent-c30]::before{box-sizing:inherit;}
+[_nghost-c30]{display:block;background-color:#fafbfc;border-top:1px solid #dbe2e8;border-bottom:1px solid #dbe2e8;}
+.contain[_ngcontent-c30]{padding-top:.75rem;padding-bottom:.75rem;}
+ul[_ngcontent-c30]{list-style:none;padding:0;display:flex;flex-wrap:wrap;align-items:center;justify-content:center;}
+ul[_ngcontent-c30]   .icon[_ngcontent-c30]{height:3.75rem;margin:0 .75rem;}
+@media screen and (min-width:48rem){
+.contain[_ngcontent-c30]{padding-top:1.5rem;padding-bottom:1.5rem;}
+ul[_ngcontent-c30]   .icon[_ngcontent-c30]{height:4.5rem;margin:0 1.5rem;}
+}
+
+
+
+
+/*end collaboration section*/
+
+
+
+
 .list-pricing {
   list-style: none;
   padding: 0;

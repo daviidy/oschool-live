@@ -41,7 +41,7 @@
 					<div class="wrap-input100 input100-select bg1">
 						<span class="label-input100">Formation concernée</span>
 						<div>
-							<input type="text" class="form-control" id="inputWarning2" name="formation" value="{{$formation}}">
+							<input class="input100" type="text" class="form-control" id="inputWarning2" name="formation" value="{{$formation}}">
 						</div>
 					</div>
 
@@ -307,11 +307,11 @@
 					<!--DEBUT SECTION DES ETUDIANTS A COCHER ET DES STATUTS-->
 
 					<div class="wrap-input100 input100-select bg1">
-						<span class="label-input100">Etudiants*</span>
+						<span class="label-input100">Etudiant</span>
 						<div>
 							<select class="js-select3" name="user_id">
 								<option selected>Selectionner un etudiant</option>
-								@foreach(Auth::user()->students as $student)
+								@foreach($students as $student)
 							    <option value="{{ $student->id }}">{{ $student->name }}</option>
 								@endforeach
 							</select>

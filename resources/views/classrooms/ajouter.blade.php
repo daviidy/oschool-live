@@ -67,7 +67,7 @@
 						<span class="label-input100">Etudiant</span>
 						<div>
 							<select class="js-select3" name="etudiant">
-                @foreach(Auth::user()->students as $student)
+                @foreach($students as $student)
 							    <option value="{{ $student->name }}">{{ $student->name }}</option>
                 @endforeach
 							</select>
@@ -79,7 +79,7 @@
 						<span class="label-input100">Confirmer l'étudiant choisi</span>
 						<div>
 							<select class="js-select3" name="idEtudiant">
-                @foreach(Auth::user()->students as $student)
+                @foreach($students as $student)
                   <option value="{{ $student->id }}">{{ $student->name }}</option>
                 @endforeach
 							</select>

@@ -202,3 +202,9 @@ Route::resource('supportformations','SupportformationController');
 Route::resource('achats','AchatController');
 
 Route::post('/ajout-achat', 'AchatController@achat')->name('ajout-achat');
+
+/* pour les entreprises*/
+
+Route::get('/entreprise', function () {
+    return view('formations.entreprise');
+});
