@@ -43,7 +43,7 @@
                 </tr>
               </thead>
               <tbody>
-                @foreach(Auth::user()->sessions->sortBy('date') as $classroom)
+                @foreach(Auth::user()->sessions->sortByDesc('date') as $classroom)
                 <tr>
                   <td><a href="{{url('users', $classroom->idEtudiant)}}">{{$classroom->etudiant}}</a></td>
                   <td> <a data-toggle="modal" data-target="#myModal{{$classroom->id}}" href="#">{{ Carbon\Carbon::parse($classroom->date)->format('d-m-Y H:i') }}: voir le compte rendu</a></td>
@@ -133,7 +133,7 @@
                 </tr>
               </thead>
               <tbody>
-                @foreach($classrooms as $classroom)
+                @foreach($classrooms->sortByDesc('date') as $classroom)
                 <tr>
                   <td><a href="{{url('users', $classroom->user_id)}}">{{$classroom->formateur}}</a></td>
                   <td> <a data-toggle="modal" data-target="#myModal{{$classroom->id}}" href="#">{{ Carbon\Carbon::parse($classroom->date)->format('d-m-Y') }}: voir le compte rendu</a> </td>
