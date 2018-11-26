@@ -39,9 +39,13 @@ class HomeController extends Controller
           $sessions = Classroom::where('formateur', Auth::user()->name)->orderby('date', 'desc')->paginate(30);
           return view('classrooms.index', ['sessions' => $sessions]);
         }
-        else {
+        elseif (count(Auth::user()->formations)) {
           $classrooms = Classroom::where('etudiant', Auth::user()->name)->orderby('date', 'desc')->paginate(30);
           return view('classrooms.index', ['classrooms' => $classrooms]);
+        }
+        else {
+          $teachers = User::orderby ('id','asc')->where('type2', 'teacher')->paginate(30);
+          return view('users.dashboard', ['teachers' => $teachers]);
         }
       }
       else {
