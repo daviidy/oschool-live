@@ -59,6 +59,8 @@ Route::get('register', function () {
 
 Route::get('/classrooms', 'HomeController@classrooms');
 
+Route::get('/default', 'UserController@default');
+
 Route::get('/admin', 'AdminController@admin')
     ->middleware('is_admin')
     ->name('admin');
@@ -109,7 +111,7 @@ Route::get('/devweb', function () {
 })->name('devweb');
 
 Route::get('/socialmedia', function () {
-    return view('formations.social-media');
+    return view('formations.parcours-social-media');
 })->name('social-media');
 
 Route::get('/webdesign', function () {
@@ -208,3 +210,16 @@ Route::post('/ajout-achat', 'AchatController@achat')->name('ajout-achat');
 Route::get('/entreprise', function () {
     return view('formations.entreprise');
 });
+
+Route::get('/entreprise2', function () {
+    return view('formations.entreprise2');
+});
+
+
+//pour retrouver la page profil user
+
+Route::get('/dashboard-teacher', 'HomeController@dashboardT')->name('dashboard');
+
+Route::get('/dashboard-admin', 'HomeController@dashboardA')->name('dashboard');
+
+Route::get('/dashboard-default', 'HomeController@dashboard')->name('dashboard');

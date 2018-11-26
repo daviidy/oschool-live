@@ -1,4 +1,7 @@
-@extends('layouts.menu-dashboard-teacher')
+@extends( Auth::user()->type2 == "teacher" ? 'layouts.menu-dashboard-teacher' : 'layouts.menu-dashboard-default')
+
+
+@if(Auth::user()->type2 == "teacher")
 
 @section('content')
 
@@ -7,8 +10,7 @@
     MAIN CONTENT
     *********************************************************************************************************************************************************** -->
 <!--main content start-->
-@auth
-@if(Auth::user()->isTeacher())
+
 <section id="main-content">
   <section class="wrapper">
     <div class="row">
@@ -30,6 +32,27 @@
 
     <h3><i class="fa fa-angle-right"></i> Liste de vos sessions</h3>
     <div class="row mt">
+
+      <div class="_main--section--2nxxR">
+          <div class="index--latest-activity--3vz65">
+              <h3 class="index--title--3XRU5 _main--title--1Hy0o">Bon à savoir</h3>
+              <div class="_large-card--card--dLRfT shared--card--3X88h">
+                  <div class="_large-card--course-accent--3W9ZY _large-card--accent--2wXfT"></div>
+                  <div class="_large-card--body--1EXty">
+                      <div>
+                          <h1><span>Besoin <strong>d'aide</strong>?</span></h1>
+                          <p class="_large-card--last-viewed--1RfWk">Consultez le guide des formateurs</p>
+                      </div><a href="/documentsTeacher"><button class="vds-button vds-button--primary" type="button"><span class="vds-button__content">
+                              <!-- react-text: 194 -->Lire le guide
+                              <!-- /react-text --></span></button></a>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+
+
+
       <div class="col-lg-12">
         <div class="content-panel">
           <h4><i class="fa fa-angle-right"></i> Historique</h4>
@@ -43,7 +66,7 @@
                 </tr>
               </thead>
               <tbody>
-                @foreach(Auth::user()->sessions->sortByDesc('date') as $classroom)
+                @foreach($sessions->sortByDesc('date') as $classroom)
                 <tr>
                   <td><a href="{{url('users', $classroom->idEtudiant)}}">{{$classroom->etudiant}}</a></td>
                   <td> <a data-toggle="modal" data-target="#myModal{{$classroom->id}}" href="#">{{ Carbon\Carbon::parse($classroom->date)->format('d-m-Y H:i') }}: voir le compte rendu</a></td>
@@ -103,6 +126,8 @@
                 @endforeach
               </tbody>
             </table>
+
+            {{ $sessions->links() }}
           </section>
         </div>
         <!-- /content-panel -->
@@ -115,11 +140,37 @@
 </section>
 
 
-@else
+
+@endsection
+
+
+@elseif(Auth::user()->type == "default" && Auth::user()->type3 !== "admin")
+
+
+
+@section('content')
+
+
 <section id="main-content">
   <section class="wrapper">
     <h3><i class="fa fa-angle-right"></i> Liste de vos sessions</h3>
     <div class="row mt">
+      <div class="_main--section--2nxxR">
+          <div class="index--latest-activity--3vz65">
+              <h3 class="index--title--3XRU5 _main--title--1Hy0o">Bon à savoir</h3>
+              <div class="_large-card--card--dLRfT shared--card--3X88h">
+                  <div class="_large-card--course-accent--3W9ZY _large-card--accent--2wXfT"></div>
+                  <div class="_large-card--body--1EXty">
+                      <div>
+                          <h1><span>Où en êtes vous au niveau des <strong>projets de la formationt</strong>?</span></h1>
+                          <p class="_large-card--last-viewed--1RfWk">Consultez la liste de vos projets à tout moment</p>
+                      </div><a href="{{url('projets')}}"><button class="vds-button vds-button--primary" type="button"><span class="vds-button__content">
+                              <!-- react-text: 194 -->Voir les projets
+                              <!-- /react-text --></span></button></a>
+                  </div>
+              </div>
+          </div>
+      </div>
       <div class="col-lg-12">
         <div class="content-panel">
           <h4><i class="fa fa-angle-right"></i> Historique</h4>
@@ -179,6 +230,7 @@
                 @endforeach
               </tbody>
             </table>
+            {{ $classrooms->links() }}
           </section>
         </div>
         <!-- /content-panel -->
@@ -189,11 +241,6 @@
   </section>
   <!-- /wrapper -->
 </section>
-@endif
-@endauth
-
-
-
-
-
 @endsection
+
+@endif

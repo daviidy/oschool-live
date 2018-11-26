@@ -1,25 +1,25 @@
 @extends('layouts.menu-parcours')
 
-@section('title', 'Développeur Web Junior')
+@section('title', 'Social Media Marketing')
 
 @section('content')
 
-  <div class="container alt section-space">
+   <div class="container alt section-space">
     <div class="row c-how__heading align-row">
       <div class="col-xs-12 col-sm-6 c-how__headingLeft">
         <!-- <h2 class="h2 u-bold text-primary">Hack & Learn <em>React</em></h2> -->
-        <h1 class="h2 u-bold">Deviens Développeur web Junior, avec un formateur dédié en télé présentiel</h1>
+        <h1 class="h2 u-bold">Deviens Social Média Manager en passant de Zéro à Héro</h1>
         <p class="u-margin-t-md subHeading">Du débutant au professionnel rémunéré.<br>
-          Apprenez à créer des applications Web à partir de zéro</p>
+           Devenez facilement influenceur et soyez un pro de la communication en ligne.</p>
         <a class="home_button" href="#payment">
           Inscrivez-vous maintenant
         </a>
         <p class="u-margin-t-md subHeading">
-          Construisez-vous un excellent portfolio en réalisant des projets de la vie réelle.
+           Apprennez à construire des stratégies efficaces de marketing des médias sociaux sur différentes plateformes.
         </p>
       </div>
       <div class="col-xs-12 col-sm-6 c-how__headingRight">
-        <img src="/img/page-parcours/asset.svg" />
+        <img src="/img/page-parcours/Social-media-marketing-gt-service.png" />
       </div>
     </div>
   </div>
@@ -72,8 +72,8 @@
     </ir-modal>
     <h6 class="details" _ngcontent-c29="" class="ng-star-inserted">Prérequis</h6>
     <!---->
-    <h5 _ngcontent-c29="" class="ng-star-inserted">Un ordinateur ayant un accès Internet</h5>
-    <p _ngcontent-c29="" class="x-small ng-star-inserted"><a href="https://drive.google.com/open?id=1ihKHmukvYioQ6VfS_eaqSuIq4gOgnxcA" target="_blank" _ngcontent-c29="">Voir les prérequis en détail</a></p>
+    <h5 _ngcontent-c29="" class="ng-star-inserted">Un ordinateur ou un smartphone avec connexion internet</h5>
+   <!--  <p _ngcontent-c29="" class="x-small ng-star-inserted"><a _ngcontent-c29="">Voir les prérequis en détail</a></p> -->
     <!---->
     <!---->
   </li>
@@ -87,6 +87,7 @@
     <h5 _ngcontent-c29="" class="ng-star-inserted">Francais</h5>
     <!---->
     <!---->
+   <!--  <p _ngcontent-c29="" class="x-small ng-star-inserted">Découvrir les matériels requis pour suivre la formation</p> -->
     <!---->
     <!---->
     <!---->
@@ -105,7 +106,7 @@
   <div class="container alt section-space">
     <div class="row">
       <div class="col-xs-12 text-center">
-        <h3 class="h3 u-bold text-center u-margin-b-sm">Suivez le parcours certifiant Développeur Web, et démarrez une nouvelle carrière.</h3>
+        <h3 class="h3 u-bold text-center u-margin-b-sm">Suivez le parcours certifiant de Social Média Marketing et démarrez une nouvelle carrière.</h3>
         <div class="c-browser">
           <div class="c-browser__chrome">
             <div class="c-browser__buttons">
@@ -115,7 +116,7 @@
             </div>
           </div>
           <div class="c-browser__image">
-            <img src="/img/page-parcours/ordi.png" />
+            <img src="/img/page-parcours/social-network.jpg" />
           </div>
         </div>
 
@@ -124,11 +125,11 @@
           <div class="col-xs-12 col-sm-6">
             <div style="text-align: left !important;" class="c-how__sectionContent">
               <h4 class="h4 u-bold">Pourquoi suivre ce parcours ?</h4>
-              <p class="u-margin-t-md subHeading">La demande de développeurs web est généralisée dans tous
-                les secteurs et continue d'augmenter. En maîtrisant les précieuses compétences enseignées dans
-                le cadre de ce programme, vous serez prêt à occuper des postes dans un large éventail d’entreprises,
-                des startups aux organisations mondiales. Les projets que vous construirez et le
-                portefeuille que vous développerez fourniront de nombreuses preuves de votre expertise.</p>
+              <p class="u-margin-t-md subHeading">Souhaitez-vous connaître les  raccourcis vers le succès  en obtenant plus de ventes, du trafic sur votre site Web, la notoriété de la marque et la croissance d'une entreprise à l'aide du marketing par médias sociaux?
+
+            Aujourd'hui, vous pouvez commercialiser GRATUITEMENT  vos produits, vos services et développer une entreprise en ligne en utilisant les médias sociaux - à des milliards de personnes!
+
+            Êtes-vous prêt à vendre plus de produits, à avoir plus de clients et à développer votre entreprise en utilisant les médias sociaux?</p>
             </div>
           </div>
           <div _ngcontent-c33="" class="col-xs-12 col-sm-6 stat ng-star-inserted">
@@ -138,7 +139,7 @@
                 <h4 _ngcontent-c33="" class="light ng-star-inserted">
                   <h4 class="light">
                     <font style="vertical-align: inherit;">
-                      <font style="vertical-align: inherit;">JavaScript et PHP sont les langages de code les plus demandés par les entreprises</font>
+                      <font style="vertical-align: inherit;">Développez une audience ciblée avec des centaines, des milliers ou des millions de personnes - à partir de zéro!</font>
                     </font>
                   </h4>
                 </h4>
@@ -252,9 +253,6 @@
                     </div>
                   </div>
                 </div>
-
-
-
         </div>
       </div>
     </div>
@@ -269,9 +267,9 @@
       <!---->
       <h2 style="font-size: 4rem;font-weight: 300;" _ngcontent-c47="" class="white ng-star-inserted">Développez cette compétence pour aujourd'hui et demain</h2>
       <!---->
-      <p _ngcontent-c47="" class="white ng-star-inserted"><span class="hidden-md-down">Ce parcours Développeur Web Junior est conçu
+      <p _ngcontent-c47="" class="white ng-star-inserted"><span class="hidden-md-down">Ce parcours de Social Media Marketing  est conçu
         pour assurer votre succès à long terme sur le terrain. Les compétences acquises vous prépareront à des
-        emplois dans le monde de la programmation web, et vous serez prêt à apporter une valeur immédiate
+        emplois dans le monde des médias sociaux, et vous serez prêt à apporter une valeur immédiate
         à toute organisation. Nous vous soutiendrons tout au long de votre parcours d'apprentissage.
         De l'acquisition des compétences techniques et professionnelles précieuses,
         jusqu'à l'obtention de l'emploi de vos rêves.</span></p>
@@ -326,16 +324,16 @@
     <!---->
     <div _ngcontent-c55="" class="nd-syllabus-term__card">
       <section _ngcontent-c55="" class="nd-syllabus-term__header collapse in">
-        <div _ngcontent-c55="" class="nd-syllabus-term__header__image" irdeferbgimage="" style="background-image: url(&quot;https://d125fmws0bore1.cloudfront.net/assets/pages/ndop/nd001/image-syllabus-01@2x-f4be2598bea724657d8f295449bb8f45a954581306292393cb71a8417acf3cd3.jpg&quot;);">
+        <div _ngcontent-c55="" class="nd-syllabus-term__header__image" irdeferbgimage="" style="background-image: url(&quot;https://www.brafton.com/wp-content/uploads/2014/01/Social-Media-Marketing-Trends-350x350.jpg&quot;);">
           <!---->
         </div>
         <div _ngcontent-c55="" class="nd-syllabus-term__header__content">
           <!---->
           <h6 _ngcontent-c55="" class="ng-star-inserted">PROGRAMME</h6>
-          <h2 _ngcontent-c55="" class="h3">Développeur Web</h2>
+          <h2 _ngcontent-c55="" class="h3">Social Media Marketing</h2>
           <!---->
-          <p _ngcontent-c55="" class="small hidden-md-down ng-star-inserted">Le programme Développeur Web Junior
-            est composé de huit projets. Avec chaque projet,
+          <p _ngcontent-c55="" class="small hidden-md-down ng-star-inserted">Le programme de Social Media Marketing Junior
+            est composé de 7 projets. Avec chaque projet,
             vous allez créer quelque chose qui démontre votre maîtrise des compétences recherchées.
             La complexité des projets varie. En fin de compte,
             vous aurez un portefeuille de projets et un CV digne d'être aprréciés par des employeurs potentiels.</p>
@@ -363,7 +361,7 @@
               <!---->
               <h6 _ngcontent-c95="" class="mb-half ng-star-inserted">Outils requis</h6>
               <p _ngcontent-c95="" class="small mb-2 ng-star-inserted">
-                <!----><span _ngcontent-c95="" class="degree-syllabus-preview__content--term-prereq ng-star-inserted">Vous devez disposer d'un ordinateur portable, et d'une bonne connexion Internet pour suivre cette formation</span>
+                <!----><span _ngcontent-c95="" class="degree-syllabus-preview__content--term-prereq ng-star-inserted">Vous devez disposer d'un ordinateur portable ou d'un smartphone, et d'une bonne connexion Internet pour suivre cette formation</span>
                 <!---->
                 <!---->
                 <!----><a _ngcontent-c95="" class="pointer ng-star-inserted">Voir les outils requis.</a>
@@ -379,10 +377,10 @@
                     <div _ngcontent-c95="" class="part">
                       <header _ngcontent-c95="" class="part__header mb-half">
                         <!---->
-                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted">Fondations du Web</h4>
+                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted">Développer une stratégie de médias sociaux</h4>
                         <!---->
                       </header>
-                      <p _ngcontent-c95="" class="small mb-half">Découvre comment fonctionne le web, et installe tes outils de formation !</p>
+                      <p _ngcontent-c95="" class="small mb-half">Découvre comment mettre en place une stratégie de social media marketeur et quels sont les différents médias sociaux</p>
                       <!---->
                       <!---->
                       <!---->
@@ -396,10 +394,10 @@
                     <div _ngcontent-c95="" class="part">
                       <header _ngcontent-c95="" class="part__header mb-half">
                         <!---->
-                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted">Apprendre HTML et CSS</h4>
+                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted">Ecoute et suivi des médias sociaux</h4>
                         <!---->
                       </header>
-                      <p _ngcontent-c95="" class="small mb-half">Apprenez à utiliser les 2 langages de bases de la programmation web: HTML pour la structure d'une page web, et CSS pour gérer l'apparence de cette page</p>
+                      <p _ngcontent-c95="" class="small mb-half">Développez des techniques d'écoutes des médias sociaux ainsi que des stratégies de compréhension de conversation de marque.</p>
                       <!---->
                       <!---->
                       <!---->
@@ -413,26 +411,10 @@
                     <div _ngcontent-c95="" class="part">
                       <header _ngcontent-c95="" class="part__header mb-half">
                         <!---->
-                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted">Allez plus vite avec Bootstrap</h4>
+                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted">Construire une stratégie de contenu des médias sociaux</h4>
                         <!---->
                       </header>
-                      <p _ngcontent-c95="" class="small mb-half">Créez des mise en pages personnalisées pour adapter vos pages web à n'importe quel terminal
-
-                      </p>
-                      <span _ngcontent-c95="" class="part__project text-only ng-star-inserted"><img _ngcontent-c95="" class="icon-middle" src="/img/page-parcours/icon-project.svg"><span
-                          _ngcontent-c95="">Mini-projet</span></span>
-                      <!---->
-                    </div>
-                  </li>
-                  <li _ngcontent-c95="" class="ng-star-inserted">
-                    <div _ngcontent-c95="" class="part">
-                      <header _ngcontent-c95="" class="part__header mb-half">
-                        <!---->
-                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted">Apprendre Javascript</h4>
-                        <!---->
-                      </header>
-                      <p _ngcontent-c95="" class="small mb-half">Apprenez les bases de JavaScript dont vous aurez besoin pour le développement front-end ou back-end.
-
+                      <p _ngcontent-c95="" class="small mb-half">Le contenu étant l'épine dorsale de votre stratégie de social média, nous commencerons ici par vous montrer les bases de la création de contenu.
                       </p>
                       <span _ngcontent-c95="" class="part__project text-only ng-star-inserted"><img _ngcontent-c95="" class="icon-middle" src="/img/page-parcours/icon-project.svg"><span
                           _ngcontent-c95="">Améliorez la page d'accueil d'un magazine</span></span>
@@ -443,25 +425,10 @@
                     <div _ngcontent-c95="" class="part">
                       <header _ngcontent-c95="" class="part__header mb-half">
                         <!---->
-                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted">Javascript et jQuery</h4>
+                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted">Etendre votre portée </h4>
                         <!---->
                       </header>
-                      <p _ngcontent-c95="" class="small mb-half">Utilisez la librairie JQuery avec JavaScript pour apporter de beaux effets sur vos pages.
-
-                      </p>
-                      <span _ngcontent-c95="" class="part__project text-only ng-star-inserted"><img _ngcontent-c95="" class="icon-middle" src="/img/page-parcours/icon-project.svg"><span
-                          _ngcontent-c95="">Mini-projet</span></span>
-                      <!---->
-                    </div>
-                  </li>
-                  <li _ngcontent-c95="" class="ng-star-inserted">
-                    <div _ngcontent-c95="" class="part">
-                      <header _ngcontent-c95="" class="part__header mb-half">
-                        <!---->
-                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted">PHP et MySQL</h4>
-                        <!---->
-                      </header>
-                      <p _ngcontent-c95="" class="small mb-half">C'est maintenant le temps de se plonger du côté Back-End. Vous apprendrez PHP pour générer des pages dynamiques et interroger des bases de données avec PHP. Vous </p>
+                      <p _ngcontent-c95="" class="small mb-half">Faites votre stratégie de communication au niveau supérieur, apprenez les différentes nuances du marketing d'influence et ainsi, vous pourrez travailler avec des influenceurs. </p>
                       <!---->
                       <!---->
                       <!---->
@@ -475,12 +442,11 @@
                     <div _ngcontent-c95="" class="part">
                       <header _ngcontent-c95="" class="part__header mb-half">
                         <!---->
-                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted">Allez plus vite avec Wordpress</h4>
+                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted"> Etablissez des relations individuelles</h4>
                         <!---->
                       </header>
                       <p _ngcontent-c95="" class="small mb-half">
-                        Entrez dans l'univers des CMS et développez
-                        plus vite des sites e-commerces, des blogs etc. en prenant en main Wordpress (le plus populaire).</p>
+                       Vous saurez pourquoi l'engagement est au coeur de votre stratégie sociale, ainsi vous pourrez atteindre des objectifs commerciaux par la vente sociale.</p>
                       <!---->
                       <!---->
                       <!---->
@@ -610,7 +576,7 @@
             <!---->
             <h6 _ngcontent-c101="" class="card__flag ng-star-inserted">Offre #1</h6>
             <div _ngcontent-c101="" class="card--pricing__header">
-              <h5 _ngcontent-c101="">Développeur Web</h5>
+              <h5 _ngcontent-c101="">Social Media</h5>
               <!---->
               <div _ngcontent-c101="" class="card__price ng-star-inserted">
                 <!----><span _ngcontent-c101="" class="card__price--current">0 FCFA
@@ -658,7 +624,7 @@
             <h6 _ngcontent-c101="" class="card__flag ng-star-inserted">Offre #2</h6>
             <h3 _ngcontent-c101="" style="margin-top: 3rem;color: orange;background: #EAEAEA;" class="card__flag ng-star-inserted">La plus vendue</h3>
             <div _ngcontent-c101="" class="card--pricing__header">
-              <h5 _ngcontent-c101="">Développeur Web</h5>
+              <h5 _ngcontent-c101="">Social Media</h5>
               <!---->
               <div _ngcontent-c101="" class="card__price ng-star-inserted">
                 <!----><span _ngcontent-c101="" class="card__price--current">30.000 FCFA / mois
@@ -711,7 +677,7 @@
             <!---->
             <h6 _ngcontent-c101="" class="card__flag ng-star-inserted">Ofrre #3</h6>
             <div _ngcontent-c101="" class="card--pricing__header">
-              <h5 _ngcontent-c101="">Développeur Web</h5>
+              <h5 _ngcontent-c101="">Social Media</h5>
               <!---->
               <div _ngcontent-c101="" class="card__price ng-star-inserted">
                 <!----><span _ngcontent-c101="" class="card__price--current">60.000 FCFA / mois
@@ -778,9 +744,6 @@
 
 
 
-
-
-
 <!--section appel a l'action-->
 
 <section _ngcontent-c18="" class="ng-star-inserted">
@@ -790,7 +753,7 @@
                 <!---->
                 <h4 _ngcontent-c77="" class="h2 nd-bottom-cta-content__title ng-star-inserted">
                     <font style="vertical-align: inherit;">
-                        <font style="vertical-align: inherit;">Devenez Développeur Web Junior</font>
+                        <font style="vertical-align: inherit;">Devenez Développeur Marketeur</font>
                     </font>
                 </h4>
                 <!---->
@@ -848,6 +811,9 @@
 
 
 
+
+
+
 <div id="modalSignUp" class="modal full-page-modal" tabindex="-1" role="dialog" aria-hidden="false">
   <!-- <button type="button" class="modal-action-btn action-left back-to-signin" style="opacity: 0;"><i class="ion-ios-arrow-back"></i></button> -->
   <button type="button" class="modal-action-btn action-right close-modal" data-dismiss="modal"><i class="ion-android-close"></i></button>
@@ -891,7 +857,7 @@
             <div class="form-group password-form-group">
               <div class="input-with-icon">
                 <select class="form-control" name="formation">
-                  <option value="Développeur Web Junior">Développeur Web Junior</option>
+                  <option value="Social Media">Social Media</option>
                 </select>
                 <i class="input-icon ion-person-stalker"></i>
               </div>
@@ -900,7 +866,6 @@
               <div class="input-with-icon">
                 <select class="form-control" name="montant">
                   <option value="30000">30.000 FCFA</option>
-                  <option value="60000">60.000 FCFA</option>
                 </select>
                 <i class="input-icon ion-person-stalker"></i>
               </div>
@@ -918,7 +883,7 @@
     </div><!-- /.modal-dialog -->
   </div><!-- /.modal-container -->
 </div><!-- /.modal -->
-
+</div>
 </div>
 
 

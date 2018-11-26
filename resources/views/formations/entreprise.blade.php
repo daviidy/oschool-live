@@ -11,7 +11,7 @@
         <h1 class="h2 u-bold">Deviens Développeur web Junior, avec un formateur dédié en télé présentiel</h1>
         <p class="u-margin-t-md subHeading">Du débutant au professionnel rémunéré.<br>
           Apprenez à créer des applications Web à partir de zéro</p><br>
-        <p>En collaboration avec &nbsp; &nbsp; &nbsp;<span> <img width="200" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZaoGU-l1KerCiXpezFXc8gjzcw8wFFcwKkA5ul_AuaSnh4VOjSQ" alt=""> </span> </p>
+        <p>En collaboration avec &nbsp; &nbsp; &nbsp;<span> <img width="200" src="/img/page-parcours/cinetpay.png" alt=""> </span> </p>
         <a class="home_button" href="#payment">
           Inscrivez-vous maintenant
         </a>
@@ -120,7 +120,7 @@
                 <!---->
                 <!---->
                 <li _ngcontent-c30="" class="ng-star-inserted">
-                    <!----><img style="margin: 2rem;" width="200" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZaoGU-l1KerCiXpezFXc8gjzcw8wFFcwKkA5ul_AuaSnh4VOjSQ">
+                    <!----><img style="margin: 2rem;" width="200" src="/img/page-parcours/cinetpay.png">
                     <!---->
                 </li>
                 <!---->
@@ -782,6 +782,7 @@
 </section>
 
 <!--fin section prix-->
+
 
 
 

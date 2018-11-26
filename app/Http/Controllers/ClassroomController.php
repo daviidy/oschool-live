@@ -17,12 +17,13 @@ class ClassroomController extends Controller
      */
     public function index()
     {
-      if (Auth::check()) {
-          $classrooms = Classroom::where('etudiant', Auth::user()->name)->orderby('date', 'desc')->get();
+      if (Auth::check() && Auth::user()->type2 !== "teacher") {
+          $classrooms = Classroom::where('etudiant', Auth::user()->name)->orderby('date', 'desc')->paginate(30);
           return view('classrooms.index', ['classrooms' => $classrooms]);
         }
-        elseif (Auth::user()->isTeacher()) {
-          return view('classrooms.index');
+      elseif (Auth::check() && Auth::user()->type2 == "teacher") {
+          $sessions = Classroom::where('formateur', Auth::user()->name)->orderby('date', 'desc')->paginate(30);
+          return view('classrooms.index', ['sessions' => $sessions]);
         }
       else {
         return redirect('home');

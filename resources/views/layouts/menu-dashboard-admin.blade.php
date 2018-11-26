@@ -127,20 +127,19 @@
 
         <ul class="nav pull-right top-menu">
 
-          @if(Auth::user()->isAdmin())
 
           <li>
 
             <a data-toggle="dropdown" class="dropdown-toggle change" href="#">Changer</a>
             <ul class="dropdown-menu">
               <li>
-                <p> <a href="/admin">Tableau de bord admin</a> </p>
+                <p> <a href="/teacher">Tableau de bord prof</a> </p>
               </li>
+
             </ul>
 
           </li>
 
-          @endif
 
           <li>
 
@@ -167,24 +166,13 @@
       <div id="sidebar" class="nav-collapse ">
         <!-- sidebar menu start-->
         <ul style="{{ !count(Auth::user()->formations) ? 'margin-top: 120px;' : '' }}" class="sidebar-menu" id="nav-accordion">
-          <h5 class="centered">{{Auth::user()->name}} <br> ( {{Auth::user()->type2}} ) </h5>
-
-          @if(count(Auth::user()->formations))
+          <h5 class="centered">{{Auth::user()->name}} <br> ( {{Auth::user()->type3}} ) </h5>
           <li class="mt">
-            <a href="{{route('classrooms.index')}}">
-              <i class="fa fa-dashboard"></i>
-              <span>Mes sessions</span>
+            <a href="/dashboard-admin">
+              <i class="fa fa-laptop"></i>
+              <span>Profil</span>
               </a>
           </li>
-          @endif
-
-          <li class="mt">
-            <a href="/documentsTeacher">
-              <i class="fa fa-book"></i>
-              <span>Guides formateurs</span>
-              </a>
-          </li>
-
           <li class="mt">
             <a target="_blank" href="https://discord.gg/hhbzcHE">
               <i class="fa fa-group"></i>
@@ -193,52 +181,61 @@
           </li>
 
 
-          @auth
 
-
-          @if(count(Auth::user()->formations))
-          <li class="mt">
-            <a href="{{ url('projets') }}">
-              <i class="fa fa-dashboard"></i>
-              <span>Liste des projets</span>
+          <li class="sub-menu">
+            <a href="javascript:;">
+              <i class="fa fa-desktop"></i>
+              <span>Formations</span>
               </a>
+            <ul class="sub">
+
+              <li>
+
+                <a  style="border-radius:8px; color: red; background-color: transparent;" class="logout" href="{{ route('projets.create') }}">
+                    Créer un projet
+                </a>
+
+              </li>
+              <li>
+
+                <a  style="border-radius:8px; color: #967ADC; background-color: transparent;" class="logout" href="{{ route('supportformations.create') }}">
+                    Ajouter un support de cours
+                </a>
+
+              </li>
+              <li>
+
+                <a  style="border-radius:8px; color: #4D90CC; background-color: transparent;" class="logout" href="{{ route('formations.create') }}">
+                    Créer une formation
+                </a>
+
+              </li>
+              <li>
+
+                <a style="border-radius:8px; color: orange; background-color: transparent;" class="logout" href="{{ route('categories.create') }}">
+                    Créer une catégorie
+                </a>
+
+              </li>
+
+              <li>
+
+                <a style="border-radius:8px; background-color: transparent;" class="logout" href="{{ route('achats.create') }}">
+                    Ajouter un achat
+                </a>
+
+              </li>
+
+            </ul>
           </li>
 
           <li class="mt">
-            <a href="{{ url('supportformations') }}">
-              <i class="fa fa-dashboard"></i>
-              <span>Supports de cours</span>
-              </a>
-          </li>
-          @endif
-
-
-
-          <li class="mt">
-            <a href="/factures">
-              <i class="fa fa-money"></i>
-              <span>Facturation</span>
-            </a>
-          </li>
-
-
-
-      <!--    <li class="mt">
-            <a href="/programme">
-              <i class="fa fa-calendar"></i>
-              <span>Programme de la formation</span>
-              </a>
-          </li> -->
-
-
-          <li class="mt">
-            <a href="/dashboard-teacher">
-              <i class="fa fa-laptop"></i>
-              <span>Profil</span>
+            <a href="{{route('users.index')}}">
+              <i class="fa fa-group"></i>
+              <span>Liste des utilisateurs</span>
               </a>
           </li>
 
-          @endauth
           <!--li>
             <a href="inbox.html">
               <i class="fa fa-envelope"></i>

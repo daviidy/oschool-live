@@ -69,8 +69,8 @@
               <tbody>
                 <tr>
                   <td>{{ $classrooms->count() }}</td>
-                  <td>12000 FCFA</td>
-                  <td>{{ 12000 * $classrooms->count() }} FCFA</td>
+                  <td>3000 FCFA</td>
+                  <td>{{ 3000 * $classrooms->count() }} FCFA</td>
                 </tr>
 
               </tbody>
