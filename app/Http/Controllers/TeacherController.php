@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Teacher;
 use Illuminate\Http\Request;
+use Auth;
+use App\User;
 
 class TeacherController extends Controller
 {
@@ -14,7 +16,9 @@ class TeacherController extends Controller
     }
     public function teacher()
     {
-        return view('users.dashboard');
+      $teachers = User::orderby ('id','asc')->where('type2', 'teacher')->paginate(30);
+
+        return view('users.dashboard-teacher', ['teachers' => $teachers]);
     }
 
     /**

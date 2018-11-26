@@ -1,4 +1,5 @@
-@extends('layouts.menu-dashboard-teacher')
+@extends( Auth::user()->type2 == "teacher" ? 'layouts.menu-dashboard-teacher' : 'layouts.menu-dashboard-default')
+
 
 @section('content')
 

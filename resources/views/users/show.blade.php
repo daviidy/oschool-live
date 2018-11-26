@@ -1,4 +1,16 @@
+@if(Auth::user()->isTeacher())
+
 @extends('layouts.menu-dashboard-teacher')
+
+@elseif(Auth::user()->isAdmin())
+
+@extends('layouts.menu-dashboard-admin')
+
+@else
+
+@extends('layouts.menu-dashboard-default')
+
+@endif
 
 @section('content')
     <!-- **********************************************************************************************************************************************************

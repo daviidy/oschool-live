@@ -127,21 +127,6 @@
 
         <ul class="nav pull-right top-menu">
 
-          @if(Auth::user()->isAdmin())
-
-          <li>
-
-            <a data-toggle="dropdown" class="dropdown-toggle change" href="#">Changer</a>
-            <ul class="dropdown-menu">
-              <li>
-                <p> <a href="/admin">Tableau de bord admin</a> </p>
-              </li>
-            </ul>
-
-          </li>
-
-          @endif
-
           <li>
 
             <a class="logout" href="{{ route('logout') }}"
@@ -167,8 +152,8 @@
       <div id="sidebar" class="nav-collapse ">
         <!-- sidebar menu start-->
         <ul style="{{ !count(Auth::user()->formations) ? 'margin-top: 120px;' : '' }}" class="sidebar-menu" id="nav-accordion">
-          <h5 class="centered">{{Auth::user()->name}} <br> ( {{Auth::user()->type2}} ) </h5>
-
+        <!--  <p class="centered"><a href="{{url('home')}}"><img src="/avatars/users/{{Auth::user()->photo}}" class="img-circle" width="80"></a></p> -->
+          <h5 class="centered">{{Auth::user()->name}} <br> ( student ) </h5>
           @if(count(Auth::user()->formations))
           <li class="mt">
             <a href="{{route('classrooms.index')}}">
@@ -177,11 +162,10 @@
               </a>
           </li>
           @endif
-
           <li class="mt">
-            <a href="/documentsTeacher">
+            <a href="/documentsStudent">
               <i class="fa fa-book"></i>
-              <span>Guides formateurs</span>
+              <span>Guides étudiants</span>
               </a>
           </li>
 
@@ -195,12 +179,22 @@
 
           @auth
 
+          @if(count(Auth::user()->formations))
+
+          <li class="mt">
+            <a href="{{ url('progression', Auth::user()) }}">
+              <i class="fa fa-dashboard"></i>
+              <span>Ma progression</span>
+              </a>
+          </li>
+
+          @endif
 
           @if(count(Auth::user()->formations))
           <li class="mt">
             <a href="{{ url('projets') }}">
               <i class="fa fa-dashboard"></i>
-              <span>Liste des projets</span>
+              <span>Mes projets</span>
               </a>
           </li>
 
@@ -214,15 +208,22 @@
 
 
 
+
+          @if(count(Auth::user()->formations))
           <li class="mt">
-            <a href="/factures">
+            <a href="{{url('achats')}}">
               <i class="fa fa-money"></i>
-              <span>Facturation</span>
+              <span>Etat de mon abonnement</span>
             </a>
           </li>
-
-
-
+          @endif
+          <li class="mt">
+            <a href="/dashboard-default">
+              <i class="fa fa-laptop"></i>
+              <span>Profil</span>
+              </a>
+          </li>
+        @endauth
       <!--    <li class="mt">
             <a href="/programme">
               <i class="fa fa-calendar"></i>
@@ -230,15 +231,6 @@
               </a>
           </li> -->
 
-
-          <li class="mt">
-            <a href="/dashboard-teacher">
-              <i class="fa fa-laptop"></i>
-              <span>Profil</span>
-              </a>
-          </li>
-
-          @endauth
           <!--li>
             <a href="inbox.html">
               <i class="fa fa-envelope"></i>
