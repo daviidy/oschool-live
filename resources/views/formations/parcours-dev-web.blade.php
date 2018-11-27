@@ -7,22 +7,51 @@
   <div class="container alt section-space">
     <div class="row c-how__heading align-row">
       <div class="col-xs-12 col-sm-6 c-how__headingLeft">
-        <!-- <h2 class="h2 u-bold text-primary">Hack & Learn <em>React</em></h2> -->
-        <h1 class="h2 u-bold">Deviens Développeur web Junior, avec un formateur dédié en télé présentiel</h1>
-        <p class="u-margin-t-md subHeading">Du débutant au professionnel rémunéré.<br>
-          Apprenez à créer des applications Web à partir de zéro</p>
+        <h1 class="h2 u-bold">Deviens Développeur web Junior, en suivant un cours particulier depuis la maison</h1>
+
+        <p style="margin: 5rem 0;">En collaboration avec &nbsp; &nbsp; &nbsp;<span> <a target="_blank" href="https://cinetpay.com"><img width="200" src="/img/page-parcours/cinetpay.png" alt=""></a>  </span> </p>
         <a class="home_button" href="#payment">
           Inscrivez-vous maintenant
         </a>
-        <p class="u-margin-t-md subHeading">
-          Construisez-vous un excellent portfolio en réalisant des projets de la vie réelle.
-        </p>
+
       </div>
       <div class="col-xs-12 col-sm-6 c-how__headingRight">
-        <img src="/img/page-parcours/asset.svg" />
+        <img src="https://static1.squarespace.com/static/5ace1725266c0708f3759baf/t/5b217dbb758d46f54093b067/1528921539091/Flat+Modern+Concept+Illustration+-+Development+Team.png" />
+
+        <!--image du parcours et countdown-->
+        <div class="row">
+
+          <div class="col-sm-12 text-center">
+
+            <h3 id="info">Les inscriptions se terminent dans :</h3>
+
+          </div>
+
+        </div>
+
+        <div _ngcontent-c87="" class="countdown ng-star-inserted">
+          <div _ngcontent-c87="">
+              <!---->
+              <!---->
+              <!---->
+              <ul _ngcontent-c87="" class="ng-star-inserted">
+                  <li _ngcontent-c87=""><span _ngcontent-c87="" class="countdown__timer" id="jours"></span><span _ngcontent-c87="">JOURS</span></li>
+                  <li _ngcontent-c87=""><span _ngcontent-c87="" class="countdown__timer" id="heures"></span><span _ngcontent-c87="">HRS</span></li>
+                  <li _ngcontent-c87=""><span _ngcontent-c87="" class="countdown__timer" id="minutes"></span><span _ngcontent-c87="">MIN</span></li>
+                  <li _ngcontent-c87=""><span _ngcontent-c87="" class="countdown__timer" id="secondes"></span><span _ngcontent-c87="">SEC</span></li>
+              </ul>
+          </div>
+      </div>
+      <!--fin image parcours et countdown-->
+
+
+
+
       </div>
     </div>
   </div>
+
+
 
   <ul _ngcontent-c29="" class="ng-star-inserted">
   <!---->
@@ -102,10 +131,53 @@
 
 
 
+
+<!-- collaboration section-->
+
+
+<section _ngcontent-c18="" class="ng-star-inserted">
+    <!---->
+    <!---->
+    <!---->
+    <!---->
+    <!---->
+    <ir-nd-partners _ngcontent-c18="" _nghost-c30="" class="ng-star-inserted">
+        <div _ngcontent-c30="" class="contain nd-partners">
+            <h6 _ngcontent-c30="" class="mb-0 text-center">
+                <!---->En collaboration avec</h6>
+            <!---->
+            <!---->
+            <ul _ngcontent-c30="">
+                <!---->
+                <!---->
+                <!---->
+                <li _ngcontent-c30="" class="ng-star-inserted">
+                    <!----><img style="margin: 2rem;" width="200" src="/img/page-parcours/cinetpay.png">
+                    <!---->
+                </li>
+                <!---->
+                <!---->
+            </ul>
+        </div>
+    </ir-nd-partners>
+    <!---->
+</section>
+
+
+<!--end collaboration section-->
+
+
+
+
+
+
+
   <div class="container alt section-space">
     <div class="row">
       <div class="col-xs-12 text-center">
-        <h3 class="h3 u-bold text-center u-margin-b-sm">Suivez le parcours certifiant Développeur Web, et démarrez une nouvelle carrière.</h3>
+        <h3 class="h3 u-bold text-center u-margin-b-sm">Du débutant au professionnel rémunéré.<br>
+          Apprenez à créer des applications Web à partir de zéro <br>
+          Suivez le parcours certifiant Développeur Web, et démarrez une nouvelle carrière.</h3>
         <div class="c-browser">
           <div class="c-browser__chrome">
             <div class="c-browser__buttons">
@@ -319,7 +391,7 @@
     <!---->
     <!---->
     <!---->
-    <!----><a _ngcontent-c55="" class="button--secondary lg syllabus-download-button ng-star-inserted" target="_blank" href="https://s3.amazonaws.com/video.udacity-data.com/topher/2018/June/5b189d8e_fend-syllabus-9.0.0/fend-syllabus-9.0.0.pdf">
+    <!----><a _ngcontent-c55="" class="button--secondary lg syllabus-download-button ng-star-inserted" target="_blank" href="https://docs.google.com/document/d/1bBBD1gUfjFIpRDdvPzAbcTmL4Y8Lk14IXNwAvC2AFW0/edit?usp=sharing">
     Télécharger le programme
     </a>
     <!---->
@@ -461,7 +533,7 @@
                         <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted">PHP et MySQL</h4>
                         <!---->
                       </header>
-                      <p _ngcontent-c95="" class="small mb-half">C'est maintenant le temps de se plonger du côté Back-End. Vous apprendrez PHP pour générer des pages dynamiques et interroger des bases de données avec PHP. Vous </p>
+                      <p _ngcontent-c95="" class="small mb-half">C'est maintenant le temps de se plonger du côté Back-End. Vous apprendrez PHP pour générer des pages dynamiques et interroger des bases de données avec PHP.</p>
                       <!---->
                       <!---->
                       <!---->

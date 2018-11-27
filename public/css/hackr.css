@@ -1,3 +1,34 @@
+/*! CSS Used from: https://eu.udacity.com/styles.cd049525371f607387d9.css */
+*,::after,::before{box-sizing:inherit;}
+/*! CSS Used from: Embedded */
+*[_ngcontent-c87],[_ngcontent-c87]::after,[_ngcontent-c87]::before{box-sizing:inherit;}
+.countdown[_ngcontent-c87]{margin-bottom:1.5rem;margin-top:.75rem;}
+.countdown__timer[_ngcontent-c87]{font-size:1.125rem;line-height:2rem;height:2rem;font-weight:700;display:block;}
+.countdown[_ngcontent-c87]   ul[_ngcontent-c87]{display:flex;margin:0 auto;max-width:50rem;align-items:center;justify-content:space-between;list-style:none;padding-left:0;margin-bottom: 6rem;margin-top: 4rem;}
+.countdown[_ngcontent-c87]   ul[_ngcontent-c87]   li[_ngcontent-c87]{font-size:3rem;line-height:3.75rem;text-align:center;display:inline-block;letter-spacing:.125rem;text-transform:uppercase;}
+@media screen and (min-width:48rem){
+.countdown[_ngcontent-c87]{margin-bottom:1.5rem;}
+.countdown__timer[_ngcontent-c87]{font-size:4.5rem;line-height:0;}
+.countdown[_ngcontent-c87]   ul[_ngcontent-c87]   li[_ngcontent-c87]{font-size:3rem;line-height:3.75rem;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* collaboration section*/
 
 
@@ -29778,7 +29809,7 @@ p.username-error-block {
 }
 
 .u-bold {
-  font-weight: 700
+  font-weight: 400
 }
 
 .u-center, .u-text-center {
