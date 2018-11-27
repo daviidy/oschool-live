@@ -8,19 +8,44 @@
     <div class="row c-how__heading align-row">
       <div class="col-xs-12 col-sm-6 c-how__headingLeft">
         <!-- <h2 class="h2 u-bold text-primary">Hack & Learn <em>React</em></h2> -->
-        <h1 class="h2 u-bold">Deviens Développeur d'Applications Android, avec un formateur dédié en télé présentiel</h1>
-        <p class="u-margin-t-md subHeading">Développe de puissantes applications Android.</p>
+        <h1 class="h2 u-bold">Devenez Développeur d'Applications Android, en suivant un cours particulier depuis la maison</h1>
+        <p style="margin: 5rem 0;">En collaboration avec &nbsp; &nbsp; &nbsp;<span> <a target="_blank" href="https://epistrophe.ci"><img width="200" src="https://www.epistrophe.ci/wp-content/uploads/2013/05/cropped-logo_epistrophe_fond_blanc_790x210.jpg" alt=""></a>  </span> </p>
         <a class="home_button" href="#payment">
           Inscrivez-vous maintenant
         </a>
-        <p class="u-margin-t-md subHeading">
-          Commence ta carrière de Développeur d'Applications Android. Apprends les meilleures pratiques
-          du développement mobile, construis un portfolio d'applications, et
-          publie ta propre application sur Google Play.
-        </p>
       </div>
       <div class="col-xs-12 col-sm-6 c-how__headingRight">
-        <img src="/img/page-parcours/android1.gif" />
+        <img style="width: 70%;" src="/img/page-parcours/android1.gif" />
+
+        <!--image du parcours et countdown-->
+        <div class="row">
+
+          <div class="col-sm-12 text-center">
+
+            <h3 id="info">Les inscriptions se terminent dans :</h3>
+
+          </div>
+
+        </div>
+
+        <div _ngcontent-c87="" class="countdown ng-star-inserted">
+          <div _ngcontent-c87="">
+              <!---->
+              <!---->
+              <!---->
+              <ul _ngcontent-c87="" class="ng-star-inserted">
+                  <li _ngcontent-c87=""><span _ngcontent-c87="" class="countdown__timer" id="jours"></span><span _ngcontent-c87="">JOURS</span></li>
+                  <li _ngcontent-c87=""><span _ngcontent-c87="" class="countdown__timer" id="heures"></span><span _ngcontent-c87="">HRS</span></li>
+                  <li _ngcontent-c87=""><span _ngcontent-c87="" class="countdown__timer" id="minutes"></span><span _ngcontent-c87="">MIN</span></li>
+                  <li _ngcontent-c87=""><span _ngcontent-c87="" class="countdown__timer" id="secondes"></span><span _ngcontent-c87="">SEC</span></li>
+              </ul>
+          </div>
+      </div>
+      <!--fin image parcours et countdown-->
+
+
+
+
       </div>
     </div>
   </div>
@@ -73,7 +98,7 @@
     </ir-modal>
     <h6 class="details" _ngcontent-c29="" class="ng-star-inserted">Prérequis</h6>
     <!---->
-    <h5 _ngcontent-c29="" class="ng-star-inserted">As tu les prérequis ?</h5>
+    <h5 _ngcontent-c29="" class="ng-star-inserted">Avez-vous les prérequis ?</h5>
     <p _ngcontent-c29="" class="x-small ng-star-inserted"><a _ngcontent-c29="">Voir les prérequis en détail</a></p>
     <!---->
     <!---->
@@ -99,6 +124,43 @@
 
 
 
+<!-- collaboration section-->
+
+
+<section _ngcontent-c18="" class="ng-star-inserted">
+    <!---->
+    <!---->
+    <!---->
+    <!---->
+    <!---->
+    <ir-nd-partners _ngcontent-c18="" _nghost-c30="" class="ng-star-inserted">
+        <div _ngcontent-c30="" class="contain nd-partners">
+            <h6 _ngcontent-c30="" class="mb-0 text-center">
+                <!---->En collaboration avec</h6>
+            <!---->
+            <!---->
+            <ul _ngcontent-c30="">
+                <!---->
+                <!---->
+                <!---->
+                <li _ngcontent-c30="" class="ng-star-inserted">
+                    <!----><img style="margin: 2rem;" width="200" src="https://www.epistrophe.ci/wp-content/uploads/2013/05/cropped-logo_epistrophe_fond_blanc_790x210.jpg">
+                    <!---->
+                </li>
+                <!---->
+                <!---->
+            </ul>
+        </div>
+    </ir-nd-partners>
+    <!---->
+</section>
+
+
+<!--end collaboration section-->
+
+
+
+
 
 
 
@@ -107,7 +169,7 @@
   <div class="container alt section-space">
     <div class="row">
       <div class="col-xs-12 text-center">
-        <h3 class="h3 u-bold text-center u-margin-b-sm">Suivez le parcours certifiant Développeur d'Applications Android, et démarrez une nouvelle carrière.</h3>
+        <h3 class="h3 u-bold text-center u-margin-b-sm">Suivez le parcours certifiant Développeur d'Applications Android, et publiez votre propre application sur Google.</h3>
         <div class="c-browser">
           <div class="c-browser__chrome">
             <div class="c-browser__buttons">

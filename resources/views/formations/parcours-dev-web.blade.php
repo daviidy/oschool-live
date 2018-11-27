@@ -7,7 +7,7 @@
   <div class="container alt section-space">
     <div class="row c-how__heading align-row">
       <div class="col-xs-12 col-sm-6 c-how__headingLeft">
-        <h1 class="h2 u-bold">Deviens Développeur web Junior, en suivant un cours particulier depuis la maison</h1>
+        <h1 class="h2 u-bold">Devenez Développeur web Junior, en suivant un cours particulier depuis la maison</h1>
 
         <p style="margin: 5rem 0;">En collaboration avec &nbsp; &nbsp; &nbsp;<span> <a target="_blank" href="https://cinetpay.com"><img width="200" src="/img/page-parcours/cinetpay.png" alt=""></a>  </span> </p>
         <a class="home_button" href="#payment">
@@ -16,7 +16,7 @@
 
       </div>
       <div class="col-xs-12 col-sm-6 c-how__headingRight">
-        <img src="https://static1.squarespace.com/static/5ace1725266c0708f3759baf/t/5b217dbb758d46f54093b067/1528921539091/Flat+Modern+Concept+Illustration+-+Development+Team.png" />
+        <img style="width:90%;" src="/img/page-parcours/ordi.png" />
 
         <!--image du parcours et countdown-->
         <div class="row">
@@ -175,9 +175,9 @@
   <div class="container alt section-space">
     <div class="row">
       <div class="col-xs-12 text-center">
-        <h3 class="h3 u-bold text-center u-margin-b-sm">Du débutant au professionnel rémunéré.<br>
-          Apprenez à créer des applications Web à partir de zéro <br>
-          Suivez le parcours certifiant Développeur Web, et démarrez une nouvelle carrière.</h3>
+        <h3 class="h3 u-bold text-center u-margin-b-sm">Apprenez avec un formateur en direct, dans notre classe virtuelle.<br>
+          Tout a été fait pour vous permettre d'apprendre sereinement<br>
+            Suivez notre parcours certifiant et démarrez une nouvelle carrière</h3>
         <div class="c-browser">
           <div class="c-browser__chrome">
             <div class="c-browser__buttons">
@@ -187,7 +187,7 @@
             </div>
           </div>
           <div class="c-browser__image">
-            <img src="/img/page-parcours/ordi.png" />
+            <img src="/avilon/img/demo.gif" />
           </div>
         </div>
 

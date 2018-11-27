@@ -18,7 +18,33 @@
         </p>
       </div>
       <div class="col-xs-12 col-sm-6 c-how__headingRight">
-        <img src="/img/page-parcours/anglais4.svg" />
+        <img style="width:50%;" src="/img/page-parcours/anglais4.svg" />
+
+        <!--image du parcours et countdown-->
+        <div class="row">
+
+          <div class="col-sm-12 text-center">
+
+            <h3 id="info">Les inscriptions se terminent dans :</h3>
+
+          </div>
+
+        </div>
+
+        <div _ngcontent-c87="" class="countdown ng-star-inserted">
+          <div _ngcontent-c87="">
+              <!---->
+              <!---->
+              <!---->
+              <ul _ngcontent-c87="" class="ng-star-inserted">
+                  <li _ngcontent-c87=""><span _ngcontent-c87="" class="countdown__timer" id="jours"></span><span _ngcontent-c87="">JOURS</span></li>
+                  <li _ngcontent-c87=""><span _ngcontent-c87="" class="countdown__timer" id="heures"></span><span _ngcontent-c87="">HRS</span></li>
+                  <li _ngcontent-c87=""><span _ngcontent-c87="" class="countdown__timer" id="minutes"></span><span _ngcontent-c87="">MIN</span></li>
+                  <li _ngcontent-c87=""><span _ngcontent-c87="" class="countdown__timer" id="secondes"></span><span _ngcontent-c87="">SEC</span></li>
+              </ul>
+          </div>
+      </div>
+      <!--fin image parcours et countdown-->
       </div>
     </div>
   </div>
