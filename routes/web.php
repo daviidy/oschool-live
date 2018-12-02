@@ -186,9 +186,23 @@ Route::get('/ecoledatascience', function () {
     return view('formations.ecoledatascience');
 });
 
+//voir facturation pour les teachers
+
 Route::get('/factures', 'UserController@factures');
 
 Route::post('/moisFactures', 'UserController@moisFactures');
+
+//voir facturation pour les admins
+
+Route::get('/paiements', 'UserController@paiements');
+
+Route::post('/moisPaiements', 'UserController@moisPaiements');
+
+//voir les sessions mensuelles des profs pour les admins
+
+Route::get('/rapportProf', 'UserController@rapportProf');
+
+Route::post('/rapportMoisProf', 'UserController@rapportMoisProf');
 
 
 Route::get('/documentsTeacher', 'UserController@documentsTeacher')->name('documentsTeacher');

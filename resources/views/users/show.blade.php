@@ -1,4 +1,4 @@
-@extends( Auth::user()->type2 == "teacher" ? 'layouts.menu-dashboard-teacher' : 'layouts.menu-dashboard-default')
+@extends((Auth::user()->type3 == "admin") ? "layouts.menu-dashboard-admin" : ((Auth::user()->type2 == "teacher")  ? "layouts.menu-dashboard-teacher" : "layouts.menu-dashboard-default"))
 
 @section('content')
     <!-- **********************************************************************************************************************************************************
@@ -61,7 +61,7 @@
                     <a data-toggle="tab" href="#progressions">Les progressions de {{$user->name}}</a>
                   </li>
                   <li>
-                    <a data-toggle="tab" href="#projets">Les projets de {{$user->name}}</a>
+                    <a data-toggle="tab" href="#projets">Les livrables de {{$user->name}}</a>
                   </li>
                   @endif
                   @if (Auth::user()->isAdmin())
