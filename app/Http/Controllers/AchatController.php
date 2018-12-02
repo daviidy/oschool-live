@@ -41,6 +41,9 @@ class AchatController extends Controller
 
     }
 
+    //recuperation des infos utilisateur a envoyer
+    //a la page de paiement
+
     public function envoi(Request $request)
     {
       Session::put('name', $request['nom']);
