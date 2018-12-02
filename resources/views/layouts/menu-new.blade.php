@@ -102,11 +102,11 @@
 							</div>
 							<nav class="main_nav_contaner">
 								<ul class="main_nav">
-									<li class="active"><a href="/">Accueil</a></li>
+									<li class="active"><a href="https://oschool.ci/">Accueil</a></li>
 									<li><a href="/#schools">Toutes les formations</a></li>
 									<li><a target="_blank" href="https://events.oschool.ci">Evénements</a></li>
 									<li><a target="_blank" href="https://oschool.ci/blog/">Blog</a></li>
-									<li><a target="_blank" class="demo" href="https://calendly.com/oschool_e-learning/demo-oschool-code">Demandez une démo</a></li>
+						<!--			<li><a target="_blank" class="demo" href="https://calendly.com/oschool_e-learning/demo-oschool-code">Demandez une démo</a></li> -->
 								</ul>
 							</nav>
 

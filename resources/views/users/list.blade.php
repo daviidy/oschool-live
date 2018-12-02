@@ -1,4 +1,4 @@
-@extends('layouts.menu-dashboard-teacher')
+@extends('layouts.menu-dashboard-admin')
 
 @section('content')
 

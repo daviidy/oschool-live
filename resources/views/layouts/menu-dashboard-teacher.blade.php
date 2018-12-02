@@ -59,7 +59,7 @@
         <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
       </div>
       <!--logo start-->
-      <a href="{{url('/')}}" class="logo"><img width="100" src="/dashboard/img/thumbnail.png"></a>
+      <a href="https://oschool.ci/" class="logo"><img width="100" src="/dashboard/img/thumbnail.png"></a>
       <!--logo end-->
       <!--si la date d'expiration - 10 jours est inférieur ou égal à aujourd'hui et si la date d'expiration est supérieure ou égale à aujourd'hui-->
       @if(count(Auth::user()->formations) && !Auth::user()->isTeacher() && !Auth::user()->isAdmin() && Auth::user()->fin_abonnement->subDays(10) <= Carbon\Carbon::now() && Auth::user()->fin_abonnement >= Carbon\Carbon::now())
