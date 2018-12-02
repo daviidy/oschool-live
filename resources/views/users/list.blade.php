@@ -67,9 +67,9 @@
                 @foreach($teachers as $teacher)
                 <tr>
                   <td>{{$teacher->id}}</td>
-                  <td><a href="{{url('users', $teacher)}}">{{$teacher->name}}</a></td>
+                  <td class="blind"><a href="{{url('users', $teacher)}}">{{$teacher->name}}</a></td>
                   <td class="numeric">{{$teacher->email}}</td>
-                  <td class="numeric">{{$teacher->max_students - $teacher->students->count()}}</td>
+                  <td class="blind">{{$teacher->max_students - $teacher->students->count()}}</td>
                 </tr>
                 @endforeach
 
