@@ -19,17 +19,10 @@ Website: http://Alvarez.is/
 
 
 
+/*pour la zone d'info sur la liste des classroomsù/
 
 /*! CSS Used from: https://classroom.udacity.com/css/13.19d21.css */
 *,:after,:before{box-sizing:border-box;}
-strong{font-weight:bolder;}
-button{border-radius:0;}
-button:focus{outline:1px dotted;outline:5px auto -webkit-focus-ring-color;}
-button{margin:0;font-family:inherit;font-size:inherit;line-height:inherit;}
-button{overflow:visible;}
-button{text-transform:none;}
-button,html [type=button]{-webkit-appearance:button;}
-[type=button]::-moz-focus-inner,button::-moz-focus-inner{padding:0;border-style:none;}
 
 .vds-button{font-family:Open Sans,sans-serif;font-size:1.5rem;line-height:1.5rem;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;height:5rem;padding:0 2rem;background:#fff;border:transparent;border-radius:.25rem;color:#02b3e4;cursor:pointer;-webkit-appearance:none;-moz-appearance:none;appearance:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;text-align:center;display:inline-block;text-decoration:none;vertical-align:middle;transition:all .3s ease;}
 .vds-button:active,.vds-button:focus{outline:none;background:#f7f7f8;}
