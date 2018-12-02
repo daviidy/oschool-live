@@ -57,16 +57,16 @@
             <table class="table table-bordered table-striped table-condensed cf">
               <thead class="cf">
                 <tr>
-                  <th>ID</th>
-                  <th>Nom</th>
+                  <th class="blind">ID</th>
+                  <th class="blind">Nom</th>
                   <th class="numeric">Email</th>
-                  <th class="numeric">Places d'étudiants restantes</th>
+                  <th class="blind">Places d'étudiants restantes</th>
                 </tr>
               </thead>
               <tbody>
                 @foreach($teachers as $teacher)
                 <tr>
-                  <td>{{$teacher->id}}</td>
+                  <td class="blind">{{$teacher->id}}</td>
                   <td class="blind"><a href="{{url('users', $teacher)}}">{{$teacher->name}}</a></td>
                   <td class="numeric">{{$teacher->email}}</td>
                   <td class="blind">{{$teacher->max_students - $teacher->students->count()}}</td>
