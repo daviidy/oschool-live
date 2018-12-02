@@ -155,7 +155,7 @@ class UserController extends Controller
       $mois = (int)$request['month'];
       $an = (int)$request['year'];
       $teachers = User::orderby ('id','asc')->where('type2', 'teacher')->paginate(1000);
-      $classrooms = Classroom::whereMonth('date', '=', $mois)->whereYear('date', '=', $an)->where('user_id', Auth::user()->id)->where('statut', 'Réalisée')->get();
+      $classrooms = Classroom::whereMonth('date', '=', $mois)->whereYear('date', '=', $an)->where('statut', 'Réalisée')->get();
       return view('users.rapport-sessions-mois', ['teachers' => $teachers, 'mois' => $mois, 'an' => $an, 'classrooms' => $classrooms]);
       }
       else {
