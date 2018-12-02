@@ -136,7 +136,7 @@
                                     <!---->
                                     <!---->
                                     <li _ngcontent-c41="" class="ng-star-inserted">
-                                        <!----><img _ngcontent-c41="" width="200" class="icon ng-star-inserted" irdeferimage="" alt="Cinetpay" src="https://cinetpay.com/assets/imgs/logos/logo1.png">
+                                        <!----><img _ngcontent-c41="" width="200" class="icon ng-star-inserted" irdeferimage="" alt="Cinetpay" src="/img/partners/logo1.png">
                                         <!---->
                                     </li>
                                     <li _ngcontent-c41="" class="ng-star-inserted">
