@@ -72,7 +72,7 @@
                 <tr>
                   <td>{{ $achat->date }}</td>
                   <td>{{$achat->prenoms}}</td>
-                  <td>{{ $achat->formation }} FCFA</td>
+                  <td>{{ $achat->formation }}</td>
                   <td>{{ $achat->montant }} FCFA</td>
                 </tr>
                 @endforeach
