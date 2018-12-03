@@ -39,6 +39,30 @@
 
 <body>
   <section id="container">
+
+
+    <div class="ud-app-loader ud-component--smart-bar--app ud-app-loaded" data-module-id="smart-bar" ng-non-bindable="">
+      <div data-purpose="smart-bar-wrapper" class="mb0 " style="margin-bottom: 0px;">
+          <div data-purpose="smart-bar-container" class="" style="height: auto;">
+              <div data-purpose="smart-bar" class="smart-bar--smart-bar--1rOkE smart-bar--smart-bar--teal--Qijai smart-bar--smart-bar-dark-theme--18ulO"><span style="font-size: 0px;"></span>
+                  <div class="smart-bar--smart-bar__content--3X42a basic-with-timer--centered-content--QtJd8">
+                      <div data-purpose="basic-with-timer" class="basic-with-timer--centered-content__text--2t0l3"><span data-purpose="smart-bar-copy" class=""><span class="smart-bar--smart-bar__title--1LFsk" data-purpose="smart-bar-title">
+                                  Bonne nouvelle !</span><span class="smart-bar--smart-bar__subtitle--I38FP" data-purpose="smart-bar-subtitle" role="presentation">| Nous organisons un meetup qui va réunir
+                                    les amoureux de l'éducation et du digital. Plus d'infos dans les prochains jours
+                                  </span></span>
+                          <div data-purpose="smart-bar-timer" class="smart-bar-timer--timer-container--2mwOn"><span data-purpose="timer-x-days-left">Date: 15 décembre 2018</span></div>
+                      </div>
+                  </div>
+                  <div aria-label="Close" class="smart-bar--smart-bar__close--3mCup" data-purpose="smart-bar-hide" role="button" tabindex="0"><span class="udi-small udi udi-close"></span></div>
+              </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
     @if (session('status'))
         <div class="alert alert-success">
             {{ session('status') }}
