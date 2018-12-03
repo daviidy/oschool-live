@@ -17,6 +17,48 @@ Website: http://Alvarez.is/
 /* BASIC THEME CONFIGURATION */
 
 
+/*! CSS Used from: https://www.udemy.com/staticx/udemy/js/webpack/entry-main.c4fb49c306d714d42324135cad2229c6.css */
+.udi{font-family:UdemyIcons!important;speak:none;font-style:normal;font-weight:400;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}
+.udi-close:before{content:"\E730";}
+.udi-small{font-size:16px;}
+.udi{vertical-align:-8%;}
+.smart-bar--smart-bar--1rOkE{background-color:#007791;color:#fff;display:flex;font-size:13px;padding:10px;}
+.smart-bar--smart-bar-dark-theme--18ulO .smart-bar--smart-bar__content--3X42a:hover{color:#fff;}
+.smart-bar--smart-bar--teal--Qijai{background:#CA4352;}
+.smart-bar--smart-bar__close--3mCup{align-self:baseline;cursor:pointer;margin-left:auto;}
+.smart-bar--smart-bar__content--3X42a{flex-basis:100%;}
+.smart-bar--smart-bar__title--1LFsk{font-weight:600;margin-right:5px;}
+@media (min-width:576px){
+.smart-bar--smart-bar--1rOkE{font-size:15px;}
+}
+.smart-bar-timer--timer-container--2mwOn{font-size:13px;font-weight:600;}
+@media (min-width:992px){
+.smart-bar-timer--timer-container--2mwOn{font-size:18px;}
+}
+.basic-with-timer--centered-content__text--2t0l3{display:flex;flex-direction:column;justify-content:center;}
+.basic-with-timer--centered-content--QtJd8{display:flex;justify-content:center;text-align:center;}
+.basic-with-timer--centered-content--QtJd8:hover{color:#fff;}
+@media print{
+*,:after,:before{background:transparent!important;color:#000!important;box-shadow:none!important;text-shadow:none!important;}
+}
+*,:after,:before{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
+[role=button]{cursor:pointer;}
+:focus{outline:none;}
+.mb0{margin-bottom:0;}
+/*! CSS Used fontfaces */
+@font-face{font-family:UdemyIcons;src:url(https://www.udemy.com/staticx/udemy/js/webpack/UdemyIcons.54ed2dbfbff75828cd0f4289f36c4749.woff2) format("woff2"),url(https://www.udemy.com/staticx/udemy/js/webpack/UdemyIcons.5e012ac778fbed7f3c115fa8bc7477f7.ttf) format("truetype"),url(https://www.udemy.com/staticx/udemy/js/webpack/UdemyIcons.631440a7a73ca2f078c9f17482af1b7c.woff) format("woff"),url(https://www.udemy.com/staticx/udemy/js/webpack/UdemyIcons.21d72319c00b733c6a518d21b08b4434.svg#UdemyIcons) format("svg");font-weight:400;font-style:normal;}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*pour la zone d'info sur la liste des classroomsù/
