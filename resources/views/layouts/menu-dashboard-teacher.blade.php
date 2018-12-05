@@ -48,9 +48,9 @@
                   <div class="smart-bar--smart-bar__content--3X42a basic-with-timer--centered-content--QtJd8">
                       <div data-purpose="basic-with-timer" class="basic-with-timer--centered-content__text--2t0l3"><span data-purpose="smart-bar-copy" class=""><span class="smart-bar--smart-bar__title--1LFsk" data-purpose="smart-bar-title">
                                   Bonne nouvelle !</span><span class="smart-bar--smart-bar__subtitle--I38FP" data-purpose="smart-bar-subtitle" role="presentation">| Nous organisons un meetup qui va réunir
-                                    les amoureux de l'éducation et du digital. Plus d'infos dans les prochains jours
+                                    les amoureux de l'éducation et du digital, ce samedi 15 décembre 2018
                                   </span></span>
-                          <div data-purpose="smart-bar-timer" class="smart-bar-timer--timer-container--2mwOn"><span data-purpose="timer-x-days-left">Date: 15 décembre 2018</span></div>
+                          <div data-purpose="smart-bar-timer" class="smart-bar-timer--timer-container--2mwOn"><span data-purpose="timer-x-days-left"> <a target="_blank" href="https://events.oschool.ci">Cliquez ici pour participer à l'événement</a> </span></div>
                       </div>
                   </div>
                   <div aria-label="Close" class="smart-bar--smart-bar__close--3mCup" data-purpose="smart-bar-hide" role="button" tabindex="0"><span class="udi-small udi udi-close"></span></div>
