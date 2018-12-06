@@ -1,24 +1,26 @@
 @extends('layouts.menu-parcours')
 
-@section('title', 'Développeur de Jeux Vidéos Unity')
+@section('title', 'After Effects')
 
 @section('content')
 
-  <div class="container alt section-space">
+   <div class="container alt section-space">
     <div class="row c-how__heading align-row">
       <div class="col-xs-12 col-sm-6 c-how__headingLeft">
         <!-- <h2 class="h2 u-bold text-primary">Hack & Learn <em>React</em></h2> -->
-        <h1 class="h2 u-bold">Deviens Développeur de Jeux Vidéos Unity, avec un formateur dédié en télé présentiel</h1>
-        <p class="u-margin-t-md subHeading">Cette formation est le moyen le plus rapide de créer des jeux. Nous utiliserons le moteur Unity car il est puissant et gratuit. </p>
+        <h1 class="h2 u-bold">Cette formation complète vous permettra de bien débuter et devenir un expert sur After Effects</h1>
+        <p class="u-margin-t-md subHeading">Du débutant au professionnel rémunéré.<br>
+				Dédiée aux grands débutants, cette formation vous permettra de devenir totalement autonome et un expert du Motion Design, des trucages numériques et de l'animation.</p>
         <a class="home_button" href="#payment">
           Inscrivez-vous maintenant
         </a>
         <p class="u-margin-t-md subHeading">
-          Il est temps de changer de camp. Passez de joueur à développeur avec Oschool.
+           Créer des animations incroyables comme une scène de STAR WARS en 3D ou encore l'outro des dessins animés Looney Tunes!
+
         </p>
       </div>
       <div class="col-xs-12 col-sm-6 c-how__headingRight">
-        <img src="https://png2.kisspng.com/20180404/xbe/kisspng-software-developer-web-development-web-developer-s-developer-5ac53c6a6ec685.3751279915228754984538.png" />
+        <img src="/img/page-parcours/img-1-after-effects.jpg" />
       </div>
     </div>
   </div>
@@ -71,8 +73,8 @@
     </ir-modal>
     <h6 class="details" _ngcontent-c29="" class="ng-star-inserted">Prérequis</h6>
     <!---->
-    <h5 _ngcontent-c29="" class="ng-star-inserted">Un ordinateur ayant un accès Internet</h5>
-    <p _ngcontent-c29="" class="x-small ng-star-inserted"><a href="https://drive.google.com/open?id=1ihKHmukvYioQ6VfS_eaqSuIq4gOgnxcA" target="_blank" _ngcontent-c29="">Voir les prérequis en détail</a></p>
+    <h5 _ngcontent-c29="" class="ng-star-inserted">Un ordinateur  avec connexion internet</h5>
+   <!--  <p _ngcontent-c29="" class="x-small ng-star-inserted"><a _ngcontent-c29="">Voir les prérequis en détail</a></p> -->
     <!---->
     <!---->
   </li>
@@ -86,6 +88,7 @@
     <h5 _ngcontent-c29="" class="ng-star-inserted">Francais</h5>
     <!---->
     <!---->
+   <!--  <p _ngcontent-c29="" class="x-small ng-star-inserted">Découvrir les matériels requis pour suivre la formation</p> -->
     <!---->
     <!---->
     <!---->
@@ -98,13 +101,10 @@
 
 
 
-
-
-
   <div class="container alt section-space">
     <div class="row">
       <div class="col-xs-12 text-center">
-        <h3 class="h3 u-bold text-center u-margin-b-sm">Suivez le parcours certifiant Développeur de Jeux Vidéos Unity, et démarrez une nouvelle carrière.</h3>
+        <h3 class="h3 u-bold text-center u-margin-b-sm">Suivez le parcours certifiant d'After Effects et démarrez une nouvelle carrière.</h3>
         <div class="c-browser">
           <div class="c-browser__chrome">
             <div class="c-browser__buttons">
@@ -114,7 +114,7 @@
             </div>
           </div>
           <div class="c-browser__image">
-            <img src="https://images.unsplash.com/photo-1529154691717-3306083d869e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=d706bd2801c6753fb5f4c9d1440a84ae&auto=format&fit=crop&w=750&q=80" />
+            <img src="/img/page-parcours/img-2-after-effects.jpg" />
           </div>
         </div>
 
@@ -123,14 +123,7 @@
           <div class="col-xs-12 col-sm-6">
             <div style="text-align: left !important;" class="c-how__sectionContent">
               <h4 class="h4 u-bold">Pourquoi suivre ce parcours ?</h4>
-              <p class="u-margin-t-md subHeading">Il existe tellement de tutoriels, de guides et de
-                cours qu'il est difficile de savoir comment commencer à apprendre à coder,
-                à développer des jeux, et encore plus difficile à savoir dans quel ordre suivre les cours.
-                Nous avons décidé de nous concentrer sur Unity plutôt que sur d'autres plates-formes,
-                car l'équipe derrière Unity a une grande vision. Ils sont toujours au top des choses.
-                Nous pensons que vous devriez également
-                vous concentrer sur Unity. Nous voulons nous assurer que vous le faites
-                en vous fournissant le meilleur matériel d'apprentissage au meilleur prix.</p>
+              <p class="u-margin-t-md subHeading">Pourquoi After Effects ? Le Motion Graphics et les effets visuels deviennent de plus en plus précieux et important dans toute vidéo créée. Apprendre à créer ces animations en utilisant  After Effects est devenu essentiel. Les talents pour créer ce genre d'animations et d'effets sont de plus en plus demandés dans différents domaines (cinéma, vidéos Youtube, sociétés d'animation...).</p>
             </div>
           </div>
           <div _ngcontent-c33="" class="col-xs-12 col-sm-6 stat ng-star-inserted">
@@ -140,8 +133,7 @@
                 <h4 _ngcontent-c33="" class="light ng-star-inserted">
                   <h4 class="light">
                     <font style="vertical-align: inherit;">
-                      <font style="vertical-align: inherit;">L'industrie du jeu vidéo, c'est près de 100 milliards de dollars par an. <br><br>
-                        Faites vous une place, en tant que freelance ou fournisseur de contenu pour les entreprises de cette industrie.</font>
+                      <font style="vertical-align: inherit;">Ce cours vous offre la chance de comprendre, de pratiquer et de développer vos compétences en tant qu'artiste des effets visuels, du temps et du mouvement.</font>
                     </font>
                   </h4>
                 </h4>
@@ -255,9 +247,6 @@
                     </div>
                   </div>
                 </div>
-
-
-
         </div>
       </div>
     </div>
@@ -272,11 +261,12 @@
       <!---->
       <h2 style="font-size: 4rem;font-weight: 300;" _ngcontent-c47="" class="white ng-star-inserted">Développez cette compétence pour aujourd'hui et demain</h2>
       <!---->
-      <p _ngcontent-c47="" class="white ng-star-inserted"><span class="hidden-md-down">Ce parcours Développeur de Jeux Vidéos Unity est conçu
+      <p _ngcontent-c47="" class="white ng-star-inserted"><span class="hidden-md-down">Ce parcours d'After Effects est conçu
         pour assurer votre succès à long terme sur le terrain. Les compétences acquises vous prépareront à des
-        emplois dans le monde de la programmation de jeux, et vous serez prêt à apporter une valeur immédiate
+        emplois dans le monde des médias sociaux, et vous serez prêt à apporter une valeur immédiate
         à toute organisation. Nous vous soutiendrons tout au long de votre parcours d'apprentissage.
-        </span></p>
+        De l'acquisition des compétences techniques et professionnelles précieuses,
+        jusqu'à l'obtention de l'emploi de vos rêves.</span></p>
     </div>
     <div _ngcontent-c47="" class="feature-card mb-4 ng-star-inserted">
       <!---->
@@ -285,8 +275,8 @@
         <!---->
         <h5 _ngcontent-c47="" class="title mb-1 ng-star-inserted"><span class="hidden-md-down">Rencontrez nos partenaires d'embauche</span><span class="hidden-lg-up">Rencontrez nos partenaires d'embauche</span></h5>
         <!---->
-        <p _ngcontent-c47="" class="x-small ng-star-inserted"><span class="hidden-md-down">Les développeurs de Jeux Vidéos sont en forte demande. Créez votre portefeuille professionnel avec Oschool et ouvrez un monde d'opportunités. Nos partenaires d'embauche sont impatients de vous rencontrer.</span>
-          <span class="hidden-lg-up">Les développeurs de Jeux Vidéos sont en forte demande. Créez votre portefeuille professionnel avec Oschool et ouvrez un monde d'opportunités. Nos partenaires d'embauche sont impatients de vous rencontrer.</span></p>
+        <p _ngcontent-c47="" class="x-small ng-star-inserted"><span class="hidden-md-down">Les développeurs Web front-end sont en forte demande. Créez votre portefeuille professionnel avec Oschool et ouvrez un monde d'opportunités. Nos partenaires d'embauche sont impatients de vous rencontrer.</span>
+          <span class="hidden-lg-up">Les développeurs Web front-end sont en forte demande. Créez votre portefeuille professionnel avec Oschool et ouvrez un monde d'opportunités. Nos partenaires d'embauche sont impatients de vous rencontrer.</span></p>
       </div>
       <div _ngcontent-c47="" class="card ng-star-inserted">
         <div _ngcontent-c47="" class="line bg-magenta"></div>
@@ -328,16 +318,16 @@
     <!---->
     <div _ngcontent-c55="" class="nd-syllabus-term__card">
       <section _ngcontent-c55="" class="nd-syllabus-term__header collapse in">
-        <div _ngcontent-c55="" class="nd-syllabus-term__header__image" irdeferbgimage="" style="background-image: url(&quot;https://d125fmws0bore1.cloudfront.net/assets/pages/ndop/nd001/image-syllabus-01@2x-f4be2598bea724657d8f295449bb8f45a954581306292393cb71a8417acf3cd3.jpg&quot;);">
+        <div _ngcontent-c55="" class="nd-syllabus-term__header__image" irdeferbgimage="" style="background-image: url(&quot;http://akcion.hu/projectSetup/couponImages/870-1510255276-8938.jpg&quot;);">
           <!---->
         </div>
         <div _ngcontent-c55="" class="nd-syllabus-term__header__content">
           <!---->
           <h6 _ngcontent-c55="" class="ng-star-inserted">PROGRAMME</h6>
-          <h2 _ngcontent-c55="" class="h3">Développeur Web</h2>
+          <h2 _ngcontent-c55="" class="h3">After Effects</h2>
           <!---->
-          <p _ngcontent-c55="" class="small hidden-md-down ng-star-inserted">Le programme Développeur Web Junior
-            est composé de huit projets. Avec chaque projet,
+          <p _ngcontent-c55="" class="small hidden-md-down ng-star-inserted">Le programme d'After Effects
+            est composé de 4 atéliers pratiques. Avec chaque atélier,
             vous allez créer quelque chose qui démontre votre maîtrise des compétences recherchées.
             La complexité des projets varie. En fin de compte,
             vous aurez un portefeuille de projets et un CV digne d'être aprréciés par des employeurs potentiels.</p>
@@ -365,10 +355,10 @@
               <!---->
               <h6 _ngcontent-c95="" class="mb-half ng-star-inserted">Outils requis</h6>
               <p _ngcontent-c95="" class="small mb-2 ng-star-inserted">
-                <!----><span _ngcontent-c95="" class="degree-syllabus-preview__content--term-prereq ng-star-inserted">Vous devez disposer d'un ordinateur portable, et d'une bonne connexion Internet pour suivre cette formation</span>
+                <!----><span _ngcontent-c95="" class="degree-syllabus-preview__content--term-prereq ng-star-inserted">Vous devez disposer d'un ordinateur portable ou d'un smartphone et d'une connexion Internet pour suivre cette formation</span>
                 <!---->
                 <!---->
-                <!----><a _ngcontent-c95="" class="pointer ng-star-inserted">Voir les outils requis.</a>
+                <!----><!-- <a _ngcontent-c95="" class="pointer ng-star-inserted">Voir les outils requis.</a> -->
                 <!---->
               </p>
               <section _ngcontent-c95="" class="degree-syllabus-preview__content--parts">
@@ -381,10 +371,10 @@
                     <div _ngcontent-c95="" class="part">
                       <header _ngcontent-c95="" class="part__header mb-half">
                         <!---->
-                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted">Fondations du Web</h4>
+                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted">Introduction à la Formation</h4>
                         <!---->
                       </header>
-                      <p _ngcontent-c95="" class="small mb-half">Découvre comment fonctionne le web, et installe tes outils de formation !</p>
+                      <p _ngcontent-c95="" class="small mb-half">Dans cette partie nous présenterons la formation sur After Effects.</p>
                       <!---->
                       <!---->
                       <!---->
@@ -398,10 +388,10 @@
                     <div _ngcontent-c95="" class="part">
                       <header _ngcontent-c95="" class="part__header mb-half">
                         <!---->
-                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted">Apprendre HTML et CSS</h4>
+                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted">L'interface</h4>
                         <!---->
                       </header>
-                      <p _ngcontent-c95="" class="small mb-half">Apprenez à utiliser les 2 langages de bases de la programmation web: HTML pour la structure d'une page web, et CSS pour gérer l'apparence de cette page</p>
+                      <p _ngcontent-c95="" class="small mb-half">Nous téléchargeront et installeront le logiciel After Effects et decouvir les différents menus (fichier, édition,compisition,calque,effet,animation,affichage), les outils,les préferences ainsi que les fenêtres projet,composition,montage et prévisualisation.</p>
                       <!---->
                       <!---->
                       <!---->
@@ -415,11 +405,10 @@
                     <div _ngcontent-c95="" class="part">
                       <header _ngcontent-c95="" class="part__header mb-half">
                         <!---->
-                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted">Apprendre Javascript</h4>
+                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted">Calques, Animation et Temps</h4>
                         <!---->
                       </header>
-                      <p _ngcontent-c95="" class="small mb-half">Apprenez les bases de JavaScript dont vous aurez besoin pour le développement front-end ou back-end.
-
+                      <p _ngcontent-c95="" class="small mb-half">Nous verons comment importer un fichier,transformer les calques, les animer,la modification et le montage de  vidéos, la déformation temporelle, le remappage temporel.
                       </p>
                       <span _ngcontent-c95="" class="part__project text-only ng-star-inserted"><img _ngcontent-c95="" class="icon-middle" src="/img/page-parcours/icon-project.svg"><span
                           _ngcontent-c95="">Améliorez la page d'accueil d'un magazine</span></span>
@@ -430,10 +419,10 @@
                     <div _ngcontent-c95="" class="part">
                       <header _ngcontent-c95="" class="part__header mb-half">
                         <!---->
-                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted">PHP et MySQL</h4>
+                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted">Les masques </h4>
                         <!---->
                       </header>
-                      <p _ngcontent-c95="" class="small mb-half">C'est maintenant le temps de se plonger du côté Back-End. Vous apprendrez PHP pour générer des pages dynamiques et interroger des bases de données avec PHP. Vous </p>
+                      <p _ngcontent-c95="" class="small mb-half">Nous verrons comment créer des masques,le vignettage, l'animation des masques, le détourage d'un personnage en mouvement et les calques de forme. </p>
                       <!---->
                       <!---->
                       <!---->
@@ -447,12 +436,11 @@
                     <div _ngcontent-c95="" class="part">
                       <header _ngcontent-c95="" class="part__header mb-half">
                         <!---->
-                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted">Allez plus vite avec Wordpress</h4>
+                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted"> Les effets</h4>
                         <!---->
                       </header>
                       <p _ngcontent-c95="" class="small mb-half">
-                        Entrez dans l'univers des CMS et développez
-                        plus vite des sites e-commerces, des blogs etc. en prenant en main Wordpress (le plus populaire).</p>
+                       Vous saurez comment par exemple créer des effets audio, de bruit et de grain, les effets caches, de correction colorimétrique, les effets couches, les effets de déformation, de temps.</p>
                       <!---->
                       <!---->
                       <!---->
@@ -462,6 +450,66 @@
                       <!---->
                     </div>
                   </li>
+
+                  <li _ngcontent-c95="" class="ng-star-inserted">
+                    <div _ngcontent-c95="" class="part">
+                      <header _ngcontent-c95="" class="part__header mb-half">
+                        <!---->
+                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted"> La 3D</h4>
+                        <!---->
+                      </header>
+                      <p _ngcontent-c95="" class="small mb-half">
+                       Avec la troisième dimension (3D), vous saurez entre autres comment utiliser la caméro 3D, faire des texte en 3D,utiliser les lumières, manipuler les couleurs et l'environnement.</p>
+                      <!---->
+                      <!---->
+                      <!---->
+                      <!----><span _ngcontent-c95="" class="part__project text-only ng-star-inserted"><img _ngcontent-c95="" class="icon-middle" src="/img/page-parcours/icon-project.svg"><span
+                          _ngcontent-c95="">Créez votre site personnel</span></span>
+                      <!---->
+                      <!---->
+                    </div>
+                  </li>
+
+ 				<li _ngcontent-c95="" class="ng-star-inserted">
+                    <div _ngcontent-c95="" class="part">
+                      <header _ngcontent-c95="" class="part__header mb-half">
+                        <!---->
+                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted"> Le suivi de mouvement et de stabilisation</h4>
+                        <!---->
+                      </header>
+                      <p _ngcontent-c95="" class="small mb-half">
+                       Vous serrez capable de faire du tracking 2D par la transformatiion, de faire la transformation en position, rotation et échelle et faire de la stabilisation et la déformation visuelle.</p>
+                      <!---->
+                      <!---->
+                      <!---->
+                      <!----><span _ngcontent-c95="" class="part__project text-only ng-star-inserted"><img _ngcontent-c95="" class="icon-middle" src="/img/page-parcours/icon-project.svg"><span
+                          _ngcontent-c95="">Créez votre site personnel</span></span>
+                      <!---->
+                      <!---->
+                    </div>
+                  </li>
+
+
+                  <li _ngcontent-c95="" class="ng-star-inserted">
+                    <div _ngcontent-c95="" class="part">
+                      <header _ngcontent-c95="" class="part__header mb-half">
+                        <!---->
+                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted"> Les atéliers pratiques</h4>
+                        <!---->
+                      </header>
+                      <p _ngcontent-c95="" class="small mb-half">
+                       Dans cette partie, nous passerons aux travaux pratiques sur différentes thématiques : Split screen dynamique, le texte tremblant,le motion design (Logo Hipster) et le time Freeze.</p>
+                      <!---->
+                      <!---->
+                      <!---->
+                      <!----><span _ngcontent-c95="" class="part__project text-only ng-star-inserted"><img _ngcontent-c95="" class="icon-middle" src="/img/page-parcours/icon-project.svg"><span
+                          _ngcontent-c95="">Créez votre site personnel</span></span>
+                      <!---->
+                      <!---->
+                    </div>
+                  </li>
+
+
                   <li _ngcontent-c95="" class="ng-star-inserted">
                     <div _ngcontent-c95="" class="part">
                       <header _ngcontent-c95="" class="part__header mb-half">
@@ -504,8 +552,8 @@
                 </p>
                 <!---->
               </aside>
-            </div>
-          </section>
+            </div> 
+          </section>   
           <ir-modal _ngcontent-c95="" class="project-modal ng-tns-c11-11" closebtncolor="white-shadow" _nghost-c11="">
             <div _ngcontent-c11="" class="wrapper modal--no-padding">
               <!---->
@@ -576,22 +624,19 @@
         <!---->
         <!---->
         <!---->
-        
-
         <ir-degree-pricing-card _ngcontent-c63="" _nghost-c101="" class="ng-star-inserted">
           <div _ngcontent-c101="" class="card card--pricing primary selected more-padding-top">
             <div _ngcontent-c101="" class="card__triangle"></div>
             <!---->
-            <h6 _ngcontent-c101="" class="card__flag ng-star-inserted">Offre #2</h6>
-       <!--      <h3 _ngcontent-c101="" style="margin-top: 3rem;color: orange;background: #EAEAEA;" class="card__flag ng-star-inserted">La plus vendue</h3> -->
+            <h6 _ngcontent-c101="" class="card__flag ng-star-inserted">Abonnement</h6>
             <div _ngcontent-c101="" class="card--pricing__header">
-              <h5 _ngcontent-c101="">Développeur de Jeux Vidéos</h5>
+              <h5 _ngcontent-c101="">After Effects</h5>
               <!---->
               <div _ngcontent-c101="" class="card__price ng-star-inserted">
                 <!----><span _ngcontent-c101="" class="card__price--current">30.000 FCFA / mois
                   <!----></span></div>
               <p _ngcontent-c101="">
-                <!----><span _ngcontent-c101="" class="ng-star-inserted">Intermédiaire</span>
+                <!----><span _ngcontent-c101="" class="ng-star-inserted">pendant 4 mois</span>
                 <!---->
                 <!---->
               </p>
@@ -600,14 +645,7 @@
             </div>
             <div _ngcontent-c101="" class="card--pricing__body">
               <!---->
-              <ul class="list-pricing">
-                <li>Accès à tout le contenu (vidéos, textes, documents et autres ressources)</li>
-                <li>Coaching en live chaque semaine selon votre planning</li>
-                <li>Suivi pour la réalisation des mini-projets</li>
-                <li>Suivi pour la réalisation d'un projet de soutenance</li>
-                <li>Obtention d'un certificat</li>
-                <li>Accompagnement pour bâtir un profil de carrière et obtenir un emploi</li>
-              </ul>
+              <p _ngcontent-c101="" class="small ng-star-inserted">Durant votre abonnement, vous aurez accès aux supports de cours, ressources. Et vous bénéficierez d'un formateur personnel pour vous aider à apprendre</p>
               <!---->
               <!---->
             </div>
@@ -634,11 +672,6 @@
             <!---->
           </div>
         </ir-degree-pricing-card>
-
-       
-
-
-
         <!---->
         <!---->
         <!---->
@@ -653,9 +686,6 @@
 <!--fin section prix-->
 
 
-
-
-
 <!--section appel a l'action-->
 
 <section _ngcontent-c18="" class="ng-star-inserted">
@@ -665,13 +695,13 @@
                 <!---->
                 <h4 _ngcontent-c77="" class="h2 nd-bottom-cta-content__title ng-star-inserted">
                     <font style="vertical-align: inherit;">
-                        <font style="vertical-align: inherit;">Devenez Développeur de Jeux Vidéos Unity</font>
+                        <font style="vertical-align: inherit;">Maîtrisez les techniques plus avancées que vous offre After Effects et libérez votre créativité</font>
                     </font>
                 </h4>
                 <!---->
                 <p _ngcontent-c77="" class="nd-bottom-cta-content__subtitle ng-star-inserted">
                     <font style="vertical-align: inherit;">
-                        <font style="vertical-align: inherit;">Passez de l'autre côté de l'écran, et découvrez comment vos jeux préférés sont concus</font>
+                        <font style="vertical-align: inherit;">Construisez-vous un excellent portfolio en réalisant des projets de la vie réelle.</font>
                     </font>
                 </p>
                 <div _ngcontent-c77="" class="nd-bottom-cta-content__btn-wrapper">
@@ -720,9 +750,6 @@
 
 
 
-
-
-
 <div id="modalSignUp" class="modal full-page-modal" tabindex="-1" role="dialog" aria-hidden="false">
   <!-- <button type="button" class="modal-action-btn action-left back-to-signin" style="opacity: 0;"><i class="ion-ios-arrow-back"></i></button> -->
   <button type="button" class="modal-action-btn action-right close-modal" data-dismiss="modal"><i class="ion-android-close"></i></button>
@@ -766,7 +793,7 @@
             <div class="form-group password-form-group">
               <div class="input-with-icon">
                 <select class="form-control" name="formation">
-                  <option value="Développeur Web Junior">Développeur Web Junior</option>
+                  <option value="Social Media">Social Media</option>
                 </select>
                 <i class="input-icon ion-person-stalker"></i>
               </div>
@@ -775,7 +802,6 @@
               <div class="input-with-icon">
                 <select class="form-control" name="montant">
                   <option value="30000">30.000 FCFA</option>
-                  <option value="60000">60.000 FCFA</option>
                 </select>
                 <i class="input-icon ion-person-stalker"></i>
               </div>
@@ -793,7 +819,7 @@
     </div><!-- /.modal-dialog -->
   </div><!-- /.modal-container -->
 </div><!-- /.modal -->
-
+</div>
 </div>
 
 

@@ -142,6 +142,9 @@ Route::get('/android', function () {
     return view('formations.parcours-android');
 })->name('android');
 
+Route::get('/after-effects', function () {
+    return view('formations.after-effects');
+})->name('android');
 Route::get('/anglais', function () {
     return view('formations.parcours-anglais');
 })->name('anglais');

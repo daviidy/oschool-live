@@ -658,51 +658,7 @@
         <!---->
         <!---->
         <!---->
-        <ir-degree-pricing-card _ngcontent-c63="" _nghost-c101="" class="ng-star-inserted">
-          <div _ngcontent-c101="" class="card card--pricing primary selected more-padding-top">
-            <div _ngcontent-c101="" class="card__triangle"></div>
-            <!---->
-            <h6 _ngcontent-c101="" class="card__flag ng-star-inserted">Offre #1</h6>
-            <div _ngcontent-c101="" class="card--pricing__header">
-              <h5 _ngcontent-c101="">Développeur Web</h5>
-              <!---->
-              <div _ngcontent-c101="" class="card__price ng-star-inserted">
-                <!----><span _ngcontent-c101="" class="card__price--current">0 FCFA
-                  <!----></span></div>
-              <p _ngcontent-c101="">
-                <!----><span _ngcontent-c101="" class="ng-star-inserted">Gratuit</span>
-                <!---->
-                <!---->
-              </p>
-              <!---->
-              <!---->
-            </div>
-            <div _ngcontent-c101="" class="card--pricing__body">
-              <!---->
-              <ul class="list-pricing">
-                <li>Accès à quelques vidéos, textes et ressources </li>
-              </ul>
-              <!---->
-              <!---->
-            </div>
-            <!---->
-            <!---->
-            <!---->
-            <div _ngcontent-c101="" class="button-wrapper ng-star-inserted">
-              <!---->
-              <!---->
-              <!---->
-              <a _ngcontent-c101="" class="button--primary mb-1 center ng-star-inserted" href="https://oschool.ci/course/formation-complete-developpeur-web-2/">S'inscrire maintenant</a>
-              <!---->
-              <!---->
-              <!---->
-              <!---->
-              <!---->
-              <!---->
-            </div>
-            <!---->
-          </div>
-        </ir-degree-pricing-card>
+
 
 
         <ir-degree-pricing-card _ngcontent-c63="" _nghost-c101="" class="ng-star-inserted">
@@ -710,68 +666,15 @@
             <div _ngcontent-c101="" class="card__triangle"></div>
             <!---->
             <h6 _ngcontent-c101="" class="card__flag ng-star-inserted">Offre #2</h6>
-            <h3 _ngcontent-c101="" style="margin-top: 3rem;color: orange;background: #EAEAEA;" class="card__flag ng-star-inserted">La plus vendue</h3>
+           <!--  <h3 _ngcontent-c101="" style="margin-top: 3rem;color: orange;background: #EAEAEA;" class="card__flag ng-star-inserted">La plus vendue</h3> -->
             <div _ngcontent-c101="" class="card--pricing__header">
-              <h5 _ngcontent-c101="">Développeur Web</h5>
+              <h5 _ngcontent-c101="">Développeur Android</h5>
               <!---->
               <div _ngcontent-c101="" class="card__price ng-star-inserted">
                 <!----><span _ngcontent-c101="" class="card__price--current">30.000 FCFA / mois
                   <!----></span></div>
               <p _ngcontent-c101="">
                 <!----><span _ngcontent-c101="" class="ng-star-inserted">Intermédiaire</span>
-                <!---->
-                <!---->
-              </p>
-              <!---->
-              <!---->
-            </div>
-            <div _ngcontent-c101="" class="card--pricing__body">
-              <!---->
-              <ul class="list-pricing">
-                <li>Accès à tout le contenu (vidéos, textes, documents et autres ressources)</li>
-                <li>Coaching en live chaque semaine selon votre planning</li>
-                <li>Suivi pour la réalisation des mini-projets</li>
-              </ul>
-              <!---->
-              <!---->
-            </div>
-            <!---->
-            <!---->
-            <!---->
-            <div _ngcontent-c101="" class="button-wrapper ng-star-inserted">
-              <!---->
-              <!---->
-              <!---->
-              @auth
-              <a _ngcontent-c101="" class="button--primary mb-1 center ng-star-inserted" data-toggle="modal" data-target="#modalSignUp">S'inscrire maintenant</a>
-              @endauth
-              @guest
-              <a _ngcontent-c101="" class="button--primary mb-1 center ng-star-inserted" href="/login">S'inscrire maintenant</a>
-              @endguest
-              <!---->
-              <!---->
-              <!---->
-              <!---->
-              <!---->
-              <!---->
-            </div>
-            <!---->
-          </div>
-        </ir-degree-pricing-card>
-
-        <ir-degree-pricing-card _ngcontent-c63="" _nghost-c101="" class="ng-star-inserted">
-          <div _ngcontent-c101="" class="card card--pricing primary selected more-padding-top">
-            <div _ngcontent-c101="" class="card__triangle"></div>
-            <!---->
-            <h6 _ngcontent-c101="" class="card__flag ng-star-inserted">Ofrre #3</h6>
-            <div _ngcontent-c101="" class="card--pricing__header">
-              <h5 _ngcontent-c101="">Développeur Web</h5>
-              <!---->
-              <div _ngcontent-c101="" class="card__price ng-star-inserted">
-                <!----><span _ngcontent-c101="" class="card__price--current">60.000 FCFA / mois
-                  <!----></span></div>
-              <p _ngcontent-c101="">
-                <!----><span _ngcontent-c101="" class="ng-star-inserted">Expert</span>
                 <!---->
                 <!---->
               </p>
@@ -815,6 +718,7 @@
           </div>
         </ir-degree-pricing-card>
 
+      
 
 
         <!---->

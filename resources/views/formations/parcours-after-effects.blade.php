@@ -646,6 +646,10 @@
             <div _ngcontent-c101="" class="card--pricing__body">
               <!---->
               <p _ngcontent-c101="" class="small ng-star-inserted">Durant votre abonnement, vous aurez accès aux supports de cours, ressources. Et vous bénéficierez d'un formateur personnel pour vous aider à apprendre</p>
+                <li>Suivi pour la réalisation d'un projet de soutenance</li>
+                <li>Obtention d'un certificat</li>
+                <li>Accompagnement pour bâtir un profil de carrière et obtenir un emploi</li>
+
               <!---->
               <!---->
             </div>
