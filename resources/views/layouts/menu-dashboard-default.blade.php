@@ -40,26 +40,29 @@
 <body>
   <section id="container">
 
-<!--annonce a la udemy-->
-    <div class="ud-app-loader ud-component--smart-bar--app ud-app-loaded" data-module-id="smart-bar" ng-non-bindable="">
-      <div data-purpose="smart-bar-wrapper" class="mb0 " style="margin-bottom: 0px;">
-          <div data-purpose="smart-bar-container" class="" style="height: auto;">
-              <div data-purpose="smart-bar" class="smart-bar--smart-bar--1rOkE smart-bar--smart-bar--teal--Qijai smart-bar--smart-bar-dark-theme--18ulO"><span style="font-size: 0px;"></span>
-                  <div class="smart-bar--smart-bar__content--3X42a basic-with-timer--centered-content--QtJd8">
-                      <div data-purpose="basic-with-timer" class="basic-with-timer--centered-content__text--2t0l3"><span data-purpose="smart-bar-copy" class=""><span class="smart-bar--smart-bar__title--1LFsk" data-purpose="smart-bar-title">
-                                  Bonne nouvelle !</span><span class="smart-bar--smart-bar__subtitle--I38FP" data-purpose="smart-bar-subtitle" role="presentation">| Nous organisons un meetup qui va réunir
-                                    les amoureux de l'éducation et du digital, ce samedi 15 décembre 2018
-                                  </span></span>
-                          <div data-purpose="smart-bar-timer" class="smart-bar-timer--timer-container--2mwOn"><span data-purpose="timer-x-days-left"> <a style="color: #fff;" target="_blank" href="https://events.oschool.ci">Cliquez ici pour participer à l'événement</a> </span></div>
-                      </div>
-                  </div>
-                  <div aria-label="Close" class="smart-bar--smart-bar__close--3mCup" data-purpose="smart-bar-hide" role="button" tabindex="0"><span class="udi-small udi udi-close"></span></div>
-              </div>
-          </div>
-        </div>
-      </div>
 
-      <!--fin annonce a la udemy-->
+    <!--annonce a la udemy-->
+        <div class="ud-app-loader ud-component--smart-bar--app ud-app-loaded" data-module-id="smart-bar" ng-non-bindable="">
+          <div data-purpose="smart-bar-wrapper" class="mb0 " style="margin-bottom: 0px;">
+              <div data-purpose="smart-bar-container" class="" style="height: auto;">
+                  <div data-purpose="smart-bar" class="smart-bar--smart-bar--1rOkE smart-bar--smart-bar--teal--Qijai smart-bar--smart-bar-dark-theme--18ulO"><span style="font-size: 0px;"></span>
+                      <div class="smart-bar--smart-bar__content--3X42a basic-with-timer--centered-content--QtJd8">
+                          <div data-purpose="basic-with-timer" class="basic-with-timer--centered-content__text--2t0l3"><span data-purpose="smart-bar-copy" class=""><span class="smart-bar--smart-bar__title--1LFsk" data-purpose="smart-bar-title">
+                                      Bonne nouvelle !</span><span class="smart-bar--smart-bar__subtitle--I38FP" data-purpose="smart-bar-subtitle" role="presentation">| Nous organisons un meetup qui va réunir
+                                        les amoureux de l'éducation et du digital, ce samedi 15 décembre 2018
+                                      </span></span>
+                              <div data-purpose="smart-bar-timer" class="smart-bar-timer--timer-container--2mwOn"><span data-purpose="timer-x-days-left"> <a style="color: #fff;" target="_blank" href="https://events.oschool.ci">Cliquez ici pour participer à l'événement</a> </span></div>
+                          </div>
+                      </div>
+                      <div aria-label="Close" class="smart-bar--smart-bar__close--3mCup" data-purpose="smart-bar-hide" role="button" tabindex="0"><span class="udi-small udi udi-close"></span></div>
+                  </div>
+              </div>
+            </div>
+          </div>
+
+          <!--fin annonce a la udemy-->
+
+
 
 
 
@@ -151,21 +154,6 @@
 
         <ul class="nav pull-right top-menu">
 
-          @if(Auth::user()->isAdmin())
-
-          <li>
-
-            <a data-toggle="dropdown" class="dropdown-toggle change" href="#">Changer</a>
-            <ul class="dropdown-menu">
-              <li>
-                <p> <a href="/admin">Tableau de bord admin</a> </p>
-              </li>
-            </ul>
-
-          </li>
-
-          @endif
-
           <li>
 
             <a class="logout" href="{{ route('logout') }}"
@@ -191,8 +179,8 @@
       <div id="sidebar" class="nav-collapse ">
         <!-- sidebar menu start-->
         <ul style="{{ !count(Auth::user()->formations) ? 'margin-top: 120px;' : '' }}" class="sidebar-menu" id="nav-accordion">
-          <h5 class="centered">{{Auth::user()->name}} <br> ( {{Auth::user()->type2}} ) </h5>
-
+        <!--  <p class="centered"><a href="{{url('home')}}"><img src="/avatars/users/{{Auth::user()->photo}}" class="img-circle" width="80"></a></p> -->
+          <h5 class="centered">{{Auth::user()->name}} <br> ( student ) </h5>
           @if(count(Auth::user()->formations))
           <li class="mt">
             <a href="{{route('classrooms.index')}}">
@@ -201,11 +189,10 @@
               </a>
           </li>
           @endif
-
           <li class="mt">
-            <a href="/documentsTeacher">
+            <a href="/documentsStudent">
               <i class="fa fa-book"></i>
-              <span>Guides formateurs</span>
+              <span>Guides étudiants</span>
               </a>
           </li>
 
@@ -219,12 +206,22 @@
 
           @auth
 
+          @if(count(Auth::user()->formations))
+
+          <li class="mt">
+            <a href="{{ url('progression', Auth::user()) }}">
+              <i class="fa fa-dashboard"></i>
+              <span>Ma progression</span>
+              </a>
+          </li>
+
+          @endif
 
           @if(count(Auth::user()->formations))
           <li class="mt">
             <a href="{{ url('projets') }}">
               <i class="fa fa-dashboard"></i>
-              <span>Liste des projets</span>
+              <span>Mes projets</span>
               </a>
           </li>
 
@@ -238,15 +235,22 @@
 
 
 
+
+          @if(count(Auth::user()->formations))
           <li class="mt">
-            <a href="/factures">
+            <a href="{{url('achats')}}">
               <i class="fa fa-money"></i>
-              <span>Facturation</span>
+              <span>Etat de mon abonnement</span>
             </a>
           </li>
-
-
-
+          @endif
+          <li class="mt">
+            <a href="/dashboard-default">
+              <i class="fa fa-laptop"></i>
+              <span>Profil</span>
+              </a>
+          </li>
+        @endauth
       <!--    <li class="mt">
             <a href="/programme">
               <i class="fa fa-calendar"></i>
@@ -254,15 +258,6 @@
               </a>
           </li> -->
 
-
-          <li class="mt">
-            <a href="/dashboard-teacher">
-              <i class="fa fa-laptop"></i>
-              <span>Profil</span>
-              </a>
-          </li>
-
-          @endauth
           <!--li>
             <a href="inbox.html">
               <i class="fa fa-envelope"></i>

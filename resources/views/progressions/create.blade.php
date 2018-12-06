@@ -57,6 +57,7 @@
         <div class="wrap-input100 validate-input" data-validate = "Etudiant">
           <label for="">Statut</label>
           <select name="statut" class="form-control" style="">
+            <option value="A revoir">Validé</option>
             <option value="A revoir">A revoir</option>
           </select>
         </div>

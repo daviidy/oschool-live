@@ -1,51 +1,27 @@
 @extends('layouts.menu-parcours')
 
-@section('title', 'Développeur d\'applications Android')
+@section('title', 'Social Media Marketing')
 
 @section('content')
 
-  <div class="container alt section-space">
+   <div class="container alt section-space">
     <div class="row c-how__heading align-row">
       <div class="col-xs-12 col-sm-6 c-how__headingLeft">
         <!-- <h2 class="h2 u-bold text-primary">Hack & Learn <em>React</em></h2> -->
-        <h1 class="h2 u-bold">Devenez Développeur d'Applications Android, en suivant un cours particulier depuis la maison</h1>
-        <p style="margin: 5rem 0;">En collaboration avec &nbsp; &nbsp; &nbsp;<span> <a target="_blank" href="https://epistrophe.ci"><img width="200" src="https://www.epistrophe.ci/wp-content/uploads/2013/05/cropped-logo_epistrophe_fond_blanc_790x210.jpg" alt=""></a>  </span> </p>
+        <h1 class="h2 u-bold">Apprends la production musicale avec Bebi Philip</h1>
+        <p class="u-margin-t-md subHeading">Du débutant au professionnel rémunéré.<br>
+           Apprenez à enregistrer et à produire de la musique sur les stations de travail audio numériques (DAW),
+           l'enregistrement en direct et à domicile, la post-production, etc. </p> <br>
+           <p>En collaboration avec &nbsp; &nbsp; &nbsp;<span> <img width="150" src="https://pbs.twimg.com/profile_images/745914820520730624/tsHfKckw_400x400.jpg" alt=""> </span> </p>
         <a class="home_button" href="#payment">
           Inscrivez-vous maintenant
         </a>
+        <p class="u-margin-t-md subHeading">
+           BBP Team Records et Oschool vous montrent comment créer un rythme, mixer une chanson, utiliser des instruments logiciels et créer de la musique avec un logiciel d’enregistrement multipiste.
+        </p>
       </div>
       <div class="col-xs-12 col-sm-6 c-how__headingRight">
-        <img style="width: 70%;" src="/img/page-parcours/android1.gif" />
-
-        <!--image du parcours et countdown-->
-        <div class="row">
-
-          <div class="col-sm-12 text-center">
-
-            <h3 id="info">Les inscriptions se terminent dans :</h3>
-
-          </div>
-
-        </div>
-
-        <div _ngcontent-c87="" class="countdown ng-star-inserted">
-          <div _ngcontent-c87="">
-              <!---->
-              <!---->
-              <!---->
-              <ul _ngcontent-c87="" class="ng-star-inserted">
-                  <li _ngcontent-c87=""><span _ngcontent-c87="" class="countdown__timer" id="jours"></span><span _ngcontent-c87="">JOURS</span></li>
-                  <li _ngcontent-c87=""><span _ngcontent-c87="" class="countdown__timer" id="heures"></span><span _ngcontent-c87="">HRS</span></li>
-                  <li _ngcontent-c87=""><span _ngcontent-c87="" class="countdown__timer" id="minutes"></span><span _ngcontent-c87="">MIN</span></li>
-                  <li _ngcontent-c87=""><span _ngcontent-c87="" class="countdown__timer" id="secondes"></span><span _ngcontent-c87="">SEC</span></li>
-              </ul>
-          </div>
-      </div>
-      <!--fin image parcours et countdown-->
-
-
-
-
+        <img src="https://i.ytimg.com/vi/KO4r-ujk4nE/maxresdefault.jpg" />
       </div>
     </div>
   </div>
@@ -98,8 +74,8 @@
     </ir-modal>
     <h6 class="details" _ngcontent-c29="" class="ng-star-inserted">Prérequis</h6>
     <!---->
-    <h5 _ngcontent-c29="" class="ng-star-inserted">Avez-vous les prérequis ?</h5>
-    <p _ngcontent-c29="" class="x-small ng-star-inserted"><a _ngcontent-c29="">Voir les prérequis en détail</a></p>
+    <h5 _ngcontent-c29="" class="ng-star-inserted">Un ordinateur ou un smartphone avec connexion internet</h5>
+   <!--  <p _ngcontent-c29="" class="x-small ng-star-inserted"><a _ngcontent-c29="">Voir les prérequis en détail</a></p> -->
     <!---->
     <!---->
   </li>
@@ -113,7 +89,7 @@
     <h5 _ngcontent-c29="" class="ng-star-inserted">Francais</h5>
     <!---->
     <!---->
-    <p _ngcontent-c29="" class="x-small ng-star-inserted">Découvrir les matériels requis pour suivre la formation</p>
+   <!--  <p _ngcontent-c29="" class="x-small ng-star-inserted">Découvrir les matériels requis pour suivre la formation</p> -->
     <!---->
     <!---->
     <!---->
@@ -121,7 +97,6 @@
     <!---->
   </li>
 </ul>
-
 
 
 <!-- collaboration section-->
@@ -144,7 +119,7 @@
                 <!---->
                 <!---->
                 <li _ngcontent-c30="" class="ng-star-inserted">
-                    <!----><img style="margin: 2rem;" width="200" src="https://www.epistrophe.ci/wp-content/uploads/2013/05/cropped-logo_epistrophe_fond_blanc_790x210.jpg">
+                    <!----><img style="margin: 2rem;" width="200" src="https://pbs.twimg.com/profile_images/745914820520730624/tsHfKckw_400x400.jpg">
                     <!---->
                 </li>
                 <!---->
@@ -164,12 +139,10 @@
 
 
 
-
-
   <div class="container alt section-space">
     <div class="row">
       <div class="col-xs-12 text-center">
-        <h3 class="h3 u-bold text-center u-margin-b-sm">Suivez le parcours certifiant Développeur d'Applications Android, et publiez votre propre application sur Google.</h3>
+        <h3 class="h3 u-bold text-center u-margin-b-sm">Suivez le parcours qualifiant pour être producteur musical, avec BBP Team Records.</h3>
         <div class="c-browser">
           <div class="c-browser__chrome">
             <div class="c-browser__buttons">
@@ -179,7 +152,7 @@
             </div>
           </div>
           <div class="c-browser__image">
-            <img src="/img/page-parcours/android2.png" />
+            <img src="https://cdn.lynda.com/course/509172/509172-636149898248870172-16x9.jpg" />
           </div>
         </div>
 
@@ -188,14 +161,11 @@
           <div class="col-xs-12 col-sm-6">
             <div style="text-align: left !important;" class="c-how__sectionContent">
               <h4 class="h4 u-bold">Pourquoi suivre ce parcours ?</h4>
-              <p class="u-margin-t-md subHeading">Nous avons conçu ce programme
-                dans le but spécifique de soutenir les futurs développeurs Android.
-                La réussite du programme signifie un portefeuille diversifié de projets de
-                développement d'applications destinés à montrer aux employeurs, des références
-                bien établies pour affirmer vos réalisations et votre propre application sur le
-                 Google Play Store. Si votre objectif est d’être employé en tant que développeur Android, ou
-                 de lancer votre propre application Android,
-                 ce programme est exactement ce dont vous avez besoin pour réussir.</p>
+              <p class="u-margin-t-md subHeading">Souhaitez-vous connaître les  raccourcis vers le succès  en obtenant plus de ventes, du trafic sur votre site Web, la notoriété de la marque et la croissance d'une entreprise à l'aide du marketing par médias sociaux?
+
+            Aujourd'hui, vous pouvez commercialiser GRATUITEMENT  vos produits, vos services et développer une entreprise en ligne en utilisant les médias sociaux - à des milliards de personnes!
+
+            Êtes-vous prêt à vendre plus de produits, à avoir plus de clients et à développer votre entreprise en utilisant les médias sociaux?</p>
             </div>
           </div>
           <div _ngcontent-c33="" class="col-xs-12 col-sm-6 stat ng-star-inserted">
@@ -205,7 +175,7 @@
                 <h4 _ngcontent-c33="" class="light ng-star-inserted">
                   <h4 class="light">
                     <font style="vertical-align: inherit;">
-                      <font style="vertical-align: inherit;">2 milliards d'appareils Android actifs par mois</font>
+                      <font style="vertical-align: inherit;">Développez une audience ciblée avec des centaines, des milliers ou des millions de personnes - à partir de zéro!</font>
                     </font>
                   </h4>
                 </h4>
@@ -319,9 +289,6 @@
                     </div>
                   </div>
                 </div>
-
-
-
         </div>
       </div>
     </div>
@@ -336,9 +303,9 @@
       <!---->
       <h2 style="font-size: 4rem;font-weight: 300;" _ngcontent-c47="" class="white ng-star-inserted">Développez cette compétence pour aujourd'hui et demain</h2>
       <!---->
-      <p _ngcontent-c47="" class="white ng-star-inserted"><span class="hidden-md-down">Ce parcours Développeur d'Applications Android est conçu
+      <p _ngcontent-c47="" class="white ng-star-inserted"><span class="hidden-md-down">Ce parcours de Social Media Marketing  est conçu
         pour assurer votre succès à long terme sur le terrain. Les compétences acquises vous prépareront à des
-        emplois dans le monde de la programmation mobile, et vous serez prêt à apporter une valeur immédiate
+        emplois dans le monde des médias sociaux, et vous serez prêt à apporter une valeur immédiate
         à toute organisation. Nous vous soutiendrons tout au long de votre parcours d'apprentissage.
         De l'acquisition des compétences techniques et professionnelles précieuses,
         jusqu'à l'obtention de l'emploi de vos rêves.</span></p>
@@ -350,8 +317,8 @@
         <!---->
         <h5 _ngcontent-c47="" class="title mb-1 ng-star-inserted"><span class="hidden-md-down">Rencontrez nos partenaires d'embauche</span><span class="hidden-lg-up">Rencontrez nos partenaires d'embauche</span></h5>
         <!---->
-        <p _ngcontent-c47="" class="x-small ng-star-inserted"><span class="hidden-md-down">Les développeurs d'Applications Android sont en forte demande. Créez votre portefeuille professionnel avec Oschool et ouvrez un monde d'opportunités. Nos partenaires d'embauche sont impatients de vous rencontrer.</span>
-          <span class="hidden-lg-up">Les développeurs d'Applications Android sont en forte demande. Créez votre portefeuille professionnel avec Oschool et ouvrez un monde d'opportunités. Nos partenaires d'embauche sont impatients de vous rencontrer.</span></p>
+        <p _ngcontent-c47="" class="x-small ng-star-inserted"><span class="hidden-md-down">Les développeurs Web front-end sont en forte demande. Créez votre portefeuille professionnel avec Oschool et ouvrez un monde d'opportunités. Nos partenaires d'embauche sont impatients de vous rencontrer.</span>
+          <span class="hidden-lg-up">Les développeurs Web front-end sont en forte demande. Créez votre portefeuille professionnel avec Oschool et ouvrez un monde d'opportunités. Nos partenaires d'embauche sont impatients de vous rencontrer.</span></p>
       </div>
       <div _ngcontent-c47="" class="card ng-star-inserted">
         <div _ngcontent-c47="" class="line bg-magenta"></div>
@@ -386,29 +353,29 @@
     <!---->
     <!---->
     <!---->
-    <!----><a _ngcontent-c55="" class="button--secondary lg syllabus-download-button ng-star-inserted" target="_blank" href="https://docs.google.com/document/d/1LbjPrRPFBhk0eJt-cBOokgJd8Ddfjz635eavlkh9q4w/edit?usp=sharing">
+    <!----><a _ngcontent-c55="" class="button--secondary lg syllabus-download-button ng-star-inserted" target="_blank" href="https://s3.amazonaws.com/video.udacity-data.com/topher/2018/June/5b189d8e_fend-syllabus-9.0.0/fend-syllabus-9.0.0.pdf">
     Télécharger le programme
     </a>
     <!---->
     <!---->
     <div _ngcontent-c55="" class="nd-syllabus-term__card">
       <section _ngcontent-c55="" class="nd-syllabus-term__header collapse in">
-        <div _ngcontent-c55="" class="nd-syllabus-term__header__image" irdeferbgimage="" style="background-image: url(&quot;https://images.unsplash.com/photo-1485988412941-77a35537dae4?ixlib=rb-0.3.5&s=177fa5618e070b6d13cf5debd2034426&auto=format&fit=crop&w=772&q=80&quot;);">
+        <div _ngcontent-c55="" class="nd-syllabus-term__header__image" irdeferbgimage="" style="background-image: url(&quot;http://gfx.viberadio.ci/var/ezflow_site/storage/images/toutes-les-news/musique/bebi-philip-il-etonne-ses-fans-avec-un-nouveau-beat-00012028/61133-1-fre-FR/Bebi-Philip-il-etonne-ses-fans-avec-un-nouveau-beat_article.png&quot;);">
           <!---->
         </div>
         <div _ngcontent-c55="" class="nd-syllabus-term__header__content">
           <!---->
           <h6 _ngcontent-c55="" class="ng-star-inserted">PROGRAMME</h6>
-          <h2 _ngcontent-c55="" class="h3">Développeur d'Applications Android</h2>
+          <h2 _ngcontent-c55="" class="h3">Social Media Marketing</h2>
           <!---->
-          <p _ngcontent-c55="" class="small hidden-md-down ng-star-inserted">Le programme Développeur d'Applications Android
-            est composé de cinq projets. Avec chaque projet,
+          <p _ngcontent-c55="" class="small hidden-md-down ng-star-inserted">Le programme de Social Media Marketing Junior
+            est composé de 7 projets. Avec chaque projet,
             vous allez créer quelque chose qui démontre votre maîtrise des compétences recherchées.
             La complexité des projets varie. En fin de compte,
             vous aurez un portefeuille de projets et un CV digne d'être aprréciés par des employeurs potentiels.</p>
           <!---->
           <p _ngcontent-c55="" class="small hidden-lg-up ng-star-inserted">Le programme Développeur Web Junior
-            est composé de cinq projets. Avec chaque projet,
+            est composé de huit projets. Avec chaque projet,
             vous allez créer quelque chose qui démontre votre maîtrise des compétences recherchées.
             La complexité des projets varie.</p>
           <!---->
@@ -430,7 +397,7 @@
               <!---->
               <h6 _ngcontent-c95="" class="mb-half ng-star-inserted">Outils requis</h6>
               <p _ngcontent-c95="" class="small mb-2 ng-star-inserted">
-                <!----><span _ngcontent-c95="" class="degree-syllabus-preview__content--term-prereq ng-star-inserted">Vous devez disposer d'un ordinateur portable, et d'une bonne connexion Internet pour suivre cette formation</span>
+                <!----><span _ngcontent-c95="" class="degree-syllabus-preview__content--term-prereq ng-star-inserted">Vous devez disposer d'un ordinateur portable ou d'un smartphone, et d'une bonne connexion Internet pour suivre cette formation</span>
                 <!---->
                 <!---->
                 <!----><a _ngcontent-c95="" class="pointer ng-star-inserted">Voir les outils requis.</a>
@@ -446,10 +413,10 @@
                     <div _ngcontent-c95="" class="part">
                       <header _ngcontent-c95="" class="part__header mb-half">
                         <!---->
-                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted">Bienvenue dans le programme</h4>
+                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted">Développer une stratégie de médias sociaux</h4>
                         <!---->
                       </header>
-                      <p _ngcontent-c95="" class="small mb-half">Faites connaissance avec votre formateur et commencez à réaliser votre premier projet</p>
+                      <p _ngcontent-c95="" class="small mb-half">Découvre comment mettre en place une stratégie de social media marketeur et quels sont les différents médias sociaux</p>
                       <!---->
                       <!---->
                       <!---->
@@ -463,15 +430,15 @@
                     <div _ngcontent-c95="" class="part">
                       <header _ngcontent-c95="" class="part__header mb-half">
                         <!---->
-                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted">Les bases d'Android: l'interface utilisateur</h4>
+                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted">Ecoute et suivi des médias sociaux</h4>
                         <!---->
                       </header>
-                      <p _ngcontent-c95="" class="small mb-half">Apprenez à créer de belles interfaces pour vos applications, en utilisant les vues Android</p>
+                      <p _ngcontent-c95="" class="small mb-half">Développez des techniques d'écoutes des médias sociaux ainsi que des stratégies de compréhension de conversation de marque.</p>
                       <!---->
                       <!---->
                       <!---->
                       <!----><span _ngcontent-c95="" class="part__project text-only ng-star-inserted"><img _ngcontent-c95="" class="icon-middle" src="/img/page-parcours/icon-project.svg"><span
-                          _ngcontent-c95="">Créez une application qui donne des infos sur une entreprise</span></span>
+                          _ngcontent-c95="">Créez un article de blog / La galerie de l'amour</span></span>
                       <!---->
                       <!---->
                     </div>
@@ -480,14 +447,13 @@
                     <div _ngcontent-c95="" class="part">
                       <header _ngcontent-c95="" class="part__header mb-half">
                         <!---->
-                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted">Les bases d'Android: les entrées utilisateur</h4>
+                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted">Construire une stratégie de contenu des médias sociaux</h4>
                         <!---->
                       </header>
-                      <p _ngcontent-c95="" class="small mb-half">Entrez dans l'univers de la programmation Java et apprenez à traiter les infos envoyées par l'utilisateur.
-
+                      <p _ngcontent-c95="" class="small mb-half">Le contenu étant l'épine dorsale de votre stratégie de social média, nous commencerons ici par vous montrer les bases de la création de contenu.
                       </p>
                       <span _ngcontent-c95="" class="part__project text-only ng-star-inserted"><img _ngcontent-c95="" class="icon-middle" src="/img/page-parcours/icon-project.svg"><span
-                          _ngcontent-c95="">Créez une application de quiz</span></span>
+                          _ngcontent-c95="">Améliorez la page d'accueil d'un magazine</span></span>
                       <!---->
                     </div>
                   </li>
@@ -495,15 +461,15 @@
                     <div _ngcontent-c95="" class="part">
                       <header _ngcontent-c95="" class="part__header mb-half">
                         <!---->
-                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted">Les bases d'Android: Applications multi-écrans</h4>
+                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted">Etendre votre portée </h4>
                         <!---->
                       </header>
-                      <p _ngcontent-c95="" class="small mb-half">Apprenez à créer des applications multi-écrans ! </p>
+                      <p _ngcontent-c95="" class="small mb-half">Faites votre stratégie de communication au niveau supérieur, apprenez les différentes nuances du marketing d'influence et ainsi, vous pourrez travailler avec des influenceurs. </p>
                       <!---->
                       <!---->
                       <!---->
                       <!----><span _ngcontent-c95="" class="part__project text-only ng-star-inserted"><img _ngcontent-c95="" class="icon-middle" src="/img/page-parcours/icon-project.svg"><span
-                          _ngcontent-c95="">Créez un guide touristique de votre ville préférée</span></span>
+                          _ngcontent-c95="">Créez une application pour inscrire les étudiants de votre école</span></span>
                       <!---->
                       <!---->
                     </div>
@@ -512,34 +478,16 @@
                     <div _ngcontent-c95="" class="part">
                       <header _ngcontent-c95="" class="part__header mb-half">
                         <!---->
-                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted">Connecter votre application au réseau</h4>
+                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted"> Etablissez des relations individuelles</h4>
                         <!---->
                       </header>
                       <p _ngcontent-c95="" class="small mb-half">
-                        Apprenez à connecter votre application à un réseau (Internet, GSM etc.)</p>
+                       Vous saurez pourquoi l'engagement est au coeur de votre stratégie sociale, ainsi vous pourrez atteindre des objectifs commerciaux par la vente sociale.</p>
                       <!---->
                       <!---->
                       <!---->
                       <!----><span _ngcontent-c95="" class="part__project text-only ng-star-inserted"><img _ngcontent-c95="" class="icon-middle" src="/img/page-parcours/icon-project.svg"><span
-                          _ngcontent-c95="">Créez une application pour afficher les actualités récentes sur un sujet de votre choix</span></span>
-                      <!---->
-                      <!---->
-                    </div>
-                  </li>
-                  <li _ngcontent-c95="" class="ng-star-inserted">
-                    <div _ngcontent-c95="" class="part">
-                      <header _ngcontent-c95="" class="part__header mb-half">
-                        <!---->
-                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted">Stocker des données dans votre application</h4>
-                        <!---->
-                      </header>
-                      <p _ngcontent-c95="" class="small mb-half">Apprenez à ajouter des informations à une base de données liée à l'application,
-                      à les retrouver, modifier et supprimer.</p>
-                      <!---->
-                      <!---->
-                      <!---->
-                      <!----><span _ngcontent-c95="" class="part__project text-only ng-star-inserted"><img _ngcontent-c95="" class="icon-middle" src="/img/page-parcours/icon-project.svg"><span
-                          _ngcontent-c95="">Créez une application pour suivre l'inventaire d'un magasin</span></span>
+                          _ngcontent-c95="">Créez votre site personnel</span></span>
                       <!---->
                       <!---->
                     </div>
@@ -664,7 +612,7 @@
             <!---->
             <h6 _ngcontent-c101="" class="card__flag ng-star-inserted">Offre #1</h6>
             <div _ngcontent-c101="" class="card--pricing__header">
-              <h5 _ngcontent-c101="">Développeur Web</h5>
+              <h5 _ngcontent-c101="">Social Media</h5>
               <!---->
               <div _ngcontent-c101="" class="card__price ng-star-inserted">
                 <!----><span _ngcontent-c101="" class="card__price--current">0 FCFA
@@ -712,7 +660,7 @@
             <h6 _ngcontent-c101="" class="card__flag ng-star-inserted">Offre #2</h6>
             <h3 _ngcontent-c101="" style="margin-top: 3rem;color: orange;background: #EAEAEA;" class="card__flag ng-star-inserted">La plus vendue</h3>
             <div _ngcontent-c101="" class="card--pricing__header">
-              <h5 _ngcontent-c101="">Développeur Web</h5>
+              <h5 _ngcontent-c101="">Social Media</h5>
               <!---->
               <div _ngcontent-c101="" class="card__price ng-star-inserted">
                 <!----><span _ngcontent-c101="" class="card__price--current">30.000 FCFA / mois
@@ -765,7 +713,7 @@
             <!---->
             <h6 _ngcontent-c101="" class="card__flag ng-star-inserted">Ofrre #3</h6>
             <div _ngcontent-c101="" class="card--pricing__header">
-              <h5 _ngcontent-c101="">Développeur Web</h5>
+              <h5 _ngcontent-c101="">Social Media</h5>
               <!---->
               <div _ngcontent-c101="" class="card__price ng-star-inserted">
                 <!----><span _ngcontent-c101="" class="card__price--current">60.000 FCFA / mois
@@ -830,6 +778,8 @@
 
 <!--fin section prix-->
 
+
+
 <!--section appel a l'action-->
 
 <section _ngcontent-c18="" class="ng-star-inserted">
@@ -839,13 +789,13 @@
                 <!---->
                 <h4 _ngcontent-c77="" class="h2 nd-bottom-cta-content__title ng-star-inserted">
                     <font style="vertical-align: inherit;">
-                        <font style="vertical-align: inherit;">Devenez Développeur d'Applications Android</font>
+                        <font style="vertical-align: inherit;">Devenez Développeur Marketeur</font>
                     </font>
                 </h4>
                 <!---->
                 <p _ngcontent-c77="" class="nd-bottom-cta-content__subtitle ng-star-inserted">
                     <font style="vertical-align: inherit;">
-                        <font style="vertical-align: inherit;">Construisez de puissantes applications Android</font>
+                        <font style="vertical-align: inherit;">Construisez-vous un excellent portfolio en réalisant des projets de la vie réelle.</font>
                     </font>
                 </p>
                 <div _ngcontent-c77="" class="nd-bottom-cta-content__btn-wrapper">
@@ -891,6 +841,15 @@
 
 <!--fin section appel a l'action-->
 
+
+
+
+
+
+
+
+
+
 <div id="modalSignUp" class="modal full-page-modal" tabindex="-1" role="dialog" aria-hidden="false">
   <!-- <button type="button" class="modal-action-btn action-left back-to-signin" style="opacity: 0;"><i class="ion-ios-arrow-back"></i></button> -->
   <button type="button" class="modal-action-btn action-right close-modal" data-dismiss="modal"><i class="ion-android-close"></i></button>
@@ -934,7 +893,7 @@
             <div class="form-group password-form-group">
               <div class="input-with-icon">
                 <select class="form-control" name="formation">
-                  <option value="Développeur d'Applications Android">Développeur d'Applications Android</option>
+                  <option value="Social Media">Social Media</option>
                 </select>
                 <i class="input-icon ion-person-stalker"></i>
               </div>
@@ -943,7 +902,6 @@
               <div class="input-with-icon">
                 <select class="form-control" name="montant">
                   <option value="30000">30.000 FCFA</option>
-                  <option value="60000">60.000 FCFA</option>
                 </select>
                 <i class="input-icon ion-person-stalker"></i>
               </div>
@@ -961,7 +919,7 @@
     </div><!-- /.modal-dialog -->
   </div><!-- /.modal-container -->
 </div><!-- /.modal -->
-
+</div>
 </div>
 
 

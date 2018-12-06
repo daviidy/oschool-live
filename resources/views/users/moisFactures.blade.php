@@ -10,14 +10,13 @@
 @auth
 @if(Auth::user()->isTeacher())
 <section id="main-content">
-  <section style="margin-top: 15rem;" class="wrapper">
+  <section style="margin-top:15rem;" class="wrapper">
 
-    <h3><i class="fa fa-angle-right"></i> Votre rapport d'activités</h3>
 
     <div class="row">
 
       <div class="col-lg-6">
-        <img src="https://code.oschool.ci/img/page-parcours/congrats.svg" alt="">
+        <img width="200" src="https://code.oschool.ci/img/page-parcours/congrats.svg" alt="">
       </div>
 
       <div class="col-lg-6">
@@ -53,6 +52,36 @@
 
     </div>
 
+    <h3><i class="fa fa-angle-right"></i> Votre rapport d'activités</h3>
+    <div class="row mt">
+      <div class="col-lg-12">
+        <div class="content-panel">
+          <h4><i class="fa fa-angle-right"></i> Mois: {{$mois}}-{{$an}}</h4>
+          <section id="unseen">
+            <table class="table table-bordered table-striped table-condensed">
+              <thead>
+                <tr>
+                  <th>Nombre de sessions réalisées</th>
+                  <th>Prix unitaire</th>
+                  <th>Total</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>{{ $classrooms->count() }}</td>
+                  <td>3000 FCFA</td>
+                  <td>{{ 3000 * $classrooms->count() }} FCFA</td>
+                </tr>
+
+              </tbody>
+            </table>
+          </section>
+        </div>
+        <!-- /content-panel -->
+      </div>
+      <!-- /col-lg-4 -->
+    </div>
+    <!-- /row -->
   </section>
   <!-- /wrapper -->
 </section>

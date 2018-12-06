@@ -34,12 +34,15 @@ class AchatController extends Controller
     public function create()
     {
       if (Auth::check() && Auth::user()->isAdmin()) {
-        $users = User::orderby('id','asc')->paginate(30);
+        $users = User::orderby('id','asc')->paginate(1000);
         $formations = Formation::orderby('id','asc')->paginate(30);
         return view('achats.ajout', ['users' => $users, 'formations' => $formations]);
       }
 
     }
+
+    //recuperation des infos utilisateur a envoyer
+    //a la page de paiement
 
     public function envoi(Request $request)
     {
@@ -98,7 +101,7 @@ class AchatController extends Controller
                         'cpm_page_action' => 'PAYMENT',
                         'cpm_version' => 'V1',
                         'cpm_language' => 'fr',
-                        'cpm_designation' => 'Achat Oschool Live',
+                        'cpm_designation' => 'Achat Parcours Oschool',
                         'apikey' => '134714631658c289ed716950.86091611',
                         );
         $url = "https://api.cinetpay.com/v1/?method=getSignatureByPost";
@@ -186,7 +189,7 @@ class AchatController extends Controller
                         'cpm_page_action' => 'PAYMENT',
                         'cpm_version' => 'V1',
                         'cpm_language' => 'fr',
-                        'cpm_designation' => 'Achat Oschool Live',
+                        'cpm_designation' => 'Achat Parcours Oschool',
                         'apikey' => '134714631658c289ed716950.86091611',
                         );
         $url = "https://api.cinetpay.com/v1/?method=getSignatureByPost";

@@ -114,6 +114,59 @@
   </div>
 </div>
 
+
+<!--partenaires-->
+
+<section _ngcontent-c18="" class="ng-star-inserted">
+    <ir-fa-collaboration _ngcontent-c18="" _nghost-c26="">
+        <ir-feature-area _ngcontent-c26="" description="We partner with leading companies around the world to give you the most relevant and engaging learning experience possible and ensure you are equipped with the skills you need to qualify for your dream job."
+          theme="blue" title="In Collaboration with Industry Leaders" _nghost-c40="">
+            <div _ngcontent-c40="" class="feature-area theme-blue ">
+                <div _ngcontent-c40="" class="contain--small">
+                    <div _ngcontent-c40="" class="feature-area__title-section">
+                        <h2 _ngcontent-c40="">En collaboration avec les leaders de l'industrie</h2>
+                        <p _ngcontent-c40="">Nous travaillons en partenariat avec des entreprises de premier plan, pour vous offrir l'expérience d'apprentissage la plus pertinente et la plus attrayante possible et pour vous garantir les compétences dont vous avez besoin pour occuper le poste de vos rêves.
+                          Apprenez les compétences précieuses enseignées par ces entreprises et recevez une certification en ligne reconnue.</p>
+                    </div>
+                    <ir-hiring-partner _ngcontent-c26="" _nghost-c41="">
+                        <div _ngcontent-c41="" class="hiring-partner">
+                            <div _ngcontent-c41="" class="fullscreen">
+                                <!---->
+                                <ul _ngcontent-c41="">
+                                    <!---->
+                                    <!---->
+                                    <li _ngcontent-c41="" class="ng-star-inserted">
+                                        <!----><img _ngcontent-c41="" width="200" class="icon ng-star-inserted" irdeferimage="" alt="Cinetpay" src="/img/partners/logo1.png">
+                                        <!---->
+                                    </li>
+                                    <li _ngcontent-c41="" class="ng-star-inserted">
+                                        <!----><img _ngcontent-c41="" width="200" class="icon ng-star-inserted" irdeferimage="" alt="AT&amp;T" src="https://epistrophe.ci/wp-content/uploads/2016/03/Epistrophe.jpg">
+                                        <!---->
+                                    </li>
+                                    <li _ngcontent-c41="" class="ng-star-inserted">
+                                        <!----><img _ngcontent-c41="" width="200" class="icon ng-star-inserted" irdeferimage="" alt="BMW" src="https://security.nziumstore.com/wp-content/uploads/2018/10/final_SECURITY_LOGO.png">
+                                        <!---->
+                                    </li>
+
+                                </ul>
+                                <!---->
+                            </div>
+                        </div>
+                    </ir-hiring-partner>
+                </div>
+            </div>
+        </ir-feature-area>
+    </ir-fa-collaboration>
+</section>
+<!--fin partenaires-->
+
+
+
+
+
+
+
+
 <!-- Instructors -->
 
 <div class="instructors">
@@ -291,34 +344,7 @@
     </div>
     <div class="row events_row">
 
-      <!-- Event -->
-      <div class="col-lg-4 event_col">
-        <div class="event">
-          <div class="event_image"><img src="/new/images/fblive.png" alt=""></div>
-          <div class="event_date d-flex flex-column align-items-center justify-content-center">
-            <div class="event_day">5</div>
-            <div class="event_month">nov</div>
-          </div>
-          <div class="event_body d-flex flex-row align-items-center justify-content-start">
-            <div class="event_title"><a href="#">Facebook Live</a></div>
-            <div class="event_tag ml-auto">Gratuit</div>
-          </div>
-        </div>
-      </div>
 
-      <!-- Event -->
-      <div class="col-lg-4 event_col">
-        <div class="event">
-          <div class="event_image"><img src="/new/images/cours/jeux.png" alt=""></div>
-          <div class="event_date d-flex flex-column align-items-center justify-content-center">
-            <div class="event_day">23</div>
-            <div class="event_month">nov</div>
-          </div>
-          <div class="event_body d-flex flex-row align-items-center justify-content-start">
-            <div class="event_title"><a href="#">Festival de l'Electronique et du Jeu Vidéo d'Abidjan</a></div>
-          </div>
-        </div>
-      </div>
 
       <!-- Event -->
       <div class="col-lg-4 event_col">

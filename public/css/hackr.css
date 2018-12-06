@@ -1,3 +1,87 @@
+/*! CSS Used from: https://eu.udacity.com/styles.cd049525371f607387d9.css */
+*,::after,::before{box-sizing:inherit;}
+/*! CSS Used from: Embedded */
+*[_ngcontent-c87],[_ngcontent-c87]::after,[_ngcontent-c87]::before{box-sizing:inherit;}
+.countdown[_ngcontent-c87]{margin-bottom:1.5rem;margin-top:.75rem;}
+.countdown__timer[_ngcontent-c87]{font-size:1.125rem;line-height:2rem;height:2rem;font-weight:700;display:block;}
+.countdown[_ngcontent-c87]   ul[_ngcontent-c87]{display:flex;margin:0 auto;max-width:50rem;align-items:center;justify-content:space-between;list-style:none;padding-left:0;margin-bottom: 6rem;margin-top: 4rem;}
+.countdown[_ngcontent-c87]   ul[_ngcontent-c87]   li[_ngcontent-c87]{font-size:3rem;line-height:3.75rem;text-align:center;display:inline-block;letter-spacing:.125rem;text-transform:uppercase;}
+@media screen and (min-width:48rem){
+.countdown[_ngcontent-c87]{margin-bottom:1.5rem;}
+.countdown__timer[_ngcontent-c87]{font-size:4.5rem;line-height:0;}
+.countdown[_ngcontent-c87]   ul[_ngcontent-c87]   li[_ngcontent-c87]{font-size:3rem;line-height:3.75rem;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* collaboration section*/
+
+
+/*! CSS Used from: https://eu.udacity.com/styles.cd049525371f607387d9.css */
+section{display:block;}
+img{border-style:none;}
+.mb-0{margin-bottom:0!important;}
+.text-center{text-align:center!important;}
+*,::after,::before{box-sizing:inherit;}
+.contain{max-width:73.75rem;margin-left:auto;margin-right:auto;padding:3rem 1.5rem;}
+.contain::after{clear:both;content:"";display:table;}
+@media screen and (min-width:48rem){
+.contain{padding-top:6rem;padding-bottom:6rem;}
+}
+@media screen and (min-width:73.75rem){
+.contain{padding-left:0;padding-right:0;}
+}
+/*! CSS Used from: Embedded */
+*[_ngcontent-c18],[_ngcontent-c18]::after,[_ngcontent-c18]::before{box-sizing:inherit;}
+/*! CSS Used from: Embedded */
+*[_ngcontent-c30],[_ngcontent-c30]::after,[_ngcontent-c30]::before{box-sizing:inherit;}
+[_nghost-c30]{display:block;background-color:#fafbfc;border-top:1px solid #dbe2e8;border-bottom:1px solid #dbe2e8;}
+.contain[_ngcontent-c30]{padding-top:.75rem;padding-bottom:.75rem;}
+ul[_ngcontent-c30]{list-style:none;padding:0;display:flex;flex-wrap:wrap;align-items:center;justify-content:center;}
+ul[_ngcontent-c30]   .icon[_ngcontent-c30]{height:3.75rem;margin:0 .75rem;}
+@media screen and (min-width:48rem){
+.contain[_ngcontent-c30]{padding-top:1.5rem;padding-bottom:1.5rem;}
+ul[_ngcontent-c30]   .icon[_ngcontent-c30]{height:4.5rem;margin:0 1.5rem;}
+}
+
+
+
+
+/*end collaboration section*/
+
+
+
+
+.list-pricing {
+  list-style: none;
+  padding: 0;
+}
+.list-pricing li {
+  padding-left: 1.3em;
+}
+.list-pricing li:before {
+  content: "\f00c"; /* FontAwesome Unicode */
+  font-family: FontAwesome;
+  display: inline-block;
+  margin-left: -1.3em; /* same as padding-left set on li */
+  width: 1.3em; /* same as padding-left set on li */
+}
+
 .color-overlay {
   width: 100%;
   height: 100%;
@@ -29725,7 +29809,7 @@ p.username-error-block {
 }
 
 .u-bold {
-  font-weight: 700
+  font-weight: 400
 }
 
 .u-center, .u-text-center {

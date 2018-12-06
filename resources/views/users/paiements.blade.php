@@ -1,4 +1,4 @@
-@extends('layouts.menu-dashboard-teacher')
+@extends('layouts.menu-dashboard-admin')
 
 @section('content')
 
@@ -8,11 +8,11 @@
     *********************************************************************************************************************************************************** -->
 <!--main content start-->
 @auth
-@if(Auth::user()->isTeacher())
+@if(Auth::user()->isAdmin())
 <section id="main-content">
   <section style="margin-top: 15rem;" class="wrapper">
 
-    <h3><i class="fa fa-angle-right"></i> Votre rapport d'activités</h3>
+    <h3><i class="fa fa-angle-right"></i> Rapport des paiements</h3>
 
     <div class="row">
 
@@ -21,7 +21,7 @@
       </div>
 
       <div class="col-lg-6">
-        <form method="post" enctype="multipart/form-data" action="/moisFactures">
+        <form method="post" enctype="multipart/form-data" action="/moisPaiements">
           {{ csrf_field() }}
 
           <label for="">Choisir un mois</label>

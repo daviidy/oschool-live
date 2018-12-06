@@ -24,6 +24,9 @@ class ProgressionController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
+     //formulaire pour afficher le formulaire pour
+     //marquer une progression
     public function create()
     {
       if (Auth::check() && Auth::user()->isTeacher() && Auth::user()->formations()) {
@@ -38,22 +41,27 @@ class ProgressionController extends Controller
       }
     }
 
+    //fonction qui redirige le prof vers le bon formulaire
+    //en fonction de la formation qu'il a
+
     public function progression(Request $request)
     {
       $formation = $request['formation'];
       if (Auth::check() && Auth::user()->isTeacher() && Auth::user()->formations()) {
 
+        $students = Auth::user()->students()->where('statut', 'OK')->get();
+
         if ($formation == 'Développeur Web Junior') {
-          return view('progressions.devweb')->with('formation', $formation);
+          return view('progressions.devweb')->with(['students' => $students, 'formation' => $formation]);
         }
         elseif ($formation == 'Social Media') {
-          return view('progressions.socialmedia')->with('formation', $formation);
+          return view('progressions.socialmedia')->with(['students' => $students, 'formation' => $formation]);
         }
         elseif ($formation == 'Développement Mobile') {
-          return view('progressions.devmobile')->with('formation', $formation);
+          return view('progressions.devmobile')->with(['students' => $students, 'formation' => $formation]);
         }
         elseif ($formation == 'Développement Android') {
-          return view('progressions.android')->with('formation', $formation);
+          return view('progressions.android')->with(['students' => $students, 'formation' => $formation]);
         }
 
       }

@@ -99,7 +99,7 @@
           <div class="wrap-input100 input100-select bg1">
             <span class="label-input100">Formation</span>
             <div>
-              <select class="js-select3" name="">
+              <select class="js-select3" name="formation">
                 @foreach($formations as $formation)
                 <option value="{{$formation->nom}}">{{$formation->nom}}</option>
                 @endforeach

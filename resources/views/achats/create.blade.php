@@ -8,7 +8,7 @@
   <div class="container-login100">
     <div class="wrap-login100">
       <div class="login100-pic js-tilt" data-tilt>
-        <img src="/formcreate/images/cup.jpg" alt="IMG">
+        <img src="/formcreate/images/cup.jpg" alt="IMG"> 
       </div>
 
       <form method="post" enctype="multipart/form-data" action="https://secure.cinetpay.com/" class="login100-form validate-form">

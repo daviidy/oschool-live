@@ -9,10 +9,27 @@ use Auth;
 use App\Classroom;
 use App\Progression;
 use App\Formation;
+use App\Achat;
 use Mail;
+use DB;
 
 class UserController extends Controller
 {
+    public function default()
+    {
+      $teachers = User::orderby ('id','asc')->where('type2', 'teacher')->paginate(30);
+
+      if (Auth::check()) {
+        return view('users.dashboard', ['teachers' => $teachers]);
+      }
+      else {
+        return redirect('home');
+      }
+    }
+
+
+
+
     /**
      * Display a listing of the resource.
      *
@@ -21,7 +38,7 @@ class UserController extends Controller
     public function index()
     {
       if (Auth::user()->isAdmin()) {
-        $teachers = User::orderby ('id','asc')->where('type', 'teacher')->paginate(1000);
+        $teachers = User::orderby ('id','asc')->where('type2', 'teacher')->paginate(1000);
         $students = User::orderby ('id','asc')->where('type', 'default')->paginate(1000);
         return view('users.list', ['teachers' => $teachers, 'students' => $students]);
       }
@@ -39,6 +56,122 @@ class UserController extends Controller
         return view('accueil', ['formations' => $formations]);
 
     }
+
+    //fonction pour voir la page factures (ou on demandera au prof de choisir un mois
+    //et une annee)
+    public function factures(Request $request)
+
+    {
+      if (Auth::check() && Auth::user()->isTeacher()) {
+        return view('users.factures');
+      }
+      else {
+        return redirect('home');
+      }
+
+    }
+
+
+    //fonction pour voir la page facturation du professeur
+    public function moisFactures(Request $request)
+
+    {
+      //on récupere le mois et l'annee choisi par le prof, et on les caste en entier
+      //ensuite on selectionne toutes les sessions du mois, de l'annee et appartenant
+      //au prof
+
+      if (Auth::check() && Auth::user()->isTeacher()) {
+      $mois = (int)$request['month'];
+      $an = (int)$request['year'];
+      $classrooms = Classroom::whereMonth('date', '=', $mois)->whereYear('date', '=', $an)->where('user_id', Auth::user()->id)->where('statut', 'Réalisée')->get();
+      return view('users.moisFactures', ['classrooms' => $classrooms, 'mois' => $mois, 'an' => $an]);
+      }
+      else {
+        return redirect('home');
+      }
+    }
+
+
+    //fonction pour voir la page paiments pour les admins (ou on demandera a l'admin de choisir un mois
+    //et une annee)
+    public function paiements(Request $request)
+
+    {
+      if (Auth::check() && Auth::user()->isAdmin()) {
+        return view('users.paiements');
+      }
+      else {
+        return redirect('home');
+      }
+
+    }
+
+
+    //fonction pour voir la page paiements pour les admins
+    public function moisPaiements(Request $request)
+
+    {
+      //on récupere le mois et l'annee choisi par le prof, et on les caste en entier
+      //ensuite on selectionne toutes les sessions du mois, de l'annee et appartenant
+      //au prof
+      if (Auth::check() && Auth::user()->isAdmin()) {
+      $mois = (int)$request['month'];
+      $an = (int)$request['year'];
+      $total = Achat::whereMonth('date', '=', $mois)->whereYear('date', '=', $an)->sum('montant');
+      $achats = Achat::whereMonth('date', '=', $mois)->whereYear('date', '=', $an)->get();
+      return view('users.moisPaiements', ['achats' => $achats, 'mois' => $mois, 'an' => $an, 'total' => $total]);
+      }
+      else {
+        return redirect('home');
+      }
+    }
+
+
+
+
+    //fonction pour voir la page des sessions de prof (pour les admins seulement)
+    //l'admin choisit le mois et l'année
+    public function rapportProf(Request $request)
+
+    {
+      if (Auth::check() && Auth::user()->isAdmin()) {
+        return view('users.rapport-sessions');
+      }
+      else {
+        return redirect('home');
+      }
+
+    }
+
+
+    //fonction pour voir la page des sessions des profs pour un mois donné
+    public function rapportMoisProf(Request $request)
+
+    {
+      //on récupere le mois et l'annee choisi par le prof, et on les caste en entier
+      //ensuite on selectionne toutes les sessions du mois, de l'annee et appartenant
+      //au prof
+      if (Auth::check() && Auth::user()->isAdmin()) {
+      $mois = (int)$request['month'];
+      $an = (int)$request['year'];
+      $teachers = User::orderby ('id','asc')->where('type2', 'teacher')->paginate(1000);
+      $classrooms = Classroom::whereMonth('date', '=', $mois)->whereYear('date', '=', $an)->where('statut', 'Réalisée')->get();
+      return view('users.rapport-sessions-mois', ['teachers' => $teachers, 'mois' => $mois, 'an' => $an, 'classrooms' => $classrooms]);
+      }
+      else {
+        return redirect('home');
+      }
+
+    }
+
+
+
+
+
+
+
+
+
 
     //montrer les guides formateurs aux formateurs
 
@@ -150,10 +283,10 @@ class UserController extends Controller
     {
         if ($user->type == 'default') {
           $classroomsstudents = Classroom::where('etudiant', $user->name)->get();
-          $teachers = User::orderby ('id','asc')->where('type', 'teacher')->paginate(30);
+          $teachers = User::orderby ('id','asc')->where('type2', 'teacher')->paginate(30);
           return view('users.show', ['user' => $user, 'teachers' => $teachers, 'classroomsstudents' => $classroomsstudents]);
         }
-        $teachers = User::orderby ('id','asc')->where('type', 'teacher')->paginate(30);
+        $teachers = User::orderby ('id','asc')->where('type2', 'teacher')->paginate(30);
         return view('users.show', ['user' => $user, 'teachers' => $teachers]);
     }
 

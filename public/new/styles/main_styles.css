@@ -37,6 +37,42 @@
 2. Body and some general stuff
 *********************************/
 
+/*! CSS Used from: https://eu.udacity.com/styles.cd049525371f607387d9.css */
+*,::after,::before{box-sizing:inherit;}
+.contain--small{padding-top:3rem;padding-bottom:3rem;margin:0 auto;}
+/*! CSS Used from: Embedded */
+*[_ngcontent-c18],[_ngcontent-c18]::after,[_ngcontent-c18]::before{box-sizing:inherit;}
+/*! CSS Used from: Embedded */
+*[_ngcontent-c26],[_ngcontent-c26]::after,[_ngcontent-c26]::before{box-sizing:inherit;}
+ir-hiring-partner[_ngcontent-c26]{background:0 0;border:none;display:block;max-width:48.75rem;margin:2rem auto 0;}
+/*! CSS Used from: Embedded */
+*[_ngcontent-c40],[_ngcontent-c40]::after,[_ngcontent-c40]::before{box-sizing:inherit;}
+.feature-area[_ngcontent-c40]{background-position:center center;background-repeat:no-repeat;background-size:cover;}
+.feature-area.theme-blue[_ngcontent-c40]{background:linear-gradient(90deg,rgba(247,247,247,0) 0,#edf9fd 100%),linear-gradient(45deg,#f7f7f7 0,#eafaff 100%);}
+.feature-area__title-section[_ngcontent-c40]{padding:0 1.5rem;text-align:center;}
+.feature-area__title-section[_ngcontent-c40]   h2[_ngcontent-c40]{margin-bottom:1.25rem;}
+.feature-area__title-section[_ngcontent-c40]   p[_ngcontent-c40]{max-width:600px;margin:0 auto;}
+/*! CSS Used from: Embedded */
+*[_ngcontent-c41],[_ngcontent-c41]::after,[_ngcontent-c41]::before{box-sizing:inherit;}
+[_nghost-c41]{display:block;background-color:#fafbfc;border-top:1px solid #dbe2e8;border-bottom:1px solid #dbe2e8;}
+ul[_ngcontent-c41]{list-style:none;padding:0;display:flex;flex-wrap:wrap;align-items:center;justify-content:center;}
+ul[_ngcontent-c41]   .icon[_ngcontent-c41]{margin:0 .75rem;}
+.page-homepage   [_nghost-c41]   .icon[_ngcontent-c41]{margin-top:0;margin-bottom:.5rem;}
+@media screen and (min-width:48rem){
+ul[_ngcontent-c41]   .icon[_ngcontent-c41]{margin:0 1.5rem;}
+.page-homepage   [_nghost-c41]   .icon[_ngcontent-c41]{margin-bottom:1rem;}
+}
+
+
+
+
+
+
+
+
+
+
+
 *
 {
 	margin: 0;

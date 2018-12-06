@@ -7,22 +7,51 @@
   <div class="container alt section-space">
     <div class="row c-how__heading align-row">
       <div class="col-xs-12 col-sm-6 c-how__headingLeft">
-        <!-- <h2 class="h2 u-bold text-primary">Hack & Learn <em>React</em></h2> -->
-        <h1 class="h2 u-bold">Deviens Développeur web Juinor, avec un formateur dédié en télé présentiel</h1>
-        <p class="u-margin-t-md subHeading">Du débutant au professionnel rémunéré.<br>
-          Apprenez à créer des applications Web à partir de zéro</p>
+        <h1 class="h2 u-bold">Devenez Développeur web Junior, en suivant un cours particulier depuis la maison</h1>
+
+        <p style="margin: 5rem 0;">En collaboration avec &nbsp; &nbsp; &nbsp;<span> <a target="_blank" href="https://cinetpay.com"><img width="200" src="/img/page-parcours/cinetpay.png" alt=""></a>  </span> </p>
         <a class="home_button" href="#payment">
           Inscrivez-vous maintenant
         </a>
-        <p class="u-margin-t-md subHeading">
-          Construisez-vous un excellent portfolio en réalisant des projets de la vie réelle.
-        </p>
+
       </div>
       <div class="col-xs-12 col-sm-6 c-how__headingRight">
-        <img src="/img/page-parcours/asset.svg" />
+        <img style="width:90%;" src="/img/page-parcours/ordi.png" />
+
+        <!--image du parcours et countdown-->
+        <div class="row">
+
+          <div class="col-sm-12 text-center">
+
+            <h3 id="info">Les inscriptions se terminent dans :</h3>
+
+          </div>
+
+        </div>
+
+        <div _ngcontent-c87="" class="countdown ng-star-inserted">
+          <div _ngcontent-c87="">
+              <!---->
+              <!---->
+              <!---->
+              <ul _ngcontent-c87="" class="ng-star-inserted">
+                  <li _ngcontent-c87=""><span _ngcontent-c87="" class="countdown__timer" id="jours"></span><span _ngcontent-c87="">JOURS</span></li>
+                  <li _ngcontent-c87=""><span _ngcontent-c87="" class="countdown__timer" id="heures"></span><span _ngcontent-c87="">HRS</span></li>
+                  <li _ngcontent-c87=""><span _ngcontent-c87="" class="countdown__timer" id="minutes"></span><span _ngcontent-c87="">MIN</span></li>
+                  <li _ngcontent-c87=""><span _ngcontent-c87="" class="countdown__timer" id="secondes"></span><span _ngcontent-c87="">SEC</span></li>
+              </ul>
+          </div>
+      </div>
+      <!--fin image parcours et countdown-->
+
+
+
+
       </div>
     </div>
   </div>
+
+
 
   <ul _ngcontent-c29="" class="ng-star-inserted">
   <!---->
@@ -102,10 +131,53 @@
 
 
 
+
+<!-- collaboration section-->
+
+
+<section _ngcontent-c18="" class="ng-star-inserted">
+    <!---->
+    <!---->
+    <!---->
+    <!---->
+    <!---->
+    <ir-nd-partners _ngcontent-c18="" _nghost-c30="" class="ng-star-inserted">
+        <div _ngcontent-c30="" class="contain nd-partners">
+            <h6 _ngcontent-c30="" class="mb-0 text-center">
+                <!---->En collaboration avec</h6>
+            <!---->
+            <!---->
+            <ul _ngcontent-c30="">
+                <!---->
+                <!---->
+                <!---->
+                <li _ngcontent-c30="" class="ng-star-inserted">
+                    <!----><img style="margin: 2rem;" width="200" src="/img/page-parcours/cinetpay.png">
+                    <!---->
+                </li>
+                <!---->
+                <!---->
+            </ul>
+        </div>
+    </ir-nd-partners>
+    <!---->
+</section>
+
+
+<!--end collaboration section-->
+
+
+
+
+
+
+
   <div class="container alt section-space">
     <div class="row">
       <div class="col-xs-12 text-center">
-        <h3 class="h3 u-bold text-center u-margin-b-sm">Suivez le parcours certifiant Développeur Web, et démarrez une nouvelle carrière.</h3>
+        <h3 class="h3 u-bold text-center u-margin-b-sm">Apprenez avec un formateur en direct, dans notre classe virtuelle.<br>
+          Tout a été fait pour vous permettre d'apprendre sereinement<br>
+            Suivez notre parcours certifiant et démarrez une nouvelle carrière</h3>
         <div class="c-browser">
           <div class="c-browser__chrome">
             <div class="c-browser__buttons">
@@ -115,7 +187,7 @@
             </div>
           </div>
           <div class="c-browser__image">
-            <img src="/img/page-parcours/ordi.png" />
+            <img src="/avilon/img/demo.gif" />
           </div>
         </div>
 
@@ -319,7 +391,7 @@
     <!---->
     <!---->
     <!---->
-    <!----><a _ngcontent-c55="" class="button--secondary lg syllabus-download-button ng-star-inserted" target="_blank" href="https://s3.amazonaws.com/video.udacity-data.com/topher/2018/June/5b189d8e_fend-syllabus-9.0.0/fend-syllabus-9.0.0.pdf">
+    <!----><a _ngcontent-c55="" class="button--secondary lg syllabus-download-button ng-star-inserted" target="_blank" href="https://docs.google.com/document/d/1bBBD1gUfjFIpRDdvPzAbcTmL4Y8Lk14IXNwAvC2AFW0/edit?usp=sharing">
     Télécharger le programme
     </a>
     <!---->
@@ -413,6 +485,21 @@
                     <div _ngcontent-c95="" class="part">
                       <header _ngcontent-c95="" class="part__header mb-half">
                         <!---->
+                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted">Allez plus vite avec Bootstrap</h4>
+                        <!---->
+                      </header>
+                      <p _ngcontent-c95="" class="small mb-half">Créez des mise en pages personnalisées pour adapter vos pages web à n'importe quel terminal
+
+                      </p>
+                      <span _ngcontent-c95="" class="part__project text-only ng-star-inserted"><img _ngcontent-c95="" class="icon-middle" src="/img/page-parcours/icon-project.svg"><span
+                          _ngcontent-c95="">Mini-projet</span></span>
+                      <!---->
+                    </div>
+                  </li>
+                  <li _ngcontent-c95="" class="ng-star-inserted">
+                    <div _ngcontent-c95="" class="part">
+                      <header _ngcontent-c95="" class="part__header mb-half">
+                        <!---->
                         <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted">Apprendre Javascript</h4>
                         <!---->
                       </header>
@@ -428,10 +515,25 @@
                     <div _ngcontent-c95="" class="part">
                       <header _ngcontent-c95="" class="part__header mb-half">
                         <!---->
+                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted">Javascript et jQuery</h4>
+                        <!---->
+                      </header>
+                      <p _ngcontent-c95="" class="small mb-half">Utilisez la librairie JQuery avec JavaScript pour apporter de beaux effets sur vos pages.
+
+                      </p>
+                      <span _ngcontent-c95="" class="part__project text-only ng-star-inserted"><img _ngcontent-c95="" class="icon-middle" src="/img/page-parcours/icon-project.svg"><span
+                          _ngcontent-c95="">Mini-projet</span></span>
+                      <!---->
+                    </div>
+                  </li>
+                  <li _ngcontent-c95="" class="ng-star-inserted">
+                    <div _ngcontent-c95="" class="part">
+                      <header _ngcontent-c95="" class="part__header mb-half">
+                        <!---->
                         <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted">PHP et MySQL</h4>
                         <!---->
                       </header>
-                      <p _ngcontent-c95="" class="small mb-half">C'est maintenant le temps de se plonger du côté Back-End. Vous apprendrez PHP pour générer des pages dynamiques et interroger des bases de données avec PHP. Vous </p>
+                      <p _ngcontent-c95="" class="small mb-half">C'est maintenant le temps de se plonger du côté Back-End. Vous apprendrez PHP pour générer des pages dynamiques et interroger des bases de données avec PHP.</p>
                       <!---->
                       <!---->
                       <!---->
@@ -578,15 +680,15 @@
           <div _ngcontent-c101="" class="card card--pricing primary selected more-padding-top">
             <div _ngcontent-c101="" class="card__triangle"></div>
             <!---->
-            <h6 _ngcontent-c101="" class="card__flag ng-star-inserted">Abonnement</h6>
+            <h6 _ngcontent-c101="" class="card__flag ng-star-inserted">Offre #1</h6>
             <div _ngcontent-c101="" class="card--pricing__header">
               <h5 _ngcontent-c101="">Développeur Web</h5>
               <!---->
               <div _ngcontent-c101="" class="card__price ng-star-inserted">
-                <!----><span _ngcontent-c101="" class="card__price--current">30.000 FCFA / mois
+                <!----><span _ngcontent-c101="" class="card__price--current">0 FCFA
                   <!----></span></div>
               <p _ngcontent-c101="">
-                <!----><span _ngcontent-c101="" class="ng-star-inserted">pendant 4 mois</span>
+                <!----><span _ngcontent-c101="" class="ng-star-inserted">Gratuit</span>
                 <!---->
                 <!---->
               </p>
@@ -595,7 +697,59 @@
             </div>
             <div _ngcontent-c101="" class="card--pricing__body">
               <!---->
-              <p _ngcontent-c101="" class="small ng-star-inserted">Durant votre abonnement, vous aurez accès aux supports de cours, ressources. Et vous bénéficierez d'un formateur personnel pour vous aider à apprendre</p>
+              <ul class="list-pricing">
+                <li>Accès à quelques vidéos, textes et ressources </li>
+              </ul>
+              <!---->
+              <!---->
+            </div>
+            <!---->
+            <!---->
+            <!---->
+            <div _ngcontent-c101="" class="button-wrapper ng-star-inserted">
+              <!---->
+              <!---->
+              <!---->
+              <a _ngcontent-c101="" class="button--primary mb-1 center ng-star-inserted" href="https://oschool.ci/course/formation-complete-developpeur-web-2/">S'inscrire maintenant</a>
+              <!---->
+              <!---->
+              <!---->
+              <!---->
+              <!---->
+              <!---->
+            </div>
+            <!---->
+          </div>
+        </ir-degree-pricing-card>
+
+
+        <ir-degree-pricing-card _ngcontent-c63="" _nghost-c101="" class="ng-star-inserted">
+          <div _ngcontent-c101="" class="card card--pricing primary selected more-padding-top">
+            <div _ngcontent-c101="" class="card__triangle"></div>
+            <!---->
+            <h6 _ngcontent-c101="" class="card__flag ng-star-inserted">Offre #2</h6>
+            <h3 _ngcontent-c101="" style="margin-top: 3rem;color: orange;background: #EAEAEA;" class="card__flag ng-star-inserted">La plus vendue</h3>
+            <div _ngcontent-c101="" class="card--pricing__header">
+              <h5 _ngcontent-c101="">Développeur Web</h5>
+              <!---->
+              <div _ngcontent-c101="" class="card__price ng-star-inserted">
+                <!----><span _ngcontent-c101="" class="card__price--current">30.000 FCFA / mois
+                  <!----></span></div>
+              <p _ngcontent-c101="">
+                <!----><span _ngcontent-c101="" class="ng-star-inserted">Intermédiaire</span>
+                <!---->
+                <!---->
+              </p>
+              <!---->
+              <!---->
+            </div>
+            <div _ngcontent-c101="" class="card--pricing__body">
+              <!---->
+              <ul class="list-pricing">
+                <li>Accès à tout le contenu (vidéos, textes, documents et autres ressources)</li>
+                <li>Coaching en live chaque semaine selon votre planning</li>
+                <li>Suivi pour la réalisation des mini-projets</li>
+              </ul>
               <!---->
               <!---->
             </div>
@@ -622,6 +776,65 @@
             <!---->
           </div>
         </ir-degree-pricing-card>
+
+        <ir-degree-pricing-card _ngcontent-c63="" _nghost-c101="" class="ng-star-inserted">
+          <div _ngcontent-c101="" class="card card--pricing primary selected more-padding-top">
+            <div _ngcontent-c101="" class="card__triangle"></div>
+            <!---->
+            <h6 _ngcontent-c101="" class="card__flag ng-star-inserted">Ofrre #3</h6>
+            <div _ngcontent-c101="" class="card--pricing__header">
+              <h5 _ngcontent-c101="">Développeur Web</h5>
+              <!---->
+              <div _ngcontent-c101="" class="card__price ng-star-inserted">
+                <!----><span _ngcontent-c101="" class="card__price--current">60.000 FCFA / mois
+                  <!----></span></div>
+              <p _ngcontent-c101="">
+                <!----><span _ngcontent-c101="" class="ng-star-inserted">Expert</span>
+                <!---->
+                <!---->
+              </p>
+              <!---->
+              <!---->
+            </div>
+            <div _ngcontent-c101="" class="card--pricing__body">
+              <!---->
+              <ul class="list-pricing">
+                <li>Accès à tout le contenu (vidéos, textes, documents et autres ressources)</li>
+                <li>Coaching en live chaque semaine selon votre planning</li>
+                <li>Suivi pour la réalisation des mini-projets</li>
+                <li>Suivi pour la réalisation d'un projet de soutenance</li>
+                <li>Obtention d'un certificat</li>
+                <li>Accompagnement pour bâtir un profil de carrière et obtenir un emploi</li>
+              </ul>
+              <!---->
+              <!---->
+            </div>
+            <!---->
+            <!---->
+            <!---->
+            <div _ngcontent-c101="" class="button-wrapper ng-star-inserted">
+              <!---->
+              <!---->
+              <!---->
+              @auth
+              <a _ngcontent-c101="" class="button--primary mb-1 center ng-star-inserted" data-toggle="modal" data-target="#modalSignUp">S'inscrire maintenant</a>
+              @endauth
+              @guest
+              <a _ngcontent-c101="" class="button--primary mb-1 center ng-star-inserted" href="/login">S'inscrire maintenant</a>
+              @endguest
+              <!---->
+              <!---->
+              <!---->
+              <!---->
+              <!---->
+              <!---->
+            </div>
+            <!---->
+          </div>
+        </ir-degree-pricing-card>
+
+
+
         <!---->
         <!---->
         <!---->
@@ -759,6 +972,7 @@
               <div class="input-with-icon">
                 <select class="form-control" name="montant">
                   <option value="30000">30.000 FCFA</option>
+                  <option value="60000">60.000 FCFA</option>
                 </select>
                 <i class="input-icon ion-person-stalker"></i>
               </div>

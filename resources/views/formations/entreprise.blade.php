@@ -1,6 +1,6 @@
 @extends('layouts.menu-parcours')
 
-@section('title', 'Développeur d\'applications Android')
+@section('title', 'Développeur Web Junior')
 
 @section('content')
 
@@ -8,44 +8,19 @@
     <div class="row c-how__heading align-row">
       <div class="col-xs-12 col-sm-6 c-how__headingLeft">
         <!-- <h2 class="h2 u-bold text-primary">Hack & Learn <em>React</em></h2> -->
-        <h1 class="h2 u-bold">Devenez Développeur d'Applications Android, en suivant un cours particulier depuis la maison</h1>
-        <p style="margin: 5rem 0;">En collaboration avec &nbsp; &nbsp; &nbsp;<span> <a target="_blank" href="https://epistrophe.ci"><img width="200" src="https://www.epistrophe.ci/wp-content/uploads/2013/05/cropped-logo_epistrophe_fond_blanc_790x210.jpg" alt=""></a>  </span> </p>
+        <h1 class="h2 u-bold">Deviens Développeur web Junior, avec un formateur dédié en télé présentiel</h1>
+        <p class="u-margin-t-md subHeading">Du débutant au professionnel rémunéré.<br>
+          Apprenez à créer des applications Web à partir de zéro</p><br>
+        <p>En collaboration avec &nbsp; &nbsp; &nbsp;<span> <img width="200" src="/img/page-parcours/cinetpay.png" alt=""> </span> </p>
         <a class="home_button" href="#payment">
           Inscrivez-vous maintenant
         </a>
+        <p class="u-margin-t-md subHeading">
+          Construisez-vous un excellent portfolio en réalisant des projets de la vie réelle.
+        </p>
       </div>
       <div class="col-xs-12 col-sm-6 c-how__headingRight">
-        <img style="width: 70%;" src="/img/page-parcours/android1.gif" />
-
-        <!--image du parcours et countdown-->
-        <div class="row">
-
-          <div class="col-sm-12 text-center">
-
-            <h3 id="info">Les inscriptions se terminent dans :</h3>
-
-          </div>
-
-        </div>
-
-        <div _ngcontent-c87="" class="countdown ng-star-inserted">
-          <div _ngcontent-c87="">
-              <!---->
-              <!---->
-              <!---->
-              <ul _ngcontent-c87="" class="ng-star-inserted">
-                  <li _ngcontent-c87=""><span _ngcontent-c87="" class="countdown__timer" id="jours"></span><span _ngcontent-c87="">JOURS</span></li>
-                  <li _ngcontent-c87=""><span _ngcontent-c87="" class="countdown__timer" id="heures"></span><span _ngcontent-c87="">HRS</span></li>
-                  <li _ngcontent-c87=""><span _ngcontent-c87="" class="countdown__timer" id="minutes"></span><span _ngcontent-c87="">MIN</span></li>
-                  <li _ngcontent-c87=""><span _ngcontent-c87="" class="countdown__timer" id="secondes"></span><span _ngcontent-c87="">SEC</span></li>
-              </ul>
-          </div>
-      </div>
-      <!--fin image parcours et countdown-->
-
-
-
-
+        <img src="/img/page-parcours/asset.svg" />
       </div>
     </div>
   </div>
@@ -98,8 +73,8 @@
     </ir-modal>
     <h6 class="details" _ngcontent-c29="" class="ng-star-inserted">Prérequis</h6>
     <!---->
-    <h5 _ngcontent-c29="" class="ng-star-inserted">Avez-vous les prérequis ?</h5>
-    <p _ngcontent-c29="" class="x-small ng-star-inserted"><a _ngcontent-c29="">Voir les prérequis en détail</a></p>
+    <h5 _ngcontent-c29="" class="ng-star-inserted">Un ordinateur ayant un accès Internet</h5>
+    <p _ngcontent-c29="" class="x-small ng-star-inserted"><a href="https://drive.google.com/open?id=1ihKHmukvYioQ6VfS_eaqSuIq4gOgnxcA" target="_blank" _ngcontent-c29="">Voir les prérequis en détail</a></p>
     <!---->
     <!---->
   </li>
@@ -113,7 +88,6 @@
     <h5 _ngcontent-c29="" class="ng-star-inserted">Francais</h5>
     <!---->
     <!---->
-    <p _ngcontent-c29="" class="x-small ng-star-inserted">Découvrir les matériels requis pour suivre la formation</p>
     <!---->
     <!---->
     <!---->
@@ -121,6 +95,8 @@
     <!---->
   </li>
 </ul>
+
+
 
 
 
@@ -144,7 +120,7 @@
                 <!---->
                 <!---->
                 <li _ngcontent-c30="" class="ng-star-inserted">
-                    <!----><img style="margin: 2rem;" width="200" src="https://www.epistrophe.ci/wp-content/uploads/2013/05/cropped-logo_epistrophe_fond_blanc_790x210.jpg">
+                    <!----><img style="margin: 2rem;" width="200" src="/img/page-parcours/cinetpay.png">
                     <!---->
                 </li>
                 <!---->
@@ -163,13 +139,10 @@
 
 
 
-
-
-
   <div class="container alt section-space">
     <div class="row">
       <div class="col-xs-12 text-center">
-        <h3 class="h3 u-bold text-center u-margin-b-sm">Suivez le parcours certifiant Développeur d'Applications Android, et publiez votre propre application sur Google.</h3>
+        <h3 class="h3 u-bold text-center u-margin-b-sm">Suivez le parcours certifiant Développeur Web, et démarrez une nouvelle carrière.</h3>
         <div class="c-browser">
           <div class="c-browser__chrome">
             <div class="c-browser__buttons">
@@ -179,7 +152,7 @@
             </div>
           </div>
           <div class="c-browser__image">
-            <img src="/img/page-parcours/android2.png" />
+            <img src="/img/page-parcours/ordi.png" />
           </div>
         </div>
 
@@ -188,14 +161,11 @@
           <div class="col-xs-12 col-sm-6">
             <div style="text-align: left !important;" class="c-how__sectionContent">
               <h4 class="h4 u-bold">Pourquoi suivre ce parcours ?</h4>
-              <p class="u-margin-t-md subHeading">Nous avons conçu ce programme
-                dans le but spécifique de soutenir les futurs développeurs Android.
-                La réussite du programme signifie un portefeuille diversifié de projets de
-                développement d'applications destinés à montrer aux employeurs, des références
-                bien établies pour affirmer vos réalisations et votre propre application sur le
-                 Google Play Store. Si votre objectif est d’être employé en tant que développeur Android, ou
-                 de lancer votre propre application Android,
-                 ce programme est exactement ce dont vous avez besoin pour réussir.</p>
+              <p class="u-margin-t-md subHeading">La demande de développeurs web est généralisée dans tous
+                les secteurs et continue d'augmenter. En maîtrisant les précieuses compétences enseignées dans
+                le cadre de ce programme, vous serez prêt à occuper des postes dans un large éventail d’entreprises,
+                des startups aux organisations mondiales. Les projets que vous construirez et le
+                portefeuille que vous développerez fourniront de nombreuses preuves de votre expertise.</p>
             </div>
           </div>
           <div _ngcontent-c33="" class="col-xs-12 col-sm-6 stat ng-star-inserted">
@@ -205,7 +175,7 @@
                 <h4 _ngcontent-c33="" class="light ng-star-inserted">
                   <h4 class="light">
                     <font style="vertical-align: inherit;">
-                      <font style="vertical-align: inherit;">2 milliards d'appareils Android actifs par mois</font>
+                      <font style="vertical-align: inherit;">JavaScript et PHP sont les langages de code les plus demandés par les entreprises</font>
                     </font>
                   </h4>
                 </h4>
@@ -336,9 +306,9 @@
       <!---->
       <h2 style="font-size: 4rem;font-weight: 300;" _ngcontent-c47="" class="white ng-star-inserted">Développez cette compétence pour aujourd'hui et demain</h2>
       <!---->
-      <p _ngcontent-c47="" class="white ng-star-inserted"><span class="hidden-md-down">Ce parcours Développeur d'Applications Android est conçu
+      <p _ngcontent-c47="" class="white ng-star-inserted"><span class="hidden-md-down">Ce parcours Développeur Web Junior est conçu
         pour assurer votre succès à long terme sur le terrain. Les compétences acquises vous prépareront à des
-        emplois dans le monde de la programmation mobile, et vous serez prêt à apporter une valeur immédiate
+        emplois dans le monde de la programmation web, et vous serez prêt à apporter une valeur immédiate
         à toute organisation. Nous vous soutiendrons tout au long de votre parcours d'apprentissage.
         De l'acquisition des compétences techniques et professionnelles précieuses,
         jusqu'à l'obtention de l'emploi de vos rêves.</span></p>
@@ -350,8 +320,8 @@
         <!---->
         <h5 _ngcontent-c47="" class="title mb-1 ng-star-inserted"><span class="hidden-md-down">Rencontrez nos partenaires d'embauche</span><span class="hidden-lg-up">Rencontrez nos partenaires d'embauche</span></h5>
         <!---->
-        <p _ngcontent-c47="" class="x-small ng-star-inserted"><span class="hidden-md-down">Les développeurs d'Applications Android sont en forte demande. Créez votre portefeuille professionnel avec Oschool et ouvrez un monde d'opportunités. Nos partenaires d'embauche sont impatients de vous rencontrer.</span>
-          <span class="hidden-lg-up">Les développeurs d'Applications Android sont en forte demande. Créez votre portefeuille professionnel avec Oschool et ouvrez un monde d'opportunités. Nos partenaires d'embauche sont impatients de vous rencontrer.</span></p>
+        <p _ngcontent-c47="" class="x-small ng-star-inserted"><span class="hidden-md-down">Les développeurs Web front-end sont en forte demande. Créez votre portefeuille professionnel avec Oschool et ouvrez un monde d'opportunités. Nos partenaires d'embauche sont impatients de vous rencontrer.</span>
+          <span class="hidden-lg-up">Les développeurs Web front-end sont en forte demande. Créez votre portefeuille professionnel avec Oschool et ouvrez un monde d'opportunités. Nos partenaires d'embauche sont impatients de vous rencontrer.</span></p>
       </div>
       <div _ngcontent-c47="" class="card ng-star-inserted">
         <div _ngcontent-c47="" class="line bg-magenta"></div>
@@ -386,29 +356,29 @@
     <!---->
     <!---->
     <!---->
-    <!----><a _ngcontent-c55="" class="button--secondary lg syllabus-download-button ng-star-inserted" target="_blank" href="https://docs.google.com/document/d/1LbjPrRPFBhk0eJt-cBOokgJd8Ddfjz635eavlkh9q4w/edit?usp=sharing">
+    <!----><a _ngcontent-c55="" class="button--secondary lg syllabus-download-button ng-star-inserted" target="_blank" href="https://s3.amazonaws.com/video.udacity-data.com/topher/2018/June/5b189d8e_fend-syllabus-9.0.0/fend-syllabus-9.0.0.pdf">
     Télécharger le programme
     </a>
     <!---->
     <!---->
     <div _ngcontent-c55="" class="nd-syllabus-term__card">
       <section _ngcontent-c55="" class="nd-syllabus-term__header collapse in">
-        <div _ngcontent-c55="" class="nd-syllabus-term__header__image" irdeferbgimage="" style="background-image: url(&quot;https://images.unsplash.com/photo-1485988412941-77a35537dae4?ixlib=rb-0.3.5&s=177fa5618e070b6d13cf5debd2034426&auto=format&fit=crop&w=772&q=80&quot;);">
+        <div _ngcontent-c55="" class="nd-syllabus-term__header__image" irdeferbgimage="" style="background-image: url(&quot;https://d125fmws0bore1.cloudfront.net/assets/pages/ndop/nd001/image-syllabus-01@2x-f4be2598bea724657d8f295449bb8f45a954581306292393cb71a8417acf3cd3.jpg&quot;);">
           <!---->
         </div>
         <div _ngcontent-c55="" class="nd-syllabus-term__header__content">
           <!---->
           <h6 _ngcontent-c55="" class="ng-star-inserted">PROGRAMME</h6>
-          <h2 _ngcontent-c55="" class="h3">Développeur d'Applications Android</h2>
+          <h2 _ngcontent-c55="" class="h3">Développeur Web</h2>
           <!---->
-          <p _ngcontent-c55="" class="small hidden-md-down ng-star-inserted">Le programme Développeur d'Applications Android
-            est composé de cinq projets. Avec chaque projet,
+          <p _ngcontent-c55="" class="small hidden-md-down ng-star-inserted">Le programme Développeur Web Junior
+            est composé de huit projets. Avec chaque projet,
             vous allez créer quelque chose qui démontre votre maîtrise des compétences recherchées.
             La complexité des projets varie. En fin de compte,
             vous aurez un portefeuille de projets et un CV digne d'être aprréciés par des employeurs potentiels.</p>
           <!---->
           <p _ngcontent-c55="" class="small hidden-lg-up ng-star-inserted">Le programme Développeur Web Junior
-            est composé de cinq projets. Avec chaque projet,
+            est composé de huit projets. Avec chaque projet,
             vous allez créer quelque chose qui démontre votre maîtrise des compétences recherchées.
             La complexité des projets varie.</p>
           <!---->
@@ -446,10 +416,10 @@
                     <div _ngcontent-c95="" class="part">
                       <header _ngcontent-c95="" class="part__header mb-half">
                         <!---->
-                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted">Bienvenue dans le programme</h4>
+                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted">Fondations du Web</h4>
                         <!---->
                       </header>
-                      <p _ngcontent-c95="" class="small mb-half">Faites connaissance avec votre formateur et commencez à réaliser votre premier projet</p>
+                      <p _ngcontent-c95="" class="small mb-half">Découvre comment fonctionne le web, et installe tes outils de formation !</p>
                       <!---->
                       <!---->
                       <!---->
@@ -463,15 +433,15 @@
                     <div _ngcontent-c95="" class="part">
                       <header _ngcontent-c95="" class="part__header mb-half">
                         <!---->
-                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted">Les bases d'Android: l'interface utilisateur</h4>
+                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted">Apprendre HTML et CSS</h4>
                         <!---->
                       </header>
-                      <p _ngcontent-c95="" class="small mb-half">Apprenez à créer de belles interfaces pour vos applications, en utilisant les vues Android</p>
+                      <p _ngcontent-c95="" class="small mb-half">Apprenez à utiliser les 2 langages de bases de la programmation web: HTML pour la structure d'une page web, et CSS pour gérer l'apparence de cette page</p>
                       <!---->
                       <!---->
                       <!---->
                       <!----><span _ngcontent-c95="" class="part__project text-only ng-star-inserted"><img _ngcontent-c95="" class="icon-middle" src="/img/page-parcours/icon-project.svg"><span
-                          _ngcontent-c95="">Créez une application qui donne des infos sur une entreprise</span></span>
+                          _ngcontent-c95="">Créez un article de blog / La galerie de l'amour</span></span>
                       <!---->
                       <!---->
                     </div>
@@ -480,14 +450,14 @@
                     <div _ngcontent-c95="" class="part">
                       <header _ngcontent-c95="" class="part__header mb-half">
                         <!---->
-                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted">Les bases d'Android: les entrées utilisateur</h4>
+                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted">Apprendre Javascript</h4>
                         <!---->
                       </header>
-                      <p _ngcontent-c95="" class="small mb-half">Entrez dans l'univers de la programmation Java et apprenez à traiter les infos envoyées par l'utilisateur.
+                      <p _ngcontent-c95="" class="small mb-half">Apprenez les bases de JavaScript dont vous aurez besoin pour le développement front-end ou back-end.
 
                       </p>
                       <span _ngcontent-c95="" class="part__project text-only ng-star-inserted"><img _ngcontent-c95="" class="icon-middle" src="/img/page-parcours/icon-project.svg"><span
-                          _ngcontent-c95="">Créez une application de quiz</span></span>
+                          _ngcontent-c95="">Améliorez la page d'accueil d'un magazine</span></span>
                       <!---->
                     </div>
                   </li>
@@ -495,15 +465,15 @@
                     <div _ngcontent-c95="" class="part">
                       <header _ngcontent-c95="" class="part__header mb-half">
                         <!---->
-                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted">Les bases d'Android: Applications multi-écrans</h4>
+                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted">PHP et MySQL</h4>
                         <!---->
                       </header>
-                      <p _ngcontent-c95="" class="small mb-half">Apprenez à créer des applications multi-écrans ! </p>
+                      <p _ngcontent-c95="" class="small mb-half">C'est maintenant le temps de se plonger du côté Back-End. Vous apprendrez PHP pour générer des pages dynamiques et interroger des bases de données avec PHP. Vous </p>
                       <!---->
                       <!---->
                       <!---->
                       <!----><span _ngcontent-c95="" class="part__project text-only ng-star-inserted"><img _ngcontent-c95="" class="icon-middle" src="/img/page-parcours/icon-project.svg"><span
-                          _ngcontent-c95="">Créez un guide touristique de votre ville préférée</span></span>
+                          _ngcontent-c95="">Créez une application pour inscrire les étudiants de votre école</span></span>
                       <!---->
                       <!---->
                     </div>
@@ -512,34 +482,17 @@
                     <div _ngcontent-c95="" class="part">
                       <header _ngcontent-c95="" class="part__header mb-half">
                         <!---->
-                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted">Connecter votre application au réseau</h4>
+                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted">Allez plus vite avec Wordpress</h4>
                         <!---->
                       </header>
                       <p _ngcontent-c95="" class="small mb-half">
-                        Apprenez à connecter votre application à un réseau (Internet, GSM etc.)</p>
+                        Entrez dans l'univers des CMS et développez
+                        plus vite des sites e-commerces, des blogs etc. en prenant en main Wordpress (le plus populaire).</p>
                       <!---->
                       <!---->
                       <!---->
                       <!----><span _ngcontent-c95="" class="part__project text-only ng-star-inserted"><img _ngcontent-c95="" class="icon-middle" src="/img/page-parcours/icon-project.svg"><span
-                          _ngcontent-c95="">Créez une application pour afficher les actualités récentes sur un sujet de votre choix</span></span>
-                      <!---->
-                      <!---->
-                    </div>
-                  </li>
-                  <li _ngcontent-c95="" class="ng-star-inserted">
-                    <div _ngcontent-c95="" class="part">
-                      <header _ngcontent-c95="" class="part__header mb-half">
-                        <!---->
-                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted">Stocker des données dans votre application</h4>
-                        <!---->
-                      </header>
-                      <p _ngcontent-c95="" class="small mb-half">Apprenez à ajouter des informations à une base de données liée à l'application,
-                      à les retrouver, modifier et supprimer.</p>
-                      <!---->
-                      <!---->
-                      <!---->
-                      <!----><span _ngcontent-c95="" class="part__project text-only ng-star-inserted"><img _ngcontent-c95="" class="icon-middle" src="/img/page-parcours/icon-project.svg"><span
-                          _ngcontent-c95="">Créez une application pour suivre l'inventaire d'un magasin</span></span>
+                          _ngcontent-c95="">Créez votre site personnel</span></span>
                       <!---->
                       <!---->
                     </div>
@@ -830,6 +783,12 @@
 
 <!--fin section prix-->
 
+
+
+
+
+
+
 <!--section appel a l'action-->
 
 <section _ngcontent-c18="" class="ng-star-inserted">
@@ -839,13 +798,13 @@
                 <!---->
                 <h4 _ngcontent-c77="" class="h2 nd-bottom-cta-content__title ng-star-inserted">
                     <font style="vertical-align: inherit;">
-                        <font style="vertical-align: inherit;">Devenez Développeur d'Applications Android</font>
+                        <font style="vertical-align: inherit;">Devenez Développeur Web Junior</font>
                     </font>
                 </h4>
                 <!---->
                 <p _ngcontent-c77="" class="nd-bottom-cta-content__subtitle ng-star-inserted">
                     <font style="vertical-align: inherit;">
-                        <font style="vertical-align: inherit;">Construisez de puissantes applications Android</font>
+                        <font style="vertical-align: inherit;">Construisez-vous un excellent portfolio en réalisant des projets de la vie réelle.</font>
                     </font>
                 </p>
                 <div _ngcontent-c77="" class="nd-bottom-cta-content__btn-wrapper">
@@ -891,6 +850,12 @@
 
 <!--fin section appel a l'action-->
 
+
+
+
+
+
+
 <div id="modalSignUp" class="modal full-page-modal" tabindex="-1" role="dialog" aria-hidden="false">
   <!-- <button type="button" class="modal-action-btn action-left back-to-signin" style="opacity: 0;"><i class="ion-ios-arrow-back"></i></button> -->
   <button type="button" class="modal-action-btn action-right close-modal" data-dismiss="modal"><i class="ion-android-close"></i></button>
@@ -934,7 +899,7 @@
             <div class="form-group password-form-group">
               <div class="input-with-icon">
                 <select class="form-control" name="formation">
-                  <option value="Développeur d'Applications Android">Développeur d'Applications Android</option>
+                  <option value="Développeur Web Junior">Développeur Web Junior</option>
                 </select>
                 <i class="input-icon ion-person-stalker"></i>
               </div>

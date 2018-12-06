@@ -59,6 +59,8 @@ Route::get('register', function () {
 
 Route::get('/classrooms', 'HomeController@classrooms');
 
+Route::get('/default', 'UserController@default');
+
 Route::get('/admin', 'AdminController@admin')
     ->middleware('is_admin')
     ->name('admin');
@@ -109,7 +111,7 @@ Route::get('/devweb', function () {
 })->name('devweb');
 
 Route::get('/socialmedia', function () {
-    return view('formations.social-media');
+    return view('formations.parcours-social-media');
 })->name('social-media');
 
 Route::get('/webdesign', function () {
@@ -151,6 +153,10 @@ Route::get('/photoshop', function () {
     return view('formations.parcours-photoshop');
 })->name('photoshop');
 
+Route::get('/after-effects', function () {
+    return view('formations.parcours-after-effects');
+})->name('photoshop');
+
 Route::get('/python', function () {
     return view('formations.python');
 })->name('python');
@@ -183,9 +189,23 @@ Route::get('/ecoledatascience', function () {
     return view('formations.ecoledatascience');
 });
 
-Route::get('/factures', function () {
-    return view('users.factures');
-});
+//voir facturation pour les teachers
+
+Route::get('/factures', 'UserController@factures');
+
+Route::post('/moisFactures', 'UserController@moisFactures');
+
+//voir facturation pour les admins
+
+Route::get('/paiements', 'UserController@paiements');
+
+Route::post('/moisPaiements', 'UserController@moisPaiements');
+
+//voir les sessions mensuelles des profs pour les admins
+
+Route::get('/rapportProf', 'UserController@rapportProf');
+
+Route::post('/rapportMoisProf', 'UserController@rapportMoisProf');
 
 
 Route::get('/documentsTeacher', 'UserController@documentsTeacher')->name('documentsTeacher');
@@ -201,3 +221,22 @@ Route::resource('supportformations','SupportformationController');
 Route::resource('achats','AchatController');
 
 Route::post('/ajout-achat', 'AchatController@achat')->name('ajout-achat');
+
+/* pour les entreprises*/
+
+Route::get('/entreprise', function () {
+    return view('formations.entreprise');
+});
+
+Route::get('/entreprise2', function () {
+    return view('formations.entreprise2');
+});
+
+
+//pour retrouver la page profil user
+
+Route::get('/dashboard-teacher', 'HomeController@dashboardT')->name('dashboard');
+
+Route::get('/dashboard-admin', 'HomeController@dashboardA')->name('dashboard');
+
+Route::get('/dashboard-default', 'HomeController@dashboard')->name('dashboard');

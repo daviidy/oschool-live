@@ -17,12 +17,13 @@ class ClassroomController extends Controller
      */
     public function index()
     {
-      if (Auth::check()) {
-          $classrooms = Classroom::where('etudiant', Auth::user()->name)->orderby('date', 'asc')->get();
+      if (Auth::check() && Auth::user()->type2 !== "teacher") {
+          $classrooms = Classroom::where('etudiant', Auth::user()->name)->orderby('date', 'desc')->paginate(30);
           return view('classrooms.index', ['classrooms' => $classrooms]);
         }
-        elseif (Auth::user()->isTeacher()) {
-          return view('classrooms.index');
+      elseif (Auth::check() && Auth::user()->type2 == "teacher") {
+          $sessions = Classroom::where('formateur', Auth::user()->name)->orderby('date', 'desc')->paginate(30);
+          return view('classrooms.index', ['sessions' => $sessions]);
         }
       else {
         return redirect('home');
@@ -39,7 +40,8 @@ class ClassroomController extends Controller
     public function create(Request $request)
     {
         if (Auth::check() && Auth::user()->isTeacher()) {
-          return view('classrooms.ajouter');
+          $students = Auth::user()->students()->where('statut', 'OK')->get();
+          return view('classrooms.ajouter', ['students' => $students]);
         }
         else {
           return redirect('home');

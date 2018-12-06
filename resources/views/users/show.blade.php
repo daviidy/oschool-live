@@ -1,4 +1,4 @@
-@extends('layouts.menu-dashboard-teacher')
+@extends((Auth::user()->type3 == "admin") ? "layouts.menu-dashboard-admin" : ((Auth::user()->type2 == "teacher")  ? "layouts.menu-dashboard-teacher" : "layouts.menu-dashboard-default"))
 
 @section('content')
     <!-- **********************************************************************************************************************************************************
@@ -19,7 +19,7 @@
                   <h3>{{ $user->name }}</h3>
                   <h6>E-mail : {{ $user->email }}</h6>
                   @auth
-                  @if (Auth::user()->isAdmin() && $user->type == 'default')
+                  @if (Auth::user()->isAdmin() && $user->type == 'default' && !count($user->formations  ))
                   <h5> <a href="{{url('inscrire', $user)}}">Inscrire {{$user->name}} à une formation</a> </h5>
                   @endif
                   @if (Auth::user()->isAdmin() && $user->type == 'teacher')
@@ -46,23 +46,25 @@
                     <a data-toggle="tab" href="#overview">A propos</a>
                   </li>
                   @auth
-                  @if (Auth::user()->isAdmin() && $user->type == 'default')
+                  @if (Auth::user()->isAdmin() && $user->type == 'default' && $user->type2 != 'teacher' && $user->type3 != 'admin')
                   <li>
                     <a data-toggle="tab" href="#edit">Attribuer un formateur</a>
                   </li>
                   @endif
-                  @if (Auth::user()->isAdmin() && $user->type == 'teacher')
+                  @if (Auth::user()->isAdmin() && $user->type2 == 'teacher')
                   <li>
                     <a data-toggle="tab" href="#students">Etudiants de {{$user->name}}</a>
                   </li>
                   @endif
-                  @if ($user->type == 'default' && Auth::user()->isAdmin() || Auth::user()->isTeacher())
+                  @if ($user->type == 'default' && $user->type2 != 'teacher' && $user->type3 != 'admin')
+                    @if(Auth::user()->isAdmin() || Auth::user()->isTeacher())
                   <li>
                     <a data-toggle="tab" href="#progressions">Les progressions de {{$user->name}}</a>
                   </li>
                   <li>
-                    <a data-toggle="tab" href="#projets">Les projets de {{$user->name}}</a>
+                    <a data-toggle="tab" href="#projets">Les livrables de {{$user->name}}</a>
                   </li>
+                    @endif
                   @endif
                   @if (Auth::user()->isAdmin())
                   <li>
@@ -315,7 +317,7 @@
                        <p>Formation : Développeur web</p>
                        <table class="table">
                          @auth
-                         @if($user->type == 'default')
+                         @if($user->type == 'default' && $user->type2 != 'teacher')
                          <thead>
                            <tr>
                              <th>Formateur</th>
@@ -369,7 +371,7 @@
                            <!--end modal-->
                            @endforeach
                          </tbody>
-                         @elseif($user->type == 'teacher')
+                         @elseif($user->type2 == 'teacher')
                          <thead>
                            <tr>
                              <th>Etudiant</th>

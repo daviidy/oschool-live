@@ -40,27 +40,27 @@
 <body>
   <section id="container">
 
-<!--annonce a la udemy-->
-    <div class="ud-app-loader ud-component--smart-bar--app ud-app-loaded" data-module-id="smart-bar" ng-non-bindable="">
-      <div data-purpose="smart-bar-wrapper" class="mb0 " style="margin-bottom: 0px;">
-          <div data-purpose="smart-bar-container" class="" style="height: auto;">
-              <div data-purpose="smart-bar" class="smart-bar--smart-bar--1rOkE smart-bar--smart-bar--teal--Qijai smart-bar--smart-bar-dark-theme--18ulO"><span style="font-size: 0px;"></span>
-                  <div class="smart-bar--smart-bar__content--3X42a basic-with-timer--centered-content--QtJd8">
-                      <div data-purpose="basic-with-timer" class="basic-with-timer--centered-content__text--2t0l3"><span data-purpose="smart-bar-copy" class=""><span class="smart-bar--smart-bar__title--1LFsk" data-purpose="smart-bar-title">
-                                  Bonne nouvelle !</span><span class="smart-bar--smart-bar__subtitle--I38FP" data-purpose="smart-bar-subtitle" role="presentation">| Nous organisons un meetup qui va réunir
-                                    les amoureux de l'éducation et du digital, ce samedi 15 décembre 2018
-                                  </span></span>
-                          <div data-purpose="smart-bar-timer" class="smart-bar-timer--timer-container--2mwOn"><span data-purpose="timer-x-days-left"> <a style="color: #fff;" target="_blank" href="https://events.oschool.ci">Cliquez ici pour participer à l'événement</a> </span></div>
+
+    <!--annonce a la udemy-->
+        <div class="ud-app-loader ud-component--smart-bar--app ud-app-loaded" data-module-id="smart-bar" ng-non-bindable="">
+          <div data-purpose="smart-bar-wrapper" class="mb0 " style="margin-bottom: 0px;">
+              <div data-purpose="smart-bar-container" class="" style="height: auto;">
+                  <div data-purpose="smart-bar" class="smart-bar--smart-bar--1rOkE smart-bar--smart-bar--teal--Qijai smart-bar--smart-bar-dark-theme--18ulO"><span style="font-size: 0px;"></span>
+                      <div class="smart-bar--smart-bar__content--3X42a basic-with-timer--centered-content--QtJd8">
+                          <div data-purpose="basic-with-timer" class="basic-with-timer--centered-content__text--2t0l3"><span data-purpose="smart-bar-copy" class=""><span class="smart-bar--smart-bar__title--1LFsk" data-purpose="smart-bar-title">
+                                      Bonne nouvelle !</span><span class="smart-bar--smart-bar__subtitle--I38FP" data-purpose="smart-bar-subtitle" role="presentation">| Nous organisons un meetup qui va réunir
+                                        les amoureux de l'éducation et du digital, ce samedi 15 décembre 2018
+                                      </span></span>
+                              <div data-purpose="smart-bar-timer" class="smart-bar-timer--timer-container--2mwOn"><span data-purpose="timer-x-days-left"> <a style="color: #fff;" target="_blank" href="https://events.oschool.ci">Cliquez ici pour participer à l'événement</a> </span></div>
+                          </div>
                       </div>
+                      <div aria-label="Close" class="smart-bar--smart-bar__close--3mCup" data-purpose="smart-bar-hide" role="button" tabindex="0"><span class="udi-small udi udi-close"></span></div>
                   </div>
-                  <div aria-label="Close" class="smart-bar--smart-bar__close--3mCup" data-purpose="smart-bar-hide" role="button" tabindex="0"><span class="udi-small udi udi-close"></span></div>
               </div>
+            </div>
           </div>
-        </div>
-      </div>
 
-      <!--fin annonce a la udemy-->
-
+          <!--fin annonce a la udemy-->
 
 
     @if (session('status'))
@@ -151,20 +151,19 @@
 
         <ul class="nav pull-right top-menu">
 
-          @if(Auth::user()->isAdmin())
 
           <li>
 
             <a data-toggle="dropdown" class="dropdown-toggle change" href="#">Changer</a>
             <ul class="dropdown-menu">
               <li>
-                <p> <a href="/admin">Tableau de bord admin</a> </p>
+                <p> <a href="/teacher">Tableau de bord prof</a> </p>
               </li>
+
             </ul>
 
           </li>
 
-          @endif
 
           <li>
 
@@ -191,24 +190,13 @@
       <div id="sidebar" class="nav-collapse ">
         <!-- sidebar menu start-->
         <ul style="{{ !count(Auth::user()->formations) ? 'margin-top: 120px;' : '' }}" class="sidebar-menu" id="nav-accordion">
-          <h5 class="centered">{{Auth::user()->name}} <br> ( {{Auth::user()->type2}} ) </h5>
-
-          @if(count(Auth::user()->formations))
+          <h5 class="centered">{{Auth::user()->name}} <br> ( {{Auth::user()->type3}} ) </h5>
           <li class="mt">
-            <a href="{{route('classrooms.index')}}">
-              <i class="fa fa-dashboard"></i>
-              <span>Mes sessions</span>
+            <a href="/dashboard-admin">
+              <i class="fa fa-laptop"></i>
+              <span>Profil</span>
               </a>
           </li>
-          @endif
-
-          <li class="mt">
-            <a href="/documentsTeacher">
-              <i class="fa fa-book"></i>
-              <span>Guides formateurs</span>
-              </a>
-          </li>
-
           <li class="mt">
             <a target="_blank" href="https://discord.gg/hhbzcHE">
               <i class="fa fa-group"></i>
@@ -217,52 +205,75 @@
           </li>
 
 
-          @auth
 
+          <li class="sub-menu">
+            <a href="javascript:;">
+              <i class="fa fa-desktop"></i>
+              <span>Formations</span>
+              </a>
+            <ul class="sub">
 
-          @if(count(Auth::user()->formations))
+              <li>
+
+                <a  style="border-radius:8px; color: red; background-color: transparent;" class="logout" href="{{ route('projets.create') }}">
+                    Créer un projet
+                </a>
+
+              </li>
+              <li>
+
+                <a  style="border-radius:8px; color: #967ADC; background-color: transparent;" class="logout" href="{{ route('supportformations.create') }}">
+                    Ajouter un support de cours
+                </a>
+
+              </li>
+              <li>
+
+                <a  style="border-radius:8px; color: #4D90CC; background-color: transparent;" class="logout" href="{{ route('formations.create') }}">
+                    Créer une formation
+                </a>
+
+              </li>
+              <li>
+
+                <a style="border-radius:8px; color: orange; background-color: transparent;" class="logout" href="{{ route('categories.create') }}">
+                    Créer une catégorie
+                </a>
+
+              </li>
+
+              <li>
+
+                <a style="border-radius:8px; background-color: transparent;" class="logout" href="{{ route('achats.create') }}">
+                    Ajouter un achat
+                </a>
+
+              </li>
+
+            </ul>
+          </li>
+
           <li class="mt">
-            <a href="{{ url('projets') }}">
-              <i class="fa fa-dashboard"></i>
-              <span>Liste des projets</span>
+            <a href="{{route('users.index')}}">
+              <i class="fa fa-group"></i>
+              <span>Liste des utilisateurs</span>
               </a>
           </li>
 
           <li class="mt">
-            <a href="{{ url('supportformations') }}">
-              <i class="fa fa-dashboard"></i>
-              <span>Supports de cours</span>
-              </a>
-          </li>
-          @endif
-
-
-
-          <li class="mt">
-            <a href="/factures">
+            <a href="/paiements">
               <i class="fa fa-money"></i>
-              <span>Facturation</span>
+              <span>Etat des paiements</span>
             </a>
           </li>
 
-
-
-      <!--    <li class="mt">
-            <a href="/programme">
-              <i class="fa fa-calendar"></i>
-              <span>Programme de la formation</span>
-              </a>
-          </li> -->
-
-
           <li class="mt">
-            <a href="/dashboard-teacher">
-              <i class="fa fa-laptop"></i>
-              <span>Profil</span>
-              </a>
+            <a href="/rapportProf">
+              <i class="fa fa-user"></i>
+              <span>Sessions des professeurs</span>
+            </a>
           </li>
 
-          @endauth
           <!--li>
             <a href="inbox.html">
               <i class="fa fa-envelope"></i>

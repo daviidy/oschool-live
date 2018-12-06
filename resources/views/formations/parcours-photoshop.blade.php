@@ -338,13 +338,17 @@
           <h6 _ngcontent-c55="" class="ng-star-inserted">PROGRAMME</h6>
           <h2 _ngcontent-c55="" class="h3">Designer Photoshop</h2>
           <!---->
+<<<<<<< HEAD
           <p _ngcontent-c55="" class="small hidden-md-down ng-star-inserted">Le programme Designer Photoshop Junior
+=======
+          <p _ngcontent-c55="" class="small hidden-md-down ng-star-inserted">Le programme Designer Photoshop
+>>>>>>> 55fd322e3ded0ff4105d671617696e85c6337bf5
             est composé de 8 atéliers pratique. Avec chaque atélier,
             vous allez créer quelque chose qui démontre votre maîtrise des compétences recherchées.
             La complexité des projets varie. En fin de compte,
             vous aurez un portefeuille de projets et un CV digne d'être aprréciés par des employeurs potentiels.</p>
           <!---->
-          <p _ngcontent-c55="" class="small hidden-lg-up ng-star-inserted">Le programme Développeur Web Junior
+          <p _ngcontent-c55="" class="small hidden-lg-up ng-star-inserted">Le programme Designer Photoshop
             est composé de huit projets. Avec chaque projet,
             vous allez créer quelque chose qui démontre votre maîtrise des compétences recherchées.
             La complexité des projets varie.</p>
@@ -408,7 +412,7 @@
                       <!---->
                       <!---->
                       <!----><span _ngcontent-c95="" class="part__project text-only ng-star-inserted"><img _ngcontent-c95="" class="icon-middle" src="/img/page-parcours/icon-project.svg"><span
-                          _ngcontent-c95="">Créez un article de blog / La galerie de l'amour</span></span>
+                          _ngcontent-c95="">Projet</span></span>
                       <!---->
                       <!---->
                     </div>
@@ -424,7 +428,7 @@
                         Nous verrons cette fois-ci, faire le masque de fusion du parfum et créer des pois sur le flacon.
                       </p>
                       <span _ngcontent-c95="" class="part__project text-only ng-star-inserted"><img _ngcontent-c95="" class="icon-middle" src="/img/page-parcours/icon-project.svg"><span
-                          _ngcontent-c95="">Améliorez la page d'accueil d'un magazine</span></span>
+                          _ngcontent-c95="">Projet</span></span>
                       <!---->
                     </div>
                   </li>
@@ -440,7 +444,7 @@
                       <!---->
                       <!---->
                       <!----><span _ngcontent-c95="" class="part__project text-only ng-star-inserted"><img _ngcontent-c95="" class="icon-middle" src="/img/page-parcours/icon-project.svg"><span
-                          _ngcontent-c95="">Créez une application pour inscrire les étudiants de votre école</span></span>
+                          _ngcontent-c95="">Projet</span></span>
                       <!---->
                       <!---->
                     </div>
@@ -458,7 +462,11 @@
                       <!---->
                       <!---->
                       <!----><span _ngcontent-c95="" class="part__project text-only ng-star-inserted"><img _ngcontent-c95="" class="icon-middle" src="/img/page-parcours/icon-project.svg"><span
+<<<<<<< HEAD
                           _ngcontent-c95="">Créez votre site personnel</span></span>
+=======
+                          _ngcontent-c95="">Projet</span></span>
+>>>>>>> 55fd322e3ded0ff4105d671617696e85c6337bf5
                       <!---->
                       <!---->
                     </div>
@@ -469,6 +477,7 @@
                       <header _ngcontent-c95="" class="part__header mb-half">
                         <!---->
                         <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted">OUTILS - De nouvelles fonctionnalités</h4>
+<<<<<<< HEAD
                         <!---->
                       </header>
                       <p _ngcontent-c95="" class="small mb-half">
@@ -517,18 +526,71 @@
                       </header>
                       <p _ngcontent-c95="" class="small mb-half">
                        Vous saurez comment faire le détourage de la souris, sa mise à l'échelle, le détourage de la toque de chef, l'ajustement de la toque  et la création de l’ombre portée de la souris.
+=======
+                        <!---->
+                      </header>
+                      <p _ngcontent-c95="" class="small mb-half">
+                       Nous verrons entre autres comment organiser son espace de travail, comprendre la notion de pixel, les différentes couleurs, les couches de couleurs ainsi que les styles de calque – Ombres portées et lueurs.
+>>>>>>> 55fd322e3ded0ff4105d671617696e85c6337bf5
 
                       </p>
                       <!---->
                       <!---->
                       <!---->
                       <!----><span _ngcontent-c95="" class="part__project text-only ng-star-inserted"><img _ngcontent-c95="" class="icon-middle" src="/img/page-parcours/icon-project.svg"><span
-                          _ngcontent-c95="">Créez votre site personnel</span></span>
+                          _ngcontent-c95="">Projet</span></span>
                       <!---->
                       <!---->
                     </div>
                   </li>
 
+<<<<<<< HEAD
+=======
+              </li>
+
+                     <li _ngcontent-c95="" class="ng-star-inserted">
+                    <div _ngcontent-c95="" class="part">
+                      <header _ngcontent-c95="" class="part__header mb-half">
+                        <!---->
+                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted">ATELIER 5 - Banana Style</h4>
+                        <!---->
+                      </header>
+                      <p _ngcontent-c95="" class="small mb-half">
+                       Vous saurez comment créer un nouveau document et le détourage de la banane, le découpage de la forme « crayon » sur la banane et l'ajout du texte » Banana Style ».
+
+                      </p>
+                      <!---->
+                      <!---->
+                      <!---->
+                      <!----><span _ngcontent-c95="" class="part__project text-only ng-star-inserted"><img _ngcontent-c95="" class="icon-middle" src="/img/page-parcours/icon-project.svg"><span
+                          _ngcontent-c95="">Projet</span></span>
+                      <!---->
+                      <!---->
+                    </div>
+                  </li>
+
+                  <li _ngcontent-c95="" class="ng-star-inserted">
+                    <div _ngcontent-c95="" class="part">
+                      <header _ngcontent-c95="" class="part__header mb-half">
+                        <!---->
+                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted"> ATELIER 6 - Ratatouille</h4>
+                        <!---->
+                      </header>
+                      <p _ngcontent-c95="" class="small mb-half">
+                       Vous saurez comment faire le détourage de la souris, sa mise à l'échelle, le détourage de la toque de chef, l'ajustement de la toque  et la création de l’ombre portée de la souris.
+
+                      </p>
+                      <!---->
+                      <!---->
+                      <!---->
+                      <!----><span _ngcontent-c95="" class="part__project text-only ng-star-inserted"><img _ngcontent-c95="" class="icon-middle" src="/img/page-parcours/icon-project.svg"><span
+                          _ngcontent-c95="">Projet</span></span>
+                      <!---->
+                      <!---->
+                    </div>
+                  </li>
+
+>>>>>>> 55fd322e3ded0ff4105d671617696e85c6337bf5
 
                   <li _ngcontent-c95="" class="ng-star-inserted">
                     <div _ngcontent-c95="" class="part">
@@ -545,7 +607,11 @@
                       <!---->
                       <!---->
                       <!----><span _ngcontent-c95="" class="part__project text-only ng-star-inserted"><img _ngcontent-c95="" class="icon-middle" src="/img/page-parcours/icon-project.svg"><span
+<<<<<<< HEAD
                           _ngcontent-c95="">Créez votre site personnel</span></span>
+=======
+                          _ngcontent-c95="">Projet</span></span>
+>>>>>>> 55fd322e3ded0ff4105d671617696e85c6337bf5
                       <!---->
                       <!---->
                     </div>
@@ -566,7 +632,11 @@
                       <!---->
                       <!---->
                       <!----><span _ngcontent-c95="" class="part__project text-only ng-star-inserted"><img _ngcontent-c95="" class="icon-middle" src="/img/page-parcours/icon-project.svg"><span
+<<<<<<< HEAD
                           _ngcontent-c95="">Créez votre site personnel</span></span>
+=======
+                          _ngcontent-c95="">Projet</span></span>
+>>>>>>> 55fd322e3ded0ff4105d671617696e85c6337bf5
                       <!---->
                       <!---->
                     </div>
