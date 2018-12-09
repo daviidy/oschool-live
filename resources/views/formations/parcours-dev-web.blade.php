@@ -7,9 +7,7 @@
   <div class="container alt section-space">
     <div class="row c-how__heading align-row">
       <div class="col-xs-12 col-sm-6 c-how__headingLeft">
-        <h1 class="h2 u-bold">Devenez Développeur web Junior, en suivant un cours particulier depuis la maison</h1>
-
-        <p style="margin: 5rem 0;">En collaboration avec &nbsp; &nbsp; &nbsp;<span> <a target="_blank" href="https://cinetpay.com"><img width="200" src="/img/page-parcours/cinetpay.png" alt=""></a>  </span> </p>
+        <h1 style="margin-bottom: 3rem;" class="h2 u-bold">Devenez Développeur web Junior, en suivant un cours particulier avec un formateur, depuis la maison</h1>
         <a class="home_button" href="#payment">
           Inscrivez-vous maintenant
         </a>
@@ -152,7 +150,11 @@
                 <!---->
                 <!---->
                 <li _ngcontent-c30="" class="ng-star-inserted">
-                    <!----><img style="margin: 2rem;" width="200" src="/img/page-parcours/cinetpay.png">
+                    <!----><a target="_blank" href="https://cinetpay.com/"><img style="margin: 2rem;" width="200" src="/img/page-parcours/cinetpay.png"></a>
+                    <!---->
+                </li>
+                <li _ngcontent-c30="" class="ng-star-inserted">
+                    <!----><a target="_blank" href="https://epistrophe.ci/"><img style="margin: 2rem;" width="200" src="https://epistrophe.ci/wp-content/uploads/2016/03/Epistrophe.jpg"></a>
                     <!---->
                 </li>
                 <!---->
@@ -175,7 +177,7 @@
   <div class="container alt section-space">
     <div class="row">
       <div class="col-xs-12 text-center">
-        <h3 class="h3 u-bold text-center u-margin-b-sm">Apprenez avec un formateur en direct, dans notre classe virtuelle.<br>
+        <h3 class="h3 u-bold text-center u-margin-b-sm">Apprenez avec un formateur en direct, dans notre salle virtuelle.<br>
           Tout a été fait pour vous permettre d'apprendre sereinement<br>
             Suivez notre parcours certifiant et démarrez une nouvelle carrière</h3>
         <div class="c-browser">
@@ -210,7 +212,7 @@
                 <h4 _ngcontent-c33="" class="light ng-star-inserted">
                   <h4 class="light">
                     <font style="vertical-align: inherit;">
-                      <font style="vertical-align: inherit;">JavaScript et PHP sont les langages de code les plus demandés par les entreprises</font>
+                      <font style="vertical-align: inherit;">JavaScript et PHP sont les langages de code les plus demandés par les entreprises en 2019</font>
                     </font>
                   </h4>
                 </h4>
@@ -251,12 +253,12 @@
         </div>
               <h4>
                 <font style="vertical-align: inherit;">
-                  <font style="vertical-align: inherit;">Apprenez chaque semaine en télé présentiel, avec un formateur dédié.</font>
+                  <font style="vertical-align: inherit;">En cours particulier, chaque semaine.</font>
                 </font>
               </h4>
               <p style="margin-bottom: 5rem;">
                 <font style="vertical-align: inherit;">
-                  <font style="vertical-align: inherit;">Votre formateur se fera un plaisir de vous dispenser les cours, selon ton emploi du temps, et ce, peu importe où vous êtes, du moment où vous avez l'accès Internet. </font>
+                  <font style="vertical-align: inherit;">Apprenez chaque semaine en télé présentiel, avec un formateur dédié. Votre formateur se fera un plaisir de vous dispenser les cours, selon votre emploi du temps, et ce, peu importe où vous êtes, du moment où vous avez l'accès Internet. </font>
                   <font style="vertical-align: inherit;">Des experts examineront votre travail et vous fourniront des commentaires concrets pour vous aider à progresser avec succès dans le programme.</font>
                 </font>
               </p>
@@ -267,14 +269,14 @@
 
               <h4>
                 <font style="vertical-align: inherit;">
-                  <font style="vertical-align: inherit;">Construisez un portfolio en réalisant des projets de la vie réelle</font>
+                  <font style="vertical-align: inherit;">Bénéficiez d'un accompagnement pour obtenir un emploi.</font>
                 </font>
               </h4>
               <!---->
               <p class="ng-star-inserted">
                 <font style="vertical-align: inherit;">
-                  <font style="vertical-align: inherit;">Vous construirez de vrais projets démontrant votre maîtrise des compétences enseignées. Ces projets constitueront un portefeuille pouvant être partagé avec des employeurs potentiels. </font>
-                  <font style="vertical-align: inherit;">Nos partenaires d'embauche examinent régulièrement ces portefeuilles lorsqu'ils recherchent des candidats qualifiés.</font>
+                  <font style="vertical-align: inherit;">Durant votre formation, nous vous préparons à affronter le marché du travail, en augmentant votre employabilité.</font>
+                  <font style="vertical-align: inherit;">Préparations aux entretiens, conseils d'expert, création de votre CV......voilà autant de choses qui vous attendent avec nous.</font>
                 </font>
               </p>
             </div>
@@ -289,13 +291,14 @@
               </div>
                     <h4>
                       <font style="vertical-align: inherit;">
-                        <font style="vertical-align: inherit;">Réalisez les projets de la formation et soumettez-les</font>
+                        <font style="vertical-align: inherit;">Nos certificats sont reconnus par les entreprises</font>
                       </font>
                     </h4>
                     <p style="margin-bottom: 5rem;">
                       <font style="vertical-align: inherit;">
-                        <font style="vertical-align: inherit;">Vous rejoindrez une communauté dynamique d'apprenants engagés dans une expérience d'apprentissage intensive et productive de plusieurs mois. </font>
-                        <font style="vertical-align: inherit;">Vous allez donner et recevoir un soutien, établir des liens et rester au courant des tendances dans votre domaine. Nos diplômés citent régulièrement la communauté comme l'une des caractéristiques les plus précieuses de leur expérience dans le programme de formation Oschool.</font>
+                        <font style="vertical-align: inherit;"> Oschool collabore avec de nombreuses entreprises privées. Ces entreprises participent à l'élaboration des formations. </font>
+                        <font style="vertical-align: inherit;">En obtenant le certificat Oschool, vous bénéficiez d'une aide pour vous insérer dans le marché
+                          du travail, en effectuant des stages dans ces entreprises.</font>
                       </font>
                     </p>
                     <div class="text-center">
@@ -311,8 +314,8 @@
                     <!---->
                     <p class="ng-star-inserted">
                       <font style="vertical-align: inherit;">
-                        <font style="vertical-align: inherit;">Vous construirez de vrais projets démontrant votre maîtrise de vos compétences. Ces projets constitueront un portefeuille pouvant être partagé avec des employeurs potentiels. </font>
-                        <font style="vertical-align: inherit;">Nos partenaires d'embauche examinent régulièrement ces portefeuilles lorsqu'ils recherchent des candidats qualifiés.</font>
+                        <font style="vertical-align: inherit;">Vous rejoindrez une communauté dynamique d'apprenants engagés dans une expérience d'apprentissage intensive et productive de plusieurs mois. </font>
+                        <font style="vertical-align: inherit;">Vous allez donner et recevoir un soutien, établir des liens et rester au courant des tendances dans votre domaine. Nos diplômés citent régulièrement la communauté comme l'une des caractéristiques les plus précieuses de leur expérience dans le programme de formation Oschool.</font>
                       </font>
                     </p>
                   </div>
@@ -353,10 +356,15 @@
       <div _ngcontent-c47="" class="card ng-star-inserted">
         <div _ngcontent-c47="" class="line bg-turquoise"></div>
         <!---->
-        <h5 _ngcontent-c47="" class="title mb-1 ng-star-inserted"><span class="hidden-md-down">Rencontrez nos partenaires d'embauche</span><span class="hidden-lg-up">Rencontrez nos partenaires d'embauche</span></h5>
+        <h5 _ngcontent-c47="" class="title mb-1 ng-star-inserted"><span class="hidden-md-down">Suivez la formation en cours particulier</span><span class="hidden-lg-up">Suivez la formation en cours particulier</span></h5>
         <!---->
-        <p _ngcontent-c47="" class="x-small ng-star-inserted"><span class="hidden-md-down">Les développeurs Web front-end sont en forte demande. Créez votre portefeuille professionnel avec Oschool et ouvrez un monde d'opportunités. Nos partenaires d'embauche sont impatients de vous rencontrer.</span>
-          <span class="hidden-lg-up">Les développeurs Web front-end sont en forte demande. Créez votre portefeuille professionnel avec Oschool et ouvrez un monde d'opportunités. Nos partenaires d'embauche sont impatients de vous rencontrer.</span></p>
+        <p _ngcontent-c47="" class="x-small ng-star-inserted"><span class="hidden-md-down">
+          Selon votre planning, chaque semaine, prenez rendez-vous avec un formateur
+        qui se fera un plaisir de vous dispenser les cours. De plus, vous avez accès à toutes les ressources
+      de cours (vidéos, textes etc.)</span>
+          <span class="hidden-lg-up">Selon votre planning, chaque semaine, prenez rendez-vous avec un formateur
+        qui se fera un plaisir de vous dispenser les cours. De plus, vous avez accès à toutes les ressources
+      de cours (vidéos, textes etc.)</span></p>
       </div>
       <div _ngcontent-c47="" class="card ng-star-inserted">
         <div _ngcontent-c47="" class="line bg-magenta"></div>
@@ -676,7 +684,7 @@
         <!---->
         <!---->
         <!---->
-       
+
 
         <ir-degree-pricing-card _ngcontent-c63="" _nghost-c101="" class="ng-star-inserted">
           <div _ngcontent-c101="" class="card card--pricing primary selected more-padding-top">
@@ -735,7 +743,7 @@
           </div>
         </ir-degree-pricing-card>
 
-       
+
 
 
 

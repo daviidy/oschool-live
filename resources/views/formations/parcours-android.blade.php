@@ -8,8 +8,7 @@
     <div class="row c-how__heading align-row">
       <div class="col-xs-12 col-sm-6 c-how__headingLeft">
         <!-- <h2 class="h2 u-bold text-primary">Hack & Learn <em>React</em></h2> -->
-        <h1 class="h2 u-bold">Devenez Développeur d'Applications Android, en suivant un cours particulier depuis la maison</h1>
-        <p style="margin: 5rem 0;">En collaboration avec &nbsp; &nbsp; &nbsp;<span> <a target="_blank" href="https://epistrophe.ci"><img width="200" src="https://www.epistrophe.ci/wp-content/uploads/2013/05/cropped-logo_epistrophe_fond_blanc_790x210.jpg" alt=""></a>  </span> </p>
+        <h1 style="margin-bottom: 3rem;" class="h2 u-bold">Devenez Développeur d'Applications Android, en suivant un cours particulier avec un formateur, depuis la maison</h1>
         <a class="home_button" href="#payment">
           Inscrivez-vous maintenant
         </a>
@@ -144,7 +143,11 @@
                 <!---->
                 <!---->
                 <li _ngcontent-c30="" class="ng-star-inserted">
-                    <!----><img style="margin: 2rem;" width="200" src="https://www.epistrophe.ci/wp-content/uploads/2013/05/cropped-logo_epistrophe_fond_blanc_790x210.jpg">
+                    <!----><a target="_blank" href="https://cinetpay.com/"><img style="margin: 2rem;" width="200" src="/img/page-parcours/cinetpay.png"></a>
+                    <!---->
+                </li>
+                <li _ngcontent-c30="" class="ng-star-inserted">
+                    <!----><a target="_blank" href="https://epistrophe.ci/"><img style="margin: 2rem;" width="200" src="https://epistrophe.ci/wp-content/uploads/2016/03/Epistrophe.jpg"></a>
                     <!---->
                 </li>
                 <!---->
@@ -393,7 +396,7 @@
     <!---->
     <div _ngcontent-c55="" class="nd-syllabus-term__card">
       <section _ngcontent-c55="" class="nd-syllabus-term__header collapse in">
-        <div _ngcontent-c55="" class="nd-syllabus-term__header__image" irdeferbgimage="" style="background-image: url(&quot;https://images.unsplash.com/photo-1485988412941-77a35537dae4?ixlib=rb-0.3.5&s=177fa5618e070b6d13cf5debd2034426&auto=format&fit=crop&w=772&q=80&quot;);">
+        <div _ngcontent-c55="" class="nd-syllabus-term__header__image" irdeferbgimage="" style="background-image: url(&quot;https://images.unsplash.com/photo-1532653495815-10005f43eee9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80&quot;);">
           <!---->
         </div>
         <div _ngcontent-c55="" class="nd-syllabus-term__header__content">
@@ -718,7 +721,7 @@
           </div>
         </ir-degree-pricing-card>
 
-      
+
 
 
         <!---->

@@ -94,7 +94,7 @@
 					<div class="col">
 						<div class="header_content d-flex flex-row align-items-center justify-content-start">
 							<div class="logo_container mr-auto">
-								<a href="/">
+								<a href="https://oschool.ci">
 									<div class="logo_text">
 										<img width="150" src="/new/images/logo.png" alt="">
 									</div>
