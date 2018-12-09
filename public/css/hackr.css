@@ -1,3 +1,4 @@
+
 /*! CSS Used from: https://eu.udacity.com/styles.cd049525371f607387d9.css */
 *,::after,::before{box-sizing:inherit;}
 /*! CSS Used from: Embedded */
@@ -28351,7 +28352,7 @@ p.username-error-block {
 }
 
 .h3 {
-  font-size: 30px
+  font-size: 20px
 }
 
 @media (max-width:767px) {

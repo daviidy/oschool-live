@@ -182,7 +182,7 @@
             </div>
           </div>
           <div class="c-browser__image">
-            <img src="/img/page-parcours/android2.png" />
+            <iframe src="https://player.vimeo.com/video/305349141" width="100%" height="528" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
           </div>
         </div>
 
