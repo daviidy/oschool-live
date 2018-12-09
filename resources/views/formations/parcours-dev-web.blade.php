@@ -7,7 +7,7 @@
   <div class="container alt section-space">
     <div class="row c-how__heading align-row">
       <div class="col-xs-12 col-sm-6 c-how__headingLeft">
-        <h1 style="margin-bottom: 3rem;" class="h2 u-bold">Devenez Développeur web Junior, en suivant un cours particulier avec un formateur, depuis la maison</h1>
+        <h1 style="margin-bottom: 3rem;" class="h2 u-bold">Devenez Développeur Web Professionnel, en suivant un cours particulier avec un formateur, depuis la maison</h1>
         <a class="home_button" href="#payment">
           Inscrivez-vous maintenant
         </a>
@@ -177,7 +177,7 @@
   <div class="container alt section-space">
     <div class="row">
       <div class="col-xs-12 text-center">
-        <h3 class="h3 u-bold text-center u-margin-b-sm">Apprenez avec un formateur en direct, dans notre salle virtuelle.<br>
+        <h3 class="h3 u-bold text-cent  er u-margin-b-sm">Apprenez avec un formateur en direct, dans notre salle virtuelle.<br>
           Tout a été fait pour vous permettre d'apprendre sereinement<br>
             Suivez notre parcours certifiant et démarrez une nouvelle carrière</h3>
         <div class="c-browser">
@@ -189,7 +189,8 @@
             </div>
           </div>
           <div class="c-browser__image">
-            <img src="/avilon/img/demo.gif" />
+            <iframe src="https://player.vimeo.com/video/305344990" width="100%" height="528" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
           </div>
         </div>
 
