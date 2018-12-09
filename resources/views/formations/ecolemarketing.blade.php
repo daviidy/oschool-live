@@ -69,10 +69,10 @@
         <div class="course">
           <div class="course_image"><img src="/new/images/cours/cm.png" alt=""></div>
           <div class="course_body">
-            <div class="course_title"><a href="{{url('socialmedia')}}">Certification Social Media</a></div>
+            <div class="course_title"><a href="{{url('socialmedia')}}">Community Manager</a></div>
 
           </div>
-          
+
         </div>
       </div>
 
