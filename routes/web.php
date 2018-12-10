@@ -197,7 +197,7 @@ Route::post('/moisFactures', 'UserController@moisFactures');
 
 //voir facturation pour les admins
 
-Route::get('/paiements', 'UserController@paiements');
+Route::get('/paiements', 'UserController@paiements')->name('paiements');
 
 Route::post('/moisPaiements', 'UserController@moisPaiements');
 
@@ -240,3 +240,7 @@ Route::get('/dashboard-teacher', 'HomeController@dashboardT')->name('dashboard')
 Route::get('/dashboard-admin', 'HomeController@dashboardA')->name('dashboard');
 
 Route::get('/dashboard-default', 'HomeController@dashboard')->name('dashboard');
+
+//pour mettre à jour le statut des abonnés
+
+Route::get('/statutCheck', 'UserController@statutCheck')->name('statutCheck');

@@ -42,7 +42,7 @@ class SendSubscriptionEmail extends Command
     {
         $date = Carbon::now();
         //get users which subscription expires in 10 days
-        $users = User::where('type', 'default')->orderby('id', 'asc')->paginate(1000);
+        $users = User::where('type', 'default')->where('type2', 'aucun')->where('type3', 'aucun')->orderby('id', 'asc')->paginate(1000);
 
         foreach ($users as $user) {
           if ($user->fin_abonnement->subDays(10) <= $date && $user->fin_abonnement >= $date) {

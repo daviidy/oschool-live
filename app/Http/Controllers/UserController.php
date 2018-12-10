@@ -12,6 +12,7 @@ use App\Formation;
 use App\Achat;
 use Mail;
 use DB;
+use Carbon\Carbon;
 
 class UserController extends Controller
 {
@@ -26,6 +27,39 @@ class UserController extends Controller
         return redirect('home');
       }
     }
+
+
+    public function statutCheck()
+    {
+      if (Auth::user()->type3 == "admin") {
+        $date = Carbon::now();
+        //get users which subscription expires in 10 days
+        $users = User::where('type', 'default')->where('type2', 'aucun')->where('type3', 'aucun')->orderby('id', 'asc')->paginate(1000);
+
+        foreach ($users as $user) {
+          if ($user->fin_abonnement < $date && $user->formations()) {
+            $user->statut = 'aucun';
+            $user->save();
+            //Send email to the users
+            Mail::send('mails.expiration', ['user' => $user], function($message) use ($user){
+              $message->to($user->email, 'Oschool')->subject('Votre abonnement Oschool a expiré');
+              $message->from('eventsoschool@gmail.com', 'Oschool');
+            });
+          }
+
+          elseif ($user->fin_abonnement->subDays(10) <= $date && $user->fin_abonnement >= $date && $user->formations()) {
+            //Send email to the users
+            Mail::send('mails.fin-abonnement', ['user' => $user], function($message) use ($user){
+              $message->to($user->email, 'Oschool')->subject('Votre abonnement va bientôt prendre fin !');
+              $message->from('eventsoschool@gmail.com', 'Oschool');
+            });
+          }
+        }
+
+      }
+
+        return redirect('paiements')->with('status', 'Le statut des abonnés a bien été mis à jour');
+      }
 
 
 
