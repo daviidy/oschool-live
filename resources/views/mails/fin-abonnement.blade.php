@@ -24,7 +24,7 @@
     </tr>
 
     <tr>
-      <td style="padding: 20px 7.5% 0;">Votre abonnement Oschool arrive à écheance! <br> Il expire le <strong>{{user->fin_abonnement}}</strong> </td>
+      <td style="padding: 20px 7.5% 0;">Votre abonnement Oschool arrive à écheance! <br> Il expire le <strong>{{$user->fin_abonnement}}</strong> </td>
     </tr>
 .
     <tr>
