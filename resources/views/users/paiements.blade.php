@@ -14,6 +14,14 @@
 
     <h3><i class="fa fa-angle-right"></i> Rapport des paiements</h3>
 
+    <div style="margin-bottom: 6rem;" class="row text-center">
+
+      <div class="col-lg-6">
+        <button style="margin-top: 0;height: auto;width: 100%;background:#77A930;" class="home_button" type="submit" name="button"> <a href="/statutCheck" >Mettre à jour le statut des abonnés</a> </button>
+      </div>
+
+    </div>
+
     <div class="row">
 
       <div class="col-lg-6">

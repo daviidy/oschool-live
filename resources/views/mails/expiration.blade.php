@@ -24,29 +24,22 @@
     </tr>
 
     <tr>
-      <td style="padding: 20px 7.5% 0;">Votre abonnement Oschool arrive à écheance! <br> Il expire le <strong>{{user->fin_abonnement}}</strong> </td>
+      <td style="padding: 20px 7.5% 0;">Votre abonnement Oschool a expiré. <br>
+         Vous n'avez donc plus accès au cours particulier avec un formateur</td>
     </tr>
 .
     <tr>
-      <td style="padding: 20px 7.5% 0;"> Pour vous réabonner, c’est très simple :  <br>
-        Rendez-vous dans votre   <strong><a href="#">tableau de bord</a>.</strong> <br>
-        Ou faites un dépôt Orange Money à ce numéro: <strong>58-45-06-00</strong>
-        Faites-le dès maintenant! Vous éviterez ainsi toute interruption de service. <br>
+      <td style="padding: 20px 7.5% 0;"> Nous n'avons pas pu recevoir le paiement pour votre abonnement mensuel. <br>
+        Pour vous réabonner, c’est très simple :  <br>
+        Faites un dépôt Orange Money au numéro suivant: <strong> 58-45-06-00 </strong> <br>
+        Faites-le dès maintenant! Nous verrons dans quelle mesure vous pourrez reprendre là où vous vous êtes arrêtés. <br>
       </td>
     </tr>
 
     <tr>
       <td style="padding: 20px 7.5% 0;">
-        D’avance, merci. Nous sommes très heureux de continuer à vous compter parmi nous.<br>
         Pour plus d'infos, contactez nous à <strong>support@oschool.ci</strong>.
       </td>
-    </tr>
-    <tr >
-       <td style="padding: 30px 0; text-align: center;">
-         <a href="https://code.oschool.ci/home">
-       	   <button style="background-color:#4d90cc ; color: #fff; padding: 15px 70px; border-radius:5px; font-size: 16px; cursor: pointer; border: none;">Réabonnez-vous</button>
-        </a>
-       </td>
     </tr>
     <tr>
       <td style="padding: 20px 7.5% 117px;">Cordialement,<br>l'équipe Oschool</td>
