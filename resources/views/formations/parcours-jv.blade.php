@@ -610,7 +610,7 @@
                 <div _ngcontent-c101="" class="card__price ng-star-inserted">
                 <!----><span _ngcontent-c101="" class="card__price--current"><del><h5>30.000 FCFA / mois</h5></del> 
                   <!----></span>
-                   <!----><span _ngcontent-c101="" class="card__price--current2"><h1>10.000 FCFA<br> le prémier mois<h1>
+                   <!----><span _ngcontent-c101="" class="card__price--current2"><h1>10.000 FCFA<br> le premier mois<h1>
               </div>
               <br>
               <p _ngcontent-c101="">

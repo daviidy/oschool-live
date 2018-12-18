@@ -26,10 +26,6 @@
 
 
 
-
-
-
-
 /* collaboration section*/
 
 
@@ -144,6 +140,8 @@ ul[_ngcontent-c30]   .icon[_ngcontent-c30]{height:4.5rem;margin:0 1.5rem;}
     font-weight: 500;
    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
    cursor: pointer;
+   position: relative; 
+   top: 55px;
 }
 
 .home_button:hover
@@ -39169,3 +39167,11 @@ div.CodeMirror-cursors {
 span.CodeMirror-selectedtext {
   background: none
 }
+
+.intro-kali{
+  position: absolute;
+  top: -300px;
+}
+
+
+
