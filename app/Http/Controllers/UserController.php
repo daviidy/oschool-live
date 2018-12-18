@@ -39,6 +39,7 @@ class UserController extends Controller
         $users = User::where('type', 'default')->where('type2', 'aucun')->where('type3', 'aucun')->orderby('id', 'asc')->paginate(1000);
 
         foreach ($users as $user) {
+          //dans le cas où la date a expiré
           if ($user->fin_abonnement < $date && count($user->formations)) {
             $user->statut = 'aucun';
             $user->save();
@@ -49,7 +50,8 @@ class UserController extends Controller
             });
           }
 
-          elseif ($user->fin_abonnement->subDays(10) <= $date && $user->fin_abonnement >= $date && $user->formations()) {
+          // dans le cas où la date va bientôt arriver à expiration
+          elseif ($user->fin_abonnement->subDays(10) <= $date && $user->fin_abonnement >= $date && count($user->formations)) {
             //Send email to the users
             Mail::send('mails.fin-abonnement', ['user' => $user], function($message) use ($user){
               $message->to($user->email, 'Oschool')->subject('Votre abonnement va bientôt prendre fin !');
