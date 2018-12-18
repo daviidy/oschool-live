@@ -18,7 +18,7 @@
         </p>
       </div>
       <div class="col-xs-12 col-sm-6 c-how__headingRight">
-        <img src="https://png2.kisspng.com/20180404/xbe/kisspng-software-developer-web-development-web-developer-s-developer-5ac53c6a6ec685.3751279915228754984538.png" />
+        <img style="display: block;margin-left: auto;margin-right: auto;width: 80%;" src="http://masseka-game-studio.com/images/gallery/fulls/06.jpg" />
       </div>
     </div>
   </div>
@@ -576,7 +576,7 @@
         <!---->
         <!---->
         <!---->
-        
+
 
         <ir-degree-pricing-card _ngcontent-c63="" _nghost-c101="" class="ng-star-inserted">
           <div _ngcontent-c101="" class="card card--pricing primary selected more-padding-top">
@@ -635,7 +635,7 @@
           </div>
         </ir-degree-pricing-card>
 
-       
+
 
 
 

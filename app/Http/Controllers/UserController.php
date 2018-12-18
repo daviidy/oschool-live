@@ -29,6 +29,8 @@ class UserController extends Controller
     }
 
 
+    //voir l'état d'abonnement des étudiants
+
     public function statutCheck()
     {
       if (Auth::user()->type3 == "admin") {
@@ -37,7 +39,7 @@ class UserController extends Controller
         $users = User::where('type', 'default')->where('type2', 'aucun')->where('type3', 'aucun')->orderby('id', 'asc')->paginate(1000);
 
         foreach ($users as $user) {
-          if ($user->fin_abonnement < $date && $user->formations()) {
+          if ($user->fin_abonnement < $date && count($user->formations)) {
             $user->statut = 'aucun';
             $user->save();
             //Send email to the users
