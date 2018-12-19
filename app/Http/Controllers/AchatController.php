@@ -52,6 +52,14 @@ class AchatController extends Controller
       Session::put('tel', $request['tel']);
       Session::put('montant', $request['montant']);
       Session::put('formation', $request['formation']);
+      Session::put('promo', $request['promo']);
+
+      $montant = "30000";
+
+      //on verifie si nle code promo est exact
+      if (Session::get('promo') == 'OSCHOOL2019') {
+        $montant = "10000";
+      }
 
       function postData($params, $url)
           {
@@ -92,7 +100,7 @@ class AchatController extends Controller
           }
           $time = Carbon::now();
           $temps = date("YmdHis");
-        $params = array('cpm_amount' => Session::get('montant'),
+        $params = array('cpm_amount' => $montant,
                         'cpm_currency' => 'CFA',
                         'cpm_site_id' => '113043',
                         'cpm_trans_id' => $temps,
@@ -123,7 +131,7 @@ class AchatController extends Controller
                                      'temps' => $temps,
                                      'time' => $time,
                                      'achats' => $achats,
-                                     'montant' => Session::get('montant'),
+                                     'montant' => $montant,
                                      'formations' => $formations,
                                    ]);
 
