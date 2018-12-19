@@ -983,7 +983,7 @@
 
         <div class="modal-body signup-modal-body">
           <div class="modal-header">
-            <img width="100" src="/img/page-parcours/card.png" alt="">
+            <img width="100" src="http://pluspng.com/img-png/gift-hd-png-hd-mystery-gift-box-png-405.png" alt="">
             <div class="modal-title">Remplissez ce formulaire pour obtenir votre cadeau</div>
             <div class="login-needed-alert"></div>
           <form name="userSignUpForm" action="{{url('envoi')}}" method="post" id="signup-modal-form" class="margintop-lg">
