@@ -695,10 +695,12 @@
            <!--  <h3 _ngcontent-c101="" style="margin-top: 3rem;color: orange;background: #EAEAEA;" class="card__flag ng-star-inserted">La plus vendue</h3> -->
             <div _ngcontent-c101="" class="card--pricing__header">
               <h5 _ngcontent-c101="">Développeur Web</h5>
-              <!---->
-              <div _ngcontent-c101="" class="card__price ng-star-inserted">
-                <!----><span _ngcontent-c101="" class="card__price--current">30.000 FCFA / mois
-                  <!----></span></div>
+                 <div _ngcontent-c101="" class="card__price ng-star-inserted">
+                <!----><span _ngcontent-c101="" class="card__price--current"><del><h5>30.000 FCFA / mois</h5></del> 
+                  <!----></span>
+                   <!----><span _ngcontent-c101="" class="card__price--current2"><h1>10.000 FCFA<br> le prémier mois<h1></span>
+              </div>
+              <br>
               <p _ngcontent-c101="">
                 <!----><span _ngcontent-c101="" class="ng-star-inserted">Intermédiaire</span>
                 <!---->

@@ -1,28 +1,55 @@
 @extends('layouts.menu-parcours')
 
-@section('title', 'Apprendre Photoshop de A à Z')
+@section('title', 'Développeur Web Junior')
 
 @section('content')
 
   <div class="container alt section-space">
     <div class="row c-how__heading align-row">
       <div class="col-xs-12 col-sm-6 c-how__headingLeft">
-        <!-- <h2 class="h2 u-bold text-primary">Hack & Learn <em>React</em></h2> -->
-        <h1 class="h2 u-bold">Apprenez Photoshop de A à Z, avec un formateur dédié en télé présentiel</h1>
-        <p class="u-margin-t-md subHeading">Suivez nos formations Photoshop enseignés
-          par des experts et apprenez à retoucher et corriger des images,
-          quel que soit leur niveau. Découvrez comment utiliser les formes et les
-          calques Photoshop, comment retoucher des photos, etc.</p>
+        <h1 style="margin-bottom: 3rem;" class="h2 u-bold intro-kali">Apprenez  le hacking éthique avec Kali Linux, en suivant un cours particulier avec un formateur, depuis la maison</h1>
         <a class="home_button" href="#payment">
           Inscrivez-vous maintenant
         </a>
 
       </div>
       <div class="col-xs-12 col-sm-6 c-how__headingRight">
-        <img src="http://www.elucidate-designs.com/img/workstation.png" />
+        <img style="width:90%;" src="/img/page-parcours/kali-linux-1.png" />
+
+        <!--image du parcours et countdown-->
+        <div class="row">
+
+          <div class="col-sm-12 text-center">
+
+            <h3 id="info">Les inscriptions se terminent dans :</h3>
+
+          </div>
+
+        </div>
+
+        <div _ngcontent-c87="" class="countdown ng-star-inserted">
+          <div _ngcontent-c87="">
+              <!---->
+              <!---->
+              <!---->
+              <ul _ngcontent-c87="" class="ng-star-inserted">
+                  <li _ngcontent-c87=""><span _ngcontent-c87="" class="countdown__timer" id="jours"></span><span _ngcontent-c87="">JOURS</span></li>
+                  <li _ngcontent-c87=""><span _ngcontent-c87="" class="countdown__timer" id="heures"></span><span _ngcontent-c87="">HRS</span></li>
+                  <li _ngcontent-c87=""><span _ngcontent-c87="" class="countdown__timer" id="minutes"></span><span _ngcontent-c87="">MIN</span></li>
+                  <li _ngcontent-c87=""><span _ngcontent-c87="" class="countdown__timer" id="secondes"></span><span _ngcontent-c87="">SEC</span></li>
+              </ul>
+          </div>
+      </div>
+      <!--fin image parcours et countdown-->
+
+
+
+
       </div>
     </div>
   </div>
+
+
 
   <ul _ngcontent-c29="" class="ng-star-inserted">
   <!---->
@@ -54,7 +81,7 @@
       <!---->
       <h6 class="details" _ngcontent-c91="" class="ng-star-inserted">Début de la rentrée</h6>
       <!---->
-      <h5 _ngcontent-c91="" class="ng-star-inserted"> 1er décembre 2018 </h5>
+      <h5 _ngcontent-c91="" class="ng-star-inserted"> 06 Janvier 2019 </h5>
       <!---->
       <!---->
     </ir-classroom-opens-column>
@@ -72,8 +99,12 @@
     </ir-modal>
     <h6 class="details" _ngcontent-c29="" class="ng-star-inserted">Prérequis</h6>
     <!---->
-    <h5 _ngcontent-c29="" class="ng-star-inserted">Un ordinateur ayant un accès Internet</h5>
-    <p _ngcontent-c29="" class="x-small ng-star-inserted"><a href="https://drive.google.com/open?id=1ihKHmukvYioQ6VfS_eaqSuIq4gOgnxcA" target="_blank" _ngcontent-c29="">Voir les prérequis en détail</a></p>
+     <p _ngcontent-c29="" class="x-small ng-star-inserted"><p>ordinateur avec au moins 4 Go de RAM
+      Connexion Internet</p><p>
+      Compréhension de base du réseau (adresses IP, ping)
+      VT-x activé dans le BIOS de votre ordinateur</p>
+</p>
+   
     <!---->
     <!---->
   </li>
@@ -102,10 +133,54 @@
 
 
 
+
+<!-- collaboration section-->
+
+
+<section _ngcontent-c18="" class="ng-star-inserted">
+    <!---->
+    <!---->
+    <!---->
+    <!---->
+    <!---->
+    <ir-nd-partners _ngcontent-c18="" _nghost-c30="" class="ng-star-inserted">
+        <div _ngcontent-c30="" class="contain nd-partners">
+            <h6 _ngcontent-c30="" class="mb-0 text-center">
+                <!---->En collaboration avec</h6>
+            <!---->
+            <!---->
+            <ul _ngcontent-c30="">
+                <!---->
+                <!---->
+                <!---->
+             
+                <li _ngcontent-c30="" class="ng-star-inserted">
+                    <!----><a target="_blank" href="https://security.nziumstore.com/"><img style="margin: 2rem;" width="200" src="https://security.nziumstore.com/wp-content/uploads/2018/10/final_SECURITY_LOGO.png"></a>
+                    <!---->
+                </li>
+                <!---->
+                <!---->
+            </ul>
+        </div>
+    </ir-nd-partners>
+    <!---->
+</section>
+
+
+<!--end collaboration section-->
+
+
+
+
+
+
+
   <div class="container alt section-space">
     <div class="row">
       <div class="col-xs-12 text-center">
-        <h3 class="h3 u-bold text-center u-margin-b-sm">Suivez le parcours certifiant Designer Photoshop, et démarrez une nouvelle carrière.</h3>
+        <h3 class="h3 u-bold text-cent  er u-margin-b-sm">Apprenez avec un formateur en direct, dans notre salle virtuelle.<br>
+          Tout a été fait pour vous permettre d'apprendre sereinement<br>
+            Suivez notre parcours certifiant et démarrez une nouvelle carrière</h3>
         <div class="c-browser">
           <div class="c-browser__chrome">
             <div class="c-browser__buttons">
@@ -115,7 +190,8 @@
             </div>
           </div>
           <div class="c-browser__image">
-            <img src="https://cms-assets.tutsplus.com/uploads/users/107/posts/29159/image/41-flat-designer-character.jpg" />
+            <img src="/img/page-parcours/shutterstock_cyber_spy_hacker.jpg">
+
           </div>
         </div>
 
@@ -124,15 +200,10 @@
           <div class="col-xs-12 col-sm-6">
             <div style="text-align: left !important;" class="c-how__sectionContent">
               <h4 class="h4 u-bold">Pourquoi suivre ce parcours ?</h4>
-              <p class="u-margin-t-md subHeading">Pour ceux qui viennent d'entrer sur le marché du travail,
-                Photoshop peut être une grande compétence pour vous aider à trouver un emploi.
-                De nombreux travaux requièrent des compétences en Photoshop,
-                et cela est particulièrement vrai pour les rôles de conception
-                tels que concepteur graphique, concepteur Web ou concepteur d'interface utilisateur.
-                Les rôles de marketing préfèrent souvent aussi quelqu'un qui peut
-                travailler efficacement avec Photoshop.
-                L’acquisition des compétences de Photoshop peut vous aider
-                à vous différencier des autres candidats sur un marché de travail concurrentiel.</p>
+                  <p class="u-margin-t-md subHeading">Le but de cet atelier est de vous aider à apprendre les bases du piratage et de vous initier à devenir un pirate éthique. Cet atelier s'adresse aux étudiants qui ont peu ou pas d'expérience du piratage informatique ou des tests d'intrusion.
+                  Dans cet atélier, vous apprendrez non seulement la théorie du piratage, mais également l’aspect pratique du piratage éthique. À qui ce cours s'adresse-t-il?
+                 A toute personne intéressée par Kali Linux Hacking
+.</p>
             </div>
           </div>
           <div _ngcontent-c33="" class="col-xs-12 col-sm-6 stat ng-star-inserted">
@@ -142,7 +213,7 @@
                 <h4 _ngcontent-c33="" class="light ng-star-inserted">
                   <h4 class="light">
                     <font style="vertical-align: inherit;">
-                      <font style="vertical-align: inherit;">L'apprentissage de Photoshop est essentiel si vous travaillez dans un rôle de conception graphique, de conception Web ou d'expérience utilisateur. </font>
+                      <font style="vertical-align: inherit;">Le but de cet atelier est de vous aider à apprendre les bases du piratage et de vous initier à devenir un pirate éthique</font>
                     </font>
                   </h4>
                 </h4>
@@ -274,29 +345,12 @@
       <!---->
       <h2 style="font-size: 4rem;font-weight: 300;" _ngcontent-c47="" class="white ng-star-inserted">Développez cette compétence pour aujourd'hui et demain</h2>
       <!---->
-      <p _ngcontent-c47="" class="white ng-star-inserted"><span class="hidden-md-down">Ce parcours Designer Photoshop est conçu
-        pour assurer votre succès à long terme sur le terrain. Les compétences acquises vous prépareront à des
-        emplois sur le marché du travail, et vous serez prêt à apporter une valeur immédiate
+      <p _ngcontent-c47="" class="white ng-star-inserted"><span class="hidden-md-down">Vous serez en mesure de suivre l’étape que vous verrez dans l’exposé et de les reproduire dans votre propre laboratoire en environnement. De plus, le logiciel dont vous aurez besoin pour ce cours est gratuit. Si vous souhaitez obtenir de bonnes bases en piratage éthique avec Kali Linux.Vous serez prêt à apporter une valeur immédiate
         à toute organisation. Nous vous soutiendrons tout au long de votre parcours d'apprentissage.
         De l'acquisition des compétences techniques et professionnelles précieuses,
         jusqu'à l'obtention de l'emploi de vos rêves.</span></p>
     </div>
-   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div _ngcontent-c47="" class="feature-card mb-4 ng-star-inserted">
+    <div _ngcontent-c47="" class="feature-card mb-4 ng-star-inserted">
       <!---->
       <div _ngcontent-c47="" class="card ng-star-inserted">
         <div _ngcontent-c47="" class="line bg-turquoise"></div>
@@ -344,35 +398,33 @@
     <!---->
     <!---->
     <!---->
-    <!----><a _ngcontent-c55="" class="button--secondary lg syllabus-download-button ng-star-inserted" target="_blank" href="https://s3.amazonaws.com/video.udacity-data.com/topher/2018/June/5b189d8e_fend-syllabus-9.0.0/fend-syllabus-9.0.0.pdf">
+    <!----><a _ngcontent-c55="" class="button--secondary lg syllabus-download-button ng-star-inserted" target="_blank" href="https://docs.google.com/document/d/1bBBD1gUfjFIpRDdvPzAbcTmL4Y8Lk14IXNwAvC2AFW0/edit?usp=sharing">
     Télécharger le programme
     </a>
     <!---->
     <!---->
     <div _ngcontent-c55="" class="nd-syllabus-term__card">
       <section _ngcontent-c55="" class="nd-syllabus-term__header collapse in">
-        <div _ngcontent-c55="" class="nd-syllabus-term__header__image" irdeferbgimage="" style="background-image: url(&quot;https://udemy-images.udemy.com/course/750x422/599170_aa50_3.jpg&quot;);">
+        <div _ngcontent-c55="" class="nd-syllabus-term__header__image" irdeferbgimage="" style="background-image: url(&quot;https://media.nouvelobs.com/ext/uri/sreferentiel.nouvelobs.com/file/rue89/7651ad7040806326a9a4920edfb735a8.jpg&quot;);">
           <!---->
         </div>
         <div _ngcontent-c55="" class="nd-syllabus-term__header__content">
           <!---->
           <h6 _ngcontent-c55="" class="ng-star-inserted">PROGRAMME</h6>
-          <h2 _ngcontent-c55="" class="h3">Designer Photoshop</h2>
+          <h2 _ngcontent-c55="" class="h3">Kali Linux Hacking – Initiation et prise en main</h2>
           <!---->
-<<<<<<< HEAD
-          <p _ngcontent-c55="" class="small hidden-md-down ng-star-inserted">Le programme Designer Photoshop Junior
-=======
-          <p _ngcontent-c55="" class="small hidden-md-down ng-star-inserted">Le programme Designer Photoshop
->>>>>>> 55fd322e3ded0ff4105d671617696e85c6337bf5
-            est composé de 8 atéliers pratique. Avec chaque atélier,
-            vous allez créer quelque chose qui démontre votre maîtrise des compétences recherchées.
-            La complexité des projets varie. En fin de compte,
-            vous aurez un portefeuille de projets et un CV digne d'être aprréciés par des employeurs potentiels.</p>
-          <!---->
-          <p _ngcontent-c55="" class="small hidden-lg-up ng-star-inserted">Le programme Designer Photoshop
-            est composé de huit projets. Avec chaque projet,
-            vous allez créer quelque chose qui démontre votre maîtrise des compétences recherchées.
-            La complexité des projets varie.</p>
+          <p _ngcontent-c55="" class="small hidden-md-down ng-star-inserted">
+  <!---->
+          <p _ngcontent-c55="" class="small hidden-lg-up ng-star-inserted"></p>
+          <ul>
+            <li> Comprendre les principes de base du piratage éthique </li>
+            <li> Comment utiliser NMAP</li>
+            <li> Comprendre l'empreinte</li>
+            <li> Piratage avec WireShark</li>
+            <li> Construisez votre propre laboratoire de piratage</li>
+
+
+          </ul>
           <!---->
           <!---->
           <!---->
@@ -392,7 +444,11 @@
               <!---->
               <h6 _ngcontent-c95="" class="mb-half ng-star-inserted">Outils requis</h6>
               <p _ngcontent-c95="" class="small mb-2 ng-star-inserted">
-                <!----><span _ngcontent-c95="" class="degree-syllabus-preview__content--term-prereq ng-star-inserted">Vous devez disposer d'un ordinateur portable et d'une bonne connexion Internet pour suivre cette formation</span>
+                    <!----><span _ngcontent-c95="" class="degree-syllabus-preview__content--term-prereq ng-star-inserted">Un ordinateur avec au moins 4 Go de RAM
+                    Connexion Internet
+                    Compréhension de base du réseau (adresses IP, PING)
+                    VT-x activé dans le BIOS de votre ordinateur
+</span>
                 <!---->
                 <!---->
                 <!----><a _ngcontent-c95="" class="pointer ng-star-inserted">Voir les outils requis.</a>
@@ -404,36 +460,20 @@
                 <!---->
                 <ul _ngcontent-c95="" class="ng-star-inserted">
                   <!---->
+               
                   <li _ngcontent-c95="" class="ng-star-inserted">
                     <div _ngcontent-c95="" class="part">
                       <header _ngcontent-c95="" class="part__header mb-half">
                         <!---->
-                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted">Outils de base de photoshop</h4>
+                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted"> Comprendre les principes de base du piratage éthique</h4>
                         <!---->
                       </header>
-                      <p _ngcontent-c95="" class="small mb-half">Nous verrons ici à quoi sert photoshop, les calques, la présentation des différents outils.</p>
+                      <p _ngcontent-c95="" class="small mb-half">Vous comprendre le monde de la cyber sécurité ainsi que la présentation du piratage éthique et son importance dans la sécurité informatique.</p>
                       <!---->
                       <!---->
                       <!---->
-                      <!----><span _ngcontent-c95="" class="part__project text-only ng-star-inserted"><img _ngcontent-c95="" class="icon-middle" src="/img/page-parcours/icon-project.svg"><span
-                          _ngcontent-c95="">Engagez-vous à réussir votre formation</span></span>
-                      <!---->
-                      <!---->
-                    </div>
-                  </li>
-                  <li _ngcontent-c95="" class="ng-star-inserted">
-                    <div _ngcontent-c95="" class="part">
-                      <header _ngcontent-c95="" class="part__header mb-half">
-                        <!---->
-                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted">ATELIER 1 - NINA RICCI</h4>
-                        <!---->
-                      </header>
-                      <p _ngcontent-c95="" class="small mb-half">Nous allons presenter l'atélier, faire le detourage du flacon du parfum, créer un reflet et un dégradé de fond.</p>
-                      <!---->
-                      <!---->
-                      <!---->
-                      <!----><span _ngcontent-c95="" class="part__project text-only ng-star-inserted"><img _ngcontent-c95="" class="icon-middle" src="/img/page-parcours/icon-project.svg"><span
-                          _ngcontent-c95="">Projet</span></span>
+                      <!----><!-- <span _ngcontent-c95="" class="part__project text-only ng-star-inserted"><img _ngcontent-c95="" class="icon-middle" src="/img/page-parcours/icon-project.svg"><span
+                          _ngcontent-c95="">Créez un article de blog / La galerie de l'amour</span></span> -->
                       <!---->
                       <!---->
                     </div>
@@ -442,14 +482,14 @@
                     <div _ngcontent-c95="" class="part">
                       <header _ngcontent-c95="" class="part__header mb-half">
                         <!---->
-                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted">ATELIER 2 - Modification du flacon de parfum Nina Ricci</h4>
+                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted">Comment utiliser NMAP</h4>
                         <!---->
                       </header>
-                      <p _ngcontent-c95="" class="small mb-half">
-                        Nous verrons cette fois-ci, faire le masque de fusion du parfum et créer des pois sur le flacon.
+                      <p _ngcontent-c95="" class="small mb-half">Nmap est le scanner de réseau le plus populaire d'Internet avec des fonctionnalités avancées que la plupart des gens ne connaissent même pas! 
+
+                      Découvrez les secrets du piratage éthique et de la découverte de réseau en utilisant Nmap dans cette formation.
                       </p>
-                      <span _ngcontent-c95="" class="part__project text-only ng-star-inserted"><img _ngcontent-c95="" class="icon-middle" src="/img/page-parcours/icon-project.svg"><span
-                          _ngcontent-c95="">Projet</span></span>
+                     
                       <!---->
                     </div>
                   </li>
@@ -457,16 +497,12 @@
                     <div _ngcontent-c95="" class="part">
                       <header _ngcontent-c95="" class="part__header mb-half">
                         <!---->
-                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted"> ATELIER 3 - PARIS D'ANTAN </h4>
+                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted">Comprendre l'empreinte</h4>
                         <!---->
                       </header>
-                      <p _ngcontent-c95="" class="small mb-half">Nous verront comment mettre en bichromie la photo ce l'atélier,faire de l'incrustation de l'effet matière papier et le recadrage et l'écriture de texte. </p>
-                      <!---->
-                      <!---->
-                      <!---->
-                      <!----><span _ngcontent-c95="" class="part__project text-only ng-star-inserted"><img _ngcontent-c95="" class="icon-middle" src="/img/page-parcours/icon-project.svg"><span
-                          _ngcontent-c95="">Projet</span></span>
-                      <!---->
+                      <p _ngcontent-c95="" class="small mb-half">Le Footprinting est la technique consistant à récolter des informations sur des systèmes informatiques et toutes les entités auxquelles ils sont rattachés. Cela est effectué par le biais de plusieurs techniques, Dans le jargon de la sécurité informatique, le Footprinting se réfère généralement aux étapes précédent une attaque.
+                      </p>
+                     
                       <!---->
                     </div>
                   </li>
@@ -474,203 +510,32 @@
                     <div _ngcontent-c95="" class="part">
                       <header _ngcontent-c95="" class="part__header mb-half">
                         <!---->
-                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted"> ATELIER 4 - Tour Eiffel - AVANT/APRES</h4>
+                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted">Piratage avec WireShark</h4>
                         <!---->
                       </header>
-                      <p _ngcontent-c95="" class="small mb-half">
-                        Les thèmes abordés ici seront:Le réglage du contraste et importation de la photo d’époque, le calage des 2 Tour Eiffel, le ecadrage de la tour Eiffel – Photo d’époque et l'ajout du contour et ombre portée sur la photo d’époque.</p>
-                      <!---->
-                      <!---->
-                      <!---->
-                      <!----><span _ngcontent-c95="" class="part__project text-only ng-star-inserted"><img _ngcontent-c95="" class="icon-middle" src="/img/page-parcours/icon-project.svg"><span
-<<<<<<< HEAD
-                          _ngcontent-c95="">Créez votre site personnel</span></span>
-=======
-                          _ngcontent-c95="">Projet</span></span>
->>>>>>> 55fd322e3ded0ff4105d671617696e85c6337bf5
-                      <!---->
-                      <!---->
-                    </div>
-                  </li>
-
-                     <li _ngcontent-c95="" class="ng-star-inserted">
-                    <div _ngcontent-c95="" class="part">
-                      <header _ngcontent-c95="" class="part__header mb-half">
-                        <!---->
-                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted">OUTILS - De nouvelles fonctionnalités</h4>
-<<<<<<< HEAD
-                        <!---->
-                      </header>
-                      <p _ngcontent-c95="" class="small mb-half">
-                       Nous verrons entre autres comment organiser son espace de travail, comprendre la notion de pixel, les différentes couleurs, les couches de couleurs ainsi que les styles de calque – Ombres portées et lueurs.
-
+                      <p _ngcontent-c95="" class="small mb-half">Wireshark est le renifleur réseau le plus célèbre au monde, il permet d'écouter les communications réseau afin de récupérer et d’analyser le contenu transmis. Ce contenu peut-être constitué d’informations très sensibles lorsque aucun chiffrement n’est utilisé. Parmi ces informations sensibles, on peut trouver le contenu d’une conversation par mail, les cookies ou encore les fameux mots de passe.
                       </p>
-                      <!---->
-                      <!---->
-                      <!---->
-                      <!----><span _ngcontent-c95="" class="part__project text-only ng-star-inserted"><img _ngcontent-c95="" class="icon-middle" src="/img/page-parcours/icon-project.svg"><span
-                          _ngcontent-c95="">Créez votre site personnel</span></span>
-                      <!---->
+                     
                       <!---->
                     </div>
                   </li>
-
-              </li>
-
-                     <li _ngcontent-c95="" class="ng-star-inserted">
-                    <div _ngcontent-c95="" class="part">
-                      <header _ngcontent-c95="" class="part__header mb-half">
-                        <!---->
-                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted">ATELIER 5 - Banana Style</h4>
-                        <!---->
-                      </header>
-                      <p _ngcontent-c95="" class="small mb-half">
-                       Vous saurez comment créer un nouveau document et le détourage de la banane, le découpage de la forme « crayon » sur la banane et l'ajout du texte » Banana Style ».
-
-                      </p>
-                      <!---->
-                      <!---->
-                      <!---->
-                      <!----><span _ngcontent-c95="" class="part__project text-only ng-star-inserted"><img _ngcontent-c95="" class="icon-middle" src="/img/page-parcours/icon-project.svg"><span
-                          _ngcontent-c95="">Créez votre site personnel</span></span>
-                      <!---->
-                      <!---->
-                    </div>
-                  </li>
-
                   <li _ngcontent-c95="" class="ng-star-inserted">
                     <div _ngcontent-c95="" class="part">
                       <header _ngcontent-c95="" class="part__header mb-half">
                         <!---->
-                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted"> ATELIER 6 - Ratatouille</h4>
+                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted">Construisez votre propre laboratoire de piratage</h4>
                         <!---->
                       </header>
-                      <p _ngcontent-c95="" class="small mb-half">
-                       Vous saurez comment faire le détourage de la souris, sa mise à l'échelle, le détourage de la toque de chef, l'ajustement de la toque  et la création de l’ombre portée de la souris.
-=======
-                        <!---->
-                      </header>
-                      <p _ngcontent-c95="" class="small mb-half">
-                       Nous verrons entre autres comment organiser son espace de travail, comprendre la notion de pixel, les différentes couleurs, les couches de couleurs ainsi que les styles de calque – Ombres portées et lueurs.
->>>>>>> 55fd322e3ded0ff4105d671617696e85c6337bf5
-
-                      </p>
+                      <p _ngcontent-c95="" class="small mb-half">Dans cette section nous allons aborder la notion de laboratoire. Si vous voulez vous lancer réellement dans le Hacking éthique, il vous faudra non seulement une machine d’attaque, mais également une ou plusieurs machines cibles.
+                      C’est pour cela que vous allez devoir vous construire votre propre laboratoire qui contiendra toutes vos machines virtuelles afin d’avoir tout à votre disposition.</p>
                       <!---->
                       <!---->
                       <!---->
-                      <!----><span _ngcontent-c95="" class="part__project text-only ng-star-inserted"><img _ngcontent-c95="" class="icon-middle" src="/img/page-parcours/icon-project.svg"><span
-                          _ngcontent-c95="">Projet</span></span>
                       <!---->
                       <!---->
                     </div>
                   </li>
-
-<<<<<<< HEAD
-=======
-              </li>
-
-                     <li _ngcontent-c95="" class="ng-star-inserted">
-                    <div _ngcontent-c95="" class="part">
-                      <header _ngcontent-c95="" class="part__header mb-half">
-                        <!---->
-                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted">ATELIER 5 - Banana Style</h4>
-                        <!---->
-                      </header>
-                      <p _ngcontent-c95="" class="small mb-half">
-                       Vous saurez comment créer un nouveau document et le détourage de la banane, le découpage de la forme « crayon » sur la banane et l'ajout du texte » Banana Style ».
-
-                      </p>
-                      <!---->
-                      <!---->
-                      <!---->
-                      <!----><span _ngcontent-c95="" class="part__project text-only ng-star-inserted"><img _ngcontent-c95="" class="icon-middle" src="/img/page-parcours/icon-project.svg"><span
-                          _ngcontent-c95="">Projet</span></span>
-                      <!---->
-                      <!---->
-                    </div>
-                  </li>
-
-                  <li _ngcontent-c95="" class="ng-star-inserted">
-                    <div _ngcontent-c95="" class="part">
-                      <header _ngcontent-c95="" class="part__header mb-half">
-                        <!---->
-                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted"> ATELIER 6 - Ratatouille</h4>
-                        <!---->
-                      </header>
-                      <p _ngcontent-c95="" class="small mb-half">
-                       Vous saurez comment faire le détourage de la souris, sa mise à l'échelle, le détourage de la toque de chef, l'ajustement de la toque  et la création de l’ombre portée de la souris.
-
-                      </p>
-                      <!---->
-                      <!---->
-                      <!---->
-                      <!----><span _ngcontent-c95="" class="part__project text-only ng-star-inserted"><img _ngcontent-c95="" class="icon-middle" src="/img/page-parcours/icon-project.svg"><span
-                          _ngcontent-c95="">Projet</span></span>
-                      <!---->
-                      <!---->
-                    </div>
-                  </li>
-
->>>>>>> 55fd322e3ded0ff4105d671617696e85c6337bf5
-
-                  <li _ngcontent-c95="" class="ng-star-inserted">
-                    <div _ngcontent-c95="" class="part">
-                      <header _ngcontent-c95="" class="part__header mb-half">
-                        <!---->
-                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted">ATELIER 7 - Visuel Coca-Cola</h4>
-                        <!---->
-                      </header>
-                      <p _ngcontent-c95="" class="small mb-half">
-                      Nous allons faire le détourage de la bouteille à la plume, la transformation du tracé en selection, la mise à l'échelle des bouteilles, la création de dégradé de fond et la mise en place du logo Coca-Cola.
-
-                      </p>
-                      <!---->
-                      <!---->
-                      <!---->
-                      <!----><span _ngcontent-c95="" class="part__project text-only ng-star-inserted"><img _ngcontent-c95="" class="icon-middle" src="/img/page-parcours/icon-project.svg"><span
-<<<<<<< HEAD
-                          _ngcontent-c95="">Créez votre site personnel</span></span>
-=======
-                          _ngcontent-c95="">Projet</span></span>
->>>>>>> 55fd322e3ded0ff4105d671617696e85c6337bf5
-                      <!---->
-                      <!---->
-                    </div>
-                  </li>
-
-                      <li _ngcontent-c95="" class="ng-star-inserted">
-                    <div _ngcontent-c95="" class="part">
-                      <header _ngcontent-c95="" class="part__header mb-half">
-                        <!---->
-                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted">ATELIER 8 - Villes suspendues</h4>
-                        <!---->
-                      </header>
-                      <p _ngcontent-c95="" class="small mb-half">
-                      Vous verrez comment créer un nouveau document et l'ouverture de la mer et ciel, la création du fond ciel et mer, le détourage des montagnes, des villes de Manhattan, de Shangai, de la Tour Eiffel et de la statue de la liberté et la création du filtre dégradé.
-
-                      </p>
-                      <!---->
-                      <!---->
-                      <!---->
-                      <!----><span _ngcontent-c95="" class="part__project text-only ng-star-inserted"><img _ngcontent-c95="" class="icon-middle" src="/img/page-parcours/icon-project.svg"><span
-<<<<<<< HEAD
-                          _ngcontent-c95="">Créez votre site personnel</span></span>
-=======
-                          _ngcontent-c95="">Projet</span></span>
->>>>>>> 55fd322e3ded0ff4105d671617696e85c6337bf5
-                      <!---->
-                      <!---->
-                    </div>
-                  </li>
-
-
-
-
-
-
-
-
-
+                  
                   <li _ngcontent-c95="" class="ng-star-inserted">
                     <div _ngcontent-c95="" class="part">
                       <header _ngcontent-c95="" class="part__header mb-half">
@@ -683,8 +548,7 @@
                       <!---->
                       <!---->
                       <!---->
-                      <!----><span _ngcontent-c95="" class="part__project text-only ng-star-inserted"><img _ngcontent-c95="" class="icon-middle" src="/img/page-parcours/icon-project.svg"><span
-                          _ngcontent-c95="">Mise en ligne de votre site personnel / Soutenance</span></span>
+                      <!---->
                       <!---->
                       <!---->
                     </div>
@@ -707,8 +571,8 @@
                 <!---->
                 <p _ngcontent-c95="" class="small">Voici quelques cours gratuits qui pourraient vous aider<ul>
                     <li><a href="/course/intro-to-programming-nanodegree--nd000">Intro to Programming</a></li>
-                    <li><a href="/course/intro-to-html-and-css--ud001">Intro to HTML and CSS</a></li>
-                    <li><a href="/course/intro-to-javascript--ud803">Intro to JavaScript</a></li>
+                    <li><a href="/course/intro-to-html-and-css--ud001">Intro to hacking</a></li>
+                    <li><a href="/course/intro-to-javascript--ud803">Intro to cybersecurity</a></li>
                   </ul>
                 </p>
                 <!---->
@@ -785,14 +649,16 @@
         <!---->
         <!---->
         <!---->
+
+
         <ir-degree-pricing-card _ngcontent-c63="" _nghost-c101="" class="ng-star-inserted">
           <div _ngcontent-c101="" class="card card--pricing primary selected more-padding-top">
             <div _ngcontent-c101="" class="card__triangle"></div>
             <!---->
-            <h6 _ngcontent-c101="" class="card__flag ng-star-inserted">Abonnement</h6>
+            <h6 _ngcontent-c101="" class="card__flag ng-star-inserted">Offre #2</h6>
+           <!--  <h3 _ngcontent-c101="" style="margin-top: 3rem;color: orange;background: #EAEAEA;" class="card__flag ng-star-inserted">La plus vendue</h3> -->
             <div _ngcontent-c101="" class="card--pricing__header">
-              <h5 _ngcontent-c101="">Photoshop</h5>
-              <!---->
+              <h5 _ngcontent-c101="">Kali Linux Hacking – Initiation et prise en main</h5>
                  <div _ngcontent-c101="" class="card__price ng-star-inserted">
                 <!----><span _ngcontent-c101="" class="card__price--current"><del><h5>30.000 FCFA / mois</h5></del> 
                   <!----></span>
@@ -800,7 +666,7 @@
               </div>
               <br>
               <p _ngcontent-c101="">
-                <!----><span _ngcontent-c101="" class="ng-star-inserted">pendant 4 mois</span>
+                <!----><span _ngcontent-c101="" class="ng-star-inserted">Intermédiaire</span>
                 <!---->
                 <!---->
               </p>
@@ -809,10 +675,14 @@
             </div>
             <div _ngcontent-c101="" class="card--pricing__body">
               <!---->
-              <p _ngcontent-c101="" class="small ng-star-inserted">Durant votre abonnement, vous aurez accès aux supports de cours, ressources. Et vous bénéficierez d'un formateur personnel pour vous aider à apprendre</p>
+              <ul class="list-pricing">
+                <li>Accès à tout le contenu (vidéos, textes, documents et autres ressources)</li>
+                <li>Coaching en live chaque semaine selon votre planning</li>
+                <li>Suivi pour la réalisation des mini-projets</li>
                 <li>Suivi pour la réalisation d'un projet de soutenance</li>
                 <li>Obtention d'un certificat</li>
                 <li>Accompagnement pour bâtir un profil de carrière et obtenir un emploi</li>
+              </ul>
               <!---->
               <!---->
             </div>
@@ -839,6 +709,11 @@
             <!---->
           </div>
         </ir-degree-pricing-card>
+
+
+
+
+
         <!---->
         <!---->
         <!---->
@@ -866,13 +741,13 @@
                 <!---->
                 <h4 _ngcontent-c77="" class="h2 nd-bottom-cta-content__title ng-star-inserted">
                     <font style="vertical-align: inherit;">
-                        <font style="vertical-align: inherit;">Apprenez Photoshop de A à Z avec un formateur dédié en télé présentiel</font>
+                        <font style="vertical-align: inherit;">Devenez Hacker Ethique</font>
                     </font>
                 </h4>
                 <!---->
                 <p _ngcontent-c77="" class="nd-bottom-cta-content__subtitle ng-star-inserted">
                     <font style="vertical-align: inherit;">
-                        <font style="vertical-align: inherit;">L'apprentissage de Photoshop est essentiel si vous travaillez dans un rôle de conception graphique, de conception Web ou d'expérience utilisateur. </font>
+                        <font style="vertical-align: inherit;">Construisez-vous un excellent portfolio en réalisant des projets de la vie réelle.</font>
                     </font>
                 </p>
                 <div _ngcontent-c77="" class="nd-bottom-cta-content__btn-wrapper">
@@ -967,7 +842,7 @@
             <div class="form-group password-form-group">
               <div class="input-with-icon">
                 <select class="form-control" name="formation">
-                  <option value="Photoshop">Photoshop</option>
+                  <option value="Développeur Web Junior">Développeur Web Junior</option>
                 </select>
                 <i class="input-icon ion-person-stalker"></i>
               </div>
@@ -976,6 +851,7 @@
               <div class="input-with-icon">
                 <select class="form-control" name="montant">
                   <option value="30000">30.000 FCFA</option>
+                  <option value="60000">60.000 FCFA</option>
                 </select>
                 <i class="input-icon ion-person-stalker"></i>
               </div>

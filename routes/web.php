@@ -157,6 +157,10 @@ Route::get('/after-effects', function () {
     return view('formations.parcours-after-effects');
 })->name('photoshop');
 
+Route::get('/kali-linux', function () {
+    return view('formations.parcours-kali-linux');
+})->name('kali-linux');
+
 Route::get('/python', function () {
     return view('formations.python');
 })->name('python');
