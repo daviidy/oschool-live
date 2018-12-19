@@ -7,7 +7,7 @@
   <div class="container alt section-space">
     <div class="row c-how__heading align-row">
       <div class="col-xs-12 col-sm-6 c-how__headingLeft">
-        <h1 style="margin-bottom: 3rem;" class="h2 u-bold intro-kali">Apprenez à le hacking éthique avec Kali Linux, en suivant un cours particulier avec un formateur, depuis la maison</h1>
+        <h1 style="margin-bottom: 3rem;" class="h2 u-bold intro-kali">Apprenez  le hacking éthique avec Kali Linux, en suivant un cours particulier avec un formateur, depuis la maison</h1>
         <a class="home_button" href="#payment">
           Inscrivez-vous maintenant
         </a>
