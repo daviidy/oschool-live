@@ -621,7 +621,7 @@
 
 <!--section prix-->
 
-<section _ngcontent-c18="" id="payment" class="ng-star-inserted">
+<section  id="offres" _ngcontent-c18="" id="payment" class="ng-star-inserted">
   <!---->
   <ir-degree-pricing _ngcontent-c18="" id="nd-pricing" _nghost-c63="" class="ng-star-inserted">
     <ir-payment-info _ngcontent-c63="" _nghost-c100="" style="display: none;">
@@ -671,27 +671,83 @@
 
 
 
+        
         <ir-degree-pricing-card _ngcontent-c63="" _nghost-c101="" class="ng-star-inserted">
           <div _ngcontent-c101="" class="card card--pricing primary selected more-padding-top">
             <div _ngcontent-c101="" class="card__triangle"></div>
             <!---->
-            <h6 _ngcontent-c101="" class="card__flag ng-star-inserted">Offre #2</h6>
+            <h6 style="color:#EA5252;" _ngcontent-c101="" class="card__flag ng-star-inserted">Promotion</h6>
            <!--  <h3 _ngcontent-c101="" style="margin-top: 3rem;color: orange;background: #EAEAEA;" class="card__flag ng-star-inserted">La plus vendue</h3> -->
             <div _ngcontent-c101="" class="card--pricing__header">
-              <h5 _ngcontent-c101="">Développeur Android</h5>
-              <!---->
-                <div _ngcontent-c101="" class="card__price ng-star-inserted">
-                <!----><span _ngcontent-c101="" class="card__price--current"><del><h5>30.000 FCFA / mois</h5></del> 
+              <h5 _ngcontent-c101="">Devenez Développeur d'Applications Android</h5>
+              <img width="100" src="http://pluspng.com/img-png/gift-hd-png-hd-mystery-gift-box-png-405.png" alt="">
+              <p>Oschool a décidé de se montrer généreux en cette fin d'année. Voici l'offre exceptionnelle que nous vous offrons</p>
+                 <div _ngcontent-c101="" class="card__price ng-star-inserted">
+                <!----><span _ngcontent-c101="" class="card__price--current"><del><h5>30.000 FCFA / mois</h5></del>
                   <!----></span>
-                   <!----><span _ngcontent-c101="" class="card__price--current2"><h1>10.000 FCFA<br> le premier mois<h1>
-                  <!----></span>
+                   <!----><span _ngcontent-c101="" class="card__price--current2"><h1>10.000 FCFA<h1></span>
+                   <span style="color:#EA5252;" _ngcontent-c101="" class="card__price--current"><em><h5>le premier mois</h5></em>
+                     <!----></span>
               </div>
               <br>
-              <p _ngcontent-c101="">
-                <!----><span _ngcontent-c101="" class="ng-star-inserted">Intermédiaire</span>
-                <!---->
-                <!---->
-              </p>
+
+              <!---->
+              <!---->
+            </div>
+            <div _ngcontent-c101="" class="card--pricing__body">
+              <!---->
+              <p>Utilisez le code PROMO que nous vous avons fourni par mail, pour bénéficier de cette offre
+              aves les mêmes avantages que l'offre normale</p>
+              <!---->
+              <!---->
+            </div>
+            <!---->
+            <!---->
+            <!---->
+            <div _ngcontent-c101="" class="button-wrapper ng-star-inserted">
+              <!---->
+              <!---->
+              <!---->
+              @auth
+              <a _ngcontent-c101="" class="button--primary mb-1 center ng-star-inserted" data-toggle="modal" data-target="#promo">S'inscrire maintenant</a>
+              @endauth
+              @guest
+              <a _ngcontent-c101="" class="button--primary mb-1 center ng-star-inserted" href="/login">S'inscrire maintenant</a>
+              @endguest
+              <!---->
+              <!---->
+              <!---->
+              <!---->
+              <!---->
+              <!---->
+            </div>
+            <!---->
+          </div>
+
+
+
+        </ir-degree-pricing-card>
+
+
+
+        <ir-degree-pricing-card _ngcontent-c63="" _nghost-c101="" class="ng-star-inserted">
+          <div _ngcontent-c101="" class="card card--pricing primary selected more-padding-top">
+            <div _ngcontent-c101="" class="card__triangle"></div>
+            <!---->
+            <h6 _ngcontent-c101="" class="card__flag ng-star-inserted">Offre Normale</h6>
+           <!--  <h3 _ngcontent-c101="" style="margin-top: 3rem;color: orange;background: #EAEAEA;" class="card__flag ng-star-inserted">La plus vendue</h3> -->
+            <div _ngcontent-c101="" class="card--pricing__header">
+              <h5 _ngcontent-c101="">Développeur d'Applications Android</h5>
+                 <div _ngcontent-c101="" class="card__price ng-star-inserted">
+
+                   <!----><span _ngcontent-c101="" class="card__price--current2"><h1>30.000 FCFA/mois<h1></span>
+
+              </div>
+              <br>
+          <!--    <p _ngcontent-c101="">
+              <span _ngcontent-c101="" class="ng-star-inserted">Vous paierez 30.000 FCFA à partir du deuxième mois</span>
+
+            </p> -->
               <!---->
               <!---->
             </div>
@@ -730,8 +786,10 @@
             </div>
             <!---->
           </div>
-        </ir-degree-pricing-card>
 
+
+
+        </ir-degree-pricing-card>
 
 
 
@@ -750,7 +808,7 @@
 
 <!--section appel a l'action-->
 
-<section _ngcontent-c18="" class="ng-star-inserted">
+<section  _ngcontent-c18="" class="ng-star-inserted">
     <ir-nd-bottom-cta-section _ngcontent-c18="" _nghost-c77="">
         <div _ngcontent-c77="" class="nd-bottom-cta-container">
             <div _ngcontent-c77="" class="nd-bottom-cta-content">
@@ -881,6 +939,96 @@
 </div><!-- /.modal -->
 
 </div>
+
+
+
+
+
+
+
+
+
+<!--formulaire promo-->
+
+<div id="promo" class="modal full-page-modal" tabindex="-1" role="dialog" aria-hidden="false">
+  <!-- <button type="button" class="modal-action-btn action-left back-to-signin" style="opacity: 0;"><i class="ion-ios-arrow-back"></i></button> -->
+  <button type="button" class="modal-action-btn action-right close-modal" data-dismiss="modal"><i class="ion-android-close"></i></button>
+  <div class="modal-container">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content text-center">
+
+        <div class="modal-body signup-modal-body">
+          <div class="modal-header">
+            <img width="100" src="http://pluspng.com/img-png/gift-hd-png-hd-mystery-gift-box-png-405.png" alt="">
+            <div class="modal-title">Remplissez ce formulaire pour obtenir votre cadeau</div>
+            <div class="login-needed-alert"></div>
+          <form name="userSignUpForm" action="{{url('envoi')}}" method="post" id="signup-modal-form" class="margintop-lg">
+            {{ csrf_field() }}
+
+            <div class="form-group full_name-form-group">
+              <div class="input-with-icon">
+                <input value="{{Auth::check() ? Auth::user()->email : ''}}" type="email" class="form-control" id="" placeholder="Email" name="email" required>
+                <i class="input-icon ion-android-mail"></i>
+              </div>
+            </div>
+
+            <div class="form-group email-form-group">
+              <div class="input-with-icon">
+                <input type="text" class="form-control" id="" placeholder="Code Promo" name="promo" required>
+                <i class="input-icon ion-person-stalker"></i>
+              </div>
+            </div>
+
+            <div class="form-group email-form-group">
+              <div class="input-with-icon">
+                <input type="text" class="form-control" id="" placeholder="Nom" name="nom" required>
+                <i class="input-icon ion-person-stalker"></i>
+              </div>
+            </div>
+            <div class="form-group password-form-group">
+              <div class="input-with-icon">
+                <input type="text" class="form-control" id="" placeholder="Prénoms" name="prenoms" required>
+                <i class="input-icon ion-person-stalker"></i>
+              </div>
+            </div>
+            <div class="form-group password-form-group">
+              <div class="input-with-icon">
+                <input type="text" class="form-control" id="" placeholder="Téléphone" name="tel" required>
+                <i class="input-icon ion-person-stalker"></i>
+              </div>
+            </div>
+            <div class="form-group password-form-group">
+              <div class="input-with-icon">
+                <select class="form-control" name="formation">
+                  <option value="Développeur d'Applications Android">Développeur d'Applications Android</option>
+                </select>
+                <i class="input-icon ion-person-stalker"></i>
+              </div>
+            </div>
+            <div class="form-group password-form-group">
+              <div class="input-with-icon">
+                <select class="form-control" name="montant">
+                  <option value="10000">10.000 FCFA</option>
+                </select>
+                <i class="input-icon ion-person-stalker"></i>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <button type="submit" class="btn btn-success full_width spinning-loader"><span class="txt">Envoyer</span><i class="fa fa-circle-o-notch fa-spin"></i></button>
+            </div>
+          </form>
+
+        </div><!-- /.signup-modal-body -->
+
+
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal-container -->
+</div><!-- /.modal -->
+
+</div>
+
 
 
 @endsection
