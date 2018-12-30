@@ -47,9 +47,10 @@ class LoginController extends Controller
     {
         if ($this->request->has('previous')) {
             $this->redirectTo = $this->request->get('previous');
+            return $this->redirectTo. '?msg=success';
         }
 
-        return $this->redirectTo. '?msg=success' ?? '/home';
+        return '/home';
     }
 
 
