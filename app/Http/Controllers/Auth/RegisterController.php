@@ -10,6 +10,7 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Mail;
+use Illuminate\Http\Request;
 
 class RegisterController extends Controller
 {
@@ -27,20 +28,33 @@ class RegisterController extends Controller
     use RegistersUsers;
 
     /**
-     * Where to redirect users after registration.
-     *
-     * @var string
-     */
-    protected $redirectTo = '/home';
-
-    /**
      * Create a new controller instance.
      *
      * @return void
      */
-    public function __construct()
+     public function __construct(Request $request)
+     {
+         $this->middleware('guest')->except('logout');
+         $this->request = $request;
+     }
+
+
+    /**
+     * Where to redirect users after login.
+     *
+     * @var string
+     */
+     /*
+    protected $redirectTo = '/home';
+    */
+
+    public function redirectTo()
     {
-        $this->middleware('guest');
+        if ($this->request->has('previous')) {
+            $this->redirectTo = $this->request->get('previous');
+        }
+
+        return $this->redirectTo. '?msg=success' ?? '/home';
     }
 
     /**
@@ -70,7 +84,7 @@ class RegisterController extends Controller
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
-            'type' => User::DEFAULT_TYPE, 
+            'type' => User::DEFAULT_TYPE,
         ]);
 
         //envoi mail inscrit (mail bienvenue)

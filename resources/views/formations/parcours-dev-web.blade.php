@@ -2,7 +2,7 @@
 
 @section('title', 'Développeur Web Junior')
 
-@section('content')
+@section('content') 
 
   <div class="container alt section-space">
     <div class="row c-how__heading align-row">
@@ -11,7 +11,6 @@
         <a class="home_button" href="#payment">
           Inscrivez-vous maintenant
         </a>
-
       </div>
       <div class="col-xs-12 col-sm-6 c-how__headingRight">
         <img style="width:90%;" src="/img/page-parcours/ordi.png" />
@@ -727,7 +726,7 @@
               <a _ngcontent-c101="" class="button--primary mb-1 center ng-star-inserted" data-toggle="modal" data-target="#promo">S'inscrire maintenant</a>
               @endauth
               @guest
-              <a _ngcontent-c101="" class="button--primary mb-1 center ng-star-inserted" href="/login">S'inscrire maintenant</a>
+              <a _ngcontent-c101="" class="button--primary mb-1 center ng-star-inserted" data-toggle="modal" data-target="#inscription">S'inscrire maintenant</a>
               @endguest
               <!---->
               <!---->
@@ -888,6 +887,12 @@
 </section>
 
 <!--fin section appel a l'action-->
+
+
+
+@include('includes.registration')
+
+@include('includes.login')
 
 
 

@@ -41,26 +41,7 @@
   <section id="container">
 
 
-    <!--annonce a la udemy-->
-        <div class="ud-app-loader ud-component--smart-bar--app ud-app-loaded" data-module-id="smart-bar" ng-non-bindable="">
-          <div data-purpose="smart-bar-wrapper" class="mb0 " style="margin-bottom: 0px;">
-              <div data-purpose="smart-bar-container" class="" style="height: auto;">
-                  <div data-purpose="smart-bar" class="smart-bar--smart-bar--1rOkE smart-bar--smart-bar--teal--Qijai smart-bar--smart-bar-dark-theme--18ulO"><span style="font-size: 0px;"></span>
-                      <div class="smart-bar--smart-bar__content--3X42a basic-with-timer--centered-content--QtJd8">
-                          <div data-purpose="basic-with-timer" class="basic-with-timer--centered-content__text--2t0l3"><span data-purpose="smart-bar-copy" class=""><span class="smart-bar--smart-bar__title--1LFsk" data-purpose="smart-bar-title">
-                                      Bonne nouvelle !</span><span class="smart-bar--smart-bar__subtitle--I38FP" data-purpose="smart-bar-subtitle" role="presentation">| Nous organisons un meetup qui va réunir
-                                        les amoureux de l'éducation et du digital, ce samedi 15 décembre 2018
-                                      </span></span>
-                              <div data-purpose="smart-bar-timer" class="smart-bar-timer--timer-container--2mwOn"><span data-purpose="timer-x-days-left"> <a style="color: #fff;" target="_blank" href="https://events.oschool.ci">Cliquez ici pour participer à l'événement</a> </span></div>
-                          </div>
-                      </div>
-                      <div aria-label="Close" class="smart-bar--smart-bar__close--3mCup" data-purpose="smart-bar-hide" role="button" tabindex="0"><span class="udi-small udi udi-close"></span></div>
-                  </div>
-              </div>
-            </div>
-          </div>
 
-          <!--fin annonce a la udemy-->
 
 
 
@@ -71,17 +52,35 @@
             {{ session('status') }}
         </div>
     @endif
-    @if(!count(Auth::user()->formations))
-    <div style="position: fixed; width: 100%;top: 0; z-index: 2000; color: #000;" class="alert alert-info">
-        La meilleure facon d'apprécier l'expérience Oschool, est de rejoindre un
-        de nos parcours. <a style="color: red;" href="https://code.oschool.ci">Rejoignez-nous maintenant !</a>
-    </div>
-    @endif
+
     <!-- **********************************************************************************************************************************************************
         TOP BAR CONTENT & NOTIFICATIONS
         *********************************************************************************************************************************************************** -->
     <!--header start-->
-    <header style="{{ !count(Auth::user()->formations) ? 'top: 50px;' : '' }}" class="header black-bg">
+    <header style="{{ !count(Auth::user()->formations) ? 'top: 0px;' : '' }}" class="header black-bg">
+      @if(!count(Auth::user()->formations))
+      <!--annonce a la udemy-->
+          <div class="ud-app-loader ud-component--smart-bar--app ud-app-loaded" data-module-id="smart-bar" ng-non-bindable="">
+            <div data-purpose="smart-bar-wrapper" class="mb0 " style="margin-bottom: 0px;">
+                <div data-purpose="smart-bar-container" class="" style="height: auto;">
+                    <div style="width: 104%;margin-left: -15px;" data-purpose="smart-bar" class="smart-bar--smart-bar--1rOkE smart-bar--smart-bar--teal--Qijai smart-bar--smart-bar-dark-theme--18ulO"><span style="font-size: 0px;"></span>
+                        <div class="smart-bar--smart-bar__content--3X42a basic-with-timer--centered-content--QtJd8">
+                            <div data-purpose="basic-with-timer" class="basic-with-timer--centered-content__text--2t0l3"><span data-purpose="smart-bar-copy" class=""><span class="smart-bar--smart-bar__title--1LFsk" data-purpose="smart-bar-title">
+                              La meilleure facon d'apprécier l'expérience Oschool, est de </span><span class="smart-bar--smart-bar__subtitle--I38FP" data-purpose="smart-bar-subtitle" role="presentation">rejoindre un
+                              de nos parcours.
+                                        </span></span>
+                                <div data-purpose="smart-bar-timer" class="smart-bar-timer--timer-container--2mwOn"><span data-purpose="timer-x-days-left"> <a style="color: #fff;" target="_blank" href="https://code.oschool.ci/#schools">Rejoignez-nous maintenant !</a> </span></div>
+                            </div>
+                        </div>
+                        <div aria-label="Close" class="smart-bar--smart-bar__close--3mCup" data-purpose="smart-bar-hide" role="button" tabindex="0"><span class="udi-small udi udi-close"></span></div>
+                    </div>
+                </div>
+              </div>
+            </div>
+
+            <!--fin annonce a la udemy-->
+
+      @endif
       <div class="sidebar-toggle-box">
         <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
       </div>
