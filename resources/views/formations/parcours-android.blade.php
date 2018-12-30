@@ -671,7 +671,7 @@
 
 
 
-        
+
         <ir-degree-pricing-card _ngcontent-c63="" _nghost-c101="" class="ng-star-inserted">
           <div _ngcontent-c101="" class="card card--pricing primary selected more-padding-top">
             <div _ngcontent-c101="" class="card__triangle"></div>
@@ -966,16 +966,6 @@
 </div>
 
 
-
-
-<<<<<<< HEAD
-=======
-
-
-
-
-
->>>>>>> ac58d5113f674b0754ebae8779be4fa5e9b2a7d3
 <!--formulaire promo-->
 
 <div id="promo" class="modal full-page-modal" tabindex="-1" role="dialog" aria-hidden="false">
@@ -1058,8 +1048,4 @@
 </div>
 
 
-<<<<<<< HEAD
-=======
-
->>>>>>> ac58d5113f674b0754ebae8779be4fa5e9b2a7d3
 @endsection
