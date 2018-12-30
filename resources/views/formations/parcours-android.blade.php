@@ -671,7 +671,7 @@
 
 
 
-        
+
         <ir-degree-pricing-card _ngcontent-c63="" _nghost-c101="" class="ng-star-inserted">
           <div _ngcontent-c101="" class="card card--pricing primary selected more-padding-top">
             <div _ngcontent-c101="" class="card__triangle"></div>
@@ -679,11 +679,20 @@
             <h6 style="color:#EA5252;" _ngcontent-c101="" class="card__flag ng-star-inserted">Promotion</h6>
            <!--  <h3 _ngcontent-c101="" style="margin-top: 3rem;color: orange;background: #EAEAEA;" class="card__flag ng-star-inserted">La plus vendue</h3> -->
             <div _ngcontent-c101="" class="card--pricing__header">
+<<<<<<< HEAD
+              <h5 _ngcontent-c101="">Développeur Android</h5>
+              <!---->
+                <div _ngcontent-c101="" class="card__price ng-star-inserted">
+                <!----><span _ngcontent-c101="" class="card__price--current"><del><h5>30.000 FCFA / mois</h5></del>
+                  <!----></span>
+                   <!----><span _ngcontent-c101="" class="card__price--current2"><h1>10.000 FCFA<br> le premier mois<h1>
+=======
               <h5 _ngcontent-c101="">Devenez Développeur d'Applications Android</h5>
               <img width="100" src="http://pluspng.com/img-png/gift-hd-png-hd-mystery-gift-box-png-405.png" alt="">
               <p>Oschool a décidé de se montrer généreux en cette fin d'année. Voici l'offre exceptionnelle que nous vous offrons</p>
                  <div _ngcontent-c101="" class="card__price ng-star-inserted">
                 <!----><span _ngcontent-c101="" class="card__price--current"><del><h5>30.000 FCFA / mois</h5></del>
+>>>>>>> ac58d5113f674b0754ebae8779be4fa5e9b2a7d3
                   <!----></span>
                    <!----><span _ngcontent-c101="" class="card__price--current2"><h1>10.000 FCFA<h1></span>
                    <span style="color:#EA5252;" _ngcontent-c101="" class="card__price--current"><em><h5>le premier mois</h5></em>
@@ -867,6 +876,22 @@
 
 <!--fin section appel a l'action-->
 
+
+
+
+
+
+
+@include('includes.registration')
+
+@include('includes.login')
+
+
+
+
+
+
+
 <div id="modalSignUp" class="modal full-page-modal" tabindex="-1" role="dialog" aria-hidden="false">
   <!-- <button type="button" class="modal-action-btn action-left back-to-signin" style="opacity: 0;"><i class="ion-ios-arrow-back"></i></button> -->
   <button type="button" class="modal-action-btn action-right close-modal" data-dismiss="modal"><i class="ion-android-close"></i></button>
@@ -939,13 +964,6 @@
 </div><!-- /.modal -->
 
 </div>
-
-
-
-
-
-
-
 
 
 <!--formulaire promo-->
@@ -1028,7 +1046,6 @@
 </div><!-- /.modal -->
 
 </div>
-
 
 
 @endsection

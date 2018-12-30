@@ -93,6 +93,22 @@ var x = setInterval(function() {
 
   </script>
 
+    <script type="text/javascript">
+      if(window.location.href.indexOf("msg") > -1) {
+          $(document).ready(function() {
+          $('#popup').modal();
+           });
+      }
+    </script>
+
+    <script type="text/javascript">
+          $(document).ready(function() {
+            $('#achat').click(function(){
+              $('#popup').modal('hide');
+            });
+           });
+    </script>
+
 
 
 
@@ -104,6 +120,40 @@ var x = setInterval(function() {
             signin">
 
   <nav class="navbar navbar-fixed-top scrolled" role="navigation">
+
+
+
+
+
+    <!--annonce a la udemy-->
+		    <div class="ud-app-loader ud-component--smart-bar--app ud-app-loaded" data-module-id="smart-bar" ng-non-bindable="">
+		      <div data-purpose="smart-bar-wrapper" class="mb0 " style="margin-bottom: 0px;">
+		          <div data-purpose="smart-bar-container" class="" style="height: auto;">
+		              <div data-purpose="smart-bar" class="smart-bar--smart-bar--1rOkE smart-bar--smart-bar--teal--Qijai smart-bar--smart-bar-dark-theme--18ulO"><span style="font-size: 0px;"></span>
+		                  <div class="smart-bar--smart-bar__content--3X42a basic-with-timer--centered-content--QtJd8">
+												<div data-purpose="basic-with-timer" class="basic-with-timer--centered-content__text--2t0l3"><span data-purpose="smart-bar-copy" class=""><span class="smart-bar--smart-bar__title--1LFsk" data-purpose="smart-bar-title">
+													Jusqu'au 6 janvier 2019, </span><span class="smart-bar--smart-bar__subtitle--I38FP" data-purpose="smart-bar-subtitle" role="presentation">réclamez un bon d'achat
+													pour entrer dans le parcours de votre choix à seulement 10.000 FCFA !
+																		</span></span>
+														<div data-purpose="smart-bar-timer" class="smart-bar-timer--timer-container--2mwOn"><span data-purpose="timer-x-days-left"> <a style="color: #000;" target="_blank" href="https://adams21.typeform.com/to/rTw3gj">Cliquez ici pour demander un bon d'achat</a> </span></div>
+												</div>
+		                  </div>
+		                  <div aria-label="Close" class="smart-bar--smart-bar__close--3mCup" data-purpose="smart-bar-hide" role="button" tabindex="0"><span class="udi-small udi udi-close"></span></div>
+		              </div>
+		          </div>
+		        </div>
+		      </div>
+
+		      <!--fin annonce a la udemy-->
+
+
+
+
+          @include('includes.popup')
+
+
+
+
     <div class="container no-padding">
       <div class="navbar-holder">
         <div class="nav-main">
@@ -122,7 +172,7 @@ var x = setInterval(function() {
             <div class="navbar-subnav">
               <ul class="nav navbar-nav">
                 <li><a href="/#schools" class="navbar-subnav-links  site-navigation" data-site="Programming">Voir nos écoles</a></li>
-                <li><span style="height: 6px; width: 6px; background-color: red; border-radius: 4px; position: absolute; top: 0; right: 0;"></span><a target="_blank" href="https://calendly.com/oschool_e-learning/demo-oschool-code" class="navbar-subnav-links  site-navigation">Demandez une démo</a></li>
+                <li><span style="height: 6px; width: 6px; background-color: red; border-radius: 4px; position: absolute; top: 0; right: 0;"></span><a href="#offres" class="navbar-subnav-links  site-navigation">S'inscrire à ce parcours</a></li>
               </ul>
             </div>
           </div>
@@ -150,12 +200,12 @@ var x = setInterval(function() {
 
       </div>
       <div id="menu" class="site-toggle-dropdown">
-        <p>Voir</p>
+        <p>Menu</p>
         <a href="/#schools" class="site-navigation">
           <img class="emoji-png" src="https://d1eq8vvyuam4eq.cloudfront.net/assets/images/programming.png" alt="programming">Nos écoles
         </a>
-        <a target="_blank" href="https://calendly.com/oschool_e-learning/demo-oschool-code" class="site-navigation">
-          <img class="emoji-png" src="https://d1eq8vvyuam4eq.cloudfront.net/assets/images/design.png" alt="design">Une démo
+        <a href="#offres" class="site-navigation">
+          <img class="emoji-png" src="https://d1eq8vvyuam4eq.cloudfront.net/assets/images/design.png" alt="design">S'inscrire au parcours
         </a>
 
       </div>

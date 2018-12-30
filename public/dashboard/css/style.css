@@ -1,15 +1,6 @@
-/**
-* Template Name: Dashio
-* Template URL: https://templatemag.com/dashio-bootstrap-admin-template/
-* Author: TemplateMag.com
-* License: https://templatemag.com/license/
-*/
-/*
-Template Name: DASHIO - Bootstrap 3.1.1 Admin Theme
-Template Version: 1.0
-Author: Carlos Alvarez
-Website: http://Alvarez.is/
-*/
+
+
+/*pour la barre d'annonce à la udemy*/
 
 /* Import fonts */
 @import url(http://fonts.googleapis.com/css?family=Ruda:400,700,900);
@@ -22,7 +13,7 @@ Website: http://Alvarez.is/
 .udi-close:before{content:"\E730";}
 .udi-small{font-size:16px;}
 .udi{vertical-align:-8%;}
-.smart-bar--smart-bar--1rOkE{background-color:#007791;color:#fff;display:flex;font-size:13px;padding:10px;}
+.smart-bar--smart-bar--1rOkE{background-color:#007791;color:#fff;display:flex;font-size:13px;padding:2px;}
 .smart-bar--smart-bar-dark-theme--18ulO .smart-bar--smart-bar__content--3X42a:hover{color:#fff;}
 .smart-bar--smart-bar--teal--Qijai{background:#CA4352;}
 .smart-bar--smart-bar__close--3mCup{align-self:baseline;cursor:pointer;margin-left:auto;}
@@ -48,7 +39,7 @@ Website: http://Alvarez.is/
 /*! CSS Used fontfaces */
 @font-face{font-family:UdemyIcons;src:url(https://www.udemy.com/staticx/udemy/js/webpack/UdemyIcons.54ed2dbfbff75828cd0f4289f36c4749.woff2) format("woff2"),url(https://www.udemy.com/staticx/udemy/js/webpack/UdemyIcons.5e012ac778fbed7f3c115fa8bc7477f7.ttf) format("truetype"),url(https://www.udemy.com/staticx/udemy/js/webpack/UdemyIcons.631440a7a73ca2f078c9f17482af1b7c.woff) format("woff"),url(https://www.udemy.com/staticx/udemy/js/webpack/UdemyIcons.21d72319c00b733c6a518d21b08b4434.svg#UdemyIcons) format("svg");font-weight:400;font-style:normal;}
 
-
+/*fin de la barre d'annonce à la udemy*/
 
 
 
