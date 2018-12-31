@@ -621,7 +621,7 @@
 
 <!--section prix-->
 
-<section  id="offres" _ngcontent-c18="" id="payment" class="ng-star-inserted">
+<section id="offres" _ngcontent-c18="" id="payment" class="ng-star-inserted">
   <!---->
   <ir-degree-pricing _ngcontent-c18="" id="nd-pricing" _nghost-c63="" class="ng-star-inserted">
     <ir-payment-info _ngcontent-c63="" _nghost-c100="" style="display: none;">
@@ -670,8 +670,6 @@
         <!---->
 
 
-
-
         <ir-degree-pricing-card _ngcontent-c63="" _nghost-c101="" class="ng-star-inserted">
           <div _ngcontent-c101="" class="card card--pricing primary selected more-padding-top">
             <div _ngcontent-c101="" class="card__triangle"></div>
@@ -679,20 +677,11 @@
             <h6 style="color:#EA5252;" _ngcontent-c101="" class="card__flag ng-star-inserted">Promotion</h6>
            <!--  <h3 _ngcontent-c101="" style="margin-top: 3rem;color: orange;background: #EAEAEA;" class="card__flag ng-star-inserted">La plus vendue</h3> -->
             <div _ngcontent-c101="" class="card--pricing__header">
-<<<<<<< HEAD
-              <h5 _ngcontent-c101="">Développeur Android</h5>
-              <!---->
-                <div _ngcontent-c101="" class="card__price ng-star-inserted">
-                <!----><span _ngcontent-c101="" class="card__price--current"><del><h5>30.000 FCFA / mois</h5></del>
-                  <!----></span>
-                   <!----><span _ngcontent-c101="" class="card__price--current2"><h1>10.000 FCFA<br> le premier mois<h1>
-=======
-              <h5 _ngcontent-c101="">Devenez Développeur d'Applications Android</h5>
+              <h5 _ngcontent-c101="">Développeur d'Applications Android</h5>
               <img width="100" src="http://pluspng.com/img-png/gift-hd-png-hd-mystery-gift-box-png-405.png" alt="">
               <p>Oschool a décidé de se montrer généreux en cette fin d'année. Voici l'offre exceptionnelle que nous vous offrons</p>
                  <div _ngcontent-c101="" class="card__price ng-star-inserted">
                 <!----><span _ngcontent-c101="" class="card__price--current"><del><h5>30.000 FCFA / mois</h5></del>
->>>>>>> ac58d5113f674b0754ebae8779be4fa5e9b2a7d3
                   <!----></span>
                    <!----><span _ngcontent-c101="" class="card__price--current2"><h1>10.000 FCFA<h1></span>
                    <span style="color:#EA5252;" _ngcontent-c101="" class="card__price--current"><em><h5>le premier mois</h5></em>
@@ -705,7 +694,7 @@
             </div>
             <div _ngcontent-c101="" class="card--pricing__body">
               <!---->
-              <p>Utilisez le code PROMO que nous vous avons fourni par mail, pour bénéficier de cette offre
+              <p>Utilisez le code promo que nous vous avons fourni par mail, pour bénéficier de cette offre
               aves les mêmes avantages que l'offre normale</p>
               <!---->
               <!---->
@@ -721,7 +710,7 @@
               <a _ngcontent-c101="" class="button--primary mb-1 center ng-star-inserted" data-toggle="modal" data-target="#promo">S'inscrire maintenant</a>
               @endauth
               @guest
-              <a _ngcontent-c101="" class="button--primary mb-1 center ng-star-inserted" href="/login">S'inscrire maintenant</a>
+              <a _ngcontent-c101="" class="button--primary mb-1 center ng-star-inserted" data-toggle="modal" data-target="#inscription">S'inscrire maintenant</a>
               @endguest
               <!---->
               <!---->
@@ -799,6 +788,8 @@
 
 
         </ir-degree-pricing-card>
+
+
 
 
 

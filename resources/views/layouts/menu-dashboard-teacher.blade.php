@@ -77,10 +77,11 @@ drift.load('2uy6g3spxi59');
               <div data-purpose="smart-bar" class="smart-bar--smart-bar--1rOkE smart-bar--smart-bar--teal--Qijai smart-bar--smart-bar-dark-theme--18ulO"><span style="font-size: 0px;"></span>
                   <div class="smart-bar--smart-bar__content--3X42a basic-with-timer--centered-content--QtJd8">
                       <div data-purpose="basic-with-timer" class="basic-with-timer--centered-content__text--2t0l3"><span data-purpose="smart-bar-copy" class=""><span class="smart-bar--smart-bar__title--1LFsk" data-purpose="smart-bar-title">
-                                  Bonne nouvelle !</span><span class="smart-bar--smart-bar__subtitle--I38FP" data-purpose="smart-bar-subtitle" role="presentation">| Nous organisons un meetup qui va réunir
-                                    les amoureux de l'éducation et du digital, ce samedi 15 décembre 2018
+                                  Oschool vous souhaite une excellente année 2019 !</span><span class="smart-bar--smart-bar__subtitle--I38FP" data-purpose="smart-bar-subtitle" role="presentation">
+                                    Nous vous réservons de très agréables surprises pour cette nouvelle année.
                                   </span></span>
-                          <div data-purpose="smart-bar-timer" class="smart-bar-timer--timer-container--2mwOn"><span data-purpose="timer-x-days-left"> <a style="color: #fff;" target="_blank" href="https://events.oschool.ci">Cliquez ici pour participer à l'événement</a> </span></div>
+
+                          <div data-purpose="smart-bar-timer" class="smart-bar-timer--timer-container--2mwOn"><span data-purpose="timer-x-days-left"> <a style="color: #fff;" href="#">Apprenez toujours !</a> </span></div>
                       </div>
                   </div>
                   <div aria-label="Close" class="smart-bar--smart-bar__close--3mCup" data-purpose="smart-bar-hide" role="button" tabindex="0"><span class="udi-small udi udi-close"></span></div>
@@ -98,12 +99,14 @@ drift.load('2uy6g3spxi59');
             {{ session('status') }}
         </div>
     @endif
+    <!--
     @if(!count(Auth::user()->formations))
     <div style="position: fixed; width: 100%;top: 0; z-index: 2000; color: #000;" class="alert alert-info">
         La meilleure facon d'apprécier l'expérience Oschool, est de rejoindre un
         de nos parcours. <a style="color: red;" href="https://code.oschool.ci">Rejoignez-nous maintenant !</a>
     </div>
     @endif
+  -->
     <!-- **********************************************************************************************************************************************************
         TOP BAR CONTENT & NOTIFICATIONS
         *********************************************************************************************************************************************************** -->

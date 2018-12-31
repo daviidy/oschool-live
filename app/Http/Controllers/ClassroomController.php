@@ -16,7 +16,7 @@ class ClassroomController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index()
-    {
+    { 
       if (Auth::check() && Auth::user()->type2 !== "teacher") {
           $classrooms = Classroom::where('etudiant', Auth::user()->name)->orderby('date', 'desc')->paginate(30);
           return view('classrooms.index', ['classrooms' => $classrooms]);

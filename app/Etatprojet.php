@@ -15,4 +15,9 @@ class Etatprojet extends Model
   {
       return $this->belongsTo('App\User');
   }
+
+  public function projet()
+  {
+      return $this->belongsTo('App\Projet');
+  }
 }
