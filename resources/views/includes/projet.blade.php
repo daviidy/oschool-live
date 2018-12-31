@@ -28,10 +28,12 @@
             </h3>
             <div _ngcontent-c27="" class="right-sub">
               <!---->
+              @if(Auth::user()->type2 !== "teacher")
               <div _ngcontent-c27="" class="skills ng-star-inserted">
               <!--  <h4 _ngcontent-c27=""> <a target="_blank" href="{{$etatprojet->livrables}}">Voir les livrables</a> </h4><span _ngcontent-c27="" class="truncate-content">-->
                   <span _ngcontent-c27="" class="ng-star-inserted"> <a href="{{url('projets', $projet)}}"><span style="background-color: #FFFF00"><strong>Envoyez vos livrables</strong></span></a> </span>
               </div>
+              @endif
               <!---->
               <div _ngcontent-c27="" class="hidden-sm-down ng-star-inserted">
                 <h4 _ngcontent-c27=""> En collaboration avec</h4><span _ngcontent-c27="" class="truncate-content">
