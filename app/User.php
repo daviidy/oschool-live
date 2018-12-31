@@ -9,7 +9,7 @@ class User extends Authenticatable
 {
     use Notifiable;
 
-    const ADMIN_TYPE = 'admin';  
+    const ADMIN_TYPE = 'admin';
     const TEACHER_TYPE = 'teacher';
     const DEFAULT_TYPE = 'default';
 
@@ -83,4 +83,13 @@ class User extends Authenticatable
        Return 'https://hooks.slack.com/services/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';
 
    }
+
+   public function worked($projetId)
+  {
+      return $this->etatprojets()->where('projet_id', $projetId)->count() > 0;
+  }
+
+
+
+
 }

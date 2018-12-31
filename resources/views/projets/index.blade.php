@@ -150,15 +150,9 @@ hr{box-sizing:content-box;overflow:visible;border:0;height:0;margin-top:0;margin
 
                 @foreach(Auth::user()->formations as $formation)
                   @foreach($formation->projets as $projet)
-                    @if(count($projet->etatprojets))
-                      @foreach($projet->etatprojets as $etatprojet)
-                        @if($etatprojet->user_id !== Auth::user()->id)
-                          @include('includes.projet')
-                        @endif
-                      @endforeach
-                    @else
-                      @include('includes.projet')
-                    @endif
+                  @if (!Auth::user()->worked($projet->id))
+                    @include('includes.projet')
+                  @endif
                   @endforeach
                 @endforeach
       </div>
@@ -195,9 +189,9 @@ hr{box-sizing:content-box;overflow:visible;border:0;height:0;margin-top:0;margin
             </table>
           </section>
         </div>
-        <!-- /content-panel -->
+        <!-- /content-panel
       </div>
-      <!-- /col-lg-4 -->
+      <!-- /col-lg-4
     </div>
     <!-- /row -->
 
@@ -260,7 +254,7 @@ hr{box-sizing:content-box;overflow:visible;border:0;height:0;margin-top:0;margin
         </div>
 
     </div>
-                     <!-- LISTE DES ETUDIANTS FIN 
+                     <!-- LISTE DES ETUDIANTS FIN
     @endif
 
   -->

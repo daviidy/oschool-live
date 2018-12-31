@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use Auth;
 use Image;
 use App\Formation;
+use App\Etatprojet;
 
 class ProjetController extends Controller
 {

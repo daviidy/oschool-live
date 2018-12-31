@@ -60,6 +60,17 @@ drift.load('2uy6g3spxi59');
 <!-- End of Async Drift Code -->
 
 
+<script>
+(function(t, e, s, o) {
+    var n, c, l;
+    t.SMCX = t.SMCX || [], e.getElementById(o) || (n = e.getElementsByTagName(s), c = n[n.length - 1], l = e.createElement(s), l.type = "text/javascript", l.async = !0, l.id = o, l.src = ["https:" === location.protocol ? "https://" : "http://", "widget.surveymonkey.com/collect/website/js/tRaiETqnLgj758hTBazgd74sI3xlunBQAIjQsFqSKW8haM9hHIihQtBRyMcuCT1_2B.js"].join(""), c.parentNode.insertBefore(l, c))
+})(window, document, "script", "smcx-sdk");
+</script>
+
+
+
+
+
   <!-- =======================================================
     Template Name: Dashio
     Template URL: https://templatemag.com/dashio-bootstrap-admin-template/
