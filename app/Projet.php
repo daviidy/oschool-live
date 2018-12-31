@@ -15,4 +15,9 @@ class Projet extends Model
   {
       return $this->belongsToMany('App\Formation');
   }
+
+  public function etatprojets()
+  {
+      return $this->hasMany('App\Etatprojet');
+  }
 }

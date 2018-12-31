@@ -2,7 +2,7 @@
 
 @section('title', 'Développeur Web Junior')
 
-@section('content') 
+@section('content')
 
   <div class="container alt section-space">
     <div class="row c-how__heading align-row">
@@ -710,7 +710,7 @@
             </div>
             <div _ngcontent-c101="" class="card--pricing__body">
               <!---->
-              <p>Utilisez le code PROMO que nous vous avons fourni par mail, pour bénéficier de cette offre
+              <p>Utilisez le code promo que nous vous avons fourni par mail, pour bénéficier de cette offre
               aves les mêmes avantages que l'offre normale</p>
               <!---->
               <!---->
