@@ -120,6 +120,49 @@ var x = setInterval(function() {
 }, 1000);
 </script>
 
+
+
+<!--pour kali-->
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Feb 01, 2019 23:59:59").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get todays date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("jourskali").innerHTML = days;
+
+  document.getElementById("heureskali").innerHTML = hours;
+
+  document.getElementById("minuteskali").innerHTML = minutes;
+
+  document.getElementById("secondeskali").innerHTML = seconds;
+
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("info").innerHTML = "INSCRIPTIONS TERMINEES";
+  }
+}, 1000);
+</script>
+
+
+
+
   <script type="text/javascript">
 
   function toggle() {
@@ -136,16 +179,31 @@ var x = setInterval(function() {
     <script type="text/javascript">
       if(window.location.href.indexOf("msg") > -1) {
           $(document).ready(function() {
-          $('#popup').modal();
+          $('#popupOrange').modal();
            });
       }
     </script>
 
     <script type="text/javascript">
           $(document).ready(function() {
+
+            //fermer le popup de bienvenue si on clique sur le bouton bleu
+
             $('#achat').click(function(){
               $('#popup').modal('hide');
             });
+
+            $('#achat2').click(function(){
+              $('#popupOrange').modal('hide');
+            });
+
+            //ouvrir le popup orange money
+
+            $('#orange').click(function(){
+              $('#popupOrange').modal();
+            });
+
+
            });
     </script>
 
@@ -172,10 +230,15 @@ var x = setInterval(function() {
 		              <div data-purpose="smart-bar" class="smart-bar--smart-bar--1rOkE smart-bar--smart-bar--teal--Qijai smart-bar--smart-bar-dark-theme--18ulO"><span style="font-size: 0px;"></span>
 		                  <div class="smart-bar--smart-bar__content--3X42a basic-with-timer--centered-content--QtJd8">
 												<div data-purpose="basic-with-timer" class="basic-with-timer--centered-content__text--2t0l3"><span data-purpose="smart-bar-copy" class=""><span class="smart-bar--smart-bar__title--1LFsk" data-purpose="smart-bar-title">
-													Jusqu'au 6 janvier 2019, </span><span class="smart-bar--smart-bar__subtitle--I38FP" data-purpose="smart-bar-subtitle" role="presentation">réclamez un bon d'achat
-													pour entrer dans le parcours de votre choix à seulement 10.000 FCFA !
-																		</span></span>
-														<div data-purpose="smart-bar-timer" class="smart-bar-timer--timer-container--2mwOn"><span data-purpose="timer-x-days-left"> <a style="color: #000;" target="_blank" href="https://adams21.typeform.com/to/rTw3gj">Cliquez ici pour demander un bon d'achat</a> </span></div>
+                          <span data-purpose="smart-bar-copy" class="">
+                            <span class="smart-bar--smart-bar__title--1LFsk" data-purpose="smart-bar-title">
+                           Jusqu'au 13 janvier,
+                          </span>
+                           <span class="smart-bar--smart-bar__subtitle--I38FP" data-purpose="smart-bar-subtitle" role="presentation">
+                          utilisez le code promo OSCHOOL2019 pour entrer dans un parcours en programmation à seulement 10.000 FCFA !
+                          </span>
+                        </span>
+                        <div data-purpose="smart-bar-timer" class="smart-bar-timer--timer-container--2mwOn"><span data-purpose="timer-x-days-left"> <a style="color: #000;" target="_blank" href="https://code.oschool.ci/ecoleprog">Cliquez ici pour vous inscrire maintenant</a> </span></div>
 												</div>
 		                  </div>
 		                  <div aria-label="Close" class="smart-bar--smart-bar__close--3mCup" data-purpose="smart-bar-hide" role="button" tabindex="0"><span class="udi-small udi udi-close"></span></div>
@@ -190,6 +253,7 @@ var x = setInterval(function() {
 
 
           @include('includes.popup')
+          @include('includes.popupOrange')
 
 
 

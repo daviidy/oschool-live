@@ -130,6 +130,21 @@
         </div>
       </div>
 
+
+      <!-- Course -->
+
+      <div class="col-lg-4 course_col">
+        <div class="course">
+          <div class="course_image"><img src="/new/images/cours/kali.png" alt=""></div>
+          <div class="course_body">
+            <div class="course_title"><a href="/kali-linux">Hacking Ethique avec Kali Linux</a></div>
+
+
+          </div>
+
+        </div>
+      </div>
+
       <!-- Course
       <div class="col-lg-4 course_col">
         <div class="course">

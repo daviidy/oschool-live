@@ -84,6 +84,9 @@ class User extends Authenticatable
 
    }
 
+
+   //fonction pour savoir si un user a déjà envoyé des livrables
+   //concernant un projet donné
    public function worked($projetId)
   {
       return $this->etatprojets()->where('projet_id', $projetId)->count() > 0;

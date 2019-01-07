@@ -598,7 +598,7 @@ ir-degree-pricing-card[_ngcontent-c63]{margin-bottom:0;}
 .card__triangle[_ngcontent-c101]::before{position:absolute;content:'';top:3.375rem;width:2.5rem;right:3.375rem;height:2.5rem;display:block;z-index:1000;background:url(https://eu.udacity.com/assets/iridium/images/nanodegree-overview/shared/degree-pricing-card/icon_checkmark_white_pricing.svg) center center no-repeat;}
 .card__triangle[_ngcontent-c101]::after{position:absolute;top:0;right:0;bottom:0;left:0;content:'';-webkit-transform:rotate(-45deg);transform:rotate(-45deg);}
 .card[_ngcontent-c101]   a[_ngcontent-c101]{border:none;font-weight:600;}
-.card[_ngcontent-c101]   a[_ngcontent-c101]:hover{text-decoration:underline;}
+.card[_ngcontent-c101]   a[_ngcontent-c101]:hover{text-decoration:none;}
 .card.primary[_ngcontent-c101]   .card--pricing__header[_ngcontent-c101]{border-bottom:2px solid #4D90CC;}
 .card.primary[_ngcontent-c101]   .card__flag[_ngcontent-c101]{color:#4D90CC;background-color:rgba(145,218,238,.3);}
 .card.primary[_ngcontent-c101]   .card__flag[_ngcontent-c101]::after{border-color:rgba(145,218,238,.3) transparent transparent;}
