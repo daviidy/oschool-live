@@ -100,7 +100,7 @@ body *{box-sizing:border-box;}
           </div>
           <div class="reset-password-modal--description--1y9D1">
             <!-- react-text: 11 -->Pour t'inscrire au parcours, c'est simple !<br>
-            <img width="40%" src="http://localhost:8000/img/page-parcours/card.png" alt="">
+            <img width="40%" src="http://code.oschool.ci/img/page-parcours/card.png" alt="">
             <!-- /react-text --><br><br>
             <ul style="text-align: left;">
               <li>Fais un dépôt Orange Money sur ce numéro: <strong>58-45-06-00</strong> </li>
