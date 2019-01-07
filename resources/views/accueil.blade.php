@@ -334,7 +334,7 @@
 </div>
 
 <!-- Events -->
-
+<!--
 <div class="events">
   <div class="container">
     <div class="row">
@@ -347,6 +347,7 @@
 
 
       <!-- Event -->
+      <!--
       <div class="col-lg-4 event_col">
         <div class="event">
           <div class="event_image"><img src="/new/images/event_3.jpg" alt=""></div>

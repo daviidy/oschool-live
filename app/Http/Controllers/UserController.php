@@ -33,14 +33,16 @@ class UserController extends Controller
 
     public function statutCheck()
     {
-      if (Auth::user()->type3 == "admin") {
+      if (Auth::user()->type3 == "admin")
+      {
         $date = Carbon::now();
         //get users which subscription expires in 10 days
         $users = User::where('type', 'default')->where('type2', 'aucun')->where('type3', 'aucun')->orderby('id', 'asc')->paginate(1000);
 
         foreach ($users as $user) {
           //dans le cas où la date a expiré
-          if ($user->fin_abonnement < $date && count($user->formations)) {
+          if ($user->fin_abonnement < $date && count($user->formations))
+          {
             $user->statut = 'aucun';
             $user->save();
             //Send email to the users
@@ -51,7 +53,8 @@ class UserController extends Controller
           }
 
           // dans le cas où la date va bientôt arriver à expiration
-          elseif ($user->fin_abonnement->subDays(10) <= $date && $user->fin_abonnement >= $date && count($user->formations)) {
+          elseif ($user->fin_abonnement->subDays(10) <= $date && $user->fin_abonnement >= $date && count($user->formations))
+          {
             //Send email to the users
             Mail::send('mails.fin-abonnement', ['user' => $user], function($message) use ($user){
               $message->to($user->email, 'Oschool')->subject('Votre abonnement va bientôt prendre fin !');
@@ -60,6 +63,10 @@ class UserController extends Controller
           }
         }
 
+      }
+
+      else {
+        return redirect('home');
       }
 
         return redirect('paiements')->with('status', 'Le statut des abonnés a bien été mis à jour');

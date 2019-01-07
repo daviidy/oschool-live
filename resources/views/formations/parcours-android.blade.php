@@ -707,7 +707,7 @@
               <!---->
               <!---->
               @auth
-              <a _ngcontent-c101="" class="button--primary mb-1 center ng-star-inserted" data-toggle="modal" data-target="#promo">S'inscrire maintenant</a>
+              <a _ngcontent-c101="" class="button--primary mb-1 center ng-star-inserted" id="orange">S'inscrire maintenant</a>
               @endauth
               @guest
               <a _ngcontent-c101="" class="button--primary mb-1 center ng-star-inserted" data-toggle="modal" data-target="#inscription">S'inscrire maintenant</a>
@@ -723,7 +723,7 @@
           </div>
 
 
-
+<!--
         </ir-degree-pricing-card>
 
 
@@ -731,26 +731,23 @@
         <ir-degree-pricing-card _ngcontent-c63="" _nghost-c101="" class="ng-star-inserted">
           <div _ngcontent-c101="" class="card card--pricing primary selected more-padding-top">
             <div _ngcontent-c101="" class="card__triangle"></div>
-            <!---->
+            <!--
             <h6 _ngcontent-c101="" class="card__flag ng-star-inserted">Offre Normale</h6>
-           <!--  <h3 _ngcontent-c101="" style="margin-top: 3rem;color: orange;background: #EAEAEA;" class="card__flag ng-star-inserted">La plus vendue</h3> -->
+           <!--  <h3 _ngcontent-c101="" style="margin-top: 3rem;color: orange;background: #EAEAEA;" class="card__flag ng-star-inserted">La plus vendue</h3>
             <div _ngcontent-c101="" class="card--pricing__header">
               <h5 _ngcontent-c101="">Développeur d'Applications Android</h5>
                  <div _ngcontent-c101="" class="card__price ng-star-inserted">
 
-                   <!----><span _ngcontent-c101="" class="card__price--current2"><h1>30.000 FCFA/mois<h1></span>
+                   <!---<span _ngcontent-c101="" class="card__price--current2"><h1>30.000 FCFA/mois<h1></span>
 
               </div>
               <br>
           <!--    <p _ngcontent-c101="">
               <span _ngcontent-c101="" class="ng-star-inserted">Vous paierez 30.000 FCFA à partir du deuxième mois</span>
 
-            </p> -->
-              <!---->
-              <!---->
+            </p>
             </div>
             <div _ngcontent-c101="" class="card--pricing__body">
-              <!---->
               <ul class="list-pricing">
                 <li>Accès à tout le contenu (vidéos, textes, documents et autres ressources)</li>
                 <li>Coaching en live chaque semaine selon votre planning</li>
@@ -759,35 +756,27 @@
                 <li>Obtention d'un certificat</li>
                 <li>Accompagnement pour bâtir un profil de carrière et obtenir un emploi</li>
               </ul>
-              <!---->
-              <!---->
+
             </div>
-            <!---->
-            <!---->
-            <!---->
+
             <div _ngcontent-c101="" class="button-wrapper ng-star-inserted">
-              <!---->
-              <!---->
-              <!---->
+
               @auth
               <a _ngcontent-c101="" class="button--primary mb-1 center ng-star-inserted" data-toggle="modal" data-target="#modalSignUp">S'inscrire maintenant</a>
               @endauth
               @guest
               <a _ngcontent-c101="" class="button--primary mb-1 center ng-star-inserted" href="/login">S'inscrire maintenant</a>
               @endguest
-              <!---->
-              <!---->
-              <!---->
-              <!---->
-              <!---->
-              <!---->
+
             </div>
-            <!---->
           </div>
 
 
 
         </ir-degree-pricing-card>
+
+
+      -->
 
 
 

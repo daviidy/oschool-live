@@ -107,11 +107,16 @@ drift.load('2uy6g3spxi59');
                 <div data-purpose="smart-bar-container" class="" style="height: auto;">
                     <div style="width: 104%;margin-left: -15px;" data-purpose="smart-bar" class="smart-bar--smart-bar--1rOkE smart-bar--smart-bar--teal--Qijai smart-bar--smart-bar-dark-theme--18ulO"><span style="font-size: 0px;"></span>
                         <div class="smart-bar--smart-bar__content--3X42a basic-with-timer--centered-content--QtJd8">
-                            <div data-purpose="basic-with-timer" class="basic-with-timer--centered-content__text--2t0l3"><span data-purpose="smart-bar-copy" class=""><span class="smart-bar--smart-bar__title--1LFsk" data-purpose="smart-bar-title">
-                              La meilleure facon d'apprécier l'expérience Oschool, est de </span><span class="smart-bar--smart-bar__subtitle--I38FP" data-purpose="smart-bar-subtitle" role="presentation">rejoindre un
-                              de nos parcours.
-                                        </span></span>
-                                <div data-purpose="smart-bar-timer" class="smart-bar-timer--timer-container--2mwOn"><span data-purpose="timer-x-days-left"> <a style="color: #fff;" target="_blank" href="https://code.oschool.ci/#schools">Rejoignez-nous maintenant !</a> </span></div>
+                            <div data-purpose="basic-with-timer" class="basic-with-timer--centered-content__text--2t0l3">
+                              <span data-purpose="smart-bar-copy" class="">
+                                <span class="smart-bar--smart-bar__title--1LFsk" data-purpose="smart-bar-title">
+                               Jusqu'au 13 janvier,
+                              </span>
+                               <span class="smart-bar--smart-bar__subtitle--I38FP" data-purpose="smart-bar-subtitle" role="presentation">
+                              utilisez le code promo OSCHOOL2019 pour entrer dans un parcours en programmation à seulement 10.000 FCFA !
+                              </span>
+                            </span>
+                            <div data-purpose="smart-bar-timer" class="smart-bar-timer--timer-container--2mwOn"><span data-purpose="timer-x-days-left"> <a style="color: #000;" target="_blank" href="https://code.oschool.ci/ecoleprog">Cliquez ici pour vous inscrire maintenant</a> </span></div>
                             </div>
                         </div>
                         <div aria-label="Close" class="smart-bar--smart-bar__close--3mCup" data-purpose="smart-bar-hide" role="button" tabindex="0"><span class="udi-small udi udi-close"></span></div>

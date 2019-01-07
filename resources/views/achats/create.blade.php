@@ -8,13 +8,14 @@
   <div class="container-login100">
     <div class="wrap-login100">
       <div class="login100-pic js-tilt" data-tilt>
-        <img src="/formcreate/images/cup.jpg" alt="IMG"> 
+        <img src="/formcreate/images/cup.jpg" alt="IMG">
       </div>
 
       <form method="post" enctype="multipart/form-data" action="https://secure.cinetpay.com/" class="login100-form validate-form">
         <span class="login100-form-title">
           Veuillez vérifier les informations ci-dessous avant de valider votre achat.<br><br>
           Vous paierez {{session('montant')}} FCFA<br><br>
+          {{session('signature')}}<br>
           Important: cliquer sur "Retourner sur Oschool pour valider le paiement" !
         </span>
         <!--
@@ -34,7 +35,7 @@
         </div>
         <div style="display: none;" class="form-group">
           <select class="" name="cpm_amount">
-            <option value="{{session('montant')}}">montant</option>
+            <option value="{{$montant}}">montant</option>
           </select>
         </div>
         <div style="display: none;" class="form-group">
@@ -94,7 +95,7 @@
         </div>
         <div style="display: none;" class="form-group">
           <select class="" name="cancel_url">
-            <option value="https://code.oschool.ci">url cancel</option>
+            <option value="{{URL::previous()}}">url cancel</option>
           </select>
         </div>
         <div class="container-login100-form-btn">

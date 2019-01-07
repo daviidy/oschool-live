@@ -50,15 +50,19 @@ class AchatController extends Controller
       Session::put('prenoms', $request['prenoms']);
       Session::put('email', $request['email']);
       Session::put('tel', $request['tel']);
-      Session::put('montant', $request['montant']);
+
       Session::put('formation', $request['formation']);
       Session::put('promo', $request['promo']);
 
       $montant = "30000";
 
-      //on verifie si nle code promo est exact
-      if (Session::get('promo') == 'OSCHOOL2019') {
-        $montant = "10000";
+      //on verifie si le code promo est exact
+      if ($request['promo'] == 'OSCHOOL2019') {
+        $montant = "100";
+        Session::put('montant', $montant);
+      }
+      else {
+        Session::put('montant', $request['montant']);
       }
 
       function postData($params, $url)
@@ -119,7 +123,7 @@ class AchatController extends Controller
 
         $achats= Achat::orderby('id','asc')->paginate(30);
 
-/*
+        /*
         Session::put('trans_id', $temps);
 
         */
@@ -197,7 +201,7 @@ class AchatController extends Controller
                         'cpm_page_action' => 'PAYMENT',
                         'cpm_version' => 'V1',
                         'cpm_language' => 'fr',
-                        'cpm_designation' => 'Achat Parcours Oschool',
+                        'cpm_designation' => 'Réabonnement Parcours Oschool',
                         'apikey' => '134714631658c289ed716950.86091611',
                         );
         $url = "https://api.cinetpay.com/v1/?method=getSignatureByPost";
@@ -207,10 +211,13 @@ class AchatController extends Controller
 
         $achats= Achat::orderby('id','asc')->paginate(30);
 
-/*
+        /*
         Session::put('trans_id', $temps);
 
         */
+        //on stocke la signature dans la variable session pour une
+        //utilisation ultérieure
+
         Session::put('signature', str_replace('"',"",$resultat));
         $formations = Formation::orderby('id','asc')->paginate(30);
 
@@ -292,7 +299,7 @@ class AchatController extends Controller
 
         //apres avoir décodé la reponse de l'apî call on fait les tests
 
-      if ($json->transaction->cpm_result == '00' && $json->transaction->cpm_amount == '30000' && $json->transaction->signature == $oldSignature) {
+      if ($json->transaction->cpm_result == '00' && $json->transaction->cpm_amount == '100' && $json->transaction->signature == $oldSignature) {
 
         $achat=Achat::create([
                           'email' => Session::get('email'),
@@ -327,7 +334,7 @@ class AchatController extends Controller
       }
 
 
-    }
+    } //fin fonction notify
 
     /**
      * Pour une nouvelle inscription
