@@ -56,9 +56,9 @@ class User extends Authenticatable
         return $this->hasMany('App\Classroom');
     }
 
-    public function progressions()
+    public function etatprogressions()
     {
-        return $this->hasMany('App\Progression');
+        return $this->hasMany('App\Etatprogression');
     }
 
     public function formations()
@@ -91,6 +91,13 @@ class User extends Authenticatable
   {
       return $this->etatprojets()->where('projet_id', $projetId)->count() > 0;
   }
+
+
+  //fonction pour savoir si un user a déjà envoyé validé une progression donnée
+  public function validated($progressionId)
+ {
+     return $this->etatprogressions()->where('progression_id', $progressionId)->count() > 0;
+ }
 
 
 

@@ -87,6 +87,7 @@ drift.load('2uy6g3spxi59');
 
 
     <!--annonce a la udemy-->
+    <!--
         <div class="ud-app-loader ud-component--smart-bar--app ud-app-loaded" data-module-id="smart-bar" ng-non-bindable="">
           <div data-purpose="smart-bar-wrapper" class="mb0 " style="margin-bottom: 0px;">
               <div data-purpose="smart-bar-container" class="" style="height: auto;">
@@ -263,28 +264,35 @@ drift.load('2uy6g3spxi59');
 
               <li>
 
-                <a  style="border-radius:8px; color: red; background-color: transparent;" class="logout" href="{{ route('projets.create') }}">
+                <a  style="border-radius:8px; text-decoration: underline; background-color: transparent;" class="logout" href="{{ route('projets.create') }}">
                     Créer un projet
                 </a>
 
               </li>
               <li>
 
-                <a  style="border-radius:8px; color: #967ADC; background-color: transparent;" class="logout" href="{{ route('supportformations.create') }}">
+                <a  style="border-radius:8px; text-decoration: underline; background-color: transparent;" class="logout" href="{{ route('supportformations.create') }}">
                     Ajouter un support de cours
                 </a>
 
               </li>
               <li>
 
-                <a  style="border-radius:8px; color: #4D90CC; background-color: transparent;" class="logout" href="{{ route('formations.create') }}">
+                <a  style="border-radius:8px; text-decoration: underline; background-color: transparent;" class="logout" href="{{ route('formations.create') }}">
                     Créer une formation
                 </a>
 
               </li>
               <li>
 
-                <a style="border-radius:8px; color: orange; background-color: transparent;" class="logout" href="{{ route('categories.create') }}">
+                <a  style="border-radius:8px; text-decoration: underline; background-color: transparent;" class="logout" href="{{ route('progressions.create') }}">
+                    Créer une progression
+                </a>
+
+              </li>
+              <li>
+
+                <a style="border-radius:8px; text-decoration: underline; background-color: transparent;" class="logout" href="{{ route('categories.create') }}">
                     Créer une catégorie
                 </a>
 
@@ -292,7 +300,7 @@ drift.load('2uy6g3spxi59');
 
               <li>
 
-                <a style="border-radius:8px; background-color: transparent;" class="logout" href="{{ route('achats.create') }}">
+                <a style="border-radius:8px; text-decoration: underline; background-color: transparent;" class="logout" href="{{ route('achats.create') }}">
                     Ajouter un achat
                 </a>
 

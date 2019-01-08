@@ -41,9 +41,9 @@
 					<div class="wrap-input100 input100-select bg1">
 						<span class="label-input100">Formation concernée</span>
 						<div>
-							<input class="input100" type="text" class="form-control" id="inputWarning2" name="formation" value="{{$formation}}">
+							<input disabled type="text" class="form-control" id="inputWarning2" name="formation" value="{{$formation}}">
 						</div>
-					</div> 
+					</div>
 
 
 					<div class="wrap-input100 input100-select bg1">
@@ -61,7 +61,8 @@
 							    <option value="Semaine 8">Semaine 8</option>
 							    <option value="Semaine 9">Semaine 9</option>
 							    <option value="Semaine 10">Semaine 10</option>
-							    <option value="Semaine 11 et 12">Semaine 11 et 12</option>
+							    <option value="Semaine 11">Semaine 11</option>
+                  <option value="Semaine 12">Semaine 12</option>
 							</select>
 							<div class="dropDownSelect2"></div>
 						</div>
@@ -73,16 +74,16 @@
 							<span class="label-input100">Quelles sont les sections faites?</span>
 
 							<div class="contact100-form-checkbox m-t-15">
-								<input class="custom-control-label" id="checkbox1" type="checkbox" name="session[]" value="Bienvenue">
+								<input class="custom-control-label" id="checkbox1" type="checkbox" name="session[]" value="ection 1: Présentation de Flutter et Dart !">
 								<label class="label-checkbox100" for="checkbox1">
-									Bienvenue
+									Section 1: Présentation de Flutter et Dart !
 								</label>
 							</div>
 
 							<div class="contact100-form-checkbox">
-								<input class="input-checkbox100" id="checkbox2" type="checkbox" name="session[]" value="Comment fonctionne le web?">
+								<input class="input-checkbox100" id="checkbox2" type="checkbox" name="session[]" value="Section 2: Installation de Flutter?">
 								<label class="custom-control-label" for="checkbox2">
-									Comment fonctionne le web?
+									Section 2: Installation de Flutter
 								</label>
 							</div>
 
@@ -94,16 +95,16 @@
 							<span class="label-input100">Quelles sont les sections faites?</span>
 
 							<div class="contact100-form-checkbox m-t-15">
-								<input class="custom-control-label" id="checkbox1" type="checkbox" name="session[]" value="HTML: Structure d'un site web">
+								<input class="custom-control-label" id="checkbox1" type="checkbox" name="session[]" value="Section 3: Notre première application">
 								<label class="label-checkbox100" for="checkbox1">
-									HTML: Structure d'un site web
+									Section 3: Notre première application
 								</label>
 							</div>
 
 							<div class="contact100-form-checkbox">
-								<input class="input-checkbox100" id="checkbox2" type="checkbox" name="session[]" value="Un regard plus attentif sur CSS">
+								<input class="input-checkbox100" id="checkbox2" type="checkbox" name="session[]" value="Section 4: Les bases de Dart (partie1)">
 								<label class="custom-control-label" for="checkbox2">
-									Un regard plus attentif sur CSS
+									Section 4: Les bases de Dart (partie1)
 								</label>
 							</div>
 
@@ -115,16 +116,16 @@
 							<span class="label-input100">Quelles sont les sections faites?</span>
 
 							<div class="contact100-form-checkbox m-t-15">
-								<input class="custom-control-label" id="checkbox1" type="checkbox" name="session[]" value="Bordures et espaces">
+								<input class="custom-control-label" id="checkbox1" type="checkbox" name="session[]" value="Section 5:Les bases de Dart (partie 2)">
 								<label class="label-checkbox100" for="checkbox1">
-									Bordures et espaces
+									Section 5:Les bases de Dart (partie 2)
 								</label>
 							</div>
 
 							<div class="contact100-form-checkbox">
-								<input class="input-checkbox100" id="checkbox2" type="checkbox" name="session[]" value="Construire avec Bootstrap">
+								<input class="input-checkbox100" id="checkbox2" type="checkbox" name="session[]" value="Section 6: La programmation orienté objet avec Dart">
 								<label class="custom-control-label" for="checkbox2">
-									Construire avec Bootstrap
+									Section 6: La programmation orienté objet avec Dart
 								</label>
 							</div>
 
@@ -136,16 +137,16 @@
 							<span class="label-input100">Quelles sont les sections faites?</span>
 
 							<div class="contact100-form-checkbox m-t-15">
-								<input class="custom-control-label" id="checkbox1" type="checkbox" name="session[]" value="Créez un site web interactif: Faire un menu déroulant">
+								<input class="custom-control-label" id="checkbox1" type="checkbox" name="session[]" value="Section 7: Les Widgets basiques">
 								<label class="label-checkbox100" for="checkbox1">
-									Créez un site web interactif: Faire un menu déroulant
+									Section 7: Les Widgets basiques
 								</label>
 							</div>
 
 							<div class="contact100-form-checkbox">
-								<input class="input-checkbox100" id="checkbox2" type="checkbox" name="session[]" value="Site web interactif: Menu coulissant">
+								<input class="input-checkbox100" id="checkbox2" type="checkbox" name="session[]" value="Section 8: Les Widgets basiques partie 2">
 								<label class="custom-control-label" for="checkbox2">
-									Site web interactif: Menu coulissant
+									Section 8: Les Widgets basiques partie 2
 								</label>
 							</div>
 
@@ -157,16 +158,16 @@
 							<span class="label-input100">Quelles sont les sections faites?</span>
 
 							<div class="contact100-form-checkbox m-t-15">
-								<input class="custom-control-label" id="checkbox1" type="checkbox" name="session[]" value="Javascript: les bases">
+								<input class="custom-control-label" id="checkbox1" type="checkbox" name="session[]" value="Section 9: Créez une application de musique">
 								<label class="label-checkbox100" for="checkbox1">
-									 Javascript: les bases
+									 Section 9: Créez une application de musique
 								</label>
 							</div>
 
 							<div class="contact100-form-checkbox">
-								<input class="input-checkbox100" id="checkbox2" type="checkbox" name="session[]" value="Les évènements">
+								<input class="input-checkbox100" id="checkbox2" type="checkbox" name="session[]" value="Section 10: Pop up et Navigator">
 								<label class="custom-control-label" for="checkbox2">
-									Les évènements
+									Section 10: Pop up et Navigator
 								</label>
 							</div>
 
@@ -178,16 +179,16 @@
 							<span class="label-input100">Quelles sont les sections faites?</span>
 
 							<div class="contact100-form-checkbox m-t-15">
-								<input class="custom-control-label" id="checkbox1" type="checkbox" name="session[]" value="Site web interactif : Construisez un fil d'actualités">
+								<input class="custom-control-label" id="checkbox1" type="checkbox" name="session[]" value="Section 11:Créez une application de Quizz">
 								<label class="label-checkbox100" for="checkbox1">
-									 Site web interactif : Construisez un fil d'actualités
+									 Section 11:Créez une application de Quizz
 								</label>
 							</div>
 
 							<div class="contact100-form-checkbox">
-								<input class="input-checkbox100" id="checkbox2" type="checkbox" name="session[]" value="Le DOM">
+								<input class="input-checkbox100" id="checkbox2" type="checkbox" name="session[]" value="Section 12:Les Widgets interactifs">
 								<label class="custom-control-label" for="checkbox2">
-									Le DOM
+									Section 12:Les Widgets interactifs
 								</label>
 							</div>
 
@@ -199,9 +200,9 @@
 							<span class="label-input100">Quelles sont les sections faites?</span>
 
 							<div class="contact100-form-checkbox m-t-15">
-								<input class="custom-control-label" id="checkbox1" type="checkbox" name="session[]" value="Site web interactif: Construisons la page d'accueil de Flipboard">
+								<input class="custom-control-label" id="checkbox1" type="checkbox" name="session[]" value="Section 13:Créez une application de calcul de calories">
 								<label class="label-checkbox100" for="checkbox1">
-									 Site web interactif: Construisons la page d'accueil de Flipboard
+									 Section 13:Créez une application de calcul de calories
 
 								</label>
 							</div>
@@ -209,7 +210,7 @@
 							<div class="contact100-form-checkbox">
 								<input class="input-checkbox100" id="checkbox2" type="checkbox" name="session[]" value="PHP: Introduction">
 								<label class="custom-control-label" for="checkbox2">
-									PHP: Introduction
+									Section 14:Les Widgets Cupertino (style iOS)
 								</label>
 							</div>
 
@@ -221,17 +222,17 @@
 							<span class="label-input100">Quelles sont les sections faites?</span>
 
 							<div class="contact100-form-checkbox m-t-15">
-								<input class="custom-control-label" id="checkbox1" type="checkbox" name="session[]" value="Les bases en PHP">
+								<input class="custom-control-label" id="checkbox1" type="checkbox" name="session[]" value="Section 15:Les scrollables - Listes et Grilles">
 								<label class="label-checkbox100" for="checkbox1">
-									 Les bases en PHP
+									 Section 15:Les scrollables - Listes et Grilles
 
 								</label>
 							</div>
 
 							<div class="contact100-form-checkbox">
-								<input class="input-checkbox100" id="checkbox2" type="checkbox" name="session[]" value="Transmettre les données de page en page">
+								<input class="input-checkbox100" id="checkbox2" type="checkbox" name="session[]" value="Section 16:Créez une application de flux RSS">
 								<label class="custom-control-label" for="checkbox2">
-									Transmettre les données de page en page
+									Section 16:Créez une application de flux RSS
 								</label>
 							</div>
 
@@ -243,9 +244,9 @@
 							<span class="label-input100">Quelles sont les sections faites?</span>
 
 							<div class="contact100-form-checkbox m-t-15">
-								<input class="custom-control-label" id="checkbox1" type="checkbox" name="session[]" value="PHP/MySQL">
+								<input class="custom-control-label" id="checkbox1" type="checkbox" name="session[]" value="Section 17:CodaMeteo - Le Drawer">
 								<label class="label-checkbox100" for="checkbox1">
-									 PHP/MySQL
+									 Section 17:CodaMeteo - Le Drawer
 
 								</label>
 							</div>
@@ -253,7 +254,7 @@
 							<div class="contact100-form-checkbox">
 								<input class="input-checkbox100" id="checkbox2" type="checkbox" name="session[]" value="Wordpress">
 								<label class="custom-control-label" for="checkbox2">
-									Wordpress
+									Section 18:CodaMeteo - Le SharedPreferences
 								</label>
 							</div>
 
@@ -265,24 +266,46 @@
 							<span class="label-input100">Quelles sont les sections faites?</span>
 
 							<div class="contact100-form-checkbox m-t-15">
-								<input class="custom-control-label" id="checkbox1" type="checkbox" name="session[]" value="Hébergement et noms de domaines">
+								<input class="custom-control-label" id="checkbox1" type="checkbox" name="session[]" value="Section 19: CodaMeteo - Json & API">
 								<label class="label-checkbox100" for="checkbox1">
-									 Hébergement et noms de domaines
+									 Section 19: CodaMeteo - Json & API
 
 								</label>
 							</div>
 
 							<div class="contact100-form-checkbox">
-								<input class="input-checkbox100" id="checkbox2" type="checkbox" name="session[]" value="Qu'avons-nous appris de ce cours ?">
+								<input class="input-checkbox100" id="checkbox2" type="checkbox" name="session[]" value="Section 20: Enregistrer les données de façon permanente (Partie 1)">
 								<label class="custom-control-label" for="checkbox2">
-									Qu'avons-nous appris de ce cours ?
+									Section 20: Enregistrer les données de façon permanente (Partie 1)
 								</label>
 							</div>
 
 						</div>
 					</div>
 
-					<div class="w-full dis-none js-show-service11-12 test">
+					<div class="w-full dis-none js-show-service11 test">
+						<div class="wrap-contact100-form-checkbox">
+							<span class="label-input100">Quelles sont les sections faites?</span>
+
+							<div class="contact100-form-checkbox m-t-15">
+								<input class="custom-control-label" id="checkbox1" type="checkbox" name="session[]" value="Section 21: SQFlite - Enregistrer les données de façon permanente (Partie 2)">
+								<label class="label-checkbox100" for="checkbox1">
+									 Section 21: SQFlite - Enregistrer les données de façon permanente (Partie 2)
+
+								</label>
+							</div>
+
+							<div class="contact100-form-checkbox">
+								<input class="input-checkbox100" id="checkbox2" type="checkbox" name="session[]" value="Section 22:ImagePicker - Utilisez l’appareil photo et la librairie">
+								<label class="custom-control-label" for="checkbox2">
+									Section 22:ImagePicker - Utilisez l’appareil photo et la librairie
+								</label>
+							</div>
+
+						</div>
+					</div>
+
+          <div class="w-full dis-none js-show-service12 test">
 						<div class="wrap-contact100-form-checkbox">
 							<span class="label-input100">Quelles sont les sections faites?</span>
 
@@ -307,11 +330,11 @@
 					<!--DEBUT SECTION DES ETUDIANTS A COCHER ET DES STATUTS-->
 
 					<div class="wrap-input100 input100-select bg1">
-						<span class="label-input100">Etudiant</span>
+						<span class="label-input100">Etudiants*</span>
 						<div>
 							<select class="js-select3" name="user_id">
 								<option selected>Selectionner un etudiant</option>
-								@foreach($students as $student)
+								@foreach(Auth::user()->students as $student)
 							    <option value="{{ $student->id }}">{{ $student->name }}</option>
 								@endforeach
 							</select>
@@ -319,14 +342,14 @@
 						</div>
 					</div>
 
-					<div class="wrap-input100 input100-select bg1">
-						<span class="label-input100">Statut</span>
-						<div>
-							<select class="js-select3" name="statut">
-							   <option value="Validé">Validé</option>
-								 <option value="A revoir">A revoir</option>
-							</select>
-							<div class="dropDownSelect3"></div>
+					<h3>Statut</h3>
+
+					<div class="wrap-contact100-form-radio">
+						<div class="contact100-form-radio m-t-15">
+							<input class="input-radio100" id="radio4" type="radio" name="statut" value="A revoir" checked="checked">
+							<label class="label-radio100" for="radio4">
+								A revoir
+							</label>
 						</div>
 					</div>
 
@@ -431,10 +454,16 @@
 							$('.js-show-service10').slideDown();
 						}
 
-						else if($(this).val() == "Semaine 11 et 12") {
+						else if($(this).val() == "Semaine 11") {
 							$('.test').slideUp();
-							$('.js-show-service11-12').slideUp();
-							$('.js-show-service11-12').slideDown();
+							$('.js-show-service11').slideUp();
+							$('.js-show-service11').slideDown();
+						}
+
+            else if($(this).val() == "Semaine 12") {
+							$('.test').slideUp();
+							$('.js-show-service12').slideUp();
+							$('.js-show-service12').slideDown();
 						}
 
 						else {

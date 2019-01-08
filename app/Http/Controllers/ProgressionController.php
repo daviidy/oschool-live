@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Progression;
+use App\Formation;
 use Illuminate\Http\Request;
 use Auth;
 use App\User;
@@ -26,13 +27,14 @@ class ProgressionController extends Controller
      */
 
      //formulaire pour afficher le formulaire pour
-     //marquer une progression
+     //créer une progression
     public function create()
     {
-      if (Auth::check() && Auth::user()->isTeacher() && Auth::user()->formations()) {
+      if (Auth::check() && Auth::user()->isAdmin()) {
 
+              $formations = Formation::orderby('id','asc')->paginate(30);
 
-              return view('progressions.ajouter');
+              return view('progressions.create', ['formations' => $formations]);
 
 
         }
@@ -43,26 +45,23 @@ class ProgressionController extends Controller
 
     //fonction qui redirige le prof vers le bon formulaire
     //en fonction de la formation qu'il a
+    //ce formulaire permettra de créer un etat de progression
+    //pour un etudiant donné
 
     public function progression(Request $request)
     {
       $formation = $request['formation'];
       if (Auth::check() && Auth::user()->isTeacher() && Auth::user()->formations()) {
 
-        $students = Auth::user()->students()->where('statut', 'OK')->get();
+        //on recupere les etudiants qui sont en règle
+        //ensuite on recupere les progressions relatives a la formation choisie
 
-        if ($formation == 'Développeur Web Junior') {
-          return view('progressions.devweb')->with(['students' => $students, 'formation' => $formation]);
-        }
-        elseif ($formation == 'Social Media') {
-          return view('progressions.socialmedia')->with(['students' => $students, 'formation' => $formation]);
-        }
-        elseif ($formation == 'Développement Mobile') {
-          return view('progressions.devmobile')->with(['students' => $students, 'formation' => $formation]);
-        }
-        elseif ($formation == 'Développement Android') {
-          return view('progressions.android')->with(['students' => $students, 'formation' => $formation]);
-        }
+        $students = Auth::user()->students()->where('statut', 'OK')->get();
+        $progressions = Progression::where('formation', $formation)->get();
+
+        return view('etatprogressions.devweb')->with(['students' => $students, 'formation' => $formation, 'progressions' => $progressions]);
+
+
 
       }
       else {
@@ -78,6 +77,7 @@ class ProgressionController extends Controller
      */
     public function store(Request $request)
     {
+      /*
       $sessionString = implode(",", $request->get('session'));
       Progression::create([
         'formation' => $request->get('formation'),
@@ -86,7 +86,9 @@ class ProgressionController extends Controller
         'user_id' => $request->get('user_id'),
         'session' => $sessionString,
     ]);
-      return redirect('home')->with('status', 'La progression a bien été marquée');
+    */
+      Progression::create($request->all());
+      return redirect('home')->with('status', 'La progression a bien été crée pour cette formation');
     }
 
     /**
@@ -98,15 +100,6 @@ class ProgressionController extends Controller
     public function show(Progression $progression)
     {
         //
-    }
-
-
-    public function valider(Progression $progression)
-    {
-      $progression->update([
-        'statut' => 'Validé'
-      ]);
-      return back()->with('status', 'Le statut de la progression a bien été mis à jour' );
     }
 
 
