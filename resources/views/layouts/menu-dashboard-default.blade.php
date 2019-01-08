@@ -270,13 +270,6 @@ drift.load('2uy6g3spxi59');
               <span>Mes projets</span>
               </a>
           </li>
-
-          <li class="mt">
-            <a href="{{ url('supportformations') }}">
-              <i class="fa fa-dashboard"></i>
-              <span>Supports de cours</span>
-              </a>
-          </li>
           @endif
 
 

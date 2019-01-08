@@ -5,7 +5,7 @@
         <p _ngcontent-c29="" class="h5 mb-0">{{$formation->nom}}</p>
       </div>
       <div _ngcontent-c29="" class="item__main">
-        <p style="text-align: center;" _ngcontent-c29="" class="degree-title mb-0">{{$progression->titre}}
+        <p style="text-align: center;word-wrap: break-word;width: 50%;margin: 0 auto;" _ngcontent-c29="" class="degree-title mb-0">{{$progression->titre}}
           </p>
         <!---->
       </div>
