@@ -276,9 +276,9 @@ drift.load('2uy6g3spxi59');
           </li>
 
           <li class="mt">
-            <a href="{{ url('supportformations') }}">
+            <a href="{{ url('progression', Auth::user()) }}">
               <i class="fa fa-dashboard"></i>
-              <span>Supports de cours</span>
+              <span>Progression de la formation</span>
               </a>
           </li>
           @endif

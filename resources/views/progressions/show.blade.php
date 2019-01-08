@@ -1,4 +1,4 @@
-@extends('layouts.menu-dashboard-default')
+@extends((Auth::user()->type2 == "teacher") ? "layouts.menu-dashboard-teacher" : "layouts.menu-dashboard-default")
 
 @section('content')
 
@@ -34,7 +34,7 @@
 .card[_ngcontent-c29]:last-child{margin-bottom:1.5rem;}
 .item__left[_ngcontent-c29]{flex-shrink:0;width:10rem;}
 @media screen and (min-width:62rem){
-.item__left[_ngcontent-c29]{width:110rem;}
+.item__left[_ngcontent-c29]{width:85rem;}
 }
 .item__main[_ngcontent-c29]{flex-grow:1;padding:1rem 0;}
 @media screen and (min-width:48rem){
