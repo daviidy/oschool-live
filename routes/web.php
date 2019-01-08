@@ -72,6 +72,8 @@ Route::get('/teacher', 'TeacherController@teacher')
 
 Route::resource('users','UserController');
 
+Route::resource('etatprogressions','EtatprogressionController');
+
 Route::resource('classrooms','ClassroomController');
 
 Route::resource('progressions','ProgressionController');
@@ -92,7 +94,7 @@ Route::post('/notify', 'AchatController@notify')->name('notify');
 route pour les sessions ou classrooms
 */
 
-Route::get('/valider/{progression}', 'ProgressionController@valider')->name('valider');
+Route::get('/valider/{etatprogression}', 'EtatprogressionController@valider')->name('valider');
 
 Route::get('/programme', 'ProgressionController@programme')->name('programme');
 

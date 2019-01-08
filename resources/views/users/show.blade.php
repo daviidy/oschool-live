@@ -194,41 +194,95 @@
                   <div id="progressions" class="tab-pane">
                     <div class="container">
                        <h2>Progressions de {{$user->name}}</h2>
-                       <p>Formation : Développeur web</p>
                        <table class="table">
                          <thead>
                            <tr>
+                             <th>Formation</th>
                              <th>Section</th>
-                             <th>Chapitre</th>
                              <th>Statut</th>
                            </tr>
                          </thead>
                          <tbody>
-                           @foreach($user->progressions as $progression)
-                           <tr>
-                             <td>{{$progression->section}}</td>
-                             <td>{{$progression->session}}</td>
-                             <td style="display: flex; flex-wrap: wrap;">
+                           @foreach($user->formations as $formation)
+                             @foreach($formation->progressions->sortBy('id') as $progression)
+                               @if(count($progression->etatprogressions))
+                                 @foreach($progression->etatprogressions as $etatprogression)
+                                   @if($etatprogression->user_id == $user->id)
 
-                               @if($progression->statut == "A revoir")
-                               <p style="color: orange;">{{ $progression->statut }}</p>
-                               @else
-                               <p style="color: green;">{{ $progression->statut }}</p>
-                               @endif
-                               @if($progression->statut == "A revoir")
-                               <div style="margin-left: 15px;" class="dropdown">
-                                 <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-                                   Action
-                                 </button>
-                                 <div class="dropdown-menu">
-                                   <a class="dropdown-item" href="{{url('valider', $progression)}}">Valider</a>
-                                 </div>
-                               </div>
-                               @endif
+                                   <tr>
+                                     <td>{{$formation->nom}}</td>
+                                     <td> <a target="_blank" href="{{$progression->lien}}">{{$progression->titre}}</a> </td>
+                                     <td style="display: flex; flex-wrap: wrap;">
 
-                             </td>
-                           </tr>
+                                       @if($etatprogression->statut == "A revoir")
+                                       <p style="color: orange;">{{ $etatprogression->statut }}</p>
+                                       @else
+                                       <p style="color: green;">{{ $etatprogression->statut }}</p>
+                                       @endif
+                                       @if($etatprogression->statut == "A revoir")
+                                       <div style="margin-left: 15px;" class="dropdown">
+                                         <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                                           Action
+                                         </button>
+                                         <div class="dropdown-menu">
+                                           <a class="dropdown-item" href="{{url('valider', $etatprogression)}}">Valider</a>
+                                         </div>
+                                       </div>
+                                       @endif
+
+                                     </td>
+                                   </tr>
+
+                                   @endif
+                                 @endforeach
+                               @endif
+                             @endforeach
                            @endforeach
+
+
+
+                           @foreach($user->formations as $formation)
+                             @foreach($formation->progressions->sortBy('id') as $progression)
+                             @if (!$user->validated($progression->id))
+
+
+
+                             <tr>
+                               <td>{{$formation->nom}}</td>
+                               <td> <a target="_blank" href="{{$progression->lien}}">{{$progression->titre}}</a> </td>
+                               <td style="display: flex; flex-wrap: wrap;">
+
+
+                                 <p style="color: orange;">Aucun</p>
+
+                                 <div style="margin-left: 15px;" class="dropdown">
+                                   <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                                     Action
+                                   </button>
+                                   <div class="dropdown-menu">
+                                     <a style="cursor:pointer;" class="logout" onclick="document.getElementById('logout2').submit();">
+                                         Modifier
+                                     </a>
+                                     <form id="logout2" action="/progression" method="POST" style="display: none;">
+                                         @csrf
+                                         <input type="text" name="formation" value="{{$formation->nom}}">
+                                     </form>
+                                   </div>
+                                 </div>
+
+                               </td>
+                             </tr>
+
+
+                             @endif
+                             @endforeach
+                           @endforeach
+
+
+
+
+
+
                          </tbody>
                        </table>
                      </div>

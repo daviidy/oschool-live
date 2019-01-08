@@ -27,4 +27,11 @@ class Formation extends Model
   {
       return $this->hasMany('App\Supportformation');
   }
+
+
+  public function progressions()
+  {
+      return $this->hasMany('App\Progression');
+  }
+
 }

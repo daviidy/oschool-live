@@ -43,7 +43,7 @@
 						<div>
 							<input class="input100" type="text" class="form-control" id="inputWarning2" name="formation" value="{{$formation}}">
 						</div>
-					</div> 
+					</div>
 
 
 					<div class="wrap-input100 input100-select bg1">

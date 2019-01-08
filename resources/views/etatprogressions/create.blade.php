@@ -13,58 +13,65 @@
 
       <form method="post" enctype="multipart/form-data" action="{{ route('progressions.store') }}" class="login100-form validate-form">
         <span class="login100-form-title">
-          Créer une progression
+          Marquer la progression d'un étudiant
         </span>
         {{ csrf_field() }}
 
-        <div class="wrap-input100 validate-input" data-validate = "Etudiant">
-          <label for="">Titre de la progression</label>
-          <input class="input100" type="text" name="titre" placeholder="Nom du support de cours en général...">
-          <span class="focus-input100"></span>
-          <span class="symbol-input100">
-            <i class="fa fa-laptop" aria-hidden="true"></i>
-          </span>
-
-        </div>
-
-        <div class="wrap-input100 validate-input" data-validate = "Etudiant">
-          <label for="">URL du support</label>
-          <input class="input100" type="text" name="lien" placeholder="Lien du support de cours...">
-          <span class="focus-input100"></span>
-          <span class="symbol-input100">
-            <i class="fa fa-laptop" aria-hidden="true"></i>
-          </span>
-
-        </div>
-
-        <div class="wrap-input100 validate-input" data-validate = "Jour de la séance">
+        <div style="display: none;" class="wrap-input100 validate-input" data-validate = "Jour de la séance">
           <label for="">Formation</label>
-          <select name="formation_id" class="form-control" style="">
-            @foreach($formations as $formation)
-            <option value="{{ $formation->id }}">{{ $formation->nom }}</option>
+          <input value="Développeur Web Junior" class="input100" type="text" name="formation" placeholder="">
+          <span class="focus-input100"></span>
+          <span class="symbol-input100">
+            <i class="fa fa-laptop" aria-hidden="true"></i>
+          </span>
+        </div>
+
+        <div class="wrap-input100 validate-input" data-validate = "Etudiant">
+          <label for="">Etudiant</label>
+          <select name="user_id" class="form-control" style="">
+            @foreach(Auth::user()->students as $student)
+            <option value="{{ $student->id }}">{{ $student->name }}</option>
             @endforeach
           </select>
         </div>
 
         <div class="wrap-input100 validate-input" data-validate = "Etudiant">
-          <label for="">Confirmez la formation</label>
-          <select name="formation" class="form-control" style="">
-            @foreach($formations as $formation)
-            <option value="{{ $formation->nom }}">{{ $formation->nom }}</option>
-            @endforeach
+          <label for="">Section</label>
+          <input class="input100" type="text" name="section" placeholder="Comme indiqué dans le programme">
+          <span class="focus-input100"></span>
+          <span class="symbol-input100">
+            <i class="fa fa-laptop" aria-hidden="true"></i>
+          </span>
+
+        </div>
+
+        <div class="wrap-input100 validate-input">
+          <label for="">Chapitre</label>
+          <input class="input100" type="text" name="session" placeholder="Comme indiqué dans le programme">
+          <span class="focus-input100"></span>
+          <span class="symbol-input100">
+            <i class="fa fa-laptop" aria-hidden="true"></i>
+          </span>
+        </div>
+
+        <div class="wrap-input100 validate-input" data-validate = "Etudiant">
+          <label for="">Statut</label>
+          <select name="statut" class="form-control" style="">
+            <option value="A revoir">Validé</option>
+            <option value="A revoir">A revoir</option>
           </select>
         </div>
 
         <div class="container-login100-form-btn">
           <button class="login100-form-btn">
-            Créer la progression
+            Marquer la progression
           </button>
         </div>
 
 
         <div class="text-center p-t-136">
           <a class="txt2" href="{{url('home')}}">
-            Annuler
+            Allez à la page d'accueil
             <i class="fa fa-long-arrow-right m-l-5" aria-hidden="true"></i>
           </a>
         </div>

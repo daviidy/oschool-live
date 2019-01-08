@@ -6,13 +6,19 @@ use Illuminate\Database\Eloquent\Model;
 
 class Progression extends Model
 {
-  //on crée les champs qui seront dans la table Student
-  protected $fillable = ['formation', 'section', 'session', 'user_id', 'statut'];
+  protected $fillable = ['formation', 'titre', 'formation_id', 'lien'];
 
   //Relation one-to-many : ici, une progression concerne un seul étudiant
 
   public function student()
   {
-      return $this->belongsTo('App\User');
+      return $this->belongsTo('App\Formation');
+  }
+
+  //une progression a plusieurs etats pour un étudiant donné
+
+  public function etatprogressions()
+  {
+      return $this->hasMany('App\Etatprogression');
   }
 }

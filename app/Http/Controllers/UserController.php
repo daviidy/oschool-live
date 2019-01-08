@@ -13,7 +13,7 @@ use App\Achat;
 use Mail;
 use DB;
 use Carbon\Carbon;
-
+ 
 class UserController extends Controller
 {
     public function default()
