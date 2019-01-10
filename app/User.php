@@ -100,6 +100,13 @@ class User extends Authenticatable
  }
 
 
+ //fonction pour savoir si un user est inscrit à une formation
+ public function subscribed($formationId)
+{
+    return $this->formations()->where('id', $formationId)->count() > 0;
+}
+
+
 
 
 }

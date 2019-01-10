@@ -59,7 +59,7 @@ class ProgressionController extends Controller
         $students = Auth::user()->students()->where('statut', 'OK')->get();
         $progressions = Progression::where('formation', $formation)->get();
 
-        return view('etatprogressions.devweb')->with(['students' => $students, 'formation' => $formation, 'progressions' => $progressions]);
+        return view('etatprogressions.index')->with(['students' => $students, 'formation' => $formation, 'progressions' => $progressions]);
 
 
 
