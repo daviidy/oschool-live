@@ -126,11 +126,6 @@ drift.load('2uy6g3spxi59');
             </div>
 
             <!--fin annonce a la udemy-->
-
-      @else
-        @foreach(Auth::user()->formations as $formation)
-          @if (!Auth::user()->subscribed($formation->id))
-
       @endif
       <div class="sidebar-toggle-box">
         <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
