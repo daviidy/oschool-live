@@ -85,7 +85,7 @@ drift.load('2uy6g3spxi59');
                            Jusqu'au 13 janvier,
                           </span>
                            <span class="smart-bar--smart-bar__subtitle--I38FP" data-purpose="smart-bar-subtitle" role="presentation">
-                          utilisez le code promo OSCHOOL2019 pour entrer dans un parcours en programmation à seulement 10.000 FCFA !
+                          entrez dans un parcours en programmation de votre choix à seulement 10.000 FCFA !
                           </span>
                         </span>
 														<div data-purpose="smart-bar-timer" class="smart-bar-timer--timer-container--2mwOn"><span data-purpose="timer-x-days-left"> <a style="color: #000;" target="_blank" href="https://code.oschool.ci/ecoleprog">Cliquez ici pour vous inscrire maintenant</a> </span></div>
