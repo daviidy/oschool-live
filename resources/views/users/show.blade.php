@@ -210,7 +210,9 @@
                                    @if($etatprogression->user_id == $user->id)
 
                                    <tr>
-                                     <td>{{$formation->nom}}</td>
+                                     @if ($loop->iteration == 1)
+                                       <td>{{$formation->nom}}</td>
+                                     @endif
                                      <td> <a target="_blank" href="{{$progression->lien}}">{{$progression->titre}}</a> </td>
                                      <td style="display: flex; flex-wrap: wrap;">
 

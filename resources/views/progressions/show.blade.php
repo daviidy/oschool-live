@@ -63,6 +63,7 @@
       <img style="display: block;margin-left: auto;margin-right: auto;width: 20%;" width="10%" src="/img/progression.png" alt="">
 
       <div class="col-sm-12">
+        @if(Auth::user()->type2 == "teacher" || Auth::user()->statut == "OK")
         @foreach(Auth::user()->formations as $formation)
           @foreach($formation->progressions->sortBy('id') as $progression)
             @if(count($progression->etatprogressions))
@@ -82,6 +83,7 @@
           @endif
           @endforeach
         @endforeach
+        @endif
       </div>
     </div>
   </section>

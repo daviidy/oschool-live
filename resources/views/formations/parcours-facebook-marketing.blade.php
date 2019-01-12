@@ -1,6 +1,6 @@
 @extends('layouts.menu-parcours')
 
-@section('title', 'Social Media Marketing')
+@section('title', 'Facebook Marketing')
 
 @section('content')
 
@@ -8,18 +8,17 @@
     <div class="row c-how__heading align-row">
       <div class="col-xs-12 col-sm-6 c-how__headingLeft">
         <!-- <h2 class="h2 u-bold text-primary">Hack & Learn <em>React</em></h2> -->
-        <h1 class="h2 u-bold">Deviens Social Média Manager en passant de Zéro à Héro</h1>
-        <p class="u-margin-t-md subHeading">Du débutant au professionnel rémunéré.<br>
-           Devenez facilement influenceur et soyez un pro de la communication en ligne.</p>
-        <a class="home_button" href="#payment">
+        <h1 style="margin-bottom: 4rem;" class="h2 u-bold">Apprenez à promouvoir votre entreprise sur Facebook</h1>
+
+        <a class="home_button" href="#offres">
           Inscrivez-vous maintenant
         </a>
         <p class="u-margin-t-md subHeading">
-           Apprennez à construire des stratégies efficaces de marketing des médias sociaux sur différentes plateformes.
+           Maitrisez les fonctionnalités actuelles de Facebook pour des actions marketing plus efficacess
         </p>
       </div>
       <div class="col-xs-12 col-sm-6 c-how__headingRight">
-        <img style="width:50%;" src="/img/page-parcours/Social-media-marketing-gt-service.png" />
+        <img style="width:80%;" src="http://www.nispaara.com/wp-content/uploads/2016/01/facebook-advertise-developing-banaglore.png" />
 
         <!--image du parcours et countdown-->
         <div class="row">
@@ -38,10 +37,10 @@
               <!---->
               <!---->
               <ul _ngcontent-c87="" class="ng-star-inserted">
-                  <li _ngcontent-c87=""><span _ngcontent-c87="" class="countdown__timer" id="jours"></span><span _ngcontent-c87="">JOURS</span></li>
-                  <li _ngcontent-c87=""><span _ngcontent-c87="" class="countdown__timer" id="heures"></span><span _ngcontent-c87="">HRS</span></li>
-                  <li _ngcontent-c87=""><span _ngcontent-c87="" class="countdown__timer" id="minutes"></span><span _ngcontent-c87="">MIN</span></li>
-                  <li _ngcontent-c87=""><span _ngcontent-c87="" class="countdown__timer" id="secondes"></span><span _ngcontent-c87="">SEC</span></li>
+                  <li _ngcontent-c87=""><span _ngcontent-c87="" class="countdown__timer" id="jourskali"></span><span _ngcontent-c87="">JOURS</span></li>
+                  <li _ngcontent-c87=""><span _ngcontent-c87="" class="countdown__timer" id="heureskali"></span><span _ngcontent-c87="">HRS</span></li>
+                  <li _ngcontent-c87=""><span _ngcontent-c87="" class="countdown__timer" id="minuteskali"></span><span _ngcontent-c87="">MIN</span></li>
+                  <li _ngcontent-c87=""><span _ngcontent-c87="" class="countdown__timer" id="secondeskali"></span><span _ngcontent-c87="">SEC</span></li>
               </ul>
           </div>
       </div>
@@ -59,10 +58,10 @@
     <!---->
     <h6 class="details" _ngcontent-c29="" class="ng-star-inserted">Durée:</h6>
     <!---->
-    <h5 _ngcontent-c29="" class="ng-star-inserted">4 mois</h5>
+    <h5 _ngcontent-c29="" class="ng-star-inserted">2 mois en moyenne</h5>
     <!---->
     <!---->
-    <p _ngcontent-c29="" class="x-small ng-star-inserted">Et des séances hebdomadaires de 1 - 2 H avec un formateur</p>
+    <p _ngcontent-c29="" class="x-small ng-star-inserted">Et des séances hebdomadaires de 1 - 2 H avec un formateur en ligne</p>
     <!---->
     <!---->
     <!---->
@@ -80,7 +79,7 @@
       <!---->
       <h6 class="details" _ngcontent-c91="" class="ng-star-inserted">Début de la rentrée</h6>
       <!---->
-      <h5 _ngcontent-c91="" class="ng-star-inserted"> 1er décembre 2018 </h5>
+      <h5 _ngcontent-c91="" class="ng-star-inserted"> 1er février 2019 </h5>
       <!---->
       <!---->
     </ir-classroom-opens-column>
@@ -132,7 +131,7 @@
   <div class="container alt section-space">
     <div class="row">
       <div class="col-xs-12 text-center">
-        <h3 class="h3 u-bold text-center u-margin-b-sm">Suivez le parcours certifiant de Social Média Marketing et démarrez une nouvelle carrière.</h3>
+        <h3 class="h3 u-bold text-center u-margin-b-sm">Suivez le parcours certifiant de Facebook Marketing et démarrez une nouvelle carrière.</h3>
         <div class="c-browser">
           <div class="c-browser__chrome">
             <div class="c-browser__buttons">
@@ -142,7 +141,7 @@
             </div>
           </div>
           <div class="c-browser__image">
-            <img src="/img/page-parcours/social-network.jpg" />
+            <iframe src="https://player.vimeo.com/video/310692577" width="100%" height="528" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
           </div>
         </div>
 
@@ -151,11 +150,13 @@
           <div class="col-xs-12 col-sm-6">
             <div style="text-align: left !important;" class="c-how__sectionContent">
               <h4 class="h4 u-bold">Pourquoi suivre ce parcours ?</h4>
-              <p class="u-margin-t-md subHeading">Souhaitez-vous connaître les  raccourcis vers le succès  en obtenant plus de ventes, du trafic sur votre site Web, la notoriété de la marque et la croissance d'une entreprise à l'aide du marketing par médias sociaux?
+              <p class="u-margin-t-md subHeading">
 
-            Aujourd'hui, vous pouvez commercialiser GRATUITEMENT  vos produits, vos services et développer une entreprise en ligne en utilisant les médias sociaux - à des milliards de personnes!
+                  A la fin de cette formation, vous serez capable de réaliser
+                  une analyse d'audience ou une étude de marché sur Facebook,
+                  mettre en place une stratégie de contenu, créez des publicités efficaces etc.
 
-            Êtes-vous prêt à vendre plus de produits, à avoir plus de clients et à développer votre entreprise en utilisant les médias sociaux?</p>
+              </p>
             </div>
           </div>
           <div _ngcontent-c33="" class="col-xs-12 col-sm-6 stat ng-star-inserted">
@@ -165,7 +166,12 @@
                 <h4 _ngcontent-c33="" class="light ng-star-inserted">
                   <h4 class="light">
                     <font style="vertical-align: inherit;">
-                      <font style="vertical-align: inherit;">Développez une audience ciblée avec des centaines, des milliers ou des millions de personnes - à partir de zéro!</font>
+                      <font style="vertical-align: inherit;">
+
+                        Vous serez capables de créer des publicités Facebook efficaces et
+                        analysez le retour sur investissement de vos actions
+
+                      </font>
                     </font>
                   </h4>
                 </h4>
@@ -177,7 +183,7 @@
 
 
 
-        <a class="home_button" href="#payment">
+        <a class="home_button" href="#offres">
           Inscrivez-vous maintenant, n'attendez pas !
         </a>
       </div>
@@ -187,7 +193,6 @@
     <div class="row">
       <div class="col-xs-12">
         <h3 class="h3 u-bold text-center u-margin-b-sm u-margin-t-sm">Comment ca marche ?</h3>
-        <p class="subHeading text-center">Vous verrez, c'est rapide et simple</p>
       </div>
     </div>
     <div class="row u-margin-t-xxx-lg align-row">
@@ -334,14 +339,14 @@
       <!---->
       <h2 style="font-size: 4rem;font-weight: 300;" _ngcontent-c47="" class="white ng-star-inserted">Développez cette compétence pour aujourd'hui et demain</h2>
       <!---->
-      <p _ngcontent-c47="" class="white ng-star-inserted"><span class="hidden-md-down">Ce parcours de Social Media Marketing  est conçu
+      <p _ngcontent-c47="" class="white ng-star-inserted"><span class="hidden-md-down">Cette formation sur le Marketing Facebook  est conçue
         pour assurer votre succès à long terme sur le terrain. Les compétences acquises vous prépareront à des
         emplois dans le monde des médias sociaux, et vous serez prêt à apporter une valeur immédiate
         à toute organisation. Nous vous soutiendrons tout au long de votre parcours d'apprentissage.
         De l'acquisition des compétences techniques et professionnelles précieuses,
         jusqu'à l'obtention de l'emploi de vos rêves.</span></p>
     </div>
-    
+
 
 
 
@@ -367,9 +372,9 @@
           Selon votre planning, chaque semaine, prenez rendez-vous avec un formateur
         qui se fera un plaisir de vous dispenser les cours. De plus, vous avez accès à toutes les ressources
       de cours (vidéos, textes etc.)</span>
-          <span class="hidden-lg-up">Selon votre planning, chaque semaine, prenez rendez-vous avec un formateur
+        <!--  <span class="hidden-lg-up">Selon votre planning, chaque semaine, prenez rendez-vous avec un formateur
         qui se fera un plaisir de vous dispenser les cours. De plus, vous avez accès à toutes les ressources
-      de cours (vidéos, textes etc.)</span></p>
+      de cours (vidéos, textes etc.)</span>--></p>
       </div>
       <div _ngcontent-c47="" class="card ng-star-inserted">
         <div _ngcontent-c47="" class="line bg-magenta"></div>
@@ -377,7 +382,7 @@
         <h5 _ngcontent-c47="" class="title mb-1 ng-star-inserted"><span class="hidden-md-down">Réussir avec les recruteurs</span><span class="hidden-lg-up">Réussir avec les recruteurs</span></h5>
         <!---->
         <p _ngcontent-c47="" class="x-small ng-star-inserted"><span class="hidden-md-down">Travaillez avec des professionnels expérimentés pour obtenir des conseils personnalisés sur la manière d’améliorer votre recherche et d’impressionner les recruteurs. Nous vous aidons à peaufiner votre compte LinkedIn et votre CV.</span>
-        <span class="hidden-lg-up">Travaillez avec des professionnels expérimentés pour obtenir des conseils personnalisés sur la manière d’améliorer votre recherche et d’impressionner les recruteurs. Nous vous aidons à peaufiner votre compte LinkedIn et votre CV.</span></p>
+        <!--<span class="hidden-lg-up">Travaillez avec des professionnels expérimentés pour obtenir des conseils personnalisés sur la manière d’améliorer votre recherche et d’impressionner les recruteurs. Nous vous aidons à peaufiner votre compte LinkedIn et votre CV.</span>--></p>
       </div>
       <div _ngcontent-c47="" class="card ng-star-inserted">
         <div _ngcontent-c47="" class="line bg-purple"></div>
@@ -385,7 +390,7 @@
         <h5 _ngcontent-c47="" class="title mb-1 ng-star-inserted"><span class="hidden-md-down">Construire un grand réseau</span><span class="hidden-lg-up">Construire un grand réseau</span></h5>
         <!---->
         <p _ngcontent-c47="" class="x-small ng-star-inserted"><span class="hidden-md-down">Oschool, c'est aussi un grand réseau de plus de 2000 étudiants. Prêt à collaborer, partager des références ou embaucher votre propre équipe ? Le réseau des anciens Oschool est là pour vous!</span>
-        <span class="hidden-lg-up">Oschool, c'est aussi un grand réseau de plus de 2000 étudiants. Prêt à collaborer, partager des références ou embaucher votre propre équipe ? Le réseau des anciens Oschool est là pour vous!</span></p>
+        <!--<span class="hidden-lg-up">Oschool, c'est aussi un grand réseau de plus de 2000 étudiants. Prêt à collaborer, partager des références ou embaucher votre propre équipe ? Le réseau des anciens Oschool est là pour vous!</span>--></p>
       </div>
     </div>
     <!---->
@@ -404,26 +409,24 @@
     <!---->
     <!---->
     <!---->
-    <!----><a _ngcontent-c55="" class="button--secondary lg syllabus-download-button ng-star-inserted" target="_blank" href="https://s3.amazonaws.com/video.udacity-data.com/topher/2018/June/5b189d8e_fend-syllabus-9.0.0/fend-syllabus-9.0.0.pdf">
+    <!----><a _ngcontent-c55="" class="button--secondary lg syllabus-download-button ng-star-inserted" target="_blank" href="https://docs.google.com/spreadsheets/d/1Kyr_xA9ptYKsWV21D0k-mlH8y_P50rtMuQDagrmyDDI/edit?usp=sharing">
     Télécharger le programme
     </a>
     <!---->
     <!---->
     <div _ngcontent-c55="" class="nd-syllabus-term__card">
       <section _ngcontent-c55="" class="nd-syllabus-term__header collapse in">
-        <div _ngcontent-c55="" class="nd-syllabus-term__header__image" irdeferbgimage="" style="background-image: url(&quot;https://www.brafton.com/wp-content/uploads/2014/01/Social-Media-Marketing-Trends-350x350.jpg&quot;);">
+        <div _ngcontent-c55="" class="nd-syllabus-term__header__image" irdeferbgimage="" style="background-image: url(&quot;http://www.osiaffiliate.com/shopify-facebook-marketing/images/background/shopify-facebook-advertising.png&quot;);">
           <!---->
         </div>
         <div _ngcontent-c55="" class="nd-syllabus-term__header__content">
           <!---->
           <h6 _ngcontent-c55="" class="ng-star-inserted">PROGRAMME</h6>
-          <h2 _ngcontent-c55="" class="h3">Social Media Marketing</h2>
+          <h2 _ngcontent-c55="" class="h3">Facebook Marketing</h2>
           <!---->
-          <p _ngcontent-c55="" class="small hidden-md-down ng-star-inserted">Le programme de Social Media Marketing Junior
-            est composé de 7 projets. Avec chaque projet,
-            vous allez créer quelque chose qui démontre votre maîtrise des compétences recherchées.
-            La complexité des projets varie. En fin de compte,
-            vous aurez un portefeuille de projets et un CV digne d'être aprréciés par des employeurs potentiels.</p>
+          <p _ngcontent-c55="" class="small hidden-md-down ng-star-inserted">Ce programme vest composé de sections rrépartis par semaine
+          et ponctués de projets qui vous permettront de pratiquer ce que vous apprenez.
+        A la fin de cette formation vous réaliserez un projet de soutenance pour obtenir un certificat reconnu par nos entreprises partenaires</p>
           <!---->
           <p _ngcontent-c55="" class="small hidden-lg-up ng-star-inserted">Le programme Développeur Web Junior
             est composé de huit projets. Avec chaque projet,
@@ -446,146 +449,18 @@
             <div _ngcontent-c95="" class="degree-syllabus-preview__content">
               <!---->
               <!---->
-              <h6 _ngcontent-c95="" class="mb-half ng-star-inserted">Outils requis</h6>
+              <h6 _ngcontent-c95="" class="mb-half ng-star-inserted">Téléchargement du programme</h6>
               <p _ngcontent-c95="" class="small mb-2 ng-star-inserted">
-                <!----><span _ngcontent-c95="" class="degree-syllabus-preview__content--term-prereq ng-star-inserted">Vous devez disposer d'un ordinateur portable ou d'un smartphone, et d'une bonne connexion Internet pour suivre cette formation</span>
+                <!----><span _ngcontent-c95="" class="degree-syllabus-preview__content--term-prereq ng-star-inserted">Vous pouvez soit consulter ou télécharger le programme de la formation</span>
                 <!---->
                 <!---->
-                <!----><a _ngcontent-c95="" class="pointer ng-star-inserted">Voir les outils requis.</a>
+                <!----><a href="https://docs.google.com/spreadsheets/d/1Kyr_xA9ptYKsWV21D0k-mlH8y_P50rtMuQDagrmyDDI/edit?usp=sharing" target="_blank" _ngcontent-c95="" class="pointer ng-star-inserted">Voir le programme</a>
                 <!---->
               </p>
-              <section _ngcontent-c95="" class="degree-syllabus-preview__content--parts">
-                <!---->
-                <!---->
-                <!---->
-                <ul _ngcontent-c95="" class="ng-star-inserted">
-                  <!---->
-                  <li _ngcontent-c95="" class="ng-star-inserted">
-                    <div _ngcontent-c95="" class="part">
-                      <header _ngcontent-c95="" class="part__header mb-half">
-                        <!---->
-                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted">Développer une stratégie de médias sociaux</h4>
-                        <!---->
-                      </header>
-                      <p _ngcontent-c95="" class="small mb-half">Découvre comment mettre en place une stratégie de social media marketeur et quels sont les différents médias sociaux</p>
-                      <!---->
-                      <!---->
-                      <!---->
-                      <!----><span _ngcontent-c95="" class="part__project text-only ng-star-inserted"><img _ngcontent-c95="" class="icon-middle" src="/img/page-parcours/icon-project.svg"><span
-                          _ngcontent-c95="">Engagez-vous à réussir votre formation</span></span>
-                      <!---->
-                      <!---->
-                    </div>
-                  </li>
-                  <li _ngcontent-c95="" class="ng-star-inserted">
-                    <div _ngcontent-c95="" class="part">
-                      <header _ngcontent-c95="" class="part__header mb-half">
-                        <!---->
-                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted">Ecoute et suivi des médias sociaux</h4>
-                        <!---->
-                      </header>
-                      <p _ngcontent-c95="" class="small mb-half">Développez des techniques d'écoutes des médias sociaux ainsi que des stratégies de compréhension de conversation de marque.</p>
-                      <!---->
-                      <!---->
-                      <!---->
-                      <!----><span _ngcontent-c95="" class="part__project text-only ng-star-inserted"><img _ngcontent-c95="" class="icon-middle" src="/img/page-parcours/icon-project.svg"><span
-                          _ngcontent-c95="">Créez un article de blog / La galerie de l'amour</span></span>
-                      <!---->
-                      <!---->
-                    </div>
-                  </li>
-                  <li _ngcontent-c95="" class="ng-star-inserted">
-                    <div _ngcontent-c95="" class="part">
-                      <header _ngcontent-c95="" class="part__header mb-half">
-                        <!---->
-                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted">Construire une stratégie de contenu des médias sociaux</h4>
-                        <!---->
-                      </header>
-                      <p _ngcontent-c95="" class="small mb-half">Le contenu étant l'épine dorsale de votre stratégie de social média, nous commencerons ici par vous montrer les bases de la création de contenu.
-                      </p>
-                      <span _ngcontent-c95="" class="part__project text-only ng-star-inserted"><img _ngcontent-c95="" class="icon-middle" src="/img/page-parcours/icon-project.svg"><span
-                          _ngcontent-c95="">Améliorez la page d'accueil d'un magazine</span></span>
-                      <!---->
-                    </div>
-                  </li>
-                  <li _ngcontent-c95="" class="ng-star-inserted">
-                    <div _ngcontent-c95="" class="part">
-                      <header _ngcontent-c95="" class="part__header mb-half">
-                        <!---->
-                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted">Etendre votre portée </h4>
-                        <!---->
-                      </header>
-                      <p _ngcontent-c95="" class="small mb-half">Faites votre stratégie de communication au niveau supérieur, apprenez les différentes nuances du marketing d'influence et ainsi, vous pourrez travailler avec des influenceurs. </p>
-                      <!---->
-                      <!---->
-                      <!---->
-                      <!----><span _ngcontent-c95="" class="part__project text-only ng-star-inserted"><img _ngcontent-c95="" class="icon-middle" src="/img/page-parcours/icon-project.svg"><span
-                          _ngcontent-c95="">Créez une application pour inscrire les étudiants de votre école</span></span>
-                      <!---->
-                      <!---->
-                    </div>
-                  </li>
-                  <li _ngcontent-c95="" class="ng-star-inserted">
-                    <div _ngcontent-c95="" class="part">
-                      <header _ngcontent-c95="" class="part__header mb-half">
-                        <!---->
-                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted"> Etablissez des relations individuelles</h4>
-                        <!---->
-                      </header>
-                      <p _ngcontent-c95="" class="small mb-half">
-                       Vous saurez pourquoi l'engagement est au coeur de votre stratégie sociale, ainsi vous pourrez atteindre des objectifs commerciaux par la vente sociale.</p>
-                      <!---->
-                      <!---->
-                      <!---->
-                      <!----><span _ngcontent-c95="" class="part__project text-only ng-star-inserted"><img _ngcontent-c95="" class="icon-middle" src="/img/page-parcours/icon-project.svg"><span
-                          _ngcontent-c95="">Créez votre site personnel</span></span>
-                      <!---->
-                      <!---->
-                    </div>
-                  </li>
-                  <li _ngcontent-c95="" class="ng-star-inserted">
-                    <div _ngcontent-c95="" class="part">
-                      <header _ngcontent-c95="" class="part__header mb-half">
-                        <!---->
-                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted">Votre carrière</h4>
-                        <!---->
-                      </header>
-                      <p _ngcontent-c95="" class="small mb-half">Vous voici à la fin de cette formation. Mais c'est
-                      maintenant que les choses sérieuses vont commencer. Vous apprendrez à obtenir un emploi avec votre qualification.</p>
-                      <!---->
-                      <!---->
-                      <!---->
-                      <!----><span _ngcontent-c95="" class="part__project text-only ng-star-inserted"><img _ngcontent-c95="" class="icon-middle" src="/img/page-parcours/icon-project.svg"><span
-                          _ngcontent-c95="">Mise en ligne de votre site personnel / Soutenance</span></span>
-                      <!---->
-                      <!---->
-                    </div>
-                  </li>
-                </ul>
-              </section>
+
             </div>
             <!---->
-            <div _ngcontent-c95="" class="degree-syllabus-preview__aside ng-star-inserted">
-              <aside _ngcontent-c95=""><svg _ngcontent-c95="" height="36" viewBox="0 0 50 36" width="50">
-                  <g _ngcontent-c95="" fill="none" fill-rule="evenodd" stroke="#7D97AD" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                    <path _ngcontent-c95="" d="M42 5h2.99063C45.54809 5 46 5.438615 46 5.998746v19.002508C46 25.552846 45.556738 26 45.003217 26H4.996782C4.446275 26 4 25.561385 4 25.001254V5.998746C4 5.447154 4.443353 5 5.00937 5H8"></path>
-                    <path _ngcontent-c95="" d="M21 22H8V2h9.009246C21.42242 2 25 5.580076 25 9.991652V26m0 0c0-2.20914-1.79086-4-4-4m8 0h13V2h-9.009247C28.577583 2 25 5.580076 25 9.991652V26m0 0c0-2.20914 1.79086-4 4-4"></path>
-                    <path _ngcontent-c95="" d="M46 8h2.001043C48.552753 8 49 8.439458 49 9.002462v19.995076C49 29.551183 48.55547 30 47.997452 30H2.002548C1.448856 30 1 29.560542 1 28.997538V9.002462C1 8.448817 1.44266 8 1.998957 8H4m21 22v-4"></path>
-                  </g>
-                </svg>
-                <h6 _ngcontent-c95="" class="mb-half">
-                  <!---->Besoin de vous préparer ?</h6>
-                <!---->
-                <!---->
-                <p _ngcontent-c95="" class="small">Voici quelques cours gratuits qui pourraient vous aider<ul>
-                    <li><a href="/course/intro-to-programming-nanodegree--nd000">Intro to Programming</a></li>
-                    <li><a href="/course/intro-to-html-and-css--ud001">Intro to HTML and CSS</a></li>
-                    <li><a href="/course/intro-to-javascript--ud803">Intro to JavaScript</a></li>
-                  </ul>
-                </p>
-                <!---->
-              </aside>
-            </div>
+
           </section>
           <ir-modal _ngcontent-c95="" class="project-modal ng-tns-c11-11" closebtncolor="white-shadow" _nghost-c11="">
             <div _ngcontent-c11="" class="wrapper modal--no-padding">
@@ -610,7 +485,7 @@
 
 <!--section prix-->
 
-<section _ngcontent-c18="" id="payment" class="ng-star-inserted">
+<section id="offres" _ngcontent-c18="" id="payment" class="ng-star-inserted">
   <!---->
   <ir-degree-pricing _ngcontent-c18="" id="nd-pricing" _nghost-c63="" class="ng-star-inserted">
     <ir-payment-info _ngcontent-c63="" _nghost-c100="" style="display: none;">
@@ -657,26 +532,26 @@
         <!---->
         <!---->
         <!---->
-        
+
 
 
         <ir-degree-pricing-card _ngcontent-c63="" _nghost-c101="" class="ng-star-inserted">
           <div _ngcontent-c101="" class="card card--pricing primary selected more-padding-top">
             <div _ngcontent-c101="" class="card__triangle"></div>
             <!---->
-            <h6 _ngcontent-c101="" class="card__flag ng-star-inserted">Offre #2</h6>
+            <h6 _ngcontent-c101="" class="card__flag ng-star-inserted">L'offre</h6>
             <!-- <h3 _ngcontent-c101="" style="margin-top: 3rem;color: orange;background: #EAEAEA;" class="card__flag ng-star-inserted">La plus vendue</h3> -->
             <div _ngcontent-c101="" class="card--pricing__header">
-              <h5 _ngcontent-c101="">Social Media</h5>
+              <h5 _ngcontent-c101="">Facebook Marketing</h5>
               <!---->
               <div _ngcontent-c101="" class="card__price ng-star-inserted">
-                <!----><span _ngcontent-c101="" class="card__price--current"><del><h5>30.000 FCFA / mois</h5></del> 
-                  <!----></span>
-                   <!----><span _ngcontent-c101="" class="card__price--current2"><h1>10.000 FCFA<br> le premier mois<h1></span>
+                <!---<span _ngcontent-c101="" class="card__price--current"><del><h5>30.000 FCFA / mois</h5></del>
+                  <!--</span>-->
+                   <!----><span _ngcontent-c101="" class="card__price--current2"><h1>30.000 FCFA FCFA<br> /mois<h1></span>
               </div>
               <br>
               <p _ngcontent-c101="">
-                <!----><span _ngcontent-c101="" class="ng-star-inserted">Intermédiaire</span>
+                <!----<span _ngcontent-c101="" class="ng-star-inserted">Intermédiaire</span>
                 <!---->
                 <!---->
               </p>
@@ -704,10 +579,10 @@
               <!---->
               <!---->
               @auth
-              <a _ngcontent-c101="" class="button--primary mb-1 center ng-star-inserted" data-toggle="modal" data-target="#modalSignUp">S'inscrire maintenant</a>
+              <a _ngcontent-c101="" class="button--primary mb-1 center ng-star-inserted" id="orange">S'inscrire maintenant</a>
               @endauth
               @guest
-              <a _ngcontent-c101="" class="button--primary mb-1 center ng-star-inserted" href="/login">S'inscrire maintenant</a>
+              <a _ngcontent-c101="" class="button--primary mb-1 center ng-star-inserted" data-toggle="modal" data-target="#inscription">S'inscrire maintenant</a>
               @endguest
               <!---->
               <!---->
@@ -720,7 +595,7 @@
           </div>
         </ir-degree-pricing-card>
 
-       
+
 
         <!---->
         <!---->
@@ -746,7 +621,7 @@
                 <!---->
                 <h4 _ngcontent-c77="" class="h2 nd-bottom-cta-content__title ng-star-inserted">
                     <font style="vertical-align: inherit;">
-                        <font style="vertical-align: inherit;">Devenez Développeur Marketeur</font>
+                        <font style="vertical-align: inherit;">Devenez Expert du Marketing sur Facebook</font>
                     </font>
                 </h4>
                 <!---->
@@ -798,7 +673,11 @@
 
 <!--fin section appel a l'action-->
 
+<!--popup pour se connecter ou s'inscrire si ce  n'est pas encore fait-->
 
+@include('includes.registration')
+
+@include('includes.login')
 
 
 

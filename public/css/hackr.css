@@ -298,6 +298,13 @@ section{display:block;}
 .feature-card[_ngcontent-c47]{margin-top:-15rem;margin-bottom:6rem;}
 .feature-card[_ngcontent-c47]   .card[_ngcontent-c47]{height:40rem;}
 
+@media only screen and (max-width: 600px) {
+
+  .feature-card[_ngcontent-c47] .card[_ngcontent-c47] {
+      height: auto !important;
+  }
+}
+
 /*fin section construisez votre carrière*/
 
 

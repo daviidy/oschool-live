@@ -112,8 +112,8 @@ Route::get('/devweb', function () {
     return view('formations.parcours-dev-web');
 })->name('devweb');
 
-Route::get('/socialmedia', function () {
-    return view('formations.parcours-social-media');
+Route::get('/facebook-marketing', function () {
+    return view('formations.parcours-facebook-marketing');
 })->name('social-media');
 
 Route::get('/webdesign', function () {

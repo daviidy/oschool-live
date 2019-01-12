@@ -64,7 +64,7 @@
             </div>
           </form>
 
-          <a data-toggle="modal" data-target="#connexion">Déjà un compte ? Connectez-vous</a>
+          <a data-toggle="modal" data-target="#connexion">Pas de compte ? Inscrivez-vous</a>
 
         </div><!-- /.signup-modal-body -->
 
