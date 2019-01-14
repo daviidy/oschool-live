@@ -190,7 +190,7 @@
             </div>
           </div>
           <div class="c-browser__image">
-            <img src="https://images.unsplash.com/photo-1538731883747-933316677fe4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80">
+            <iframe width="100%" height="528" src="https://player.vimeo.com/video/311263443" frameborder="0" allowFullScreen mozallowfullscreen webkitAllowFullScreen></iframe>
 
           </div>
         </div>

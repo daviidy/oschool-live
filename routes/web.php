@@ -69,6 +69,10 @@ Route::get('/teacher', 'TeacherController@teacher')
     ->middleware('is_teacher')
     ->name('teacher');
 
+Route::get('/partner', 'PartnerController@partner')
+    ->middleware('is_partner')
+    ->name('partner');
+
 
 Route::resource('users','UserController');
 

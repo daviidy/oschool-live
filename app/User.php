@@ -12,6 +12,7 @@ class User extends Authenticatable
     const ADMIN_TYPE = 'admin';
     const TEACHER_TYPE = 'teacher';
     const DEFAULT_TYPE = 'default';
+    const PARTNER_TYPE = 'partner';
 
     public function isAdmin()    {
         return $this->type3 === self::ADMIN_TYPE;
@@ -19,6 +20,10 @@ class User extends Authenticatable
 
     public function isTeacher()    {
         return $this->type2 === self::TEACHER_TYPE;
+    }
+
+    public function isPartner()    {
+        return $this->type4 === self::TEACHER_TYPE;
     }
 
     /**
