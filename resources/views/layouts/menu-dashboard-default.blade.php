@@ -100,8 +100,8 @@ drift.load('2uy6g3spxi59');
         *********************************************************************************************************************************************************** -->
     <!--header start-->
     <header style="{{ !count(Auth::user()->formations) ? 'top: 0px;' : '' }}" class="header black-bg">
-      @if(!count(Auth::user()->formations))
-      <!--annonce a la udemy-->
+    <!--  @if(!count(Auth::user()->formations))
+      <!--annonce a la udemy
           <div class="ud-app-loader ud-component--smart-bar--app ud-app-loaded" data-module-id="smart-bar" ng-non-bindable="">
             <div data-purpose="smart-bar-wrapper" class="mb0 " style="margin-bottom: 0px;">
                 <div data-purpose="smart-bar-container" class="" style="height: auto;">
@@ -125,8 +125,10 @@ drift.load('2uy6g3spxi59');
               </div>
             </div>
 
-            <!--fin annonce a la udemy-->
+            <!--fin annonce a la udemy
       @endif
+
+    -->
       <div class="sidebar-toggle-box">
         <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
       </div>

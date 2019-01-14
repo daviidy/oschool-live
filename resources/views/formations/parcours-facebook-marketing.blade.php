@@ -126,6 +126,44 @@
 
 
 
+<!-- collaboration section-->
+
+
+<section _ngcontent-c18="" class="ng-star-inserted">
+    <!---->
+    <!---->
+    <!---->
+    <!---->
+    <!---->
+    <ir-nd-partners _ngcontent-c18="" _nghost-c30="" class="ng-star-inserted">
+        <div _ngcontent-c30="" class="contain nd-partners">
+            <h6 _ngcontent-c30="" class="mb-0 text-center">
+                <!---->En collaboration avec</h6>
+            <!---->
+            <!---->
+            <ul _ngcontent-c30="">
+                <!---->
+                <!---->
+                <!---->
+
+                <li _ngcontent-c30="" class="ng-star-inserted">
+                    <!----><a target="_blank" href="https://security.nziumstore.com/"><img style="margin: 2rem;" width="200" src="/img/partners/bora.png"></a>
+                    <!---->
+                </li>
+                <!---->
+                <!---->
+            </ul>
+        </div>
+    </ir-nd-partners>
+    <!---->
+</section>
+
+
+<!--end collaboration section-->
+
+
+
+
 
 
   <div class="container alt section-space">
