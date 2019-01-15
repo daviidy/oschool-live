@@ -16,6 +16,10 @@
         <div id="text" onclick="tri()" style="margin-top: 10rem; height:auto;" class="home_button"><a style="line-height:20px;" href="#">Voir seulement les mails</a></div>
       </div>
 
+      <div class="col-lg-4 col-xs-12">
+        <div id="text" style="background-color: #77A930 !important; margin-top: 10rem; height:auto;" class="home_button"><a style="line-height:20px;" href="#" data-toggle="modal" data-target="#popup2">Voir les utilisateurs par formation</a></div>
+      </div>
+
     </div>
     <h3><i class="fa fa-angle-right"></i> Liste des utilisateurs</h3>
     <div class="row mt">
@@ -102,3 +106,43 @@ function tri() {
 
 
 @endsection
+
+
+<!-- The Modal -->
+<div class="modal fade" id="popup2">
+<div class="modal-dialog">
+<div class="modal-content">
+
+<!-- Modal Header -->
+<div class="modal-header">
+<h4 style="font-size: 24px;" class="modal-title">Formation concernée</h4>
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+
+<!-- Modal body -->
+<div class="modal-body">
+  <form method="post" action="{{url('formation')}}">
+  {{ csrf_field() }}
+
+  <div class="form-group">
+    <label for="">Pour quelle formation ?</label>
+    <select class="js-select3" name="formation">
+      @foreach($formations as $formation)
+        <option value="{{ $formation->nom }}">{{ $formation->nom }}</option>
+      @endforeach
+    </select>
+  </div>
+  <button type="submit" class="btn btn-primary">Envoyer</button>
+  </form>
+</div>
+
+<!-- Modal footer -->
+<div class="modal-footer">
+<button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
+</div>
+
+</div>
+</div>
+</div>
+
+<!--end modal-->

@@ -12,6 +12,8 @@ class PartnerController extends Controller
   }
   public function partner()
   {
-      return view('partner');
+    $partners = User::orderby ('id','asc')->where('type4', 'partner')->paginate(30);
+
+      return view('formations.index', ['partners' => $partners]);
   }
 }

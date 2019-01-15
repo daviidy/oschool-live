@@ -92,6 +92,8 @@ Route::post('renew', 'AchatController@renew');
 
 Route::post('/progression', 'ProgressionController@progression')->name('progression');
 
+Route::post('/formation', 'FormationController@formation')->name('formation');
+
 Route::post('/notify', 'AchatController@notify')->name('notify');
 
 /*
@@ -210,6 +212,8 @@ Route::post('/moisFactures', 'UserController@moisFactures');
 Route::get('/paiements', 'UserController@paiements')->name('paiements');
 
 Route::post('/moisPaiements', 'UserController@moisPaiements');
+
+Route::post('/formationpaiement', 'FormationController@formationpaiement')->name('paiement-par-formation');
 
 //voir les sessions mensuelles des profs pour les admins
 

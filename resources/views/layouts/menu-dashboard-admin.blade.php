@@ -127,75 +127,14 @@ drift.load('2uy6g3spxi59');
         TOP BAR CONTENT & NOTIFICATIONS
         *********************************************************************************************************************************************************** -->
     <!--header start-->
-    <header style="{{ !count(Auth::user()->formations) ? 'top: 50px;' : '' }}" class="header black-bg">
+    <header style="" class="header black-bg">
       <div class="sidebar-toggle-box">
         <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
       </div>
       <!--logo start-->
       <a href="https://oschool.ci/" class="logo"><img width="100" src="/dashboard/img/thumbnail.png"></a>
       <!--logo end-->
-      <!--si la date d'expiration - 10 jours est inférieur ou égal à aujourd'hui et si la date d'expiration est supérieure ou égale à aujourd'hui-->
-      @if(count(Auth::user()->formations) && !Auth::user()->isTeacher() && !Auth::user()->isAdmin() && Auth::user()->fin_abonnement->subDays(10) <= Carbon\Carbon::now() && Auth::user()->fin_abonnement >= Carbon\Carbon::now())
-      <div class="nav notify-row" id="top_menu">
-        <!--  notification start -->
-        <ul class="nav top-menu">
-          <!-- notification dropdown start-->
-          <li id="header_notification_bar" class="dropdown">
-            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-              <i class="fa fa-bell-o"></i>
-              <span class="badge bg-warning">1</span>
-              </a>
-            <ul class="dropdown-menu extended notification">
-              <div class="notify-arrow notify-arrow-yellow"></div>
-              <li>
-                <p class="yellow">Vous avez une nouvelle notification</p>
-              </li>
-              <li>
-                <a href="#" data-toggle="modal" data-target="#myModal">
-                  <span class="label label-danger"><i class="fa fa-bolt"></i></span>
-                  Votre abonnement expire <br>
-                  le {{Carbon\Carbon::parse(Auth::user()->fin_abonnement)->format('d-m-Y H:i')}}.
-                  </a>
-              </li>
 
-            </ul>
-          </li>
-          <!-- notification dropdown end -->
-        </ul>
-        <!--  notification end -->
-      </div>
-
-      <!--sinon si la date d'expiration est inférieure à aujourd'hui-->
-      @elseif(count(Auth::user()->formations) && !Auth::user()->isTeacher() && !Auth::user()->isAdmin() && Auth::user()->fin_abonnement < Carbon\Carbon::now())
-      <div class="nav notify-row" id="top_menu">
-        <!--  notification start -->
-        <ul class="nav top-menu">
-          <!-- notification dropdown start-->
-          <li id="header_notification_bar" class="dropdown">
-            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-              <i class="fa fa-bell-o"></i>
-              <span class="badge bg-warning">1</span>
-              </a>
-            <ul class="dropdown-menu extended notification">
-              <div class="notify-arrow notify-arrow-yellow"></div>
-              <li>
-                <p class="yellow">Vous avez une nouvelle notification</p>
-              </li>
-              <li>
-                <a href="#" data-toggle="modal" data-target="#myModal">
-                  <span class="label label-danger"><i class="fa fa-bolt"></i></span>
-                  Votre abonnement a expiré. <br>
-                  Merci de le renouveler.
-                  </a>
-              </li>
-
-            </ul>
-          </li>
-          <!-- notification dropdown end -->
-        </ul>
-        <!--  notification end -->
-      </div>
-      @endif
       <div class="top-menu">
 
         <ul class="nav pull-right top-menu">
@@ -452,6 +391,22 @@ drift.load('2uy6g3spxi59');
     </div>
 
     <!--end modal-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

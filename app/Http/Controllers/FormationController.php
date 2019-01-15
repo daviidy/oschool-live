@@ -37,6 +37,46 @@ class FormationController extends Controller
       }
     }
 
+
+
+
+
+    //pour voir la liste des étudiants par formation
+
+    public function formation(Request $request)
+    {
+      $reponse = $request['formation'];
+      if (Auth::check()) {
+        if(Auth::user()->isAdmin() || Auth::user()->type4 == "partner") {
+
+        //on recupere les etudiants qui sont en règle
+        //ensuite on recupere les progressions relatives a la formation choisie
+
+        $students = Auth::user()->students()->where('statut', 'OK')->get();
+        $formation = Formation::where('nom', $reponse)->get();
+        $formations = Formation::orderby ('id','asc')->paginate(1000);
+
+        return view('users.active')->with(['students' => $students, 'reponse' => $reponse, 'formation' => $formation, 'formations' => $formations]);
+
+
+
+      }
+      else {
+        return redirect('home');
+      }
+    }
+
+  }//fin fonction
+
+
+
+
+
+
+
+
+
+
     /**
      * Store a newly created resource in storage.
      *
