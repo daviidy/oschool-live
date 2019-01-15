@@ -13,7 +13,7 @@ use App\Achat;
 use Mail;
 use DB;
 use Carbon\Carbon;
- 
+
 class UserController extends Controller
 {
     public function default()
@@ -85,7 +85,8 @@ class UserController extends Controller
       if (Auth::user()->isAdmin()) {
         $teachers = User::orderby ('id','asc')->where('type2', 'teacher')->paginate(1000);
         $students = User::orderby ('id','asc')->where('type', 'default')->paginate(1000);
-        return view('users.list', ['teachers' => $teachers, 'students' => $students]);
+        $formations = Formation::orderby ('id','asc')->paginate(1000);
+        return view('users.list', ['teachers' => $teachers, 'students' => $students, 'formations' => $formations]);
       }
       else {
         return redirect('home');
@@ -142,7 +143,7 @@ class UserController extends Controller
     public function paiements(Request $request)
 
     {
-      if (Auth::check() && Auth::user()->isAdmin()) {
+      if (Auth::check() && Auth::user()->isAdmin() || Auth::user()->type4 == "partner") {
         return view('users.paiements');
       }
       else {
@@ -160,11 +161,22 @@ class UserController extends Controller
       //ensuite on selectionne toutes les sessions du mois, de l'annee et appartenant
       //au prof
       if (Auth::check() && Auth::user()->isAdmin()) {
-      $mois = (int)$request['month'];
-      $an = (int)$request['year'];
-      $total = Achat::whereMonth('date', '=', $mois)->whereYear('date', '=', $an)->sum('montant');
-      $achats = Achat::whereMonth('date', '=', $mois)->whereYear('date', '=', $an)->get();
-      return view('users.moisPaiements', ['achats' => $achats, 'mois' => $mois, 'an' => $an, 'total' => $total]);
+
+        $mois = (int)$request['month'];
+        $an = (int)$request['year'];
+        //montant total des achats toute formation confondue
+        $total = Achat::whereMonth('date', '=', $mois)->whereYear('date', '=', $an)->sum('montant');
+        //ensemble de tous les achats
+        $achats = Achat::whereMonth('date', '=', $mois)->whereYear('date', '=', $an)->get();
+        return view('users.moisPaiements', ['achats' => $achats, 'mois' => $mois, 'an' => $an, 'total' => $total]);
+      }
+      elseif (Auth::check() && Auth::user()->type4 == "partner") {
+        $formation = $request['formation'];
+        $mois = (int)$request['month'];
+        $an = (int)$request['year'];
+        $total = Achat::where('formation', $formation)->whereMonth('date', '=', $mois)->whereYear('date', '=', $an)->sum('montant');
+        $achats = Achat::where('formation', $formation)->whereMonth('date', '=', $mois)->whereYear('date', '=', $an)->get();
+        return view('users.moisPaiements', ['achats' => $achats, 'mois' => $mois, 'an' => $an, 'total' => $total]);
       }
       else {
         return redirect('home');

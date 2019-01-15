@@ -30,6 +30,7 @@
 
 
 
+
   <!-- Start of Async Drift Code -->
 <script>
 "use strict";
@@ -60,12 +61,14 @@ drift.load('2uy6g3spxi59');
 <!-- End of Async Drift Code -->
 
 
+
 <script>
 (function(t, e, s, o) {
     var n, c, l;
     t.SMCX = t.SMCX || [], e.getElementById(o) || (n = e.getElementsByTagName(s), c = n[n.length - 1], l = e.createElement(s), l.type = "text/javascript", l.async = !0, l.id = o, l.src = ["https:" === location.protocol ? "https://" : "http://", "widget.surveymonkey.com/collect/website/js/tRaiETqnLgj758hTBazgd74sI3xlunBQAIjQsFqSKW8haM9hHIihQtBRyMcuCT1_2B.js"].join(""), c.parentNode.insertBefore(l, c))
 })(window, document, "script", "smcx-sdk");
 </script>
+
 
 
 
@@ -83,10 +86,27 @@ drift.load('2uy6g3spxi59');
   <section id="container">
 
 
+    <!--annonce a la udemy-->
+    <!--
+        <div class="ud-app-loader ud-component--smart-bar--app ud-app-loaded" data-module-id="smart-bar" ng-non-bindable="">
+          <div data-purpose="smart-bar-wrapper" class="mb0 " style="margin-bottom: 0px;">
+              <div data-purpose="smart-bar-container" class="" style="height: auto;">
+                  <div data-purpose="smart-bar" class="smart-bar--smart-bar--1rOkE smart-bar--smart-bar--teal--Qijai smart-bar--smart-bar-dark-theme--18ulO"><span style="font-size: 0px;"></span>
+                      <div class="smart-bar--smart-bar__content--3X42a basic-with-timer--centered-content--QtJd8">
+                          <div data-purpose="basic-with-timer" class="basic-with-timer--centered-content__text--2t0l3"><span data-purpose="smart-bar-copy" class=""><span class="smart-bar--smart-bar__title--1LFsk" data-purpose="smart-bar-title">
+                                      Oschool vous souhaite une excellente année 2019 !</span><span class="smart-bar--smart-bar__subtitle--I38FP" data-purpose="smart-bar-subtitle" role="presentation">
+                                        Nous vous réservons de très agréables surprises pour cette nouvelle année.
+                                      </span></span>
+                              <div data-purpose="smart-bar-timer" class="smart-bar-timer--timer-container--2mwOn"><span data-purpose="timer-x-days-left"> <a style="color: #fff;" href="#">Apprenez toujours !</a> </span></div>
+                          </div>
+                      </div>
+                      <div aria-label="Close" class="smart-bar--smart-bar__close--3mCup" data-purpose="smart-bar-hide" role="button" tabindex="0"><span class="udi-small udi udi-close"></span></div>
+                  </div>
+              </div>
+            </div>
+          </div>
 
-
-
-
+          <!--fin annonce a la udemy-->
 
 
     @if (session('status'))
@@ -94,111 +114,55 @@ drift.load('2uy6g3spxi59');
             {{ session('status') }}
         </div>
     @endif
+      <!--
+    @if(!count(Auth::user()->formations))
 
+    <div style="position: fixed; width: 100%;top: 0; z-index: 2000; color: #000;" class="alert alert-info">
+        La meilleure facon d'apprécier l'expérience Oschool, est de rejoindre un
+        de nos parcours. <a style="color: red;" href="https://code.oschool.ci">Rejoignez-nous maintenant !</a>
+    </div>
+    @endif
+  -->
     <!-- **********************************************************************************************************************************************************
         TOP BAR CONTENT & NOTIFICATIONS
         *********************************************************************************************************************************************************** -->
     <!--header start-->
-    <header style="{{ !count(Auth::user()->formations) ? 'top: 0px;' : '' }}" class="header black-bg">
-    @if(!count(Auth::user()->formations))
-      <!--annonce a la udemy-->
-          <div class="ud-app-loader ud-component--smart-bar--app ud-app-loaded" data-module-id="smart-bar" ng-non-bindable="">
-            <div data-purpose="smart-bar-wrapper" class="mb0 " style="margin-bottom: 0px;">
-                <div data-purpose="smart-bar-container" class="" style="height: auto;">
-                    <div style="width: 104%;margin-left: -15px;" data-purpose="smart-bar" class="smart-bar--smart-bar--1rOkE smart-bar--smart-bar--teal--Qijai smart-bar--smart-bar-dark-theme--18ulO"><span style="font-size: 0px;"></span>
-                        <div class="smart-bar--smart-bar__content--3X42a basic-with-timer--centered-content--QtJd8">
-                            <div data-purpose="basic-with-timer" class="basic-with-timer--centered-content__text--2t0l3">
-                              <span data-purpose="smart-bar-copy" class="">
-                                <span class="smart-bar--smart-bar__title--1LFsk" data-purpose="smart-bar-title">
-                               Ayez des résolutions ambitieuses en 2019.
-                              </span>
-                               <span class="smart-bar--smart-bar__subtitle--I38FP" data-purpose="smart-bar-subtitle" role="presentation">
-                              Bénéficiez d'un accompagnement pour obtenir un emploi, en vous inscrivant à nos parcours
-                              </span>
-                            </span>
-                            <div data-purpose="smart-bar-timer" class="smart-bar-timer--timer-container--2mwOn"><span data-purpose="timer-x-days-left"> <a style="color: #000;" target="_blank" href="https://code.oschool.ci/ecoleprog">Cliquez ici pour vous inscrire maintenant</a> </span></div>
-                            </div>
-                        </div>
-                        <div aria-label="Close" class="smart-bar--smart-bar__close--3mCup" data-purpose="smart-bar-hide" role="button" tabindex="0"><span class="udi-small udi udi-close"></span></div>
-                    </div>
-                </div>
-              </div>
-            </div>
-
-            <!--fin annonce a la udemy-->
-      @endif
-
+    <header style="{{ !count(Auth::user()->formations) ? 'top: 50px;' : '' }}" class="header black-bg">
       <div class="sidebar-toggle-box">
         <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
       </div>
       <!--logo start-->
       <a href="https://oschool.ci/" class="logo"><img width="100" src="/dashboard/img/thumbnail.png"></a>
       <!--logo end-->
-      <!--si la date d'expiration - 10 jours est inférieur ou égal à aujourd'hui et si la date d'expiration est supérieure ou égale à aujourd'hui-->
-      @if(count(Auth::user()->formations) && !Auth::user()->isTeacher() && !Auth::user()->isAdmin() && Auth::user()->fin_abonnement->subDays(10) <= Carbon\Carbon::now() && Auth::user()->fin_abonnement >= Carbon\Carbon::now())
-      <div class="nav notify-row" id="top_menu">
-        <!--  notification start -->
-        <ul class="nav top-menu">
-          <!-- notification dropdown start-->
-          <li id="header_notification_bar" class="dropdown">
-            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-              <i class="fa fa-bell-o"></i>
-              <span class="badge bg-warning">1</span>
-              </a>
-            <ul class="dropdown-menu extended notification">
-              <div class="notify-arrow notify-arrow-yellow"></div>
-              <li>
-                <p class="yellow">Vous avez une nouvelle notification</p>
-              </li>
-              <li>
-                <a href="#" data-toggle="modal" data-target="#myModal">
-                  <span class="label label-danger"><i class="fa fa-bolt"></i></span>
-                  Votre abonnement expire <br>
-                  le {{Carbon\Carbon::parse(Auth::user()->fin_abonnement)->format('d-m-Y H:i')}}.
-                  </a>
-              </li>
 
-            </ul>
-          </li>
-          <!-- notification dropdown end -->
-        </ul>
-        <!--  notification end -->
-      </div>
 
-      <!--sinon si la date d'expiration est inférieure à aujourd'hui-->
-      @elseif(count(Auth::user()->formations) && !Auth::user()->isTeacher() && !Auth::user()->isAdmin() && Auth::user()->fin_abonnement < Carbon\Carbon::now())
-      <div class="nav notify-row" id="top_menu">
-        <!--  notification start -->
-        <ul class="nav top-menu">
-          <!-- notification dropdown start-->
-          <li id="header_notification_bar" class="dropdown">
-            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-              <i class="fa fa-bell-o"></i>
-              <span class="badge bg-warning">1</span>
-              </a>
-            <ul class="dropdown-menu extended notification">
-              <div class="notify-arrow notify-arrow-yellow"></div>
-              <li>
-                <p class="yellow">Vous avez une nouvelle notification</p>
-              </li>
-              <li>
-                <a href="#" data-toggle="modal" data-target="#myModal">
-                  <span class="label label-danger"><i class="fa fa-bolt"></i></span>
-                  Votre abonnement a expiré. <br>
-                  Merci de le renouveler.
-                  </a>
-              </li>
-
-            </ul>
-          </li>
-          <!-- notification dropdown end -->
-        </ul>
-        <!--  notification end -->
-      </div>
-      @endif
       <div class="top-menu">
 
         <ul class="nav pull-right top-menu">
+
+
+          <li>
+
+            @if(Auth::user()->isAdmin() || Auth::user()->isPartner())
+
+            <a data-toggle="dropdown" class="dropdown-toggle change" href="#">Changer</a>
+            <ul class="dropdown-menu">
+              @if(Auth::user()->isAdmin())
+              <li>
+                <p> <a href="/admin">Tableau de bord admin</a> </p>
+              </li>
+              @endif
+              @if(Auth::user()->isPartner())
+              <li>
+                <p> <a href="/partner">Tableau de bord partenaire</a> </p>
+              </li>
+              @endif
+            </ul>
+
+            @endif
+
+          </li>
+
 
           <li>
 
@@ -225,23 +189,15 @@ drift.load('2uy6g3spxi59');
       <div id="sidebar" class="nav-collapse ">
         <!-- sidebar menu start-->
         <ul style="{{ !count(Auth::user()->formations) ? 'margin-top: 120px;' : '' }}" class="sidebar-menu" id="nav-accordion">
-        <!--  <p class="centered"><a href="{{url('home')}}"><img src="/avatars/users/{{Auth::user()->photo}}" class="img-circle" width="80"></a></p> -->
-          <h5 class="centered">{{Auth::user()->name}} <br> ( student ) </h5>
+          <h5 class="centered">{{Auth::user()->name}} <br> ( Partenaire ) </h5>
           @if(count(Auth::user()->formations))
           <li class="mt">
-            <a href="{{route('classrooms.index')}}">
+            <a href="{{route('formations.index')}}">
               <i class="fa fa-dashboard"></i>
-              <span>Mes sessions</span>
+              <span>Formations</span>
               </a>
           </li>
           @endif
-          <li class="mt">
-            <a href="/documentsStudent">
-              <i class="fa fa-book"></i>
-              <span>Guides étudiants</span>
-              </a>
-          </li>
-
           <li class="mt">
             <a target="_blank" href="https://discord.gg/hhbzcHE">
               <i class="fa fa-group"></i>
@@ -250,52 +206,26 @@ drift.load('2uy6g3spxi59');
           </li>
 
 
-          @auth
-
-          @if(count(Auth::user()->formations))
-
           <li class="mt">
-            <a href="{{ url('progression', Auth::user()) }}">
-              <i class="fa fa-dashboard"></i>
-              <span>Ma progression</span>
+            <a href="#" data-toggle="modal" data-target="#popup2">
+              <i class="fa fa-group"></i>
+              <span>Liste des étudiants</span>
               </a>
           </li>
 
-          @endif
-
-          @if(count(Auth::user()->formations))
           <li class="mt">
-            <a href="{{ url('projets') }}">
-              <i class="fa fa-dashboard"></i>
-              <span>Mes projets</span>
-              </a>
-          </li>
-          @endif
-
-
-
-
-          @if(count(Auth::user()->formations))
-          <li class="mt">
-            <a href="{{url('achats')}}">
+            <a href="/paiements">
               <i class="fa fa-money"></i>
-              <span>Etat de mon abonnement</span>
+              <span>Etat des paiements</span>
             </a>
           </li>
-          @endif
+          <!--
           <li class="mt">
-            <a href="/dashboard-default">
-              <i class="fa fa-laptop"></i>
-              <span>Profil</span>
-              </a>
+            <a href="/rapportProf">
+              <i class="fa fa-user"></i>
+              <span>Sessions des professeurs</span>
+            </a>
           </li>
-        @endauth
-      <!--    <li class="mt">
-            <a href="/programme">
-              <i class="fa fa-calendar"></i>
-              <span>Programme de la formation</span>
-              </a>
-          </li> -->
 
           <!--li>
             <a href="inbox.html">
@@ -348,6 +278,63 @@ drift.load('2uy6g3spxi59');
     </div>
 
     <!--end modal-->
+
+
+
+
+
+    <!-- The Modal -->
+    <div class="modal fade" id="popup2">
+    <div class="modal-dialog">
+    <div class="modal-content">
+
+    <!-- Modal Header -->
+    <div class="modal-header">
+    <h4 style="font-size: 24px;" class="modal-title">Formation concernée</h4>
+    <button type="button" class="close" data-dismiss="modal">&times;</button>
+    </div>
+
+    <!-- Modal body -->
+    <div class="modal-body">
+      <form method="post" action="{{url('formation')}}">
+      {{ csrf_field() }}
+
+      <div class="form-group">
+        <label for="">Pour quelle formation ?</label>
+        <select class="js-select3" name="formation">
+          @foreach(Auth::user()->formations as $formation)
+            <option value="{{ $formation->nom }}">{{ $formation->nom }}</option>
+          @endforeach
+        </select>
+      </div>
+      <button type="submit" class="btn btn-primary">Envoyer</button>
+      </form>
+    </div>
+
+    <!-- Modal footer -->
+    <div class="modal-footer">
+    <button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
+    </div>
+
+    </div>
+    </div>
+    </div>
+
+    <!--end modal-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <!-- The Modal -->
     <div class="modal fade" id="myModal">

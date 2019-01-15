@@ -68,7 +68,7 @@
 					<div class="wrap-input100 input100-select bg1">
 						<span class="label-input100">Date</span>
                 <div class="form-group has-warning has-feedback">
-                <label for="inputWarning2">Selectionner la date ET l'heure</label>
+                <label for="inputWarning2">Selectionner la date</label>
                 <input class="input100" name="date" type="date" class="form-control" id="inputWarning2" required>
                 <span class="glyphicon glyphicon-warning-sign form-control-feedback"></span>
             </div>
