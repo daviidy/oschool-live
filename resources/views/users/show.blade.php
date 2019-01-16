@@ -210,9 +210,7 @@
                                    @if($etatprogression->user_id == $user->id)
 
                                    <tr>
-                                     @if ($loop->iteration == 1)
-                                       <td>{{$formation->nom}}</td>
-                                     @endif
+                                     <td>{{$formation->nom}}</td>
                                      <td> <a target="_blank" href="{{$progression->lien}}">{{$progression->titre}}</a> </td>
                                      <td style="display: flex; flex-wrap: wrap;">
 
@@ -255,7 +253,7 @@
                                <td style="display: flex; flex-wrap: wrap;">
 
 
-                                 <p style="color: orange;">Aucun</p>
+                                 <p style="color: orange;">Aucun</p> 
 
                                  <div style="margin-left: 15px;" class="dropdown">
                                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">

@@ -19,7 +19,7 @@ class EtatprogressionController extends Controller
 
     //valider la progression d'un étudiant
 
-    public function valider(Etatprogression $etatprogression)
+    public function valider(Etatprogression $etatprogression) 
     {
       $etatprogression->update([
         'statut' => 'Validé'
