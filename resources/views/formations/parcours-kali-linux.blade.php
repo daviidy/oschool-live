@@ -113,9 +113,9 @@
     <!---->
     <!---->
     <!---->
-    <h6 class="details" _ngcontent-c29="" class="ng-star-inserted">Langue</h6>
+    <h6 class="details" _ngcontent-c29="" class="ng-star-inserted">Lieu et Prix</h6>
     <!---->
-    <h5 _ngcontent-c29="" class="ng-star-inserted">Francais</h5>
+    <h5 _ngcontent-c29="" class="ng-star-inserted">Koumassi Fanny / 10 000 FCFA</h5>
     <!---->
     <!---->
     <!---->
