@@ -30,10 +30,10 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
   <title>Parcours Oschool | @yield('title')</title>
-  <meta name="description" content="Nous résolvons vos problèmes les plus teigneux">
-  <meta itemprop="name" content="Oui! Patron | Nous résolvons vos problèmes les plus teigneux">
-  <meta itemprop="description" content="Nous résolvons vos problèmes les plus teigneux">
-  <meta itemprop="image" content="https://hackr.io/assets/images/code-images/code-logo-120.png">
+  <meta name="description" content="Formation 100% en ligne auprès des meilleures universités et entreprises d'Afrique">
+  <meta itemprop="name" content="Formation 100% en ligne auprès des meilleures universités et entreprises d'Afrique">
+  <meta itemprop="description" content="Formation 100% en ligne auprès des meilleures universités et entreprises d'Afrique">
+  <meta itemprop="image" content="https://code.oschool.ci/img/page-parcours/ordi.png">
 
   <meta name="csrf-token" content="lpdr45sh6CANKvxJNhj9RwfiwgSVIzxefKeSOjA7">
 
