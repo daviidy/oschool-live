@@ -25,13 +25,13 @@
             </span>
             <section class="rc-MobileNav bgcolor-white bt3-hidden-sm bt3-hidden-md bt3-hidden-lg" data-affix="true" data-z-index="10000" data-affix-restore-style-attribute="true" data-affix-offset-y="0" data-affix-use-percentage-width="true">
               <div class="mobile-nav-contents horizontal-box align-items-spacebetween">
-                <h3 class="nav-degree-name flex-1">Master Finances et Comptabilité</h3><button class="primary comfy nav-action-button">Plus d'infos</button>
+                <h3 class="nav-degree-name flex-1">Master en Informatique et Développeur d'Applications</h3><button class="primary comfy nav-action-button">Plus d'infos</button>
               </div>
             </section>
             <div class="degree-header-sticky-wrapper">
               <div class="rc-DegreeHeader rc-DegreeHeaderCms" style="background: linear-gradient(324.97deg, rgb(0, 15, 58) 0%, rgb(1, 37, 110) 100%);">
                 <div class="header-container">
-                  <div class="gradient-background" style="background: #313B3D;"></div>
+                  <div class="gradient-background" style="background: #4D90CC;"></div>
                   <div class="background-image" style="background-image: url(&quot;http://esccastaing.com/wp-content/uploads/2018/09/vector.jpg&quot;); opacity: 1;"></div>
                   <div class="content-container bt3-container horizontal-box">
                     <div class="content bt3-col-xs-12 bt3-col-sm-12 bt3-col-md-12 bt3-col-lg-12">
@@ -48,8 +48,8 @@
                           </div>
                         </div>
                       </div>  -->
-                      <h2 class="display-5-text degree-name">Master Finances et Comptabilité</h2>
-                      <img src="http://www.cefiat.ci/design/images/favicon.png" alt=""
+                      <h2 class="display-5-text degree-name">Master en Informatique et Développeur d'Applications</h2>
+                      <img src="http://concepts.educarriere.ci/excellence/archives/pictures/etep.jpg" alt=""
                         class="degree-logo">
                     </div>
                   </div>
@@ -72,7 +72,7 @@
                           <li class=""><a data-click-key="ddp.ddp_page.click.nav_item_admissions" data-click-value="{&quot;namespace&quot;:{&quot;app&quot;:&quot;ddp&quot;,&quot;page&quot;:&quot;ddp_page&quot;,&quot;component&quot;:&quot;nav_item_admissions&quot;,&quot;action&quot;:&quot;click&quot;},&quot;schema_type&quot;:&quot;FRONTEND&quot;,&quot;href&quot;:&quot;#admissions&quot;}"
                               data-track="true" data-track-app="ddp" data-track-page="ddp_page" data-track-action="click" data-track-component="nav_item_admissions" data-track-href="#admissions" href="#admissions" to="#admissions">Admissions</a></li>
                           <li class=""><a data-click-key="ddp.ddp_page.click.nav_item_partner" data-click-value="{&quot;namespace&quot;:{&quot;app&quot;:&quot;ddp&quot;,&quot;page&quot;:&quot;ddp_page&quot;,&quot;component&quot;:&quot;nav_item_partner&quot;,&quot;action&quot;:&quot;click&quot;},&quot;schema_type&quot;:&quot;FRONTEND&quot;,&quot;href&quot;:&quot;#partner&quot;}"
-                              data-track="true" data-track-app="ddp" data-track-page="ddp_page" data-track-action="click" data-track-component="nav_item_partner" data-track-href="#partner" href="#partner" to="#partner"><span>A propos de Groupe CEFIAT</span></a></li>
+                              data-track="true" data-track-app="ddp" data-track-page="ddp_page" data-track-action="click" data-track-component="nav_item_partner" data-track-href="#partner" href="#partner" to="#partner"><span>A propos de ETEP</span></a></li>
                         </ul>
                       </nav>
                       <div class="rc-ApplyNav"><button data-e2e="nav-request-info" class="Button_clbp6a-o_O-secondary_11kxnjh-o_O-md_1jvotax" data-track="true" data-track-app="ddp" data-track-page="ddp_page" data-track-action="[object Object]"
@@ -159,7 +159,7 @@
                                 </svg></div>
                             </a></div>
                           <div class="content-column">
-                            <h4>En savoir plus sur le Master Finances et Comptabilité</h4>
+                            <h4>En savoir plus sur le Master en informatique et technologies de l'information</h4>
                             <p><a data-click-key="ddp.ddp_page.click.video" data-click-value="{&quot;namespace&quot;:{&quot;app&quot;:&quot;ddp&quot;,&quot;page&quot;:&quot;ddp_page&quot;,&quot;component&quot;:&quot;video&quot;,&quot;action&quot;:&quot;click&quot;},&quot;schema_type&quot;:&quot;FRONTEND&quot;,&quot;href&quot;:&quot;https://youtu.be/gRspLYkh3cQ &quot;}"
                                 data-track="true" data-track-app="ddp" data-track-page="ddp_page" data-track-action="click" data-track-component="video" data-track-href="https://youtu.be/gRspLYkh3cQ " href="https://youtu.be/gRspLYkh3cQ " to="https://youtu.be/gRspLYkh3cQ "
                                 target="_blank" rel="noopener noreferrer">Regarder la vidéo</a></p>
@@ -279,7 +279,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="rc-EoiContainer" style="background-color: #313B3D;"><a class="rc-Anchor" name="request-info"></a>
+                  <div class="rc-EoiContainer" style="background-color: #4D90CC;"><a class="rc-Anchor" name="request-info"></a>
               <!--      <div class="background-images"><img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://s3.amazonaws.com/coursera_assets/ddp/sections/eoi/top-left-corner-bg.png?auto=format%2Ccompress&amp;dpr=1&amp;w=&amp;h="
                         srcset="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://s3.amazonaws.com/coursera_assets/ddp/sections/eoi/top-left-corner-bg.png?auto=format%2Ccompress&amp;dpr=2&amp;w=&amp;h= 2x, https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://s3.amazonaws.com/coursera_assets/ddp/sections/eoi/top-left-corner-bg.png?auto=format%2Ccompress&amp;dpr=3&amp;w=&amp;h= 3x"
                         class="top-left-background-image" alt=""><img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://s3.amazonaws.com/coursera_assets/ddp/sections/eoi/bottom-right-corner-bg.png?auto=format%2Ccompress&amp;dpr=1&amp;w=&amp;h="
@@ -299,7 +299,7 @@
                             <!-- /react-text -->
                           </p>
                         </div>
-                        <img src="http://www.cefiat.ci/design/images/favicon.png " class="partner-logo" alt="" height="48">
+                        <img src="http://concepts.educarriere.ci/excellence/archives/pictures/etep.jpg " class="partner-logo" alt="" height="48">
                       </div>
                       <div>
                         <div class="rc-Column bt3-col-xs-12 bt3-col-md-1"></div>
@@ -307,7 +307,7 @@
                           <div id="eoi" class="rc-EoiForm">
                             <div>
                               <div class="rc-EoiHeader">
-                                <h3 class="H4_1k76nzj-o_O-weightLighter_1qi0fkl-o_O-fontHeadline_1uu0gyz">Master Finances et Comptabilité</h3>
+                                <h3 class="H4_1k76nzj-o_O-weightLighter_1qi0fkl-o_O-fontHeadline_1uu0gyz">Master en Informatique et Développeur d'Applications</h3>
                               </div>
                               <hr class="form-border" aria-hidden="true">
                               <div class="rc-EoiBody">
@@ -663,7 +663,7 @@
                         <div class="slanted-content">
                           <div class="left-slanted-shape"></div>
                           <div class="slanted-content-inner">
-                            <h2 class="heading"><span>A propos de Groupe CEFIAT</span></h2>
+                            <h2 class="heading"><span>A propos de ETEP</span></h2>
                             <div class="rc-Markdown styled">
                               <p><em>
                                   <!-- react-text: 559 -->Pour raconter l’histoire de notre école, il faut tout d’abord rendre hommage à sa fondatrice, Jeannine Castaing.</em></p>

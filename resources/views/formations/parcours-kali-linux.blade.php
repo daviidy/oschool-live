@@ -1,6 +1,6 @@
 @extends('layouts.menu-parcours')
 
-@section('title', 'Développeur Web Junior')
+@section('title', 'Atelier Pratique Hacking Ethique avec Kali Linux')
 
 @section('content')
 

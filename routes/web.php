@@ -45,9 +45,34 @@ $user->notify(new Newinfo("A new user has visited on your application."));
 Route::get('/', 'UserController@accueil');
 
 
+
+
+
+
 Route::get('/castaing', function () {
     return view('formations.template-castaing');
 });
+
+Route::get('/cefiat', function () {
+    return view('formations.template-cefiat');
+});
+
+Route::get('/esma', function () {
+    return view('formations.template-esma');
+});
+
+Route::get('/etep', function () {
+    return view('formations.template-etep');
+});
+
+Route::get('/epcci', function () {
+    return view('formations.template-epcci');
+});
+
+
+
+
+
 
 Route::get('/online', function () {
     return view('online');
