@@ -30,6 +30,7 @@ input[_ngcontent-c18]{font-family:inherit;font-size:inherit;line-height:inherit;
 .col-sm-12[_ngcontent-c18]{width:100%;}
 }
 .adjust-search[_ngcontent-c18]   input[type=text][_ngcontent-c18]{margin-bottom: 2rem !important;margin-top: 3rem !important;padding:1.75em 1.75em;width:100%;border:1px solid #dbe2e8;color:#2e3d49;background:url(https://www.udacity.com/assets/iridium/images/course-catalog/search.svg) calc(100% - 1.4em) center/1.6rem no-repeat #fff;max-width:70rem;outline:0;margin:0 auto;height:3.5rem;font-size:1.5rem;border-radius:8px;display:block;box-shadow:5px 5px 25px 0 rgba(46,61,73,.2);}
+
 </style>
 
 <section id="main-content">
@@ -41,7 +42,7 @@ input[_ngcontent-c18]{font-family:inherit;font-size:inherit;line-height:inherit;
               <div _ngcontent-c18="" class="col-sm-12 adjust-search">
                 <input id="search" _ngcontent-c18="" placeholder="Chercher des utilisateurs" type="text" class="ng-pristine ng-valid ng-touched">
               </div>
-          </div><br><br>
+          </div>
           <h3 align="center">Total des résultats : <span id="total_records"></span></h3>
       </section>
 
