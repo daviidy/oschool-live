@@ -152,7 +152,7 @@ img{max-width:100%;}
           no-underline db dark-blue z-1 bg-white eh-shadow-1
 
           css-quva1q
-        " href="/courses/graphql-data-in-react-with-apollo-client"
+        " href="#"
       aria-label="">
       <div class="
             flex flex-grow-1 flex-column justify-between pointer relative tc
@@ -212,7 +212,7 @@ img{max-width:100%;}
                 </div>
               </div>
             </div>
-          
+
           </div>
         </div>
       </div>
