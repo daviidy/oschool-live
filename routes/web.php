@@ -48,8 +48,8 @@ Route::get('/', 'UserController@accueil');
 
 /*route pour la recherche avec ajax des users*/
 
-Route::get('/live_search', 'LiveSearchController@index');
-Route::get('/live_search/action', 'LiveSearchController@action')->name('live_search.action');
+Route::get('/live_search', 'LiveSearch@index');
+Route::get('/live_search/action', 'LiveSearch@action')->name('live_search.action');
 
 
 

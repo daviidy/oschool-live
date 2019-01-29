@@ -474,7 +474,7 @@ drift.load('2uy6g3spxi59');
 
      fetch_customer_data();
 
-     function fetch_customer_data(query = '')
+     function fetch_customer_data(query = '') 
      {
       $.ajax({
        url:"{{ route('live_search.action') }}",
