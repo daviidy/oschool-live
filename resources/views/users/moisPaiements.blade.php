@@ -63,6 +63,7 @@
                 <tr>
                   <th>Date</th>
                   <th>Utilisateur</th>
+                  <th>Email</th>
                   <th>Formation</th>
                   <th>Montant</th>
                 </tr>
@@ -71,7 +72,8 @@
                 @foreach($achats as $achat)
                 <tr>
                   <td>{{ $achat->date }}</td>
-                  <td>{{$achat->prenoms}}</td>
+                  <td> <a href="{{url('users', $achat->user_id)}}"></a> {{$achat->prenoms}}</td>
+                  <td>{{$achat->email}}</td>
                   <td>{{ $achat->formation }}</td>
                   <td>{{ $achat->montant }} FCFA</td>
                 </tr>

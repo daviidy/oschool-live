@@ -173,6 +173,14 @@ Route::get('/devmobile', function () {
     return view('formations.dev-mobile');
 })->name('dev-mobile');
 
+Route::get('/devmobile', function () {
+    return view('formations.dev-mobile');
+})->name('dev-mobile');
+
+Route::get('/socialmedia', function () {
+    return view('formations.social-media');
+})->name('social-media');
+
 Route::get('/blog', function () {
     return view('formations.blog');
 })->name('blog');
