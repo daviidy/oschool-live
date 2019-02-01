@@ -42,7 +42,13 @@ $user->notify(new Newinfo("A new user has visited on your application."));
 
 })->name('email');
 
+/*
 Route::get('/', 'UserController@accueil');
+*/
+
+Route::get('/', function () {
+    return view('auth.login');
+});
 
 
 
