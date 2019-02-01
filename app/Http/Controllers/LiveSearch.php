@@ -44,7 +44,7 @@ class LiveSearch extends Controller
        {
         $output .= '
         <tr>
-         <td><a href="{{url('users', $student)}}">'.$row->name.'</a></td>
+         <td><a href="/users/'.$row->id.'">'.$row->name.'</a></td>
          <td>'.$row->email.'</td>
          <td>'.$row->type2.'</td>
          <td>'.$row->type3.'</td>
