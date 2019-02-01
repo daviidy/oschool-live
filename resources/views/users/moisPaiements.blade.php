@@ -72,7 +72,7 @@
                 @foreach($achats as $achat)
                 <tr>
                   <td>{{ $achat->date }}</td>
-                  <td> <a href="{{url('users', $achat->user_id)}}"></a> {{$achat->prenoms}}</td>
+                  <td> <a href="{{url('users', $achat->user_id)}}">{{$achat->prenoms}}</a></td>
                   <td>{{$achat->email}}</td>
                   <td>{{ $achat->formation }}</td>
                   <td>{{ $achat->montant }} FCFA</td>
