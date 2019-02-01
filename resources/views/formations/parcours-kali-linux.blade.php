@@ -8,7 +8,7 @@
     <div class="row c-how__heading align-row">
       <div class="col-xs-12 col-sm-6 c-how__headingLeft">
         <h1 style="margin-bottom: 3rem;" class="h2 u-bold ">Apprenez le hacking éthique de A à Z, avec Kali Linux, dans notre atelier</h1>
-        <a class="home_button" href="#payment">
+        <a class="home_button" href="#offres">
           Inscrivez-vous maintenant
         </a>
 
@@ -225,7 +225,7 @@
 
 
 
-        <a class="home_button" href="#payment">
+        <a class="home_button" href="#offres">
           Inscrivez-vous maintenant, n'attendez pas !
         </a>
       </div>
@@ -488,40 +488,10 @@
 
 <!--section prix-->
 
-<section _ngcontent-c18="" id="payment" class="ng-star-inserted">
+<section _ngcontent-c18="" id="offres" class="ng-star-inserted">
   <!---->
   <ir-degree-pricing _ngcontent-c18="" id="nd-pricing" _nghost-c63="" class="ng-star-inserted">
-    <ir-payment-info _ngcontent-c63="" _nghost-c100="" style="display: none;">
-      <div _ngcontent-c100="" class="contain">
-        <div _ngcontent-c100="" class="partnership">
-          <div _ngcontent-c100="" class="logos"><img _ngcontent-c100="" alt="WordMark" deferimgsrc="/assets/iridium/images/logos/udacity-wordmark.svg" irdeferimage="" src="/assets/iridium/images/logos/udacity-wordmark.svg" srcset="/assets/iridium/images/logos/udacity-wordmark.svg 1x">
-            <div _ngcontent-c100="" class="divider"></div><img _ngcontent-c100="" src="/assets/iridium/images/logos/logo-affirm.svg">
-          </div>
-          <div _ngcontent-c100="">
-            <h2 _ngcontent-c100="">Learn now, pay later</h2>
-            <p _ngcontent-c100="">To make it even easier to learn, you can finance your Nanodegree through Affirm.</p>
-          </div>
-        </div>
-        <ul _ngcontent-c100="" class="features">
-          <li _ngcontent-c100="">
-            <div _ngcontent-c100="" class="icon"><img _ngcontent-c100="" alt="Calendar" deferimgsrc="/assets/iridium/images/affirm-installment/icon-calendar.svg" irdeferimage="" src="/assets/iridium/images/affirm-installment/icon-calendar.svg"
-                srcset="/assets/iridium/images/affirm-installment/icon-calendar.svg 1x"></div>
-            <div _ngcontent-c100="" class="feature-description">
-              <h4 _ngcontent-c100="">Easy monthly payments</h4>
-              <p _ngcontent-c100="">As low as US$84 per month at 0% APR.</p>
-              <p _ngcontent-c100=""><a _ngcontent-c100="">Learn more.</a></p>
-            </div>
-          </li>
-          <li _ngcontent-c100="">
-            <div _ngcontent-c100="" class="icon"><img _ngcontent-c100="" alt="Finance" deferimgsrc="/assets/iridium/images/affirm-installment/icon-finance.svg" irdeferimage="" src="/assets/iridium/images/affirm-installment/icon-finance.svg" srcset="/assets/iridium/images/affirm-installment/icon-finance.svg 1x"></div>
-            <div _ngcontent-c100="" class="feature-description">
-              <h4 _ngcontent-c100="">Flexible Payments</h4>
-              <p _ngcontent-c100="">Pay your monthly bill using a bank transfer, check, or debit card.</p>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </ir-payment-info>
+    
     <div _ngcontent-c63="" class="payment-card-section" style="">
       <!---->
       <h2 _ngcontent-c63="" class="text-center ng-star-inserted">Inscrivez-vous maintenant</h2>
@@ -633,7 +603,7 @@
                         <!---->
                         <!---->
                         <!---->
-                        <!----><a _ngcontent-c83="" class="home_button" href="#payment">
+                        <!----><a _ngcontent-c83="" class="home_button" href="#offres">
                             <font style="vertical-align: inherit;">
                                 <font style="vertical-align: inherit;">Inscrivez-vous maintenant </font>
                             </font>
