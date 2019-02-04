@@ -183,9 +183,9 @@ Route::get('/devmobile', function () {
     return view('formations.dev-mobile');
 })->name('dev-mobile');
 
-Route::get('/socialmedia', function () {
-    return view('formations.social-media');
-})->name('social-media');
+Route::get('/community-management', function () {
+    return view('formations.parcours-community-management');
+})->name('community-management');
 
 Route::get('/blog', function () {
     return view('formations.blog');

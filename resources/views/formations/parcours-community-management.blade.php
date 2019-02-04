@@ -1,6 +1,6 @@
 @extends('layouts.menu-parcours')
 
-@section('title', 'Social Media Marketing')
+@section('title', 'Deviens un community manager avec Oschool')
 
 @section('content')
 
@@ -8,10 +8,10 @@
     <div class="row c-how__heading align-row">
       <div class="col-xs-12 col-sm-6 c-how__headingLeft">
         <!-- <h2 class="h2 u-bold text-primary">Hack & Learn <em>React</em></h2> -->
-        <h1 class="h2 u-bold">Deviens Social Média Manager en passant de Zéro à Héro</h1>
+        <h1 class="h2 u-bold">Deviens Community Manager en passant de Zéro à Héro</h1>
         <p class="u-margin-t-md subHeading">Du débutant au professionnel rémunéré.<br>
-           Devenez facilement influenceur et soyez un pro de la communication en ligne.</p>
-        <a class="home_button" href="#payment">
+           Apprenez à gérer la présence des organisations ou des personnalités sur les réseaux sociaux.</p>
+        <a class="home_button" href="#offres">
           Inscrivez-vous maintenant
         </a>
         <p class="u-margin-t-md subHeading">
@@ -106,7 +106,7 @@
   <div class="container alt section-space">
     <div class="row">
       <div class="col-xs-12 text-center">
-        <h3 class="h3 u-bold text-center u-margin-b-sm">Suivez le parcours certifiant de Social Média Marketing et démarrez une nouvelle carrière.</h3>
+        <h3 class="h3 u-bold text-center u-margin-b-sm">Suivez le parcours certifiant de Community Manager et démarrez une nouvelle carrière.</h3>
         <div class="c-browser">
           <div class="c-browser__chrome">
             <div class="c-browser__buttons">
@@ -125,11 +125,14 @@
           <div class="col-xs-12 col-sm-6">
             <div style="text-align: left !important;" class="c-how__sectionContent">
               <h4 class="h4 u-bold">Pourquoi suivre ce parcours ?</h4>
-              <p class="u-margin-t-md subHeading">Souhaitez-vous connaître les  raccourcis vers le succès  en obtenant plus de ventes, du trafic sur votre site Web, la notoriété de la marque et la croissance d'une entreprise à l'aide du marketing par médias sociaux? 
+              <p class="u-margin-t-md subHeading">
+                Ce métier est relativement nouveau. Il y a 10 ans, il n'existait pas. Aujourd'hui, il est en plein essor.
 
-            Aujourd'hui, vous pouvez commercialiser GRATUITEMENT  vos produits, vos services et développer une entreprise en ligne en utilisant les médias sociaux - à des milliards de personnes!
-
-            Êtes-vous prêt à vendre plus de produits, à avoir plus de clients et à développer votre entreprise en utilisant les médias sociaux?</p>
+                Les réseaux sociaux comme Facebook, Instagram, Google+, YouTube, LinkedIn ou encore
+                SnapChat ont profondément changé nos habitudes de consommation. Ces nouveaux médias
+                ont aussi bouleversé la manière dont les
+                organisations, petites, moyennes ou grandes, interagissent avec leurs communautés.
+              </p>
             </div>
           </div>
           <div _ngcontent-c33="" class="col-xs-12 col-sm-6 stat ng-star-inserted">
@@ -151,111 +154,14 @@
 
 
 
-        <a class="home_button" href="#payment">
+        <a class="home_button" href="#offres">
           Inscrivez-vous maintenant, n'attendez pas !
         </a>
       </div>
     </div>
   </div>
-  <div class="container alt section-space">
-    <div class="row">
-      <div class="col-xs-12">
-        <h3 class="h3 u-bold text-center u-margin-b-sm u-margin-t-sm">Comment ca marche ?</h3>
-        <p class="subHeading text-center">Vous verrez, c'est rapide et simple</p>
-      </div>
-    </div>
-    <div class="row u-margin-t-xxx-lg align-row">
-      <div class="col-xs-12 col-sm-6">
-        <div class="c-how__section">
-          <div class="c-how__sectionImages">
-            <img src="/img/page-parcours/feature1.png" />
-          </div>
-        </div>
-      </div>
-      <div class="col-xs-12 col-sm-6">
-        <div class="text-center">
-          <img alt="Soutien aux mentors et révision du code professionnel" src="/img/page-parcours/video.svg"
-                  srcset="/img/page-parcours/video.svg 1x">
 
-        </div>
-              <h4>
-                <font style="vertical-align: inherit;">
-                  <font style="vertical-align: inherit;">Apprenez chaque semaine en télé présentiel, avec un formateur dédié.</font>
-                </font>
-              </h4>
-              <p style="margin-bottom: 5rem;">
-                <font style="vertical-align: inherit;">
-                  <font style="vertical-align: inherit;">Votre formateur se fera un plaisir de vous dispenser les cours, selon ton emploi du temps, et ce, peu importe où vous êtes, du moment où vous avez l'accès Internet. </font>
-                  <font style="vertical-align: inherit;">Des experts examineront votre travail et vous fourniront des commentaires concrets pour vous aider à progresser avec succès dans le programme.</font>
-                </font>
-              </p>
-              <div class="text-center">
-                <img alt="Construire un portefeuille de CV Digne de projets" src="/img/page-parcours/talk.svg"
-                    srcset="/img/page-parcours/talk.svg 1x">
-              </div>
-
-              <h4>
-                <font style="vertical-align: inherit;">
-                  <font style="vertical-align: inherit;">Construisez un portfolio en réalisant des projets de la vie réelle</font>
-                </font>
-              </h4>
-              <!---->
-              <p class="ng-star-inserted">
-                <font style="vertical-align: inherit;">
-                  <font style="vertical-align: inherit;">Vous construirez de vrais projets démontrant votre maîtrise des compétences enseignées. Ces projets constitueront un portefeuille pouvant être partagé avec des employeurs potentiels. </font>
-                  <font style="vertical-align: inherit;">Nos partenaires d'embauche examinent régulièrement ces portefeuilles lorsqu'ils recherchent des candidats qualifiés.</font>
-                </font>
-              </p>
-            </div>
-          </div>
-
-          <div class="row u-margin-t-xxx-lg align-row">
-            <div class="col-xs-12 col-sm-6">
-              <div class="text-center">
-                <img alt="Soutien aux mentors et révision du code professionnel" src="/img/page-parcours/certificate.svg"
-                        srcset="/img/page-parcours/certificate.svg 1x">
-
-              </div>
-                    <h4>
-                      <font style="vertical-align: inherit;">
-                        <font style="vertical-align: inherit;">Réalisez les projets de la formation et soumettez-les</font>
-                      </font>
-                    </h4>
-                    <p style="margin-bottom: 5rem;">
-                      <font style="vertical-align: inherit;">
-                        <font style="vertical-align: inherit;">Vous rejoindrez une communauté dynamique d'apprenants engagés dans une expérience d'apprentissage intensive et productive de plusieurs mois. </font>
-                        <font style="vertical-align: inherit;">Vous allez donner et recevoir un soutien, établir des liens et rester au courant des tendances dans votre domaine. Nos diplômés citent régulièrement la communauté comme l'une des caractéristiques les plus précieuses de leur expérience dans le programme de formation Oschool.</font>
-                      </font>
-                    </p>
-                    <div class="text-center">
-                      <img alt="Construire un portefeuille de CV Digne de projets" src="/img/page-parcours/members.svg"
-                          srcset="/img/page-parcours/members.svg 1x">
-                    </div>
-
-                    <h4>
-                      <font style="vertical-align: inherit;">
-                        <font style="vertical-align: inherit;">Accès à la communauté dynamique Oschool</font>
-                      </font>
-                    </h4>
-                    <!---->
-                    <p class="ng-star-inserted">
-                      <font style="vertical-align: inherit;">
-                        <font style="vertical-align: inherit;">Vous construirez de vrais projets démontrant votre maîtrise de vos compétences. Ces projets constitueront un portefeuille pouvant être partagé avec des employeurs potentiels. </font>
-                        <font style="vertical-align: inherit;">Nos partenaires d'embauche examinent régulièrement ces portefeuilles lorsqu'ils recherchent des candidats qualifiés.</font>
-                      </font>
-                    </p>
-                  </div>
-                  <div class="col-xs-12 col-sm-6">
-                    <div class="c-how__section">
-                      <div class="c-how__sectionImages">
-                        <img src="/img/page-parcours/feature2.png" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-        </div>
-      </div>
-    </div>
+  @include('includes.works')
 
 
 <!--section career-->
@@ -267,40 +173,14 @@
       <!---->
       <h2 style="font-size: 4rem;font-weight: 300;" _ngcontent-c47="" class="white ng-star-inserted">Développez cette compétence pour aujourd'hui et demain</h2>
       <!---->
-      <p _ngcontent-c47="" class="white ng-star-inserted"><span class="hidden-md-down">Ce parcours de Social Media Marketing  est conçu
+      <p _ngcontent-c47="" class="white ng-star-inserted"><span class="hidden-md-down">Ce parcours de Community Management  est conçu
         pour assurer votre succès à long terme sur le terrain. Les compétences acquises vous prépareront à des
         emplois dans le monde des médias sociaux, et vous serez prêt à apporter une valeur immédiate
         à toute organisation. Nous vous soutiendrons tout au long de votre parcours d'apprentissage.
         De l'acquisition des compétences techniques et professionnelles précieuses,
         jusqu'à l'obtention de l'emploi de vos rêves.</span></p>
     </div>
-    <div _ngcontent-c47="" class="feature-card mb-4 ng-star-inserted">
-      <!---->
-      <div _ngcontent-c47="" class="card ng-star-inserted">
-        <div _ngcontent-c47="" class="line bg-turquoise"></div>
-        <!---->
-        <h5 _ngcontent-c47="" class="title mb-1 ng-star-inserted"><span class="hidden-md-down">Rencontrez nos partenaires d'embauche</span><span class="hidden-lg-up">Rencontrez nos partenaires d'embauche</span></h5>
-        <!---->
-        <p _ngcontent-c47="" class="x-small ng-star-inserted"><span class="hidden-md-down">Les développeurs Web front-end sont en forte demande. Créez votre portefeuille professionnel avec Oschool et ouvrez un monde d'opportunités. Nos partenaires d'embauche sont impatients de vous rencontrer.</span>
-          <span class="hidden-lg-up">Les développeurs Web front-end sont en forte demande. Créez votre portefeuille professionnel avec Oschool et ouvrez un monde d'opportunités. Nos partenaires d'embauche sont impatients de vous rencontrer.</span></p>
-      </div>
-      <div _ngcontent-c47="" class="card ng-star-inserted">
-        <div _ngcontent-c47="" class="line bg-magenta"></div>
-        <!---->
-        <h5 _ngcontent-c47="" class="title mb-1 ng-star-inserted"><span class="hidden-md-down">Réussir avec les recruteurs</span><span class="hidden-lg-up">Réussir avec les recruteurs</span></h5>
-        <!---->
-        <p _ngcontent-c47="" class="x-small ng-star-inserted"><span class="hidden-md-down">Travaillez avec des professionnels expérimentés pour obtenir des conseils personnalisés sur la manière d’améliorer votre recherche et d’impressionner les recruteurs. Nous vous aidons à peaufiner votre compte LinkedIn et votre CV.</span>
-        <span class="hidden-lg-up">Travaillez avec des professionnels expérimentés pour obtenir des conseils personnalisés sur la manière d’améliorer votre recherche et d’impressionner les recruteurs. Nous vous aidons à peaufiner votre compte LinkedIn et votre CV.</span></p>
-      </div>
-      <div _ngcontent-c47="" class="card ng-star-inserted">
-        <div _ngcontent-c47="" class="line bg-purple"></div>
-        <!---->
-        <h5 _ngcontent-c47="" class="title mb-1 ng-star-inserted"><span class="hidden-md-down">Construire un grand réseau</span><span class="hidden-lg-up">Construire un grand réseau</span></h5>
-        <!---->
-        <p _ngcontent-c47="" class="x-small ng-star-inserted"><span class="hidden-md-down">Oschool, c'est aussi un grand réseau de plus de 2000 étudiants. Prêt à collaborer, partager des références ou embaucher votre propre équipe ? Le réseau des anciens Oschool est là pour vous!</span>
-        <span class="hidden-lg-up">Oschool, c'est aussi un grand réseau de plus de 2000 étudiants. Prêt à collaborer, partager des références ou embaucher votre propre équipe ? Le réseau des anciens Oschool est là pour vous!</span></p>
-      </div>
-    </div>
+    @include('includes.avantages')
     <!---->
   </div>
 </section>
@@ -317,7 +197,7 @@
     <!---->
     <!---->
     <!---->
-    <!----><a _ngcontent-c55="" class="button--secondary lg syllabus-download-button ng-star-inserted" target="_blank" href="https://s3.amazonaws.com/video.udacity-data.com/topher/2018/June/5b189d8e_fend-syllabus-9.0.0/fend-syllabus-9.0.0.pdf">
+    <!----><a _ngcontent-c55="" class="button--secondary lg syllabus-download-button ng-star-inserted" target="_blank" href="https://rikudotechnologies.slack.com/files/U7GSA3W5Q/FD45JD324/programme_du_parcours_social_media_-_feuille_1.pdf">
     Télécharger le programme
     </a>
     <!---->
@@ -330,15 +210,15 @@
         <div _ngcontent-c55="" class="nd-syllabus-term__header__content">
           <!---->
           <h6 _ngcontent-c55="" class="ng-star-inserted">PROGRAMME</h6>
-          <h2 _ngcontent-c55="" class="h3">Social Media Marketing</h2>
+          <h2 _ngcontent-c55="" class="h3">Community Management</h2>
           <!---->
-          <p _ngcontent-c55="" class="small hidden-md-down ng-star-inserted">Le programme de Social Media Marketing Junior
+          <p _ngcontent-c55="" class="small hidden-md-down ng-star-inserted">Le programme de Community Management
             est composé de 7 projets. Avec chaque projet,
             vous allez créer quelque chose qui démontre votre maîtrise des compétences recherchées.
             La complexité des projets varie. En fin de compte,
             vous aurez un portefeuille de projets et un CV digne d'être aprréciés par des employeurs potentiels.</p>
           <!---->
-          <p _ngcontent-c55="" class="small hidden-lg-up ng-star-inserted">Le programme Développeur Web Junior
+          <p _ngcontent-c55="" class="small hidden-lg-up ng-star-inserted">Le programme Développeur Web
             est composé de huit projets. Avec chaque projet,
             vous allez créer quelque chose qui démontre votre maîtrise des compétences recherchées.
             La complexité des projets varie.</p>
@@ -414,7 +294,7 @@
                         <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted">Construire une stratégie de contenu des médias sociaux</h4>
                         <!---->
                       </header>
-                      <p _ngcontent-c95="" class="small mb-half">Le contenu étant l'épine dorsale de votre stratégie de social média, nous commencerons ici par vous montrer les bases de la création de contenu.
+                      <p _ngcontent-c95="" class="small mb-half">Le contenu étant l'épine dorsale de votre stratégie de Community Manager, nous commencerons ici par vous montrer les bases de la création de contenu.
                       </p>
                       <span _ngcontent-c95="" class="part__project text-only ng-star-inserted"><img _ngcontent-c95="" class="icon-middle" src="/img/page-parcours/icon-project.svg"><span
                           _ngcontent-c95="">Améliorez la page d'accueil d'un magazine</span></span>
@@ -498,8 +378,8 @@
                 </p>
                 <!---->
               </aside>
-            </div> 
-          </section>   
+            </div>
+          </section>
           <ir-modal _ngcontent-c95="" class="project-modal ng-tns-c11-11" closebtncolor="white-shadow" _nghost-c11="">
             <div _ngcontent-c11="" class="wrapper modal--no-padding">
               <!---->
@@ -523,7 +403,7 @@
 
 <!--section prix-->
 
-<section _ngcontent-c18="" id="payment" class="ng-star-inserted">
+<section _ngcontent-c18="" id="offres" class="ng-star-inserted">
   <!---->
   <ir-degree-pricing _ngcontent-c18="" id="nd-pricing" _nghost-c63="" class="ng-star-inserted">
     <ir-payment-info _ngcontent-c63="" _nghost-c100="" style="display: none;">
@@ -576,7 +456,7 @@
             <!---->
             <h6 _ngcontent-c101="" class="card__flag ng-star-inserted">Abonnement</h6>
             <div _ngcontent-c101="" class="card--pricing__header">
-              <h5 _ngcontent-c101="">Social Media Marketing</h5>
+              <h5 _ngcontent-c101="">Community Management</h5>
               <!---->
               <div _ngcontent-c101="" class="card__price ng-star-inserted">
                 <!----><span _ngcontent-c101="" class="card__price--current">30.000 FCFA / mois
@@ -603,10 +483,10 @@
               <!---->
               <!---->
               @auth
-              <a _ngcontent-c101="" class="button--primary mb-1 center ng-star-inserted" data-toggle="modal" data-target="#modalSignUp">S'inscrire maintenant</a>
+              <a _ngcontent-c101="" class="button--primary mb-1 center ng-star-inserted" id="orange">S'inscrire maintenant</a>
               @endauth
               @guest
-              <a _ngcontent-c101="" class="button--primary mb-1 center ng-star-inserted" href="/login">S'inscrire maintenant</a>
+              <a _ngcontent-c101="" class="button--primary mb-1 center ng-star-inserted" data-toggle="modal" data-target="#inscription">S'inscrire maintenant</a>
               @endguest
               <!---->
               <!---->
@@ -641,7 +521,7 @@
                 <!---->
                 <h4 _ngcontent-c77="" class="h2 nd-bottom-cta-content__title ng-star-inserted">
                     <font style="vertical-align: inherit;">
-                        <font style="vertical-align: inherit;">Devenez Développeur Marketeur</font>
+                        <font style="vertical-align: inherit;">Devenez Community Manager</font>
                     </font>
                 </h4>
                 <!---->
@@ -667,7 +547,7 @@
                         <!---->
                         <!---->
                         <!---->
-                        <!----><a _ngcontent-c83="" class="home_button" href="#payment">
+                        <!----><a _ngcontent-c83="" class="home_button" href="#offres">
                             <font style="vertical-align: inherit;">
                                 <font style="vertical-align: inherit;">Inscrivez-vous maintenant </font>
                             </font>
@@ -694,7 +574,9 @@
 <!--fin section appel a l'action-->
 
 
+@include('includes.registration')
 
+@include('includes.login')
 
 
 
