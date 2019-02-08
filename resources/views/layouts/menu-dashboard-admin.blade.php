@@ -208,6 +208,7 @@ drift.load('2uy6g3spxi59');
                 </a>
 
               </li>
+              <!--
               <li>
 
                 <a  style="border-radius:8px; text-decoration: underline; background-color: transparent;" class="logout" href="{{ route('supportformations.create') }}">
@@ -215,6 +216,7 @@ drift.load('2uy6g3spxi59');
                 </a>
 
               </li>
+            -->
               <li>
 
                 <a  style="border-radius:8px; text-decoration: underline; background-color: transparent;" class="logout" href="{{ route('formations.create') }}">
@@ -474,7 +476,7 @@ drift.load('2uy6g3spxi59');
 
      fetch_customer_data();
 
-     function fetch_customer_data(query = '') 
+     function fetch_customer_data(query = '')
      {
       $.ajax({
        url:"{{ route('live_search.action') }}",

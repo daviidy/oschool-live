@@ -247,6 +247,13 @@ drift.load('2uy6g3spxi59');
               <span>Mes sessions</span>
               </a>
           </li>
+
+          <li class="mt">
+            <a href="{{url('mes-etudiants')}}">
+              <i class="fa fa-users"></i>
+              <span>Mes étudiants</span>
+              </a>
+          </li>
           @endif
 
           <li class="mt">

@@ -19,7 +19,7 @@
 
         <div class="wrap-input100 validate-input" data-validate = "Etudiant">
           <label for="">Titre de la progression</label>
-          <input class="input100" type="text" name="titre" placeholder="Nom du support de cours en général...">
+          <input class="input100" type="text" name="titre" placeholder="Nom du support de cours...">
           <span class="focus-input100"></span>
           <span class="symbol-input100">
             <i class="fa fa-laptop" aria-hidden="true"></i>

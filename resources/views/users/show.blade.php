@@ -58,11 +58,13 @@
                   @endif
                   @if ($user->type == 'default' && $user->type2 != 'teacher' && $user->type3 != 'admin')
                     @if(Auth::user()->isAdmin() || Auth::user()->isTeacher())
+                  <!--
                   <li>
                     <a data-toggle="tab" href="#progressions">Les progressions de {{$user->name}}</a>
                   </li>
+                -->
                   <li>
-                    <a data-toggle="tab" href="#projets">Les livrables de {{$user->name}}</a>
+                    <a data-toggle="tab" href="#projets">Les projets de {{$user->name}}</a>
                   </li>
                     @endif
                   @endif
@@ -190,7 +192,7 @@
                      </div>
                   </div>
                   <!-- /tab-pane -->
-
+                  <!--
                   <div id="progressions" class="tab-pane">
                     <div class="container">
                        <h2>Progressions de {{$user->name}}</h2>
@@ -253,7 +255,7 @@
                                <td style="display: flex; flex-wrap: wrap;">
 
 
-                                 <p style="color: orange;">Aucun</p> 
+                                 <p style="color: orange;">Aucun</p>
 
                                  <div style="margin-left: 15px;" class="dropdown">
                                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
@@ -286,7 +288,7 @@
                          </tbody>
                        </table>
                      </div>
-                  </div>
+                  </div>-->
                   <!-- /tab-pane -->
 
                   <div id="projets" class="tab-pane">

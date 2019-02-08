@@ -70,6 +70,20 @@ class HomeController extends Controller
     }
 
 
+
+    //fonction qui s'exécute quand l'user va a la racine de l'app
+    public function racine() {
+
+      if (Auth::check()) {
+        return view('auth.login');
+      }
+      else {
+        return redirect('home');
+      }
+
+    }
+
+
     //route vers le profi user
 
     public function dashboard()

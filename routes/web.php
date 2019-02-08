@@ -42,13 +42,8 @@ $user->notify(new Newinfo("A new user has visited on your application."));
 
 })->name('email');
 
-/*
-Route::get('/', 'UserController@accueil');
-*/
 
-Route::get('/', function () {
-    return view('auth.login');
-});
+Route::get('/', 'HomeController@racine');
 
 
 
@@ -154,6 +149,8 @@ Route::resource('categories','CategorieController');
 Route::post('/inscription', 'UserController@inscription')->name('inscription');
 
 Route::get('/inscrire/{user}', 'UserController@inscrire')->name('inscrire');
+
+Route::get('/mes-etudiants', 'UserController@mesEtudiants')->name('mes-etudiants');
 
 Route::get('/devweb', function () {
     return view('formations.parcours-dev-web');

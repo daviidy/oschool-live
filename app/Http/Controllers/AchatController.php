@@ -52,17 +52,14 @@ class AchatController extends Controller
       Session::put('tel', $request['tel']);
 
       Session::put('formation', $request['formation']);
-      Session::put('promo', $request['promo']);
 
-      $montant = "30000";
+      Session::put('montant', $request['montant']);
 
-      //on verifie si le code promo est exact
+
+      //on verifie si le code promo est exact, sinon on garde le montant initial
       if ($request['promo'] == 'OSCHOOL2019') {
-        $montant = "100";
+        $montant = '100';
         Session::put('montant', $montant);
-      }
-      else {
-        Session::put('montant', $request['montant']);
       }
 
       function postData($params, $url)
@@ -104,7 +101,7 @@ class AchatController extends Controller
           }
           $time = Carbon::now();
           $temps = date("YmdHis");
-        $params = array('cpm_amount' => $montant,
+        $params = array('cpm_amount' => Session::get('montant'),
                         'cpm_currency' => 'CFA',
                         'cpm_site_id' => '113043',
                         'cpm_trans_id' => $temps,
@@ -113,7 +110,7 @@ class AchatController extends Controller
                         'cpm_page_action' => 'PAYMENT',
                         'cpm_version' => 'V1',
                         'cpm_language' => 'fr',
-                        'cpm_designation' => 'Achat Parcours Oschool',
+                        'cpm_designation' => 'Achat Oschool Live',
                         'apikey' => '134714631658c289ed716950.86091611',
                         );
         $url = "https://api.cinetpay.com/v1/?method=getSignatureByPost";
@@ -135,7 +132,7 @@ class AchatController extends Controller
                                      'temps' => $temps,
                                      'time' => $time,
                                      'achats' => $achats,
-                                     'montant' => $montant,
+                                     'montant' => Session::get('montant'),
                                      'formations' => $formations,
                                    ]);
 
@@ -211,10 +208,7 @@ class AchatController extends Controller
 
         $achats= Achat::orderby('id','asc')->paginate(30);
 
-        /*
-        Session::put('trans_id', $temps);
 
-        */
         //on stocke la signature dans la variable session pour une
         //utilisation ultérieure
 
@@ -233,20 +227,20 @@ class AchatController extends Controller
     }
 
 
+
     public function notify(Request $request){
 
       //cinetpay envoie a l'app des données en post apres le premier api call
       //il faut decoder la reponse et en ressortir les parametres apikey, site i et trans id
 
-    /*  $trans_id = Session::get('trans_id');
-    */
+
 
     //on récupère la signature stockée dans la bdd (session a vrai dire ;)
       $oldSignature = Session::get('signature');
 
       //on fait un api call a https://api.cinetpay.com/v1/?method=checkPayStatus avec
       //les donnees recueillies dans $request (trans_id et site_id)
-      //apikey etant deja connu et a notre disposition
+      //et notre apikey etant deja connu
 
       function postData($params, $url)
           {
@@ -299,7 +293,7 @@ class AchatController extends Controller
 
         //apres avoir décodé la reponse de l'apî call on fait les tests
 
-      if ($json->transaction->cpm_result == '00' && $json->transaction->cpm_amount == '100' && $json->transaction->signature == $oldSignature) {
+      if ($json['transaction']['cpm_result'] == '00' && $json['transaction']['cpm_amount'] == '100' && $json['transaction']['signature'] == $oldSignature) {
 
         $achat=Achat::create([
                           'email' => Session::get('email'),
@@ -307,7 +301,8 @@ class AchatController extends Controller
                           'prenoms' => Session::get('prenoms'),
                           'tel' => Session::get('tel'),
                           'montant' => Session::get('montant'),
-                          'formation' => Session::get('formation')
+                          'formation' => Session::get('formation'),
+                          'date' => Carbon::now()
                         ]);
 
        //envoi mail utilisateur
@@ -335,6 +330,8 @@ class AchatController extends Controller
 
 
     } //fin fonction notify
+
+
 
     /**
      * Pour une nouvelle inscription
