@@ -358,7 +358,7 @@ h3{page-break-after:avoid;}
                         @foreach($formation->projets as $key => $projet)
                           @if (!Auth::user()->worked($projet->id))
                             @if($key == 0)
-                        <p><i class="la la-map-marker"></i>Projet en cours: {{$projet->titre}}</p>
+                        <p><i class="fa fa-laptop"></i>Projet en cours: {{$projet->titre}}</p>
                             @endif
                           @endif
                         @endforeach
@@ -466,6 +466,11 @@ h3{page-break-after:avoid;}
 
 
       <div class="col-sm-12">
+
+        <h3>Ou lisez les contenus ci-dessous en format texte</h3>
+
+
+
         @if(Auth::user()->type2 == "teacher" || Auth::user()->statut == "OK")
         @foreach(Auth::user()->formations as $formation)
           @foreach($formation->progressions->sortBy('id') as $progression)
