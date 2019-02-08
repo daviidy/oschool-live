@@ -86,7 +86,7 @@ drift.load('2uy6g3spxi59');
 
 <script>
 // Set the date we're counting down to
-var countDownDatePath = new Date("Feb 01, 2019 23:59:59").getTime();
+var countDownDatePath = new Date("Mar 01, 2019 23:59:59").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {

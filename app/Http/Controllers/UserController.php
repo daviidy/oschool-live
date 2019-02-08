@@ -118,6 +118,24 @@ class UserController extends Controller
     }
 
 
+    //fonction pour permettre aux profs de voir ses etudiants
+
+    public function mesEtudiants()
+
+    {
+      if (Auth::check() && Auth::user()->type2 == 'teacher') {
+        return view('users.etudiants');
+      }
+      else {
+        return redirect('home');
+      }
+
+    }
+
+
+
+
+
     //fonction pour voir la page facturation du professeur
     public function moisFactures(Request $request)
 

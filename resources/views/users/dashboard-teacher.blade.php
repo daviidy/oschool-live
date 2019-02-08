@@ -44,12 +44,14 @@
                   <li>
                     <a data-toggle="tab" href="#contact" class="contact-map">Modifier le profil</a>
                   </li>
+                  <!--
                   @auth
                   @if (Auth::user()->isTeacher())
                   <li>
                     <a data-toggle="tab" href="#edit">Liste des étudiants</a>
                   </li>
                   @endif
+                -->
                   @if (!Auth::user()->isAdmin() && !Auth::user()->isTeacher())
                   <li>
                     <a data-toggle="tab" href="#projets">Etat de mes projets</a>
@@ -187,10 +189,10 @@
                     </div>
                     <!-- /row -->
                   </div>
-                  <!-- /tab-pane -->
+                  <!-- /tab-pane
                   @auth
                   @if (Auth::user()->isTeacher() || Auth::user()->isAdmin())
-                  <!-- LISTE DES ETUDIANTS -->
+                  <!-- LISTE DES ETUDIANTS
                   <div id="edit" class="tab-pane">
                      <div class="container">
                         <h2>LISTE DES ETUDIANTS </h2>
@@ -216,8 +218,8 @@
                       </div>
 
                  </div>
-                                   <!-- LISTE DES ETUDIANTS FIN -->
-                @endif
+                                    LISTE DES ETUDIANTS FIN
+                @endif -->
                 @if (!Auth::user()->isTeacher() && !Auth::user()->isAdmin())
                 <!-- LISTE DES ETUDIANTS -->
                 <div id="projets" class="tab-pane">

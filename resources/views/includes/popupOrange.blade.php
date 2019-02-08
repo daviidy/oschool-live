@@ -121,7 +121,7 @@ body *{box-sizing:border-box;}
           </div>
           <div class="reset-password-modal--form--3tY3s">
             <button id="achat2" type="button" class="index--primary--P14pO index--_btn--9nYKH  index--standard--3U4zZ" style="cursor: pointer;">
-              <a style="color:white;" href="#offres">
+              <a style="color:white;" href="#" data-toggle="modal" data-target="#modalSignUp">
                 J'ai compris
               </a>
             </button>

@@ -3526,6 +3526,7 @@ ul.chat-available-user li a:hover {
 
 .site-footer p {
   margin-bottom: 5px;
+	color: #fff !important;
 }
 
 .credits, .credits a {

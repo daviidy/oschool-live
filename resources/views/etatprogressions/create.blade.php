@@ -44,7 +44,7 @@
 						<span class="label-input100">Progressions</span>
 						<div>
 							<select class="js-select3" name="progression_id">
-								<option selected>Selectionner une partie</option>
+								<option selected>Sélectionner une partie</option>
 								@foreach($progressions->sortBy('id') as $progression)
 								<option value="{{ $progression->id }}">{{ $progression->titre }}</option>
 								@endforeach
