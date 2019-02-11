@@ -156,6 +156,10 @@ Route::get('/devweb', function () {
     return view('formations.parcours-dev-web');
 })->name('devweb');
 
+Route::get('/devweb2', function () {
+    return view('formations.parcours-dev-web2');
+})->name('devweb2');
+
 Route::get('/facebook-marketing', function () {
     return view('formations.parcours-facebook-marketing');
 })->name('facebook-marketing');

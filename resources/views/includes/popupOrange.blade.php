@@ -99,19 +99,10 @@ body *{box-sizing:border-box;}
             !
           </div>
           <div class="reset-password-modal--description--1y9D1">
-            <!-- react-text: 11 -->Pour t'inscrire au parcours, c'est simple !<br>
+            <!-- react-text: 11 -->Encore une étape !<br>
             <img width="40%" src="http://code.oschool.ci/img/page-parcours/card.png" alt="">
             <!-- /react-text --><br><br>
-            <ul style="text-align: left;">
-              <li>Fais un dépôt Orange Money sur ce numéro: <strong>58-45-06-00</strong> </li>
-              <li>Ensuite, envoie un SMS au même numéro en précisant:</li>
-              <ul>
-                <li>Que tu viens de faire un dépôt</li>
-                <li>Ton Email Oschool</li>
-                <li>Et ton numéro de téléphone</li>
-              </ul>
-              <li>Après quoi, nous t'inscrirons, et tu pourras commencer à apprendre avec un formateur !</li>
-            </ul>
+            <p>Cliques sur le bouton ci-dessous pour t'inscrire.</p>
             <!-- /react-text -->
           </div>
         </div>
@@ -122,7 +113,7 @@ body *{box-sizing:border-box;}
           <div class="reset-password-modal--form--3tY3s">
             <button id="achat2" type="button" class="index--primary--P14pO index--_btn--9nYKH  index--standard--3U4zZ" style="cursor: pointer;">
               <a style="color:white;" href="#" data-toggle="modal" data-target="#modalSignUp">
-                J'ai compris
+                Je m'inscris
               </a>
             </button>
           </div>

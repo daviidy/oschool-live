@@ -293,7 +293,8 @@ class AchatController extends Controller
 
         //apres avoir décodé la reponse de l'apî call on fait les tests
 
-      if ($json['transaction']['cpm_result'] == '00' && $json['transaction']['cpm_amount'] == '100' && $json['transaction']['signature'] == $oldSignature) {
+      if ($json['transaction']['cpm_result'] == '00' && $json['transaction']['cpm_amount'] == '100' && $json['transaction']['signature'] == $oldSignature)
+      {
 
         $achat=Achat::create([
                           'email' => Session::get('email'),
@@ -387,7 +388,7 @@ class AchatController extends Controller
       //inscrire etudiant a la formation
 
         $formation = Formation::where('nom', $request['formation'])->get();
-        $user = User::find($request['user_id']);
+        $user = User::find(Auth::user()->id);
         $user->formations()->attach($formation);
 
         //envoi mail pour notifier l'ajout à une formation
