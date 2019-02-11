@@ -20,4 +20,11 @@ class Projet extends Model
   {
       return $this->hasMany('App\Etatprojet');
   }
+
+  //un projet peut concerner plusieurs progressions
+  public function progressions()
+  {
+    return $this->belongsToMany('App\Progression');
+  }
+
 }

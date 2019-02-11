@@ -354,6 +354,7 @@ h3{page-break-after:avoid;}
                     <div class="emply-resume-info">
                       <h3><a target="_blank" href="https://oschool.ci/course/formation-complete-developpeur-web-2/" title="">{{$formation->nom}}</a></h3>
                       <span><i>{{$formation->projets->count()}}</i> projets</span>
+                      @if(Auth::user()->type2 != 'teacher' && Auth::user()->type3 != 'admin')
                       @foreach(Auth::user()->formations as $formation)
                         @foreach($formation->projets as $key => $projet)
                           @if (!Auth::user()->worked($projet->id))
@@ -363,9 +364,10 @@ h3{page-break-after:avoid;}
                           @endif
                         @endforeach
                       @endforeach
+                      @endif
                     </div>
                     <div class="shortlists">
-                      <a target="_blank" href="https://discord.gg/hhbzcHE" title="">Voir le forum <i class="fa fa-info"></i></a>
+                      <a target="_blank" href="https://oschool.ci/course/formation-complete-developpeur-web-2/  " title="">Voir le cours <i class="fa fa-info"></i></a>
                     </div>
                   </div><!-- Emply List -->
                 @endif

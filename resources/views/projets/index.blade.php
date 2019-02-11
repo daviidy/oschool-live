@@ -134,7 +134,7 @@ hr{box-sizing:content-box;overflow:visible;border:0;height:0;margin-top:0;margin
 
 
     <div class="row mt">
-      <div class="col-lg-12">
+      <div class="col-lg-8">
 
                 @foreach(Auth::user()->formations as $formation)
                   @foreach($formation->projets as $projet)
@@ -143,7 +143,7 @@ hr{box-sizing:content-box;overflow:visible;border:0;height:0;margin-top:0;margin
                         @if($etatprojet->user_id == Auth::user()->id)
                           @include('includes.etatprojet')
                         @endif
-                      @endforeach 
+                      @endforeach
                     @endif
                   @endforeach
                 @endforeach

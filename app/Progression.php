@@ -21,4 +21,10 @@ class Progression extends Model
   {
       return $this->hasMany('App\Etatprogression');
   }
+
+  //une progression peut concerner plusieurs projets
+  public function projets()
+  {
+    return $this->belongsToMany('App\Projet');
+  }
 }
