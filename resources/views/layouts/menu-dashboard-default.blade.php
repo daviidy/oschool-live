@@ -113,7 +113,8 @@ drift.load('2uy6g3spxi59');
                                Jusqu'au 17 février,
                               </span>
                                <span class="smart-bar--smart-bar__subtitle--I38FP" data-purpose="smart-bar-subtitle" role="presentation">
-                              entrez dans le PARCOURS de votre choix à seulement 10.000 FCFA !
+                              entrez dans le PARCOURS de votre choix à seulement 10.000 FCFA, offrez une formation gratuitement
+                              à un être cher !
                               </span>
                             </span>
                             <div data-purpose="smart-bar-timer" class="smart-bar-timer--timer-container--2mwOn"><span data-purpose="timer-x-days-left"> <a style="color: #000;" target="_blank" href="https://oschool.ci/#schools">Cliquez ici pour vous inscrire maintenant</a> </span></div>
