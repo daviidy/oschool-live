@@ -223,7 +223,7 @@ var x = setInterval(function() {
 
 
 
-    <!--annonce a la udemy-
+    <!--annonce a la udemy-->
 		    <div class="ud-app-loader ud-component--smart-bar--app ud-app-loaded" data-module-id="smart-bar" ng-non-bindable="">
 		      <div data-purpose="smart-bar-wrapper" class="mb0 " style="margin-bottom: 0px;">
 		          <div data-purpose="smart-bar-container" class="" style="height: auto;">
@@ -232,13 +232,13 @@ var x = setInterval(function() {
 												<div data-purpose="basic-with-timer" class="basic-with-timer--centered-content__text--2t0l3"><span data-purpose="smart-bar-copy" class=""><span class="smart-bar--smart-bar__title--1LFsk" data-purpose="smart-bar-title">
                           <span data-purpose="smart-bar-copy" class="">
                             <span class="smart-bar--smart-bar__title--1LFsk" data-purpose="smart-bar-title">
-                           Jusqu'au 13 janvier,
+                           Jusqu'au 17 février,
                           </span>
                            <span class="smart-bar--smart-bar__subtitle--I38FP" data-purpose="smart-bar-subtitle" role="presentation">
-                          entrez dans un parcours en programmation de votre choix à seulement 10.000 FCFA !
+                          entrez dans le PARCOURS de votre choix à seulement 10.000 FCFA !
                           </span>
                         </span>
-                        <div data-purpose="smart-bar-timer" class="smart-bar-timer--timer-container--2mwOn"><span data-purpose="timer-x-days-left"> <a style="color: #000;" target="_blank" href="https://code.oschool.ci/ecoleprog">Cliquez ici pour vous inscrire maintenant</a> </span></div>
+                        <div data-purpose="smart-bar-timer" class="smart-bar-timer--timer-container--2mwOn"><span data-purpose="timer-x-days-left"> <a style="color: #000;" target="_blank" href="https://oschool.ci/#schools">Cliquez ici pour vous inscrire maintenant</a> </span></div>
 												</div>
 		                  </div>
 		                  <div aria-label="Close" class="smart-bar--smart-bar__close--3mCup" data-purpose="smart-bar-hide" role="button" tabindex="0"><span class="udi-small udi udi-close"></span></div>
