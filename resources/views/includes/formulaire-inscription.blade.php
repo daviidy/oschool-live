@@ -60,7 +60,7 @@
                   @if(Request::path() == 'devweb2')
                   <option value="100">Montant</option>
                   @else
-                  <option value="30000">Montant</option>
+                  <option value="10000">Montant</option>
                   @endif
                 </select>
                 <i class="input-icon ion-person-stalker"></i>
