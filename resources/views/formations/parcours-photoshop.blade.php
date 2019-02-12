@@ -213,11 +213,8 @@
           <h6 _ngcontent-c55="" class="ng-star-inserted">PROGRAMME</h6>
           <h2 _ngcontent-c55="" class="h3">Designer Photoshop</h2>
           <!---->
-<<<<<<< HEAD
           <p _ngcontent-c55="" class="small hidden-md-down ng-star-inserted">Le programme Designer Photoshop Junior
-=======
           <p _ngcontent-c55="" class="small hidden-md-down ng-star-inserted">Le programme Designer Photoshop
->>>>>>> 55fd322e3ded0ff4105d671617696e85c6337bf5
             est composé de 8 atéliers pratique. Avec chaque atélier,
             vous allez créer quelque chose qui démontre votre maîtrise des compétences recherchées.
             La complexité des projets varie. En fin de compte,
@@ -337,11 +334,8 @@
                       <!---->
                       <!---->
                       <!----><span _ngcontent-c95="" class="part__project text-only ng-star-inserted"><img _ngcontent-c95="" class="icon-middle" src="/img/page-parcours/icon-project.svg"><span
-<<<<<<< HEAD
                           _ngcontent-c95="">Créez votre site personnel</span></span>
-=======
-                          _ngcontent-c95="">Projet</span></span>
->>>>>>> 55fd322e3ded0ff4105d671617696e85c6337bf5
+                          <span _ngcontent-c95="">Projet</span></span>
                       <!---->
                       <!---->
                     </div>
@@ -352,7 +346,6 @@
                       <header _ngcontent-c95="" class="part__header mb-half">
                         <!---->
                         <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted">OUTILS - De nouvelles fonctionnalités</h4>
-<<<<<<< HEAD
                         <!---->
                       </header>
                       <p _ngcontent-c95="" class="small mb-half">
@@ -401,12 +394,10 @@
                       </header>
                       <p _ngcontent-c95="" class="small mb-half">
                        Vous saurez comment faire le détourage de la souris, sa mise à l'échelle, le détourage de la toque de chef, l'ajustement de la toque  et la création de l’ombre portée de la souris.
-=======
                         <!---->
                       </header>
                       <p _ngcontent-c95="" class="small mb-half">
                        Nous verrons entre autres comment organiser son espace de travail, comprendre la notion de pixel, les différentes couleurs, les couches de couleurs ainsi que les styles de calque – Ombres portées et lueurs.
->>>>>>> 55fd322e3ded0ff4105d671617696e85c6337bf5
 
                       </p>
                       <!---->
@@ -419,8 +410,7 @@
                     </div>
                   </li>
 
-<<<<<<< HEAD
-=======
+
               </li>
 
                      <li _ngcontent-c95="" class="ng-star-inserted">
@@ -465,7 +455,6 @@
                     </div>
                   </li>
 
->>>>>>> 55fd322e3ded0ff4105d671617696e85c6337bf5
 
                   <li _ngcontent-c95="" class="ng-star-inserted">
                     <div _ngcontent-c95="" class="part">
@@ -481,12 +470,9 @@
                       <!---->
                       <!---->
                       <!---->
-                      <!----><span _ngcontent-c95="" class="part__project text-only ng-star-inserted"><img _ngcontent-c95="" class="icon-middle" src="/img/page-parcours/icon-project.svg"><span
-<<<<<<< HEAD
-                          _ngcontent-c95="">Créez votre site personnel</span></span>
-=======
-                          _ngcontent-c95="">Projet</span></span>
->>>>>>> 55fd322e3ded0ff4105d671617696e85c6337bf5
+                      <!----><span _ngcontent-c95="" class="part__project text-only ng-star-inserted"><img _ngcontent-c95="" class="icon-middle" src="/img/page-parcours/icon-project.svg">
+                          <span _ngcontent-c95="">Créez votre site personnel</span></span>
+                        <span  _ngcontent-c95="">Projet</span></span>
                       <!---->
                       <!---->
                     </div>
@@ -507,11 +493,8 @@
                       <!---->
                       <!---->
                       <!----><span _ngcontent-c95="" class="part__project text-only ng-star-inserted"><img _ngcontent-c95="" class="icon-middle" src="/img/page-parcours/icon-project.svg"><span
-<<<<<<< HEAD
                           _ngcontent-c95="">Créez votre site personnel</span></span>
-=======
-                          _ngcontent-c95="">Projet</span></span>
->>>>>>> 55fd322e3ded0ff4105d671617696e85c6337bf5
+                          <span_ngcontent-c95="">Projet</span></span>
                       <!---->
                       <!---->
                     </div>
@@ -590,122 +573,7 @@
 
 <!--fin section programme-->
 
-<!--section prix-->
-
-<section _ngcontent-c18="" id="payment" class="ng-star-inserted">
-  <!---->
-  <ir-degree-pricing _ngcontent-c18="" id="nd-pricing" _nghost-c63="" class="ng-star-inserted">
-    <ir-payment-info _ngcontent-c63="" _nghost-c100="" style="display: none;">
-      <div _ngcontent-c100="" class="contain">
-        <div _ngcontent-c100="" class="partnership">
-          <div _ngcontent-c100="" class="logos"><img _ngcontent-c100="" alt="WordMark" deferimgsrc="/assets/iridium/images/logos/udacity-wordmark.svg" irdeferimage="" src="/assets/iridium/images/logos/udacity-wordmark.svg" srcset="/assets/iridium/images/logos/udacity-wordmark.svg 1x">
-            <div _ngcontent-c100="" class="divider"></div><img _ngcontent-c100="" src="/assets/iridium/images/logos/logo-affirm.svg">
-          </div>
-          <div _ngcontent-c100="">
-            <h2 _ngcontent-c100="">Learn now, pay later</h2>
-            <p _ngcontent-c100="">To make it even easier to learn, you can finance your Nanodegree through Affirm.</p>
-          </div>
-        </div>
-        <ul _ngcontent-c100="" class="features">
-          <li _ngcontent-c100="">
-            <div _ngcontent-c100="" class="icon"><img _ngcontent-c100="" alt="Calendar" deferimgsrc="/assets/iridium/images/affirm-installment/icon-calendar.svg" irdeferimage="" src="/assets/iridium/images/affirm-installment/icon-calendar.svg"
-                srcset="/assets/iridium/images/affirm-installment/icon-calendar.svg 1x"></div>
-            <div _ngcontent-c100="" class="feature-description">
-              <h4 _ngcontent-c100="">Easy monthly payments</h4>
-              <p _ngcontent-c100="">As low as US$84 per month at 0% APR.</p>
-              <p _ngcontent-c100=""><a _ngcontent-c100="">Learn more.</a></p>
-            </div>
-          </li>
-          <li _ngcontent-c100="">
-            <div _ngcontent-c100="" class="icon"><img _ngcontent-c100="" alt="Finance" deferimgsrc="/assets/iridium/images/affirm-installment/icon-finance.svg" irdeferimage="" src="/assets/iridium/images/affirm-installment/icon-finance.svg" srcset="/assets/iridium/images/affirm-installment/icon-finance.svg 1x"></div>
-            <div _ngcontent-c100="" class="feature-description">
-              <h4 _ngcontent-c100="">Flexible Payments</h4>
-              <p _ngcontent-c100="">Pay your monthly bill using a bank transfer, check, or debit card.</p>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </ir-payment-info>
-    <div _ngcontent-c63="" class="payment-card-section" style="">
-      <!---->
-      <h2 _ngcontent-c63="" class="text-center ng-star-inserted">Inscrivez-vous maintenant</h2>
-      <!---->
-      <div _ngcontent-c63="" class="cards_contain contain contain--none ng-star-inserted">
-        <!---->
-        <!---->
-        <!---->
-        <!---->
-        <!---->
-        <!---->
-        <!---->
-        <!---->
-        <ir-degree-pricing-card _ngcontent-c63="" _nghost-c101="" class="ng-star-inserted">
-          <div _ngcontent-c101="" class="card card--pricing primary selected more-padding-top">
-            <div _ngcontent-c101="" class="card__triangle"></div>
-            <!---->
-            <h6 _ngcontent-c101="" class="card__flag ng-star-inserted">Abonnement</h6>
-            <div _ngcontent-c101="" class="card--pricing__header">
-              <h5 _ngcontent-c101="">Photoshop</h5>
-              <!---->
-                 <div _ngcontent-c101="" class="card__price ng-star-inserted">
-                <!----><span _ngcontent-c101="" class="card__price--current"><del><h5>30.000 FCFA / mois</h5></del>
-                  <!----></span>
-                   <!----><span _ngcontent-c101="" class="card__price--current2"><h1>10.000 FCFA<br> le premier mois<h1></span>
-              </div>
-              <br>
-              <p _ngcontent-c101="">
-                <!----><span _ngcontent-c101="" class="ng-star-inserted">pendant 4 mois</span>
-                <!---->
-                <!---->
-              </p>
-              <!---->
-              <!---->
-            </div>
-            <div _ngcontent-c101="" class="card--pricing__body">
-              <!---->
-              <p _ngcontent-c101="" class="small ng-star-inserted">Durant votre abonnement, vous aurez accès aux supports de cours, ressources. Et vous bénéficierez d'un formateur personnel pour vous aider à apprendre</p>
-                <li>Suivi pour la réalisation d'un projet de soutenance</li>
-                <li>Obtention d'un certificat</li>
-                <li>Accompagnement pour bâtir un profil de carrière et obtenir un emploi</li>
-              <!---->
-              <!---->
-            </div>
-            <!---->
-            <!---->
-            <!---->
-            <div _ngcontent-c101="" class="button-wrapper ng-star-inserted">
-              <!---->
-              <!---->
-              <!---->
-              @auth
-              <a _ngcontent-c101="" class="button--primary mb-1 center ng-star-inserted" data-toggle="modal" data-target="#modalSignUp">S'inscrire maintenant</a>
-              @endauth
-              @guest
-              <a _ngcontent-c101="" class="button--primary mb-1 center ng-star-inserted" href="/login">S'inscrire maintenant</a>
-              @endguest
-              <!---->
-              <!---->
-              <!---->
-              <!---->
-              <!---->
-              <!---->
-            </div>
-            <!---->
-          </div>
-        </ir-degree-pricing-card>
-        <!---->
-        <!---->
-        <!---->
-      </div>
-      <!---->
-      <!---->
-    </div>
-
-  </ir-degree-pricing>
-</section>
-
-<!--fin section prix-->
-
+@include('includes.offres')
 
 
 

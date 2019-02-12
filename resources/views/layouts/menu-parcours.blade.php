@@ -84,81 +84,6 @@ drift.load('2uy6g3spxi59');
 </script>
 
 
-<script>
-// Set the date we're counting down to
-var countDownDatePath = new Date("Mar 01, 2019 23:59:59").getTime();
-
-// Update the count down every 1 second
-var x = setInterval(function() {
-
-  // Get todays date and time
-  var now = new Date().getTime();
-
-  // Find the distance between now and the count down date
-  var distance = countDownDatePath - now;
-
-  // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-  // Display the result in the element with id="demo"
-  document.getElementById("jours").innerHTML = days;
-
-  document.getElementById("heures").innerHTML = hours;
-
-  document.getElementById("minutes").innerHTML = minutes;
-
-  document.getElementById("secondes").innerHTML = seconds;
-
-  // If the count down is finished, write some text
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("info").innerHTML = "INSCRIPTIONS TERMINEES";
-  }
-}, 1000);
-</script>
-
-
-
-<!--pour kali-->
-
-<script>
-// Set the date we're counting down to
-var countDownDate = new Date("Feb 08, 2019 23:59:59").getTime();
-
-// Update the count down every 1 second
-var x = setInterval(function() {
-
-  // Get todays date and time
-  var now = new Date().getTime();
-
-  // Find the distance between now and the count down date
-  var distance = countDownDate - now;
-
-  // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-  // Display the result in the element with id="demo"
-  document.getElementById("jourskali").innerHTML = days;
-
-  document.getElementById("heureskali").innerHTML = hours;
-
-  document.getElementById("minuteskali").innerHTML = minutes;
-
-  document.getElementById("secondeskali").innerHTML = seconds;
-
-  // If the count down is finished, write some text
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("info").innerHTML = "INSCRIPTIONS TERMINEES";
-  }
-}, 1000);
-</script>
 
 
 
@@ -235,7 +160,8 @@ var x = setInterval(function() {
                            Jusqu'au 17 février,
                           </span>
                            <span class="smart-bar--smart-bar__subtitle--I38FP" data-purpose="smart-bar-subtitle" role="presentation">
-                          entrez dans le PARCOURS de votre choix à seulement 10.000 FCFA !
+                             entrez dans le PARCOURS de votre choix à seulement 10.000 FCFA, offrez une formation gratuitement
+                             à un être cher !
                           </span>
                         </span>
                         <div data-purpose="smart-bar-timer" class="smart-bar-timer--timer-container--2mwOn"><span data-purpose="timer-x-days-left"> <a style="color: #000;" target="_blank" href="https://oschool.ci/#schools">Cliquez ici pour vous inscrire maintenant</a> </span></div>
@@ -440,6 +366,94 @@ var x = setInterval(function() {
     </div>
   </div>
 </footer>
+
+
+
+
+
+
+@if(Request::path() == 'kali-linux')
+
+<!--pour kali-->
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Feb 08, 2019 23:59:59").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get todays date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("jourskali").innerHTML = days;
+
+  document.getElementById("heureskali").innerHTML = hours;
+
+  document.getElementById("minuteskali").innerHTML = minutes;
+
+  document.getElementById("secondeskali").innerHTML = seconds;
+
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("countdown").style.display = "none";
+    document.getElementById("info").innerHTML = "Les inscriptions sont terminées";
+  }
+}, 1000);
+</script>
+
+@else
+
+<script>
+// Set the date we're counting down to
+var countDownDatePath = new Date("Feb 19, 2019 23:59:59").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get todays date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDatePath - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("jours").innerHTML = days;
+
+  document.getElementById("heures").innerHTML = hours;
+
+  document.getElementById("minutes").innerHTML = minutes;
+
+  document.getElementById("secondes").innerHTML = seconds;
+
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("countdown").style.display = "none";
+    document.getElementById("info").innerHTML = "Les inscriptions sont terminées";
+  }
+}, 1000);
+</script>
+
+@endif
+
 
 
 </body>
