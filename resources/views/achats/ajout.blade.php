@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr"> 
 	<head>
 		<title>Parcours Oschool | Ajouter un achat</title>
 		<meta charset="UTF-8">
@@ -90,6 +90,7 @@
 						<span class="label-input100">Montant</span>
 						<div>
 							<select class="js-select3" name="montant">
+									<option>10000</option>
 							    <option>30000</option>
 							</select>
 							<div class="dropDownSelect3"></div>

@@ -12,7 +12,7 @@
               <div _ngcontent-c27="" class="image-container ng-star-inserted" style="background-image: url(&quot;/avatars/projects/{{$projet->image}}&quot;);">
                 <div _ngcontent-c27="" class="image-overlay"></div>
               </div>
-            </a> 
+            </a>
             <!---->
           </div>
           <div _ngcontent-c27="" class="card-content">
@@ -44,17 +44,18 @@
           </div>
         </div>
         <div _ngcontent-c27="" class="card__inner--lower hidden-sm-down">
-          <div _ngcontent-c27="" class="left uppercase blue expander pointer">
-            <!----><span _ngcontent-c27="" class="ng-star-inserted">En savoir plus</span>
+          <div _ngcontent-c27="" class="progression left uppercase blue expander pointer">
+            <!----><span _ngcontent-c27="" class="ng-star-inserted">Ce qu'il faut lire pour réaliser ce projet</span>
             <!---->
           </div>
           <div _ngcontent-c27="" class="right">
             <!----><span _ngcontent-c27="" class="caption text-right level ng-star-inserted"><span _ngcontent-c27="" class="course-level course-level-beginner"></span><span _ngcontent-c27="" class="capitalize">débutant</span></span></div>
         </div>
       </div>
-      <div _ngcontent-c27="" class="card__expander">
+      <div _ngcontent-c27="" class="card__expander progressionDetail">
+        @foreach($projet->progressions as $progression)
         <div _ngcontent-c27="" class="card__expander--summary mb-1">
-          <!----><span _ngcontent-c27="" class="ng-star-inserted">Learn the Unity game engine, C#, and Google Cardboard, and gain foundational VR knowledge and skills.</span></div>
+          <!----><span _ngcontent-c27="" class="ng-star-inserted">{{$progression->titre}}</span></div>
         <hr _ngcontent-c27="">
         <div _ngcontent-c27="" class="card__expander--details">
           <div _ngcontent-c27="" class="rating">
@@ -62,8 +63,9 @@
             <!---->
             <!---->
             <!---->
-          </div><a _ngcontent-c27="" class="button--primary btn" href="/course/vr-foundations-nanodegree--nd105">Learn More</a>
+          </div><a target="_blank" _ngcontent-c27="" class="button--primary btn" href="{{$progression->lien}}">Voir le cours</a>
         </div>
+        @endforeach
       </div>
     </div>
   </ir-catalog-card>
