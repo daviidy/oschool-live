@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Projet;
+
+use App\Progression;
 use Illuminate\Http\Request;
 use Auth;
 use Image;
@@ -36,7 +38,8 @@ class ProjetController extends Controller
     {
       if (Auth::check() && Auth::user()->isAdmin()) {
         $formations = Formation::orderby('id','asc')->paginate(30);
-        return view('projets.create', ['formations' => $formations]);
+        $progressions = Progression::orderby('id','asc')->paginate(30);
+        return view('projets.create', ['formations' => $formations, 'progressions' => $progressions]);
       }
       else {
         return redirect('home');
@@ -62,6 +65,11 @@ class ProjetController extends Controller
 
       $formation = Formation::find($request['formation_id']);
       $projet->formations()->attach($formation);
+
+      //on trouve le projet renseigné dans le formulaire
+      $progression = Progression::find($request['progression_id']);
+      //on lie ce projet à la progression crée
+      $projet->progressions()->attach($progression);
 
       return redirect('home')->with('status', 'Le projet a bien été crée');
     }

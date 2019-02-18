@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Progression;
 use App\Formation;
+use App\Projet;
 use Illuminate\Http\Request;
 use Auth;
 use App\User;
@@ -33,8 +34,9 @@ class ProgressionController extends Controller
       if (Auth::check() && Auth::user()->isAdmin()) {
 
               $formations = Formation::orderby('id','asc')->paginate(30);
+              $projets = Projet::orderby('id','asc')->paginate(30);
 
-              return view('progressions.create', ['formations' => $formations]);
+              return view('progressions.create', ['formations' => $formations, 'projets' => $projets]);
 
 
         }
@@ -87,7 +89,11 @@ class ProgressionController extends Controller
         'session' => $sessionString,
     ]);
     */
-      Progression::create($request->all());
+      $progression = Progression::create($request->all());
+      //on trouve le projet renseigné dans le formulaire
+      $projet = Projet::find($request['projet_id']);
+      //on lie ce projet à la progression crée
+      $progression->projets()->attach($projet);
       return redirect('home')->with('status', 'La progression a bien été crée pour cette formation');
     }
 

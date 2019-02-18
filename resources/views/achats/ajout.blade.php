@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr"> 
 	<head>
 		<title>Parcours Oschool | Ajouter un achat</title>
 		<meta charset="UTF-8">

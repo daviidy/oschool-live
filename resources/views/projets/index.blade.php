@@ -26,7 +26,7 @@ hr{box-sizing:content-box;overflow:visible;border:0;height:0;margin-top:0;margin
 .uppercase{text-transform:uppercase;}
 .capitalize{text-transform:capitalize;}
 
-.button--primary{display:block;cursor:pointer;-webkit-appearance:none;-moz-appearance:none;appearance:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;text-align:center;white-space:nowrap;text-decoration:none;vertical-align:middle;height:3rem;padding:0 .5rem;text-transform:uppercase;font-weight:600;font-size:.8125rem;line-height:2.625rem;-webkit-font-smoothing:antialiased;border-radius:.25rem;letter-spacing:.125rem;transition:.3s;}
+.button--primary{display:block;cursor:pointer;-webkit-appearance:none;-moz-appearance:none;appearance:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;text-align:center;white-space:nowrap;text-decoration:none;vertical-align:middle;height:3rem;padding:0 .5rem;text-transform:uppercase;font-weight:600;font-size:1.5rem;line-height:2.625rem;-webkit-font-smoothing:antialiased;border-radius:.25rem;letter-spacing:.125rem;transition:.3s;}
 .button--primary{box-shadow:8px 10px 20px 0 rgba(46,61,73,.15);}
 .button--primary:hover{box-shadow:2px 4px 8px 0 rgba(46,61,73,.2);}
 .button--primary{width:13.75rem;color:#fff;background-color:#02b3e4;border:.125rem solid transparent;}
@@ -65,7 +65,7 @@ hr{box-sizing:content-box;overflow:visible;border:0;height:0;margin-top:0;margin
 .card__inner--lower[_ngcontent-c27]   .left[_ngcontent-c27]{float:left;}
 .card__inner--lower[_ngcontent-c27]   .right[_ngcontent-c27]{float:right;}
 .card__inner[_ngcontent-c27]   .image_wrapper[_ngcontent-c27]{padding-left:0;padding-right:0rem;float:left;display:block;margin-right:1.69491525%;width:25%;}
-.card__inner[_ngcontent-c27]   .image_wrapper[_ngcontent-c27]   .image-container[_ngcontent-c27]{padding-bottom:6.5rem;min-width:6.5rem;background-repeat:no-repeat;background-position:center;background-size:cover;border-radius:6px;box-shadow:1px 1px 7px #bcc9d4;border:0;position:relative;overflow:hidden;float:left;display:block;margin-right:1.69491525%;width:100%;}
+.card__inner[_ngcontent-c27]   .image_wrapper[_ngcontent-c27]   .image-container[_ngcontent-c27]{padding-bottom:10.5rem;min-width:6.5rem;background-repeat:no-repeat;background-position:center;background-size:cover;border-radius:6px;box-shadow:1px 1px 7px #bcc9d4;border:0;position:relative;overflow:hidden;float:left;display:block;margin-right:1.69491525%;width:100%;}
 .card__inner[_ngcontent-c27]   .image_wrapper[_ngcontent-c27]   .image-container[_ngcontent-c27]:last-child{margin-right:0;}
 .card-wrapper[_ngcontent-c27]   .card__expander[_ngcontent-c27]{transition:max-height .5s ease-in-out;background-color:#fff;box-shadow:5px 5px 25px 0 rgba(46,61,73,.2);border-radius:0 0 .375rem .375rem;}
 .card-wrapper.is-collapsed[_ngcontent-c27]   .card__expander[_ngcontent-c27]{overflow:hidden;width:100%;max-height:0;}
@@ -88,10 +88,10 @@ hr{box-sizing:content-box;overflow:visible;border:0;height:0;margin-top:0;margin
 .card-content[_ngcontent-c27]:last-child{margin-right:0;}
 }
 .card__expander[_ngcontent-c27]{background:linear-gradient(to top left,#f7f7f7,#eafbff);}
-.card__expander--summary[_ngcontent-c27]{font-size:.9rem;padding:1.5rem 4rem 0;}
+.card__expander--summary[_ngcontent-c27]{font-size:1.5rem;padding:1.5rem 4rem 0;}
 .card__expander--details[_ngcontent-c27]{float:left;display:block;margin-right:1.69491525%;width:100%;display:flex;justify-content:space-between;padding:0 4rem 1.5rem;}
 .card__expander--details[_ngcontent-c27]:last-child{margin-right:0;}
-.card__expander--details[_ngcontent-c27]   .btn[_ngcontent-c27]{width:10rem;height:2.5rem;line-height:2.3rem;color:#fff;background-color:#02b3e4;}
+.card__expander--details[_ngcontent-c27]   .btn[_ngcontent-c27]{width:15rem;height:3.5rem;line-height:3.3rem;color:#fff;background-color:#02b3e4;}
 .card[_ngcontent-c27]   .right-sub[_ngcontent-c27]{display:flex;}
 .card[_ngcontent-c27]   .right-sub[_ngcontent-c27]   h4[_ngcontent-c27]{font-size:1.5rem;text-transform:capitalize;margin-top:0;}
 .card[_ngcontent-c27]   .right-sub[_ngcontent-c27]   div[_ngcontent-c27]{float:left;display:block;margin-right:1.69491525%;width:49.15254237%;}
@@ -119,6 +119,100 @@ hr{box-sizing:content-box;overflow:visible;border:0;height:0;margin-top:0;margin
 .tag[_ngcontent-c27]{background:0 0;box-shadow:none;margin:0;}
 }
 .tag--new[_ngcontent-c27]{color:#6854c5;height: 20px;}
+
+
+
+
+
+/*pour le cours recommandé*/
+
+/*! CSS Used from: http://localhost:8000/dashboard/lib/bootstrap/css/bootstrap.min.css */
+
+.col-lg-8{position:relative;min-height:1px;padding-right:15px;padding-left:15px;}
+@media (min-width:1200px){
+.col-lg-8{float:left;}
+.col-lg-8{width:66.66666667%;}
+}
+/*! CSS Used from: http://localhost:8000/dashboard/lib/font-awesome/css/font-awesome.css */
+.fa{display:inline-block;font:normal normal normal 14px/1 FontAwesome;font-size:inherit;text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}
+.fa-info:before{content:"\f129";}
+/*! CSS Used from: http://localhost:8000/dashboard/css/style.css */
+@media print{
+*,:after,:before{background:transparent!important;color:#000!important;box-shadow:none!important;text-shadow:none!important;}
+}
+*,:after,:before{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
+:focus{outline:none;}
+*,:after,:before{box-sizing:border-box;}
+a,a:hover,a:focus{text-decoration:none;outline:none;}
+::selection{background:#4D90CC;color:#fff;}
+::-moz-selection{background:#4D90CC;color:#fff;}
+/*! CSS Used from: Embedded ; media=screen */
+@media screen{
+a{text-decoration:none;}
+*,*::before,*::after{box-sizing:inherit;}
+.col-lg-8{position:relative;width:100%;min-height:1px;padding-right:15px;padding-left:15px;}
+@media (min-width: 992px){
+.col-lg-8{-ms-flex:0 0 66.666667%;flex:0 0 66.666667%;max-width:66.666667%;}
+}
+div,span,h3,a,img,i{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
+
+:-webkit-input-placeholder{opacity:1;}
+:-moz-placeholder{opacity:1;}
+:-ms-input-placeholder{opacity:1;}
+.padding-left{float:left;width:100%;}
+.emply-resume-thumb{display:table-cell;vertical-align:top;width:100px;}
+.emply-resume-thumb img{float:left;width:100%;-webkit-border-radius:8px;-moz-border-radius:8px;-ms-border-radius:8px;-o-border-radius:8px;border-radius:8px;}
+.emply-resume-info{display:table-cell;vertical-align:middle;padding-left:30px;}
+.emply-resume-sec{float:left;width:100%;}
+.emply-resume-list{float:left;width:100%;display:table;padding:30px 0;border-bottom:1px solid #edeff7;position:relative;padding-left:30px;background-color:#fff;}
+.emply-resume-info > h3{float:left;width:100%;font-family:Open Sans;font-size:15px;color:#202020;margin:0;}
+.emply-resume-info > span{float:left;width:100%;font-size:13px;color:#202020;margin-top:7px;}
+.emply-resume-info > span i{font-style:normal;color:#4D90CC;}
+.emply-resume-list:last-child{margin-bottom:60px;border-bottom-color:#ffffff;}
+.shortlists{display:table-cell;vertical-align:middle;}
+.shortlists > a{float:left;font-family:Open Sans;font-size:13px;color:#4D90CC;border:2px solid #4D90CC;width:150px;height:40px;padding-left:30px;text-align:left;line-height:35px;padding-right:20px;-webkit-border-radius:21px;-moz-border-radius:21px;-ms-border-radius:21px;-o-border-radius:21px;border-radius:21px;cursor:pointer;margin-right:40px;}
+.shortlists > a i{float:right;line-height:33px;font-size:13px;}
+.shortlists > a:hover{background:#4D90CC;color:#ffffff;}
+*:focus{outline:0;}
+.emply-resume-list:hover{border-color:#ffffff;-webkit-box-shadow:0px 0px 30px rgba(0,0,0,0.1);-moz-box-shadow:0px 0px 30px rgba(0,0,0,0.1);-ms-box-shadow:0px 0px 30px rgba(0,0,0,0.1);-o-box-shadow:0px 0px 30px rgba(0,0,0,0.1);box-shadow:0px 0px 30px rgba(0,0,0,0.1);margin-top:0px;position:relative;z-index:12;}
+.emply-resume-list,.shortlists > a{-webkit-transition:all 0.4s ease 0s;-moz-transition:all 0.4s ease 0s;-ms-transition:all 0.4s ease 0s;-o-transition:all 0.4s ease 0s;transition:all 0.4s ease 0s;}
+@media (max-width:980px){
+.column{float:left;width:100%;margin-top:50px;}
+.padding-left{padding:0;}
+.emply-resume-list{padding-left:0px;}
+}
+@media (max-width:767px){
+.emply-resume-list{width:100%;}
+.emply-resume-thumb{display:inherit;float:left;vertical-align:inherit;}
+.emply-resume-info{display:inherit;vertical-align:inherit;}
+.shortlists{display:inherit;float:left;vertical-align:inherit;padding-left:30px;margin-top:5px;}
+.emply-resume-sec{overflow-x:scroll;overflow-y:hidden;}
+}
+*,*::before,*::after{box-sizing:border-box;}
+h3{margin-top:0;margin-bottom:0.5rem;}
+img{vertical-align:middle;border-style:none;}
+h3{margin-bottom:0.5rem;font-family:inherit;font-weight:500;line-height:1.2;color:inherit;}
+h3{font-size:1.75rem;}
+.col-lg-8{position:relative;width:100%;min-height:1px;padding-right:15px;padding-left:15px;}
+@media (min-width: 992px){
+.col-lg-8{-webkit-box-flex:0;-ms-flex:0 0 66.666667%;flex:0 0 66.666667%;max-width:66.666667%;}
+}
+@media print{
+*,*::before,*::after{text-shadow:none!important;box-shadow:none!important;}
+a:not(.btn){text-decoration:underline;}
+img{page-break-inside:avoid;}
+h3{orphans:3;widows:3;}
+h3{page-break-after:avoid;}
+}
+}
+
+
+
+
+
+
+
+
 </style>
 
 
@@ -128,7 +222,44 @@ hr{box-sizing:content-box;overflow:visible;border:0;height:0;margin-top:0;margin
 <!--main content start-->
 <section id="main-content">
   <section class="wrapper">
-    <h3><i class="fa fa-angle-right"></i> Liste de vos projets</h3>
+    <h2 style="margin: 2rem;"><i class="fa fa-angle-right"></i> Liste de vos projets</h2>
+
+    <h3>Cours recommandé pour valider le parcours</h3>
+
+    <div class="col-lg-8 column">
+      <div class="padding-left">
+        <div class="emply-resume-sec">
+          @foreach(Auth::user()->formations as $formation)
+            @if($formation->nom == "Développeur Web Junior")
+              <div class="emply-resume-list">
+                <div class="emply-resume-thumb">
+                  <img src="/avatars/courses/{{$formation->image}}" alt="">
+                </div>
+                <div class="emply-resume-info">
+                  <h3><a target="_blank" href="https://oschool.ci/course/formation-complete-developpeur-web-2/" title="">{{$formation->nom}}</a></h3>
+                  <span><i>{{$formation->projets->count()}}</i> projets</span>
+                  @if(Auth::user()->type2 != 'teacher' && Auth::user()->type3 != 'admin')
+                  @foreach(Auth::user()->formations as $formation)
+                    @foreach($formation->projets as $key => $projet)
+                      @if (!Auth::user()->worked($projet->id))
+                        @if($key == 0)
+                    <p><i class="fa fa-laptop"></i>Projet en cours: {{$projet->titre}}</p>
+                        @endif
+                      @endif
+                    @endforeach
+                  @endforeach
+                  @endif
+                </div>
+                <div class="shortlists">
+                  <a target="_blank" href="https://oschool.ci/course/formation-complete-developpeur-web-2/  " title="">Voir le cours <i class="fa fa-info"></i></a>
+                </div>
+              </div><!-- Emply List -->
+            @endif
+          @endforeach
+
+        </div>
+      </div>
+    </div>
 
 
 

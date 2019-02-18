@@ -68,6 +68,34 @@ drift.load('2uy6g3spxi59');
 
 
 
+<script type="text/javascript">
+
+$(document).ready(function(){
+
+  $('.progression').click(function(){
+
+    var currentProgression = $(this).parents(".card__inner").next();
+
+    currentProgression.toggle(function () {
+    currentProgression.css({maxHeight: "0"});
+}, function () {
+    currentProgression.css({maxHeight: "23rem"});
+});
+
+    $(this).toggleClass("expanded");
+
+
+
+
+
+  });
+
+});
+
+</script>
+
+
+
 
 
 
@@ -256,6 +284,23 @@ drift.load('2uy6g3spxi59');
           </li>
           @endif
 
+          @if(count(Auth::user()->formations))
+          <li class="mt">
+            <a href="{{ url('projets') }}">
+              <i class="fa fa-dashboard"></i>
+              <span>Liste des projets</span>
+              </a>
+          </li>
+          <!--
+          <li class="mt">
+            <a href="{{ url('progression', Auth::user()) }}">
+              <i class="fa fa-dashboard"></i>
+              <span>Progression de la formation</span>
+              </a>
+          </li>
+        -->
+          @endif
+
           <li class="mt">
             <a href="/documentsTeacher">
               <i class="fa fa-book"></i>
@@ -272,23 +317,6 @@ drift.load('2uy6g3spxi59');
 
 
           @auth
-
-
-          @if(count(Auth::user()->formations))
-          <li class="mt">
-            <a href="{{ url('projets') }}">
-              <i class="fa fa-dashboard"></i>
-              <span>Liste des projets</span>
-              </a>
-          </li>
-
-          <li class="mt">
-            <a href="{{ url('progression', Auth::user()) }}">
-              <i class="fa fa-dashboard"></i>
-              <span>Progression de la formation</span>
-              </a>
-          </li>
-          @endif
 
 
 
