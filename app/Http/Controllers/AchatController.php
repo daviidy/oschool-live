@@ -293,7 +293,7 @@ class AchatController extends Controller
 
         //apres avoir décodé la reponse de l'apî call on fait les tests
 
-      if ($json['transaction']['cpm_result'] == 00 && $json['transaction']['cpm_amount'] == 100 && $json['transaction']['signature'] == Session::get('signature'))
+      if ($json['transaction']['cpm_result'] == '00' && $json['transaction']['cpm_amount'] == '100' && $json['transaction']['signature'] == Session::get('signature'))
       {
 
         $achat=Achat::create([
