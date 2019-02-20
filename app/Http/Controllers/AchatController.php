@@ -293,7 +293,7 @@ class AchatController extends Controller
 
         //apres avoir décodé la reponse de l'apî call on fait les tests
 
-      if ($json['transaction']['cpm_result'] == '00' && $json['transaction']['cpm_amount'] == '100' && $json['transaction']['signature'] == Session::get('signature'))
+      if ($json['transaction']['cpm_result'] == '00' && $json['transaction']['cpm_amount'] == '100' && $json['transaction']['signature'] == '5aae6b75723132259953e7c3c2746e58334a7b8fc11104c7e53a4a8ad71b50f9')
       {
 
         $achat=Achat::create([
@@ -352,7 +352,7 @@ class AchatController extends Controller
 
       else {
         //envoi mail admin
-        Mail::send('mailsAchat.echec', ['cpm_result' => $json['transaction']['cpm_result'], 'signature' => Session::get('signature')], function($message){
+        Mail::send('mailsAchat.echec', ['cpm_result' => $json['transaction']['cpm_result'], 'signature' => '5aae6b75723132259953e7c3c2746e58334a7b8fc11104c7e53a4a8ad71b50f9'], function($message){
           $message->to('yaodavidarmel@gmail.com', 'A David')->subject('Echec de paiement pour Oschool code');
           $message->from('eventsoschool@gmail.com', 'Oschool');
         });
