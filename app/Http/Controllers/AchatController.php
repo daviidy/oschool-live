@@ -250,7 +250,13 @@ class AchatController extends Controller
 
 
     //on récupère la signature stockée dans la bdd et qui correspond au trans_id de l'achat
+    //on obtient une collection
     $achat = Achat::where('trans_id', $request['cpm_trans_id'])->where('statut', 'En cours')->get();
+
+    //etant donné qu'on sait que c'est un seul élément qu'on aura dans la collection
+    //on peut utiliser la methode first pour le transformer en objet
+
+    $commande = $achat->first();
 
       //on fait un api call a https://api.cinetpay.com/v1/?method=checkPayStatus avec
       //les donnees recueillies dans $request (trans_id et site_id)
@@ -307,14 +313,14 @@ class AchatController extends Controller
 
         //apres avoir décodé la reponse de l'apî call on fait les tests
 
-      if ($json['transaction']['cpm_result'] == '00' && $json['transaction']['cpm_amount'] == $achat->first()->montant && $json['transaction']['signature'] == $achat->first()->signature)
+      if ($json['transaction']['cpm_result'] == '00' && $json['transaction']['cpm_amount'] == $commande->montant && $json['transaction']['signature'] == $commande->signature)
       {
                   //on récupre l'id Utilisateur
-                  $user = User::find($achat->user_id);
+                  $user = User::find($commande->user_id);
 
                   //on met le statut de l'achat à jour
-                  $achat->statut = 'Validé';
-                  $achat->save();
+                  $commande->statut = 'Validé';
+                  $commande->save();
 
 
                         //on ajoute 30 jours à la date actuelle pour déterminer la date d'expiration de l'abonnement
@@ -346,13 +352,13 @@ class AchatController extends Controller
 
 
        //envoi mail utilisateur
-        Mail::send('mailsAchat.mail', ['achat' => $achat], function($message) use ($achat){
-          $message->to($achat->email, 'Cher(ère) Etudiant(e)')->subject('Votre inscription a été effectuée avec succès !');
+        Mail::send('mailsAchat.mail', ['achat' => $commande], function($message) use ($commande){
+          $message->to($commande->email, 'Cher(ère) Etudiant(e)')->subject('Votre inscription a été effectuée avec succès !');
           $message->from('eventsoschool@gmail.com', 'Oschool');
         });
 
         //envoi mail admin
-        Mail::send('mailsAchat.mail-admin', ['achat' => $achat], function($message) use ($achat){
+        Mail::send('mailsAchat.mail-admin', ['achat' => $commande], function($message) use ($commande){
           $message->to('yaodavidarmel@gmail.com', 'A David')->subject('Une commande a été traitée avec succès');
           $message->from('eventsoschool@gmail.com', 'Oschool');
         });

@@ -40,7 +40,7 @@
     </tr>
 
 
-    
+
     <tr>
       <td style="padding: 20px 7.5% 117px;">Cordialement,<br>l'équipe Oschool</td>
     </tr>
