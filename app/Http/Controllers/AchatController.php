@@ -313,7 +313,7 @@ class AchatController extends Controller
 
         //apres avoir décodé la reponse de l'apî call on fait les tests
 
-      if ($json['transaction']['cpm_result'] == '00' && $json['transaction']['cpm_amount'] == $achat->first()->montant && $json['transaction']['signature'] == $achat->first()->signature)
+      if ($json['transaction']['cpm_result'] == '00' && $json['transaction']['cpm_amount'] == $achat->first()['montant'] && $json['transaction']['signature'] == $achat->first()['signature'])
       {
                   //on récupre l'id Utilisateur
                   $user = User::find($achat->first()->user_id);
