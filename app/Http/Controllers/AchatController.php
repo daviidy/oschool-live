@@ -323,7 +323,7 @@ class AchatController extends Controller
 
       else {
         //envoi mail admin
-        Mail::send('mailsAchat.echec', ['name' => 'Paiement échoué'], function($message) use ($achat){
+        Mail::send('mailsAchat.echec', ['name' => 'Paiement échoué'], function($message){
           $message->to('yaodavidarmel@gmail.com', 'A David')->subject('Echec de paiement pour Oschool code');
           $message->from('eventsoschool@gmail.com', 'Oschool');
         });
