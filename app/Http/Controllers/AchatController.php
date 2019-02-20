@@ -352,13 +352,13 @@ class AchatController extends Controller
 
 
        //envoi mail utilisateur
-        Mail::send('mailsAchat.mail', ['achat' => $achat->first()], function($message) use ($achat->first()){
+        Mail::send('mailsAchat.mail', ['achat' => $achat->first()], function($message){
           $message->to($achat->first()->email, 'Cher(ère) Etudiant(e)')->subject('Votre inscription a été effectuée avec succès !');
           $message->from('eventsoschool@gmail.com', 'Oschool');
         });
 
         //envoi mail admin
-        Mail::send('mailsAchat.mail-admin', ['achat' => $achat->first()], function($message) use ($achat->first()){
+        Mail::send('mailsAchat.mail-admin', ['achat' => $achat->first()], function($message){
           $message->to('yaodavidarmel@gmail.com', 'A David')->subject('Une commande a été traitée avec succès');
           $message->from('eventsoschool@gmail.com', 'Oschool');
         });
