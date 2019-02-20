@@ -56,15 +56,15 @@
                                         <tbody>
                                           <tr>
                                             <td class="m_-9197042922378252978body-text" align="center" style="font-family:'Open+Sans','Open Sans',Helvetica,Arial,sans-serif;font-size:14px;line-height:24px;text-align:center;width:100%">
-                                              <p style="Margin:0 0 25px 0;font-size:18px;line-height:23px;color:#102231;font-weight:bold">Votre inscription au parcours {{$achat->first()->formation}} a été effectuée avec succès </p>
+                                              <p style="Margin:0 0 25px 0;font-size:18px;line-height:23px;color:#102231;font-weight:bold">Votre inscription au parcours {{$achat->formation}} a été effectuée avec succès </p>
                                               <p style="Margin:0 0 0px 0;color:#525c65">
                                                 Ce mail fait office de reçu pour votre paiement. Voici les détails de votre achat:
                                               </p>
                                               <ul style="list-style-type: none;">
                                                 <li>Nom d'utilisateur: <strong>{{Auth::user()->name}}</strong> </li>
-                                                <li>Montant: <strong>{{$achat->first()->montant}}</strong></li>
-                                                <li>Date de paiement: <strong>{{$achat->first()->date}}</strong></li>
-                                                <li>Email du compte: <strong>{{$achat->first()->email}}</strong></li>
+                                                <li>Montant: <strong>{{$achat->montant}}</strong></li>
+                                                <li>Date de paiement: <strong>{{$achat->date}}</strong></li>
+                                                <li>Email du compte: <strong>{{$achat->email}}</strong></li>
                                                 <li>Durée de l'abonnement: <strong>1 mois</strong> </li>
                                               </ul>
                                               <p style="Margin:15px 0 0px 0;color:#525c65">Vous pouvez consulter la liste de vos achats <a href="https://code.oschool.ci/achats">ici</a> </p>
@@ -82,7 +82,7 @@
                                         <tbody>
                                           <tr>
                                             <td align="center" style="padding:0 30px 0 30px;font-family:'Open+Sans','Open Sans',Helvetica,Arial,sans-serif;font-size:24px;line-height:35px;font-weight:lighter">
-                                              <p style="Margin:0 0 10px 0">Voici ce qui vous attend dans ce parcours {{$achat->first()->formation}}</p>
+                                              <p style="Margin:0 0 10px 0">Voici ce qui vous attend dans ce parcours {{$achat->formation}}</p>
                                             </td>
                                           </tr>
                                         </tbody>

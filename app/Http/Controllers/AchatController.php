@@ -251,7 +251,7 @@ class AchatController extends Controller
 
     //on récupère la signature stockée dans la bdd et qui correspond au trans_id de l'achat
     //on obtient une collection
-    $achat = Achat::where('trans_id', $request['cpm_trans_id'])->where('statut', 'En cours')->get();
+    $achat = Achat::where('trans_id', $request['cpm_trans_id'])->where('statut', 'En cours')->first();
 
     //etant donné qu'on sait que c'est un seul élément qu'on aura dans la collection
     //on peut utiliser la methode first pour le transformer en objet
@@ -313,14 +313,14 @@ class AchatController extends Controller
 
         //apres avoir décodé la reponse de l'apî call on fait les tests
 
-      if ($json['transaction']['cpm_result'] == '00' && $json['transaction']['cpm_amount'] == $achat->first()['montant'] && $json['transaction']['signature'] == $achat->first()['signature'])
+      if ($json['transaction']['cpm_result'] == '00' && $json['transaction']['cpm_amount'] == $achat->montant && $json['transaction']['signature'] == $achat->signature)
       {
                   //on récupre l'id Utilisateur
-                  $user = User::find($achat->first()->user_id);
+                  $user = User::find($achat->user_id);
 
                   //on met le statut de l'achat à jour
-                  $achat->first()->statut = 'Validé';
-                  $achat->first()->save();
+                  $achat->statut = 'Validé';
+                  $achat->save();
 
 
                         //on ajoute 30 jours à la date actuelle pour déterminer la date d'expiration de l'abonnement
@@ -352,13 +352,13 @@ class AchatController extends Controller
 
 
        //envoi mail utilisateur
-        Mail::send('mailsAchat.mail', ['achat' => $achat->first()], function($message){
-          $message->to($achat->first()->email, 'Cher(ère) Etudiant(e)')->subject('Votre inscription a été effectuée avec succès !');
+        Mail::send('mailsAchat.mail', ['achat' => $achat], function($message){
+          $message->to($achat->email, 'Cher(ère) Etudiant(e)')->subject('Votre inscription a été effectuée avec succès !');
           $message->from('eventsoschool@gmail.com', 'Oschool');
         });
 
         //envoi mail admin
-        Mail::send('mailsAchat.mail-admin', ['achat' => $achat->first()], function($message){
+        Mail::send('mailsAchat.mail-admin', ['achat' => $achat], function($message){
           $message->to('yaodavidarmel@gmail.com', 'A David')->subject('Une commande a été traitée avec succès');
           $message->from('eventsoschool@gmail.com', 'Oschool');
         });
