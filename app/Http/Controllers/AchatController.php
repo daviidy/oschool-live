@@ -138,7 +138,8 @@ class AchatController extends Controller
                           'formation' => $request['formation'],
                           'trans_id' => $temps,
                           'signature' => str_replace('"',"",$resultat),
-                          'date' => Carbon::now()
+                          'date' => Carbon::now(),
+                          'user_id' => $request['user_id'],
                         ]);
 
 
