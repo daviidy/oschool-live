@@ -318,8 +318,11 @@ class AchatController extends Controller
                   $user = User::find($achat->user_id);
 
                   //on met le statut de l'achat à jour
-                  $achat->statut = 'Validé';
-                  $achat->save();
+                  if ($achat->statut !== 'Validé') {
+                    $achat->statut = 'Validé';
+                    $achat->save();
+                  }                  }
+
 
 
                         //on ajoute 30 jours à la date actuelle pour déterminer la date d'expiration de l'abonnement
