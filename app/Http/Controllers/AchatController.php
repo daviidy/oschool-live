@@ -321,7 +321,7 @@ class AchatController extends Controller
                   if ($achat->statut !== 'Validé') {
                     $achat->statut = 'Validé';
                     $achat->save();
-                  }                  }
+                  }
 
 
 
