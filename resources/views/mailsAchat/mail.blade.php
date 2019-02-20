@@ -61,7 +61,7 @@
                                                 Ce mail fait office de reçu pour votre paiement. Voici les détails de votre achat:
                                               </p>
                                               <ul style="list-style-type: none;">
-                                                <li>Nom d'utilisateur: <strong>{{Auth::user()->name}}</strong> </li>
+                                                <li>Prénoms et Nom: <strong>{{$achat->prenoms}} {{$achat->nom}}</strong> </li>
                                                 <li>Montant: <strong>{{$achat->montant}}</strong></li>
                                                 <li>Date de paiement: <strong>{{$achat->date}}</strong></li>
                                                 <li>Email du compte: <strong>{{$achat->email}}</strong></li>
