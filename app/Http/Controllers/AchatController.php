@@ -251,11 +251,10 @@ class AchatController extends Controller
 
     //on récupère la signature stockée dans la bdd et qui correspond au trans_id de l'achat
     //on obtient une collection
-    $achat = Achat::where('trans_id', $request['cpm_trans_id'])->where('statut', 'En cours')->first();
 
     //etant donné qu'on sait que c'est un seul élément qu'on aura dans la collection
     //on peut utiliser la methode first pour le transformer en objet
-
+    $achat = Achat::where('trans_id', $request['cpm_trans_id'])->where('statut', 'En cours')->first();
 
 
       //on fait un api call a https://api.cinetpay.com/v1/?method=checkPayStatus avec
@@ -345,7 +344,7 @@ class AchatController extends Controller
                         //encore inscrit à la formation, donc
                         //inscrire etudiant a la formation
 
-                          $formation = Formation::where('nom', $request['formation'])->get();
+                          $formation = Formation::where('nom', $achat->formation)->first();
 
                           $user->formations()->attach($formation);
 
