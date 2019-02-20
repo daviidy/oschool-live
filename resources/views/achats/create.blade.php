@@ -29,6 +29,11 @@
         </ul><br>
         {{ csrf_field() }}
         <div style="display: none;" class="form-group">
+          <select class="" name="user_id">
+            <option value="{{Auth::user()->id}}">user id</option>
+          </select>
+        </div>
+        <div style="display: none;" class="form-group">
           <select class="" name="cpm_trans_id">
             <option value="{{$temps}}">trans id</option>
           </select>

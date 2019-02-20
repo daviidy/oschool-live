@@ -46,6 +46,7 @@ class AchatController extends Controller
 
     public function envoi(Request $request)
     {
+
       Session::put('name', $request['nom']);
       Session::put('prenoms', $request['prenoms']);
       Session::put('email', $request['email']);
@@ -126,6 +127,19 @@ class AchatController extends Controller
         */
         Session::put('signature', str_replace('"',"",$resultat));
         $formations = Formation::orderby('id','asc')->paginate(30);
+
+        //on crée l'achat qui aura un statut en cours par défaut
+        $achat=Achat::create([
+                          'email' => $request['email'],
+                          'nom' => $request['nom'],
+                          'prenoms' => $request['prenoms'],
+                          'tel' => $request['tel'],
+                          'montant' => $request['montant'],
+                          'formation' => $request['formation'],
+                          'trans_id' => $temps,
+                          'signature' => str_replace('"',"",$resultat),
+                          'date' => Carbon::now()
+                        ]);
 
 
         return view('achats.create',['signature' => str_replace('"',"",$resultat),
@@ -235,8 +249,8 @@ class AchatController extends Controller
 
 
 
-    //on récupère la signature stockée dans la bdd (session a vrai dire ;)
-      Session::get('signature');
+    //on récupère la signature stockée dans la bdd et qui correspond au trans_id de l'achat
+    $achat = Achat::where('trans_id', $request['cpm_trans_id'])->where('statut', 'En cours')->get();
 
       //on fait un api call a https://api.cinetpay.com/v1/?method=checkPayStatus avec
       //les donnees recueillies dans $request (trans_id et site_id)
@@ -293,36 +307,32 @@ class AchatController extends Controller
 
         //apres avoir décodé la reponse de l'apî call on fait les tests
 
-      if ($json['transaction']['cpm_result'] == '00' && $json['transaction']['cpm_amount'] == '100' && $json['transaction']['signature'] == '5aae6b75723132259953e7c3c2746e58334a7b8fc11104c7e53a4a8ad71b50f9')
+      if ($json['transaction']['cpm_result'] == '00' && $json['transaction']['cpm_amount'] == $achat->montant && $json['transaction']['signature'] == $achat->signature)
       {
+                  //on récupre l'id Utilisateur
+                  $user = User::find($achat->user_id);
 
-        $achat=Achat::create([
-                          'email' => Session::get('email'),
-                          'nom' => Session::get('name'),
-                          'prenoms' => Session::get('prenoms'),
-                          'tel' => Session::get('tel'),
-                          'montant' => Session::get('montant'),
-                          'formation' => Session::get('formation'),
-                          'date' => Carbon::now()
-                        ]);
+                  //on met le statut de l'achat à jour
+                  $achat->statut = 'Validé';
+                  $achat->save();
 
 
                         //on ajoute 30 jours à la date actuelle pour déterminer la date d'expiration de l'abonnement
                         //et on met a jour le statut de l'étudiant
                         $date_paiement = Carbon::now();
-                        Auth::user()->fin_abonnement = $date_paiement->addDays(30);
-                        Auth::user()->statut = 'OK';
-                        Auth::user()->save();
+                        $user->fin_abonnement = $date_paiement->addDays(30);
+                        $user->statut = 'OK';
+                        $user->save();
 
                         //on met aussi a jour les informations du user comme son nom et prenoms
-                        if (Auth::user()->nom == "aucun nom") {
-                          Auth::user()->nom = $request['nom'];
-                          Auth::user()->save();
+                        if ($user->nom == "aucun nom") {
+                          $user->nom = $request['nom'];
+                          $user->save();
                         }
 
-                        if (Auth::user()->prenoms == "aucun prénom") {
-                          Auth::user()->prenoms = $request['prenoms'];
-                          Auth::user()->save();
+                        if ($user->prenoms == "aucun prénom") {
+                          $user->prenoms = $request['prenoms'];
+                          $user->save();
                         }
 
                         //étant donné que c'est un premier et nouvel achat, on suppose que l'étudiant n'est pas
@@ -330,20 +340,20 @@ class AchatController extends Controller
                         //inscrire etudiant a la formation
 
                           $formation = Formation::where('nom', $request['formation'])->get();
-                          $user = User::find(Auth::user()->id);
+
                           $user->formations()->attach($formation);
 
 
 
        //envoi mail utilisateur
         Mail::send('mailsAchat.mail', ['achat' => $achat], function($message) use ($achat){
-          $message->to($achat->email, 'Cher(ère) Etudiant(e)')->subject('Votre inscription a bien été pris en compte !');
+          $message->to($achat->email, 'Cher(ère) Etudiant(e)')->subject('Votre inscription a été effectuée avec succès !');
           $message->from('eventsoschool@gmail.com', 'Oschool');
         });
 
         //envoi mail admin
         Mail::send('mailsAchat.mail-admin', ['achat' => $achat], function($message) use ($achat){
-          $message->to('yaodavidarmel@gmail.com', 'A David')->subject('Notification pour nouvelle inscription à Oschool Code');
+          $message->to('yaodavidarmel@gmail.com', 'A David')->subject('Une commande a été traitée avec succès');
           $message->from('eventsoschool@gmail.com', 'Oschool');
         });
         /*return redirect('/')->with('status', 'Achat validé ! Suivez immédiatement les instructions que nous vous avons laissées dans votre boîte de réception.');*/
