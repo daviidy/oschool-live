@@ -1,3 +1,3 @@
 <h1>Juste vous notifier qu'un paiement a échoué.</h1><br>
 <h3>{{$cpm_result}}</h3><br>
-<h3>{{$oldSignature}}</h3>
+<h3>{{$signature}}</h3>
