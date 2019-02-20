@@ -306,6 +306,35 @@ class AchatController extends Controller
                           'date' => Carbon::now()
                         ]);
 
+
+                        //on ajoute 30 jours à la date actuelle pour déterminer la date d'expiration de l'abonnement
+                        //et on met a jour le statut de l'étudiant
+                        $date_paiement = Carbon::now();
+                        Auth::user()->fin_abonnement = $date_paiement->addDays(30);
+                        Auth::user()->statut = 'OK';
+                        Auth::user()->save();
+
+                        //on met aussi a jour les informations du user comme son nom et prenoms
+                        if (Auth::user()->nom == "aucun nom") {
+                          Auth::user()->nom = $request['nom'];
+                          Auth::user()->save();
+                        }
+
+                        if (Auth::user()->prenoms == "aucun prénom") {
+                          Auth::user()->prenoms = $request['prenoms'];
+                          Auth::user()->save();
+                        }
+
+                        //étant donné que c'est un premier et nouvel achat, on suppose que l'étudiant n'est pas
+                        //encore inscrit à la formation, donc
+                        //inscrire etudiant a la formation
+
+                          $formation = Formation::where('nom', $request['formation'])->get();
+                          $user = User::find(Auth::user()->id);
+                          $user->formations()->attach($formation);
+
+
+
        //envoi mail utilisateur
         Mail::send('mailsAchat.mail', ['achat' => $achat], function($message) use ($achat){
           $message->to($achat->email, 'Cher(ère) Etudiant(e)')->subject('Votre inscription a bien été pris en compte !');
@@ -317,13 +346,13 @@ class AchatController extends Controller
           $message->to('yaodavidarmel@gmail.com', 'A David')->subject('Notification pour nouvelle inscription à Oschool Code');
           $message->from('eventsoschool@gmail.com', 'Oschool');
         });
-        return redirect('/')->with('status', 'Achat validé ! Suivez immédiatement les instructions que nous vous avons laissées dans votre boîte de réception.');
+        /*return redirect('/')->with('status', 'Achat validé ! Suivez immédiatement les instructions que nous vous avons laissées dans votre boîte de réception.');*/
 
       }
 
       else {
         //envoi mail admin
-        Mail::send('mailsAchat.echec', ['name' => 'david'], function($message){
+        Mail::send('mailsAchat.echec', ['name' => $json['transaction']['cpm_result']], function($message){
           $message->to('yaodavidarmel@gmail.com', 'A David')->subject('Echec de paiement pour Oschool code');
           $message->from('eventsoschool@gmail.com', 'Oschool');
         });
