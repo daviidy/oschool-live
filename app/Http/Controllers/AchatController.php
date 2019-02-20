@@ -250,7 +250,7 @@ class AchatController extends Controller
 
 
     //on récupère la signature stockée dans la bdd et qui correspond au trans_id de l'achat
-    $achat = Achat::where('trans_id', $request['cpm_trans_id'])->where('statut', 'En cours')->get();
+    $achat = Achat::where('trans_id', $request['cpm_trans_id'])->where('statut', 'En cours');
 
       //on fait un api call a https://api.cinetpay.com/v1/?method=checkPayStatus avec
       //les donnees recueillies dans $request (trans_id et site_id)
