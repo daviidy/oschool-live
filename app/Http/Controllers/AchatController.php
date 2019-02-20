@@ -254,7 +254,7 @@ class AchatController extends Controller
 
     //etant donné qu'on sait que c'est un seul élément qu'on aura dans la collection
     //on peut utiliser la methode first pour le transformer en objet
-    $achat = Achat::where('trans_id', $request['cpm_trans_id'])->where('statut', 'En cours')->first();
+    $achat = Achat::where('trans_id', $request['cpm_trans_id'])->first();
 
 
       //on fait un api call a https://api.cinetpay.com/v1/?method=checkPayStatus avec
