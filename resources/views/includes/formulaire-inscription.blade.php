@@ -15,6 +15,15 @@
           <form name="userSignUpForm" action="{{url('envoi')}}" method="post" id="signup-modal-form" class="margintop-lg">
             {{ csrf_field() }}
 
+            <div style="display: none;" class="form-group password-form-group">
+              <div class="input-with-icon">
+                <select class="form-control" name="user_id">
+                  <option value="{{Auth::user()->id}}">user id</option>
+                </select>
+                <i class="input-icon ion-person-stalker"></i>
+              </div>
+            </div>
+
             <div class="form-group full_name-form-group">
               <div class="input-with-icon">
                 <input value="{{Auth::check() ? Auth::user()->email : ''}}" type="email" class="form-control" id="" placeholder="Email" name="email" required>
