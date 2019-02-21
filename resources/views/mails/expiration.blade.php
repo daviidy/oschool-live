@@ -25,14 +25,14 @@
 
     <tr>
       <td style="padding: 20px 7.5% 0;">Votre abonnement Oschool a expiré. <br>
-         Vous n'avez donc plus accès au cours particulier avec un formateur</td>
+         Vous n'avez donc plus accès au parcours et au support du formateur</td>
     </tr>
 .
     <tr>
       <td style="padding: 20px 7.5% 0;"> Nous n'avons pas pu recevoir le paiement pour votre abonnement mensuel. <br>
         Pour vous réabonner, c’est très simple :  <br>
-        Faites un dépôt Orange Money au numéro suivant: <strong> 58-45-06-00 </strong> <br>
-        Faites-le dès maintenant! Nous verrons dans quelle mesure vous pourrez reprendre là où vous vous êtes arrêtés. <br>
+        Rendez-vous dans votre   <strong><a href="https://code.oschool.ci/home">tableau de bord</a>.</strong> <br>
+        Faites-le dès maintenant! Vous pourrez reprendre là où vous vous êtes arrêtés. <br>
       </td>
     </tr>
 

@@ -29,9 +29,7 @@
 .
     <tr>
       <td style="padding: 20px 7.5% 0;"> Pour vous réabonner, c’est très simple :  <br>
-        Rendez-vous dans votre   <strong><a href="#">tableau de bord</a>.</strong> <br>
-        Ou faites un dépôt Orange Money à ce numéro: <strong>58-45-06-00</strong>
-        Faites-le dès maintenant! Vous éviterez ainsi toute interruption de service. <br>
+        Rendez-vous dans votre   <strong><a href="https://code.oschool.ci/home">tableau de bord</a>.</strong> <br>
       </td>
     </tr>
 
