@@ -15,8 +15,6 @@
         <span class="login100-form-title">
           Veuillez vérifier les informations ci-dessous avant de valider votre achat.<br><br>
           Vous paierez {{session('montant')}} FCFA<br><br>
-          Signature: {{session('signature')}}
-          Important: cliquer sur "Retourner sur Oschool pour valider le paiement" !
         </span>
         <!--
         <p style="color: red;">Rappel: il ne reste que {{5 - $achats->count()}} places !</p><br>

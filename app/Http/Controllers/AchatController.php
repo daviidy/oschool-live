@@ -140,6 +140,7 @@ class AchatController extends Controller
                           'signature' => str_replace('"',"",$resultat),
                           'date' => Carbon::now(),
                           'user_id' => $request['user_id'],
+                          'type' => $request['type'],
                         ]);
 
 
@@ -154,92 +155,7 @@ class AchatController extends Controller
     }
 
 
-    //fonction pour afficher formulaire de renouvellement d'un abonnement
 
-    public function envoiRenew(Request $request)
-    {
-      Session::put('name', $request['nom']);
-      Session::put('prenoms', $request['prenoms']);
-      Session::put('email', $request['email']);
-      Session::put('tel', $request['tel']);
-      Session::put('montant', $request['montant']);
-      Session::put('formation', $request['formation']);
-
-      function postData($params, $url)
-          {
-           try {
-           $curl = curl_init();
-           $postfield = '';
-           foreach ($params as $index => $value) {
-           $postfield .= $index . '=' . $value . "&";
-           }
-           $postfield = substr($postfield, 0, -1);
-           curl_setopt_array($curl, array(
-           CURLOPT_URL => $url,
-           CURLOPT_RETURNTRANSFER => true,
-           CURLOPT_ENCODING => "",
-           CURLOPT_MAXREDIRS => 10,
-           CURLOPT_TIMEOUT => 45,
-           CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-           CURLOPT_CUSTOMREQUEST => "POST",
-           CURLOPT_POSTFIELDS => $postfield,
-           CURLOPT_SSL_VERIFYPEER => false,
-           CURLOPT_HTTPHEADER => array(
-           "cache-control: no-cache",
-           "content-type: application/x-www-form-urlencoded",
-           ),
-           ));
-           $response = curl_exec($curl);
-           $err = curl_error($curl);
-           curl_close($curl);
-           if ($err) {
-           throw new Exception("cURL Error #:" . $err);
-           return $err;
-           } else {
-           return $response;
-           }
-           } catch (Exception $e) {
-           throw new Exception($e);
-           }
-          }
-          $time = Carbon::now();
-          $temps = date("YmdHis");
-        $params = array('cpm_amount' => Session::get('montant'),
-                        'cpm_currency' => 'CFA',
-                        'cpm_site_id' => '113043',
-                        'cpm_trans_id' => $temps,
-                        'cpm_trans_date' => $time,
-                        'cpm_payment_config' => 'SINGLE',
-                        'cpm_page_action' => 'PAYMENT',
-                        'cpm_version' => 'V1',
-                        'cpm_language' => 'fr',
-                        'cpm_designation' => 'Réabonnement Parcours Oschool',
-                        'apikey' => '134714631658c289ed716950.86091611',
-                        );
-        $url = "https://api.cinetpay.com/v1/?method=getSignatureByPost";
-        //Appel de fonction postData()
-        $resultat = postData($params, $url) ;
-        $signature = json_decode($resultat, true);
-
-        $achats= Achat::orderby('id','asc')->paginate(30);
-
-
-        //on stocke la signature dans la variable session pour une
-        //utilisation ultérieure
-
-        Session::put('signature', str_replace('"',"",$resultat));
-        $formations = Formation::orderby('id','asc')->paginate(30);
-
-
-        return view('achats.renew',['signature' => str_replace('"',"",$resultat),
-                                     'temps' => $temps,
-                                     'time' => $time,
-                                     'achats' => $achats,
-                                     'montant' => Session::get('montant'),
-                                     'formations' => $formations,
-                                   ]);
-
-    }
 
 
 
@@ -252,10 +168,12 @@ class AchatController extends Controller
 
     //on récupère la signature stockée dans la bdd et qui correspond au trans_id de l'achat
     //on obtient une collection
-
     //etant donné qu'on sait que c'est un seul élément qu'on aura dans la collection
     //on peut utiliser la methode first pour le transformer en objet
     $achat = Achat::where('trans_id', $request['cpm_trans_id'])->first();
+    if ($achat->statut == 'Validé') {
+      return;
+    }
 
 
       //on fait un api call a https://api.cinetpay.com/v1/?method=checkPayStatus avec
@@ -315,57 +233,69 @@ class AchatController extends Controller
 
       if ($json['transaction']['cpm_result'] == '00' && $json['transaction']['cpm_amount'] == $achat->montant && $json['transaction']['signature'] == $achat->signature)
       {
-                  //on récupre l'id Utilisateur
+
+                  //on récupère l'id Utilisateur
                   $user = User::find($achat->user_id);
 
                   //on met le statut de l'achat à jour
-                  if ($achat->statut !== 'Validé') {
                     $achat->statut = 'Validé';
                     $achat->save();
+
+                  //on ajoute 30 jours à la date actuelle pour déterminer la
+                  //date d'expiration de l'abonnement
+                  //et on met a jour le statut de l'étudiant
+                  $date_paiement = Carbon::now();
+                  $user->fin_abonnement = $date_paiement->addDays(30);
+                  $user->statut = 'OK';
+                  $user->save();
+
+                  //on met aussi a jour les informations du user comme son nom et prenoms
+                  if ($user->nom == "aucun nom") {
+                    $user->nom = $achat->nom;
+                    $user->save();
                   }
 
+                  if ($user->prenoms == "aucun prénom") {
+                    $user->prenoms = $achat->prenoms;
+                    $user->save();
+                  }
+
+                  //si l'étudiant n'est pas déjà
+                  //inscrit a la formation en question
+                  //on l'inscrit
+
+                    $formation = Formation::where('nom', $achat->formation)->first();
+
+                    if (!$user->subscribed($formation->id)) {
+
+                      $user->formations()->attach($formation);
+                      //envoi mail utilisateur
+                       Mail::send('mailsAchat.mail', ['achat' => $achat], function($message) use($achat){
+                         $message->to($achat->email, 'Cher(ère) Etudiant(e)')->subject('Votre inscription a été effectuée avec succès !');
+                         $message->from('eventsoschool@gmail.com', 'Oschool');
+                       });
+
+                       //envoi mail admin
+                       Mail::send('mailsAchat.mail-admin', ['achat' => $achat], function($message) use($achat){
+                         $message->to('yaodavidarmel@gmail.com', 'A David')->subject('Une commande a été traitée avec succès');
+                         $message->from('eventsoschool@gmail.com', 'Oschool');
+                       });
+                    }
+                    else {
+                      //envoi mail utilisateur
+                       Mail::send('mailsAchat.renew', ['achat' => $achat], function($message) use($achat){
+                         $message->to($achat->email, 'Cher(ère) Etudiant(e)')->subject('Votre renouvellement a été effectué avec succès !');
+                         $message->from('eventsoschool@gmail.com', 'Oschool');
+                       });
+
+                       //envoi mail admin
+                       Mail::send('mailsAchat.renew-admin', ['achat' => $achat], function($message) use($achat){
+                         $message->to('yaodavidarmel@gmail.com', 'A David')->subject('Une commande a été traitée avec succès');
+                         $message->from('eventsoschool@gmail.com', 'Oschool');
+                    }
 
 
-                        //on ajoute 30 jours à la date actuelle pour déterminer la date d'expiration de l'abonnement
-                        //et on met a jour le statut de l'étudiant
-                        $date_paiement = Carbon::now();
-                        $user->fin_abonnement = $date_paiement->addDays(30);
-                        $user->statut = 'OK';
-                        $user->save();
 
-                        //on met aussi a jour les informations du user comme son nom et prenoms
-                        if ($user->nom == "aucun nom") {
-                          $user->nom = $request['nom'];
-                          $user->save();
-                        }
-
-                        if ($user->prenoms == "aucun prénom") {
-                          $user->prenoms = $request['prenoms'];
-                          $user->save();
-                        }
-
-                        //étant donné que c'est un premier et nouvel achat, on suppose que l'étudiant n'est pas
-                        //encore inscrit à la formation, donc
-                        //inscrire etudiant a la formation
-
-                          $formation = Formation::where('nom', $achat->formation)->first();
-
-                          $user->formations()->attach($formation);
-
-
-
-       //envoi mail utilisateur
-        Mail::send('mailsAchat.mail', ['achat' => $achat], function($message) use($achat){
-          $message->to($achat->email, 'Cher(ère) Etudiant(e)')->subject('Votre inscription a été effectuée avec succès !');
-          $message->from('eventsoschool@gmail.com', 'Oschool');
-        });
-
-        //envoi mail admin
-        Mail::send('mailsAchat.mail-admin', ['achat' => $achat], function($message) use($achat){
-          $message->to('yaodavidarmel@gmail.com', 'A David')->subject('Une commande a été traitée avec succès');
-          $message->from('eventsoschool@gmail.com', 'Oschool');
-        });
-        /*return redirect('/')->with('status', 'Achat validé ! Suivez immédiatement les instructions que nous vous avons laissées dans votre boîte de réception.');*/
 
       }
 

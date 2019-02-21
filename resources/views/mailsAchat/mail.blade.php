@@ -43,11 +43,10 @@
                             <table border="0" cellpadding="0" cellspacing="0" style="width:100%">
                               <tbody>
                                 <tr>
-                                  <td align="center" bgcolor="#02b3e4"><a href="http://bsft.io/x/mz3gxz?uid=cef11a58-a319-42ff-90dc-789ce81a4f01&amp;mid=7a013565-3957-4533-9419-b011919d88ba" style="text-decoration:none" target="_blank"
-                                      data-saferedirecturl="https://www.google.com/url?q=http://bsft.io/x/mz3gxz?uid%3Dcef11a58-a319-42ff-90dc-789ce81a4f01%26mid%3D7a013565-3957-4533-9419-b011919d88ba&amp;source=gmail&amp;ust=1550716564091000&amp;usg=AFQjCNHl4yK0x3dvOPdPs7yddWnBpvqomQ">
+                                  <td align="center" bgcolor="#02b3e4">
                                       <img
                                         alt="L'avenir commence ici; votre inscription a été effectuée avec succès" border="0" src="https://oschool.ci/wp-content/uploads/2019/02/image-mail-inscription-oschool.png"
-                                        width="600" style="display:block;width:100%;max-width:600px;font-family:'Open Sans',Helvetica,Arial,sans-serif;font-size:25px;line-height:30px;font-weight:bold;color:#003e62;text-align:center" class="CToWUd"></a></td>
+                                        width="600" style="display:block;width:100%;max-width:600px;font-family:'Open Sans',Helvetica,Arial,sans-serif;font-size:25px;line-height:30px;font-weight:bold;color:#003e62;text-align:center" class="CToWUd"></td>
                                 </tr>
                                 <tr>
                                   <td style="text-align:center;padding:30px 40px 15px 40px">
@@ -296,16 +295,14 @@
                     <table border="0" cellpadding="0" cellspacing="0" style="width:220px">
                       <tbody>
                         <tr>
-                          <td align="center" style="padding:0px 10px"><a href="http://bsft.io/x/imuruj?uid=cef11a58-a319-42ff-90dc-789ce81a4f01&amp;mid=7a013565-3957-4533-9419-b011919d88ba" target="_blank" ><img
+                          <td align="center" style="padding:0px 10px"><a href="https://twitter.com/OschoolCi" target="_blank" ><img
                                 alt="Twitter" border="0" height="26" src="https://ci4.googleusercontent.com/proxy/hdBl2U1xleCcJDN3yFC1JAzZfrXYsGsgFlqKNsltgxQNDTi_56qcvAnhpbqaElLI1BtXL-_YmASpAD1N3SIv5ZlxPHpNFzI01AnedeqBK9EUToguNfw=s0-d-e1-ft#https://s3-us-west-2.amazonaws.com/udacity-email/Footer/twitter.jpg"
                                 style="display:block;width:26px!important;height:26px!important" width="26" class="CToWUd"></a></td>
-                          <td align="center" style="padding:0px 10px"><a href="http://bsft.io/x/dt7rv2?uid=cef11a58-a319-42ff-90dc-789ce81a4f01&amp;mid=7a013565-3957-4533-9419-b011919d88ba" target="_blank" ><img
+                          <td align="center" style="padding:0px 10px"><a href="https://www.facebook.com/Oschool.ci/" target="_blank" ><img
                                 alt="Facebook" border="0" height="26" src="https://ci4.googleusercontent.com/proxy/ffDofBKMTjsRg1AgmIl219DDktVcKSCIa9KraanCDEGbbQSRnnThzkAlHu8Ez91qXgi0oX88ch3mtp2yLWbAoxTNRlTS0TPDC_-Tc7iXwPsTOHMNdXt9=s0-d-e1-ft#https://s3-us-west-2.amazonaws.com/udacity-email/Footer/facebook.jpg"
                                 style="display:block;width:26px!important;height:26px!important" width="26" class="CToWUd"></a></td>
-                          <td align="center" style="padding:0px 10px"><a href="http://bsft.io/x/gmfell?uid=cef11a58-a319-42ff-90dc-789ce81a4f01&amp;mid=7a013565-3957-4533-9419-b011919d88ba" target="_blank" ><img
-                                alt="Google" border="0" height="26" src="https://ci5.googleusercontent.com/proxy/pHyveTKSv3mFhIMxROAl6DKo1oXNzFUJEKvrFLA0ktecHZuTH_9Dz6m-zRqol7m-TuaZBbq_U8BzaUOj4NW7yjMoX2g8WU3NXOIa7L7gbhTFAAbRLQ=s0-d-e1-ft#https://s3-us-west-2.amazonaws.com/udacity-email/Footer/google.jpg"
-                                style="display:block;width:28px!important;height:26px!important" width="28" class="CToWUd"></a></td>
-                          <td align="center" style="padding:0px 10px"><a href="http://bsft.io/x/1eqj97?uid=cef11a58-a319-42ff-90dc-789ce81a4f01&amp;mid=7a013565-3957-4533-9419-b011919d88ba" target="_blank" ><img
+
+                          <td align="center" style="padding:0px 10px"><a href="https://www.linkedin.com/school/oschool/" target="_blank" ><img
                                 alt="Linkedin" border="0" height="26" src="https://ci5.googleusercontent.com/proxy/SYjPzfIol7ARpghIcgpoXiX-VdP7HpJcDiFPGoy8wxujPjkBm56zhln-zpSH24Ch6i1rnFav-pzefu57NIZndC72unbllyvGghS9q5CbS0f9II7WFAQB=s0-d-e1-ft#https://s3-us-west-2.amazonaws.com/udacity-email/Footer/linkedin.jpg"
                                 style="display:block;width:26px!important;height:26px!important" width="26" class="CToWUd"></a></td>
                         </tr>

@@ -24,6 +24,15 @@
               </div>
             </div>
 
+            <div style="display: none;" class="form-group password-form-group">
+              <div class="input-with-icon">
+                <select class="form-control" name="type">
+                  <option value="new">type</option>
+                </select>
+                <i class="input-icon ion-person-stalker"></i>
+              </div>
+            </div>
+
             <div class="form-group full_name-form-group">
               <div class="input-with-icon">
                 <input value="{{Auth::check() ? Auth::user()->email : ''}}" type="email" class="form-control" id="" placeholder="Email" name="email" required>

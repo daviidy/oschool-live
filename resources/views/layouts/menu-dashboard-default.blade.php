@@ -391,7 +391,7 @@ $(document).ready(function(){
 
     <!-- Modal body -->
     <div class="modal-body">
-    <form method="post" action="{{url('envoiRenew')}}">
+    <form method="post" action="{{url('envoi')}}">
     {{ csrf_field() }}
 
     <div class="form-group">
@@ -400,11 +400,11 @@ $(document).ready(function(){
     </div>
     <div class="form-group">
       <label for="">Nom</label>
-      <input type="text" class="form-control" id="" placeholder="Nom" name="nom" required>
+      <input type="text" class="form-control" value="{{Auth::user()->nom}}" id="" placeholder="Nom" name="nom" required>
     </div>
     <div class="form-group">
       <label for="">Prénoms</label>
-      <input type="text" class="form-control" id="" placeholder="Prénoms" name="prenoms" required>
+      <input type="text" class="form-control" value="{{Auth::user()->prenoms}}" id="" placeholder="Prénoms" name="prenoms" required>
     </div>
     <div class="form-group">
       <label for="">Numéro de téléphone</label>
@@ -421,14 +421,24 @@ $(document).ready(function(){
         </select>
         @endforeach
       @endif
-      @else
-      <select class="" name="formation">
-        <option value="Développeur Web Junior">Développeur Web Junior</option>
-      </select>
       @endauth
     </div>
 
-    <div class="form-group">
+    <div style="display: none;" class="form-group">
+      <label for="">user id</label>
+      <select class="" name="user_id">
+        <option value="{{Auth::user()->id}}">user id</option>
+      </select>
+    </div>
+
+    <div style="display: none;" class="form-group">
+      <label for="">type</label>
+      <select class="" name="type">
+        <option value="renew">type</option>
+      </select>
+    </div>
+
+    <div style="display: none;" class="form-group">
       <label for="">Prix</label>
       <select class="" name="montant">
         <option value="30000">30.000 FCFA</option>

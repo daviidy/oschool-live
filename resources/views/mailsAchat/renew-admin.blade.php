@@ -1,148 +1,72 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html xmlns=3D "http://www.w3.org/1999/xhtml">
+
 <head>
-	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-	<meta content="telephone=no" name="format-detection" />
-	<!-- Facebook sharing information tags -->
-	<title>Bienvenue à Oschool !</title>
-
-
-	<style type="text/css" media="screen">
-		/* Linked Styles */
-		body { padding:0 !important; margin:0 !important; display:block !important; -webkit-text-size-adjust:none; background-image:url(images/background.jpg); background-position:0 0; background-repeat:no-repeat repeat-y }
-		a { color:#7ba436; text-decoration:underline }
-
-		/* Campaign Monitor wraps the text in editor in paragraphs. In order to preserve design spacing we remove the padding/margin */
-		p { padding:0 !important; margin:0 !important }
-	</style>
+  <meta http-equiv=3D "Content-Type" content=3D "text/html; charset=3Dutf-8" />
+  <meta name=3D "viewport" content=3D "initial-scale=3D1.0, minimum-scale=3D1.0=
+, maximum-scale=3D1.0, user-scalable=3Dno" />
+  <style type=3D "text/css">
+    a,
+    u,
+    b {
+      text-decoration: none;
+    }
+  </style>
 </head>
-<body class="body" style="padding:0 !important; margin:0 !important; display:block !important; -webkit-text-size-adjust:none; background-image:url(images/background.jpg); background-position:0 0; background-repeat:no-repeat repeat-y">
 
-<table width="100%" border="0" cellspacing="0" cellpadding="0" background="/email/images/background.jpg" style="background-image: url(images/background.jpg); background-position: 0 0; background-repeat: no-repeat repeat-y; background-color: #fcfcfc">
-	<tr>
-		<td align="center" valign="top">
-			<!-- Header -->
-			<table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#ffffff">
-				<tr>
-					<td align="center">
-						<div style="font-size:0pt; line-height:0pt; height:12px"><img src="/email/images/empty.gif" width="1" height="12" style="height:12px" alt="" /></div>
+<body>
+  <table style="width:100%;max-width:960px;position: relative;left:0;right:0;margin: 0 auto;border-collapse: collapse;border-spacing: 0;font-size: 14px;line-height: 24px;color: #333;font-family: Microsoft YaHei;">
+    <tr>
+      <td style="padding: 20px 7.5% 0;display: block;"><img width="100" src="https://code.oschool.ci/avilon/img/logo-oschool.png" /></td>
+    </tr>
+    <tr>
+      <td style="padding: 20px 7.5% 0;">Chère, cher Admin ,</td>
+    </tr>
 
-						<table width="620" border="0" cellspacing="0" cellpadding="0">
-							<tr>
-								<td class="img" style="font-size:0pt; line-height:0pt; text-align:left"><a href="#" target="_blank"><img src="/email/images/logo.png" alt="" border="0" width="150" height="40" /></a></td>
+    <tr>
+      <td style="padding: 20px 7.5% 0;">Un paiement a été effectué avec succès <br>  </td>
+    </tr>
+.
+    <tr>
+      <td style="padding: 20px 7.5% 0;"> Voici les infos de la transaction  <br>
+				<ul>
+					<li>Plateforme: <strong>Parcours Oschool</strong> </li>
+					<li>Utilisateur: <strong> <a href="{{url('users', $achat->user_id)}}">{{$achat->prenoms}} {{$achat->nom}}</a> </strong> </li>
+					<li>Formation choisie: <strong>{{$achat->formation}}</strong> </li>
+					<li>Montant: <strong>{{$achat->montant}} FCFA	</strong> </li>
+					<li>Date de paiement: <strong>{{$achat->date}}</strong> </li>
+          <li>Type: <strong>Réabonnement</strong> </li>
+				</ul>
 
-							</tr>
-						</table>
-						<div style="font-size:0pt; line-height:0pt; height:5px"><img src="/email/images/empty.gif" width="1" height="5" style="height:5px" alt="" /></div>
-
-					</td>
-				</tr>
-			</table>
-			<!-- END Header -->
-
-			<!-- Hero -->
-
-
-
-			<!-- END Hero -->
-			<div style="font-size:0pt; line-height:0pt; height:40px"><img src="/email/images/empty.gif" width="1" height="40" style="height:40px" alt="" /></div>
-
-
-			<!-- Content -->
-			<table width="100%" border="0" cellspacing="0" cellpadding="0">
-				<tr>
-					<td align="center">
-						<table width="620" border="0" cellspacing="0" cellpadding="0">
-							<tr>
-								<td class="img" style="font-size:0pt; line-height:0pt; text-align:left" width="20"></td>
-								<td valign="top" width="360" class="text" style="color:#7d7d7d; font-family:Arial; font-size:12px; line-height:20px; text-align:left">
-									<div>
-										<div class="h2-blue" style="color:#509bcb; font-family:'Trebuchet MS'; font-size:22px; line-height:26px; text-align:left; font-weight:bold"><div>Renouvellement à un Parcours Oschool !</div></div>
-										<div style="font-size:0pt; line-height:0pt; height:10px"><img src="/email/images/empty.gif" width="1" height="10" style="height:10px" alt="" /></div>
-
-
-										<div class="img" style="font-size:0pt; line-height:0pt; text-align:left"><img src="/email/images/separator1.jpg" alt="" border="0" width="360" height="2" /></div>
-										<div style="font-size:0pt; line-height:0pt; height:15px"><img src="/email/images/empty.gif" width="1" height="15" style="height:15px" alt="" /></div>
-
-
-										<div>
-											Renouvellement à la formation {{$achat->formation}} en télé présentiel !
-											Voici les infos de l'abonné:
-											<ul>
-												<li>Nom: {{$achat->nom}}</li>
-												<li>Prénoms: {{$achat->prenoms}}</li>
-												<li>Email: {{$achat->email}}</li>
-												<li>Téléphone: {{$achat->tel}}</li>
-												<li>Montant: {{$achat->montant}}</li>
-												<li>Fin de l'abonnement: {{ Carbon\Carbon::parse($achat->student->fin_abonnement)->format('d-m-Y H:i') }}</li>
-											</ul>
-										</div>
-										<div style="font-size:0pt; line-height:0pt; height:2px"><img src="/email/images/empty.gif" width="1" height="2" style="height:2px" alt="" /></div>
-
-										<div style="font-size:0pt; line-height:0pt; height:40px"><img src="/email/images/empty.gif" width="1" height="40" style="height:40px" alt="" /></div>
-
-									</div>
+      </td>
+    </tr>
 
 
 
-								</td>
-								<td class="img" style="font-size:0pt; line-height:0pt; text-align:left" width="31"></td>
+    <tr>
+      <td style="padding: 20px 7.5% 117px;">Cordialement,<br>l'équipe Oschool</td>
+    </tr>
 
-							</tr>
-						</table>
-					</td>
-				</tr>
-			</table>
-			<!-- END Content -->
-			<div style="font-size:0pt; line-height:0pt; height:35px"><img src="/email/images/empty.gif" width="1" height="35" style="height:35px" alt="" /></div>
+  </table>
+  <table style="width:100%;max-width:960px;position: relative;left:0;right:0;margin: 0 auto;text-align: center;border-collapse: collapse;border-spacing: 0;font-size: 12px;line-height: 24px;font-family: Microsoft YaHei;">
+    <tr>
+      <td style="display: block; height: 16px;border-top:#efefef solid 1px;background: -webkit-radial-gradient(top, ellipse farthest-side, rgba(251,251,251,1), rgba(255,255,255,0));background: -o-radial-gradient(top, ellipse farthest-side, rgba(251,251,251,1), rgba(255,255,255,0));background: -moz-radial-gradient(top, ellipse farthest-side, rgba(251,251,251,1), rgba(255,255,255,0));background: radial-gradient(top, ellipse farthest-side, rgba(251,251,251,1), rgba(255,255,255,0));">
+      </td>
+    </tr>
 
+    <tr>
 
-			<!-- Footer -->
-			<table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#3cc6f3">
-				<tr>
-					<td valign="top">
-						<div style="font-size:0pt; line-height:0pt; height:1px; background:#33a8cf; "><img src="/email/images/empty.gif" width="1" height="1" style="height:1px" alt="" /></div>
+      <td style="padding-bottom: 2px;"><a href="https://oschool.ci/tous-nos-cours/" target="blank" style="color: #7f7f7f;text-decoration:none;">Voir tous nos cours</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+        <a href="#" target="blank" style="color: #7f7f7f;text-decoration:none;">Abidjan, Côte d'Ivoire
+        </a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="https://discord.gg/hhbzcHE" target="blank" style="color: #7f7f7f;text-decoration:none;">Rejoignez notre communauté !</a></td>
 
-						<div style="font-size:0pt; line-height:0pt; height:1px; background:#9ee3f9; "><img src="/email/images/empty.gif" width="1" height="1" style="height:1px" alt="" /></div>
+    </tr>
 
-					</td>
-					<td valign="top" align="center" width="620">
-						<div class="img" style="font-size:0pt; line-height:0pt; text-align:left">
-							<img src="/email/images/footer_shadow.jpg" alt="" border="0" width="620" height="13" />
-						</div>
-						<div style="font-size:0pt; line-height:0pt; height:10px"><img src="/email/images/empty.gif" width="1" height="10" style="height:10px" alt="" /></div>
+    <tr>
 
-						<table width="100%" border="0" cellspacing="0" cellpadding="0">
-							<tr>
-								<td align="center">
-									<table border="0" cellspacing="0" cellpadding="0">
-										<tr>
-											<td class="img" style="font-size:0pt; line-height:0pt; text-align:left"><a href="https://www.facebook.com/Oschool.ci/" target="_blank"><img src="/email/images/facebook.jpg" alt="" border="0" width="45" height="45" /></a></td>
-											<td class="img" style="font-size:0pt; line-height:0pt; text-align:left"><a href="https://twitter.com/OschoolCi" target="_blank"><img src="/email/images/twitter.jpg" alt="" border="0" width="45" height="45" /></a></td>
-											<td class="img" style="font-size:0pt; line-height:0pt; text-align:left"><a href="https://www.youtube.com/channel/UCwlYc8yREmfhMqrS5bFrzEg?view_as=subscriber" target="_blank"><img src="/email/images/youtube.jpg" alt="" border="0" width="45" height="45" /></a></td>
-										</tr>
-									</table>
-								</td>
-							</tr>
-						</table>
-						<div style="font-size:0pt; line-height:0pt; height:20px"><img src="/email/images/empty.gif" width="1" height="20" style="height:20px" alt="" /></div>
+    </tr>
 
-
-
-
-					</td>
-					<td valign="top">
-						<div style="font-size:0pt; line-height:0pt; height:1px; background:#33a8cf; "><img src="/email/images/empty.gif" width="1" height="1" style="height:1px" alt="" /></div>
-
-						<div style="font-size:0pt; line-height:0pt; height:1px; background:#9ee3f9; "><img src="/email/images/empty.gif" width="1" height="1" style="height:1px" alt="" /></div>
-
-					</td>
-				</tr>
-			</table>
-			<!-- END Footer -->
-		</td>
-	</tr>
-</table>
-
+  </table>
 </body>
+
 </html>

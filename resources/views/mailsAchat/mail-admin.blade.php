@@ -35,6 +35,7 @@
 					<li>Formation choisie: <strong>{{$achat->formation}}</strong> </li>
 					<li>Montant: <strong>{{$achat->montant}} FCFA	</strong> </li>
 					<li>Date de paiement: <strong>{{$achat->date}}</strong> </li>
+          <li>Type: <strong>Nouvelle inscription</strong> </li>
 				</ul>
 
       </td>

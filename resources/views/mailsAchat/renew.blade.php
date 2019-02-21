@@ -1,139 +1,220 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-	<meta content="telephone=no" name="format-detection" />
-	<!-- Facebook sharing information tags -->
-	<title>Bienvenue à Oschool !</title>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tbody>
+    <tr>
+      <td style="background-color:#fafbfc">
+        <center bgcolor="#fafbfc" style="width:100%;background-color:#fafbfc">
+          <div id="m_-9197042922378252978maincontent" style="max-width:620px;margin:0 auto">
+            <div class="m_-9197042922378252978preheader" style="font-size:1px;line-height:1px;display:none!important">Votre paiement a été effectué avec succès </div>
+            <table border="0" cellpadding="0" cellspacing="0" style="width:100%">
+              <tbody>
+                <tr>
+                  <td>
+                    <table border="0" cellpadding="0" cellspacing="0" style="width:100%">
+                      <tbody>
+                        <tr>
+                          <td align="center" style="padding-bottom:5px">
+                            <table border="0" cellpadding="0" cellspacing="0" style="font-family:'Open+Sans','Open Sans',Helvetica,Arial,sans-serif;font-size:13px;line-height:18px;color:#00c0ea;text-align:center;width:152px">
+                              <tbody>
+                                <tr>
+                                  <td style="padding:20px 0 20px 0"><a href="https://oschool.ci" style="text-decoration:none" target="_blank"
+                                      ><img
+                                        alt="Oschool" border="0" src="https://oschool.ci/wp-content/uploads/2017/05/Sans-titre1.png"
+                                        style="display:block;width:152px!important;font-family:'Open+Sans','Open Sans',Helvetica,Arial,sans-serif;font-size:22px;line-height:26px;color:#000000;text-transform:uppercase;text-align:center;letter-spacing:1px"
+                                        width="152" class="CToWUd"></a></td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <table border="0" cellpadding="0" cellspacing="0" style="width:100%">
+                      <tbody>
+                        <tr>
+                          <td bgcolor="#fafbfc" style="width:7px;font-size:1px"><br></td>
+                          <td bgcolor="#f5f6f7" style="width:1px;font-size:1px"><br></td>
+                          <td bgcolor="#f0f2f3" style="width:1px;font-size:1px"><br></td>
+                          <td bgcolor="#edeef1" style="width:1px;font-size:1px"><br></td>
+                          <td bgcolor="#ffffff">
+                            <table border="0" cellpadding="0" cellspacing="0" style="width:100%">
+                              <tbody>
+                                <tr>
+                                  <td align="center" bgcolor="#02b3e4">
+                                      <img
+                                        alt="L'avenir commence ici; votre abonnement a été effectuée avec succès" border="0" src="https://oschool.ci/wp-content/uploads/2019/02/image-mail-inscription-oschool-1.png"
+                                        width="600" style="display:block;width:100%;max-width:600px;font-family:'Open Sans',Helvetica,Arial,sans-serif;font-size:25px;line-height:30px;font-weight:bold;color:#003e62;text-align:center" class="CToWUd"></td>
+                                </tr>
+                                <tr>
+                                  <td style="text-align:center;padding:30px 40px 15px 40px">
+                                    <div style="display:inline-block;width:100%;max-width:520px">
+                                      <table align="center" border="0" cellpadding="0" cellspacing="0" style="font-family:'Open+Sans','Open Sans',Helvetica,Arial,sans-serif;font-size:14px;line-height:24px;text-align:left;width:100%">
+                                        <tbody>
+                                          <tr>
+                                            <td class="m_-9197042922378252978body-text" align="center" style="font-family:'Open+Sans','Open Sans',Helvetica,Arial,sans-serif;font-size:14px;line-height:24px;text-align:center;width:100%">
+                                              <p style="Margin:0 0 25px 0;font-size:18px;line-height:23px;color:#102231;font-weight:bold">Votre réabonnement au parcours {{$achat->formation}} a été effectué avec succès </p>
+                                              <p style="Margin:0 0 0px 0;color:#525c65">
+                                                Ce mail fait office de reçu pour votre paiement. Voici les détails de votre achat:
+                                              </p>
+                                              <ul style="list-style-type: none;">
+                                                <li>Prénoms et Nom: <strong>{{$achat->prenoms}} {{$achat->nom}}</strong> </li>
+                                                <li>Montant: <strong>{{$achat->montant}}</strong></li>
+                                                <li>Date de paiement: <strong>{{$achat->date}}</strong></li>
+                                                <li>Email du compte: <strong>{{$achat->email}}</strong></li>
+                                                <li>Durée de l'abonnement: <strong>1 mois</strong> </li>
+                                              </ul>
+                                              <p style="Margin:15px 0 0px 0;color:#525c65">Vous pouvez consulter la liste de vos achats <a href="https://code.oschool.ci/achats">ici</a> </p>
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </div>
+                                  </td>
+                                </tr>
 
 
-	<style type="text/css" media="screen">
-		/* Linked Styles */
-		body { padding:0 !important; margin:0 !important; display:block !important; -webkit-text-size-adjust:none; background-image:url(images/background.jpg); background-position:0 0; background-repeat:no-repeat repeat-y }
-		a { color:#7ba436; text-decoration:underline }
+                                <tr>
+                                  <td style="text-align:center;padding:20px 40px 60px 40px">
+                                    <div style="display:inline-block;width:100%;max-width:520px">
+                                      <table align="center" border="0" cellpadding="0" cellspacing="0" style="font-family:'Open+Sans','Open Sans',Helvetica,Arial,sans-serif;font-size:14px;line-height:24px;text-align:left;width:100%">
+                                        <tbody>
+                                          <tr>
+                                            <td class="m_-9197042922378252978body-text" align="left" style="font-family:'Open+Sans','Open Sans',Helvetica,Arial,sans-serif;font-size:14px;line-height:24px;text-align:left;width:100%">
+                                              <div style="display:inline-block;width:100%;max-width:520px">
+                                                <table align="center" border="0" cellpadding="0" cellspacing="0" style="font-family:'Open+Sans','Open Sans',Helvetica,Arial,sans-serif;font-size:16px;line-height:26px;text-align:center;width:100%">
+                                                  <tbody>
+                                                    <tr>
+                                                      <td align="center" valign="top">
+                                                        <table width="240" align="center" border="0" cellspacing="0" cellpadding="0" style="background-color:#01b3e3;border-radius:4px;border-collapse:separate!important">
+                                                          <tbody>
+                                                            <tr>
+                                                              <td width="240" height="46" align="center" valign="middle" style="font-size:13px;font-family:'Open+Sans','Open Sans',Helvetica,Arial,sans-serif;font-weight:semibold"><a href="https://code.oschool.ci/projets"
+                                                                  style="text-decoration:none;color:#ffffff;letter-spacing:2px;display:block;padding-top:10px;padding-bottom:10px" target="_blank" >
+                                                                  CONTINUER A APPRENDRE </a></td>
+                                                            </tr>
+                                                          </tbody>
+                                                        </table>
+                                                      </td>
+                                                    </tr>
+                                                  </tbody>
+                                                </table>
+                                              </div>
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </div>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td bgcolor="#e0e2e5" style="height:1px;width:100%;line-height:1px;font-size:0"><br></td>
+                                </tr>
+                                <tr>
+                                  <td bgcolor="#e0e2e4" style="height:1px;width:100%;line-height:1px;font-size:0"><br></td>
+                                </tr>
+                                <tr>
+                                  <td bgcolor="#e8ebed" style="height:1px;width:100%;line-height:1px;font-size:0"><br></td>
+                                </tr>
+                                <tr>
+                                  <td bgcolor="#f1f3f6" style="height:1px;width:100%;line-height:1px;font-size:0"><br></td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                          <td bgcolor="#edeef1" style="width:1px;font-size:1px"><br></td>
+                          <td bgcolor="#f0f2f3" style="width:1px;font-size:1px"><br></td>
+                          <td bgcolor="#f5f6f7" style="width:1px;font-size:1px"><br></td>
+                          <td bgcolor="#fafbfc" style="width:7px;font-size:1px"><br></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="center" style="padding:0">
+                    <div style="display:inline-block;width:100%;max-width:520px;vertical-align:top">
+                      <table border="0" cellpadding="0" cellspacing="0" style="width:100%">
+                        <tbody>
+                          <tr>
+                            <td align="center" style="padding:30px 0;border-bottom:1px solid #e5ebef">
+                              <table border="0" cellpadding="0" cellspacing="0" style="width:265px">
+                                <tbody>
+                                  <tr>
+                                    <td align="center" style="padding:0px 10px"><img
+                                          alt="IOS" border="0" height="44" src="https://ci6.googleusercontent.com/proxy/idlfJpK2BUW6-33QNx3_68ErV5yheHtRh6VggS4GTQ87bCsfDtXY7v90xG7SNpeUEBsfqwVlHlphH5H8ZFwEKEY6DY8RXwlWmOxt7QF-PzMoIiXGCxk=s0-d-e1-ft#https://s3-us-west-2.amazonaws.com/udacity-email/Footer/ios-btn.gif"
+                                          style="display:block;width:120px!important" width="120" class="CToWUd"></td>
+                                    <td align="center" style="padding:0px 10px"><img
+                                          alt="Android" border="0" height="44" src="https://ci3.googleusercontent.com/proxy/8nh6nFCBEPsuABOns_CTZ2-JO9RRYOs2brb_iVmYwxBapIGeDR4pMsPDjVHPxpd8mCn8vBT_7mU22KpjXHgvwFN9v3noun7fUyL9WjdaZHUvFOSDDPRUz3TM=s0-d-e1-ft#https://s3-us-west-2.amazonaws.com/udacity-email/Footer/android-btn.gif"
+                                          style="display:block;width:120px!important" width="120" class="CToWUd"></td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="center" style="padding:30px 0 20px 0">
+                    <table border="0" cellpadding="0" cellspacing="0" style="width:220px">
+                      <tbody>
+												<tr>
+                          <td align="center" style="padding:0px 10px"><a href="https://twitter.com/OschoolCi" target="_blank" ><img
+                                alt="Twitter" border="0" height="26" src="https://ci4.googleusercontent.com/proxy/hdBl2U1xleCcJDN3yFC1JAzZfrXYsGsgFlqKNsltgxQNDTi_56qcvAnhpbqaElLI1BtXL-_YmASpAD1N3SIv5ZlxPHpNFzI01AnedeqBK9EUToguNfw=s0-d-e1-ft#https://s3-us-west-2.amazonaws.com/udacity-email/Footer/twitter.jpg"
+                                style="display:block;width:26px!important;height:26px!important" width="26" class="CToWUd"></a></td>
+                          <td align="center" style="padding:0px 10px"><a href="https://www.facebook.com/Oschool.ci/" target="_blank" ><img
+                                alt="Facebook" border="0" height="26" src="https://ci4.googleusercontent.com/proxy/ffDofBKMTjsRg1AgmIl219DDktVcKSCIa9KraanCDEGbbQSRnnThzkAlHu8Ez91qXgi0oX88ch3mtp2yLWbAoxTNRlTS0TPDC_-Tc7iXwPsTOHMNdXt9=s0-d-e1-ft#https://s3-us-west-2.amazonaws.com/udacity-email/Footer/facebook.jpg"
+                                style="display:block;width:26px!important;height:26px!important" width="26" class="CToWUd"></a></td>
 
-		/* Campaign Monitor wraps the text in editor in paragraphs. In order to preserve design spacing we remove the padding/margin */
-		p { padding:0 !important; margin:0 !important }
-	</style>
-</head>
-<body class="body" style="padding:0 !important; margin:0 !important; display:block !important; -webkit-text-size-adjust:none; background-image:url(images/background.jpg); background-position:0 0; background-repeat:no-repeat repeat-y">
-
-<table width="100%" border="0" cellspacing="0" cellpadding="0" background="/email/images/background.jpg" style="background-image: url(images/background.jpg); background-position: 0 0; background-repeat: no-repeat repeat-y; background-color: #fcfcfc">
-	<tr>
-		<td align="center" valign="top">
-			<!-- Header -->
-			<table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#ffffff">
-				<tr>
-					<td align="center">
-						<div style="font-size:0pt; line-height:0pt; height:12px"><img src="/email/images/empty.gif" width="1" height="12" style="height:12px" alt="" /></div>
-
-						<table width="620" border="0" cellspacing="0" cellpadding="0">
-							<tr>
-								<td class="img" style="font-size:0pt; line-height:0pt; text-align:left"><a href="#" target="_blank"><img src="/email/images/logo.png" alt="" border="0" width="150" height="40" /></a></td>
-
-							</tr>
-						</table>
-						<div style="font-size:0pt; line-height:0pt; height:5px"><img src="/email/images/empty.gif" width="1" height="5" style="height:5px" alt="" /></div>
-
-					</td>
-				</tr>
-			</table>
-			<!-- END Header -->
-
-			<!-- Hero -->
-			<table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#7dd7f8">
-				<tr>
-					<td class="img-center" style="font-size:0pt; line-height:0pt; text-align:center"><a href="#" target="_blank"><img src="/email/images/slider.png" alt="" border="0" width="620" height="331" /></a></td>
-				</tr>
-			</table>
-
-
-			<!-- END Hero -->
-			<div style="font-size:0pt; line-height:0pt; height:40px"><img src="/email/images/empty.gif" width="1" height="40" style="height:40px" alt="" /></div>
-
-
-			<!-- Content -->
-			<table width="100%" border="0" cellspacing="0" cellpadding="0">
-				<tr>
-					<td align="center">
-						<table width="620" border="0" cellspacing="0" cellpadding="0">
-							<tr>
-								<td class="img" style="font-size:0pt; line-height:0pt; text-align:left" width="20"></td>
-								<td valign="top" width="360" class="text" style="color:#7d7d7d; font-family:Arial; font-size:12px; line-height:20px; text-align:left">
-									<div>
-										<div class="h2-blue" style="color:#509bcb; font-family:'Trebuchet MS'; font-size:22px; line-height:26px; text-align:left; font-weight:bold"><div>Votre renouvellement a été effectué avec succès, {{$achat->prenoms}} !</div></div>
-										<div style="font-size:0pt; line-height:0pt; height:10px"><img src="/email/images/empty.gif" width="1" height="10" style="height:10px" alt="" /></div>
-
-
-										<div class="img" style="font-size:0pt; line-height:0pt; text-align:left"><img src="/email/images/separator1.jpg" alt="" border="0" width="360" height="2" /></div>
-										<div style="font-size:0pt; line-height:0pt; height:15px"><img src="/email/images/empty.gif" width="1" height="15" style="height:15px" alt="" /></div>
-
-
-										<div>Votre renouvellement à la formation {{$achat->formation}} en télé présentiel, a été enregistré avec succès !</div>
-
-										<div class="">L'abonnement est valide jusqu'au {{ Carbon\Carbon::parse($achat->student->fin_abonnement)->format('d-m-Y H:i') }}</div>
-
-									</div>
-
-
-								</td>
-								<td class="img" style="font-size:0pt; line-height:0pt; text-align:left" width="31"></td>
-
-							</tr>
-						</table>
-					</td>
-				</tr>
-			</table>
-			<!-- END Content -->
-			<div style="font-size:0pt; line-height:0pt; height:35px"><img src="/email/images/empty.gif" width="1" height="35" style="height:35px" alt="" /></div>
-
-
-			<!-- Footer -->
-			<table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#3cc6f3">
-				<tr>
-					<td valign="top">
-						<div style="font-size:0pt; line-height:0pt; height:1px; background:#33a8cf; "><img src="/email/images/empty.gif" width="1" height="1" style="height:1px" alt="" /></div>
-
-						<div style="font-size:0pt; line-height:0pt; height:1px; background:#9ee3f9; "><img src="/email/images/empty.gif" width="1" height="1" style="height:1px" alt="" /></div>
-
-					</td>
-					<td valign="top" align="center" width="620">
-						<div class="img" style="font-size:0pt; line-height:0pt; text-align:left">
-							<img src="/email/images/footer_shadow.jpg" alt="" border="0" width="620" height="13" />
-						</div>
-						<div style="font-size:0pt; line-height:0pt; height:10px"><img src="/email/images/empty.gif" width="1" height="10" style="height:10px" alt="" /></div>
-
-						<table width="100%" border="0" cellspacing="0" cellpadding="0">
-							<tr>
-								<td align="center">
-									<table border="0" cellspacing="0" cellpadding="0">
-										<tr>
-											<td class="img" style="font-size:0pt; line-height:0pt; text-align:left"><a href="https://www.facebook.com/Oschool.ci/" target="_blank"><img src="/email/images/facebook.jpg" alt="" border="0" width="45" height="45" /></a></td>
-											<td class="img" style="font-size:0pt; line-height:0pt; text-align:left"><a href="https://twitter.com/OschoolCi" target="_blank"><img src="/email/images/twitter.jpg" alt="" border="0" width="45" height="45" /></a></td>
-											<td class="img" style="font-size:0pt; line-height:0pt; text-align:left"><a href="https://www.youtube.com/channel/UCwlYc8yREmfhMqrS5bFrzEg?view_as=subscriber" target="_blank"><img src="/email/images/youtube.jpg" alt="" border="0" width="45" height="45" /></a></td>
-										</tr>
-									</table>
-								</td>
-							</tr>
-						</table>
-						<div style="font-size:0pt; line-height:0pt; height:20px"><img src="/email/images/empty.gif" width="1" height="20" style="height:20px" alt="" /></div>
-
-
-
-
-					</td>
-					<td valign="top">
-						<div style="font-size:0pt; line-height:0pt; height:1px; background:#33a8cf; "><img src="/email/images/empty.gif" width="1" height="1" style="height:1px" alt="" /></div>
-
-						<div style="font-size:0pt; line-height:0pt; height:1px; background:#9ee3f9; "><img src="/email/images/empty.gif" width="1" height="1" style="height:1px" alt="" /></div>
-
-					</td>
-				</tr>
-			</table>
-			<!-- END Footer -->
-		</td>
-	</tr>
+                          <td align="center" style="padding:0px 10px"><a href="https://www.linkedin.com/school/oschool/" target="_blank" ><img
+                                alt="Linkedin" border="0" height="26" src="https://ci5.googleusercontent.com/proxy/SYjPzfIol7ARpghIcgpoXiX-VdP7HpJcDiFPGoy8wxujPjkBm56zhln-zpSH24Ch6i1rnFav-pzefu57NIZndC72unbllyvGghS9q5CbS0f9II7WFAQB=s0-d-e1-ft#https://s3-us-west-2.amazonaws.com/udacity-email/Footer/linkedin.jpg"
+                                style="display:block;width:26px!important;height:26px!important" width="26" class="CToWUd"></a></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="center" style="padding-bottom:40px">
+                    <table border="0" cellpadding="0" cellspacing="0" style="font-family:'Open+Sans','Open Sans',Helvetica,Arial,sans-serif;font-size:12px;line-height:18px;text-align:center">
+                      <tbody>
+                        <tr>
+                          <td class="m_-9197042922378252978body-text" align="center" style="color:#b7bdc1;font-family:'Open+Sans','Open Sans',Helvetica,Arial,sans-serif;font-size:12px;line-height:18px;text-align:center">
+                            <p style="color:#b7bdc1"><span class="m_-9197042922378252978appleLinksGrey"><a style="text-decoration:none!important;color:#b7bdc1">Koumassi • &nbsp;Abidjan, Côte d'Ivoire</a></span></p>
+                            <p style="Margin:15px 0 0 0;color:#b7bdc1">Vous recevez ce mail parce que vous avez crée un compte <span class="il">Oschool</span>.</p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div style="width:100%">
+            <table border="0" cellpadding="0" cellspacing="0" style="width:100%">
+              <tbody>
+                <tr>
+                  <td align="center" bgcolor="#7d97ad" style="padding:10px 0">
+                    <table border="0" cellpadding="0" cellspacing="0" style="font-family:'Open+Sans','Open Sans',Helvetica,Arial,sans-serif;font-size:14px;line-height:19px;text-align:center;width:auto">
+                      <tbody>
+                        <tr>
+                          <td class="m_-9197042922378252978body-text" style="color:#ffffff">On ne va pas à l'école, on y est déjà</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </center>
+      </td>
+    </tr>
+  </tbody>
 </table>
-
-</body>
-</html>
