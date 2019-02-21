@@ -441,7 +441,7 @@ $(document).ready(function(){
     <div style="display: none;" class="form-group">
       <label for="">Prix</label>
       <select class="" name="montant">
-        <option value="30000">30.000 FCFA</option>
+        <option value="100">30.000 FCFA</option>
       </select>
     </div>
     <button type="submit" class="btn btn-primary">Envoyer</button>

@@ -294,10 +294,10 @@ class AchatController extends Controller
                          $message->from('eventsoschool@gmail.com', 'Oschool');
                     }
 
+                  }
 
+        }
 
-
-      }
 
       else {
         //envoi mail admin
