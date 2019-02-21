@@ -266,35 +266,20 @@ class AchatController extends Controller
 
                     $formation = Formation::where('nom', $achat->formation)->first();
 
-                    if (!$user->subscribed($formation->id)) {
 
                       $user->formations()->attach($formation);
-                      //envoi mail utilisateur
+                      //envoi mail utilisateur inscription
                        Mail::send('mailsAchat.mail', ['achat' => $achat], function($message) use($achat){
                          $message->to($achat->email, 'Cher(ère) Etudiant(e)')->subject('Votre inscription a été effectuée avec succès !');
                          $message->from('eventsoschool@gmail.com', 'Oschool');
                        });
 
-                       //envoi mail admin
+                       //envoi mail admin inscription
                        Mail::send('mailsAchat.mail-admin', ['achat' => $achat], function($message) use($achat){
                          $message->to('yaodavidarmel@gmail.com', 'A David')->subject('Une commande a été traitée avec succès');
                          $message->from('eventsoschool@gmail.com', 'Oschool');
                        });
-                    }
-                    else {
-                      //envoi mail utilisateur
-                       Mail::send('mailsAchat.renew', ['achat' => $achat], function($message) use($achat){
-                         $message->to($achat->email, 'Cher(ère) Etudiant(e)')->subject('Votre renouvellement a été effectué avec succès !');
-                         $message->from('eventsoschool@gmail.com', 'Oschool');
-                       });
-
-                       //envoi mail admin
-                       Mail::send('mailsAchat.renew-admin', ['achat' => $achat], function($message) use($achat){
-                         $message->to('yaodavidarmel@gmail.com', 'A David')->subject('Une commande a été traitée avec succès');
-                         $message->from('eventsoschool@gmail.com', 'Oschool');
-                       });
-
-                  }
+                      
 
         }
 
