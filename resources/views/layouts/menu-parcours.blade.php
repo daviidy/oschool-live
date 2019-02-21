@@ -148,7 +148,7 @@ drift.load('2uy6g3spxi59');
 
 
 
-    <!--annonce a la udemy-->
+    <!--annonce a la udemy-
 		    <div class="ud-app-loader ud-component--smart-bar--app ud-app-loaded" data-module-id="smart-bar" ng-non-bindable="">
 		      <div data-purpose="smart-bar-wrapper" class="mb0 " style="margin-bottom: 0px;">
 		          <div data-purpose="smart-bar-container" class="" style="height: auto;">
