@@ -292,7 +292,7 @@ class AchatController extends Controller
                        Mail::send('mailsAchat.renew-admin', ['achat' => $achat], function($message) use($achat){
                          $message->to('yaodavidarmel@gmail.com', 'A David')->subject('Une commande a été traitée avec succès');
                          $message->from('eventsoschool@gmail.com', 'Oschool');
-                    }
+                       });
 
                   }
 
