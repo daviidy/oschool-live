@@ -266,6 +266,7 @@ class AchatController extends Controller
 
                     $formation = Formation::where('nom', $achat->formation)->first();
 
+                    if ($achat->type == 'new') {
 
                       $user->formations()->attach($formation);
                       //envoi mail utilisateur inscription
@@ -279,7 +280,21 @@ class AchatController extends Controller
                          $message->to('yaodavidarmel@gmail.com', 'A David')->subject('Une commande a été traitée avec succès');
                          $message->from('eventsoschool@gmail.com', 'Oschool');
                        });
-                      
+                    }
+                    else {
+                      //envoi mail utilisateur reabonnement
+                       Mail::send('mailsAchat.renew', ['achat' => $achat], function($message) use($achat){
+                         $message->to($achat->email, 'Cher(ère) Etudiant(e)')->subject('Votre renouvellement a été effectué avec succès !');
+                         $message->from('eventsoschool@gmail.com', 'Oschool');
+                       });
+
+                       //envoi mail admin reabonnement
+                       Mail::send('mailsAchat.renew-admin', ['achat' => $achat], function($message) use($achat){
+                         $message->to('yaodavidarmel@gmail.com', 'A David')->subject('Une commande a été traitée avec succès');
+                         $message->from('eventsoschool@gmail.com', 'Oschool');
+                       });
+
+                  }
 
         }
 
