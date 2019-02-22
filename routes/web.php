@@ -53,6 +53,9 @@ Route::get('/live_search', 'LiveSearch@index');
 Route::get('/live_search/action', 'LiveSearch@action')->name('live_search.action');
 
 
+Route::get('/merci', function () {
+    return view('merci');
+});
 
 
 Route::get('/castaing', function () {

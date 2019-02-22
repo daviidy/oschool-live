@@ -87,11 +87,6 @@
           </select>
         </div>
         <div style="display: none;" class="form-group">
-          <select class="" name="return_url">
-            <option value="{{ route('achats.store') }}">url retour</option>
-          </select>
-        </div>
-        <div style="display: none;" class="form-group">
           <select class="" name="cancel_url">
             <option value="{{URL::previous()}}">url cancel</option>
           </select>
