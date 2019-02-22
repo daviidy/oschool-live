@@ -17,9 +17,11 @@
 
             <div style="display: none;" class="form-group password-form-group">
               <div class="input-with-icon">
+                @auth
                 <select class="form-control" name="user_id">
                   <option value="{{Auth::user()->id}}">user id</option>
                 </select>
+                @endauth
                 <i class="input-icon ion-person-stalker"></i>
               </div>
             </div>
