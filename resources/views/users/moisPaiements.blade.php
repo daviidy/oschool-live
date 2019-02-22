@@ -70,6 +70,7 @@
               </thead>
               <tbody>
                 @foreach($achats as $achat)
+                  @if($achat->statut == 'Validé')
                 <tr>
                   <td>{{ $achat->date }}</td>
                   <td> <a href="{{url('users', $achat->user_id)}}">{{$achat->prenoms}}</a></td>
@@ -77,6 +78,7 @@
                   <td>{{ $achat->formation }}</td>
                   <td>{{ $achat->montant }} FCFA</td>
                 </tr>
+                  @endif
                 @endforeach
 
                 <tr>
