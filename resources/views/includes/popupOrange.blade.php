@@ -111,11 +111,13 @@ body *{box-sizing:border-box;}
             <div class="alert--error--3iAkS alert--_alert--1gt-I alert--hidden--2Mlfp"></div>
           </div>
           <div class="reset-password-modal--form--3tY3s">
+            <a style="color:white;" href="#" data-toggle="modal" data-target="#modalSignUp">
             <button id="achat2" type="button" class="index--primary--P14pO index--_btn--9nYKH  index--standard--3U4zZ" style="cursor: pointer;">
-              <a style="color:white;" href="#" data-toggle="modal" data-target="#modalSignUp">
+
                 Je m'inscris
-              </a>
+
             </button>
+            </a>
           </div>
         </div>
       </div>
