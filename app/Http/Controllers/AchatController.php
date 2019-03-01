@@ -269,18 +269,24 @@ class AchatController extends Controller
                     if ($achat->type == 'new') {
 
                       $user->formations()->attach($formation);
-                      
+
                       //envoi mail utilisateur inscription
                        Mail::send('mailsAchat.mail', ['achat' => $achat], function($message) use($achat){
                          $message->to($achat->email, 'Cher(ère) Etudiant(e)')->subject('Votre inscription a été effectuée avec succès !');
                          $message->from('eventsoschool@gmail.com', 'Oschool');
                        });
 
-                       //envoi mail admin inscription
-                       Mail::send('mailsAchat.mail-admin', ['achat' => $achat], function($message) use($achat){
-                         $message->to('yaodavidarmel@gmail.com', 'A David')->subject('Une commande a été traitée avec succès');
-                         $message->from('eventsoschool@gmail.com', 'Oschool');
-                       });
+                        $admins = User::where('type3', 'admin')->orderby('id', 'asc')->paginate(1000);
+
+                        foreach ($admins as $admin) {
+                          //envoi mail admin inscription
+                          Mail::send('mailsAchat.mail-admin', ['achat' => $achat], function($message) use($achat){
+                            $message->to($admin->mail, 'Aux Admins Oschool')->subject('Une commande a été traitée avec succès');
+                            $message->from('eventsoschool@gmail.com', 'Oschool');
+                          });
+                        }
+
+
                     }
                     else {
                       //envoi mail utilisateur reabonnement
@@ -289,11 +295,17 @@ class AchatController extends Controller
                          $message->from('eventsoschool@gmail.com', 'Oschool');
                        });
 
-                       //envoi mail admin reabonnement
-                       Mail::send('mailsAchat.renew-admin', ['achat' => $achat], function($message) use($achat){
-                         $message->to('yaodavidarmel@gmail.com', 'A David')->subject('Une commande a été traitée avec succès');
-                         $message->from('eventsoschool@gmail.com', 'Oschool');
-                       });
+                       $admins = User::where('type3', 'admin')->orderby('id', 'asc')->paginate(1000);
+
+                       foreach ($admins as $admin) {
+                         //envoi mail admin réabonnement
+                         Mail::send('mailsAchat.renew-admin', ['achat' => $achat], function($message) use($achat){
+                           $message->to($admin->mail, 'Aux Admins Oschool')->subject('Une commande a été traitée avec succès');
+                           $message->from('eventsoschool@gmail.com', 'Oschool');
+                         });
+                       }
+
+
 
                   }
 
@@ -301,11 +313,18 @@ class AchatController extends Controller
 
 
       else {
-        //envoi mail admin
-        Mail::send('mailsAchat.echec', ['cpm_result' => $json['transaction']['cpm_result'], 'signature' => '5aae6b75723132259953e7c3c2746e58334a7b8fc11104c7e53a4a8ad71b50f9'], function($message){
-          $message->to('yaodavidarmel@gmail.com', 'A David')->subject('Echec de paiement pour Oschool code');
+
+        $admins = User::where('type3', 'admin')->orderby('id', 'asc')->paginate(1000);
+
+        foreach ($admins as $admin) {
+        //envoi mail admin pour échec
+        Mail::send('mailsAchat.echec', ['achat' => $achat], function($message){
+          $message->to($admin->mail, 'Aux Admins Oschool')->subject('Echec de paiement pour Oschool code');
           $message->from('eventsoschool@gmail.com', 'Oschool');
         });
+      }
+
+
       }
 
 

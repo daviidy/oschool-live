@@ -132,7 +132,7 @@ class EmailController extends Controller
           }
 
         }
-        return view('emails.gazette_etudiants', ['email' => $email]);
+        return redirect('emails')->with('status', 'Le mail a bien été envoyé !');
       }
       elseif ($email->titre == "Gazette Formateurs") {
 
@@ -157,7 +157,7 @@ class EmailController extends Controller
            });
         }
 
-        return view('emails.top_semaine', ['email' => $email]);
+        return redirect('emails')->with('status', 'Le mail a bien été envoyé !');
       }
       elseif ($email->titre == "Message Ceo") {
         return view('emails.message_ceo', ['email' => $email]);

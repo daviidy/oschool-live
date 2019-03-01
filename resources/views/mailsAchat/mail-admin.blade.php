@@ -32,7 +32,8 @@
 				<ul>
 					<li>Plateforme: <strong>Parcours Oschool</strong> </li>
 					<li>Utilisateur: <strong> <a href="{{url('users', $achat->user_id)}}">{{$achat->prenoms}} {{$achat->nom}}</a> </strong> </li>
-					<li>Formation choisie: <strong>{{$achat->formation}}</strong> </li>
+          <li>Email: <strong>{{$achat->email}}</strong> </li>
+          <li>Formation choisie: <strong>{{$achat->formation}}</strong> </li>
 					<li>Montant: <strong>{{$achat->montant}} FCFA	</strong> </li>
 					<li>Date de paiement: <strong>{{$achat->date}}</strong> </li>
           <li>Type: <strong>Nouvelle inscription</strong> </li>

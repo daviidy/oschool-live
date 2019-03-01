@@ -113,9 +113,7 @@
 
                 <!-- Modal body -->
                 <div class="modal-body">
-                  <div class="container">
-                      {!! $classroom->commentaire !!}
-                  </div>
+                        {!! $classroom->commentaire !!}
                 </div>
 
                 <!-- Modal footer -->
@@ -219,9 +217,7 @@
 
                 <!-- Modal body -->
                 <div class="modal-body">
-                  <div class="container">
-                      {!! $classroom->commentaire !!}
-                  </div>
+                        {!! $classroom->commentaire !!}
                 </div>
 
                 <!-- Modal footer -->

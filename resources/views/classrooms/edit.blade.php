@@ -13,6 +13,10 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote-bs4.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote-bs4.js"></script>
+
+		<script src="https://cdn.ckeditor.com/4.11.2/standard-all/ckeditor.js"></script>
+
+
 	<!--===============================================================================================-->
 		<link rel="stylesheet" type="text/css" href="/sessions/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
 	<!--===============================================================================================-->
@@ -93,12 +97,15 @@
 						</div>
 					</div>
 
-					<div class="wrap-input100 validate-input bg0 rs1-alert-validate" data-validate = "S'il vous plait, veuillez remplir ce champ">
+					<div style="min-height: 30vh;height: auto;" class="wrap-input100 validate-input bg0 rs1-alert-validate" data-validate = "S'il vous plait, veuillez remplir ce champ">
 						<span class="label-input100">Commentaire sur la séance</span>
-						<textarea id="summernote" required class="input100" name="commentaire" placeholder="Faites ici un commentaire de la séance ...."></textarea>
+						<textarea rows="300" contenteditable="true" id="commentaire" required class="input100" name="commentaire" placeholder="Faites ici un commentaire de la séance ....">
+							<br> <strong><h2>Qu'est ce qui a été réalisé pendant la session ?</h2></strong> <br><br><br><br>
+							<strong><h2>Que doit faire l'étudiant pour la prochaine session ?</h2></strong>
+						</textarea>
 					</div>
 
-					<textarea name="editordata"></textarea>
+					<!-- <textarea name="editordata"></textarea> -->
 
 
 
@@ -116,6 +123,93 @@
 				</form>
 			</div>
 		</div>
+
+
+
+
+
+		<script src="/ckeditor/ckeditor.js"></script>
+		<script src="https://cdn.ckeditor.com/4.11.2/standard-all/ckeditor.js"></script>
+
+
+		  <script>
+		    // Turn off automatic editor creation first.
+		    CKEDITOR.disableAutoInline = true;
+		    CKEDITOR.inline( 'commentaire', {
+
+		      toolbar: [{
+		          name: 'document',
+		          items: ['Print']
+		        },
+		        {
+		          name: 'clipboard',
+		          items: ['Undo', 'Redo']
+		        },
+		        {
+		          name: 'styles',
+		          items: ['Format', 'Font', 'FontSize']
+		        },
+		        {
+		          name: 'colors',
+		          items: ['TextColor', 'BGColor']
+		        },
+		        {
+		          name: 'align',
+		          items: ['JustifyLeft', 'JustifyCenter', 'JustifyRight', 'JustifyBlock']
+		        },
+		        '/',
+		        {
+		          name: 'basicstyles',
+		          items: ['Bold', 'Italic', 'Underline', 'Strike', 'RemoveFormat', 'CopyFormatting']
+		        },
+		        {
+		          name: 'links',
+		          items: ['Link', 'Unlink']
+		        },
+		        {
+		          name: 'paragraph',
+		          items: ['NumberedList', 'BulletedList', '-', 'Outdent', 'Indent', '-', 'Blockquote']
+		        },
+		        {
+		          name: 'insert',
+		          items: ['Image', 'Table']
+		        },
+		        {
+		          name: 'tools',
+		          items: ['Maximize']
+		        },
+		        {
+		          name: 'editing',
+		          items: ['Scayt']
+		        }
+		      ],
+
+		      extraAllowedContent: 'h3{clear};h2{line-height};h2 h3{margin-left,margin-top}',
+
+		      // Adding drag and drop image upload.
+		      extraPlugins: 'print,format,font,colorbutton,justify,uploadimage',
+		      uploadUrl: '/apps/ckfinder/3.4.5/core/connector/php/connector.php?command=QuickUpload&type=Files&responseType=json',
+
+		      // Configure your file manager integration. This example uses CKFinder 3 for PHP.
+		      filebrowserBrowseUrl: '/apps/ckfinder/3.4.5/ckfinder.html',
+		      filebrowserImageBrowseUrl: '/apps/ckfinder/3.4.5/ckfinder.html?type=Images',
+		      filebrowserUploadUrl: '/apps/ckfinder/3.4.5/core/connector/php/connector.php?command=QuickUpload&type=Files',
+		      filebrowserImageUploadUrl: '/apps/ckfinder/3.4.5/core/connector/php/connector.php?command=QuickUpload&type=Images',
+
+		      height: 560,
+
+		      removeDialogTabs: 'image:advanced;link:advanced'
+
+		    } );
+
+
+		</script>
+
+
+
+
+
+
 
 
 
