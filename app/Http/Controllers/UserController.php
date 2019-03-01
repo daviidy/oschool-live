@@ -48,7 +48,7 @@ class UserController extends Controller
             //on supprime l'utilisateurde la formation
             $user->formations()->detach();
 
-            if ($user->$user_id !== "0") {
+            if ($user->user_id !== "0") {
               //on envoie message à son formateur
               Mail::send('mails.expiration_notif', ['user' => $user], function($message) use ($user){
                 $message->to($user->teacher->email, 'Oschool')->subject('Annulation de la formation de '.$user->name);
@@ -333,7 +333,7 @@ class UserController extends Controller
           $message->to($user->email, 'Cher(ère) Utilisateur(trice)')->subject('Vous avez été ajouté à une formation');
           $message->from('eventsoschool@gmail.com', 'Oschool');
         });
- 
+
         //envoi mail admin
         Mail::send('mailsAdmin.inscription-formation', ['user' => $user, 'formation' => $formation], function($message) use ($user){
           $message->to('yaodavidarmel@gmail.com', 'A David')->subject('Notification pour nouvelle inscription à une formation');
