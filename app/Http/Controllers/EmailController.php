@@ -144,7 +144,7 @@ class EmailController extends Controller
              $message->from('eventsoschool@gmail.com', 'Oschool');
            });
         }
-        return view('emails.gazette_formateurs', ['email' => $email]);
+        return redirect('emails')->with('status', 'Le mail a bien été envoyé !');
       }
       elseif ($email->titre == "Top Semaine") {
 
