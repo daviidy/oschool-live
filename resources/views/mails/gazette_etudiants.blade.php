@@ -53,7 +53,7 @@
                             <div style="border-top:0px solid transparent;border-left:0px solid transparent;border-bottom:0px solid transparent;border-right:0px solid transparent;padding-top:5px;padding-bottom:5px;padding-right:0px;padding-left:0px">
                               <div align="center" class="m_5732300719622788458img-container m_5732300719622788458center m_5732300719622788458autowidth" style="padding-right:5px;padding-left:5px">
                                 <div style="line-height:40px;font-size:1px">&nbsp;</div>
-                                  {{$email->editor1}}
+                                  {!!$email->editor1!!}
 
                                 <div class="a6S" dir="ltr" style="opacity: 0.01; left: 726px; top: 380px;">
                                   <div id=":4do" class="T-I J-J5-Ji aQv T-I-ax7 L3 a5q" role="button" tabindex="0" aria-label="Télécharger la pièce jointe " data-tooltip-class="a1V" data-tooltip="Télécharger">
@@ -64,8 +64,8 @@
                               <div style="color:#000000;line-height:150%;font-family:Montserrat,Arial,sans-serif;padding-right:5px;padding-left:5px;padding-top:36px;padding-bottom:0px">
                                 <div id="m_5732300719622788458ad_body1" style="font-size:16px;line-height:26px;color:#ffffff;font-family:Montserrat,Arial,sans-serif;text-align:left;background-color:#4D90CC">
                                   <div style="padding-left:43px;padding-right:31px;padding-top:48px;padding-bottom:30px">
-
-                                      {{$email->editor2}}
+                                      <p>Bonjour {!!$user->name!!}</p>,<br>
+                                      {!!$email->editor2!!}
 
                                       </textarea>
                                   </div>
@@ -88,7 +88,7 @@
                               </div>
                               <div style="color:#0000000;line-height:150%;font-family:Montserrat,Arial,sans-serif;padding-right:15px;padding-left:15px;padding-top:15px;padding-bottom:15px">
 
-                                  {{$email->editor3}}
+                                  {!!$email->editor3!!}
 
                               </div>
                             </div>
@@ -109,7 +109,7 @@
                                   <div id="m_5732300719622788458ad_body1" style="font-size:16px;line-height:26px;color:#000000;font-family:Montserrat,Arial,sans-serif;text-align:left">
                                     <br>
 
-                                      {{$email->editor4}}
+                                      {!!$email->editor4!!}
 
                                   </div>
                                 </div>

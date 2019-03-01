@@ -73,6 +73,7 @@
                                           <tbody>
                                             <tr>
                                               <td align="center" style="padding:0 30px 0 30px;font-family:'Open+Sans','Open Sans',Helvetica,Arial,sans-serif;font-size:24px;line-height:35px;font-weight:lighter">
+                                                <p>Bonjour {{$user->name}}</p>,<br>
                                                   {!!$email->editor2!!}
                                               </td>
                                             </tr>
