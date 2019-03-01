@@ -222,6 +222,9 @@ h3{page-break-after:avoid;}
 <!--main content start-->
 <section id="main-content">
   <section class="wrapper">
+    <div style="margin-top: 3rem;" class="col-lg-12 col-xs-12">
+        <iframe width="100%" height="390" src="https://player.vimeo.com/video/320619458" frameborder="0" allowFullScreen mozallowfullscreen webkitAllowFullScreen></iframe>
+    </div>
     <h2 style="margin: 2rem;"><i class="fa fa-angle-right"></i> Liste de vos projets</h2>
 
     <h3>Cours recommandé pour valider le parcours</h3>

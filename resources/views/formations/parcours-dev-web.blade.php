@@ -48,6 +48,8 @@
     </div>
   </div>
 
+  <iframe style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);display: block;margin: 0 auto;margin-bottom: 4rem;" align="middle" width="640" height="360" src="https://player.vimeo.com/video/320601050" frameborder="0" allowFullScreen mozallowfullscreen webkitAllowFullScreen></iframe>
+
 
 
   <ul _ngcontent-c29="" class="ng-star-inserted">
@@ -78,9 +80,9 @@
     <ir-classroom-opens-column _ngcontent-c29="" _nghost-c91="" class="ng-star-inserted">
       <!---->
       <!---->
-      <h6 class="details" _ngcontent-c91="" class="ng-star-inserted">Début de la rentrée</h6>
+      <h6 class="details" _ngcontent-c91="" class="ng-star-inserted">Début de la prochaine rentrée</h6>
       <!---->
-      <h5 _ngcontent-c91="" class="ng-star-inserted"> 1er décembre 2018 </h5>
+      <h5 _ngcontent-c91="" class="ng-star-inserted"> 1er avril 2019 </h5>
       <!---->
       <!---->
     </ir-classroom-opens-column>
@@ -176,6 +178,7 @@
   <div class="container alt section-space">
     <div class="row">
       <div class="col-xs-12 text-center">
+        <!--
         <h3 class="h3 u-bold text-cent  er u-margin-b-sm">Apprenez avec un formateur en direct, dans notre salle virtuelle.<br>
           Tout a été fait pour vous permettre d'apprendre sereinement<br>
             Suivez notre parcours certifiant et démarrez une nouvelle carrière</h3>
@@ -188,10 +191,10 @@
             </div>
           </div>
           <div class="c-browser__image">
-            <iframe src="https://player.vimeo.com/video/305344990" width="100%" height="528" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-
+            <iframe width="100%" height="528" src="https://player.vimeo.com/video/320601050" frameborder="0" allowFullScreen mozallowfullscreen webkitAllowFullScreen></iframe>
           </div>
         </div>
+      -->
 
         <div class="row u-margin-t-xxx-lg align-row">
 

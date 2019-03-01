@@ -14,12 +14,13 @@
 <section id="main-content">
   <section class="wrapper">
     <div class="row">
-
+      <!--
       <div class="col-lg-4 col-xs-12">
         <img width="300" src="/dashboard/img/classroom.png" alt="">
       </div>
+    -->
 
-      <div class="col-lg-4 col-xs-12">
+      <div class="col-lg-12 col-xs-12">
         <div style="height:auto;" class="home_button"><a style="line-height:20px;" href="{{ route('classrooms.create') }}">Planifier une session</a></div>
       </div>
 <!--
@@ -28,7 +29,9 @@
       </div>
 
     -->
-
+      <div style="margin-top: 3rem;" class="col-lg-12 col-xs-12">
+          <iframe width="100%" height="390" src="https://player.vimeo.com/video/320606515" frameborder="0" allowFullScreen mozallowfullscreen webkitAllowFullScreen></iframe>
+      </div>
 
     </div>
 
@@ -152,9 +155,11 @@
 
 @section('content')
 
-
 <section id="main-content">
   <section class="wrapper">
+    <div style="margin-top: 3rem;" class="col-lg-12 col-xs-12">
+        <iframe width="100%" height="390" src="https://player.vimeo.com/video/319960170" frameborder="0" allowFullScreen mozallowfullscreen webkitAllowFullScreen></iframe>
+    </div>
     <h3><i class="fa fa-angle-right"></i> Liste de vos sessions</h3>
     <div class="row mt">
       <div class="_main--section--2nxxR">

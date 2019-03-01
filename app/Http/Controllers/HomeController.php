@@ -7,6 +7,7 @@ use Auth;
 use App\User;
 use App\Formation;
 use App\Classroom;
+use App\Email;
 
 class HomeController extends Controller
 {

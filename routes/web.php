@@ -115,6 +115,8 @@ Route::get('/partner', 'PartnerController@partner')
 
 Route::resource('users','UserController');
 
+Route::resource('emails','EmailController');
+
 Route::resource('etatprogressions','EtatprogressionController');
 
 Route::resource('classrooms','ClassroomController');
