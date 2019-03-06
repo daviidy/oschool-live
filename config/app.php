@@ -213,4 +213,11 @@ return [
 
     ],
 
+    'db_fields' => [
+    'name',
+    'parcours',
+    'email'
+    ]
+
+
 ];

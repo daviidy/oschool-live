@@ -43,6 +43,12 @@ $user->notify(new Newinfo("A new user has visited on your application."));
 })->name('email');
 
 
+
+Route::get('/import', 'ImportController@getImport')->name('import');
+Route::post('/import_parse', 'ImportController@parseImport')->name('import_parse');
+Route::post('/import_process', 'ImportController@processImport')->name('import_process');
+
+
 Route::get('/', 'HomeController@racine');
 
 

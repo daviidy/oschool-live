@@ -288,6 +288,14 @@ drift.load('2uy6g3spxi59');
 
               </li>
 
+              <li>
+
+                <a  style="border-radius:8px; text-decoration: underline; background-color: transparent;" class="logout" href="/import">
+                    Importer un fichier CSV pour les utilisateurs par intérêt
+                </a>
+
+              </li>
+
             </ul>
           </li>
 

@@ -206,8 +206,11 @@ button{-webkit-appearance:button;}
 <header class="css-7l5129 e1jt8heo1">
 <a class="css-vqgiaa" aria-current="false">Titre du mail: &nbsp;&nbsp;&nbsp;</a><input type="text" name="titre" value="{{$email->titre}}">
 <a class="css-vqgiaa" aria-current="false">Lien de l'appel à l'action: &nbsp;&nbsp;&nbsp;</a><input type="url" name="lien" value="{{$email->lien}}">
-<a href="{{url('home')}}" class="css-vqgiaa" aria-current="false">Retour au tableau de bord admin</a>
-  <div class="css-rio7g5 e1jt8heo3"><button style="margin-right: 25rem;" type="submit" class="css-1j7ty4f e11o3sc80">Enregistrer et envoyer</button></div>
+@if($email->titre == 'Intérêt Parcours' || $email->titre == 'Message Ceo')
+<a class="css-vqgiaa" aria-current="false">Parcours: &nbsp;&nbsp;&nbsp;</a><input type="text" name="parcours" value="">
+@endif
+<a href="{{url('home')}}" class="css-vqgiaa" aria-current="false">Retour</a>
+  <div class="css-rio7g5 e1jt8heo3"><button style="margin-right: 30rem;" type="submit" class="css-1j7ty4f e11o3sc80">Enregistrer et envoyer</button></div>
   </div>
   <div class="css-htbvjw e19046zc0"><a class="css-lg36hp" aria-current="false" href="/cart">
       <div class="css-1z0nv2c css-79elbk"><svg type="primary" name="cart" width="23px" class="css-1cwd16l e5ftjhr0">

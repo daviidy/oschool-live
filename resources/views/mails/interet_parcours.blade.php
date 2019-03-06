@@ -69,7 +69,8 @@
                                           <tbody>
                                             <tr>
                                               <td class="m_-3128360670147004929body-text" align="left" style="font-family:'Open+Sans','Open Sans',Helvetica,Arial,sans-serif;font-size:14px;line-height:24px;text-align:center;width:100%">
-                                                {{$email->editor1}}
+                                                Bonjour {{$user->name}}
+                                                {!!$email->editor1!!}
                                                 <p style="Margin:20px 0 0 0">Ce parcours pourrait vous intéresser</p>
                                               </td>
                                             </tr>
@@ -85,7 +86,7 @@
                                           <tbody>
                                             <tr>
                                               <td align="center">
-                                                  {{$email->editor3}}
+                                                  {!!$email->editor3!!}
 
                                               </td>
                                             </tr>
@@ -102,7 +103,7 @@
                                           <tbody>
                                             <tr>
                                               <td style="padding:0 30px 0 30px">
-                                                {{$email->editor2}}
+                                                {!!$email->editor2!!}
                                               </td>
                                             </tr>
                                           </tbody>
@@ -125,7 +126,7 @@
                                                           <table width="240" align="center" border="0" cellspacing="0" cellpadding="0" style="background-color:#01b3e3;border-radius:4px;border-collapse:separate!important">
                                                             <tbody>
                                                               <tr>
-                                                                <td width="240" height="46" align="center" valign="middle" style="font-size:13px;font-family:'Open+Sans','Open Sans',Helvetica,Arial,sans-serif;font-weight:semibold"> <a href="{{$email->lien}}"
+                                                                <td width="240" height="46" align="center" valign="middle" style="font-size:13px;font-family:'Open+Sans','Open Sans',Helvetica,Arial,sans-serif;font-weight:semibold"> <a href="{!!$email->lien!!}"
                                                                     title="COMMENCER" style="text-decoration:none;color:#ffffff;letter-spacing:2px;display:block;padding-top:10px;padding-bottom:10px" target="_blank" >
                                                                     COMMENCER</a> </td>
                                                               </tr>

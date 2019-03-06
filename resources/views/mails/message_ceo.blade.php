@@ -14,17 +14,12 @@
 
 <body>
 
-  <form method="post" enctype="multipart/form-data" action="{{ url('emails', $email) }}">
-    {{ csrf_field() }}
-    {{ method_field('patch') }}
-
-  @include('includes.header_email')
 
 
 
 
 
-  <table style="margin-top: 5rem;" border="0" cellpadding="0" cellspacing="0" width="100%">
+  <table border="0" cellpadding="0" cellspacing="0" width="100%">
     <tbody>
       <tr>
         <td style="background-color:#fafbfc">
@@ -76,10 +71,8 @@
                                           <tbody>
                                             <tr>
                                               <td style="padding:0 30px 0 30px">
-                                                <textarea name="editor2" id="editor2" contenteditable="true" style="Margin:0 0 20px 0;color:#525c65">
-                                                  {{$email->editor2}}
-                                                </p>
-                                              </textarea>
+                                                Bonjour {{$user->name}},
+                                                {!!$email->editor2!!}
                                               </td>
                                             </tr>
                                           </tbody>
@@ -102,7 +95,7 @@
                                                           <table width="240" align="center" border="0" cellspacing="0" cellpadding="0" style="background-color:#01b3e3;border-radius:4px;border-collapse:separate!important">
                                                             <tbody>
                                                               <tr>
-                                                                <td width="240" height="46" align="center" valign="middle" style="font-size:13px;font-family:'Open+Sans','Open Sans',Helvetica,Arial,sans-serif;font-weight:semibold"> <a href="{{$email->lien}}"
+                                                                <td width="240" height="46" align="center" valign="middle" style="font-size:13px;font-family:'Open+Sans','Open Sans',Helvetica,Arial,sans-serif;font-weight:semibold"> <a href="{!!$email->lien!!}"
                                                                     title="COMMENCER" style="text-decoration:none;color:#ffffff;letter-spacing:2px;display:block;padding-top:10px;padding-bottom:10px" target="_blank" >
                                                                     COMMENCER</a> </td>
                                                               </tr>
@@ -195,231 +188,6 @@
 -->
 
 
-  </form>
-
-
-<script src="/ckeditor/ckeditor.js"></script>
-<script src="https://cdn.ckeditor.com/4.11.2/standard-all/ckeditor.js"></script>
-<script src="/ckeditor/plugins/inlinesave/plugin.js"></script>
-
-
-  <script>
-    // Turn off automatic editor creation first.
-    CKEDITOR.disableAutoInline = true;
-    CKEDITOR.inline( 'editor1', {
-
-      toolbar: [{
-          name: 'document',
-          items: ['Print']
-        },
-        {
-          name: 'clipboard',
-          items: ['Undo', 'Redo']
-        },
-        {
-          name: 'styles',
-          items: ['Format', 'Font', 'FontSize']
-        },
-        {
-          name: 'colors',
-          items: ['TextColor', 'BGColor']
-        },
-        {
-          name: 'align',
-          items: ['JustifyLeft', 'JustifyCenter', 'JustifyRight', 'JustifyBlock']
-        },
-        '/',
-        {
-          name: 'basicstyles',
-          items: ['Bold', 'Italic', 'Underline', 'Strike', 'RemoveFormat', 'CopyFormatting']
-        },
-        {
-          name: 'links',
-          items: ['Link', 'Unlink']
-        },
-        {
-          name: 'paragraph',
-          items: ['NumberedList', 'BulletedList', '-', 'Outdent', 'Indent', '-', 'Blockquote']
-        },
-        {
-          name: 'insert',
-          items: ['Image', 'Table']
-        },
-        {
-          name: 'tools',
-          items: ['Maximize']
-        },
-        {
-          name: 'editing',
-          items: ['Scayt']
-        }
-      ],
-
-      extraAllowedContent: 'h3{clear};h2{line-height};h2 h3{margin-left,margin-top}',
-
-      // Adding drag and drop image upload.
-      extraPlugins: 'print,format,font,colorbutton,justify,uploadimage',
-      uploadUrl: '/apps/ckfinder/3.4.5/core/connector/php/connector.php?command=QuickUpload&type=Files&responseType=json',
-
-      // Configure your file manager integration. This example uses CKFinder 3 for PHP.
-      filebrowserBrowseUrl: '/apps/ckfinder/3.4.5/ckfinder.html',
-      filebrowserImageBrowseUrl: '/apps/ckfinder/3.4.5/ckfinder.html?type=Images',
-      filebrowserUploadUrl: '/apps/ckfinder/3.4.5/core/connector/php/connector.php?command=QuickUpload&type=Files',
-      filebrowserImageUploadUrl: '/apps/ckfinder/3.4.5/core/connector/php/connector.php?command=QuickUpload&type=Images',
-
-      height: 560,
-
-      removeDialogTabs: 'image:advanced;link:advanced'
-
-    } );
-
-
-</script>
-
-
-<script>
-  // Turn off automatic editor creation first.
-  CKEDITOR.disableAutoInline = true;
-  CKEDITOR.inline( 'editor2', {
-
-    toolbar: [{
-        name: 'document',
-        items: ['Print']
-      },
-      {
-        name: 'clipboard',
-        items: ['Undo', 'Redo']
-      },
-      {
-        name: 'styles',
-        items: ['Format', 'Font', 'FontSize']
-      },
-      {
-        name: 'colors',
-        items: ['TextColor', 'BGColor']
-      },
-      {
-        name: 'align',
-        items: ['JustifyLeft', 'JustifyCenter', 'JustifyRight', 'JustifyBlock']
-      },
-      '/',
-      {
-        name: 'basicstyles',
-        items: ['Bold', 'Italic', 'Underline', 'Strike', 'RemoveFormat', 'CopyFormatting']
-      },
-      {
-        name: 'links',
-        items: ['Link', 'Unlink']
-      },
-      {
-        name: 'paragraph',
-        items: ['NumberedList', 'BulletedList', '-', 'Outdent', 'Indent', '-', 'Blockquote']
-      },
-      {
-        name: 'insert',
-        items: ['Image', 'Table']
-      },
-      {
-        name: 'tools',
-        items: ['Maximize']
-      },
-      {
-        name: 'editing',
-        items: ['Scayt']
-      }
-    ],
-
-    extraAllowedContent: 'h3{clear};h2{line-height};h2 h3{margin-left,margin-top}',
-
-    // Adding drag and drop image upload.
-    extraPlugins: 'print,format,font,colorbutton,justify,uploadimage',
-    uploadUrl: '/apps/ckfinder/3.4.5/core/connector/php/connector.php?command=QuickUpload&type=Files&responseType=json',
-
-    // Configure your file manager integration. This example uses CKFinder 3 for PHP.
-    filebrowserBrowseUrl: '/apps/ckfinder/3.4.5/ckfinder.html',
-    filebrowserImageBrowseUrl: '/apps/ckfinder/3.4.5/ckfinder.html?type=Images',
-    filebrowserUploadUrl: '/apps/ckfinder/3.4.5/core/connector/php/connector.php?command=QuickUpload&type=Files',
-    filebrowserImageUploadUrl: '/apps/ckfinder/3.4.5/core/connector/php/connector.php?command=QuickUpload&type=Images',
-
-    height: 560,
-
-    removeDialogTabs: 'image:advanced;link:advanced'
-
-  } );
-
-
-</script>
-
-<script>
-
-CKEDITOR.inline( 'editor3', {
-
-  toolbar: [{
-      name: 'document',
-      items: ['Print']
-    },
-    {
-      name: 'clipboard',
-      items: ['Undo', 'Redo']
-    },
-    {
-      name: 'styles',
-      items: ['Format', 'Font', 'FontSize']
-    },
-    {
-      name: 'colors',
-      items: ['TextColor', 'BGColor']
-    },
-    {
-      name: 'align',
-      items: ['JustifyLeft', 'JustifyCenter', 'JustifyRight', 'JustifyBlock']
-    },
-    '/',
-    {
-      name: 'basicstyles',
-      items: ['Bold', 'Italic', 'Underline', 'Strike', 'RemoveFormat', 'CopyFormatting']
-    },
-    {
-      name: 'links',
-      items: ['Link', 'Unlink']
-    },
-    {
-      name: 'paragraph',
-      items: ['NumberedList', 'BulletedList', '-', 'Outdent', 'Indent', '-', 'Blockquote']
-    },
-    {
-      name: 'insert',
-      items: ['Image', 'Table']
-    },
-    {
-      name: 'tools',
-      items: ['Maximize']
-    },
-    {
-      name: 'editing',
-      items: ['Scayt']
-    }
-  ],
-
-  extraAllowedContent: 'h3{clear};h2{line-height};h2 h3{margin-left,margin-top}',
-
-  // Adding drag and drop image upload.
-  extraPlugins: 'print,format,font,colorbutton,justify,uploadimage',
-  uploadUrl: '/apps/ckfinder/3.4.5/core/connector/php/connector.php?command=QuickUpload&type=Files&responseType=json',
-
-  // Configure your file manager integration. This example uses CKFinder 3 for PHP.
-  filebrowserBrowseUrl: '/apps/ckfinder/3.4.5/ckfinder.html',
-  filebrowserImageBrowseUrl: '/apps/ckfinder/3.4.5/ckfinder.html?type=Images',
-  filebrowserUploadUrl: '/apps/ckfinder/3.4.5/core/connector/php/connector.php?command=QuickUpload&type=Files',
-  filebrowserImageUploadUrl: '/apps/ckfinder/3.4.5/core/connector/php/connector.php?command=QuickUpload&type=Images',
-
-  height: 560,
-
-  removeDialogTabs: 'image:advanced;link:advanced'
-
-} );
-
-</script>
 
 </body>
 

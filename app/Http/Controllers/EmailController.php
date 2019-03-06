@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use Auth;
 use Mail;
 use App\User;
+use App\Contact;
 
 class EmailController extends Controller
 {
@@ -116,8 +117,17 @@ class EmailController extends Controller
     public function update(Request $request, Email $email)
     {
       $email->update($request->all());
+
       if ($email->titre == "Intérêt Parcours") {
-        return view('emails.interet_parcours', ['email' => $email]);
+        $users = Contact::where('parcours', $email->parcours)->orderby('id', 'asc')->paginate(1000);
+        foreach ($users as $user) {
+          //envoi mail utilisateur inscription
+           Mail::send('mails.interet_parcours', ['email' => $email, 'user' => $user], function($message) use($user){
+             $message->to($user->email, 'Notre sélection pour vous')->subject('Notre sélection pour vous');
+             $message->from('eventsoschool@gmail.com', 'Oschool');
+           });
+        }
+        return redirect('emails')->with('status', 'Le mail a bien été envoyé !');
       }
       elseif ($email->titre == "Gazette Etudiants") {
 
@@ -160,7 +170,15 @@ class EmailController extends Controller
         return redirect('emails')->with('status', 'Le mail a bien été envoyé !');
       }
       elseif ($email->titre == "Message Ceo") {
-        return view('emails.message_ceo', ['email' => $email]);
+        $users = Contact::where('parcours', $email->parcours)->orderby('id', 'asc')->paginate(1000);
+        foreach ($users as $user) {
+          //envoi mail utilisateur inscription
+           Mail::send('mails.message_ceo', ['email' => $email, 'user' => $user], function($message) use($user){
+             $message->to($user->email, 'Prenez en main votre avenir')->subject('Prenez en main votre avenir');
+             $message->from('eventsoschool@gmail.com', 'Oschool');
+           });
+        }
+        return redirect('emails')->with('status', 'Le mail a bien été envoyé !');
       }
     }
 
