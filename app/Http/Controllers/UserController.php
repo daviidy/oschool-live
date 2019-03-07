@@ -201,7 +201,7 @@ class UserController extends Controller
         $mois = (int)$request['month'];
         $an = (int)$request['year'];
         //montant total des achats toute formation confondue
-        $total = Achat::whereMonth('date', '=', $mois)->whereYear('date', '=', $an)->sum('montant');
+        $total = Achat::whereMonth('date', '=', $mois)->whereYear('date', '=', $an)->where('statut', 'Validé')->sum('montant');
         //ensemble de tous les achats
         $achats = Achat::whereMonth('date', '=', $mois)->whereYear('date', '=', $an)->get();
         return view('users.moisPaiements', ['achats' => $achats, 'mois' => $mois, 'an' => $an, 'total' => $total]);
@@ -210,7 +210,7 @@ class UserController extends Controller
         $formation = $request['formation'];
         $mois = (int)$request['month'];
         $an = (int)$request['year'];
-        $total = Achat::where('formation', $formation)->whereMonth('date', '=', $mois)->whereYear('date', '=', $an)->sum('montant');
+        $total = Achat::where('formation', $formation)->whereMonth('date', '=', $mois)->whereYear('date', '=', $an)->where('statut', 'Validé')->sum('montant');
         $achats = Achat::where('formation', $formation)->whereMonth('date', '=', $mois)->whereYear('date', '=', $an)->get();
         return view('users.moisPaiements', ['achats' => $achats, 'mois' => $mois, 'an' => $an, 'total' => $total]);
       }

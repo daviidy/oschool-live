@@ -78,7 +78,7 @@
                   <td>{{ $achat->formation }}</td>
                   <td>{{ $achat->montant }} FCFA</td>
                 </tr>
-                  @endif
+                  @endif 
                 @endforeach
 
                 <tr>
