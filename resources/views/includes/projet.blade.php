@@ -43,14 +43,15 @@
             </div>
           </div>
         </div>
+        @if($projet->titre !== "Projet 0: Engagez-Vous À Réussir Votre Formation !")
         <div _ngcontent-c27="" class="card__inner--lower hidden-sm-down">
           <div _ngcontent-c27="" class="progression left uppercase blue expander pointer">
             <!----><span _ngcontent-c27="" class="ng-star-inserted">Ce qu'il faut lire pour réaliser ce projet</span>
             <!---->
           </div>
-          <div _ngcontent-c27="" class="right">
-            <!----><span _ngcontent-c27="" class="caption text-right level ng-star-inserted"><span _ngcontent-c27="" class="course-level course-level-beginner"></span><span _ngcontent-c27="" class="capitalize">débutant</span></span></div>
+        
         </div>
+        @endif
       </div>
       <div _ngcontent-c27="" class="card__expander progressionDetail">
         @foreach($projet->progressions as $progression)

@@ -20,7 +20,7 @@
       <td style="padding: 20px 7.5% 0;display: block;"><img width="100" src="https://code.oschool.ci/avilon/img/logo-oschool.png" /></td>
     </tr>
     <tr>
-      <td style="padding: 20px 7.5% 0;">Chère, cher {{$user->email}} ,</td>
+      <td style="padding: 20px 7.5% 0;">Chère, cher {{$user->teacher->email}} ,</td>
     </tr>
 
     <tr>

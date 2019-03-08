@@ -45,13 +45,12 @@ class UserController extends Controller
           {
             $user->statut = 'aucun';
             $user->save();
-            //on supprime l'utilisateurde la formation
-            $user->formations()->detach();
+
 
             if ($user->user_id !== "0") {
               //on envoie message à son formateur
               Mail::send('mails.expiration_notif', ['user' => $user], function($message) use ($user){
-                $message->to($user->teacher->email, 'Oschool')->subject('Annulation de la formation de '.$user->name);
+                $message->to($user->teacher()->first()->email, 'Oschool')->subject('Annulation de la formation de '.$user->name);
                 $message->from('eventsoschool@gmail.com', 'Oschool');
               });
             }
@@ -67,6 +66,8 @@ class UserController extends Controller
             //on supprime le formateur
             $user->user_id = '0';
             $user->save();
+            //on supprime l'utilisateurde la formation
+            $user->formations()->detach();
           }
 
           // dans le cas où la date va bientôt arriver à expiration
