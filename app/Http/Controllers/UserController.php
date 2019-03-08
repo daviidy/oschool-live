@@ -48,11 +48,13 @@ class UserController extends Controller
 
 
             if ($user->user_id !== "0") {
+              $teacher = User::find($user->user_id);
               //on envoie message à son formateur
-              Mail::send('mails.expiration_notif', ['user' => $user], function($message) use ($user){
-                $message->to($user->teacher()->first()->email, 'Oschool')->subject('Annulation de la formation de '.$user->name);
+              Mail::send('mails.expiration_notif', ['user' => $user], function($message) use ($user, $teacher){
+                $message->to($teacher->email, 'Oschool')->subject('Annulation de la formation de '.$user->name);
                 $message->from('eventsoschool@gmail.com', 'Oschool');
               });
+
             }
 
 
