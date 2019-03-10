@@ -202,7 +202,7 @@ drift.load('2uy6g3spxi59');
             <div class="navbar-subnav">
               <ul class="nav navbar-nav">
                 <li><a href="/#schools" class="navbar-subnav-links  site-navigation" data-site="Programming">Voir nos écoles</a></li>
-                <li><span style="height: 6px; width: 6px; background-color: red; border-radius: 4px; position: absolute; top: 0; right: 0;"></span><a href="#offres" class="navbar-subnav-links  site-navigation">S'inscrire à ce parcours</a></li>
+                <li><span style="height: 6px; width: 6px; background-color: red; border-radius: 4px; position: absolute; top: 0; right: 0;"></span><a id="menuoffres" href="#offres" class="navbar-subnav-links  site-navigation">S'inscrire à ce parcours</a></li>
               </ul>
             </div>
           </div>
@@ -234,7 +234,7 @@ drift.load('2uy6g3spxi59');
         <a href="/#schools" class="site-navigation">
           <img class="emoji-png" src="https://d1eq8vvyuam4eq.cloudfront.net/assets/images/programming.png" alt="programming">Nos écoles
         </a>
-        <a href="#offres" class="site-navigation">
+        <a id="menuoffresmobile" href="#offres" class="site-navigation">
           <img class="emoji-png" src="https://d1eq8vvyuam4eq.cloudfront.net/assets/images/design.png" alt="design">S'inscrire au parcours
         </a>
 
@@ -396,7 +396,7 @@ var x = setInterval(function() {
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
   // Display the result in the element with id="demo"
-  document.getElementById("jourskali").innerHTML = days; 
+  document.getElementById("jourskali").innerHTML = days;
 
   document.getElementById("heureskali").innerHTML = hours;
 
@@ -409,6 +409,9 @@ var x = setInterval(function() {
     clearInterval(x);
     document.getElementById("countdown").style.display = "none";
     document.getElementById("info").innerHTML = "Les inscriptions sont terminées";
+    document.getElementById("offres").style.display = "none";
+    document.getElementById("menuoffres").innerHTML = "Les inscriptions sont terminées";
+    document.getElementById("menuoffresmobile").innerHTML = "Les inscriptions sont terminées";
   }
 }, 1000);
 </script>
@@ -448,6 +451,9 @@ var x = setInterval(function() {
     clearInterval(x);
     document.getElementById("countdown").style.display = "none";
     document.getElementById("info").innerHTML = "Les inscriptions sont terminées";
+    document.getElementById("offres").style.display = "none";
+    document.getElementById("menuoffres").innerHTML = "Les inscriptions sont terminées";
+    document.getElementById("menuoffresmobile").innerHTML = "Les inscriptions sont terminées";
   }
 }, 1000);
 </script>

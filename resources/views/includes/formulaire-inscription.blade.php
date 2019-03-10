@@ -24,7 +24,7 @@
                 @endauth
                 <i class="input-icon ion-person-stalker"></i>
               </div>
-            </div>
+            </div> 
 
             <div style="display: none;" class="form-group password-form-group">
               <div class="input-with-icon">

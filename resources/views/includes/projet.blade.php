@@ -44,12 +44,12 @@
           </div>
         </div>
         @if($projet->titre !== "Projet 0: Engagez-Vous À Réussir Votre Formation !")
-        <div _ngcontent-c27="" class="card__inner--lower hidden-sm-down">
+        <div _ngcontent-c27="" class="card__inner--lower">
           <div _ngcontent-c27="" class="progression left uppercase blue expander pointer">
             <!----><span _ngcontent-c27="" class="ng-star-inserted">Ce qu'il faut lire pour réaliser ce projet</span>
             <!---->
           </div>
-        
+
         </div>
         @endif
       </div>

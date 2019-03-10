@@ -100,6 +100,8 @@ $(document).ready(function(){
 
 
 
+
+
   <!-- =======================================================
     Template Name: Dashio
     Template URL: https://templatemag.com/dashio-bootstrap-admin-template/
@@ -494,6 +496,34 @@ $(document).ready(function(){
     </footer>
     <!--footer end-->
   </section>
+
+
+
+
+  <script>
+  function openTab(evt, tabName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("skills-hub-unit-desktop--skill-link--3SpB6");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" skills-hub-unit-desktop--is-active--3ql8W", "");
+    }
+    document.getElementById(tabName).style.display = "block";
+    evt.currentTarget.className += " skills-hub-unit-desktop--is-active--3ql8W";
+  }
+
+  // Get the element with id="defaultOpen" and click on it
+  document.getElementById("defaultOpen").click();
+  </script>
+
+
+
+
+
+
   <!-- js placed at the end of the document so the pages load faster -->
   <script src="/dashboard/lib/jquery/jquery.min.js"></script>
   <script src="/dashboard/lib/bootstrap/js/bootstrap.min.js"></script>
