@@ -1,6 +1,6 @@
 <!--section prix-->
 
-<section id="offres" _ngcontent-c18="" class="ng-star-inserted">
+<section id="offres" _ngcontent-c18="" class="ng-star-inserted"> 
   <!---->
   <ir-degree-pricing _ngcontent-c18="" id="nd-pricing" _nghost-c63="" class="ng-star-inserted">
     <!--<ir-payment-info _ngcontent-c63="" _nghost-c100="" style="display: none;">

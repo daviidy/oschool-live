@@ -24,6 +24,8 @@
   <link href="/dashboard/css/style-responsive.css" rel="stylesheet">
   <script src="/dashboard/lib/chart-master/Chart.js"></script>
 
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.7.5/css/bootstrap-select.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.7.5/js/bootstrap-select.min.js"></script>
@@ -81,6 +83,24 @@ drift.load('2uy6g3spxi59');
     License: https://templatemag.com/license/
   ======================================================= -->
 </head>
+
+@if ($message = Session::get('success'))
+<div class="w3-panel w3-green w3-display-container">
+    <span onclick="this.parentElement.style.display='none'"
+            class="w3-button w3-green w3-large w3-display-topright">&times;</span>
+    <p>{!! $message !!}</p>
+</div>
+<?php Session::forget('success');?>
+@endif
+
+@if ($message = Session::get('error'))
+<div class="w3-panel w3-red w3-display-container">
+    <span onclick="this.parentElement.style.display='none'"
+            class="w3-button w3-red w3-large w3-display-topright">&times;</span>
+    <p>{!! $message !!}</p>
+</div>
+<?php Session::forget('error');?>
+@endif
 
 <body>
   <section id="container">

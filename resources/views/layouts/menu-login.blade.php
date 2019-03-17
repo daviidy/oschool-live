@@ -20,8 +20,11 @@
 	<link rel="stylesheet" type="text/css" href="/formcreate/css/util.css">
 	<link rel="stylesheet" type="text/css" href="/formcreate/css/main.css">
 <!--===============================================================================================-->
-</head>
-<body>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+		
+
+
 	@if (session('status'))
       <div class="alert alert-success">
           {{ session('status') }}

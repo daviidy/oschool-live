@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Auth;
+use Illuminate\Support\Facades\Auth;
 use App\User;
 use App\Formation;
 use App\Classroom;
@@ -76,10 +76,10 @@ class HomeController extends Controller
     public function racine() {
 
       if (Auth::check()) {
-        return view('auth.login');
+        return redirect('home');
       }
       else {
-        return redirect('home');
+        return view('auth.login');
       }
 
     }

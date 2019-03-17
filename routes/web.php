@@ -49,7 +49,9 @@ Route::post('/import_parse', 'ImportController@parseImport')->name('import_parse
 Route::post('/import_process', 'ImportController@processImport')->name('import_process');
 
 
-Route::get('/', 'HomeController@racine');
+Route::get('/', 'HomeController@racine')->name('accueil');
+
+Route::get('/paypalstatus', 'HomeController@dashboard');
 
 
 
@@ -59,9 +61,13 @@ Route::get('/live_search', 'LiveSearch@index');
 Route::get('/live_search/action', 'LiveSearch@action')->name('live_search.action');
 
 
-Route::get('/merci', function () {
+Route::post('/merci', function () {
     return view('merci');
 });
+
+Route::post('paypal', 'PaymentController@payWithpaypal')->name('payWithpaypal');
+Route::get('status', 'PaymentController@getPaymentStatus')->name('status');
+
 
 
 Route::get('/castaing', function () {

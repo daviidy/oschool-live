@@ -40,7 +40,7 @@
     <div class="container-contact100">
 			<div class="wrap-contact100">
 				<img style="width: 40%;display: block;margin-left: auto;margin-right: auto;" src="/avatars/projects/{{$projet->image}}" alt="">
-				<h2 style="margin: 25px 0px;">Projet: {{$projet->titre}}</h2>
+				<h2 style="margin: 25px 0px;">{{$projet->titre}}</h2>
         <a target="_blank" href="{{$projet->enonce}}"> <h4>Voir l'énoncé</h4> </a>
         <h4>Formation concernée:
             @foreach($projet->formations as $formation)

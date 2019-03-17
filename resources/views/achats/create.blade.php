@@ -93,22 +93,41 @@
         </div>
         <div class="container-login100-form-btn">
           <button class="login100-form-btn">
-            Confirmer le paiement
+            Payer avec Mobile Money
           </button>
         </div>
+      </form><!--fin form cinetpay-->
 
+      <div class="login100-pic js-tilt" data-tilt>
+      </div>
 
-        <div class="text-center p-t-136">
-          <a class="txt2" href="{{ url()->previous() }}">
-            Annuler
-            <i class="fa fa-long-arrow-right m-l-5" aria-hidden="true"></i>
-          </a>
+      <!--debut form paypal-->
+      <form method="post" enctype="multipart/form-data" id="payment-form"  action="{!! URL::to('paypal') !!}" class="login100-form validate-form">
+
+        {{ csrf_field() }}
+        <div style="display:none;" class="form-group">
+          <input type="text" name="amount" id="amount" value="69.99">
         </div>
-      </form>
+        <div style="display:none;" class="form-group">
+          <input type="text" name="item" id="item" value="{{session('formation')}}">
+        </div>
+        <div class="container-login100-form-btn">
+          <button id="boutonpaypal" data-toggle="modal" data-target="#paypal" style="background: #005EA6;" class="login100-form-btn">
+            Payer avec Paypal
+          </button>
+        </div>
+      </form><!--fin form paypal-->
+
+
+
+
+
     </div>
+
+
+
   </div>
 </div>
-
 
 
 @endsection
