@@ -167,6 +167,15 @@ class EmailController extends Controller
            });
         }
 
+        $contacts = Contact::orderby('id', 'asc')->paginate(1000);
+        foreach ($contacts as $user) {
+          //envoi mail utilisateur inscription
+           Mail::send('mails.top_semaine', ['email' => $email, 'user' => $user], function($message) use($user){
+             $message->to($user->email, 'Voici le top de la semaine')->subject('Voici le top de la semaine');
+             $message->from('eventsoschool@gmail.com', 'Oschool');
+           });
+        }
+
         return redirect('emails')->with('status', 'Le mail a bien été envoyé !');
       }
       elseif ($email->titre == "Message Ceo") {
