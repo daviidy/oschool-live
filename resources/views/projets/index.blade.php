@@ -91,7 +91,7 @@ hr{box-sizing:content-box;overflow:visible;border:0;height:0;margin-top:0;margin
 .card__expander--summary[_ngcontent-c27]{font-size:1.5rem;padding:1.5rem 4rem 0;}
 .card__expander--details[_ngcontent-c27]{float:left;display:block;margin-right:1.69491525%;width:100%;display:flex;justify-content:space-between;padding:0 4rem 1.5rem;}
 .card__expander--details[_ngcontent-c27]:last-child{margin-right:0;}
-.card__expander--details[_ngcontent-c27]   .btn[_ngcontent-c27]{width:15rem;height:3.5rem;line-height:3.3rem;color:#fff;background-color:#02b3e4;}
+.card__expander--details[_ngcontent-c27]   .btn[_ngcontent-c27]{width:15rem;height:3.5rem;line-height:1.3rem;color:#fff;background-color:#02b3e4;}
 .card[_ngcontent-c27]   .right-sub[_ngcontent-c27]{display:flex;}
 .card[_ngcontent-c27]   .right-sub[_ngcontent-c27]   h4[_ngcontent-c27]{font-size:1.5rem;text-transform:capitalize;margin-top:0;}
 .card[_ngcontent-c27]   .right-sub[_ngcontent-c27]   div[_ngcontent-c27]{float:left;display:block;margin-right:1.69491525%;width:49.15254237%;}
