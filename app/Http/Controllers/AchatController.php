@@ -276,13 +276,15 @@ class AchatController extends Controller
                          $message->from('eventsoschool@gmail.com', 'Oschool');
                        });
 
+                        $admins = User::where('type3', 'admin')->orderby('id', 'asc')->paginate(1000);
 
+                        foreach ($admins as $admin) {
                           //envoi mail admin inscription
-                          Mail::send('mailsAchat.mail-admin', ['achat' => $achat], function($message) use($achat){
-                            $message->to('yaodavidarmel@gmail.com', 'Aux Admins Oschool')->subject('Une commande a été traitée avec succès');
+                          Mail::send('mailsAchat.mail-admin', ['achat' => $achat], function($message) use($admin){
+                            $message->to($admin->email, 'Aux Admins Oschool')->subject('Une commande a été traitée avec succès');
                             $message->from('eventsoschool@gmail.com', 'Oschool');
                           });
-
+                        }
 
 
                     }
