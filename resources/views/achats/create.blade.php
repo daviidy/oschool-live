@@ -113,7 +113,7 @@
         </div>
         <div class="container-login100-form-btn">
           <button id="boutonpaypal" data-toggle="modal" data-target="#paypal" style="background: #005EA6;" class="login100-form-btn">
-            Payer avec Paypal (en construction)
+            Payer avec Paypal
           </button>
         </div>
       </form><!--fin form paypal-->

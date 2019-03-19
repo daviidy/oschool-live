@@ -299,7 +299,7 @@ class AchatController extends Controller
 
                        foreach ($admins as $admin) {
                          //envoi mail admin réabonnement
-                         Mail::send('mailsAchat.renew-admin', ['achat' => $achat], function($message) use($achat){
+                         Mail::send('mailsAchat.renew-admin', ['achat' => $achat], function($message) use($admin){
                            $message->to($admin->email, 'Aux Admins Oschool')->subject('Une commande a été traitée avec succès');
                            $message->from('eventsoschool@gmail.com', 'Oschool');
                          });
