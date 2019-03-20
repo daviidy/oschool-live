@@ -47,7 +47,7 @@ class UserController extends Controller
             $user->save();
 
 
-            if ($user->user_id !== 0) {
+            if ($user->user_id != 0) {
               $teacher = User::find($user->user_id);
               //on envoie message à son formateur
               Mail::send('mails.expiration_notif', ['user' => $user], function($message) use ($user, $teacher){
