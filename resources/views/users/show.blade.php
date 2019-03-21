@@ -382,7 +382,7 @@
                            </tr>
                          </thead>
                          <tbody>
-                           @foreach($classroomsstudents->sortBy('date') as $classroom)
+                           @foreach($classroomsstudents->sortByDesc('date') as $classroom)
                            <tr>
                              <td><a href="{{url('users', $classroom->user_id)}}">{{$classroom->formateur}}</a></td>
                              <td> <a data-toggle="modal" data-target="#myModal{{$classroom->id}}" href="#">{{ Carbon\Carbon::parse($classroom->date)->format('d-m-Y H:i') }}: voir le compte-rendu</a></td>
