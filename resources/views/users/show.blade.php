@@ -181,11 +181,13 @@
                          </thead>
                          <tbody>
                            @foreach($user->students as $student)
+                            @if($student->statut == "OK")
                            <tr>
                              <td><a href="{{url('users', $student->id)}}">{{$student->name}}</a></td>
                              <td>{{$student->prenoms}}</td>
                              <td>{{$student->email}}</td>
                            </tr>
+                           @endif
                            @endforeach
                          </tbody>
                        </table>
