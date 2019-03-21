@@ -53,7 +53,7 @@
                   @endif
                   @if (Auth::user()->isAdmin() && $user->type2 == 'teacher')
                   <li>
-                    <a data-toggle="tab" href="#students">Etudiants de {{$user->name}}</a>
+                    <a data-toggle="tab" href="#etudiants">Etudiants de {{$user->name}}</a>
                   </li>
                   @endif
                   @if ($user->type == 'default' && $user->type2 != 'teacher' && $user->type3 != 'admin')
@@ -167,7 +167,7 @@
                   </div>
                   <!-- /tab-pane -->
 
-                  <div id="students" class="tab-pane">
+                  <div id="etudiants" class="tab-pane">
                     <div class="container">
                        <h2>LISTE DES ETUDIANTS </h2>
                        <p>Ciquez sur le nom d'un étudiant pour voir sa progression.</p>
