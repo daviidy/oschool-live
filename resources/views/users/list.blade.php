@@ -70,7 +70,7 @@ input[_ngcontent-c18]{font-family:inherit;font-size:inherit;line-height:inherit;
                   <th class="blind">Type3</th>
                   <th class="blind">Type4</th>
                   <th class="blind">Statut</th>
-                </tr>
+                </tr> 
               </thead>
               <tbody id="students">
                 @foreach($students as $student)

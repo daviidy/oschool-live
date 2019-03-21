@@ -180,12 +180,12 @@
                            </tr>
                          </thead>
                          <tbody>
-                           @foreach($user->students as $student)
-                            @if($student->statut == "OK")
+                           @foreach($user->students as $single)
+                            @if($single->statut == "OK")
                            <tr>
-                             <td><a href="{{url('users', $student->id)}}">{{$student->name}}</a></td>
-                             <td>{{$student->prenoms}}</td>
-                             <td>{{$student->email}}</td>
+                             <td><a href="{{url('users', $single->id)}}">{{$single->name}}</a></td>
+                             <td>{{$single->prenoms}}</td>
+                             <td>{{$single->email}}</td>
                            </tr>
                            @endif
                            @endforeach
