@@ -126,16 +126,27 @@
                                                                   {{$email->editor3}}
                                                                   @else
                                                                 <a href="http://bsft.io/x/7f717s?p=1&amp;uid=cef11a58-a319-42ff-90dc-789ce81a4f01&amp;mid=622ce9a3-bcba-4c0b-8f51-037e2909d2aa"
-                                                                  style="text-decoration:none;font-size:15px;line-height:20px;color:#132431" target="_blank" data-saferedirecturl="https://www.google.com/url?q=http://bsft.io/x/7f717s?p%3D1%26uid%3Dcef11a58-a319-42ff-90dc-789ce81a4f01%26mid%3D622ce9a3-bcba-4c0b-8f51-037e2909d2aa&amp;source=gmail&amp;ust=1550716564131000&amp;usg=AFQjCNHVia_IY4z9nH7qcVqPq8edU7Nu6w"><span
+                                                                  style="text-decoration:none;font-size:15px;line-height:20px;color:#132431" target="_blank" data-saferedirecturl="https://www.google.com/url?q=http://bsft.io/x/7f717s?p%3D1%26uid%3Dcef11a58-a319-42ff-90dc-789ce81a4f01%26mid%3D622ce9a3-bcba-4c0b-8f51-037e2909d2aa&amp;source=gmail&amp;ust=1550716564131000&amp;usg=AFQjCNHVia_IY4z9nH7qcVqPq8edU7Nu6w">
+                                                                  <span
                                                                     style="font-size:22px;line-height:36px">#1</span><br>Deep Learning <br>Nanodegree program</a>
                                                                     @endif
                                                                   </textarea></td>
                                                             </tr>
                                                             <tr>
-                                                              <td align="center" style="padding-bottom:20px"><a href="http://bsft.io/x/7f717s?p=1&amp;uid=cef11a58-a319-42ff-90dc-789ce81a4f01&amp;mid=622ce9a3-bcba-4c0b-8f51-037e2909d2aa" style="text-decoration:none"
-                                                                  target="_blank" data-saferedirecturl="https://www.google.com/url?q=http://bsft.io/x/7f717s?p%3D1%26uid%3Dcef11a58-a319-42ff-90dc-789ce81a4f01%26mid%3D622ce9a3-bcba-4c0b-8f51-037e2909d2aa&amp;source=gmail&amp;ust=1550716564131000&amp;usg=AFQjCNHVia_IY4z9nH7qcVqPq8edU7Nu6w"><img
-                                                                    alt="Deep Learning Nanodegree Foundation program" border="0" height="120" src="https://ci4.googleusercontent.com/proxy/xdbxZLYVxpEghMtGEBdh0LZQUW3-IBA2Pv-eorRWDOghij_5bNlgUqcpdg0dwxEEYV-Sneay4ZvePLDUoseDJTfDUvUVqbcE6g0LuOZAM5KWnLk3Hf9iVV91fpCuzvEKtFuZMXSb=s0-d-e1-ft#https://s3-us-west-1.amazonaws.com/udacity-content/degrees/catalog-images/nd101.png"
-                                                                    style="display:block;width:229px!important;height:120px!important" width="229" class="CToWUd"></a></td>
+                                                              <td align="center" style="padding-bottom:20px">
+                                                                <textarea name="editor10" id="editor3" contenteditable="true">
+                                                                  @if($email->editor10)
+                                                                  {{$email->editor10}}
+                                                                  @else
+                                                                  <a href="http://bsft.io/x/7f717s?p=1&amp;uid=cef11a58-a319-42ff-90dc-789ce81a4f01&amp;mid=622ce9a3-bcba-4c0b-8f51-037e2909d2aa" style="text-decoration:none"
+                                                                    target="_blank" data-saferedirecturl="https://www.google.com/url?q=http://bsft.io/x/7f717s?p%3D1%26uid%3Dcef11a58-a319-42ff-90dc-789ce81a4f01%26mid%3D622ce9a3-bcba-4c0b-8f51-037e2909d2aa&amp;source=gmail&amp;ust=1550716564131000&amp;usg=AFQjCNHVia_IY4z9nH7qcVqPq8edU7Nu6w">
+                                                                    <img
+                                                                      alt="" border="0" height="120" src="https://ci4.googleusercontent.com/proxy/xdbxZLYVxpEghMtGEBdh0LZQUW3-IBA2Pv-eorRWDOghij_5bNlgUqcpdg0dwxEEYV-Sneay4ZvePLDUoseDJTfDUvUVqbcE6g0LuOZAM5KWnLk3Hf9iVV91fpCuzvEKtFuZMXSb=s0-d-e1-ft#https://s3-us-west-1.amazonaws.com/udacity-content/degrees/catalog-images/nd101.png"
+                                                                      style="display:block;width:229px!important;height:120px!important" width="229" class="CToWUd">
+                                                                  </a>
+                                                                  @endif
+                                                              </textarea>
+                                                              </td>
                                                             </tr>
                                                             <tr>
                                                               <td align="center" style="padding:0px 0 5px 0">
@@ -194,10 +205,20 @@
                                                                   </textarea></td>
                                                             </tr>
                                                             <tr>
-                                                              <td align="center" style="padding-bottom:20px"><a href="http://bsft.io/x/7f717s?p=1&amp;uid=cef11a58-a319-42ff-90dc-789ce81a4f01&amp;mid=622ce9a3-bcba-4c0b-8f51-037e2909d2aa" style="text-decoration:none"
-                                                                  target="_blank" data-saferedirecturl="https://www.google.com/url?q=http://bsft.io/x/7f717s?p%3D1%26uid%3Dcef11a58-a319-42ff-90dc-789ce81a4f01%26mid%3D622ce9a3-bcba-4c0b-8f51-037e2909d2aa&amp;source=gmail&amp;ust=1550716564131000&amp;usg=AFQjCNHVia_IY4z9nH7qcVqPq8edU7Nu6w"><img
-                                                                    alt="Deep Learning Nanodegree Foundation program" border="0" height="120" src="https://ci4.googleusercontent.com/proxy/xdbxZLYVxpEghMtGEBdh0LZQUW3-IBA2Pv-eorRWDOghij_5bNlgUqcpdg0dwxEEYV-Sneay4ZvePLDUoseDJTfDUvUVqbcE6g0LuOZAM5KWnLk3Hf9iVV91fpCuzvEKtFuZMXSb=s0-d-e1-ft#https://s3-us-west-1.amazonaws.com/udacity-content/degrees/catalog-images/nd101.png"
-                                                                    style="display:block;width:229px!important;height:120px!important" width="229" class="CToWUd"></a></td>
+                                                              <td align="center" style="padding-bottom:20px">
+                                                                <textarea name="editor11" id="editor3" contenteditable="true">
+                                                                  @if($email->editor11)
+                                                                  {{$email->editor11}}
+                                                                  @else
+                                                                  <a href="http://bsft.io/x/7f717s?p=1&amp;uid=cef11a58-a319-42ff-90dc-789ce81a4f01&amp;mid=622ce9a3-bcba-4c0b-8f51-037e2909d2aa" style="text-decoration:none"
+                                                                    target="_blank" data-saferedirecturl="https://www.google.com/url?q=http://bsft.io/x/7f717s?p%3D1%26uid%3Dcef11a58-a319-42ff-90dc-789ce81a4f01%26mid%3D622ce9a3-bcba-4c0b-8f51-037e2909d2aa&amp;source=gmail&amp;ust=1550716564131000&amp;usg=AFQjCNHVia_IY4z9nH7qcVqPq8edU7Nu6w">
+                                                                    <img
+                                                                      alt="" border="0" height="120" src="https://ci4.googleusercontent.com/proxy/xdbxZLYVxpEghMtGEBdh0LZQUW3-IBA2Pv-eorRWDOghij_5bNlgUqcpdg0dwxEEYV-Sneay4ZvePLDUoseDJTfDUvUVqbcE6g0LuOZAM5KWnLk3Hf9iVV91fpCuzvEKtFuZMXSb=s0-d-e1-ft#https://s3-us-west-1.amazonaws.com/udacity-content/degrees/catalog-images/nd101.png"
+                                                                      style="display:block;width:229px!important;height:120px!important" width="229" class="CToWUd">
+                                                                  </a>
+                                                                  @endif
+                                                              </textarea>
+                                                              </td>
                                                             </tr>
                                                             <tr>
                                                               <td align="center" style="padding:0px 0 5px 0">
@@ -1057,6 +1078,347 @@ CKEDITOR.inline( 'editor9', {
 <script>
 
 CKEDITOR.inline( 'editor10', {
+
+  toolbar: [{
+      name: 'document',
+      items: ['Print']
+    },
+    {
+      name: 'clipboard',
+      items: ['Undo', 'Redo']
+    },
+    {
+      name: 'styles',
+      items: ['Format', 'Font', 'FontSize']
+    },
+    {
+      name: 'colors',
+      items: ['TextColor', 'BGColor']
+    },
+    {
+      name: 'align',
+      items: ['JustifyLeft', 'JustifyCenter', 'JustifyRight', 'JustifyBlock']
+    },
+    '/',
+    {
+      name: 'basicstyles',
+      items: ['Bold', 'Italic', 'Underline', 'Strike', 'RemoveFormat', 'CopyFormatting']
+    },
+    {
+      name: 'links',
+      items: ['Link', 'Unlink']
+    },
+    {
+      name: 'paragraph',
+      items: ['NumberedList', 'BulletedList', '-', 'Outdent', 'Indent', '-', 'Blockquote']
+    },
+    {
+      name: 'insert',
+      items: ['Image', 'Table']
+    },
+    {
+      name: 'tools',
+      items: ['Maximize']
+    },
+    {
+      name: 'editing',
+      items: ['Scayt']
+    }
+  ],
+
+  extraAllowedContent: 'h3{clear};h2{line-height};h2 h3{margin-left,margin-top}',
+
+  // Adding drag and drop image upload.
+  extraPlugins: 'print,format,font,colorbutton,justify,uploadimage',
+  uploadUrl: '/apps/ckfinder/3.4.5/core/connector/php/connector.php?command=QuickUpload&type=Files&responseType=json',
+
+  // Configure your file manager integration. This example uses CKFinder 3 for PHP.
+  filebrowserBrowseUrl: '/apps/ckfinder/3.4.5/ckfinder.html',
+  filebrowserImageBrowseUrl: '/apps/ckfinder/3.4.5/ckfinder.html?type=Images',
+  filebrowserUploadUrl: '/apps/ckfinder/3.4.5/core/connector/php/connector.php?command=QuickUpload&type=Files',
+  filebrowserImageUploadUrl: '/apps/ckfinder/3.4.5/core/connector/php/connector.php?command=QuickUpload&type=Images',
+
+  height: 560,
+
+  removeDialogTabs: 'image:advanced;link:advanced'
+
+} );
+
+
+
+CKEDITOR.inline( 'editor11', {
+
+  toolbar: [{
+      name: 'document',
+      items: ['Print']
+    },
+    {
+      name: 'clipboard',
+      items: ['Undo', 'Redo']
+    },
+    {
+      name: 'styles',
+      items: ['Format', 'Font', 'FontSize']
+    },
+    {
+      name: 'colors',
+      items: ['TextColor', 'BGColor']
+    },
+    {
+      name: 'align',
+      items: ['JustifyLeft', 'JustifyCenter', 'JustifyRight', 'JustifyBlock']
+    },
+    '/',
+    {
+      name: 'basicstyles',
+      items: ['Bold', 'Italic', 'Underline', 'Strike', 'RemoveFormat', 'CopyFormatting']
+    },
+    {
+      name: 'links',
+      items: ['Link', 'Unlink']
+    },
+    {
+      name: 'paragraph',
+      items: ['NumberedList', 'BulletedList', '-', 'Outdent', 'Indent', '-', 'Blockquote']
+    },
+    {
+      name: 'insert',
+      items: ['Image', 'Table']
+    },
+    {
+      name: 'tools',
+      items: ['Maximize']
+    },
+    {
+      name: 'editing',
+      items: ['Scayt']
+    }
+  ],
+
+  extraAllowedContent: 'h3{clear};h2{line-height};h2 h3{margin-left,margin-top}',
+
+  // Adding drag and drop image upload.
+  extraPlugins: 'print,format,font,colorbutton,justify,uploadimage',
+  uploadUrl: '/apps/ckfinder/3.4.5/core/connector/php/connector.php?command=QuickUpload&type=Files&responseType=json',
+
+  // Configure your file manager integration. This example uses CKFinder 3 for PHP.
+  filebrowserBrowseUrl: '/apps/ckfinder/3.4.5/ckfinder.html',
+  filebrowserImageBrowseUrl: '/apps/ckfinder/3.4.5/ckfinder.html?type=Images',
+  filebrowserUploadUrl: '/apps/ckfinder/3.4.5/core/connector/php/connector.php?command=QuickUpload&type=Files',
+  filebrowserImageUploadUrl: '/apps/ckfinder/3.4.5/core/connector/php/connector.php?command=QuickUpload&type=Images',
+
+  height: 560,
+
+  removeDialogTabs: 'image:advanced;link:advanced'
+
+} );
+
+
+CKEDITOR.inline( 'editor12', {
+
+  toolbar: [{
+      name: 'document',
+      items: ['Print']
+    },
+    {
+      name: 'clipboard',
+      items: ['Undo', 'Redo']
+    },
+    {
+      name: 'styles',
+      items: ['Format', 'Font', 'FontSize']
+    },
+    {
+      name: 'colors',
+      items: ['TextColor', 'BGColor']
+    },
+    {
+      name: 'align',
+      items: ['JustifyLeft', 'JustifyCenter', 'JustifyRight', 'JustifyBlock']
+    },
+    '/',
+    {
+      name: 'basicstyles',
+      items: ['Bold', 'Italic', 'Underline', 'Strike', 'RemoveFormat', 'CopyFormatting']
+    },
+    {
+      name: 'links',
+      items: ['Link', 'Unlink']
+    },
+    {
+      name: 'paragraph',
+      items: ['NumberedList', 'BulletedList', '-', 'Outdent', 'Indent', '-', 'Blockquote']
+    },
+    {
+      name: 'insert',
+      items: ['Image', 'Table']
+    },
+    {
+      name: 'tools',
+      items: ['Maximize']
+    },
+    {
+      name: 'editing',
+      items: ['Scayt']
+    }
+  ],
+
+  extraAllowedContent: 'h3{clear};h2{line-height};h2 h3{margin-left,margin-top}',
+
+  // Adding drag and drop image upload.
+  extraPlugins: 'print,format,font,colorbutton,justify,uploadimage',
+  uploadUrl: '/apps/ckfinder/3.4.5/core/connector/php/connector.php?command=QuickUpload&type=Files&responseType=json',
+
+  // Configure your file manager integration. This example uses CKFinder 3 for PHP.
+  filebrowserBrowseUrl: '/apps/ckfinder/3.4.5/ckfinder.html',
+  filebrowserImageBrowseUrl: '/apps/ckfinder/3.4.5/ckfinder.html?type=Images',
+  filebrowserUploadUrl: '/apps/ckfinder/3.4.5/core/connector/php/connector.php?command=QuickUpload&type=Files',
+  filebrowserImageUploadUrl: '/apps/ckfinder/3.4.5/core/connector/php/connector.php?command=QuickUpload&type=Images',
+
+  height: 560,
+
+  removeDialogTabs: 'image:advanced;link:advanced'
+
+} );
+
+
+CKEDITOR.inline( 'editor13', {
+
+  toolbar: [{
+      name: 'document',
+      items: ['Print']
+    },
+    {
+      name: 'clipboard',
+      items: ['Undo', 'Redo']
+    },
+    {
+      name: 'styles',
+      items: ['Format', 'Font', 'FontSize']
+    },
+    {
+      name: 'colors',
+      items: ['TextColor', 'BGColor']
+    },
+    {
+      name: 'align',
+      items: ['JustifyLeft', 'JustifyCenter', 'JustifyRight', 'JustifyBlock']
+    },
+    '/',
+    {
+      name: 'basicstyles',
+      items: ['Bold', 'Italic', 'Underline', 'Strike', 'RemoveFormat', 'CopyFormatting']
+    },
+    {
+      name: 'links',
+      items: ['Link', 'Unlink']
+    },
+    {
+      name: 'paragraph',
+      items: ['NumberedList', 'BulletedList', '-', 'Outdent', 'Indent', '-', 'Blockquote']
+    },
+    {
+      name: 'insert',
+      items: ['Image', 'Table']
+    },
+    {
+      name: 'tools',
+      items: ['Maximize']
+    },
+    {
+      name: 'editing',
+      items: ['Scayt']
+    }
+  ],
+
+  extraAllowedContent: 'h3{clear};h2{line-height};h2 h3{margin-left,margin-top}',
+
+  // Adding drag and drop image upload.
+  extraPlugins: 'print,format,font,colorbutton,justify,uploadimage',
+  uploadUrl: '/apps/ckfinder/3.4.5/core/connector/php/connector.php?command=QuickUpload&type=Files&responseType=json',
+
+  // Configure your file manager integration. This example uses CKFinder 3 for PHP.
+  filebrowserBrowseUrl: '/apps/ckfinder/3.4.5/ckfinder.html',
+  filebrowserImageBrowseUrl: '/apps/ckfinder/3.4.5/ckfinder.html?type=Images',
+  filebrowserUploadUrl: '/apps/ckfinder/3.4.5/core/connector/php/connector.php?command=QuickUpload&type=Files',
+  filebrowserImageUploadUrl: '/apps/ckfinder/3.4.5/core/connector/php/connector.php?command=QuickUpload&type=Images',
+
+  height: 560,
+
+  removeDialogTabs: 'image:advanced;link:advanced'
+
+} );
+
+
+CKEDITOR.inline( 'editor14', {
+
+  toolbar: [{
+      name: 'document',
+      items: ['Print']
+    },
+    {
+      name: 'clipboard',
+      items: ['Undo', 'Redo']
+    },
+    {
+      name: 'styles',
+      items: ['Format', 'Font', 'FontSize']
+    },
+    {
+      name: 'colors',
+      items: ['TextColor', 'BGColor']
+    },
+    {
+      name: 'align',
+      items: ['JustifyLeft', 'JustifyCenter', 'JustifyRight', 'JustifyBlock']
+    },
+    '/',
+    {
+      name: 'basicstyles',
+      items: ['Bold', 'Italic', 'Underline', 'Strike', 'RemoveFormat', 'CopyFormatting']
+    },
+    {
+      name: 'links',
+      items: ['Link', 'Unlink']
+    },
+    {
+      name: 'paragraph',
+      items: ['NumberedList', 'BulletedList', '-', 'Outdent', 'Indent', '-', 'Blockquote']
+    },
+    {
+      name: 'insert',
+      items: ['Image', 'Table']
+    },
+    {
+      name: 'tools',
+      items: ['Maximize']
+    },
+    {
+      name: 'editing',
+      items: ['Scayt']
+    }
+  ],
+
+  extraAllowedContent: 'h3{clear};h2{line-height};h2 h3{margin-left,margin-top}',
+
+  // Adding drag and drop image upload.
+  extraPlugins: 'print,format,font,colorbutton,justify,uploadimage',
+  uploadUrl: '/apps/ckfinder/3.4.5/core/connector/php/connector.php?command=QuickUpload&type=Files&responseType=json',
+
+  // Configure your file manager integration. This example uses CKFinder 3 for PHP.
+  filebrowserBrowseUrl: '/apps/ckfinder/3.4.5/ckfinder.html',
+  filebrowserImageBrowseUrl: '/apps/ckfinder/3.4.5/ckfinder.html?type=Images',
+  filebrowserUploadUrl: '/apps/ckfinder/3.4.5/core/connector/php/connector.php?command=QuickUpload&type=Files',
+  filebrowserImageUploadUrl: '/apps/ckfinder/3.4.5/core/connector/php/connector.php?command=QuickUpload&type=Images',
+
+  height: 560,
+
+  removeDialogTabs: 'image:advanced;link:advanced'
+
+} );
+
+
+CKEDITOR.inline( 'editor15', {
 
   toolbar: [{
       name: 'document',

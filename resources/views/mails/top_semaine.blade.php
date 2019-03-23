@@ -102,10 +102,9 @@
                                                                 </td>
                                                             </tr>
                                                             <tr>
-                                                              <td align="center" style="padding-bottom:20px"><a href="http://bsft.io/x/7f717s?p=1&amp;uid=cef11a58-a319-42ff-90dc-789ce81a4f01&amp;mid=622ce9a3-bcba-4c0b-8f51-037e2909d2aa" style="text-decoration:none"
-                                                                  target="_blank" data-saferedirecturl="https://www.google.com/url?q=http://bsft.io/x/7f717s?p%3D1%26uid%3Dcef11a58-a319-42ff-90dc-789ce81a4f01%26mid%3D622ce9a3-bcba-4c0b-8f51-037e2909d2aa&amp;source=gmail&amp;ust=1550716564131000&amp;usg=AFQjCNHVia_IY4z9nH7qcVqPq8edU7Nu6w"><img
-                                                                    alt="Deep Learning Nanodegree Foundation program" border="0" height="120" src="https://ci4.googleusercontent.com/proxy/xdbxZLYVxpEghMtGEBdh0LZQUW3-IBA2Pv-eorRWDOghij_5bNlgUqcpdg0dwxEEYV-Sneay4ZvePLDUoseDJTfDUvUVqbcE6g0LuOZAM5KWnLk3Hf9iVV91fpCuzvEKtFuZMXSb=s0-d-e1-ft#https://s3-us-west-1.amazonaws.com/udacity-content/degrees/catalog-images/nd101.png"
-                                                                    style="display:block;width:229px!important;height:120px!important" width="229" class="CToWUd"></a></td>
+                                                              <td align="center" style="padding-bottom:20px">
+                                                                {!!$email->editor10!!}
+                                                              </td>
                                                             </tr>
                                                             <tr>
                                                               <td align="center" style="padding:0px 0 5px 0">
@@ -150,10 +149,9 @@
                                                                 </td>
                                                             </tr>
                                                             <tr>
-                                                              <td align="center" style="padding-bottom:20px"><a href="http://bsft.io/x/7f717s?p=1&amp;uid=cef11a58-a319-42ff-90dc-789ce81a4f01&amp;mid=622ce9a3-bcba-4c0b-8f51-037e2909d2aa" style="text-decoration:none"
-                                                                  target="_blank" data-saferedirecturl="https://www.google.com/url?q=http://bsft.io/x/7f717s?p%3D1%26uid%3Dcef11a58-a319-42ff-90dc-789ce81a4f01%26mid%3D622ce9a3-bcba-4c0b-8f51-037e2909d2aa&amp;source=gmail&amp;ust=1550716564131000&amp;usg=AFQjCNHVia_IY4z9nH7qcVqPq8edU7Nu6w"><img
-                                                                    alt="Deep Learning Nanodegree Foundation program" border="0" height="120" src="https://ci4.googleusercontent.com/proxy/xdbxZLYVxpEghMtGEBdh0LZQUW3-IBA2Pv-eorRWDOghij_5bNlgUqcpdg0dwxEEYV-Sneay4ZvePLDUoseDJTfDUvUVqbcE6g0LuOZAM5KWnLk3Hf9iVV91fpCuzvEKtFuZMXSb=s0-d-e1-ft#https://s3-us-west-1.amazonaws.com/udacity-content/degrees/catalog-images/nd101.png"
-                                                                    style="display:block;width:229px!important;height:120px!important" width="229" class="CToWUd"></a></td>
+                                                              <td align="center" style="padding-bottom:20px">
+                                                                {!!$email->editor11!!}
+                                                              </td>
                                                             </tr>
                                                             <tr>
                                                               <td align="center" style="padding:0px 0 5px 0">
