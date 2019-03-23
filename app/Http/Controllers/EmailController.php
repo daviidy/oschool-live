@@ -179,6 +179,9 @@ class EmailController extends Controller
         return redirect('emails')->with('status', 'Le mail a bien été envoyé !');
       }
       elseif ($email->titre == "Message Ceo") {
+        
+        //on cible les contacts dont le parcours = email->parcours = aucun
+
         $users = Contact::where('parcours', $email->parcours)->orderby('id', 'asc')->paginate(1000);
         foreach ($users as $user) {
           //envoi mail utilisateur inscription
