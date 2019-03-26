@@ -204,7 +204,7 @@ button{-webkit-appearance:button;}
 
 
 <header class="css-7l5129 e1jt8heo1">
-<a class="css-vqgiaa" aria-current="false">Titre du mail: &nbsp;&nbsp;&nbsp;</a><input type="text" name="titre" value="{{$email->titre}}">
+<a style="display:none;" class="css-vqgiaa" aria-current="false">Titre du mail: &nbsp;&nbsp;&nbsp;</a><input style="display:none;" type="text" name="titre" value="{{$email->titre}}">
 <a class="css-vqgiaa" aria-current="false">Lien de l'appel à l'action: &nbsp;&nbsp;&nbsp;</a><input type="url" name="lien" value="{{$email->lien}}">
 @if($email->titre == 'Intérêt Parcours' || $email->titre == 'Message Ceo')
 <a class="css-vqgiaa" aria-current="false">Parcours: &nbsp;&nbsp;&nbsp;</a><input type="text" name="parcours" value="">
