@@ -14,7 +14,7 @@ class Formation extends Model
   public function users()
   {
       return $this->belongsToMany('App\User');
-  }
+  } 
 
   public function projets()
   {
