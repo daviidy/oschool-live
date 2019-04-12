@@ -81,7 +81,7 @@ hr{box-sizing:content-box;overflow:visible;border:0;height:0;margin-top:0;margin
 .card-heading[_ngcontent-c27]{margin-top:0;margin-bottom:4.5rem;}
 .card-heading[_ngcontent-c27]   a[_ngcontent-c27]{color:#2e3d49;font-weight:600;display:block;overflow:hidden;text-overflow:ellipsis;line-height:3.6rem;max-height: 7.8rem;}
 .card-heading[_ngcontent-c27]   a[_ngcontent-c27]:hover{color:#02b3e4;}
-.card-content[_ngcontent-c27]{float:left;display:block;margin-right:1.69491525%;width:74.57627119%;}
+.card-content[_ngcontent-c27]{float:left;display:block;margin-right:1.69491525%;width:100%;}
 .card-content[_ngcontent-c27]:last-child{margin-right:0;}
 @media (max-width:62rem){
 .card-content[_ngcontent-c27]{float:left;display:block;margin-right:1.69491525%;width:100%;}

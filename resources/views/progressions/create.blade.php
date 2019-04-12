@@ -47,7 +47,7 @@
 					{{ csrf_field() }}
           <div class="wrap-input100 input100-select bg1">
             <span class="label-input100">Titre de la progression</span>
-              <input class="input100" type="text" name="nom" value="" required>
+              <input class="input100" type="text" name="titre" value="" required>
           </div>
 
           <div class="wrap-input100 input100-select bg1">
