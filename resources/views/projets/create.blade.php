@@ -70,6 +70,8 @@
 						</div>
 					</div>
 
+					<!--
+
 					<div class="wrap-input100 input100-select bg1">
             <span class="label-input100">Quelle progression sera utile pour réaliser ce projet ?</span>
             <div>
@@ -81,6 +83,8 @@
               <div class="dropDownSelect3"></div>
             </div>
           </div>
+
+				-->
 
 
 					<div class="wrap-input100 input100-select bg1">

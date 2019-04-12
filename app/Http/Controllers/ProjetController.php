@@ -66,10 +66,13 @@ class ProjetController extends Controller
       $formation = Formation::find($request['formation_id']);
       $projet->formations()->attach($formation);
 
+      /*
       //on trouve le projet renseigné dans le formulaire
       $progression = Progression::find($request['progression_id']);
       //on lie ce projet à la progression crée
       $projet->progressions()->attach($progression);
+
+      */
 
       return redirect('home')->with('status', 'Le projet a bien été crée');
     }
