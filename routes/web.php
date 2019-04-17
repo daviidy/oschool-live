@@ -90,6 +90,10 @@ Route::get('/epcci', function () {
     return view('formations.template-epcci');
 });
 
+Route::get('/esatic', function () {
+    return view('formations.template-esatic');
+});
+
 
 
 

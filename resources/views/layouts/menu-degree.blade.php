@@ -1043,7 +1043,7 @@ body *{box-sizing:border-box;}
 
   @yield('content')
 
-
+<!--
   <footer>
 <div class="container">
   <div class="row">
@@ -1089,8 +1089,10 @@ body *{box-sizing:border-box;}
 <div id="scrolltop" class="fix">
   <a><i class="icon-arrow-1-up"></i><span>haut</span></a>
 </div>
--->
+
 </footer>
+
+-->
 
 
 
