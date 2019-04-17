@@ -53,7 +53,7 @@
       </div>
 
       <!-- Course -->
-
+<!--
       <div class="col-lg-4 course_col">
         <div class="course">
           <div class="course_image"><img src="/new/images/cours/devweb3.png" alt=""></div>
@@ -65,9 +65,10 @@
 
         </div>
       </div>
+    -->
 
       <!-- Course -->
-
+<!--
       <div class="col-lg-4 course_col">
         <div class="course">
           <div class="course_image"><img src="/new/images/cours/devweb2.png" alt=""></div>
@@ -79,6 +80,7 @@
 
         </div>
       </div>
+    -->
 
 
 
@@ -107,6 +109,7 @@
       </div>
 
       <!-- Course -->
+      <!--
       <div class="col-lg-4 course_col">
         <div class="course">
           <div class="course_image"><img src="/new/images/cours/android2.png" alt=""></div>
@@ -117,8 +120,10 @@
 
         </div>
       </div>
+    -->
 
       <!-- Course -->
+      <!--
       <div class="col-lg-4 course_col">
         <div class="course">
           <div class="course_image"><img src="/new/images/cours/android3.png" alt=""></div>
@@ -129,10 +134,11 @@
 
         </div>
       </div>
+    -->
 
 
       <!-- Course -->
-
+<!--
       <div class="col-lg-4 course_col">
         <div class="course">
           <div class="course_image"><img src="/new/images/cours/kali.png" alt=""></div>
@@ -144,6 +150,7 @@
 
         </div>
       </div>
+    -->
 
       <!-- Course
       <div class="col-lg-4 course_col">
@@ -195,6 +202,7 @@
       </div>
 
       <!-- Course -->
+      <!--
       <div class="col-lg-4 course_col">
         <div class="course">
           <div class="course_image"><img src="/new/images/cours/jeux.png" alt=""></div>
@@ -205,6 +213,7 @@
 
         </div>
       </div>
+    -->
 
 
 
@@ -212,11 +221,7 @@
 
     </div>
 
-    <div class="row">
-      <div class="col">
-        <div class="home_button"><a href="/#schools">Voir les autres écoles</a></div>
-      </div>
-    </div>
+    @include('includes.schools')
   </div>
 </div>
 

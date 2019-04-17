@@ -75,7 +75,7 @@
 
         </div>
       </div>
-
+<!--
       <div class="col-lg-4 course_col">
         <div class="course">
           <div class="course_image"><img src="/new/images/cours/socialmedia.png" alt=""></div>
@@ -86,6 +86,7 @@
 
         </div>
       </div>
+    -->
 
       <!-- Course
       <div class="col-lg-4 course_col">
@@ -118,11 +119,7 @@
 
     </div>
 
-    <div class="row">
-      <div class="col">
-        <div class="home_button"><a href="/#schools">Voir nos écoles</a></div>
-      </div>
-    </div>
+    @include('includes.schools')
   </div>
 </div>
 

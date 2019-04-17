@@ -64,7 +64,11 @@
 
 
 
-
+@media only screen and (max-width: 999px) {
+	.classroom_button{
+		display: none !important;
+	}
+}
 
 
 

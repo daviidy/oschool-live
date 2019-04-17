@@ -100,7 +100,7 @@ drift.load('2uy6g3spxi59');
 		      <!--fin annonce a la udemy-->
 
 		<!-- Top Bar -->
-		<div class="top_bar">
+	<!--	<div class="top_bar">
 			<div class="top_bar_container">
 				<div class="container">
 					<div class="row">
@@ -124,7 +124,7 @@ drift.load('2uy6g3spxi59');
 
 
 
-									<!-- Language -->
+									<!-- Language
 									<div class="top_bar_lang">
 										<span class="top_bar_title">langue du site:</span>
 										<ul class="lang_list">
@@ -137,7 +137,7 @@ drift.load('2uy6g3spxi59');
 										</ul>
 									</div>
 
-									<!-- Social -->
+									<!-- Social
 									<div class="top_bar_social">
 										<span class="top_bar_title social_title">suivez-nous</span>
 										<ul>
@@ -153,7 +153,7 @@ drift.load('2uy6g3spxi59');
 				</div>
 			</div>
 		</div>
-
+-->
 		<!-- Header Content -->
 		<div class="header_container">
 			<div class="container">
@@ -170,9 +170,9 @@ drift.load('2uy6g3spxi59');
 							<nav class="main_nav_contaner">
 								<ul class="main_nav">
 									<li class="active"><a href="https://oschool.ci/">Accueil</a></li>
-									<li><a href="/#schools">Toutes les formations</a></li>
-									<li><a target="_blank" href="https://events.oschool.ci">Evénements</a></li>
-									<li><a target="_blank" href="https://oschool.ci/blog/">Blog</a></li>
+								<li><a href="https://oschool.ci/#schools">Nos écoles</a></li>
+								<!-- <li><a target="_blank" href="https://events.oschool.ci">Evénements</a></li>
+									<li><a target="_blank" href="https://oschool.ci/blog/">Blog</a></li>-->
 						<!--			<li><a target="_blank" class="demo" href="https://calendly.com/oschool_e-learning/demo-oschool-code">Demandez une démo</a></li> -->
 								</ul>
 							</nav>
@@ -180,8 +180,17 @@ drift.load('2uy6g3spxi59');
 
 								<!-- Hamburger -->
 
-                <a href="{{ route('login') }}" style="margin-left: 10px;" class="">
-                  Ma salle de classe
+                <a class="classroom_button" href="{{ route('login') }}" style="width: 15%;
+    height: 43px;
+    background: #4D90CC;
+    text-align: center;
+    border-radius: 3px;
+    color: #fff;
+    padding: 10px;
+    margin-top: -10px;
+    font-weight: 500;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);margin-left: 10px;" class="">
+                  Salle de classe
                 </a>
 								<div class="hamburger menu_mm">
 									<i class="fa fa-bars menu_mm" aria-hidden="true"></i>
@@ -212,9 +221,9 @@ drift.load('2uy6g3spxi59');
 		<nav class="menu_nav">
 			<ul class="menu_mm">
 				<li class="menu_mm"><a href="/">Accueil</a></li>
-				<li class="menu_mm"><a href="/#schools">Toutes nos formations</a></li>
-				<li class="menu_mm"><a target="_blank" href="https://events.oschool.ci">Evénements</a></li>
-				<li class="menu_mm"><a target="_blank" href="https://oschool.ci/blog/">Blog</a></li>
+				<li class="menu_mm"><a href="https://oschool.ci/#schools">Nos écoles</a></li>
+				<li class="menu_mm"><a target="_blank" href="{{ route('login') }}">Salle de classe</a></li>
+			<!--	<li class="menu_mm"><a target="_blank" href="https://oschool.ci/blog/">Blog</a></li> -->
 			</ul>
 		</nav>
 		<div class="menu_extra">
@@ -234,7 +243,7 @@ drift.load('2uy6g3spxi59');
 
 
   <!-- Footer -->
-
+<!--
   <footer class="footer">
 
     <div class="copyright">
@@ -242,9 +251,9 @@ drift.load('2uy6g3spxi59');
         <div class="row">
           <div class="col">
             <div class="copyright_content d-flex flex-md-row flex-column align-items-md-center align-items-start justify-content-start">
-              <div class="cr"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+              <div class="cr"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0.
 Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved.
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></div>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. </div>
               <div class="cr_right ml-md-auto">
                 <div class="footer_phone"><span class="cr_title">question ?</span>info@oschool.ci</div>
                 <div class="footer_social">
@@ -262,6 +271,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
       </div>
     </div>
   </footer>
+-->
 </div>
 
 <script src="/new/js/jquery-3.2.1.min.js"></script>

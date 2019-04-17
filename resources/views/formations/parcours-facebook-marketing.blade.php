@@ -37,10 +37,10 @@
               <!---->
               <!---->
               <ul _ngcontent-c87="" class="ng-star-inserted">
-                  <li _ngcontent-c87=""><span _ngcontent-c87="" class="countdown__timer" id="jourskali"></span><span _ngcontent-c87="">JOURS</span></li>
-                  <li _ngcontent-c87=""><span _ngcontent-c87="" class="countdown__timer" id="heureskali"></span><span _ngcontent-c87="">HRS</span></li>
-                  <li _ngcontent-c87=""><span _ngcontent-c87="" class="countdown__timer" id="minuteskali"></span><span _ngcontent-c87="">MIN</span></li>
-                  <li _ngcontent-c87=""><span _ngcontent-c87="" class="countdown__timer" id="secondeskali"></span><span _ngcontent-c87="">SEC</span></li>
+                  <li _ngcontent-c87=""><span _ngcontent-c87="" class="countdown__timer" id="jours"></span><span _ngcontent-c87="">JOURS</span></li>
+                  <li _ngcontent-c87=""><span _ngcontent-c87="" class="countdown__timer" id="heures"></span><span _ngcontent-c87="">HRS</span></li>
+                  <li _ngcontent-c87=""><span _ngcontent-c87="" class="countdown__timer" id="minutes"></span><span _ngcontent-c87="">MIN</span></li>
+                  <li _ngcontent-c87=""><span _ngcontent-c87="" class="countdown__timer" id="secondes"></span><span _ngcontent-c87="">SEC</span></li>
               </ul>
           </div>
       </div>
@@ -79,7 +79,7 @@
       <!---->
       <h6 class="details" _ngcontent-c91="" class="ng-star-inserted">Début de la rentrée</h6>
       <!---->
-      <h5 _ngcontent-c91="" class="ng-star-inserted"> 1er février 2019 </h5>
+      <h5 _ngcontent-c91="" class="ng-star-inserted"> 1er mai 2019 </h5>
       <!---->
       <!---->
     </ir-classroom-opens-column>

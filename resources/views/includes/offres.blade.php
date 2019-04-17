@@ -1,6 +1,6 @@
 <!--section prix-->
 
-<section id="offres" _ngcontent-c18="" class="ng-star-inserted"> 
+<section id="offres" _ngcontent-c18="" class="ng-star-inserted">
   <!---->
   <ir-degree-pricing _ngcontent-c18="" id="nd-pricing" _nghost-c63="" class="ng-star-inserted">
     <!--<ir-payment-info _ngcontent-c63="" _nghost-c100="" style="display: none;">
@@ -110,7 +110,7 @@
           <div _ngcontent-c101="" class="card card--pricing primary selected more-padding-top">
             <div _ngcontent-c101="" class="card__triangle"></div>
             <h6 _ngcontent-c101="" class="card__flag ng-star-inserted">L'offre</h6>
-           <h3 _ngcontent-c101="" style="margin-top: 3rem;color: orange;background: #EAEAEA;" class="card__flag ng-star-inserted">La plus vendue</h3>
+          <!-- <h3 _ngcontent-c101="" style="margin-top: 3rem;color: orange;background: #EAEAEA;" class="card__flag ng-star-inserted">La plus vendue</h3> -->
             <div _ngcontent-c101="" class="card--pricing__header">
               @if(Request::path() == 'devweb' || Request::path() == 'devweb2')
               <h5 _ngcontent-c101="">Développeur Web</h5>
@@ -121,7 +121,7 @@
               @endif
                  <div _ngcontent-c101="" class="card__price ng-star-inserted">
 
-                   <span _ngcontent-c101="" class="card__price--current2"><h1>10.000 FCFA/mois<h1> (le premier mois)</span>
+                   <span _ngcontent-c101="" class="card__price--current2"><h1>10.000 FCFA<h1> <h6>(le premier mois)</h6></span>
 
               </div>
               <br>
@@ -131,8 +131,7 @@
             </p>-->
             </div>
             <div _ngcontent-c101="" class="card--pricing__body">
-              <p> <strong style="color: #CA4352;">En bonus:</strong> <strong>vous pourrez offrir gratuitement la formation de votre
-                choix à un être cher</strong> </p>
+              <p> <strong style="color: #CA4352;">30.000 FCFA par mois ensuite, pendant 3 mois.</strong> <strong>Soit un total de 100.000 FCFA</strong> </p>
               <ul class="list-pricing">
                 <li>Accès à tout le contenu (vidéos, textes, documents et autres ressources)</li>
                 <li>Coaching en live chaque semaine selon votre planning</li>

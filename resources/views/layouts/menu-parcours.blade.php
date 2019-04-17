@@ -201,7 +201,7 @@ drift.load('2uy6g3spxi59');
             </div>
             <div class="navbar-subnav">
               <ul class="nav navbar-nav">
-                <li><a href="/#schools" class="navbar-subnav-links  site-navigation" data-site="Programming">Voir nos écoles</a></li>
+                <li><a href="https://oschool.ci/#schools" class="navbar-subnav-links  site-navigation" data-site="Programming">Voir nos écoles</a></li>
                 <li><span style="height: 6px; width: 6px; background-color: red; border-radius: 4px; position: absolute; top: 0; right: 0;"></span><a id="menuoffres" href="#offres" class="navbar-subnav-links  site-navigation">S'inscrire à ce parcours</a></li>
               </ul>
             </div>
@@ -231,7 +231,7 @@ drift.load('2uy6g3spxi59');
       </div>
       <div id="menu" class="site-toggle-dropdown">
         <p>Menu</p>
-        <a href="/#schools" class="site-navigation">
+        <a href="https://oschool.ci/#schools" class="site-navigation">
           <img class="emoji-png" src="https://d1eq8vvyuam4eq.cloudfront.net/assets/images/programming.png" alt="programming">Nos écoles
         </a>
         <a id="menuoffresmobile" href="#offres" class="site-navigation">
@@ -339,7 +339,7 @@ drift.load('2uy6g3spxi59');
 </div>
 
 
-
+<!--
 <footer>
   <div class="container alt">
     <div class="row">
@@ -352,7 +352,7 @@ drift.load('2uy6g3spxi59');
               <li><a href="http://oschool.ci/questions-courantes/">Des questions ?</a></li>
               <li>
                 <a data-toggle="modal" data-target="#modalFeedback" href="javascript:void(0)">
-                  Nous vous <img class="emoji-png" src="https://d1eq8vvyuam4eq.cloudfront.net/assets/images/heart.svg" alt="heart-icon">beaucoup</a></li>
+                  Nous vous <img class="emoji-png" src="https://s3.amazonaws.com/pix.iemoji.com/images/emoji/apple/ios-12/256/red-heart.png" alt="heart-icon">beaucoup</a></li>
             </ul>
           </div>
           <div class="social-links links">
@@ -366,6 +366,8 @@ drift.load('2uy6g3spxi59');
     </div>
   </div>
 </footer>
+
+-->
 
 
 
