@@ -92,7 +92,7 @@
                     <div>
                       <div class="rc-Column bt3-col-xs-12 bt3-col-md-7 rc-MainColumn">
                         <div class="">
-                          <h2 class="heading">Le seul diplôme de master en informatique, en ligne conçu pour les étudiants sans formation en informatique.</h2>
+                          <h2 class="heading">Le seul diplôme de master en informatique, en ligne conçu pour les étudiants.</h2>
                           <div class="rc-Markdown styled">
                             <p>
                               <!-- react-text: 212 -->Le diplôme en ligne de maîtrise en informatique et en technologies de l'information (MCIT) est un programme d'études de premier cycle en informatique, unique en son genre, conçu pour les majors non-informaticiens. Proposé par l'Université de Pennsylvanie, une institution de l'Ivy League, ce nouveau programme met en ligne le diplôme MCIT de longue date et bien établi sur le campus. Le programme MCIT permet aux étudiants sans formation en informatique de réussir dans les domaines de l'informatique et de la technologie. Les étudiants du MCIT proviennent de divers milieux académiques allant de la littérature à l'histoire en passant par la chimie et la médecine.
