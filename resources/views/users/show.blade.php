@@ -316,7 +316,7 @@
 
                                @if($etatprojet->statut == "Validé")
                                <p style="color: green;">{{ $etatprojet->statut }}</p>
-                               @elseif($etatprojet->statut == "A refaire")
+                               @elseif($etatprojet->statut == "En évaluation")
                                <div style="margin-left: 15px;" class="dropdown">
                                  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
                                    Action
