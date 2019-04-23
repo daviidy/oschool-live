@@ -9,7 +9,7 @@
       <div class="col-xs-12 col-sm-6 c-how__headingLeft">
         <!-- <h2 class="h2 u-bold text-primary">Hack & Learn <em>React</em></h2> -->
         <h1 style="margin-bottom: 3rem;" class="h2 u-bold">Devenez Développeur d'Applications Android, en suivant un cours particulier avec un formateur, depuis la maison</h1>
-        <a class="home_button" href="#payment">
+        <a class="home_button" href="#offres">
           Inscrivez-vous maintenant
         </a>
       </div>
@@ -220,7 +220,7 @@
 
 
 
-        <a class="home_button" href="#payment">
+        <a class="home_button" href="#offres">
           Inscrivez-vous maintenant, n'attendez pas !
         </a>
       </div>
