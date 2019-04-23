@@ -94,6 +94,10 @@ Route::get('/esatic', function () {
     return view('formations.template-esatic');
 });
 
+Route::get('/ensit', function () {
+    return view('formations.template-ensit');
+});
+
 
 
 
