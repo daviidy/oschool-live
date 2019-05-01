@@ -52,77 +52,7 @@
     </div>
   </div>
 
-  <ul _ngcontent-c29="" class="ng-star-inserted">
-  <!---->
-  <li _ngcontent-c29="" class="ng-star-inserted">
-    <!---->
-    <!---->
-    <!---->
-    <!---->
-    <h6 class="details" _ngcontent-c29="" class="ng-star-inserted">Durée:</h6>
-    <!---->
-    <h5 _ngcontent-c29="" class="ng-star-inserted">4 mois</h5>
-    <!---->
-    <!---->
-    <p _ngcontent-c29="" class="x-small ng-star-inserted">Et des séances hebdomadaires de 1 - 2 H avec un formateur</p>
-    <!---->
-    <!---->
-    <!---->
-    <!---->
-    <!---->
-  </li>
-  <li class="trait" _ngcontent-c29="" class="ng-star-inserted">
-    <!---->
-    <!---->
-    <!---->
-    <!---->
-    <!---->
-    <ir-classroom-opens-column _ngcontent-c29="" _nghost-c91="" class="ng-star-inserted">
-      <!---->
-      <!---->
-      <h6 class="details" _ngcontent-c91="" class="ng-star-inserted">Début de la rentrée</h6>
-      <!---->
-      <h5 _ngcontent-c91="" class="ng-star-inserted"> 1er décembre 2018 </h5>
-      <!---->
-      <!---->
-    </ir-classroom-opens-column>
-  </li>
-  <li class="trait" _ngcontent-c29="" class="ng-star-inserted">
-    <!---->
-    <!---->
-    <!---->
-    <!---->
-    <ir-modal _ngcontent-c29="" _nghost-c11="" class="ng-tns-c11-16 ng-star-inserted">
-      <div _ngcontent-c11="" class="wrapper">
-        <!---->
-        <!---->
-      </div>
-    </ir-modal>
-    <h6 class="details" _ngcontent-c29="" class="ng-star-inserted">Prérequis</h6>
-    <!---->
-    <h5 _ngcontent-c29="" class="ng-star-inserted">Un ordinateur ou un smartphone avec connexion internet</h5>
-   <!--  <p _ngcontent-c29="" class="x-small ng-star-inserted"><a _ngcontent-c29="">Voir les prérequis en détail</a></p> -->
-    <!---->
-    <!---->
-  </li>
-  <li class="trait" _ngcontent-c29="" class="ng-star-inserted">
-    <!---->
-    <!---->
-    <!---->
-    <!---->
-    <h6 class="details" _ngcontent-c29="" class="ng-star-inserted">Langue</h6>
-    <!---->
-    <h5 _ngcontent-c29="" class="ng-star-inserted">Francais</h5>
-    <!---->
-    <!---->
-   <!--  <p _ngcontent-c29="" class="x-small ng-star-inserted">Découvrir les matériels requis pour suivre la formation</p> -->
-    <!---->
-    <!---->
-    <!---->
-    <!---->
-    <!---->
-  </li>
-</ul>
+    @include('includes.infos')
 
 
 

@@ -1,5 +1,5 @@
 @extends('layouts.menu-login')
-@section('title', 'Ajouter une formation')
+@section('title', 'Ajouter une entreprise partenaire')
 
 @section('content')
 
@@ -11,41 +11,26 @@
         <img src="/formcreate/images/img-01.png" alt="IMG">
       </div>
 
-      <form method="post" enctype="multipart/form-data" action="{{ route('formations.store') }}" class="login100-form validate-form">
+      <form method="post" enctype="multipart/form-data" action="{{ route('partners.store') }}" class="login100-form validate-form">
         <span class="login100-form-title">
-          Ajouter un nouveau parcours
+          Ajouter un nouveau partenaire
         </span>
         {{ csrf_field() }}
 
 
 
         <div class="wrap-input100 validate-input">
-          <input class="input100" value="" type="text" name="nom" placeholder="Titre du parcours" required>
+          <input class="input100" value="" type="text" name="name" placeholder="Nom du partenaire" required>
           <span class="focus-input100"></span>
           <span class="symbol-input100">
             <i class="fa fa-laptop" aria-hidden="true"></i>
           </span>
         </div>
 
-        <div class="wrap-input100 validate-input" data-validate = "Etudiant">
-          <label for="">Catégorie</label>
-          <select name="categorie_id" class="form-control" style="" required>
-            @foreach($categories as $categorie)
-            <option value="{{ $categorie->id }}">{{ $categorie->nom }}</option>
-            @endforeach
-          </select>
-        </div>
 
-        <div class="wrap-input100 validate-input" data-validate = "Etudiant">
-          <label for="">Statut du parcours</label>
-          <select name="state" class="form-control" style="" required>
-            <option value="active">Actif</option>
-            <option value="inactive">Inactif</option>
-          </select>
-        </div>
 
         <div class="wrap-input100 validate-input">
-          <input class="input100" value="" type="text" name="duration" placeholder="Durée (en mois)" required>
+          <input class="input100" value="" type="url" name="link" placeholder="Lien du site web" required>
           <span class="focus-input100"></span>
           <span class="symbol-input100">
             <i class="fa fa-laptop" aria-hidden="true"></i>
@@ -61,13 +46,10 @@
           </span>
         </div>
 
-        <div class="wrap-input100 validate-input">
-          <textarea required placeholder="Description" rows="50" style="height: 300px;" class="input100" name="description" placeholder=""></textarea>
-        </div>
 
         <div class="container-login100-form-btn">
           <button class="login100-form-btn">
-            Ajouter le parcours
+            Ajouter le partenaire
           </button>
         </div>
 

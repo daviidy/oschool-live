@@ -167,7 +167,13 @@ Route::get('/programme', 'ProgressionController@programme')->name('programme');
 
 Route::get('/progression/{user}', 'ProgressionController@voir')->name('progression');
 
-Route::resource('formations','FormationController');
+Route::resource('formations','FormationController'); 
+
+Route::resource('partners','PartnerController');
+
+Route::resource('languages','LanguageController');
+
+Route::resource('prerequisites','PrerequisiteController');
 
 Route::resource('categories','CategorieController');
 

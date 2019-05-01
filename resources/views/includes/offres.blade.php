@@ -112,13 +112,8 @@
             <h6 _ngcontent-c101="" class="card__flag ng-star-inserted">L'offre</h6>
           <!-- <h3 _ngcontent-c101="" style="margin-top: 3rem;color: orange;background: #EAEAEA;" class="card__flag ng-star-inserted">La plus vendue</h3> -->
             <div _ngcontent-c101="" class="card--pricing__header">
-              @if(Request::path() == 'devweb' || Request::path() == 'devweb2')
-              <h5 _ngcontent-c101="">Développeur Web</h5>
-              @elseif(Request::path() == 'community-management')
-              <h5 _ngcontent-c101="">Community Management</h5>
-              @elseif(Request::path() == 'facebook-marketing')
-              <h5 _ngcontent-c101="">Facebook Marketing</h5>
-              @endif
+              <h5 _ngcontent-c101="">{{$formation->nom}}</h5>
+
                  <div _ngcontent-c101="" class="card__price ng-star-inserted">
 
                    <span _ngcontent-c101="" class="card__price--current2"><h1>10.000 FCFA<h1> <h6>(le premier mois)</h6></span>

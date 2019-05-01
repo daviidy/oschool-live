@@ -29,7 +29,7 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-  <title>Parcours Oschool | @yield('title')</title>
+  <title>@yield('title') | Oschool</title>
   <meta name="description" content="Formation 100% en ligne auprès des meilleures universités et entreprises d'Afrique">
   <meta itemprop="name" content="Formation 100% en ligne auprès des meilleures universités et entreprises d'Afrique">
   <meta itemprop="description" content="Formation 100% en ligne auprès des meilleures universités et entreprises d'Afrique">
@@ -424,7 +424,19 @@ var x = setInterval(function() {
 
 <script>
 // Set the date we're counting down to
-var countDownDatePath = new Date("Apr 30, 2019 23:59:59").getTime();
+var countDownDatePath = new Date("May 31, 2019 23:59:59").getTime();
+const months = ["Jan", "Fev", "Mar","Avr", "Mai", "Juin", "Juillet", "Août", "Sep", "Oct", "Nov", "Dec"];
+
+//on determine le jour de la rentrée en ajoutant 7 jours à celui du deadline
+var rentree = new Date("May 31, 2019 23:59:59");
+rentree.setDate(rentree.getDate()+7);
+
+let formatted_date = rentree.getDate() + " " + months[rentree.getMonth()] + " " + rentree.getFullYear();
+
+var dd = rentree.getDate();
+
+var mm = rentree.getMonth()+1;
+var yyyy = rentree.getFullYear();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -449,9 +461,12 @@ var x = setInterval(function() {
   document.getElementById("minutes").innerHTML = minutes;
 
   document.getElementById("secondes").innerHTML = seconds;
+  document.getElementById("date").innerHTML = formatted_date;
 
   // If the count down is finished, write some text
+
   if (distance < 0) {
+
     clearInterval(x);
     document.getElementById("countdown").style.display = "none";
     document.getElementById("info").innerHTML = "Les inscriptions sont terminées";

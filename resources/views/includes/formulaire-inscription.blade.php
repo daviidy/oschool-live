@@ -24,7 +24,7 @@
                 @endauth
                 <i class="input-icon ion-person-stalker"></i>
               </div>
-            </div> 
+            </div>
 
             <div style="display: none;" class="form-group password-form-group">
               <div class="input-with-icon">
@@ -63,13 +63,8 @@
             <div class="form-group password-form-group">
               <div class="input-with-icon">
                 <select class="form-control" name="formation">
-                  @if(Request::path() == 'devweb' || Request::path() == 'devweb2')
-                  <option value="Développeur Web Junior">Développeur Web Junior</option>
-                  @elseif(Request::path() == 'community-management')
-                  <option value="Community Management">Community Management</option>
-                  @elseif(Request::path() == 'facebook-marketing')
-                  <option value="Facebook Marketing">Facebook Marketing</option>
-                  @endif
+                  <option value="{{$formation->nom}}">{{$formation->nom}}</option>
+
                 </select>
                 <i class="input-icon ion-person-stalker"></i>
               </div>

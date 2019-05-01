@@ -239,7 +239,7 @@ class AchatController extends Controller
 
                   //on met le statut de l'achat à jour
                     $achat->statut = 'Validé';
-                    $achat->save();
+                    $achat->save(); 
 
                   //on ajoute 30 jours à la date actuelle pour déterminer la
                   //date d'expiration de l'abonnement

@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Categorie;
+use App\Prerequisite;
 use Illuminate\Http\Request;
 use Auth;
 
-class CategorieController extends Controller
+class PrerequisiteController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,8 +15,7 @@ class CategorieController extends Controller
      */
     public function index()
     {
-      $categories = Categorie::orderby('id','asc');
-      return view('categories.index', ['categories' => $categories]);
+        //
     }
 
     /**
@@ -27,7 +26,7 @@ class CategorieController extends Controller
     public function create()
     {
       if (Auth::check() && Auth::user()->isAdmin()) {
-        return view('categories.create');
+        return view('prerequisites.create');
       }
       else {
         return redirect('home');
@@ -42,29 +41,29 @@ class CategorieController extends Controller
      */
     public function store(Request $request)
     {
-      $categorie = Categorie::create($request->all());
+      $formation = Prerequisite::create($request->all());
 
-      return redirect('home')->with('status', 'La catégorie a bien été créée !');
+      return redirect('home')->with('status', 'Le prérequis a bien été ajouté !');
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Categorie  $categorie
+     * @param  \App\Prerequisite  $prerequisite
      * @return \Illuminate\Http\Response
      */
-    public function show(Categorie $categorie)
+    public function show(Prerequisite $prerequisite)
     {
-        return view('categories.show', ['categorie' => $categorie]);
+        //
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Categorie  $categorie
+     * @param  \App\Prerequisite  $prerequisite
      * @return \Illuminate\Http\Response
      */
-    public function edit(Categorie $categorie)
+    public function edit(Prerequisite $prerequisite)
     {
         //
     }
@@ -73,10 +72,10 @@ class CategorieController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Categorie  $categorie
+     * @param  \App\Prerequisite  $prerequisite
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Categorie $categorie)
+    public function update(Request $request, Prerequisite $prerequisite)
     {
         //
     }
@@ -84,10 +83,10 @@ class CategorieController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Categorie  $categorie
+     * @param  \App\Prerequisite  $prerequisite
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Categorie $categorie)
+    public function destroy(Prerequisite $prerequisite)
     {
         //
     }

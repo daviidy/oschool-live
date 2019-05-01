@@ -6,25 +6,12 @@
         <div _ngcontent-c77="" class="nd-bottom-cta-container">
             <div _ngcontent-c77="" class="nd-bottom-cta-content">
                 <!---->
-                @if(Request::path() == 'devweb' || Request::path() == 'devweb2')
+
                 <h4 _ngcontent-c77="" class="h2 nd-bottom-cta-content__title ng-star-inserted">
                     <font style="vertical-align: inherit;">
-                        <font style="vertical-align: inherit;">Devenez Développeur Web Junior</font>
+                        <font style="vertical-align: inherit;">Devenez {{$formation->nom}}</font>
                     </font>
                 </h4>
-                @elseif(Request::path() == 'community-management')
-                <h4 _ngcontent-c77="" class="h2 nd-bottom-cta-content__title ng-star-inserted">
-                    <font style="vertical-align: inherit;">
-                        <font style="vertical-align: inherit;">Devenez Community Manager</font>
-                    </font>
-                </h4>
-                @elseif(Request::path() == 'facebook-marketing')
-                <h4 _ngcontent-c77="" class="h2 nd-bottom-cta-content__title ng-star-inserted">
-                    <font style="vertical-align: inherit;">
-                        <font style="vertical-align: inherit;">Devenez Expert Facebook</font>
-                    </font>
-                </h4>
-                @endif
                 <!---->
                 <p _ngcontent-c77="" class="nd-bottom-cta-content__subtitle ng-star-inserted">
                     <font style="vertical-align: inherit;">

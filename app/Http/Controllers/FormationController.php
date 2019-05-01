@@ -7,6 +7,9 @@ use Illuminate\Http\Request;
 use Image;
 use Auth;
 use App\Categorie;
+use App\Partner;
+use App\Language;
+use App\Prerequisite;
 
 class FormationController extends Controller
 {
@@ -87,6 +90,28 @@ class FormationController extends Controller
     {
       $formation = Formation::create($request->all());
 
+      //we get all the arrays for language, partner and prerequisite fields
+      $languages = $request->language_id;
+      $prerequisites = $request->prerequisite_id;
+      $partners = $request->partner_id;
+
+      //we loop each index of these arrays and attach it to the  given course
+      foreach ($languages as $language) {
+        $language_id = Language::find($language);
+        $formation->languages()->attach($language_id);
+      }
+
+      foreach ($prerequisites as $prerequisite) {
+        $prerequisite_id = Prerequisite::find($prerequisite);
+        $formation->prerequisites()->attach($prerequisite_id);
+      }
+
+      foreach ($partners as $partner) {
+        $partner_id = Partner::find($partner);
+        $formation->partners()->attach($partner_id);
+      }
+
+
       if($request->hasFile('image')){
         $image = $request->file('image');
         $filename = time() . '.' . $image->getClientOriginalExtension();
@@ -106,7 +131,7 @@ class FormationController extends Controller
      */
     public function show(Formation $formation)
     {
-        //
+        return view('formations.show', ['formation' => $formation]);
     }
 
     /**
@@ -117,7 +142,17 @@ class FormationController extends Controller
      */
     public function edit(Formation $formation)
     {
-        //
+      //we take in db, all categories, partners, languages, and prerequisites
+      //to assign them to the course, if needed
+        $categories = Categorie::orderby ('nom','asc')->paginate(30);
+        $partners = Partner::orderby ('name','asc')->paginate(30);
+        $languages = Language::orderby ('name','asc')->paginate(30);
+        $prerequisites = Prerequisite::orderby ('description','asc')->paginate(30);
+        return view('formations.edit', ['formation' => $formation,
+                                        'categories' => $categories,
+                                        'partners' => $partners,
+                                        'languages' => $languages,
+                                        'prerequisites' => $prerequisites,]);
     }
 
     /**
@@ -129,7 +164,40 @@ class FormationController extends Controller
      */
     public function update(Request $request, Formation $formation)
     {
-        //
+      $formation->update($request->all());
+
+      //we get all the arrays for language, partner and prerequisite fields
+      $languages = $request->language_id;
+      $prerequisites = $request->prerequisite_id;
+      $partners = $request->partner_id;
+
+      //we loop each index of these arrays and attach it to the  given course
+      foreach ($languages as $language) {
+        $language_id = Language::find($language);
+        $formation->languages()->attach($language_id);
+      }
+
+      foreach ($prerequisites as $prerequisite) {
+        $prerequisite_id = Prerequisite::find($prerequisite);
+        $formation->prerequisites()->attach($prerequisite_id);
+      }
+
+      foreach ($partners as $partner) {
+        $partner_id = Partner::find($partner);
+        $formation->partners()->attach($partner_id);
+      }
+
+      if($request->hasFile('image')){
+        $image = $request->file('image');
+        $filename = time() . '.' . $image->getClientOriginalExtension();
+        Image::make($image)->save(public_path('/avatars/courses/' . $filename ) );
+
+        $formation->image = $filename;
+        $formation->save();
+
+      }
+      return redirect('formations')->with('status', 'Modifications apportées' );
+
     }
 
     /**

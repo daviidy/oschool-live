@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<title>Oschool | Formation en télé présentiel</title>
+<title>@yield('title') | Oschool</title>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="description" content="Toutes les formations en télé présentiel par Oschool">
@@ -15,14 +15,12 @@
 <link rel="stylesheet" type="text/css" href="/new/styles/main_styles.css">
 <link rel="stylesheet" type="text/css" href="/new/styles/responsive.css">
 @endif
-@if(Request::path() == 'devweb' || Request::path() == 'trading' || Request::path() == 'webdesign' || Request::path() == 'frontend' || Request::path() == 'devmobile' || Request::path() == 'socialmedia' || Request::path() == 'blog' || Request::path() == 'jeuxvideos' || Request::path() == 'android' || Request::path() == 'python')
+<!--
 <link rel="stylesheet" type="text/css" href="/new/styles/course.css">
 <link rel="stylesheet" type="text/css" href="/new/styles/course_responsive.css">
-@endif
-@if(Request::path() == 'cours' || Request::path() == 'ecoleprog' || Request::path() == 'ecolemarketing' || Request::path() == 'ecolebusiness' || Request::path() == 'ecoleai' || Request::path() == 'ecoledatascience' || Request::path() == 'ecolelang')
+-->
 <link rel="stylesheet" type="text/css" href="/new/styles/courses.css">
 <link rel="stylesheet" type="text/css" href="/new/styles/courses_responsive.css">
-@endif
 
 <!-- Start of Async Drift Code -->
 <script>
@@ -54,13 +52,14 @@ drift.load('2uy6g3spxi59');
 <!-- End of Async Drift Code -->
 
 
-
+<!--
 <script>
 (function(t, e, s, o) {
     var n, c, l;
     t.SMCX = t.SMCX || [], e.getElementById(o) || (n = e.getElementsByTagName(s), c = n[n.length - 1], l = e.createElement(s), l.type = "text/javascript", l.async = !0, l.id = o, l.src = ["https:" === location.protocol ? "https://" : "http://", "widget.surveymonkey.com/collect/website/js/tRaiETqnLgj758hTBazgd74sI3xlunBQAIjQsFqSKW8haM9hHIihQtBRyMcuCT1_2B.js"].join(""), c.parentNode.insertBefore(l, c))
 })(window, document, "script", "smcx-sdk");
 </script>
+-->
 
 
 
@@ -282,13 +281,11 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 @if(Request::path() == '/')
 <script src="/new/js/custom.js"></script>
 @endif
-@if(Request::path() == 'devweb' || Request::path() == 'trading' || Request::path() == 'webdesign' || Request::path() == 'frontend' || Request::path() == 'devmobile' || Request::path() == 'socialmedia' || Request::path() == 'blog' || Request::path() == 'jeuxvideos' || Request::path() == 'android' || Request::path() == 'python')
+<!--
 <script src="/new/plugins/parallax-js-master/parallax.min.js"></script>
 <script src="/new/plugins/progressbar/progressbar.min.js"></script>
 <script src="/new/js/course.js"></script>
-@endif
-@if(Request::path() == 'cours' || Request::path() == 'ecoleprog' || Request::path() == 'ecolemarketing' || Request::path() == 'ecolebusiness' || Request::path() == 'ecoleai' || Request::path() == 'ecoledatascience' || Request::path() == 'ecolelang')
+-->
 <script src="/new/js/courses.js"></script>
-@endif
 </body>
 </html>

@@ -1,19 +1,19 @@
 @extends('layouts.menu-parcours')
 
-@section('title', 'Développeur Web Junior')
+@section('title', $formation->nom)
 
 @section('content')
 
   <div class="container alt section-space">
     <div class="row c-how__heading align-row">
       <div class="col-xs-12 col-sm-6 c-how__headingLeft">
-        <h1 style="margin-bottom: 3rem;" class="h2 u-bold">Devenez Développeur Web Professionnel, en suivant un cours particulier avec un formateur, depuis la maison</h1>
+        <h1 style="margin-bottom: 3rem;" class="h2 u-bold">{{$formation->description}}</h1>
         <a class="home_button" href="#offres">
           Inscrivez-vous maintenant
         </a>
       </div>
       <div class="col-xs-12 col-sm-6 c-how__headingRight">
-        <img style="width:90%;" src="/img/page-parcours/ordi.png" />
+        <img style="width:90%;" src="/avatars/courses/{{$formation->image}}" />
 
         <!--image du parcours et countdown-->
         <div class="row">
@@ -80,14 +80,13 @@
                 <!---->
                 <!---->
                 <!---->
+                @foreach($formation->partners as $partner)
                 <li _ngcontent-c30="" class="ng-star-inserted">
-                    <!----><a target="_blank" href="https://cinetpay.com/"><img style="margin: 2rem;" width="200" src="/img/page-parcours/cinetpay.png"></a>
+                    <!----><a target="_blank" href="{{$partner->link}}"><img style="margin: 2rem;" width="200" src="/avatars/partners/{{$partner->image}}"></a>
                     <!---->
                 </li>
-                <li _ngcontent-c30="" class="ng-star-inserted">
-                    <!----><a target="_blank" href="https://epistrophe.ci/"><img style="margin: 2rem;" width="200" src="https://epistrophe.ci/wp-content/uploads/2016/03/Epistrophe.jpg"></a>
-                    <!---->
-                </li>
+                @endforeach
+
                 <!---->
                 <!---->
             </ul>
@@ -131,7 +130,7 @@
           <div class="col-xs-12 col-sm-6">
             <div style="text-align: left !important;" class="c-how__sectionContent">
               <h4 class="h4 u-bold">Pourquoi suivre ce parcours ?</h4>
-              <p class="u-margin-t-md subHeading">La demande de développeurs web est généralisée dans tous
+              <p class="u-margin-t-md subHeading">La demande dans ce métier est généralisée dans tous
                 les secteurs et continue d'augmenter. En maîtrisant les précieuses compétences enseignées dans
                 le cadre de ce programme, vous serez prêt à occuper des postes dans un large éventail d’entreprises,
                 des startups aux organisations mondiales. Les projets que vous construirez et le
@@ -176,9 +175,9 @@
       <!---->
       <h2 style="font-size: 4rem;font-weight: 300;" _ngcontent-c47="" class="white ng-star-inserted">Développez cette compétence pour aujourd'hui et demain</h2>
       <!---->
-      <p _ngcontent-c47="" class="white ng-star-inserted"><span class="hidden-md-down">Ce parcours Développeur Web Junior est conçu
+      <p _ngcontent-c47="" class="white ng-star-inserted"><span class="hidden-md-down">Ce parcours {{$formation->nom}} est conçu
         pour assurer votre succès à long terme sur le terrain. Les compétences acquises vous prépareront à des
-        emplois dans le monde de la programmation web, et vous serez prêt à apporter une valeur immédiate
+        emplois dans le monde de la {{$formation->categorie->nom}}, et vous serez prêt à apporter une valeur immédiate
         à toute organisation. Nous vous soutiendrons tout au long de votre parcours d'apprentissage.
         De l'acquisition des compétences techniques et professionnelles précieuses,
         jusqu'à l'obtention de l'emploi de vos rêves.</span></p>
@@ -207,22 +206,22 @@
     <!---->
     <div _ngcontent-c55="" class="nd-syllabus-term__card">
       <section _ngcontent-c55="" class="nd-syllabus-term__header collapse in">
-        <div _ngcontent-c55="" class="nd-syllabus-term__header__image" irdeferbgimage="" style="background-image: url(&quot;https://d125fmws0bore1.cloudfront.net/assets/pages/ndop/nd001/image-syllabus-01@2x-f4be2598bea724657d8f295449bb8f45a954581306292393cb71a8417acf3cd3.jpg&quot;);">
+        <div _ngcontent-c55="" class="nd-syllabus-term__header__image" irdeferbgimage="" style="background-image: url(&quot;/avatars/courses/{{$formation->image}}&quot;);">
           <!---->
         </div>
         <div _ngcontent-c55="" class="nd-syllabus-term__header__content">
           <!---->
           <h6 _ngcontent-c55="" class="ng-star-inserted">PROGRAMME</h6>
-          <h2 _ngcontent-c55="" class="h3">Développeur Web</h2>
+          <h2 _ngcontent-c55="" class="h3">{{$formation->nom}}</h2>
           <!---->
-          <p _ngcontent-c55="" class="small hidden-md-down ng-star-inserted">Le programme Développeur Web Junior
-            est composé de huit projets. Avec chaque projet,
+          <p _ngcontent-c55="" class="small hidden-md-down ng-star-inserted">Le programme {{$formation->nom}}
+            est composé de {{$formation->projets->count()}} projets. Avec chaque projet,
             vous allez créer quelque chose qui démontre votre maîtrise des compétences recherchées.
             La complexité des projets varie. En fin de compte,
             vous aurez un portefeuille de projets et un CV digne d'être aprréciés par des employeurs potentiels.</p>
           <!---->
-          <p _ngcontent-c55="" class="small hidden-lg-up ng-star-inserted">Le programme Développeur Web Junior
-            est composé de huit projets. Avec chaque projet,
+          <p _ngcontent-c55="" class="small hidden-lg-up ng-star-inserted">Le programme {{$formation->nom}}
+            est composé de {{$formation->projets->count()}} projets. Avec chaque projet,
             vous allez créer quelque chose qui démontre votre maîtrise des compétences recherchées.
             La complexité des projets varie.</p>
           <!---->
@@ -231,7 +230,7 @@
           <div _ngcontent-c55="" class="nd-syllabus-term__header__content--details">
             <p _ngcontent-c55="" class="nd-syllabus-term__toggle text-only">
             <span _ngcontent-c55="" class="ng-star-inserted">Voir les détails ci-dessous</span>
-            <p _ngcontent-c55="" class="x-small gray-medium hidden-md-down ng-star-inserted"> 4 mois pour finir cette formation </p>
+            <p _ngcontent-c55="" class="x-small gray-medium hidden-md-down ng-star-inserted"> {{$formation->duration}} pour finir cette formation </p>
           </div>
         </div>
       </section>
@@ -247,7 +246,7 @@
                 <!----><span _ngcontent-c95="" class="degree-syllabus-preview__content--term-prereq ng-star-inserted">Vous devez disposer d'un ordinateur portable, et d'une bonne connexion Internet pour suivre cette formation</span>
                 <!---->
                 <!---->
-                <!----><a _ngcontent-c95="" class="pointer ng-star-inserted">Voir les outils requis.</a>
+                <!----><a href="https://drive.google.com/open?id=1ihKHmukvYioQ6VfS_eaqSuIq4gOgnxcA" _ngcontent-c95="" class="pointer ng-star-inserted">Voir les outils requis.</a>
                 <!---->
               </p>
               <section _ngcontent-c95="" class="degree-syllabus-preview__content--parts">
@@ -256,139 +255,29 @@
                 <!---->
                 <ul _ngcontent-c95="" class="ng-star-inserted">
                   <!---->
+                  @foreach($formation->projets as $projet)
                   <li _ngcontent-c95="" class="ng-star-inserted">
                     <div _ngcontent-c95="" class="part">
                       <header _ngcontent-c95="" class="part__header mb-half">
                         <!---->
-                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted">Fondations du Web</h4>
+                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted">{{$projet->titre}}</h4>
                         <!---->
                       </header>
-                      <p _ngcontent-c95="" class="small mb-half">Découvre comment fonctionne le web, et installe tes outils de formation !</p>
+                      <p _ngcontent-c95="" class="small mb-half"> <a target="_blank" href="{{$projet->enonce}}">Voir l'énoncé</a> </p>
                       <!---->
                       <!---->
                       <!---->
-                      <!----><span _ngcontent-c95="" class="part__project text-only ng-star-inserted"><img _ngcontent-c95="" class="icon-middle" src="/img/page-parcours/icon-project.svg"><span
-                          _ngcontent-c95="">Engagez-vous à réussir votre formation</span></span>
                       <!---->
-                      <!---->
-                    </div>
-                  </li>
-                  <li _ngcontent-c95="" class="ng-star-inserted">
-                    <div _ngcontent-c95="" class="part">
-                      <header _ngcontent-c95="" class="part__header mb-half">
-                        <!---->
-                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted">Apprendre HTML et CSS</h4>
-                        <!---->
-                      </header>
-                      <p _ngcontent-c95="" class="small mb-half">Apprenez à utiliser les 2 langages de bases de la programmation web: HTML pour la structure d'une page web, et CSS pour gérer l'apparence de cette page</p>
-                      <!---->
-                      <!---->
-                      <!---->
-                      <!----><span _ngcontent-c95="" class="part__project text-only ng-star-inserted"><img _ngcontent-c95="" class="icon-middle" src="/img/page-parcours/icon-project.svg"><span
-                          _ngcontent-c95="">Créez un article de blog / La galerie de l'amour</span></span>
-                      <!---->
-                      <!---->
-                    </div>
-                  </li>
-                  <li _ngcontent-c95="" class="ng-star-inserted">
-                    <div _ngcontent-c95="" class="part">
-                      <header _ngcontent-c95="" class="part__header mb-half">
-                        <!---->
-                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted">Allez plus vite avec Bootstrap</h4>
-                        <!---->
-                      </header>
-                      <p _ngcontent-c95="" class="small mb-half">Créez des mise en pages personnalisées pour adapter vos pages web à n'importe quel terminal
-
-                      </p>
+                      @foreach($projet->progressions as $progression)
                       <span _ngcontent-c95="" class="part__project text-only ng-star-inserted"><img _ngcontent-c95="" class="icon-middle" src="/img/page-parcours/icon-project.svg"><span
-                          _ngcontent-c95="">Mini-projet</span></span>
+                          _ngcontent-c95="">{{$progression->titre}}</span></span>
+                      @endforeach
+                      <!---->
                       <!---->
                     </div>
                   </li>
-                  <li _ngcontent-c95="" class="ng-star-inserted">
-                    <div _ngcontent-c95="" class="part">
-                      <header _ngcontent-c95="" class="part__header mb-half">
-                        <!---->
-                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted">Apprendre Javascript</h4>
-                        <!---->
-                      </header>
-                      <p _ngcontent-c95="" class="small mb-half">Apprenez les bases de JavaScript dont vous aurez besoin pour le développement front-end ou back-end.
+                  @endforeach
 
-                      </p>
-                      <span _ngcontent-c95="" class="part__project text-only ng-star-inserted"><img _ngcontent-c95="" class="icon-middle" src="/img/page-parcours/icon-project.svg"><span
-                          _ngcontent-c95="">Améliorez la page d'accueil d'un magazine</span></span>
-                      <!---->
-                    </div>
-                  </li>
-                  <li _ngcontent-c95="" class="ng-star-inserted">
-                    <div _ngcontent-c95="" class="part">
-                      <header _ngcontent-c95="" class="part__header mb-half">
-                        <!---->
-                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted">Javascript et jQuery</h4>
-                        <!---->
-                      </header>
-                      <p _ngcontent-c95="" class="small mb-half">Utilisez la librairie JQuery avec JavaScript pour apporter de beaux effets sur vos pages.
-
-                      </p>
-                      <span _ngcontent-c95="" class="part__project text-only ng-star-inserted"><img _ngcontent-c95="" class="icon-middle" src="/img/page-parcours/icon-project.svg"><span
-                          _ngcontent-c95="">Mini-projet</span></span>
-                      <!---->
-                    </div>
-                  </li>
-                  <li _ngcontent-c95="" class="ng-star-inserted">
-                    <div _ngcontent-c95="" class="part">
-                      <header _ngcontent-c95="" class="part__header mb-half">
-                        <!---->
-                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted">PHP et MySQL</h4>
-                        <!---->
-                      </header>
-                      <p _ngcontent-c95="" class="small mb-half">C'est maintenant le temps de se plonger du côté Back-End. Vous apprendrez PHP pour générer des pages dynamiques et interroger des bases de données avec PHP.</p>
-                      <!---->
-                      <!---->
-                      <!---->
-                      <!----><span _ngcontent-c95="" class="part__project text-only ng-star-inserted"><img _ngcontent-c95="" class="icon-middle" src="/img/page-parcours/icon-project.svg"><span
-                          _ngcontent-c95="">Créez une application pour inscrire les étudiants de votre école</span></span>
-                      <!---->
-                      <!---->
-                    </div>
-                  </li>
-                  <li _ngcontent-c95="" class="ng-star-inserted">
-                    <div _ngcontent-c95="" class="part">
-                      <header _ngcontent-c95="" class="part__header mb-half">
-                        <!---->
-                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted">Allez plus vite avec Wordpress</h4>
-                        <!---->
-                      </header>
-                      <p _ngcontent-c95="" class="small mb-half">
-                        Entrez dans l'univers des CMS et développez
-                        plus vite des sites e-commerces, des blogs etc. en prenant en main Wordpress (le plus populaire).</p>
-                      <!---->
-                      <!---->
-                      <!---->
-                      <!----><span _ngcontent-c95="" class="part__project text-only ng-star-inserted"><img _ngcontent-c95="" class="icon-middle" src="/img/page-parcours/icon-project.svg"><span
-                          _ngcontent-c95="">Créez votre site personnel</span></span>
-                      <!---->
-                      <!---->
-                    </div>
-                  </li>
-                  <li _ngcontent-c95="" class="ng-star-inserted">
-                    <div _ngcontent-c95="" class="part">
-                      <header _ngcontent-c95="" class="part__header mb-half">
-                        <!---->
-                        <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted">Votre carrière</h4>
-                        <!---->
-                      </header>
-                      <p _ngcontent-c95="" class="small mb-half">Vous voici à la fin de cette formation. Mais c'est
-                      maintenant que les choses sérieuses vont commencer. Vous apprendrez à obtenir un emploi avec votre qualification.</p>
-                      <!---->
-                      <!---->
-                      <!---->
-                      <!----><span _ngcontent-c95="" class="part__project text-only ng-star-inserted"><img _ngcontent-c95="" class="icon-middle" src="/img/page-parcours/icon-project.svg"><span
-                          _ngcontent-c95="">Mise en ligne de votre site personnel / Soutenance</span></span>
-                      <!---->
-                      <!---->
-                    </div>
-                  </li>
                 </ul>
               </section>
             </div>
@@ -405,10 +294,13 @@
                   <!---->Besoin de vous préparer ?</h6>
                 <!---->
                 <!---->
-                <p _ngcontent-c95="" class="small">Voici quelques cours gratuits qui pourraient vous aider<ul>
-                    <li><a href="/course/intro-to-programming-nanodegree--nd000">Intro to Programming</a></li>
-                    <li><a href="/course/intro-to-html-and-css--ud001">Intro to HTML and CSS</a></li>
-                    <li><a href="/course/intro-to-javascript--ud803">Intro to JavaScript</a></li>
+                <p _ngcontent-c95="" class="small">Voici quelques cours gratuits qui pourraient vous aider
+                  <ul>
+                    @foreach($formation->prerequisites as $prerequisite)
+                      @if($prerequisite->type == "Cours")
+                    <li><a target="_blank" href="{{$prerequisite->link}}">{{$prerequisite->description}}</a></li>
+                      @endif
+                    @endforeach
                   </ul>
                 </p>
                 <!---->

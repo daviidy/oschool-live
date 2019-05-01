@@ -1,5 +1,5 @@
 @extends('layouts.menu-login')
-@section('title', 'Ajouter une formation')
+@section('title', 'Modifier une formation')
 
 @section('content')
 
@@ -11,16 +11,17 @@
         <img src="/formcreate/images/img-01.png" alt="IMG">
       </div>
 
-      <form method="post" enctype="multipart/form-data" action="{{ route('formations.store') }}" class="login100-form validate-form">
+      <form method="post" enctype="multipart/form-data" action="{{ url('formations', $formation) }}" class="login100-form validate-form">
         <span class="login100-form-title">
-          Ajouter un nouveau parcours
+          Modifier le parcours {{$formation->nom}}
         </span>
         {{ csrf_field() }}
+        {{ method_field('patch') }}
 
 
 
         <div class="wrap-input100 validate-input">
-          <input class="input100" value="" type="text" name="nom" placeholder="Titre du parcours" required>
+          <input class="input100" value="{{ $formation->nom }}" type="text" name="nom" placeholder="Titre du parcours" required>
           <span class="focus-input100"></span>
           <span class="symbol-input100">
             <i class="fa fa-laptop" aria-hidden="true"></i>
@@ -37,6 +38,27 @@
         </div>
 
         <div class="wrap-input100 validate-input" data-validate = "Etudiant">
+          <label for=""> <strong>Langues du parcours</strong> </label><br>
+        @foreach($languages as $language)
+          <input type="checkbox" name="language_id[]" value="{{$language->id}}">{{$language->name}}<br>
+        @endforeach
+        </div>
+
+        <div class="wrap-input100 validate-input" data-validate = "Etudiant">
+          <label for=""> <strong>Partenaires du parcours</strong> </label><br>
+        @foreach($partners as $partner)
+          <input type="checkbox" name="partner_id[]" value="{{$partner->id}}">{{$partner->name}}<br>
+        @endforeach
+        </div>
+
+        <div class="wrap-input100 validate-input" data-validate = "Etudiant">
+          <label for=""> <strong>Prérequis du parcours</strong> </label><br>
+        @foreach($prerequisites as $prerequisite)
+          <input type="checkbox" name="prerequisite_id[]" value="{{$prerequisite->id}}">{{$prerequisite->description}}<br>
+        @endforeach
+        </div>
+
+        <div class="wrap-input100 validate-input" data-validate = "Etudiant">
           <label for="">Statut du parcours</label>
           <select name="state" class="form-control" style="" required>
             <option value="active">Actif</option>
@@ -45,14 +67,14 @@
         </div>
 
         <div class="wrap-input100 validate-input">
-          <input class="input100" value="" type="text" name="duration" placeholder="Durée (en mois)" required>
+          <input class="input100" value="{{ $formation->duration }}" type="text" name="duration" placeholder="Durée (en mois)" required>
           <span class="focus-input100"></span>
           <span class="symbol-input100">
             <i class="fa fa-laptop" aria-hidden="true"></i>
           </span>
         </div>
 
-        <div class="wrap-input100 validate-input">
+        <div class="wrap-input100">
           <label for="">Choisis une image de cours</label>
           <input class="input100" value="" type="file" name="image" placeholder="">
           <span class="focus-input100"></span>
@@ -61,13 +83,13 @@
           </span>
         </div>
 
-        <div class="wrap-input100 validate-input">
-          <textarea required placeholder="Description" rows="50" style="height: 300px;" class="input100" name="description" placeholder=""></textarea>
+        <div class="wrap-input100">
+          <textarea placeholder="Description" rows="50" style="height: 300px;" class="input100" name="description" placeholder="">{{$formation->description}}</textarea>
         </div>
 
         <div class="container-login100-form-btn">
           <button class="login100-form-btn">
-            Ajouter le parcours
+            Modifier le parcours
           </button>
         </div>
 

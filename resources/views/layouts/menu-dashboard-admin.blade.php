@@ -63,7 +63,7 @@ drift.load('2uy6g3spxi59');
 <!-- End of Async Drift Code -->
 
 
-
+<!--
 <script>
 (function(t, e, s, o) {
     var n, c, l;
@@ -71,7 +71,7 @@ drift.load('2uy6g3spxi59');
 })(window, document, "script", "smcx-sdk");
 </script>
 
-
+-->
 
 
 
@@ -220,6 +220,14 @@ drift.load('2uy6g3spxi59');
               <span>Formations</span>
               </a>
             <ul class="sub">
+
+              <li>
+
+                <a  style="border-radius:8px; text-decoration: underline; background-color: transparent;" class="logout" href="{{ route('formations.index') }}">
+                    Toutes les formations
+                </a>
+
+              </li>
 
               <li>
 

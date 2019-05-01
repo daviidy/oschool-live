@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Categorie;
-use Illuminate\Http\Request;
+use App\Language;
 use Auth;
+use Illuminate\Http\Request;
 
-class CategorieController extends Controller
+class LanguageController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,8 +15,7 @@ class CategorieController extends Controller
      */
     public function index()
     {
-      $categories = Categorie::orderby('id','asc');
-      return view('categories.index', ['categories' => $categories]);
+        //
     }
 
     /**
@@ -27,7 +26,7 @@ class CategorieController extends Controller
     public function create()
     {
       if (Auth::check() && Auth::user()->isAdmin()) {
-        return view('categories.create');
+        return view('languages.create');
       }
       else {
         return redirect('home');
@@ -42,29 +41,29 @@ class CategorieController extends Controller
      */
     public function store(Request $request)
     {
-      $categorie = Categorie::create($request->all());
+      $formation = Language::create($request->all());
 
-      return redirect('home')->with('status', 'La catégorie a bien été créée !');
+      return redirect('home')->with('status', 'La langue a bien été ajoutée !');
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Categorie  $categorie
+     * @param  \App\Language  $language
      * @return \Illuminate\Http\Response
      */
-    public function show(Categorie $categorie)
+    public function show(Language $language)
     {
-        return view('categories.show', ['categorie' => $categorie]);
+        //
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Categorie  $categorie
+     * @param  \App\Language  $language
      * @return \Illuminate\Http\Response
      */
-    public function edit(Categorie $categorie)
+    public function edit(Language $language)
     {
         //
     }
@@ -73,10 +72,10 @@ class CategorieController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Categorie  $categorie
+     * @param  \App\Language  $language
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Categorie $categorie)
+    public function update(Request $request, Language $language)
     {
         //
     }
@@ -84,10 +83,10 @@ class CategorieController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Categorie  $categorie
+     * @param  \App\Language  $language
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Categorie $categorie)
+    public function destroy(Language $language)
     {
         //
     }

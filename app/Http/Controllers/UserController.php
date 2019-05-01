@@ -321,6 +321,7 @@ class UserController extends Controller
      * @return \Illuminate\Http\Response
      */
 
+     //function to add manually a user to a given course
     public function inscription(Request $request)
     {
       //première chose, on retrouve l'étudiant à partir de l'id envoyé en paramètre
