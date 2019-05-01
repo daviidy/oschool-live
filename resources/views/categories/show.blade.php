@@ -32,7 +32,6 @@
 
   </div>
 </div>
-
 <!-- Courses -->
 
 <div class="courses">

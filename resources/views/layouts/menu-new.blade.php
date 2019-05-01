@@ -11,10 +11,10 @@
 <link rel="stylesheet" type="text/css" href="/new/plugins/OwlCarousel2-2.2.1/owl.carousel.css">
 <link rel="stylesheet" type="text/css" href="/new/plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
 <link rel="stylesheet" type="text/css" href="/new/plugins/OwlCarousel2-2.2.1/animate.css">
-@if(Request::path() == '/')
+<!--
 <link rel="stylesheet" type="text/css" href="/new/styles/main_styles.css">
 <link rel="stylesheet" type="text/css" href="/new/styles/responsive.css">
-@endif
+-->
 <!--
 <link rel="stylesheet" type="text/css" href="/new/styles/course.css">
 <link rel="stylesheet" type="text/css" href="/new/styles/course_responsive.css">
@@ -278,9 +278,9 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 <script src="/new/styles/bootstrap4/bootstrap.min.js"></script>
 <script src="/new/plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
 <script src="/new/plugins/easing/easing.js"></script>
-@if(Request::path() == '/')
+<!--
 <script src="/new/js/custom.js"></script>
-@endif
+-->
 <!--
 <script src="/new/plugins/parallax-js-master/parallax.min.js"></script>
 <script src="/new/plugins/progressbar/progressbar.min.js"></script>

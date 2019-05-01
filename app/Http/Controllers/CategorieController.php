@@ -15,7 +15,7 @@ class CategorieController extends Controller
      */
     public function index()
     {
-      $categories = Categorie::orderby('id','asc');
+      $categories = Categorie::orderby('id','asc')->paginate(30);
       return view('categories.index', ['categories' => $categories]);
     }
 

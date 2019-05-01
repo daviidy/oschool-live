@@ -1,4 +1,4 @@
-@extends((Auth::user()->type4 == "partner") ? "layouts.menu-dashboard-partner" : "layouts.menu-dashboard-admin")
+@extends("layouts.menu-dashboard-admin")
 
 @section('content')
 
@@ -134,100 +134,15 @@ img{max-width:100%;}
   <section class="wrapper">
     <!-- page start-->
 
-    <h3><i class="fa fa-angle-right"></i> Liste des formations en collaboration avec Oschool</h3>
+    <h3><i class="fa fa-angle-right"></i> Liste des catégories des parcours</h3>
     <div class="row mt">
 
       <div class="col-sm-12">
 
-@if(Auth::user()->type4 == "partner")
-
-@foreach(Auth::user()->formations as $formation)
-<div class="
-          pv3 ph3-ns w-third-l w-50-m w-100 dib
-          css-0
-        ">
-  <div class="
-          flex flex-grow-1 justify-between flex-column black-90
 
 
-        "><a class="
-          no-underline db dark-blue z-1 bg-white eh-shadow-1
 
-          css-quva1q
-        " href="#"
-      aria-label="">
-      <div class="
-            flex flex-grow-1 flex-column justify-between pointer relative tc
-            css-imtqqp
-          ">
-        <div class="
-            flex flex-column flex-grow-1 w-100 flex-shrink-0
-            css-135bq0n
-          ">
-          <div class="flex flex-column relative tc pt4">
-            <div class="
-                    w-100 flex items-center justify-center overflow-hidden br--top br3
-                    css-14p7nc1
-                  ">
-              <div class="
-                      self-center flex-shrink-0 flex items-center
-                      css-19yvy3u
-                    "><img src="/avatars/courses/{{$formation->image}}"
-                  alt="illustration for GraphQL Data in React with Apollo Client" class="w-100 h-100"></div>
-            </div>
-            <h2 class="
-                f6 base-secondary fw4 o-60 lh-copy sans-serif ma0 ttu flex items-center justify-center flex-shrink-0
-                css-128nlh6
-              "><span class="mh1">•</span>{{$formation->categorie->nom}}</h2>
-            <div class="
-                flex flex-shrink-0 items-center w-100 overfow-hidden mt2
-                css-73nay0
-              ">
-              <h3 class="
-                tc sans-serif fw5 black-90 no-underline ma0 overflow-hidden w-100 ph4
-                css-hxrs45
-              ">{{$formation->nom}}</h3>
-            </div>
-          </div>
-        </div>
-        <div class="
-          relative
-          css-1eu6dtl
-        ">
-          <div class="flex items-center ph3 pb3 pt2">
-            <div class="flex-grow-1 flex items-center"><img src="https://oschool.ci/wp-content/uploads/2017/05/medal.png" alt="Nik Graf" title="Nik Graf" class="
-                  db br-pill
-                  css-1i4zz36
-                ">
-              <div class="ml2">
-                <div class="
-                    black o-70 lh-title fw4 tl
-                    css-l8qto0
-                  ">Oschool</div>
-                <div class="
-                      black-60 fw4 lh-solid mt1
-                      css-1qxtz39
-                    ">
-                  <div class="lh-solid flex items-center">{{$formation->projets->count()}}
-                    <!-- --> projets<span class="flex items-center">&nbsp;·&nbsp;
-                      <!-- --23m--></span></div>
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </a></div>
-</div>
-
-@endforeach
-
-{{ $formations->links() }}
-
-@elseif(Auth::user()->type3 == "admin")
-
-@foreach($formations as $formation)
+@foreach($categories as $categorie)
 
 <div class="
           pv3 ph3-ns w-third-l w-50-m w-100 dib
@@ -254,13 +169,10 @@ img{max-width:100%;}
               <div class="
                       self-center flex-shrink-0 flex items-center
                       css-19yvy3u
-                    "><img src="/avatars/courses/{{$formation->image}}"
+                    "><img src="https://cmkt-image-prd.global.ssl.fastly.net/0.1.0/ps/2876727/300/200/m1/fpnw/wm0/top_view_laptop-02-.jpg?1498051876&s=885b6a95885b0f56448676507291c7a0"
                   alt="illustration for GraphQL Data in React with Apollo Client" class="w-100 h-100"></div>
             </div>
-            <h2 class="
-                f6 base-secondary fw4 o-60 lh-copy sans-serif ma0 ttu flex items-center justify-center flex-shrink-0
-                css-128nlh6
-              "><span class="mh1">•</span>{{$formation->categorie->nom}}</h2>
+
             <div class="
                 flex flex-shrink-0 items-center w-100 overfow-hidden mt2
                 css-73nay0
@@ -268,7 +180,7 @@ img{max-width:100%;}
               <h3 class="
                 tc sans-serif fw5 black-90 no-underline ma0 overflow-hidden w-100 ph4
                 css-hxrs45
-              "><a href="{{ route('formations.show', $formation) }}">{{$formation->nom}}</a></h3>
+              "><a href="{{ route('categories.show', $categorie) }}">{{$categorie->nom}}</a></h3>
             </div>
           </div>
         </div>
@@ -277,10 +189,7 @@ img{max-width:100%;}
           css-1eu6dtl
         ">
           <div class="flex items-center ph3 pb3 pt2">
-            <div class="flex-grow-1 flex items-center"><a href="{{ route('formations.edit', $formation) }}"><img src="https://1001freedownloads.s3.amazonaws.com/vector/thumb//Anonymous_Pencil_icon.png" alt="Nik Graf" title="Nik Graf" class="
-                  db br-pill
-                  css-1i4zz36
-                "></a>
+            <div class="flex-grow-1 flex items-center">
               <div class="ml2">
                 <div class="
                     black o-70 lh-title fw4 tl
@@ -290,8 +199,8 @@ img{max-width:100%;}
                       black-60 fw4 lh-solid mt1
                       css-1qxtz39
                     ">
-                  <div class="lh-solid flex items-center">{{$formation->projets->count()}}
-                    <!-- --> projets<span class="flex items-center">&nbsp;·&nbsp;
+                  <div class="lh-solid flex items-center">{{$categorie->formations->count()}}
+                    <!-- --> parcours<span class="flex items-center">&nbsp;·&nbsp;
                       <!-- --23m--></span></div>
                 </div>
               </div>
@@ -305,9 +214,8 @@ img{max-width:100%;}
 
 @endforeach
 
-{{ $formations->links() }}
+{{ $categories->links() }}
 
-@endif
 
 </div>
 </div>
