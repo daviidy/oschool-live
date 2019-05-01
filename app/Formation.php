@@ -53,9 +53,9 @@ class Formation extends Model
       return $this->hasMany('App\Progression');
   }
 
-  public function categorie()
+  public function category()
   {
-      return $this->belongsTo('App\Categorie');
+      return $this->belongsTo('App\Category');
   }
 
 }

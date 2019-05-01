@@ -178,7 +178,7 @@ img{max-width:100%;}
             <h2 class="
                 f6 base-secondary fw4 o-60 lh-copy sans-serif ma0 ttu flex items-center justify-center flex-shrink-0
                 css-128nlh6
-              "><span class="mh1">•</span>{{$formation->categorie->nom}}</h2>
+              "><span class="mh1">•</span>{{$formation->category->nom}}</h2>
             <div class="
                 flex flex-shrink-0 items-center w-100 overfow-hidden mt2
                 css-73nay0
@@ -260,7 +260,7 @@ img{max-width:100%;}
             <h2 class="
                 f6 base-secondary fw4 o-60 lh-copy sans-serif ma0 ttu flex items-center justify-center flex-shrink-0
                 css-128nlh6
-              "><span class="mh1">•</span>{{$formation->categorie->nom}}</h2>
+              "><span class="mh1">•</span>{{$formation->category->nom}}</h2>
             <div class="
                 flex flex-shrink-0 items-center w-100 overfow-hidden mt2
                 css-73nay0

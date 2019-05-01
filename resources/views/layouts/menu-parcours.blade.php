@@ -205,6 +205,9 @@ drift.load('2uy6g3spxi59');
               <ul class="nav navbar-nav">
                 <li><a href="https://oschool.ci/#schools" class="navbar-subnav-links  site-navigation" data-site="Programming">Voir nos écoles</a></li>
                 <li><span style="height: 6px; width: 6px; background-color: red; border-radius: 4px; position: absolute; top: 0; right: 0;"></span><a id="menuoffres" href="#offres" class="navbar-subnav-links  site-navigation">S'inscrire à ce parcours</a></li>
+                @if(Auth::user()->isAdmin())
+                <li><span style="height: 6px; width: 6px; background-color: #3C7DC0; border-radius: 4px; position: absolute; top: 0; right: 0;"></span><a href="{{ route('formations.edit', $formation) }}" class="navbar-subnav-links  site-navigation">Modifier ce parcours</a></li>
+                @endif
               </ul>
             </div>
           </div>

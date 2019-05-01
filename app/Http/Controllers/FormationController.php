@@ -6,7 +6,7 @@ use App\Formation;
 use Illuminate\Http\Request;
 use Image;
 use Auth;
-use App\Categorie;
+use App\Category;
 use App\Partner;
 use App\Language;
 use App\Prerequisite;
@@ -32,7 +32,7 @@ class FormationController extends Controller
     public function create()
     {
       if (Auth::check() && Auth::user()->isAdmin()) {
-        $categories = Categorie::orderby ('nom','asc')->paginate(30);
+        $categories = Category::orderby ('nom','asc')->paginate(30);
         return view('formations.create', ['categories' => $categories]);
       }
       else {
@@ -144,7 +144,7 @@ class FormationController extends Controller
     {
       //we take in db, all categories, partners, languages, and prerequisites
       //to assign them to the course, if needed
-        $categories = Categorie::orderby ('nom','asc')->paginate(30);
+        $categories = Category::orderby ('nom','asc')->paginate(30);
         $partners = Partner::orderby ('name','asc')->paginate(30);
         $languages = Language::orderby ('name','asc')->paginate(30);
         $prerequisites = Prerequisite::orderby ('description','asc')->paginate(30);

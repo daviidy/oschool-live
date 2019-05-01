@@ -1,6 +1,6 @@
 @extends('layouts.menu-new')
 
-@section('title', $categorie->nom)
+@section('title', $category->nom)
 @section('content')
 
 <!-- Home -->
@@ -26,7 +26,7 @@
   <div class="container">
     <div class="row">
       <div class="col">
-        <div class="language_title">Développez des compétences pour aujourd'hui, demain et le futur</div>
+        <div class="language_title">L'école de {{$category->nom}}</div>
       </div>
     </div>
 
@@ -37,7 +37,7 @@
 <div class="courses">
   <div class="container">
     <div class="row courses_row">
-      @foreach($categorie->formations as $formation)
+      @foreach($category->formations as $formation)
 
       <!-- Course -->
 

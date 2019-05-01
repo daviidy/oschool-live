@@ -177,7 +177,7 @@
       <!---->
       <p _ngcontent-c47="" class="white ng-star-inserted"><span class="hidden-md-down">Ce parcours {{$formation->nom}} est conçu
         pour assurer votre succès à long terme sur le terrain. Les compétences acquises vous prépareront à des
-        emplois dans le monde de la {{$formation->categorie->nom}}, et vous serez prêt à apporter une valeur immédiate
+        emplois dans le monde de la {{$formation->category->nom}}, et vous serez prêt à apporter une valeur immédiate
         à toute organisation. Nous vous soutiendrons tout au long de votre parcours d'apprentissage.
         De l'acquisition des compétences techniques et professionnelles précieuses,
         jusqu'à l'obtention de l'emploi de vos rêves.</span></p>
