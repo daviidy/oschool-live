@@ -164,17 +164,22 @@ class FormationController extends Controller
      */
     public function edit(Formation $formation)
     {
-      //we take in db, all categories, partners, languages, and prerequisites
-      //to assign them to the course, if needed
-        $categories = Category::orderby ('nom','asc')->paginate(30);
-        $partners = Partner::orderby ('name','asc')->paginate(30);
-        $languages = Language::orderby ('name','asc')->paginate(30);
-        $prerequisites = Prerequisite::orderby ('description','asc')->paginate(30);
-        return view('formations.edit', ['formation' => $formation,
-                                        'categories' => $categories,
-                                        'partners' => $partners,
-                                        'languages' => $languages,
-                                        'prerequisites' => $prerequisites,]);
+      if (Auth::check() && Auth::user()->isAdmin()) {
+          //we take in db, all categories, partners, languages, and prerequisites
+          //to assign them to the course, if needed
+            $categories = Category::orderby ('nom','asc')->paginate(30);
+            $partners = Partner::orderby ('name','asc')->paginate(30);
+            $languages = Language::orderby ('name','asc')->paginate(30);
+            $prerequisites = Prerequisite::orderby ('description','asc')->paginate(30);
+            return view('formations.edit', ['formation' => $formation,
+                                            'categories' => $categories,
+                                            'partners' => $partners,
+                                            'languages' => $languages,
+                                            'prerequisites' => $prerequisites,]);
+        }
+        else {
+          return redirect('home');
+        }
     }
 
     /**

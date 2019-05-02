@@ -15,8 +15,13 @@ class CategoryController extends Controller
      */
     public function index()
     {
-      $categories = Category::orderby('id','asc')->paginate(30);
-      return view('categories.index', ['categories' => $categories]);
+      if (Auth::check() && Auth::user()->isAdmin()) {
+        $categories = Category::orderby('id','asc')->paginate(30);
+        return view('categories.index', ['categories' => $categories]);
+      }
+      else {
+        return redirect('home');
+      }
     }
 
     /**
