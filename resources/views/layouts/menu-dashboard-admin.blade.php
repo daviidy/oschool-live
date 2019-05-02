@@ -277,6 +277,30 @@ drift.load('2uy6g3spxi59');
 
               <li>
 
+                <a style="border-radius:8px; text-decoration: underline; background-color: transparent;" class="logout" href="{{ route('partners.create') }}">
+                    Créer un partenaire
+                </a>
+
+              </li>
+
+              <li>
+
+                <a style="border-radius:8px; text-decoration: underline; background-color: transparent;" class="logout" href="{{ route('prerequisites.create') }}">
+                    Créer un prérequis
+                </a>
+
+              </li>
+
+              <li>
+
+                <a style="border-radius:8px; text-decoration: underline; background-color: transparent;" class="logout" href="{{ route('languages.create') }}">
+                    Créer une langue
+                </a>
+
+              </li>
+
+              <li>
+
                 <a style="border-radius:8px; text-decoration: underline; background-color: transparent;" class="logout" href="{{ route('achats.create') }}">
                     Ajouter un achat
                 </a>
