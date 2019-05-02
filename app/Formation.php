@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Formation extends Model
 {
-  protected $fillable = ['nom', 'category_id', 'description', 'state', 'duration', 'slug'];
+  protected $fillable = ['nom', 'category_id', 'description', 'state', 'duration', 'slug', 'description_longue', 'accroche'];
 
   //relation many to many: ici une formation peut avoir plusieurs etudiants
   //et plusieurs projets et vice-versa

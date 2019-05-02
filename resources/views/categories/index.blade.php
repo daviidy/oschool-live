@@ -180,7 +180,7 @@ img{max-width:100%;}
               <h3 class="
                 tc sans-serif fw5 black-90 no-underline ma0 overflow-hidden w-100 ph4
                 css-hxrs45
-              "><a href="{{ route('categories.show', $category) }}">{{$category->nom}}</a></h3>
+              "><a href="{{ route('category.slug', $category->slug) }}">{{$category->nom}}</a></h3>
             </div>
           </div>
         </div>

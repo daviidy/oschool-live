@@ -199,20 +199,27 @@ class FormationController extends Controller
       $partners = $request->partner_id;
 
       //we loop each index of these arrays and attach it to the  given course
-      foreach ($languages as $language) {
-        $language_id = Language::find($language);
-        $formation->languages()->attach($language_id);
+      if ($languages) {
+        foreach ($languages as $language) {
+          $language_id = Language::find($language);
+          $formation->languages()->attach($language_id);
+        }
       }
 
-      foreach ($prerequisites as $prerequisite) {
-        $prerequisite_id = Prerequisite::find($prerequisite);
-        $formation->prerequisites()->attach($prerequisite_id);
+      if ($prerequisites) {
+        foreach ($prerequisites as $prerequisite) {
+          $prerequisite_id = Prerequisite::find($prerequisite);
+          $formation->prerequisites()->attach($prerequisite_id);
+        }
       }
 
-      foreach ($partners as $partner) {
-        $partner_id = Partner::find($partner);
-        $formation->partners()->attach($partner_id);
+      if ($partners) {
+        foreach ($partners as $partner) {
+          $partner_id = Partner::find($partner);
+          $formation->partners()->attach($partner_id);
+        }
       }
+
 
       if($request->hasFile('image')){
         $image = $request->file('image');

@@ -38,6 +38,7 @@
   <div class="container">
     <div class="row courses_row">
       @foreach($category->formations as $formation)
+        @if($formation->state == "active")
 
       <!-- Course -->
 
@@ -45,13 +46,14 @@
         <div class="course">
           <div class="course_image"><img src="/avatars/courses/{{$formation->image}}" alt=""></div>
           <div class="course_body">
-            <div class="course_title"><a href="{{ route('formations.show', $formation) }}">{{$formation->nom}}</a></div>
+            <div class="course_title"><a href="{{ route('formation.slug', $formation->slug) }}">{{$formation->nom}}</a></div>
 
 
           </div>
 
         </div>
       </div>
+        @endif
       @endforeach
 
 

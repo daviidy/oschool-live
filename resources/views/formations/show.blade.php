@@ -130,11 +130,9 @@
           <div class="col-xs-12 col-sm-6">
             <div style="text-align: left !important;" class="c-how__sectionContent">
               <h4 class="h4 u-bold">Pourquoi suivre ce parcours ?</h4>
-              <p class="u-margin-t-md subHeading">La demande dans ce métier est généralisée dans tous
-                les secteurs et continue d'augmenter. En maîtrisant les précieuses compétences enseignées dans
-                le cadre de ce programme, vous serez prêt à occuper des postes dans un large éventail d’entreprises,
-                des startups aux organisations mondiales. Les projets que vous construirez et le
-                portefeuille que vous développerez fourniront de nombreuses preuves de votre expertise.</p>
+              <p class="u-margin-t-md subHeading">
+                {{$formation->description_longue}}
+              </p>
             </div>
           </div>
           <div _ngcontent-c33="" class="col-xs-12 col-sm-6 stat ng-star-inserted">
@@ -144,7 +142,9 @@
                 <h4 _ngcontent-c33="" class="light ng-star-inserted">
                   <h4 class="light">
                     <font style="vertical-align: inherit;">
-                      <font style="vertical-align: inherit;">JavaScript et PHP sont les langages de code les plus demandés par les entreprises en 2019</font>
+                      <font style="vertical-align: inherit;">
+                        {{$formation->accroche}}
+                      </font>
                     </font>
                   </h4>
                 </h4>

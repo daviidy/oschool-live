@@ -83,7 +83,18 @@
         </div>
 
         <div class="wrap-input100 validate-input">
+          <label for="">Ecrivez une description courte</label>
           <textarea required placeholder="Description" rows="50" style="height: 300px;" class="input100" name="description" placeholder=""></textarea>
+        </div>
+
+        <div class="wrap-input100">
+          <label for="">Ecrivez une description longue</label>
+          <textarea required placeholder="Description Longue" rows="50" style="height: 300px;" class="input100" name="description_longue" placeholder=""></textarea>
+        </div>
+
+        <div class="wrap-input100">
+          <label for="">Ecrivez une phrase d'accroche</label>
+          <textarea required placeholder="Accroche" rows="50" style="height: 300px;" class="input100" name="accroche" placeholder=""></textarea>
         </div>
 
         <div class="container-login100-form-btn">

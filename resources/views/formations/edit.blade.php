@@ -84,7 +84,18 @@
         </div>
 
         <div class="wrap-input100">
+          <label for="">Ecrivez une description courte</label>
           <textarea placeholder="Description" rows="50" style="height: 300px;" class="input100" name="description" placeholder="">{{$formation->description}}</textarea>
+        </div>
+
+        <div class="wrap-input100">
+          <label for="">Ecrivez une description longue</label>
+          <textarea placeholder="Description Longue" rows="50" style="height: 300px;" class="input100" name="description_longue" placeholder="">{{$formation->description_longue}}</textarea>
+        </div>
+
+        <div class="wrap-input100">
+          <label for="">Ecrivez une phrase d'accroche</label>
+          <textarea placeholder="Accroche" rows="50" style="height: 300px;" class="input100" name="accroche" placeholder="">{{$formation->accroche}}</textarea>
         </div>
 
         <div class="container-login100-form-btn">

@@ -171,6 +171,8 @@ Route::resource('formations','FormationController');
 
 Route::get('/formation/{slug}', 'FormationController@showSlug')->name('formation.slug');
 
+Route::get('/category/{slug}', 'CategoryController@showSlug')->name('category.slug');
+
 Route::resource('partners','PartnerController');
 
 Route::resource('languages','LanguageController');

@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Category;
 use Illuminate\Http\Request;
 use Auth;
+use App\Services\Slug;
 
 class CategoryController extends Controller
 {
@@ -49,6 +50,9 @@ class CategoryController extends Controller
     {
       $category = Category::create($request->all());
 
+      $slug = new Slug();
+      $category->slug = $slug->createSlug($request['nom'], $request['id']);
+
       return redirect('home')->with('status', 'La catégorie a bien été créée !');
     }
 
@@ -62,6 +66,19 @@ class CategoryController extends Controller
     {
         return view('categories.show', ['category' => $category]);
 
+    }
+
+
+    /**
+     * Display the specified resource, this time with slug.
+     *
+     * @param  \App\Formation  $formation
+     * @return \Illuminate\Http\Response
+     */
+    public function showSlug($slug)
+    {
+        $category = Category::where('slug', $slug)->firstOrFail();
+        return view('categories.show', ['category' => $category]);
     }
 
     /**
