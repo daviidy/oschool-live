@@ -10,6 +10,7 @@ use App\Category;
 use App\Partner;
 use App\Language;
 use App\Prerequisite;
+use App\Services\Slug;
 
 class FormationController extends Controller
 {
@@ -33,7 +34,13 @@ class FormationController extends Controller
     {
       if (Auth::check() && Auth::user()->isAdmin()) {
         $categories = Category::orderby ('nom','asc')->paginate(30);
-        return view('formations.create', ['categories' => $categories]);
+        $partners = Partner::orderby ('name','asc')->paginate(30);
+        $languages = Language::orderby ('name','asc')->paginate(30);
+        $prerequisites = Prerequisite::orderby ('description','asc')->paginate(30);
+        return view('formations.create', ['categories' => $categories,
+                                          'partners' => $partners,
+                                          'languages' => $languages,
+                                          'prerequisites' => $prerequisites,]);
       }
       else {
         return redirect('home');
@@ -90,6 +97,9 @@ class FormationController extends Controller
     {
       $formation = Formation::create($request->all());
 
+      $slug = new Slug();
+      $formation->slug = $slug->createSlug($request['nom'], $request['id']);
+
       //we get all the arrays for language, partner and prerequisite fields
       $languages = $request->language_id;
       $prerequisites = $request->prerequisite_id;
@@ -131,6 +141,18 @@ class FormationController extends Controller
      */
     public function show(Formation $formation)
     {
+        return view('formations.show', ['formation' => $formation]);
+    }
+
+    /**
+     * Display the specified resource, this time with slug.
+     *
+     * @param  \App\Formation  $formation
+     * @return \Illuminate\Http\Response
+     */
+    public function showSlug($slug)
+    {
+        $formation = Formation::where('slug', $slug)->firstOrFail();
         return view('formations.show', ['formation' => $formation]);
     }
 

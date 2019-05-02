@@ -5,6 +5,15 @@
 
 /* BASIC THEME CONFIGURATION */
 
+@media (max-width:600px){
+.contain[_ngcontent-c47]{display: none !important;};
+}
+@media only screen and (max-width: 600px) {
+
+  .feature-card[_ngcontent-c47] {
+      margin-top: 3rem !important;
+  }
+}
 
 /*! CSS Used from: https://www.udemy.com/staticx/udemy/js/webpack/entry-main.c4fb49c306d714d42324135cad2229c6.css */
 .udi{font-family:UdemyIcons!important;speak:none;font-style:normal;font-weight:400;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}
@@ -298,12 +307,7 @@ section{display:block;}
 .feature-card[_ngcontent-c47]{margin-top:-15rem;margin-bottom:6rem;}
 .feature-card[_ngcontent-c47]   .card[_ngcontent-c47]{height:40rem;}
 
-@media only screen and (max-width: 600px) {
 
-  .feature-card[_ngcontent-c47] .card[_ngcontent-c47] {
-      height: auto !important;
-  }
-}
 
 /*fin section construisez votre carrière*/
 

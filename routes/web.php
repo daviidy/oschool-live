@@ -169,6 +169,8 @@ Route::get('/progression/{user}', 'ProgressionController@voir')->name('progressi
 
 Route::resource('formations','FormationController');
 
+Route::get('/formation/{slug}', 'FormationController@showSlug')->name('formation.slug');
+
 Route::resource('partners','PartnerController');
 
 Route::resource('languages','LanguageController');

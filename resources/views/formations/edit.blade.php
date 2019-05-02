@@ -30,9 +30,9 @@
 
         <div class="wrap-input100 validate-input" data-validate = "Etudiant">
           <label for="">Catégorie</label>
-          <select name="categorie_id" class="form-control" style="" required>
-            @foreach($categories as $categorie)
-            <option value="{{ $categorie->id }}">{{ $categorie->nom }}</option>
+          <select name="category_id" class="form-control" style="" required>
+            @foreach($categories as $category)
+            <option value="{{ $category->id }}">{{ $category->nom }}</option>
             @endforeach
           </select>
         </div>

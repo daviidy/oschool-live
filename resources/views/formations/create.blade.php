@@ -29,11 +29,32 @@
 
         <div class="wrap-input100 validate-input" data-validate = "Etudiant">
           <label for="">Catégorie</label>
-          <select name="categorie_id" class="form-control" style="" required>
-            @foreach($categories as $categorie)
-            <option value="{{ $categorie->id }}">{{ $categorie->nom }}</option>
+          <select name="category_id" class="form-control" style="" required>
+            @foreach($categories as $category)
+            <option value="{{ $category->id }}">{{ $category->nom }}</option>
             @endforeach
           </select>
+        </div>
+
+        <div class="wrap-input100 validate-input" data-validate = "Etudiant">
+          <label for=""> <strong>Langues du parcours</strong> </label><br>
+        @foreach($languages as $language)
+          <input type="checkbox" name="language_id[]" value="{{$language->id}}">{{$language->name}}<br>
+        @endforeach
+        </div>
+
+        <div class="wrap-input100 validate-input" data-validate = "Etudiant">
+          <label for=""> <strong>Partenaires du parcours</strong> </label><br>
+        @foreach($partners as $partner)
+          <input type="checkbox" name="partner_id[]" value="{{$partner->id}}">{{$partner->name}}<br>
+        @endforeach
+        </div>
+
+        <div class="wrap-input100 validate-input" data-validate = "Etudiant">
+          <label for=""> <strong>Prérequis du parcours</strong> </label><br>
+        @foreach($prerequisites as $prerequisite)
+          <input type="checkbox" name="prerequisite_id[]" value="{{$prerequisite->id}}">{{$prerequisite->description}}<br>
+        @endforeach
         </div>
 
         <div class="wrap-input100 validate-input" data-validate = "Etudiant">

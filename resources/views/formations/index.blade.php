@@ -268,7 +268,7 @@ img{max-width:100%;}
               <h3 class="
                 tc sans-serif fw5 black-90 no-underline ma0 overflow-hidden w-100 ph4
                 css-hxrs45
-              "><a href="{{ route('formations.show', $formation) }}">{{$formation->nom}}</a></h3>
+              "><a href="{{ route('formation.slug', $formation->slug) }}">{{$formation->nom}}</a></h3>
             </div>
           </div>
         </div>
