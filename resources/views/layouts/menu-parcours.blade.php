@@ -201,7 +201,9 @@ drift.load('2uy6g3spxi59');
             <div class="navbar-subnav">
               <ul class="nav navbar-nav">
                 <li><a href="https://oschool.ci/#schools" class="navbar-subnav-links  site-navigation" data-site="Programming">Voir nos écoles</a></li>
+                @if(\Carbon\Carbon::parse($formation->start_date) > \Carbon\Carbon::now())
                 <li><span style="height: 6px; width: 6px; background-color: red; border-radius: 4px; position: absolute; top: 0; right: 0;"></span><a id="menuoffres" href="#offres" class="navbar-subnav-links  site-navigation">S'inscrire à ce parcours</a></li>
+                @endif
                 @auth
                 @if(Auth::user()->isAdmin())
                 <li><span style="height: 6px; width: 6px; background-color: #3C7DC0; border-radius: 4px; position: absolute; top: 0; right: 0;"></span><a href="{{ route('formations.edit', $formation) }}" class="navbar-subnav-links  site-navigation">Modifier ce parcours</a></li>
@@ -236,11 +238,13 @@ drift.load('2uy6g3spxi59');
       <div id="menu" class="site-toggle-dropdown">
         <p>Menu</p>
         <a href="https://oschool.ci/#schools" class="site-navigation">
-          <img class="emoji-png" src="https://d1eq8vvyuam4eq.cloudfront.net/assets/images/programming.png" alt="programming">Nos écoles
+          Nos écoles
         </a>
+        @if(\Carbon\Carbon::parse($formation->start_date) > \Carbon\Carbon::now())
         <a id="menuoffresmobile" href="#offres" class="site-navigation">
-          <img class="emoji-png" src="https://d1eq8vvyuam4eq.cloudfront.net/assets/images/design.png" alt="design">S'inscrire au parcours
+          S'inscrire au parcours
         </a>
+        @endif
 
       </div>
     </div>

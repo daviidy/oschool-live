@@ -15,7 +15,9 @@ class Formation extends Model
                          'description_longue',
                          'accroche',
                          'start_date',
-                         'video'
+                         'video',
+                         'prix',
+                         'type'
                        ];
 
   //relation many to many: ici une formation peut avoir plusieurs etudiants

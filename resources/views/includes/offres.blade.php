@@ -116,7 +116,13 @@
 
                  <div _ngcontent-c101="" class="card__price ng-star-inserted">
 
-                   <span _ngcontent-c101="" class="card__price--current2"><h1>10.000 FCFA<h1> <h6>(le premier mois)</h6></span>
+                   <span _ngcontent-c101="" class="card__price--current2"><h1>{{$formation->prix}} FCFA<h1>
+                     @if($formation->type == "parcours")
+                     <h6>(le premier mois)</h6>
+                     @else
+                     <h6>par mois</h6>
+                     @endif
+                   </span>
 
               </div>
               <br>
@@ -126,6 +132,7 @@
             </p>-->
             </div>
             <div _ngcontent-c101="" class="card--pricing__body">
+              @if($formation->type == "parcours")
               <p> <strong style="color: #CA4352;">30.000 FCFA par mois ensuite, pendant 3 mois.</strong> <strong>Soit un total de 100.000 FCFA</strong> </p>
               <ul class="list-pricing">
                 <li>Accès à tout le contenu (vidéos, textes, documents et autres ressources)</li>
@@ -134,6 +141,15 @@
                 <li>Obtention d'un mini diplôme</li>
                 <li>Accompagnement pour bâtir un profil de carrière et obtenir un emploi</li>
               </ul>
+              @else
+              <ul class="list-pricing">
+                <li>Formation en salle chaque samedi</li>
+                <li>Accès à tout le contenu (vidéos, textes, documents et autres ressources)</li>
+                <li>Réalisation de projets de la vie réelle</li>
+                <li>Obtention d'un certificat de réussite</li>
+              </ul>
+              @endif
+
 
             </div>
 

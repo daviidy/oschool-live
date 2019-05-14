@@ -74,11 +74,27 @@
           @endforeach
         </select>
 
+        <div class="wrap-input100 validate-input">
+          <input class="input100" value="{{$formation->prix}}" type="number" name="prix" placeholder="Prix (exple 10000)" required>
+          <span class="focus-input100"></span>
+          <span class="symbol-input100">
+            <i class="fa fa-money" aria-hidden="true"></i>
+          </span>
+        </div>
+
         <div class="wrap-input100 validate-input" data-validate = "Etudiant">
           <label for="">Statut du parcours</label>
           <select name="state" class="form-control" style="" required>
             <option value="active">Actif</option>
             <option value="inactive">Inactif</option>
+          </select>
+        </div>
+
+        <div class="wrap-input100 validate-input" data-validate = "Etudiant">
+          <label for="">Type</label>
+          <select name="type" class="form-control" style="" required>
+            <option value="parcours">Parcours</option>
+            <option value="bootcamp">Bootcamp</option>
           </select>
         </div>
 

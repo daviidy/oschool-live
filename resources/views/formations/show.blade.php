@@ -9,9 +9,11 @@
       <div class="col-xs-12 col-sm-6 c-how__headingLeft">
         <h1>{{$formation->nom}}</h1>
         <h2 style="font-size: 20px; margin-bottom: 3rem;" class="h2 u-bold">{{$formation->description}}</h2>
+        @if(\Carbon\Carbon::parse($formation->start_date) > \Carbon\Carbon::now())
         <a class="home_button" href="#offres">
           Inscrivez-vous maintenant
         </a>
+        @endif
       </div>
       <div class="col-xs-12 col-sm-6 c-how__headingRight">
         <img style="width:90%;" src="/avatars/courses/{{$formation->image}}" />
@@ -20,8 +22,14 @@
         <div class="row">
 
           <div class="col-sm-12 text-center">
+            @if(\Carbon\Carbon::parse($formation->start_date) > \Carbon\Carbon::now())
 
             <h3 id="info">Inscrivez-vous avant le: <span style="color:#3C7DC0">{{$formation->start_date}}</span> </h3>
+            @else
+
+            <h1 style="color:red" id="info">Les inscriptions sont terminées</h3>
+
+            @endif
 
           </div>
 
@@ -158,10 +166,11 @@
         </div>
 
 
-
+        @if(\Carbon\Carbon::parse($formation->start_date) > \Carbon\Carbon::now())
         <a class="home_button" href="#offres">
           Inscrivez-vous maintenant, n'attendez pas !
         </a>
+        @endif
       </div>
     </div>
   </div>
@@ -336,15 +345,19 @@
 </section>
 
 <!--fin section programme-->
+@if(\Carbon\Carbon::parse($formation->start_date) > \Carbon\Carbon::now())
 
 @include('includes.offres')
 
+@endif
 
 
 
+@if(\Carbon\Carbon::parse($formation->start_date) > \Carbon\Carbon::now())
 
 @include('includes.calltoaction')
 
+@endif
 
 <!--popup pour se connecter ou s'inscrire si ce  n'est pas encore fait-->
 
