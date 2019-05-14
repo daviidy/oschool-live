@@ -32,7 +32,7 @@
         <input value="{{$formation->start_date}}" name="start_date" type="datetime" id="datepicker">
 
         <div class="wrap-input100">
-          <input class="input100" value="{{$formation->video}}" type="url" name="video" placeholder="Lien de la vidéo (optionnel)">
+          <input class="input100" value="{{$formation->video}}" type="text" name="video" placeholder="Lien de la vidéo (optionnel)">
           <span class="focus-input100"></span>
           <span class="symbol-input100">
             <i class="fa fa-laptop" aria-hidden="true"></i>

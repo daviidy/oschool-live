@@ -32,7 +32,7 @@
         <input name="start_date" type="datetime" id="datepicker"></p>
 
         <div class="wrap-input100">
-          <input class="input100" value="" type="url" name="video" placeholder="Lien de la vidéo (optionnel)">
+          <input class="input100" value="" type="text" name="video" placeholder="Lien de la vidéo (optionnel)">
           <span class="focus-input100"></span>
           <span class="symbol-input100">
             <i class="fa fa-laptop" aria-hidden="true"></i>
