@@ -7,7 +7,8 @@
   <div class="container alt section-space">
     <div class="row c-how__heading align-row">
       <div class="col-xs-12 col-sm-6 c-how__headingLeft">
-        <h1 style="margin-bottom: 3rem;" class="h2 u-bold">{{$formation->description}}</h1>
+        <h1>{{$formation->nom}}</h1>
+        <h2 style="font-size: 20px; margin-bottom: 3rem;" class="h2 u-bold">{{$formation->description}}</h2>
         <a class="home_button" href="#offres">
           Inscrivez-vous maintenant
         </a>
