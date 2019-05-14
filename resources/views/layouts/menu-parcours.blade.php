@@ -30,7 +30,7 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
   <title>@yield('title') | Oschool</title>
-  <meta name="description" content="Formation 100% en ligne auprès des meilleures universités et entreprises d'Afrique">
+  <meta name="description" content="@yield('content')">
   <meta itemprop="name" content="Formation 100% en ligne auprès des meilleures universités et entreprises d'Afrique">
   <meta itemprop="description" content="Formation 100% en ligne auprès des meilleures universités et entreprises d'Afrique">
   <meta itemprop="image" content="https://code.oschool.ci/img/page-parcours/ordi.png">
