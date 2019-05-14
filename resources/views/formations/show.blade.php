@@ -1,6 +1,7 @@
 @extends('layouts.menu-parcours')
 
 @section('title', $formation->nom)
+@section('description', $formation->description)
 
 @section('content')
 
