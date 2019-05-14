@@ -2,6 +2,7 @@
 
 @section('title', $formation->nom)
 @section('description', $formation->description)
+@section('image', 'https://code.oschool.ci/avatars/courses/'.$formation->image)
 
 @section('content')
 

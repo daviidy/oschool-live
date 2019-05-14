@@ -31,9 +31,9 @@
     <![endif]-->
   <title>@yield('title') | Oschool</title>
   <meta name="description" content="@yield('description')">
-  <meta itemprop="name" content="Formation 100% en ligne auprès des meilleures universités et entreprises d'Afrique">
-  <meta itemprop="description" content="Formation 100% en ligne auprès des meilleures universités et entreprises d'Afrique">
-  <meta itemprop="image" content="https://code.oschool.ci/img/page-parcours/ordi.png">
+  <meta itemprop="name" content="@yield('description')">
+  <meta itemprop="description" content="@yield('description')">
+  <meta itemprop="image" content="@yield('image')">
 
   <meta name="csrf-token" content="lpdr45sh6CANKvxJNhj9RwfiwgSVIzxefKeSOjA7">
 
