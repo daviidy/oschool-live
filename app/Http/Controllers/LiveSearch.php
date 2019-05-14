@@ -17,7 +17,7 @@ class LiveSearch extends Controller
      if($request->ajax())
      {
       $output = '';
-      $query = $request->get('query');
+      $query = $request->get('query'); 
       if($query != '')
       {
        $data = DB::table('users')

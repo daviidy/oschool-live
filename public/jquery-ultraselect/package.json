@@ -1,0 +1,37 @@
+{
+  "name": "ultraselect",
+  "version": "2.0.0-dev",
+  "description": "Provides custom functionality for the HTML select elements.",
+  "main": "dist/jquery.ultraselect.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ultraleettech/ultraselect.git"
+  },
+  "keywords": [
+    "multiselect",
+    "javascript",
+    "js",
+    "jquery",
+    "ultraselect",
+    "html",
+    "select"
+  ],
+  "author": "Ultraleet Technologies",
+  "license": "(GPL-3.0 AND MIT)",
+  "bugs": {
+    "url": "https://github.com/ultraleettech/ultraselect/issues"
+  },
+  "homepage": "https://github.com/ultraleettech/ultraselect#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-eslint": "^3.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^2.0.1"
+  }
+}

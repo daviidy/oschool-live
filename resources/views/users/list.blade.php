@@ -53,7 +53,7 @@ input[_ngcontent-c18]{font-family:inherit;font-size:inherit;line-height:inherit;
       <div class="col-lg-4 col-xs-12">
         <div id="text" style="background-color: #77A930 !important; margin-top: 2rem; height:auto;" class="home_button"><a style="line-height:20px;" href="#" data-toggle="modal" data-target="#popup2">Voir les utilisateurs par formation</a></div>
       </div>
-
+ 
     </div>
     <h3><i class="fa fa-angle-right"></i> Liste des utilisateurs</h3>
     <div class="row mt">
@@ -70,7 +70,7 @@ input[_ngcontent-c18]{font-family:inherit;font-size:inherit;line-height:inherit;
                   <th class="blind">Type3</th>
                   <th class="blind">Type4</th>
                   <th class="blind">Statut</th>
-                </tr> 
+                </tr>
               </thead>
               <tbody id="students">
                 @foreach($students as $student)

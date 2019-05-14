@@ -22,7 +22,12 @@
 <!--===============================================================================================-->
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
-		
+
+
+
+
+
+
 
 
 	@if (session('status'))
@@ -35,6 +40,12 @@
 
   <!--===============================================================================================-->
   	<script src="/formcreate/vendor/jquery/jquery-3.2.1.min.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+		<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+		<link rel="stylesheet" href="/sol/sol.css">
+	    <script type="text/javascript" src="/sol/sol.js"></script>
+
   <!--===============================================================================================-->
   	<script src="/formcreate/vendor/bootstrap/js/popper.js"></script>
   	<script src="/formcreate/vendor/bootstrap/js/bootstrap.min.js"></script>
@@ -47,6 +58,23 @@
   			scale: 1.1
   		})
   	</script>
+		<script type="text/javascript">
+
+		$('#my-select1').searchableOptionList();
+		$('#my-select2').searchableOptionList();
+		$('#my-select3').searchableOptionList();
+		$('#my-select4').searchableOptionList();
+		$('#my-select5').searchableOptionList();
+
+
+		</script>
+
+		<script>
+  $( function() {
+    $( "#datepicker" ).datepicker();
+  } );
+  </script>
+
   <!--===============================================================================================-->
   	<script src="/formcreate/js/main.js"></script>
 

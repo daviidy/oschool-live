@@ -174,7 +174,7 @@
 
 
   <div class="container alt section-space">
-    <div class="row">
+    <div class="row"> 
       <div class="col-xs-12 text-center">
         <h3 class="h3 u-bold text-cent  er u-margin-b-sm">Apprenez avec un formateur en direct, dans notre salle virtuelle.<br>
           Tout a été fait pour vous permettre d'apprendre sereinement<br>

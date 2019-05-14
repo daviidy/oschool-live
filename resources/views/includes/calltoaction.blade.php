@@ -9,15 +9,17 @@
 
                 <h4 _ngcontent-c77="" class="h2 nd-bottom-cta-content__title ng-star-inserted">
                     <font style="vertical-align: inherit;">
-                        <font style="vertical-align: inherit;">Devenez {{$formation->nom}}</font>
+                        <font style="vertical-align: inherit;">Rejoignez le parcours {{$formation->nom}}</font>
                     </font>
                 </h4>
                 <!---->
+                <!--
                 <p _ngcontent-c77="" class="nd-bottom-cta-content__subtitle ng-star-inserted">
                     <font style="vertical-align: inherit;">
                         <font style="vertical-align: inherit;">Construisez-vous un excellent portfolio en réalisant des projets de la vie réelle.</font>
                     </font>
                 </p>
+              -->
                 <div _ngcontent-c77="" class="nd-bottom-cta-content__btn-wrapper">
                     <!---->
                     <!---->

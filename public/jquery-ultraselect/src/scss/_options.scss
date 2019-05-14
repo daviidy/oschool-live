@@ -1,0 +1,56 @@
+.options {
+    display: block;
+    position: relative;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border: solid 1px $optionsBorderColor;
+    border-top: none;
+    background: $backgroundColor;
+
+    .selectable {
+        padding: 0px 2px;
+        display: block;
+        white-space: nowrap;
+
+        &.checked {
+            background-color: $checkedBackgroundColor;
+        }
+
+        &.selectAll {
+            border-bottom: dotted 1px $selectAllBottomBorderColor;
+        }
+
+        &.hover {
+            background-color: $hoverBackgroundColor;
+            color: white;
+        }
+    }
+
+    .optGroupLabel {
+        font-weight: bold;
+    }
+
+    .optGroup .selectable {
+        padding-left: 10px;
+    }
+
+    &.optGroupHasCheckboxes .optGroup .selectable {
+        padding-left: 18px;
+
+        &.optGroupLabel {
+            padding-left: 0;
+        }
+    }
+
+    input {
+        vertical-align: middle;
+    }
+
+    // adjust options menu width in firefox where scrollbar is included in width calculation
+    // scroll bar width is 17px, add 2 to compensate for .selectable padding
+    &._firefox .selectable {
+        padding-right: 19px;
+    }
+
+}
+

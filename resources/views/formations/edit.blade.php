@@ -8,7 +8,7 @@
   <div class="container-login100">
     <div class="wrap-login100">
       <div class="login100-pic js-tilt" data-tilt>
-        <img src="/formcreate/images/img-01.png" alt="IMG">
+        <img style="display: block;margin-left: auto;margin-right: auto;width: 25%;" src="/formcreate/images/img-01.png" alt="IMG">
       </div>
 
       <form method="post" enctype="multipart/form-data" action="{{ url('formations', $formation) }}" class="login100-form validate-form">
@@ -28,35 +28,51 @@
           </span>
         </div>
 
-        <div class="wrap-input100 validate-input" data-validate = "Etudiant">
-          <label for="">Catégorie</label>
-          <select name="category_id" class="form-control" style="" required>
-            @foreach($categories as $category)
-            <option value="{{ $category->id }}">{{ $category->nom }}</option>
-            @endforeach
-          </select>
+        <label for=""> <strong>Date de rentrée</strong> </label>
+        <input value="{{$formation->start_date}}" name="start_date" type="datetime" id="datepicker">
+
+        <div class="wrap-input100 validate-input">
+          <input class="input100" value="{{$formation->video}}" type="url" name="video" placeholder="Lien de la vidéo (optionnel)" required>
+          <span class="focus-input100"></span>
+          <span class="symbol-input100">
+            <i class="fa fa-laptop" aria-hidden="true"></i>
+          </span>
         </div>
 
-        <div class="wrap-input100 validate-input" data-validate = "Etudiant">
-          <label for=""> <strong>Langues du parcours</strong> </label><br>
-        @foreach($languages as $language)
-          <input type="checkbox" name="language_id[]" value="{{$language->id}}">{{$language->name}}<br>
-        @endforeach
-        </div>
+        <label for=""> <strong>Catégorie</strong> </label>
+        <select id="my-select1" name="category_id">
+          @foreach($categories as $category)
+          <option value="{{$category->id}}">{{$category->nom}}</option>
+          @endforeach
+        </select>
 
-        <div class="wrap-input100 validate-input" data-validate = "Etudiant">
-          <label for=""> <strong>Partenaires du parcours</strong> </label><br>
-        @foreach($partners as $partner)
-          <input type="checkbox" name="partner_id[]" value="{{$partner->id}}">{{$partner->name}}<br>
-        @endforeach
-        </div>
+        <label for=""> <strong>Langue(s)</strong> </label>
+        <select id="my-select2" name="language_id[]" multiple="multiple">
+          @foreach($languages as $language)
+          <option value="{{$language->id}}">{{$language->name}}</option>
+          @endforeach
+        </select>
 
-        <div class="wrap-input100 validate-input" data-validate = "Etudiant">
-          <label for=""> <strong>Prérequis du parcours</strong> </label><br>
-        @foreach($prerequisites as $prerequisite)
-          <input type="checkbox" name="prerequisite_id[]" value="{{$prerequisite->id}}">{{$prerequisite->description}}<br>
-        @endforeach
-        </div>
+        <label for=""> <strong>Partenaire(s)</strong> </label>
+        <select id="my-select3" name="partner_id[]" multiple="multiple">
+          @foreach($partners as $partner)
+          <option value="{{$partner->id}}">{{$partner->name}}</option>
+          @endforeach
+        </select>
+
+        <label for=""> <strong>Prérequis</strong> </label>
+        <select id="my-select4" name="prerequisite_id[]" multiple="multiple">
+          @foreach($prerequisites as $prerequisite)
+          <option value="{{$prerequisite->id}}">{{$prerequisite->description}}</option>
+          @endforeach
+        </select>
+
+        <label for=""> <strong>Formateur Principal</strong> </label>
+        <select id="my-select5" name="teacher">
+          @foreach($users as $user)
+          <option value="{{$user->name}}">{{$user->name}}</option>
+          @endforeach
+        </select>
 
         <div class="wrap-input100 validate-input" data-validate = "Etudiant">
           <label for="">Statut du parcours</label>

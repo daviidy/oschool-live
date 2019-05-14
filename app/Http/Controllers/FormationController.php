@@ -11,6 +11,8 @@ use App\Partner;
 use App\Language;
 use App\Prerequisite;
 use App\Services\Slug;
+use Carbon\Carbon;
+use App\User;
 
 class FormationController extends Controller
 {
@@ -37,10 +39,13 @@ class FormationController extends Controller
         $partners = Partner::orderby ('name','asc')->paginate(30);
         $languages = Language::orderby ('name','asc')->paginate(30);
         $prerequisites = Prerequisite::orderby ('description','asc')->paginate(30);
+        $users = User::where('type2', 'teacher')->orderby ('id','asc')->paginate(30);
         return view('formations.create', ['categories' => $categories,
                                           'partners' => $partners,
                                           'languages' => $languages,
-                                          'prerequisites' => $prerequisites,]);
+                                          'prerequisites' => $prerequisites,
+                                          'users' => $users,
+                                        ]);
       }
       else {
         return redirect('home');
@@ -130,6 +135,13 @@ class FormationController extends Controller
         $formation->save();
       }
 
+      $time = strtotime($formation->start_date);
+
+      $formation->start_date = date('d-m-Y',$time);
+
+      $formation->save();
+
+
       return redirect('home')->with('status', 'La formation a bien été créée !');
     }
 
@@ -171,11 +183,14 @@ class FormationController extends Controller
             $partners = Partner::orderby ('name','asc')->paginate(30);
             $languages = Language::orderby ('name','asc')->paginate(30);
             $prerequisites = Prerequisite::orderby ('description','asc')->paginate(30);
+            $users = User::where('type2', 'teacher')->orderby ('id','asc')->paginate(30);
             return view('formations.edit', ['formation' => $formation,
                                             'categories' => $categories,
                                             'partners' => $partners,
                                             'languages' => $languages,
-                                            'prerequisites' => $prerequisites,]);
+                                            'prerequisites' => $prerequisites,
+                                            'users' => $users,
+                                          ]);
         }
         else {
           return redirect('home');

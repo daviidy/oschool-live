@@ -20,17 +20,17 @@
 
           <div class="col-sm-12 text-center">
 
-            <h3 id="info">Les inscriptions se terminent dans :</h3>
+            <h3 id="info">Inscrivez-vous avant le: <span style="color:#3C7DC0">{{$formation->start_date}}</span> </h3>
 
           </div>
 
         </div>
-
+        <!--
         <div id="countdown" _ngcontent-c87="" class="countdown ng-star-inserted">
           <div _ngcontent-c87="">
               <!---->
               <!---->
-              <!---->
+              <!---
               <ul _ngcontent-c87="" class="ng-star-inserted">
                   <li _ngcontent-c87=""><span _ngcontent-c87="" class="countdown__timer" id="jours"></span><span _ngcontent-c87="">JOURS</span></li>
                   <li _ngcontent-c87=""><span _ngcontent-c87="" class="countdown__timer" id="heures"></span><span _ngcontent-c87="">HRS</span></li>
@@ -39,6 +39,7 @@
               </ul>
           </div>
       </div>
+    -->
       <!--fin image parcours et countdown-->
 
 
@@ -107,10 +108,10 @@
   <div class="container alt section-space">
     <div class="row">
       <div class="col-xs-12 text-center">
-        <!--
-        <h3 class="h3 u-bold text-cent  er u-margin-b-sm">Apprenez avec un formateur en direct, dans notre salle virtuelle.<br>
+        @if($formation->video !== "aucune")
+        <h3 class="h3 u-bold text-cent  er u-margin-b-sm">Apprenez avec un formateur chaque semaine.<br>
           Tout a été fait pour vous permettre d'apprendre sereinement<br>
-            Suivez notre parcours certifiant et démarrez une nouvelle carrière</h3>
+            Suivez notre parcours certifiant et développez de nouvelles compétences</h3>
         <div class="c-browser">
           <div class="c-browser__chrome">
             <div class="c-browser__buttons">
@@ -120,10 +121,11 @@
             </div>
           </div>
           <div class="c-browser__image">
-            <iframe width="100%" height="528" src="https://player.vimeo.com/video/320601050" frameborder="0" allowFullScreen mozallowfullscreen webkitAllowFullScreen></iframe>
+            <iframe width="100%" height="528" src="{{$formation->video}}" frameborder="0" allowFullScreen mozallowfullscreen webkitAllowFullScreen></iframe>
           </div>
         </div>
-      -->
+        @endif
+
 
         <div class="row u-margin-t-xxx-lg align-row">
 
@@ -162,6 +164,12 @@
       </div>
     </div>
   </div>
+
+  @if($formation->teacher !== "aucun")
+
+    @include('includes.teachers_presentation')
+
+  @endif
 
     @include('includes.works')
 

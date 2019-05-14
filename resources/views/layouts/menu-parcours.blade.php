@@ -139,10 +139,7 @@ drift.load('2uy6g3spxi59');
 
 </head>
 
-<body class="
-      hacknlearn
-          desktop
-            signin">
+<body style="overflow-x: hidden;" class="hacknlearn desktop signin">
 
   <nav class="navbar navbar-fixed-top scrolled" role="navigation">
 
@@ -381,10 +378,9 @@ drift.load('2uy6g3spxi59');
 
 
 
-@if(Request::path() == 'kali-linux')
 
 <!--pour kali-->
-
+<!--
 <script>
 // Set the date we're counting down to
 var countDownDate = new Date("Feb 08, 2019 23:59:59").getTime();
@@ -405,60 +401,6 @@ var x = setInterval(function() {
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
   // Display the result in the element with id="demo"
-  document.getElementById("jourskali").innerHTML = days;
-
-  document.getElementById("heureskali").innerHTML = hours;
-
-  document.getElementById("minuteskali").innerHTML = minutes;
-
-  document.getElementById("secondeskali").innerHTML = seconds;
-
-  // If the count down is finished, write some text
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("countdown").style.display = "none";
-    document.getElementById("info").innerHTML = "Les inscriptions sont terminées";
-    document.getElementById("offres").style.display = "none";
-    document.getElementById("menuoffres").innerHTML = "Les inscriptions sont terminées";
-    document.getElementById("menuoffresmobile").innerHTML = "Les inscriptions sont terminées";
-  }
-}, 1000);
-</script>
-
-@else
-
-<script>
-// Set the date we're counting down to
-var countDownDatePath = new Date("May 31, 2019 23:59:59").getTime();
-const months = ["Jan", "Fev", "Mar","Avr", "Mai", "Juin", "Juillet", "Août", "Sep", "Oct", "Nov", "Dec"];
-
-//on determine le jour de la rentrée en ajoutant 7 jours à celui du deadline
-var rentree = new Date("May 31, 2019 23:59:59");
-rentree.setDate(rentree.getDate()+7);
-
-let formatted_date = rentree.getDate() + " " + months[rentree.getMonth()] + " " + rentree.getFullYear();
-
-var dd = rentree.getDate();
-
-var mm = rentree.getMonth()+1;
-var yyyy = rentree.getFullYear();
-
-// Update the count down every 1 second
-var x = setInterval(function() {
-
-  // Get todays date and time
-  var now = new Date().getTime();
-
-  // Find the distance between now and the count down date
-  var distance = countDownDatePath - now;
-
-  // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-  // Display the result in the element with id="demo"
   document.getElementById("jours").innerHTML = days;
 
   document.getElementById("heures").innerHTML = hours;
@@ -466,12 +408,9 @@ var x = setInterval(function() {
   document.getElementById("minutes").innerHTML = minutes;
 
   document.getElementById("secondes").innerHTML = seconds;
-  document.getElementById("date").innerHTML = formatted_date;
 
   // If the count down is finished, write some text
-
   if (distance < 0) {
-
     clearInterval(x);
     document.getElementById("countdown").style.display = "none";
     document.getElementById("info").innerHTML = "Les inscriptions sont terminées";
@@ -481,8 +420,7 @@ var x = setInterval(function() {
   }
 }, 1000);
 </script>
-
-@endif
+-->
 
 
 

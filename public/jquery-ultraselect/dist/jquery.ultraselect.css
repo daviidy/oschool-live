@@ -1,0 +1,120 @@
+@charset "UTF-8";
+/*!
+ * jQuery ultraselect v2.0.0-dev
+ * Copyright 2008-2017 A Beautiful Site, LLC.
+ * Copyright 2017 Ultraleet Technologies
+ * Licensed under GPL and MIT
+ */
+.ultraselectWrapper {
+  display: inline-block;
+  box-sizing: border-box;
+  overflow: hidden; }
+  .ultraselectWrapper * {
+    box-sizing: border-box; }
+
+.ultraselect {
+  display: table;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+  .ultraselect .select {
+    display: block;
+    position: relative;
+    border: solid 1px darkgray;
+    padding-right: 20px;
+    cursor: default;
+    text-decoration: none;
+    color: black;
+    vertical-align: top; }
+    .ultraselect .select.hover {
+      border-color: #7f7f7f; }
+    .ultraselect .select.active, .ultraselect .select.focus {
+      border: inset 1px #6688bf; }
+    .ultraselect .select span.arrow {
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 20px;
+      height: 100%; }
+      .ultraselect .select span.arrow b {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        height: 0;
+        width: 0;
+        margin-left: -2px;
+        margin-top: -2px;
+        border-color: black transparent transparent transparent;
+        border-style: solid;
+        border-width: 5px 3px 0 3px; }
+    .ultraselect .select span.selection {
+      margin: 1px 0px 1px 3px;
+      overflow: hidden;
+      display: block;
+      white-space: nowrap; }
+  .ultraselect .options {
+    display: block;
+    position: relative;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border: solid 1px #799bd2;
+    border-top: none;
+    background: white; }
+    .ultraselect .options .selectable {
+      padding: 0px 2px;
+      display: block;
+      white-space: nowrap; }
+      .ultraselect .options .selectable.checked {
+        background-color: #dce5f8; }
+      .ultraselect .options .selectable.selectAll {
+        border-bottom: dotted 1px #cccccc; }
+      .ultraselect .options .selectable.hover {
+        background-color: dodgerblue;
+        color: white; }
+    .ultraselect .options .optGroupLabel {
+      font-weight: bold; }
+    .ultraselect .options .optGroup .selectable {
+      padding-left: 10px; }
+    .ultraselect .options.optGroupHasCheckboxes .optGroup .selectable {
+      padding-left: 18px; }
+      .ultraselect .options.optGroupHasCheckboxes .optGroup .selectable.optGroupLabel {
+        padding-left: 0; }
+    .ultraselect .options input {
+      vertical-align: middle; }
+    .ultraselect .options._firefox .selectable {
+      padding-right: 19px; }
+  .ultraselect input[type=checkbox]:not(old) {
+    width: 2em;
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    opacity: 0; }
+  .ultraselect input[type=checkbox]:not(old) + label {
+    display: inline-block;
+    margin-left: -2em;
+    line-height: 1.5em; }
+  .ultraselect input[type=checkbox]:not(old) + label > span {
+    display: inline-block;
+    width: 0.875em;
+    height: 0.875em;
+    margin: 0.25em 0.5em 0.25em 0.25em;
+    border: 0.0625em solid silver;
+    border-radius: 0.25em;
+    background: #e0e0e0;
+    background-image: -webkit-linear-gradient(#f0f0f0, #e0e0e0);
+    background-image: linear-gradient(#f0f0f0, #e0e0e0);
+    vertical-align: bottom; }
+  .ultraselect input[type=checkbox]:not(old):checked + label > span {
+    background-image: -webkit-linear-gradient(#e0e0e0, #f0f0f0);
+    background-image: linear-gradient(#e0e0e0, #f0f0f0); }
+  .ultraselect input[type=checkbox]:not(old):checked + label > span:before {
+    content: '✓';
+    display: block;
+    width: 1em;
+    color: black;
+    font-size: 0.875em;
+    line-height: 1em;
+    text-align: center;
+    text-shadow: 0 0 0.0714em gray;
+    font-weight: bold; }

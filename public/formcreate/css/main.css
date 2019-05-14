@@ -194,7 +194,7 @@ iframe {
 /*------------------------------------------------------------------
 [  ]*/
 .login100-pic {
-  width: 316px;
+  width: 100%;
 }
 
 .login100-pic img {
@@ -205,7 +205,7 @@ iframe {
 /*------------------------------------------------------------------
 [  ]*/
 .login100-form {
-  width: 290px;
+  width: 100%;
 }
 
 .login100-form-title {
@@ -239,7 +239,7 @@ iframe {
   width: 100%;
   background: #e6e6e6;
   height: 50px;
-  border-radius: 25px;
+  border-radius: 5px;
   padding: 0 30px 0 68px;
 }
 
