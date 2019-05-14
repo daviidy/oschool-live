@@ -257,6 +257,7 @@ class FormationController extends Controller
      */
     public function destroy(Formation $formation)
     {
-        //
+        $formation->delete();
+        return redirect('formations')->with('status', 'Formations supprimée de la base de données' );
     }
 }

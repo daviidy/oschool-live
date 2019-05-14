@@ -1,4 +1,4 @@
-@extends((Auth::user()->type4 == "partner") ? "layouts.menu-dashboard-partner" : "layouts.menu-dashboard-admin")
+  @extends((Auth::user()->type4 == "partner") ? "layouts.menu-dashboard-partner" : "layouts.menu-dashboard-admin")
 
 @section('content')
 
@@ -281,6 +281,12 @@ img{max-width:100%;}
                   db br-pill
                   css-1i4zz36
                 "></a>
+
+                    <form action="{{ route('formations.destroy', $formation) }}" method="post">
+                        {{ csrf_field() }}
+                        {{ method_field('delete') }}
+                        <button class="fa fa-trash" type="submit"></button>
+                    </form>
               <div class="ml2">
                 <div class="
                     black o-70 lh-title fw4 tl
