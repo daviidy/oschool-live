@@ -18,14 +18,9 @@
                   <p><img src="/avatars/users/{{$user->photo}}" class="img-circle"></p>
                   <h3>{{ $user->name }}</h3>
                   <h6>E-mail : {{ $user->email }}</h6>
-                  @auth
-                  @if (Auth::user()->isAdmin() && $user->type == 'default' && !count($user->formations  ))
+
                   <h5> <a href="{{url('inscrire', $user)}}">Inscrire {{$user->name}} à une formation</a> </h5>
-                  @endif
-                  @if (Auth::user()->isAdmin() && $user->type == 'teacher')
-                  <h5> <a href="{{url('inscrire', $user)}}">Assigner {{$user->name}} à une formation</a> </h5>
-                  @endif
-                  @endauth
+                  
                 </div>
               </div>
               <!-- /col-md-4 -->

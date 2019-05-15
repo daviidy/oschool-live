@@ -98,6 +98,7 @@ body *{box-sizing:border-box;}
             @endauth
             !
           </div>
+          @if($formation->type == "parcours")
           <div class="reset-password-modal--description--1y9D1">
             <!-- react-text: 11 -->Encore une étape !<br>
             <img width="40%" src="http://code.oschool.ci/img/page-parcours/card.png" alt="">
@@ -105,7 +106,19 @@ body *{box-sizing:border-box;}
             <p>Cliques sur le bouton ci-dessous pour t'inscrire.</p>
             <!-- /react-text -->
           </div>
+          @else
+          <div class="reset-password-modal--description--1y9D1">
+            <!-- react-text: 11 -->Encore une étape !<br>
+            <img width="40%" src="http://code.oschool.ci/img/page-parcours/card.png" alt="">
+            <!-- /react-text --><br><br>
+            <p>Pour t'inscrire fais vite un dépôt de {{$formation->prix}} FCFA par Orange Money
+            au 58-45-06-00 </p><br>
+            <p>Ensuite envoie un SMS à ce même numéro pour indiquer que tu viens de faire un dépôt.</p>
+            <!-- /react-text -->
+          </div>
+          @endif
         </div>
+        @if($formation->type == "parcours")
         <div class="reset-password-modal--footer--3eC3n">
           <div class="reset-password-modal--alert--3QlYn">
             <div class="alert--error--3iAkS alert--_alert--1gt-I alert--hidden--2Mlfp"></div>
@@ -120,6 +133,7 @@ body *{box-sizing:border-box;}
             </a>
           </div>
         </div>
+        @endif
       </div>
     </div><a href="#" class="index--close-bottom--2jiB9">Close Modal</a>
   </div>

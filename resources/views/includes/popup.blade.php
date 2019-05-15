@@ -89,7 +89,7 @@ body *{box-sizing:border-box;}
     <a href="#" class="index--close--126Qg" title="Close Modal">
       <i class="material-icons" style="font-size:36px">close</i>
     </a>
-    <div>
+    <div> 
       <div>
         <div class="reset-password-modal--info--2jvvh">
           <div class="reset-password-modal--header--2i8sd">Hello

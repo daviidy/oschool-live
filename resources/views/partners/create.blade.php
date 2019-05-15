@@ -8,7 +8,7 @@
   <div class="container-login100">
     <div class="wrap-login100">
       <div class="login100-pic js-tilt" data-tilt>
-        <img src="/formcreate/images/img-01.png" alt="IMG">
+        <img style="display: block;margin-left: auto;margin-right: auto;width: 25%;" src="/formcreate/images/img-01.png" alt="IMG">
       </div>
 
       <form method="post" enctype="multipart/form-data" action="{{ route('partners.store') }}" class="login100-form validate-form">

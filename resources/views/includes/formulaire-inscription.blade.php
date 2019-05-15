@@ -72,11 +72,7 @@
             <div style="display: none;" class="form-group password-form-group">
               <div class="input-with-icon">
                 <select class="form-control" name="montant">
-                  @if(Request::path() == 'devweb2')
-                  <option value="100">Montant</option>
-                  @else
-                  <option value="10000">Montant</option>
-                  @endif
+                  <option value="{{$formation->prix}}">Montant</option>
                 </select>
                 <i class="input-icon ion-person-stalker"></i>
               </div>

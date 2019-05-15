@@ -116,7 +116,7 @@ drift.load('2uy6g3spxi59');
 
             //fermer le popup de bienvenue si on clique sur le bouton bleu
 
-            $('#achat').click(function(){
+            $('#bootcamp').click(function(){
               $('#popup').modal('hide');
             });
 

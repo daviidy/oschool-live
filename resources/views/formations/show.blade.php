@@ -35,7 +35,7 @@
 
           </div>
 
-        </div>
+        </div>  
         <!--
         <div id="countdown" _ngcontent-c87="" class="countdown ng-star-inserted">
           <div _ngcontent-c87="">
