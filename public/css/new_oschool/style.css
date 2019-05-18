@@ -1,3 +1,15 @@
+.active{
+background-color: #fff !important;
+}
+
+.page-item{
+  width: 2%;
+border: 1px solid #02b3e4;
+text-align: center;
+background-color: #02b3e4;
+}
+
+
 .vds-heading--h4 a{
   color: #4D90CC;
 }
