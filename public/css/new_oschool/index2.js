@@ -117,4 +117,6 @@ if (window.matchMedia('(max-width: 60em)').matches)
   $('._layout-module--title-area--1yynf').css('margin-left', '0');
   $('._layout-module--content-area--tGmoA').css('margin-left', '0');
   $('.hamburger--hamburger-link--3-KRS').css('display', 'block');
+
+  $('._lesson-expanded--image-placeholder--2SiZ3 img').css('display', 'none');
 }

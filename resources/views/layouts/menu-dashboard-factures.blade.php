@@ -187,7 +187,7 @@
                               <div class="vds-flex vds-flex--align-center vds-flex--full vds-flex--justify-start vds-flex--spacing-2x">
                                 <div class="vds-flex__item">
                                                 <div class="hamburger--hamburger--1oS_7 index--hamburger--31PjM">
-                                                    <a style="display:none;" href="#" class="hamburger--hamburger-link--3-KRS">
+                                                    <a style="color: black; display:none;" href="#" class="hamburger--hamburger-link--3-KRS">
                                                         <i class="vds-icon vds-color--cerulean" role="img">
                                                             <span class="vds-visually-hidden">Afficher/Cacher le menu latéra</span>
                                                             <svg viewBox="0 0 32 32">

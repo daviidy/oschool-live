@@ -183,7 +183,7 @@
                               <div class="index--container--GSOp4">
                                 <div class="index--lesson-info-small--1DtXu shared--outer-container--3eppq">
                                   <div class="hamburger--hamburger--1oS_7 index--hamburger--31PjM">
-                                      <a style="display:none;" href="#" class="hamburger--hamburger-link--3-KRS">
+                                      <a style="display:none; color: black;" href="#" class="hamburger--hamburger-link--3-KRS">
                                           <i class="vds-icon vds-color--cerulean" role="img">
                                               <span class="vds-visually-hidden">Afficher/Cacher le menu latéra</span>
                                               <svg viewBox="0 0 32 32">
