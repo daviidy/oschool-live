@@ -42,7 +42,7 @@
           <label for="">A qui s'adresse ce guide ?</label>
           <select name="audience" class="form-control" style="" required>
             <option value="teacher">Formateurs</option>
-            <option value="teacher">Etudiants</option>
+            <option value="student">Etudiants</option>
           </select>
         </div>
 

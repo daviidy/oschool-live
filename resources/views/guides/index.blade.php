@@ -7,7 +7,7 @@
 @foreach($guides as $guide)
 <li>
   <div>
-    <div class="index--lesson-card--mwX1V index--card-interactive--1EHiQ shared--card-interactive--2Jtvl shared--card--3X88h"><a class="index--curtain--3sKxm shared--curtain--2_FSP" href="/courses/ud806/lessons/7585925729/concepts/last-viewed">Continue</a>
+    <div class="index--lesson-card--mwX1V index--card-interactive--1EHiQ shared--card-interactive--2Jtvl shared--card--3X88h"><a class="index--curtain--3sKxm shared--curtain--2_FSP" href="#">Continue</a>
       <div class="index--container--1pEmR"><span id="lesson-card-scroll-target-7585925729" class="index--scroll-target--kzi6f"></span>
         <div class="_lesson-expanded--lesson-expanded--1F90t _lesson-expanded--_lesson-expanded--12yZy"><span id="lesson-card-scroll-target-7585925729"></span>
           <div class="_lesson-expanded--details--2ORBR">
