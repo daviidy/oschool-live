@@ -16,14 +16,14 @@ class ClassroomController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index()
-    { 
-      if (Auth::check() && Auth::user()->type2 !== "teacher") {
+    {
+      if (Auth::check() && Auth::user()->type2 !== "teacher" && count(Auth::user()->formations)) {
           $classrooms = Classroom::where('etudiant', Auth::user()->name)->orderby('date', 'desc')->paginate(30);
           return view('classrooms.index', ['classrooms' => $classrooms]);
         }
-      elseif (Auth::check() && Auth::user()->type2 == "teacher") {
-          $sessions = Classroom::where('formateur', Auth::user()->name)->orderby('date', 'desc')->paginate(30);
-          return view('classrooms.index', ['sessions' => $sessions]);
+      elseif (Auth::check() && Auth::user()->type2 == "teacher" && count(Auth::user()->formations)) {
+          $classrooms = Classroom::where('formateur', Auth::user()->name)->orderby('date', 'desc')->paginate(30);
+          return view('classrooms.index', ['classrooms' => $classrooms]);
         }
       else {
         return redirect('home');

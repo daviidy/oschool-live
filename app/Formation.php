@@ -17,7 +17,8 @@ class Formation extends Model
                          'start_date',
                          'video',
                          'prix',
-                         'type'
+                         'type',
+                         'program'
                        ];
 
   //relation many to many: ici une formation peut avoir plusieurs etudiants

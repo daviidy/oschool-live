@@ -14,7 +14,7 @@
               </div>
             </a>
             <!---->
-          </div>
+          </div> 
           <div _ngcontent-c27="" class="card-content">
             <!--<span _ngcontent-c27="" style="{{$etatprojet->statut == 'Validé' ? "background:green;color:white;" : " "}}" class="tag tag--new card ng-star-inserted">{{$etatprojet->statut}}</span>-->
             <!---->

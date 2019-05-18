@@ -12,7 +12,7 @@
               <div _ngcontent-c27="" class="image-container ng-star-inserted" style="background-image: url(&quot;/avatars/projects/{{$projet->image}}&quot;);">
                 <div _ngcontent-c27="" class="image-overlay"></div>
               </div>
-            </a>
+            </a> 
             <!---->
           </div>
           <div _ngcontent-c27="" class="card-content">

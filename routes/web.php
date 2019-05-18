@@ -181,6 +181,10 @@ Route::resource('prerequisites','PrerequisiteController');
 
 Route::resource('categories','CategoryController');
 
+Route::resource('guides','GuideController');
+
+Route::get('/projects/{formation}', 'FormationController@projects')->name('projects');
+
 Route::post('/inscription', 'UserController@inscription')->name('inscription');
 
 Route::get('/inscrire/{user}', 'UserController@inscrire')->name('inscrire');
@@ -291,6 +295,8 @@ Route::get('/ecoledatascience', function () {
 Route::get('/factures', 'UserController@factures');
 
 Route::post('/moisFactures', 'UserController@moisFactures');
+
+Route::get('/settings', 'UserController@settings'); 
 
 //voir facturation pour les admins
 

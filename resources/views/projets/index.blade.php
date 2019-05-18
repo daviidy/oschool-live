@@ -567,7 +567,7 @@ button::-moz-focus-inner{border:0;padding:0;}
       <div class="col-lg-8">
 
                 @foreach(Auth::user()->formations as $formation)
-                  @foreach($formation->projets as $projet)
+                  @foreach($formation->projets as $projet) 
                     @if(count($projet->etatprojets))
                       @foreach($projet->etatprojets as $etatprojet)
                         @if($etatprojet->user_id == Auth::user()->id)

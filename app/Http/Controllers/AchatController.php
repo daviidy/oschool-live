@@ -22,7 +22,7 @@ class AchatController extends Controller
      */
     public function index()
     {
-      $achats = Achat::orderby('created_at','asc')->paginate(30);
+      $achats = Achat::where('statut', 'Validé')->orderby('created_at','asc')->paginate(30);
       return view('achats.index', ['achats' => $achats]);
     }
 
@@ -239,7 +239,7 @@ class AchatController extends Controller
 
                   //on met le statut de l'achat à jour
                     $achat->statut = 'Validé';
-                    $achat->save(); 
+                    $achat->save();
 
                   //on ajoute 30 jours à la date actuelle pour déterminer la
                   //date d'expiration de l'abonnement

@@ -35,7 +35,7 @@
 
           </div>
 
-        </div>  
+        </div>
         <!--
         <div id="countdown" _ngcontent-c87="" class="countdown ng-star-inserted">
           <div _ngcontent-c87="">
@@ -219,9 +219,12 @@
     <!---->
     <!---->
     <!---->
-    <!----><a _ngcontent-c55="" class="button--secondary lg syllabus-download-button ng-star-inserted" target="_blank" href="https://docs.google.com/document/d/1bBBD1gUfjFIpRDdvPzAbcTmL4Y8Lk14IXNwAvC2AFW0/edit?usp=sharing">
+    <!---->
+    @if($formation->program !== "aucun")
+    <a _ngcontent-c55="" class="button--secondary lg syllabus-download-button ng-star-inserted" target="_blank" href="{{$formation->program}}">
     Télécharger le programme
     </a>
+    @endif
     <!---->
     <!---->
     <div _ngcontent-c55="" class="nd-syllabus-term__card">

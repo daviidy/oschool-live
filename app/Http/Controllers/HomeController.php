@@ -38,14 +38,14 @@ class HomeController extends Controller
         }
         elseif (Auth::user()->type2 == "teacher") {
           $sessions = Classroom::where('formateur', Auth::user()->name)->orderby('date', 'desc')->paginate(30);
-          return view('classrooms.index', ['sessions' => $sessions]);
+          return view('users.dashboard', ['sessions' => $sessions]);
         }
         elseif (Auth::user()->type4 == "partner") {
           return view('formations.index');
         }
         elseif (count(Auth::user()->formations)) {
           $classrooms = Classroom::where('etudiant', Auth::user()->name)->orderby('date', 'desc')->paginate(30);
-          return view('classrooms.index', ['classrooms' => $classrooms]);
+          return view('users.dashboard', ['classrooms' => $classrooms]);
         }
         else {
           $teachers = User::orderby ('id','asc')->where('type2', 'teacher')->paginate(30);
@@ -94,11 +94,11 @@ class HomeController extends Controller
 
         if (Auth::check() && Auth::user()->type3 !== "admin" && Auth::user()->type2 !== "teacher") {
           $teachers = User::orderby ('id','asc')->where('type2', 'teacher')->paginate(30);
-          return view('users.dashboard', ['teachers' => $teachers]);
+          return view('users.settings', ['teachers' => $teachers]);
         }
 
       else {
-        return redirect('/');
+        return redirect('/'); 
       }
 
     }
@@ -126,7 +126,7 @@ class HomeController extends Controller
 
         if (Auth::check() && Auth::user()->type2 == "teacher") {
           $teachers = User::orderby ('id','asc')->where('type2', 'teacher')->paginate(30);
-          return view('users.dashboard-teacher', ['teachers' => $teachers]);
+          return view('users.dashboard', ['teachers' => $teachers]);
         }
 
       else {

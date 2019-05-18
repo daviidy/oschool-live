@@ -98,7 +98,7 @@ class ProjetController extends Controller
 
     public function edit(Projet $projet)
     {
-
+      return view('projets.edit', ['projet' => $projet]);
     }
 
     /**
@@ -110,7 +110,8 @@ class ProjetController extends Controller
      */
     public function update(Request $request, Projet $projet)
     {
-        //
+        $formation->update($request->all());
+        return redirect('home')->with('status', 'Modifications apportées' );
     }
 
     /**
@@ -121,6 +122,7 @@ class ProjetController extends Controller
      */
     public function destroy(Projet $projet)
     {
-        //
+      $projet->delete();
+      return redirect('home')->with('status', 'Projet supprimé de la base de données' );
     }
 }

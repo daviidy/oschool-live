@@ -139,6 +139,20 @@ class UserController extends Controller
     }
 
 
+    //fonction pour affichern la page de parametres de l'utilisateur
+    public function settings()
+
+    {
+      if (Auth::check()) {
+        return view('users.settings');
+      }
+      else {
+        return redirect('home');
+      }
+
+    }
+
+
     //fonction pour permettre aux profs de voir ses etudiants
 
     public function mesEtudiants()
@@ -169,7 +183,7 @@ class UserController extends Controller
       $mois = (int)$request['month'];
       $an = (int)$request['year'];
       $classrooms = Classroom::whereMonth('date', '=', $mois)->whereYear('date', '=', $an)->where('user_id', Auth::user()->id)->where('statut', 'Réalisée')->get();
-      return view('users.moisFactures', ['classrooms' => $classrooms, 'mois' => $mois, 'an' => $an]);
+      return view('includes.settings.mois_facturation_teacher', ['classrooms' => $classrooms, 'mois' => $mois, 'an' => $an]);
       }
       else {
         return redirect('home');

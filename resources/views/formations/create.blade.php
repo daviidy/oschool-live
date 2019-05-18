@@ -39,6 +39,14 @@
           </span>
         </div>
 
+        <div class="wrap-input100">
+          <input class="input100" value="" type="text" name="program" placeholder="Lien du programme (optionnel)">
+          <span class="focus-input100"></span>
+          <span class="symbol-input100">
+            <i class="fa fa-laptop" aria-hidden="true"></i>
+          </span>
+        </div>
+
 
         <label for=""> <strong>Catégorie</strong> </label>
         <select id="my-select1" name="category_id">

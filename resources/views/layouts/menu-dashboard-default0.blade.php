@@ -22,14 +22,15 @@
   <!-- Custom styles for this template -->
   <link href="/dashboard/css/style.css" rel="stylesheet">
   <link href="/dashboard/css/style-responsive.css" rel="stylesheet">
-  <script src="/dashboard/lib/chart-master/Chart.js"></script>
 
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
+  <script src="/dashboard/lib/chart-master/Chart.js"></script>
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.7.5/css/bootstrap-select.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.7.5/js/bootstrap-select.min.js"></script>
-
 
 
 
@@ -62,7 +63,6 @@ drift.load('2uy6g3spxi59');
 </script>
 <!-- End of Async Drift Code -->
 
-
 <!--
 <script>
 (function(t, e, s, o) {
@@ -70,8 +70,35 @@ drift.load('2uy6g3spxi59');
     t.SMCX = t.SMCX || [], e.getElementById(o) || (n = e.getElementsByTagName(s), c = n[n.length - 1], l = e.createElement(s), l.type = "text/javascript", l.async = !0, l.id = o, l.src = ["https:" === location.protocol ? "https://" : "http://", "widget.surveymonkey.com/collect/website/js/tRaiETqnLgj758hTBazgd74sI3xlunBQAIjQsFqSKW8haM9hHIihQtBRyMcuCT1_2B.js"].join(""), c.parentNode.insertBefore(l, c))
 })(window, document, "script", "smcx-sdk");
 </script>
-
 -->
+
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+
+  $('.progression').click(function(){
+
+    var currentProgression = $(this).parents(".card__inner").next();
+
+    currentProgression.toggle(function () {
+    currentProgression.css({maxHeight: "0"});
+}, function () {
+    currentProgression.css({maxHeight: "23rem"});
+});
+
+    $(this).toggleClass("expanded");
+
+
+
+
+
+  });
+
+});
+
+</script>
+
 
 
 
@@ -106,27 +133,10 @@ drift.load('2uy6g3spxi59');
   <section id="container">
 
 
-    <!--annonce a la udemy-->
-    <!--
-        <div class="ud-app-loader ud-component--smart-bar--app ud-app-loaded" data-module-id="smart-bar" ng-non-bindable="">
-          <div data-purpose="smart-bar-wrapper" class="mb0 " style="margin-bottom: 0px;">
-              <div data-purpose="smart-bar-container" class="" style="height: auto;">
-                  <div data-purpose="smart-bar" class="smart-bar--smart-bar--1rOkE smart-bar--smart-bar--teal--Qijai smart-bar--smart-bar-dark-theme--18ulO"><span style="font-size: 0px;"></span>
-                      <div class="smart-bar--smart-bar__content--3X42a basic-with-timer--centered-content--QtJd8">
-                          <div data-purpose="basic-with-timer" class="basic-with-timer--centered-content__text--2t0l3"><span data-purpose="smart-bar-copy" class=""><span class="smart-bar--smart-bar__title--1LFsk" data-purpose="smart-bar-title">
-                                      Oschool vous souhaite une excellente année 2019 !</span><span class="smart-bar--smart-bar__subtitle--I38FP" data-purpose="smart-bar-subtitle" role="presentation">
-                                        Nous vous réservons de très agréables surprises pour cette nouvelle année.
-                                      </span></span>
-                              <div data-purpose="smart-bar-timer" class="smart-bar-timer--timer-container--2mwOn"><span data-purpose="timer-x-days-left"> <a style="color: #fff;" href="#">Apprenez toujours !</a> </span></div>
-                          </div>
-                      </div>
-                      <div aria-label="Close" class="smart-bar--smart-bar__close--3mCup" data-purpose="smart-bar-hide" role="button" tabindex="0"><span class="udi-small udi udi-close"></span></div>
-                  </div>
-              </div>
-            </div>
-          </div>
 
-          <!--fin annonce a la udemy-->
+
+
+
 
 
     @if (session('status'))
@@ -134,44 +144,112 @@ drift.load('2uy6g3spxi59');
             {{ session('status') }}
         </div>
     @endif
-      <!--
-    @if(!count(Auth::user()->formations))
 
-    <div style="position: fixed; width: 100%;top: 0; z-index: 2000; color: #000;" class="alert alert-info">
-        La meilleure facon d'apprécier l'expérience Oschool, est de rejoindre un
-        de nos parcours. <a style="color: red;" href="https://code.oschool.ci">Rejoignez-nous maintenant !</a>
-    </div>
-    @endif
-  -->
     <!-- **********************************************************************************************************************************************************
         TOP BAR CONTENT & NOTIFICATIONS
         *********************************************************************************************************************************************************** -->
     <!--header start-->
-    <header style="" class="header black-bg">
+    <header style="{{ !count(Auth::user()->formations) ? 'top: 0px;' : '' }}" class="header black-bg">
+    @if(!count(Auth::user()->formations))
+      <!--annonce a la udemy-
+          <div class="ud-app-loader ud-component--smart-bar--app ud-app-loaded" data-module-id="smart-bar" ng-non-bindable="">
+            <div data-purpose="smart-bar-wrapper" class="mb0 " style="margin-bottom: 0px;">
+                <div data-purpose="smart-bar-container" class="" style="height: auto;">
+                    <div style="width: 104%;margin-left: -15px;" data-purpose="smart-bar" class="smart-bar--smart-bar--1rOkE smart-bar--smart-bar--teal--Qijai smart-bar--smart-bar-dark-theme--18ulO"><span style="font-size: 0px;"></span>
+                        <div class="smart-bar--smart-bar__content--3X42a basic-with-timer--centered-content--QtJd8">
+                            <div data-purpose="basic-with-timer" class="basic-with-timer--centered-content__text--2t0l3">
+                              <span data-purpose="smart-bar-copy" class="">
+                                <span class="smart-bar--smart-bar__title--1LFsk" data-purpose="smart-bar-title">
+                               Jusqu'au 17 février,
+                              </span>
+                               <span class="smart-bar--smart-bar__subtitle--I38FP" data-purpose="smart-bar-subtitle" role="presentation">
+                              entrez dans le PARCOURS de votre choix à seulement 10.000 FCFA, offrez une formation gratuitement
+                              à un être cher !
+                              </span>
+                            </span>
+                            <div data-purpose="smart-bar-timer" class="smart-bar-timer--timer-container--2mwOn"><span data-purpose="timer-x-days-left"> <a style="color: #000;" target="_blank" href="https://oschool.ci/#schools">Cliquez ici pour vous inscrire maintenant</a> </span></div>
+                            </div>
+                        </div>
+                        <div aria-label="Close" class="smart-bar--smart-bar__close--3mCup" data-purpose="smart-bar-hide" role="button" tabindex="0"><span class="udi-small udi udi-close"></span></div>
+                    </div>
+                </div>
+              </div>
+            </div>
+
+            <!--fin annonce a la udemy-->
+      @endif
+
       <div class="sidebar-toggle-box">
         <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
       </div>
       <!--logo start-->
       <a href="https://oschool.ci/" class="logo"><img width="100" src="/dashboard/img/thumbnail.png"></a>
       <!--logo end-->
-
-      <div class="top-menu">
-
-        <ul class="nav pull-right top-menu">
-
-
-          <li>
-
-            <a data-toggle="dropdown" class="dropdown-toggle change" href="#">Changer</a>
-            <ul class="dropdown-menu">
+      <!--si la date d'expiration - 10 jours est inférieur ou égal à aujourd'hui et si la date d'expiration est supérieure ou égale à aujourd'hui-->
+      @if(count(Auth::user()->formations) && !Auth::user()->isTeacher() && !Auth::user()->isAdmin() && Auth::user()->fin_abonnement->subDays(10) <= Carbon\Carbon::now() && Auth::user()->fin_abonnement >= Carbon\Carbon::now())
+      <div class="nav notify-row" id="top_menu">
+        <!--  notification start -->
+        <ul class="nav top-menu">
+          <!-- notification dropdown start-->
+          <li id="header_notification_bar" class="dropdown">
+            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+              <i class="fa fa-bell-o"></i>
+              <span class="badge bg-warning">1</span>
+              </a>
+            <ul class="dropdown-menu extended notification">
+              <div class="notify-arrow notify-arrow-yellow"></div>
               <li>
-                <p> <a href="/teacher">Tableau de bord prof</a> </p>
+                <p class="yellow">Vous avez une nouvelle notification</p>
+              </li>
+              <li>
+                <a href="#" data-toggle="modal" data-target="#myModal">
+                  <span class="label label-danger"><i class="fa fa-bolt"></i></span>
+                  Votre abonnement expire <br>
+                  le {{Carbon\Carbon::parse(Auth::user()->fin_abonnement)->format('d-m-Y H:i')}}.
+                  </a>
               </li>
 
             </ul>
-
           </li>
+          <!-- notification dropdown end -->
+        </ul>
+        <!--  notification end -->
+      </div>
 
+      <!--sinon si la date d'expiration est inférieure à aujourd'hui-->
+      @elseif(count(Auth::user()->formations) && !Auth::user()->isTeacher() && !Auth::user()->isAdmin() && Auth::user()->fin_abonnement < Carbon\Carbon::now())
+      <div class="nav notify-row" id="top_menu">
+        <!--  notification start -->
+        <ul class="nav top-menu">
+          <!-- notification dropdown start-->
+          <li id="header_notification_bar" class="dropdown">
+            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+              <i class="fa fa-bell-o"></i>
+              <span class="badge bg-warning">1</span>
+              </a>
+            <ul class="dropdown-menu extended notification">
+              <div class="notify-arrow notify-arrow-yellow"></div>
+              <li>
+                <p class="yellow">Vous avez une nouvelle notification</p>
+              </li>
+              <li>
+                <a href="#" data-toggle="modal" data-target="#myModal">
+                  <span class="label label-danger"><i class="fa fa-bolt"></i></span>
+                  Votre abonnement a expiré. <br>
+                  Merci de le renouveler.
+                  </a>
+              </li>
+
+            </ul>
+          </li>
+          <!-- notification dropdown end -->
+        </ul>
+        <!--  notification end -->
+      </div>
+      @endif
+      <div class="top-menu">
+
+        <ul class="nav pull-right top-menu">
 
           <li>
 
@@ -198,15 +276,33 @@ drift.load('2uy6g3spxi59');
       <div id="sidebar" class="nav-collapse ">
         <!-- sidebar menu start-->
         <ul style="{{ !count(Auth::user()->formations) ? 'margin-top: 120px;' : '' }}" class="sidebar-menu" id="nav-accordion">
-          <h5 class="centered">{{Auth::user()->name}} <br> ( {{Auth::user()->type3}} ) </h5>
-          <!--
+        <!--  <p class="centered"><a href="{{url('home')}}"><img src="/avatars/users/{{Auth::user()->photo}}" class="img-circle" width="80"></a></p> -->
+          <h5 class="centered">{{Auth::user()->name}} <br> ( student ) </h5>
+          @if(count(Auth::user()->formations))
           <li class="mt">
-            <a href="/dashboard-admin">
-              <i class="fa fa-laptop"></i>
-              <span>Profil</span>
+            <a href="{{route('classrooms.index')}}">
+              <i class="fa fa-dashboard"></i>
+              <span>Mes sessions</span>
               </a>
           </li>
-        -->
+          @endif
+
+          @if(count(Auth::user()->formations))
+          <li class="mt">
+            <a href="{{ url('projets') }}">
+              <i class="fa fa-dashboard"></i>
+              <span>Mes projets</span>
+              </a>
+          </li>
+          @endif
+
+          <li class="mt">
+            <a href="/documentsStudent">
+              <i class="fa fa-book"></i>
+              <span>Guides étudiants</span>
+              </a>
+          </li>
+
           <li class="mt">
             <a target="_blank" href="https://discord.gg/hhbzcHE">
               <i class="fa fa-group"></i>
@@ -215,173 +311,43 @@ drift.load('2uy6g3spxi59');
           </li>
 
 
+          @auth
 
-          <li class="sub-menu">
-            <a href="javascript:;">
-              <i class="fa fa-desktop"></i>
-              <span>Formations</span>
-              </a>
-            <ul class="sub">
 
-              <li>
-
-                <a  style="border-radius:8px; text-decoration: underline; background-color: transparent;" class="logout" href="{{ route('formations.index') }}">
-                    Toutes les formations
-                </a>
-
-              </li>
-
-              <li>
-
-                <a  style="border-radius:8px; text-decoration: underline; background-color: transparent;" class="logout" href="{{ route('categories.index') }}">
-                    Toutes les catégories
-                </a>
-
-              </li>
-
-              <li>
-
-                <a  style="border-radius:8px; text-decoration: underline; background-color: transparent;" class="logout" href="{{ route('projets.create') }}">
-                    Créer un projet
-                </a>
-
-              </li>
-
-              <li>
-
-                <a  style="border-radius:8px; text-decoration: underline; background-color: transparent;" class="logout" href="{{ route('guides.create') }}">
-                    Ajouter un guide
-                </a>
-
-              </li>
-              <!--
-              <li>
-
-                <a  style="border-radius:8px; text-decoration: underline; background-color: transparent;" class="logout" href="{{ route('supportformations.create') }}">
-                    Ajouter un support de cours
-                </a>
-
-              </li>
-            -->
-              <li>
-
-                <a  style="border-radius:8px; text-decoration: underline; background-color: transparent;" class="logout" href="{{ route('formations.create') }}">
-                    Créer une formation
-                </a>
-
-              </li>
-              <li>
-
-                <a  style="border-radius:8px; text-decoration: underline; background-color: transparent;" class="logout" href="{{ route('progressions.create') }}">
-                    Créer une progression
-                </a>
-
-              </li>
-              <li>
-
-                <a style="border-radius:8px; text-decoration: underline; background-color: transparent;" class="logout" href="{{ route('categories.create') }}">
-                    Créer une catégorie
-                </a>
-
-              </li>
-
-              <li>
-
-                <a style="border-radius:8px; text-decoration: underline; background-color: transparent;" class="logout" href="{{ route('partners.create') }}">
-                    Créer un partenaire
-                </a>
-
-              </li>
-
-              <li>
-
-                <a style="border-radius:8px; text-decoration: underline; background-color: transparent;" class="logout" href="{{ route('prerequisites.create') }}">
-                    Créer un prérequis
-                </a>
-
-              </li>
-
-              <li>
-
-                <a style="border-radius:8px; text-decoration: underline; background-color: transparent;" class="logout" href="{{ route('languages.create') }}">
-                    Créer une langue
-                </a>
-
-              </li>
-
-              <li>
-
-                <a style="border-radius:8px; text-decoration: underline; background-color: transparent;" class="logout" href="{{ route('achats.create') }}">
-                    Ajouter un achat
-                </a>
-
-              </li>
-
-            </ul>
-          </li>
-
+          @if(count(Auth::user()->formations))
+          <!--
           <li class="mt">
-            <a href="{{route('users.index')}}">
-              <i class="fa fa-group"></i>
-              <span>Liste des utilisateurs</span>
+            <a href="{{ url('progression', Auth::user()) }}">
+              <i class="fa fa-dashboard"></i>
+              <span>Ma progression</span>
               </a>
           </li>
+        -->
 
-          <li class="sub-menu">
-            <a href="javascript:;">
-              <i class="fa fa-desktop"></i>
-              <span>Emails</span>
-              </a>
-            <ul class="sub">
+          @endif
 
-              <li>
 
-                <a data-toggle="modal" data-target="#email"  style="border-radius:8px; text-decoration: underline; background-color: transparent;" class="logout">
-                    Créer un template
-                </a>
-
-              </li>
-              <!--
-              <li>
-
-                <a  style="border-radius:8px; text-decoration: underline; background-color: transparent;" class="logout" href="{{ route('supportformations.create') }}">
-                    Ajouter un support de cours
-                </a>
-
-              </li>
-            -->
-              <li>
-
-                <a  style="border-radius:8px; text-decoration: underline; background-color: transparent;" class="logout" href="{{ route('emails.index') }}">
-                    Modifier un template actuel
-                </a>
-
-              </li>
-
-              <li>
-
-                <a  style="border-radius:8px; text-decoration: underline; background-color: transparent;" class="logout" href="/import">
-                    Importer un fichier CSV pour les utilisateurs par intérêt
-                </a>
-
-              </li>
-
-            </ul>
-          </li>
-
+          @if(count(Auth::user()->formations))
           <li class="mt">
-            <a href="/paiements">
+            <a href="{{url('achats')}}">
               <i class="fa fa-money"></i>
-              <span>Etat des paiements</span>
+              <span>Etat de mon abonnement</span>
             </a>
           </li>
-
+          @endif
           <li class="mt">
-            <a href="/rapportProf">
-              <i class="fa fa-user"></i>
-              <span>Sessions des professeurs</span>
-            </a>
+            <a href="/dashboard-default">
+              <i class="fa fa-laptop"></i>
+              <span>Profil</span>
+              </a>
           </li>
+        @endauth
+      <!--    <li class="mt">
+            <a href="/programme">
+              <i class="fa fa-calendar"></i>
+              <span>Programme de la formation</span>
+              </a>
+          </li> -->
 
           <!--li>
             <a href="inbox.html">
@@ -395,53 +361,6 @@ drift.load('2uy6g3spxi59');
       </div>
     </aside>
     <!--sidebar end-->
-
-
-
-
-
-    <!-- The Modal -->
-    <div class="modal fade" id="email">
-    <div class="modal-dialog">
-    <div class="modal-content">
-
-    <!-- Modal Header -->
-    <div class="modal-header">
-    <h4 style="font-size: 24px;" class="modal-title">Créer un email</h4>
-    <button type="button" class="close" data-dismiss="modal">&times;</button>
-    </div>
-
-    <!-- Modal body -->
-    <div class="modal-body">
-      <form method="post" action="{{ route('emails.store') }}">
-      {{ csrf_field() }}
-
-      <div class="form-group">
-        <label for="">Titre du template</label>
-        <input type="text" name="titre" value="">
-      </div>
-      <div class="form-group">
-        <label for="">Lien de l'appel à l'action</label>
-        <input type="url" name="lien" value="">
-      </div>
-      <button type="submit" class="btn btn-primary">Envoyer</button>
-      </form>
-    </div>
-
-    <!-- Modal footer -->
-    <div class="modal-footer">
-    <button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
-    </div>
-
-    </div>
-    </div>
-    </div>
-
-    <!--end modal-->
-
-
-
-
 
     <!-- The Modal -->
     <div class="modal fade" id="popup">
@@ -495,7 +414,7 @@ drift.load('2uy6g3spxi59');
 
     <!-- Modal body -->
     <div class="modal-body">
-    <form method="post" action="{{url('envoiRenew')}}">
+    <form method="post" action="{{url('envoi')}}">
     {{ csrf_field() }}
 
     <div class="form-group">
@@ -504,11 +423,11 @@ drift.load('2uy6g3spxi59');
     </div>
     <div class="form-group">
       <label for="">Nom</label>
-      <input type="text" class="form-control" id="" placeholder="Nom" name="nom" required>
+      <input type="text" class="form-control" value="{{Auth::user()->nom}}" id="" placeholder="Nom" name="nom" required>
     </div>
     <div class="form-group">
       <label for="">Prénoms</label>
-      <input type="text" class="form-control" id="" placeholder="Prénoms" name="prenoms" required>
+      <input type="text" class="form-control" value="{{Auth::user()->prenoms}}" id="" placeholder="Prénoms" name="prenoms" required>
     </div>
     <div class="form-group">
       <label for="">Numéro de téléphone</label>
@@ -525,14 +444,24 @@ drift.load('2uy6g3spxi59');
         </select>
         @endforeach
       @endif
-      @else
-      <select class="" name="formation">
-        <option value="Développeur Web Junior">Développeur Web Junior</option>
-      </select>
       @endauth
     </div>
 
-    <div class="form-group">
+    <div style="display: none;" class="form-group">
+      <label for="">user id</label>
+      <select class="" name="user_id">
+        <option value="{{Auth::user()->id}}">user id</option>
+      </select>
+    </div>
+
+    <div style="display: none;" class="form-group">
+      <label for="">type</label>
+      <select class="" name="type">
+        <option value="renew">type</option>
+      </select>
+    </div>
+
+    <div style="display: none;" class="form-group">
       <label for="">Prix</label>
       <select class="" name="montant">
         <option value="30000">30.000 FCFA</option>
@@ -552,22 +481,6 @@ drift.load('2uy6g3spxi59');
     </div>
 
     <!--end modal-->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -595,6 +508,28 @@ drift.load('2uy6g3spxi59');
     </footer>
     <!--footer end-->
   </section>
+
+
+  <script>
+  function openTab(evt, tabName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("skills-hub-unit-desktop--skill-link--3SpB6");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" skills-hub-unit-desktop--is-active--3ql8W", "");
+    }
+    document.getElementById(tabName).style.display = "block";
+    evt.currentTarget.className += " skills-hub-unit-desktop--is-active--3ql8W";
+  }
+
+  // Get the element with id="defaultOpen" and click on it
+  document.getElementById("defaultOpen").click();
+  </script>
+
+
   <!-- js placed at the end of the document so the pages load faster -->
   <script src="/dashboard/lib/jquery/jquery.min.js"></script>
   <script src="/dashboard/lib/bootstrap/js/bootstrap.min.js"></script>
@@ -628,38 +563,6 @@ drift.load('2uy6g3spxi59');
       google.maps.event.addDomListener(window, 'click', initialize);
     });
   </script>
-
-
-  <script>
-    $(document).ready(function(){
-
-     fetch_customer_data();
-
-     function fetch_customer_data(query = '')
-     {
-      $.ajax({
-       url:"{{ route('live_search.action') }}",
-       method:'GET',
-       data:{query:query},
-       dataType:'json',
-       success:function(data)
-       {
-        $('#students').html(data.table_data);
-        $('#total_records').text(data.total_data);
-       }
-      })
-     }
-
-     $(document).on('keyup', '#search', function(){
-      var query = $(this).val();
-      fetch_customer_data(query);
-     });
-    });
-  </script>
-
-
-
-
 </body>
 
 </html>

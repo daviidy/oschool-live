@@ -18,7 +18,7 @@ class TeacherController extends Controller
     {
       $teachers = User::orderby ('id','asc')->where('type2', 'teacher')->paginate(30);
 
-        return view('users.dashboard-teacher', ['teachers' => $teachers]);
+        return view('users.dashboard', ['teachers' => $teachers]);
     }
 
     /**

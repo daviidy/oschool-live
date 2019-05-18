@@ -10,7 +10,7 @@
   <h5 _ngcontent-c29="" class="ng-star-inserted">{{$formation->duration}}</h5>
   <!---->
   <!---->
-  <p _ngcontent-c29="" class="x-small ng-star-inserted">Et des séances hebdomadaires de 1 - 2 H avec un formateur</p>
+  <p _ngcontent-c29="" class="x-small ng-star-inserted">Et des séances hebdomadaires avec un formateur</p>
   <!---->
   <!---->
   <!---->

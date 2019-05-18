@@ -84,6 +84,20 @@ class FormationController extends Controller
   }//fin fonction
 
 
+  //pour afficher la liste des projets par formation
+
+  public function projects(Formation $formation)
+  {
+    if (Auth::check() && count(Auth::user()->formations)) {
+
+      return view('formations.projects', ['formation' => $formation]);
+
+    }
+    else {
+      return redirect('home');
+    }
+  }
+
 
 
 
@@ -258,6 +272,6 @@ class FormationController extends Controller
     public function destroy(Formation $formation)
     {
         $formation->delete();
-        return redirect('formations')->with('status', 'Formations supprimée de la base de données' );
+        return redirect('formations')->with('status', 'Formation supprimée de la base de données' );
     }
 }
