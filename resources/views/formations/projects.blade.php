@@ -159,7 +159,7 @@
                     <p>Les cours qu'il faut suivre pour réaliser ce projet:</p><br>
                     <ul>
                       @foreach($projet->progressions as $progression)
-                      <li> <img src="https://drive.google.com/open?id=1vkj57MemWFiaWxCubVTLxR4VJ3Q7Pm-_" alt="">&nbsp; <a target="_blank" href="{{$progression->lien}}">{{$progression->titre}}</a> </li>
+                      <li> <img src="https://oschool.ci/wp-content/uploads/2019/05/image-laptop@1x-e0453c763ea5449882c8db6988b1bec11edcc93cca14c1ccdba29eb425727dbd-460x294.png" alt="">&nbsp; <a style="color: #02b3e4;font-size: 18px;" target="_blank" href="{{$progression->lien}}">{{$progression->titre}}</a> </li>
                       @endforeach
                     </ul>
                   </div>
