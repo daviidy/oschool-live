@@ -55,7 +55,7 @@
                       </svg></i> Date</h3>
                   <h4 class="vds-heading--h4 vds-spacing--stack-3x">
 
-                      {{ Carbon\Carbon::parse($classroom->date)->format('d-m-Y') }} avec <a href="{{url('users', $classroom->user_id)}}">{{$classroom->formateur}}</a>
+                      {{ Carbon\Carbon::parse($classroom->date)->format('d-m-Y H:i') }} avec <a href="{{url('users', $classroom->user_id)}}">{{$classroom->formateur}}</a>
 
                   </h4>
                 </div>
@@ -88,7 +88,7 @@
                         </svg></i> Session (cliquez sur la carte pour voir le CR)</h3>
                     <h4 class="vds-heading--h4 vds-spacing--stack-3x">
 
-                        Date: {{ Carbon\Carbon::parse($classroom->date)->format('d-m-Y') }} avec {{$classroom->formateur}}
+                        Date: {{ Carbon\Carbon::parse($classroom->date)->format('d-m-Y H:i') }} avec {{$classroom->formateur}}
 
                     </h4>
                   </div>
@@ -205,7 +205,7 @@
                           </svg></i> Date</h3>
                       <h4 class="vds-heading--h4 vds-spacing--stack-3x">
 
-                          {{ Carbon\Carbon::parse($classroom->date)->format('d-m-Y') }} avec <a href="{{url('users', $classroom->idEtudiant)}}">{{$classroom->etudiant}}</a>
+                          {{ Carbon\Carbon::parse($classroom->date)->format('d-m-Y H:i') }} avec <a href="{{url('users', $classroom->idEtudiant)}}">{{$classroom->etudiant}}</a>
 
                       </h4>
                     </div>
@@ -246,7 +246,7 @@
                             </svg></i> Session (cliquez sur la carte pour voir le CR)</h3>
                         <h4 class="vds-heading--h4 vds-spacing--stack-3x">
 
-                            Date: {{ Carbon\Carbon::parse($classroom->date)->format('d-m-Y') }}
+                            Date: {{ Carbon\Carbon::parse($classroom->date)->format('d-m-Y H:i') }}
                             avec {{$classroom->etudiant}}
 
                         </h4>

@@ -71,9 +71,9 @@
                 </tr>
               </thead>
               <tbody>
-                @foreach($sessions->sortByDesc('date') as $classroom) 
+                @foreach($sessions->sortByDesc('date') as $classroom)
                 <tr>
-                  <td><a href="{{url('users', $classroom->idEtudiant)}}">{{$classroom->etudiant}}</a></td>
+                  <td><a href="{{url('users', $classroom->idEtudiant)}}">{{$classroom->etudiant}}</a></td> 
                   <td> <a data-toggle="modal" data-target="#myModal{{$classroom->id}}" href="#">{{ Carbon\Carbon::parse($classroom->date)->format('d-m-Y H:i') }}: voir le compte rendu</a></td>
                   <td style="display: flex; flex-wrap: wrap;">
 
