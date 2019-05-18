@@ -232,7 +232,7 @@
                                 <h4 class="hidden-xs _nav--submenu-header--2VnVI form--header-text--ZDMyT">Compte</h4>
 
                                 <ul id="tabs" class="_nav--submenu-wrapper--3Mz7w">
-                                  <li class="_nav--submenu-container--3FWhR"><a href="#info" class="active _nav--submenu-link--ZUUQK _nav--item--3mD7y">Informations personnelles </a></li>
+                                  <li class="_nav--submenu-container--3FWhR"><a href="#info" class="activetab _nav--submenu-link--ZUUQK _nav--item--3mD7y">Informations personnelles </a></li>
                                   <!--
                                   <li class="_nav--submenu-container--3FWhR"><a href="#password" class="_nav--submenu-link--ZUUQK _nav--item--3mD7y">Mot de passe </a></li>
                                 -->

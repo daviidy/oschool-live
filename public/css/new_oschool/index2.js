@@ -1,11 +1,11 @@
 $(document).ready(function($) {
 $('.box').hide();
 $('.box:first').show();
-$('#tabs li a:first').addClass('active');
+$('#tabs li a:first').addClass('activetab');
 $('#tabs li a').click(function(event) {
- $('#tabs li a').removeClass('active');
- $('#tabs2 li a').removeClass('active');
- $(this).addClass('active');
+ $('#tabs li a').removeClass('activetab');
+ $('#tabs2 li a').removeClass('activetab');
+ $(this).addClass('activetab');
  $('.box').hide();
 
  var selectTab = $(this).attr("href");
@@ -15,9 +15,9 @@ $('#tabs li a').click(function(event) {
 });
 
 $('#tabs2 li a').click(function(event) {
- $('#tabs2 li a').removeClass('active');
- $('#tabs li a').removeClass('active');
- $(this).addClass('active');
+ $('#tabs2 li a').removeClass('activetab');
+ $('#tabs li a').removeClass('activetab');
+ $(this).addClass('activetab');
  $('.box').hide();
 
  var selectTab = $(this).attr("href");

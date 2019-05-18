@@ -231,7 +231,7 @@
 
                                 <h4 class="hidden-xs _nav--submenu-header-second--3A0tH _nav--submenu-header--2VnVI form--header-text--ZDMyT">Facturation</h4>
                                 <ul id="tabs2" class="_nav--submenu-wrapper--3Mz7w">
-                                  <li class="active _nav--submenu-container--3FWhR"><a href="#state" class="_nav--submenu-link--ZUUQK _nav--item--3mD7y">Etat </a></li>
+                                  <li class="activetab _nav--submenu-container--3FWhR"><a href="#state" class="_nav--submenu-link--ZUUQK _nav--item--3mD7y">Etat </a></li>
                                   <li class="_nav--submenu-container--3FWhR"><a href="/settings" class="_nav--submenu-link--ZUUQK _nav--item--3mD7y">Revenir aux paramètres</a></li>
                                 </ul>
                               </nav>
