@@ -393,12 +393,12 @@ class UserController extends Controller
     public function show(User $user)
     {
         if ($user->type == 'default' && $user->type2 !== 'teacher' && $user->type3 !== 'admin') {
-          $classrooms = Classroom::where('etudiant', $user->name)->paginate(30);
+          $classrooms = Classroom::where('etudiant', $user->name)->orderby ('id','desc')->paginate(30);
           $teachers = User::orderby ('id','asc')->where('type2', 'teacher')->paginate(30);
           return view('users.show', ['user' => $user, 'teachers' => $teachers, 'classrooms' => $classrooms]);
         }
         elseif ($user->type2 == 'teacher') {
-          $classrooms = Classroom::where('formateur', $user->name)->paginate(30);
+          $classrooms = Classroom::where('formateur', $user->name)->orderby ('id','desc')->paginate(30);
           $teachers = User::orderby ('id','asc')->where('type2', 'teacher')->paginate(30);
           return view('users.show', ['user' => $user, 'teachers' => $teachers, 'classrooms' => $classrooms]);
         }
