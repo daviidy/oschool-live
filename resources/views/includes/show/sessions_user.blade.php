@@ -9,7 +9,7 @@
                 <li>
                     <dl>
                         <dd title="Connected" class="setting-linked-accounts--connected--2gX8u"><span>Session</span></dd><dt>{{ Carbon\Carbon::parse($classroom->date)->format('d-m-Y') }}</dt>
-                        <dd> <a href="#" data-toggle="modal" data-target="#myModal{{$classroom->id}}">Voir le compte rendu</a> </dd>
+                        <dd> <a class="lien" href="#" data-toggle="modal" data-target="#myModal{{$classroom->id}}">Voir le compte rendu</a> </dd>
                         @if($classroom->statut == "Planifié")
                         <dd class="setting-linked-accounts--status--2jRiF"><a style="color: orange;" href="#"><span>{{ $classroom->statut }}</span></a></dd>
                         @elseif($classroom->statut == "Annulée")
@@ -48,5 +48,6 @@
 
             </ul>
         </div>
+        {{ $classrooms->links() }}
     </section>
 </div>

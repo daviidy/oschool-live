@@ -3,6 +3,10 @@
   font-weight: bold;
 }
 
+.lien{
+  color: #4D90CC;
+}
+
 .pagination{
   display: flex;
 }
