@@ -1,7 +1,7 @@
 @extends('layouts.menu-dashboard-default')
 @section('titre', 'Mes sessions')
 
-@if(Auth::user()->type == "default" && Auth::user()->type3 !== "admin")
+@if(Auth::user()->type == "default" && Auth::user()->type3 !== "admin" && Auth::user()->type2 !== "teacher")
 
 
 
@@ -157,7 +157,7 @@
 
     <!--si c'est un teacher-->
 
-    @else
+    @elseif(Auth::user()->type2 == "teacher")
 
 
 
