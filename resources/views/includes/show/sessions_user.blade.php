@@ -1,11 +1,11 @@
 
 
-<div id="livrables" class="box content">
+<div id="sessions" class="box content">
     <section class="setting-linked-accounts--content-container--3172B form--flex-column--g8OLQ">
         <div class="setting-linked-accounts--main--1H5vk form--main--31YLe">
-            <h1 class="setting-linked-accounts--content-header--2s99F form--header-text--ZDMyT">Livrables</h1>
+            <h1 class="setting-linked-accounts--content-header--2s99F form--header-text--ZDMyT">Sessions de {{$user->name}}</h1>
             <ul>
-              @foreach($classroomsstudents->sortByDesc('date') as $classroom)
+              @foreach($classrooms->sortByDesc('date') as $classroom)
                 <li>
                     <dl>
                         <dd title="Connected" class="setting-linked-accounts--connected--2gX8u"><span>Session</span></dd><dt>{{ Carbon\Carbon::parse($classroom->date)->format('d-m-Y') }}</dt>
