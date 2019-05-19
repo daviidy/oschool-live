@@ -67,7 +67,7 @@
                     <div class="row">
 
                       <!-- /col-md-6 -->
-                      <div class="col-md-6 detailed">
+                      <div class="col-md-6 detailed"> 
                         @auth
                         @if (Auth::user()->isTeacher())
                         <h4>A propos</h4>

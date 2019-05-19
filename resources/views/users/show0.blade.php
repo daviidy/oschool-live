@@ -20,7 +20,7 @@
                   <h6>E-mail : {{ $user->email }}</h6>
 
                   <h5> <a href="{{url('inscrire', $user)}}">Inscrire {{$user->name}} à une formation</a> </h5>
-                  
+
                 </div>
               </div>
               <!-- /col-md-4 -->
@@ -109,7 +109,7 @@
                             @if(empty($user->teacher))
                             <h6>Aucun formateur</h6>
                             @else
-                            <h6>{{$user->teacher->name}}</h6>
+                            <h6>{{$user->teacher->name}}</h6> 
                             @endif
                           </div>
                           @endif

@@ -4,26 +4,10 @@
         <div class="vds-loading vds-loading--md" role="status" aria-label="Loading">
             <div class="vds-loading__children">
                 <h1 class="_subscriptions--title--2nNpU">A propos de {{$user->name}}</h1>
-                <div class="_subscriptions--no-subscriptions--3Pm1g">
-                  <img width="20" src="/avatars/users/{{$user->teacher->photo}}" alt="{{$user->name}}">
-                    <div>
-                        <!--
-                        <h3 class="vds-heading--h3 vds-spacing--stack-2x">You have yet to enroll in a Nanodegree program.</h3>
-                      -->
-                      @if($user->teacher->id !== 0)
-                        <a class="vds-button vds-button--primary" href="{{url('users', $user->teacher->id)}}" role="button" tabindex="0">
-                          <span class="vds-button__content">Nom du formateur: {{$user->teacher->name}}</span>
-                        </a>
+                @if($user->teacher && $user->teacher->id !== 0)
+                  @include('includes.show.user_teacher')
+                @endif
 
-                        @else
-                        <a class="vds-button vds-button--primary" href="#" role="button" tabindex="0">
-                          <span class="vds-button__content">Nom du formateur: {{$user->teacher->name}}</span>
-                        </a>
-
-                        @endif
-                    </div>
-
-                </div>
                 <div class="_subscriptions--billing-card--1_rR6">
                     <div class="_billing-card--item--JtPox _subscription-card--item--agyqV">
                         <div>
@@ -32,23 +16,46 @@
                             </div>
                             <div class="_add-payment--add-payment-method--3SAzD"><img src="/avatars/users/{{$user->photo}}" alt="Illustration of a ghost">
                                 <div>
-                                  @if($user->type == 'default')
-                                    <p class="vds-text vds-spacing--stack-3x">
-                                      Etudiant
-                                    </p><br>
-                                  @endif
-                                  @if($user->type2 == 'teacher')
-                                    <p class="vds-text vds-spacing--stack-3x">
-                                      Mentor
-                                    </p><br>
-                                  @endif
-                                  @if($user->type3 == 'admin')
-                                    <p class="vds-text vds-spacing--stack-3x">
-                                      Admin
-                                    </p><br><br>
-                                  @endif
 
-                                  {{$user->description}}<br><br>
+                                    <p class="vds-text vds-spacing--stack-3x">
+                                      <span class="info_title">Type:</span>
+                                      @if($user->type == 'default')
+                                      Etudiant,
+                                      @endif
+                                      @if($user->type2 == 'teacher')
+                                      Mentor,
+                                      @endif
+                                      @if($user->type3 == 'admin')
+                                      Administrateur
+                                      @endif
+                                    </p>
+
+                                    @if($user->type2 == 'teacher')
+                                    <p class="vds-text vds-spacing--stack-3x">
+
+
+                                      <span class="info_title">Max d'étudiants acceptés:</span>
+                                      {{$user->max_students}}
+
+
+                                    </p>
+
+                                    <p class="vds-text vds-spacing--stack-3x">
+
+
+                                      <span class="info_title">Places restantes:</span>
+                                      {{$user->max_students - $user->students->count()}}
+
+
+                                    </p>
+                                    @endif
+
+                                    <p class="vds-text vds-spacing--stack-3x">
+
+                                    <span class="info_title">A propos de {{$user->name}}:</span>  <br>
+                                      {{$user->description}}
+
+                                    </p><br>
 
                                     <button class="vds-button vds-button--secondary vds-button--small"
                                       type="button">
