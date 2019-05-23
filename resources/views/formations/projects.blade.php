@@ -175,7 +175,7 @@
                 <div class="_lesson-expanded--action-info--3kCSZ"><button style="background-color:#4D90CC" class="vds-button vds-button--secondary vds-button--small vds-button__icon vds-button__icon--right" type="button"><span class="vds-button__content"><i
                         class="vds-icon" role="img" aria-hidden="true"><svg viewBox="0 0 32 32">
                           <path d="M22.586 17H7a1 1 0 0 1 0-2h15.586l-6.293-6.293a1 1 0 1 1 1.414-1.414l8 8a1 1 0 0 1 0 1.414l-8 8a1 1 0 0 1-1.414-1.414L22.586 17z" fill-rule="nonzero"></path>
-                        </svg></i><a target="_blank" style="color: #fff;" href="{{$projet->guideprojet->link}}">Voir le guide de réalisation</a></span></button>
+                        </svg></i><a target="_blank" style="color: #fff;" href="{{$projet->guideprojet->link}}">Guide Formateur</a></span></button>
                 </div>
 
                 <div class="_lesson-expanded--action-info--3kCSZ"><button style="background-color: yellow;" class="vds-button vds-button--secondary vds-button--small vds-button__icon vds-button__icon--right" type="button"><span class="vds-button__content"><i
