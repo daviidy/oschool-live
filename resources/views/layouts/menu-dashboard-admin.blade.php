@@ -254,6 +254,14 @@ drift.load('2uy6g3spxi59');
                 </a>
 
               </li>
+
+              <li>
+
+                <a  style="border-radius:8px; text-decoration: underline; background-color: transparent;" class="logout" href="{{ route('guideprojets.create') }}">
+                    Ajouter un guide projet
+                </a>
+
+              </li>
               <!--
               <li>
 

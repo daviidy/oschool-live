@@ -27,4 +27,10 @@ class Projet extends Model
     return $this->belongsToMany('App\Progression');
   }
 
+  //a projetct has one guide
+  public function guideprojet()
+  {
+      return $this->hasOne('App\Guideprojet');
+  }
+
 }

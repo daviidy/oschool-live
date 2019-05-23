@@ -33,7 +33,7 @@ class GuideController extends Controller
      */
     public function create()
     {
-        return view('guides.create');
+        return view('guides.create'); 
     }
 
     /**

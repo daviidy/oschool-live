@@ -183,6 +183,8 @@ Route::resource('categories','CategoryController');
 
 Route::resource('guides','GuideController');
 
+Route::resource('guideprojets','GuideprojetController');
+
 Route::get('/projects/{formation}', 'FormationController@projects')->name('projects');
 
 Route::post('/inscription', 'UserController@inscription')->name('inscription');
@@ -296,7 +298,7 @@ Route::get('/factures', 'UserController@factures');
 
 Route::post('/moisFactures', 'UserController@moisFactures');
 
-Route::get('/settings', 'UserController@settings'); 
+Route::get('/settings', 'UserController@settings');
 
 //voir facturation pour les admins
 

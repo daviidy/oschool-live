@@ -1,5 +1,5 @@
 @extends('layouts.menu-login')
-@section('title', 'Ajouter nun guide')
+@section('title', 'Ajouter un guide projet')
 
 @section('content')
 
@@ -11,9 +11,9 @@
         <img style="display: block;margin-left: auto;margin-right: auto;width: 25%;" src="/formcreate/images/img-01.png" alt="IMG">
       </div>
 
-      <form method="post" enctype="multipart/form-data" action="{{ route('guides.store') }}" class="login100-form validate-form">
+      <form method="post" enctype="multipart/form-data" action="{{ route('guideprojets.store') }}" class="login100-form validate-form">
         <span class="login100-form-title">
-          Ajouter un guide pour étudiant ou formateur
+          Ajouter un guide projet
         </span>
         {{ csrf_field() }}
 
@@ -33,16 +33,20 @@
           </span>
         </div>
 
-        <div class="wrap-input100 validate-input">
-          <label for="">Ecrivez une description courte</label>
-          <textarea required placeholder="Description" rows="50" style="height: 300px;" class="input100" name="description" placeholder=""></textarea>
+        <div class="wrap-input100 validate-input" data-validate = "Etudiant">
+          <label for="">Quel est le type du guide ?</label>
+          <select name="type" class="form-control" style="" required>
+            <option value="video">Vidéo</option>
+            <option value="texte">Texte</option>
+          </select>
         </div>
 
         <div class="wrap-input100 validate-input" data-validate = "Etudiant">
-          <label for="">A qui s'adresse ce guide ?</label>
-          <select name="audience" class="form-control" style="" required>
-            <option value="teacher">Formateurs</option>
-            <option value="student">Etudiants</option>
+          <label for="">Quel est le projet concerné ?</label>
+          <select name="projet_id" class="form-control" style="" required>
+            @foreach($projets as $projet)
+            <option value="{{$projet->id}}">{{$projet->titre}}</option>
+            @endforeach
           </select>
         </div>
 

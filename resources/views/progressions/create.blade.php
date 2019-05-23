@@ -55,6 +55,17 @@
               <input class="input100" type="url" name="lien" value="" required>
           </div>
 
+					<div class="wrap-input100 input100-select bg1">
+            <span class="label-input100">Tyoe de la progression</span>
+            <div>
+              <select class="js-select3" name="formation_id">
+                <option value="texte">Texte</option>
+								<option value="video">Vidéo</option>
+              </select>
+              <div class="dropDownSelect3"></div>
+            </div>
+          </div>
+
           <div class="wrap-input100 input100-select bg1">
             <span class="label-input100">Formation</span>
             <div>

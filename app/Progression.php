@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Progression extends Model
 {
-  protected $fillable = ['formation', 'titre', 'formation_id', 'lien'];
+  protected $fillable = ['formation', 'titre', 'formation_id', 'lien', 'type'];
 
   //Relation one-to-many : ici, une progression concerne un seul étudiant
 

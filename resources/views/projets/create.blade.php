@@ -59,7 +59,7 @@
 					</div>
 
           <div class="wrap-input100 input100-select bg1">
-						<span class="label-input100">Formation concernée</span>
+						<span class="label-input100">Formation concernée</span> 
 						<div>
 							<select required class="js-select3" name="formation_id">
                 @foreach($formations as $formation)

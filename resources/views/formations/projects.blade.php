@@ -28,7 +28,7 @@
                         <p>Les cours qu'il faut suivre pour réaliser ce projet:</p><br>
                         <ul>
                           @foreach($projet->progressions as $progression)
-                          <li> <img style="width: 8%;" src="https://oschool.ci/wp-content/uploads/2019/05/image-laptop@1x-e0453c763ea5449882c8db6988b1bec11edcc93cca14c1ccdba29eb425727dbd-460x294.png" alt="">&nbsp; <a style="color: #02b3e4;font-size: 18px;" target="_blank" href="{{$progression->lien}}">{{$progression->titre}}</a> </li>
+                          <li class="progression"> <i class="{{$progression->type == 'texte' ? "fa fa-file-word-o" : "fa fa-video-camera"}}"></i> &nbsp; <a style="color: #02b3e4;font-size: 18px;" target="_blank" href="{{$progression->lien}}">{{$progression->titre}}</a> </li>
                           @endforeach
                         </ul>
                       </div>
@@ -138,7 +138,7 @@
 
 
 @foreach($formation->projets as $projet)
-  @if (!Auth::user()->worked($projet->id))
+  @if (!Auth::user()->worked($projet->id && Auth::user()->isTeacher()))
   <li>
     <div>
       <div class="index--lesson-card--mwX1V index--card-interactive--1EHiQ shared--card-interactive--2Jtvl shared--card--3X88h"><!--<a class="index--curtain--3sKxm shared--curtain--2_FSP" href="/courses/ud806/lessons/7585925729/concepts/last-viewed">Continue</a>-->
@@ -159,7 +159,7 @@
                     <p>Les cours qu'il faut suivre pour réaliser ce projet:</p><br>
                     <ul>
                       @foreach($projet->progressions as $progression)
-                      <li> <img style="width: 8%;" src="https://oschool.ci/wp-content/uploads/2019/05/image-laptop@1x-e0453c763ea5449882c8db6988b1bec11edcc93cca14c1ccdba29eb425727dbd-460x294.png" alt="">&nbsp; <a style="color: #02b3e4;font-size: 18px;" target="_blank" href="{{$progression->lien}}">{{$progression->titre}}</a> </li>
+                      <li class="progression"> <i class="{{$progression->type == 'texte' ? "fa fa-file-word-o" : "fa fa-video-camera"}}"></i> &nbsp; <a style="color: #02b3e4;font-size: 18px;" target="_blank" href="{{$progression->lien}}">{{$progression->titre}}</a> </li>
                       @endforeach
                     </ul>
                   </div>
@@ -170,6 +170,12 @@
                         class="vds-icon" role="img" aria-hidden="true"><svg viewBox="0 0 32 32">
                           <path d="M22.586 17H7a1 1 0 0 1 0-2h15.586l-6.293-6.293a1 1 0 1 1 1.414-1.414l8 8a1 1 0 0 1 0 1.414l-8 8a1 1 0 0 1-1.414-1.414L22.586 17z" fill-rule="nonzero"></path>
                         </svg></i><a target="_blank" style="color: #02b3e4;" href="{{$projet->enonce}}">Voir la mission</a></span></button>
+                </div>
+
+                <div class="_lesson-expanded--action-info--3kCSZ"><button style="background-color:#4D90CC" class="vds-button vds-button--secondary vds-button--small vds-button__icon vds-button__icon--right" type="button"><span class="vds-button__content"><i
+                        class="vds-icon" role="img" aria-hidden="true"><svg viewBox="0 0 32 32">
+                          <path d="M22.586 17H7a1 1 0 0 1 0-2h15.586l-6.293-6.293a1 1 0 1 1 1.414-1.414l8 8a1 1 0 0 1 0 1.414l-8 8a1 1 0 0 1-1.414-1.414L22.586 17z" fill-rule="nonzero"></path>
+                        </svg></i><a target="_blank" style="color: #fff;" href="{{$projet->guideprojet->link}}">Voir le guide de réalisation</a></span></button>
                 </div>
 
                 <div class="_lesson-expanded--action-info--3kCSZ"><button style="background-color: yellow;" class="vds-button vds-button--secondary vds-button--small vds-button__icon vds-button__icon--right" type="button"><span class="vds-button__content"><i
