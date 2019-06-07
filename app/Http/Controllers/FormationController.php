@@ -10,9 +10,11 @@ use App\Category;
 use App\Partner;
 use App\Language;
 use App\Prerequisite;
+use App\Offer;
 use App\Services\Slug;
 use Carbon\Carbon;
 use App\User;
+use App\Categorycharac;
 
 class FormationController extends Controller
 {
@@ -39,12 +41,14 @@ class FormationController extends Controller
         $partners = Partner::orderby ('name','asc')->paginate(30);
         $languages = Language::orderby ('name','asc')->paginate(30);
         $prerequisites = Prerequisite::orderby ('description','asc')->paginate(30);
+        $offers = Offer::orderby ('name','asc')->paginate(30);
         $users = User::where('type2', 'teacher')->orderby ('id','asc')->paginate(30);
         return view('formations.create', ['categories' => $categories,
                                           'partners' => $partners,
                                           'languages' => $languages,
                                           'prerequisites' => $prerequisites,
                                           'users' => $users,
+                                          'offers' => $offers,
                                         ]);
       }
       else {
@@ -123,11 +127,17 @@ class FormationController extends Controller
       $languages = $request->language_id;
       $prerequisites = $request->prerequisite_id;
       $partners = $request->partner_id;
+      $offers = $request->offer_id;
 
       //we loop each index of these arrays and attach it to the  given course
       foreach ($languages as $language) {
         $language_id = Language::find($language);
         $formation->languages()->attach($language_id);
+      }
+
+      foreach ($offers as $offer) {
+        $offer_id = Offer::find($offer);
+        $formation->offers()->attach($offer_id);
       }
 
       foreach ($prerequisites as $prerequisite) {
@@ -167,7 +177,8 @@ class FormationController extends Controller
      */
     public function show(Formation $formation)
     {
-        return view('formations.show', ['formation' => $formation]);
+        $categorycharacs = Categorycharac::orderby('id','asc')->paginate(30);
+        return view('formations.show', ['formation' => $formation, 'categorycharacs' => $categorycharacs]);
     }
 
     /**
@@ -179,7 +190,8 @@ class FormationController extends Controller
     public function showSlug($slug)
     {
         $formation = Formation::where('slug', $slug)->firstOrFail();
-        return view('formations.show', ['formation' => $formation]);
+        $categorycharacs = Categorycharac::orderby('id','asc')->paginate(30);
+        return view('formations.show', ['formation' => $formation, 'categorycharacs' => $categorycharacs]);
     }
 
     /**
@@ -197,6 +209,7 @@ class FormationController extends Controller
             $partners = Partner::orderby ('name','asc')->paginate(30);
             $languages = Language::orderby ('name','asc')->paginate(30);
             $prerequisites = Prerequisite::orderby ('description','asc')->paginate(30);
+            $offers = Offer::orderby ('name','asc')->paginate(30);
             $users = User::where('type2', 'teacher')->orderby ('id','asc')->paginate(30);
             return view('formations.edit', ['formation' => $formation,
                                             'categories' => $categories,
@@ -204,6 +217,7 @@ class FormationController extends Controller
                                             'languages' => $languages,
                                             'prerequisites' => $prerequisites,
                                             'users' => $users,
+                                            'offers' => $offers,
                                           ]);
         }
         else {
@@ -226,12 +240,20 @@ class FormationController extends Controller
       $languages = $request->language_id;
       $prerequisites = $request->prerequisite_id;
       $partners = $request->partner_id;
+      $offers = $request->offer_id;
 
       //we loop each index of these arrays and attach it to the  given course
       if ($languages) {
         foreach ($languages as $language) {
           $language_id = Language::find($language);
           $formation->languages()->attach($language_id);
+        }
+      }
+
+      if ($offers) {
+        foreach ($offers as $offer) {
+          $offer_id = Offer::find($offer);
+          $formation->offers()->attach($offer_id);
         }
       }
 

@@ -325,6 +325,22 @@ drift.load('2uy6g3spxi59');
 
               </li>
 
+              <li>
+
+                <a style="border-radius:8px; text-decoration: underline; background-color: transparent;" class="logout" href="{{ route('offers.create') }}">
+                    Ajouter une offre
+                </a>
+
+              </li>
+
+              <li>
+
+                <a style="border-radius:8px; text-decoration: underline; background-color: transparent;" class="logout" href="{{ route('characteristics.create') }}">
+                    Ajouter une caractéristique d'offre
+                </a>
+
+              </li>
+
             </ul>
           </li>
 

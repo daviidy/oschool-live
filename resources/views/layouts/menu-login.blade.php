@@ -65,6 +65,7 @@
 		$('#my-select3').searchableOptionList();
 		$('#my-select4').searchableOptionList();
 		$('#my-select5').searchableOptionList();
+		$('#my-select6').searchableOptionList();
 
 
 		</script>

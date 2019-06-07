@@ -126,7 +126,7 @@ drift.load('2uy6g3spxi59');
 
             //ouvrir le popup orange money
 
-            $('#orange').click(function(){
+            $('#orange').click(function(){  
               $('#popupOrange').modal();
             });
 
@@ -177,8 +177,8 @@ drift.load('2uy6g3spxi59');
 
 
 
-          @include('includes.popup')
-          @include('includes.popupOrange')
+          @include('includes.course.popup')
+          @include('includes.course.popupOrange')
 
 
 
@@ -252,7 +252,7 @@ drift.load('2uy6g3spxi59');
 
   @yield('content')
 
-
+<!--
   <div class="row u-margin-t-xxx-lg align-row ">
     <div style="padding-left: 10rem;" class="col-xs-12 col-sm-6">
       <div class="c-how__section">
@@ -269,7 +269,7 @@ drift.load('2uy6g3spxi59');
     </div>
   </div>
 </div>
-
+-->
 <!-- <div class="container full-width c-pricing">
 <div class="row">
   <div class="col-xs-12">
@@ -313,6 +313,7 @@ drift.load('2uy6g3spxi59');
   </div>
 </div>
 </div> -->
+<!--
 <div class="container alt">
   <div class="row c-learn">
     <div class="col-xs-12 col-sm-6 c-learn__list">
@@ -328,6 +329,7 @@ drift.load('2uy6g3spxi59');
   </div>
 </div>
 </div>
+-->
 <div class="container alt c-getStarted" id="get-started">
   <div class="row align-row c-getStarted__content">
     <div class="col-xs-12 col-sm-6">

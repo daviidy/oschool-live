@@ -82,9 +82,9 @@ body *{box-sizing:border-box;}
 </style>
 
 
+@foreach($formation->offers as $offer)
 
-
-<div id="popupOrange" style="display:none;" data-reactroot="" class="ReactModal__Overlay ReactModal__Overlay--after-open index--overlay--1MG2U undefined">
+<div id="enrolling{{$offer->id}}" style="display:none;" data-reactroot="" class="modal ReactModal__Overlay ReactModal__Overlay--after-open index--overlay--1MG2U undefined">
   <div class="ReactModal__Content ReactModal__Content--after-open index--content--2bKla undefined" tabindex="-1" aria-label="Modal">
     <a href="#" class="index--close--126Qg" title="Close Modal">
       <i class="material-icons" style="font-size:36px">close</i>
@@ -138,3 +138,5 @@ body *{box-sizing:border-box;}
     </div><a href="#" class="index--close-bottom--2jiB9">Close Modal</a>
   </div>
 </div>
+
+@endforeach

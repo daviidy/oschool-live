@@ -63,7 +63,7 @@
 
 
 
-  @include('includes.infos')
+  @include('includes.course.infos')
 
 
 
@@ -179,11 +179,11 @@
 
   @if($formation->teacher !== "aucun")
 
-    @include('includes.teachers_presentation')
+    @include('includes.course.teachers_presentation')
 
   @endif
 
-    @include('includes.works')
+    @include('includes.course.works')
 
 
 <!--section career-->
@@ -202,7 +202,7 @@
         De l'acquisition des compétences techniques et professionnelles précieuses,
         jusqu'à l'obtention de l'emploi de vos rêves.</span></p>
     </div>
-    @include('includes.avantages')
+    @include('includes.course.avantages')
     <!---->
   </div>
 </section>
@@ -352,7 +352,8 @@
 <!--fin section programme-->
 @if(\Carbon\Carbon::parse($formation->start_date) > \Carbon\Carbon::now())
 
-@include('includes.offres')
+
+@include('includes.course.offres_new')
 
 @endif
 
@@ -360,19 +361,19 @@
 
 @if(\Carbon\Carbon::parse($formation->start_date) > \Carbon\Carbon::now())
 
-@include('includes.calltoaction')
+@include('includes.course.calltoaction')
 
 @endif
 
 <!--popup pour se connecter ou s'inscrire si ce  n'est pas encore fait-->
 
-@include('includes.registration')
+@include('includes.course.registration')
 
-@include('includes.login')
+@include('includes.course.login')
 
 
 
-@include('includes.formulaire-inscription')
+@include('includes.course.formulaire-inscription')
 
 
 

@@ -35,7 +35,7 @@
     <div class="container-contact100">
 			<div class="wrap-contact100">
         <img style="width: 40%;display: block;margin-left: auto;margin-right: auto;" src="/formcreate/images/cup.jpg" alt="">
-				<h2 style="margin: 25px 0px;">Ajouter un projet</h2>
+				<h2 style="margin: 25px 0px;">Modifier le projet {{$projet->name}}</h2>
 				<form method="post" enctype="multipart/form-data" action="{{ url('projets', $projet) }}" class="contact100-form validate-form">
           {{ csrf_field() }}
           {{ method_field('patch') }}

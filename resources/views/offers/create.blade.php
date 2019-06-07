@@ -1,5 +1,5 @@
 @extends('layouts.menu-login')
-@section('title', 'Ajouter un guide')
+@section('title', 'Ajouter une offre d\'achat')
 
 @section('content')
 
@@ -11,44 +11,41 @@
         <img style="display: block;margin-left: auto;margin-right: auto;width: 25%;" src="/formcreate/images/img-01.png" alt="IMG">
       </div>
 
-      <form method="post" enctype="multipart/form-data" action="{{ route('guides.store') }}" class="login100-form validate-form">
+      <form method="post" enctype="multipart/form-data" action="{{ route('offers.store') }}" class="login100-form validate-form">
         <span class="login100-form-title">
-          Ajouter un guide pour étudiant ou formateur
+          Ajouter une offre d'achat
         </span>
         {{ csrf_field() }}
 
+
+
         <div class="wrap-input100 validate-input">
-          <input class="input100" value="" type="text" name="title" placeholder="Titre du guide" required>
+          <input class="input100" value="" type="text" name="name" placeholder="Nom de l'offre" required>
           <span class="focus-input100"></span>
           <span class="symbol-input100">
             <i class="fa fa-laptop" aria-hidden="true"></i>
           </span>
         </div>
 
-        <div class="wrap-input100 validate-input">
-          <input class="input100" value="" type="url" name="link" placeholder="Lien du guide" required>
+        <div class="wrap-input100">
+          <input class="input100" value="" type="number" name="amount" placeholder="Prix de l'offre (par mois)">
           <span class="focus-input100"></span>
           <span class="symbol-input100">
             <i class="fa fa-laptop" aria-hidden="true"></i>
           </span>
         </div>
 
-        <div class="wrap-input100 validate-input">
-          <label for="">Ecrivez une description courte</label>
-          <textarea required placeholder="Description" rows="50" style="height: 300px;" class="input100" name="description" placeholder=""></textarea>
-        </div>
+        <label for=""> <strong>Caractéristiques de l'offre</strong> </label>
+        <select id="my-select3" name="characteristic_id[]" multiple="multiple">
+          @foreach($characteristics as $characteristic)
+          <option value="{{$characteristic->id}}">{{$characteristic->description}}</option>
+          @endforeach
+        </select>
 
-        <div class="wrap-input100 validate-input" data-validate = "Etudiant">
-          <label for="">A qui s'adresse ce guide ?</label>
-          <select name="audience" class="form-control" style="" required>
-            <option value="teacher">Formateurs</option>
-            <option value="student">Etudiants</option>
-          </select>
-        </div>
 
         <div class="container-login100-form-btn">
           <button class="login100-form-btn">
-            Ajouter le guide
+            Ajouter le parcours
           </button>
         </div>
 

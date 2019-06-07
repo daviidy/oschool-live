@@ -82,13 +82,12 @@
           @endforeach
         </select>
 
-        <div class="wrap-input100 validate-input">
-          <input class="input100" value="{{$formation->prix}}" type="number" name="prix" placeholder="Prix (exple 10000)" required>
-          <span class="focus-input100"></span>
-          <span class="symbol-input100">
-            <i class="fa fa-money" aria-hidden="true"></i>
-          </span>
-        </div>
+        <label for=""> <strong>Offres de prix</strong> </label>
+        <select id="my-select6" name="offer_id[]" multiple="multiple">
+          @foreach($offers as $offer)
+          <option value="{{$offer->id}}">{{$offer->name}}({{$offer->amount}} FCFA)</option>
+          @endforeach
+        </select>
 
         <div class="wrap-input100 validate-input" data-validate = "Etudiant">
           <label for="">Statut du parcours</label>

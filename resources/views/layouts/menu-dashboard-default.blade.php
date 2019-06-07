@@ -127,7 +127,7 @@
                                                               class="fa fa-laptop vds-icon vds-icon--lg" role="img"><span class="vds-visually-hidden">Mes sessions</span></i></span></span><span class="_nav-module--nav-item-title--3oRT2">Mes sessions</span></a></li>
 
                                             @endif
-                                            <li class="_nav-module--nav-item--2yHv8"><a href="/documentsStudent" title="Guides"><span class="_nav-module--nav-item-icon-container--2gNdP"><span class="_nav-module--nav-item-icon--rHRSl"><i
+                                            <li class="_nav-module--nav-item--2yHv8"><a href="{{route('guides.index')}}" title="Guides"><span class="_nav-module--nav-item-icon-container--2gNdP"><span class="_nav-module--nav-item-icon--rHRSl"><i
                                                               class="fa fa-user vds-icon vds-icon--lg" role="img"><span class="vds-visually-hidden">Guides</span></i></span></span><span class="_nav-module--nav-item-title--3oRT2">Guides</span></a></li>
 
                                             <li class="_nav-module--nav-item--2yHv8"><a href="https://discord.gg/hhbzcHE" target="_blank" title="Forum"><span class="_nav-module--nav-item-icon-container--2gNdP"><span class="_nav-module--nav-item-icon--rHRSl"><i

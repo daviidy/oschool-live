@@ -145,6 +145,10 @@ Route::resource('progressions','ProgressionController');
 
 Route::resource('achats','AchatController');
 
+Route::resource('offers','OfferController');
+
+Route::resource('characteristics','CharacteristicController');
+
 Route::post('/envoi', 'AchatController@envoi')->name('envoi');
 
 Route::post('/envoiRenew', 'AchatController@envoiRenew');

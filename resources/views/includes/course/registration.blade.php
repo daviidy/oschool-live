@@ -1,4 +1,5 @@
-<div id="inscription" class="modal full-page-modal" tabindex="-1" role="dialog" aria-hidden="false">
+@foreach($formation->offers as $offer)
+<div id="inscription{{$offer->id}}" class="modal full-page-modal" tabindex="-1" role="dialog" aria-hidden="false">
   <!-- <button type="button" class="modal-action-btn action-left back-to-signin" style="opacity: 0;"><i class="ion-ios-arrow-back"></i></button> -->
   <button type="button" class="modal-action-btn action-right close-modal" data-dismiss="modal"><i class="ion-android-close"></i></button>
   <div class="modal-container">
@@ -83,3 +84,4 @@
 </div><!-- /.modal -->
 
 </div>
+@endforeach

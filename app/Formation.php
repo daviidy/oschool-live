@@ -16,7 +16,6 @@ class Formation extends Model
                          'accroche',
                          'start_date',
                          'video',
-                         'prix',
                          'type',
                          'program'
                        ];
@@ -45,6 +44,11 @@ class Formation extends Model
   public function prerequisites()
   {
       return $this->belongsToMany('App\Prerequisite');
+  }
+
+  public function offers()
+  {
+      return $this->belongsToMany('App\Offer');
   }
 
   //a course can have many partners and vice versa

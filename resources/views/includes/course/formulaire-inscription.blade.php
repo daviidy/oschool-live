@@ -10,7 +10,7 @@
         <div class="modal-body signup-modal-body">
           <div class="modal-header">
             <img width="100" src="/img/page-parcours/card.png" alt="">
-            <div class="modal-title">Remplissez ce formulaire pour vous inscrire à cette formation</div>
+            <div class="modal-title">Remplissez ce formulaire pour payer ce parcours</div>
             <div class="login-needed-alert"></div>
           <form name="userSignUpForm" action="{{url('envoi')}}" method="post" id="signup-modal-form" class="margintop-lg">
             {{ csrf_field() }}
@@ -69,10 +69,13 @@
                 <i class="input-icon ion-person-stalker"></i>
               </div>
             </div>
-            <div style="display: none;" class="form-group password-form-group">
+            <div class="form-group password-form-group">
               <div class="input-with-icon">
                 <select class="form-control" name="montant">
-                  <option value="{{$formation->prix}}">Montant</option>
+                  <option value="{{$formation->prix}}">Quelle offre choisissez-vous ?</option>
+                  @foreach($formation->offers as $offer)
+                  <option value="{{$offer->amount}}">{{$offer->name}}: {{$offer->amount}} par mois</option>
+                  @endforeach
                 </select>
                 <i class="input-icon ion-person-stalker"></i>
               </div>
