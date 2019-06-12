@@ -1,4 +1,4 @@
-<div id="offres" _ngcontent-iridium-us-c20="" class="row-component ng-star-inserted" data-section-type="nanodegree-advantages" id="section-6gqyFfnDI8wqr0XUldP4h4">
+<div id="offres" _ngcontent-iridium-us-c20="" class="offreslaptop row-component ng-star-inserted" data-section-type="nanodegree-advantages" id="section-6gqyFfnDI8wqr0XUldP4h4">
     <ir-canonical-degree-nd-advantages _ngcontent-iridium-us-c20="" _nghost-iridium-us-c32="">
         <div _ngcontent-iridium-us-c32="" class="nd-advantages">
             <!---->
@@ -119,4 +119,42 @@
         <!---->
         <!---->
     </ir-canonical-degree-nd-advantages>
+</div>
+
+<div style="display:none;" id="newoffres" _ngcontent-iridium-us-c48="" class="newoffres price-cards">
+    <!---->
+    <!---->
+    @foreach($formation->offers as $offer)
+    <div _ngcontent-iridium-us-c48="" class="price-card ng-star-inserted">
+      @if($offer->name == "Offre Premium")
+      <div _ngcontent-iridium-us-c48="" class="flag ng-star-inserted">
+          <p _ngcontent-iridium-us-c48="" class="flag__text">Best Deal!</p>
+      </div>
+      @endif
+        <!---->
+        <div _ngcontent-iridium-us-c48="" class="title h6">{{$offer->name}}</div>
+        <div _ngcontent-iridium-us-c48="" class="price"><span _ngcontent-iridium-us-c48="" class="price__payable">{{$offer->amount}}</span><span _ngcontent-iridium-us-c48="" class="price__label">
+                <!---->
+                <!----><span _ngcontent-iridium-us-c48="" class="ng-star-inserted">FCFA/mois</span></span></div>
+        <!---->
+        <ul>
+          @foreach($offer->characteristics as $characteristic)
+          <li>
+            <p _ngcontent-iridium-us-c48="" class="blurb">{{$characteristic->description}}</p>
+          </li>
+          @endforeach
+        </ul>
+
+        <div _ngcontent-iridium-us-c48="" class="enroll-button__container">
+          @auth
+          <a _ngcontent-c101="" class="button--primary mb-1 center ng-star-inserted" data-toggle="modal" data-target="#enrolling{{$offer->id}}">S'inscrire maintenant</a>
+          @endauth
+          @guest
+          <a _ngcontent-c101="" class="button--primary mb-1 center ng-star-inserted" data-toggle="modal" data-target="#inscription{{$offer->id}}">S'inscrire maintenant</a>
+          @endguest
+        </div>
+    </div>
+    @endforeach
+    <!---->
+
 </div>

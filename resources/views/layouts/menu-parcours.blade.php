@@ -126,7 +126,7 @@ drift.load('2uy6g3spxi59');
 
             //ouvrir le popup orange money
 
-            $('#orange').click(function(){  
+            $('#orange').click(function(){
               $('#popupOrange').modal();
             });
 
@@ -428,7 +428,18 @@ var x = setInterval(function() {
 </script>
 -->
 
+<script type="text/javascript">
 
+if (window.matchMedia('(max-width: 60em)').matches)
+{
+
+  $('.newoffres').css('display', 'block');
+  $('.offreslaptop').css('display', 'none');
+  $('#menuoffresmobile').attr("href", "#newoffres");
+}
+
+
+</script>
 
 </body>
 

@@ -243,31 +243,34 @@ class FormationController extends Controller
       $offers = $request->offer_id;
 
       //we loop each index of these arrays and attach it to the  given course
+      //we check, also if there is no already references of selected fields in db
       if ($languages) {
         foreach ($languages as $language) {
           $language_id = Language::find($language);
-          $formation->languages()->attach($language_id);
+          $formation->languages()->sync($language_id, false);
         }
       }
 
       if ($offers) {
         foreach ($offers as $offer) {
           $offer_id = Offer::find($offer);
-          $formation->offers()->attach($offer_id);
+
+          $formation->offers()->sync($offer_id, false);
+
         }
       }
 
       if ($prerequisites) {
         foreach ($prerequisites as $prerequisite) {
           $prerequisite_id = Prerequisite::find($prerequisite);
-          $formation->prerequisites()->attach($prerequisite_id);
+          $formation->prerequisites()->sync($prerequisite_id, false);
         }
       }
 
       if ($partners) {
         foreach ($partners as $partner) {
           $partner_id = Partner::find($partner);
-          $formation->partners()->attach($partner_id);
+          $formation->partners()->sync($partner_id, false);
         }
       }
 

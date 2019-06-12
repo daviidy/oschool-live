@@ -50,58 +50,91 @@
         <label for=""> <strong>Catégorie</strong> </label>
         <select id="my-select1" name="category_id">
           @foreach($categories as $category)
+          @if($category->id == $formation->category->id)
+          <option selected value="{{$formation->category->id}}">{{$formation->category->nom}}</option>
+          @else
           <option value="{{$category->id}}">{{$category->nom}}</option>
+          @endif
           @endforeach
         </select>
 
         <label for=""> <strong>Langue(s)</strong> </label>
         <select id="my-select2" name="language_id[]" multiple="multiple">
           @foreach($languages as $language)
+            @foreach($formation->languages as $lang)
+              @if($lang->id == $language->id)
+          <option selected value="{{$language->id}}">{{$language->name}}</option>
+              @else
           <option value="{{$language->id}}">{{$language->name}}</option>
+              @endif
+            @endforeach
           @endforeach
         </select>
 
         <label for=""> <strong>Partenaire(s)</strong> </label>
         <select id="my-select3" name="partner_id[]" multiple="multiple">
           @foreach($partners as $partner)
+            @foreach($formation->partners as $part)
+              @if($part->id == $partner->id)
+          <option selected value="{{$partner->id}}">{{$partner->name}}</option>
+              @else
           <option value="{{$partner->id}}">{{$partner->name}}</option>
+              @endif
+            @endforeach
+
           @endforeach
         </select>
 
         <label for=""> <strong>Prérequis</strong> </label>
         <select id="my-select4" name="prerequisite_id[]" multiple="multiple">
           @foreach($prerequisites as $prerequisite)
+          @foreach($formation->prerequisites as $prereq)
+            @if($prereq->id == $prerequisite->id)
+          <option selected value="{{$prerequisite->id}}">{{$prerequisite->description}}</option>
+            @else
           <option value="{{$prerequisite->id}}">{{$prerequisite->description}}</option>
+            @endif
+          @endforeach
           @endforeach
         </select>
 
         <label for=""> <strong>Formateur Principal</strong> </label>
         <select id="my-select5" name="teacher">
           @foreach($users as $user)
+          @if($formation->teacher == $user->name)
+          <option selected value="{{$user->name}}">{{$user->name}}</option>
+          @else
           <option value="{{$user->name}}">{{$user->name}}</option>
+          @endif
           @endforeach
         </select>
 
         <label for=""> <strong>Offres de prix</strong> </label>
         <select id="my-select6" name="offer_id[]" multiple="multiple">
           @foreach($offers as $offer)
+            @foreach($formation->offers as $off)
+              @if($offer->id == $off->id)
+          <option selected value="{{$offer->id}}">{{$offer->name}}({{$offer->amount}} FCFA)</option>
+              @else
           <option value="{{$offer->id}}">{{$offer->name}}({{$offer->amount}} FCFA)</option>
+              @endif
+            @endforeach
           @endforeach
         </select>
 
         <div class="wrap-input100 validate-input" data-validate = "Etudiant">
           <label for="">Statut du parcours</label>
           <select name="state" class="form-control" style="" required>
-            <option value="active">Actif</option>
-            <option value="inactive">Inactif</option>
+            <option selected value="{{$formation->state}}">{{$formation->state}}</option>
+            <option value="{{$formation->state =='active' ? "inactive" : "active"}}">{{$formation->state =='active' ? "inactive" : "active"}}</option>
           </select>
         </div>
 
         <div class="wrap-input100 validate-input" data-validate = "Etudiant">
           <label for="">Type</label>
           <select name="type" class="form-control" style="" required>
-            <option value="parcours">Parcours</option>
-            <option value="bootcamp">Bootcamp</option>
+            <option selected value="{{$formation->type}}">{{$formation->type}}</option>
+            <option value="{{$formation->type =='bootcamp' ? "parcours" : "bootcamp"}}">{{$formation->type =='bootcamp' ? "parcours" : "bootcamp"}}</option>
           </select>
         </div>
 

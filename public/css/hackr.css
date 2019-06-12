@@ -1,3 +1,45 @@
+/*offer mobile version*/
+/*! CSS Used from: https://www.udacity.com/styles.92d8b8c354d7018f60f4.css */
+
+a:active,a:focus,a:hover{color:#24292d;}
+/*! CSS Used from: https://www.udacity.com/assets/styles/styles.shared.b0766ff39e.css */
+
+/*! CSS Used from: Embedded */
+*[_ngcontent-iridium-us-c48],*[_ngcontent-iridium-us-c48]::after,*[_ngcontent-iridium-us-c48]::before{box-sizing:inherit;}
+*[_ngcontent-iridium-us-c48],*[_ngcontent-iridium-us-c48]::after,*[_ngcontent-iridium-us-c48]::before{box-sizing:inherit;}
+.uppercase[_ngcontent-iridium-us-c48]{text-transform:uppercase;}
+.price-cards[_ngcontent-iridium-us-c48]{display:flex;flex-wrap:wrap;flex-direction:column-reverse;justify-content:center;margin-top:-1rem;}
+@media screen and (min-width: 62rem){
+.price-cards[_ngcontent-iridium-us-c48]{flex-direction:row;}
+}
+.price-cards[_ngcontent-iridium-us-c48]   .price-card[_ngcontent-iridium-us-c48]{position:relative;width:233px;padding:1.75rem 1.5rem;margin:0 auto 2rem;border-radius:0.375rem;background-color:#fff;box-shadow:5px 5px 25px 0px rgba(46, 61, 73, 0.2);}
+@media screen and (min-width: 62rem){
+.price-cards[_ngcontent-iridium-us-c48]   .price-card[_ngcontent-iridium-us-c48]{width:38rem;padding:2.1875rem 2.5rem;margin:0;}
+.price-cards[_ngcontent-iridium-us-c48]   .price-card[_ngcontent-iridium-us-c48]:first-of-type{margin-right:1.5rem;}
+}
+.price-cards[_ngcontent-iridium-us-c48]   .price-card[_ngcontent-iridium-us-c48]   .flag[_ngcontent-iridium-us-c48]{position:absolute;display:block;width:0;height:0;top:0;right:0;z-index:6000;border-width:40px;border-style:solid;border-bottom-color:transparent;border-right-color:#ff5483;border-top-color:#ff5483;border-left-color:transparent;border-radius:0 0.375rem 0 0;}
+.price-cards[_ngcontent-iridium-us-c48]   .price-card[_ngcontent-iridium-us-c48]   .flag__text[_ngcontent-iridium-us-c48]{position:absolute;top:-30px;-webkit-transform:rotate(45deg);transform:rotate(45deg);font-size:14px;color:#fff;line-height:1rem;}
+.price-cards[_ngcontent-iridium-us-c48]   .price-card[_ngcontent-iridium-us-c48]   .title[_ngcontent-iridium-us-c48]{color:#2e3d49;margin-bottom:0.5rem;font-size: 3rem;}
+.price-cards[_ngcontent-iridium-us-c48]   .price-card[_ngcontent-iridium-us-c48]   .price[_ngcontent-iridium-us-c48]{display:flex;flex-direction:column;align-items:flex-start;padding-bottom:4rem;color:#4D90CC;font-size:2.25rem;line-height:2.25rem;font-weight:300;}
+.price-cards[_ngcontent-iridium-us-c48]   .price-card[_ngcontent-iridium-us-c48]   .price__payable[_ngcontent-iridium-us-c48]{white-space:nowrap;}
+.price-cards[_ngcontent-iridium-us-c48]   .price-card[_ngcontent-iridium-us-c48]   .price__label[_ngcontent-iridium-us-c48]{font-size:2rem;line-height:1.375rem;font-weight:600;color:#2e3d49;margin-top:0.625rem;}
+.price-cards[_ngcontent-iridium-us-c48]   .price-card[_ngcontent-iridium-us-c48]   .price__label[_ngcontent-iridium-us-c48]   .strikethrough[_ngcontent-iridium-us-c48]{text-decoration:line-through;white-space:nowrap;margin-right:0.3125rem;}
+@media screen and (min-width: 62rem){
+.price-cards[_ngcontent-iridium-us-c48]   .price-card[_ngcontent-iridium-us-c48]   .price[_ngcontent-iridium-us-c48]{flex-direction:row;align-items:center;font-size:5rem;line-height:3rem;}
+.price-cards[_ngcontent-iridium-us-c48]   .price-card[_ngcontent-iridium-us-c48]   .price__payable[_ngcontent-iridium-us-c48]{margin-right:1.25rem;}
+.price-cards[_ngcontent-iridium-us-c48]   .price-card[_ngcontent-iridium-us-c48]   .price__label[_ngcontent-iridium-us-c48]{margin-top:0;}
+}
+.price-cards[_ngcontent-iridium-us-c48]   .price-card[_ngcontent-iridium-us-c48]   .blurb[_ngcontent-iridium-us-c48]{font-size:16px;}
+.price-cards[_ngcontent-iridium-us-c48]   .price-card[_ngcontent-iridium-us-c48]   .enroll-button__container[_ngcontent-iridium-us-c48]   .button[_ngcontent-iridium-us-c48]{margin:auto;color:#fff;width:175px;background-color:#4D90CC;border:2px solid #4D90CC;}
+.price-cards[_ngcontent-iridium-us-c48]   .price-card[_ngcontent-iridium-us-c48]   .enroll-button__container[_ngcontent-iridium-us-c48]   .button[_ngcontent-iridium-us-c48]:hover{background-color:#4D90CC;border:2px solid #4D90CC;}
+@media screen and (min-width: 62rem){
+.price-cards[_ngcontent-iridium-us-c48]   .price-card[_ngcontent-iridium-us-c48]   .enroll-button__container[_ngcontent-iridium-us-c48]   .button[_ngcontent-iridium-us-c48]{width:227px;}
+}
+
+
+
+
+
 /*pour la zone des differentes offres nouvelle version*/
 /*! CSS Used from: https://www.udacity.com/styles.92d8b8c354d7018f60f4.css */
 svg:not(:root){overflow:hidden;}
@@ -129,7 +171,7 @@ h2[_ngcontent-c29]{margin-bottom:0;}
 @media screen and (min-width: 48rem){
 .card[_ngcontent-c29]{height:38.5rem;margin:0 1.25rem 1.5rem 0;}
 }
-.card[_ngcontent-c29]:nth-child(5n+1){border-top:3px solid #02b3e4;}
+.card[_ngcontent-c29]:nth-child(5n+1){border-top:3px solid #4D90CC;}
 .card[_ngcontent-c29]:nth-child(5n+2){border-top:3px solid #a951ed;}
 .card[_ngcontent-c29]:nth-child(5n+3){border-top:3px solid #02ccba;}
 .card[_ngcontent-c29]:nth-child(5n+4){border-top:3px solid #ffae0c;}
@@ -161,7 +203,7 @@ h2[_ngcontent-c29]{margin-bottom:0;}
 .scroller[_ngcontent-c50]{padding:3.5rem 0;}
 }
 .scrollbar[_ngcontent-c50]{width:100%;background:#bcc9d4;height:0.2rem;position:relative;}
-.handle[_ngcontent-c50]{position:absolute;width:100px;height:0.6rem;background:#02b3e4;cursor:pointer;cursor:-webkit-grab;top:-0.2rem;border-radius:0.3rem;}
+.handle[_ngcontent-c50]{position:absolute;width:100px;height:0.6rem;background:#4D90CC;cursor:pointer;cursor:-webkit-grab;top:-0.2rem;border-radius:0.3rem;}
 
 
 
@@ -329,7 +371,7 @@ ul[_ngcontent-c30]   .icon[_ngcontent-c30]{height:4.5rem;margin:0 1.5rem;}
 .button--primary{display:block;cursor:pointer;-webkit-appearance:none;-moz-appearance:none;appearance:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;text-align:center;white-space:nowrap;text-decoration:none;vertical-align:middle;height:3rem;padding:0 .5rem;text-transform:uppercase;font-weight:600;font-size:.8125rem;line-height:2.625rem;-webkit-font-smoothing:antialiased;border-radius:.25rem;letter-spacing:.125rem;transition:.3s;}
 .button--primary{box-shadow:8px 10px 20px 0 rgba(46,61,73,.15);}
 .button--primary:hover{box-shadow:2px 4px 8px 0 rgba(46,61,73,.2);}
-.button--primary{width:13.75rem;color:#fff;background-color:#02b3e4;border:.125rem solid transparent;}
+.button--primary{width:13.75rem;color:#fff;background-color:#4D90CC;border:.125rem solid transparent;}
 .button--primary:focus,.button--primary:hover{outline:0;color:#fff;border-color:transparent;background-color:#029fcb;}
 .button--primary.inline{display:inline-block;}
 /*! CSS Used from: Embedded */
@@ -521,7 +563,7 @@ svg:not(:root){overflow:hidden;}
 a{background-color:transparent;-webkit-text-decoration-skip:objects;border-bottom:none;text-decoration:none;color:#525c65;transition:color .3s;}
 a:active,a:focus,a:hover{color:#24292d;}
 .text-only{font-size:12px;line-height:1.5rem;width:auto;border-bottom:none;color:#4D90CC;display:inline-block;text-decoration:none;letter-spacing:.0625rem;text-transform:uppercase;font-weight:600;transition:color .3s,background .3s;}
-.text-only:hover{text-decoration:none;color:#028bb1;}
+.text-only:hover{text-decoration:none;color:#4D90CC;}
 
 
 
@@ -818,7 +860,7 @@ h6[_ngcontent-c102]{margin-bottom:0;}
 .primary[_nghost-c102]   .container[_ngcontent-c102]   .flag[_ngcontent-c102]   h6[_ngcontent-c102]{color:#4D90CC;}
 .primary[_nghost-c102]   .container[_ngcontent-c102]   .price[_ngcontent-c102]{color:#4D90CC;}
 .primary[_nghost-c102]   .container[_ngcontent-c102]:not(.locked)   .content[_ngcontent-c102]   .enroll-button[_ngcontent-c102]{background-color:#4D90CC;border:2px solid #4D90CC;}
-.primary[_nghost-c102]   .container[_ngcontent-c102]:not(.locked)   .content[_ngcontent-c102]   .enroll-button[_ngcontent-c102]:hover{background-color:#028bb1;border:2px solid #028bb1;}
+.primary[_nghost-c102]   .container[_ngcontent-c102]:not(.locked)   .content[_ngcontent-c102]   .enroll-button[_ngcontent-c102]:hover{background-color:#4D90CC;border:2px solid #4D90CC;}
 .primary[_nghost-c102]   .container[_ngcontent-c102]   .price-info[_ngcontent-c102]   .price-footer[_ngcontent-c102]   .info-icon[_ngcontent-c102]{fill:#4D90CC;}
 .primary[_nghost-c102]   .container[_ngcontent-c102]   .divider-bottom[_ngcontent-c102]{background-color:#4D90CC;}
 .selected[_nghost-c102]   .container[_ngcontent-c102]::before,[_nghost-c102]:hover   .container[_ngcontent-c102]::before{opacity:1;}

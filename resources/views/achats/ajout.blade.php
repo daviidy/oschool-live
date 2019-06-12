@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr"> 
+<html lang="fr">
 	<head>
 		<title>Parcours Oschool | Ajouter un achat</title>
 		<meta charset="UTF-8">
@@ -63,6 +63,11 @@
           <div class="wrap-input100 input100-select bg1">
             <span class="label-input100">Numéro de téléphone</span>
               <input class="input100" type="tel" name="tel" value="" required>
+          </div>
+
+					<div style="display: none;" class="wrap-input100 input100-select bg1">
+            <span class="label-input100">Statut</span>
+              <input class="input100" type="text" name="statut" value="Validé" required>
           </div>
 
 					<div class="wrap-input100 input100-select bg1">

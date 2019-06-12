@@ -325,6 +325,26 @@ drift.load('2uy6g3spxi59');
 
               </li>
 
+
+            </ul>
+          </li>
+
+          <li class="sub-menu">
+            <a href="javascript:;">
+              <i class="fa fa-money"></i>
+              <span>Offres</span>
+              </a>
+            <ul class="sub">
+
+              <li>
+
+                <a style="border-radius:8px; text-decoration: underline; background-color: transparent;" class="logout" href="{{ route('offers.index') }}">
+                    Toutes les offres
+                </a>
+
+              </li>
+
+
               <li>
 
                 <a style="border-radius:8px; text-decoration: underline; background-color: transparent;" class="logout" href="{{ route('offers.create') }}">

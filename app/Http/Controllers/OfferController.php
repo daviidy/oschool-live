@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Offer;
 use App\Characteristic;
+use Auth;
 use Illuminate\Http\Request;
 
 class OfferController extends Controller
@@ -15,7 +16,13 @@ class OfferController extends Controller
      */
     public function index()
     {
-        //
+        if (Auth::user()->isAdmin()) {
+          $offers = Offer::orderby('id','asc')->paginate(30);
+          return view('offers.index', ['offers' => $offers]);
+        }
+        else {
+          return redirect('home');
+        }
     }
 
     /**
@@ -68,7 +75,8 @@ class OfferController extends Controller
      */
     public function edit(Offer $offer)
     {
-        //
+      $characteristics = Characteristic::orderby('id','asc')->paginate(30);
+      return view('offers.edit', ['characteristics' => $characteristics, 'offer' => $offer]);
     }
 
     /**
@@ -80,7 +88,16 @@ class OfferController extends Controller
      */
     public function update(Request $request, Offer $offer)
     {
-        //
+        $offer->update($request->all());
+        $characteristics = $request->characteristic_id;
+
+        foreach ($characteristics as $characteristic) {
+          $characteristic_id = Characteristic::find($characteristic);
+          $offer->characteristics()->sync($characteristic_id, false);
+        }
+
+        return redirect('offers')->with('status', 'Modifications apportées' );
+
     }
 
     /**
@@ -91,6 +108,7 @@ class OfferController extends Controller
      */
     public function destroy(Offer $offer)
     {
-        //
+      $offer->delete();
+      return redirect('offers')->with('status', 'Offre supprimée de la base de données' );
     }
 }

@@ -116,7 +116,7 @@
                                                                 </svg></i></span></span></a></li>
 
                                                                 @if(Auth::user()->type3 == 'admin')
-                                                                <li class="_nav-module--nav-item--2yHv8"><a href="/dashboard-teacher"  title="Mes sessions"><span class="_nav-module--nav-item-icon-container--2gNdP"><span class="_nav-module--nav-item-icon--rHRSl"><i
+                                                                <li class="_nav-module--nav-item--2yHv8"><a href="/dashboard-teacher"  title="Accueil"><span class="_nav-module--nav-item-icon-container--2gNdP"><span class="_nav-module--nav-item-icon--rHRSl"><i
                                       class="fa fa-laptop vds-icon vds-icon--lg" role="img"></i></span></span></a></li>
                                                                 @endif
 
