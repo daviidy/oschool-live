@@ -13,7 +13,7 @@
 
       <form method="post" enctype="multipart/form-data" action="{{ url('offers', $offer) }}" class="login100-form validate-form">
         <span class="login100-form-title">
-          Modifier l'offre {{$offer->name}}
+          Modifier l'offre: {{$offer->name}}
         </span>
         {{ csrf_field() }}
         {{ method_field('patch') }}
@@ -38,15 +38,17 @@
 
         <label for=""> <strong>Caractéristiques de l'offre</strong> </label>
         <select id="my-select3" name="characteristic_id[]" multiple="multiple">
-          @foreach($characteristics as $characteristic)
-          @foreach($offer->characteristics as $charac)
-            @if($charac->id == $characteristic->id)
+          @if(count($offer->characteristics))
+          @foreach($offer->characteristics as $characteristic)
           <option selected value="{{$characteristic->id}}">{{$characteristic->description}}</option>
-            @else
-          <option value="{{$characteristic->id}}">{{$characteristic->description}}</option>
+          @endforeach
+          @endif
+          @foreach($characteristics as $characteristic)
+            @if(!$offer->own($characteristic->id))
+            <option value="{{$characteristic->id}}">{{$characteristic->description}}</option>
             @endif
           @endforeach
-          @endforeach
+
         </select>
 
 

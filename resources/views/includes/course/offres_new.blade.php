@@ -128,7 +128,7 @@
     <div _ngcontent-iridium-us-c48="" class="price-card ng-star-inserted">
       @if($offer->name == "Offre Premium")
       <div _ngcontent-iridium-us-c48="" class="flag ng-star-inserted">
-          <p _ngcontent-iridium-us-c48="" class="flag__text">Best Deal!</p>
+          <p _ngcontent-iridium-us-c48="" class="flag__text"> Top!</p>
       </div>
       @endif
         <!---->

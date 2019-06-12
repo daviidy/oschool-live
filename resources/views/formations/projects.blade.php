@@ -7,7 +7,7 @@
 @foreach($formation->projets as $projet)
   @if(count($projet->etatprojets))
     @foreach($projet->etatprojets as $etatprojet)
-      @if($etatprojet->user_id == Auth::user()->id)
+      @if($etatprojet->user_id == Auth::user()->id) 
       <li>
         <div>
           <div class="index--lesson-card--mwX1V index--card-interactive--1EHiQ shared--card-interactive--2Jtvl shared--card--3X88h"><!--<a class="index--curtain--3sKxm shared--curtain--2_FSP" href="/courses/ud806/lessons/7585925729/concepts/last-viewed">Continue</a>-->

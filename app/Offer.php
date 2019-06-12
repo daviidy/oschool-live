@@ -17,4 +17,9 @@ class Offer extends Model
     {
         return $this->belongsToMany('App\Formation');
     }
+
+    public function own($characteristicId)
+   {
+       return $this->characteristics()->where('characteristic_id', $characteristicId)->count() > 0;
+   }
 }

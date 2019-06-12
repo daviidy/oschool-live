@@ -17,7 +17,8 @@ class Formation extends Model
                          'start_date',
                          'video',
                          'type',
-                         'program'
+                         'program',
+                         'teacher'
                        ];
 
   //relation many to many: ici une formation peut avoir plusieurs etudiants
@@ -74,5 +75,25 @@ class Formation extends Model
   {
       return $this->belongsTo('App\Category');
   }
+
+  public function ownOffer($offerId)
+ {
+     return $this->offers()->where('offer_id', $offerId)->count() > 0;
+ }
+
+ public function ownPrerequisite($prerequisiteId)
+{
+    return $this->prerequisites()->where('prerequisite_id', $prerequisiteId)->count() > 0;
+}
+
+public function ownLanguage($languageId)
+{
+   return $this->languages()->where('language_id', $languageId)->count() > 0;
+}
+
+public function ownPartner($partnerId)
+{
+   return $this->partners()->where('partner_id', $partnerId)->count() > 0;
+}
 
 }

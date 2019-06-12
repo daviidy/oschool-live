@@ -60,41 +60,45 @@
 
         <label for=""> <strong>Langue(s)</strong> </label>
         <select id="my-select2" name="language_id[]" multiple="multiple">
-          @foreach($languages as $language)
-            @foreach($formation->languages as $lang)
-              @if($lang->id == $language->id)
+          @if(count($formation->languages))
+            @foreach($formation->languages as $language)
           <option selected value="{{$language->id}}">{{$language->name}}</option>
-              @else
-          <option value="{{$language->id}}">{{$language->name}}</option>
-              @endif
             @endforeach
+          @endif
+          @foreach($languages as $language)
+            @if(!$formation->ownLanguage($language->id))
+            <option value="{{$language->id}}">{{$language->name}}</option>
+            @endif
           @endforeach
+
         </select>
 
         <label for=""> <strong>Partenaire(s)</strong> </label>
         <select id="my-select3" name="partner_id[]" multiple="multiple">
-          @foreach($partners as $partner)
-            @foreach($formation->partners as $part)
-              @if($part->id == $partner->id)
+          @if(count($formation->partners))
+            @foreach($formation->partners as $partner)
           <option selected value="{{$partner->id}}">{{$partner->name}}</option>
-              @else
-          <option value="{{$partner->id}}">{{$partner->name}}</option>
-              @endif
             @endforeach
-
+          @endif
+          @foreach($partners as $partner)
+            @if(!$formation->ownPartner($partner->id))
+            <option value="{{$partner->id}}">{{$partner->name}}</option>
+            @endif
           @endforeach
+
         </select>
 
         <label for=""> <strong>Prérequis</strong> </label>
         <select id="my-select4" name="prerequisite_id[]" multiple="multiple">
-          @foreach($prerequisites as $prerequisite)
-          @foreach($formation->prerequisites as $prereq)
-            @if($prereq->id == $prerequisite->id)
+          @if(count($formation->prerequisites))
+          @foreach($formation->prerequisites as $prerequisite)
           <option selected value="{{$prerequisite->id}}">{{$prerequisite->description}}</option>
-            @else
-          <option value="{{$prerequisite->id}}">{{$prerequisite->description}}</option>
-            @endif
           @endforeach
+          @endif
+          @foreach($prerequisites as $prerequisite)
+            @if(!$formation->ownPrerequisite($prerequisite->id))
+            <option value="{{$prerequisite->id}}">{{$prerequisite->description}}</option>
+            @endif
           @endforeach
         </select>
 
@@ -111,14 +115,15 @@
 
         <label for=""> <strong>Offres de prix</strong> </label>
         <select id="my-select6" name="offer_id[]" multiple="multiple">
-          @foreach($offers as $offer)
-            @foreach($formation->offers as $off)
-              @if($offer->id == $off->id)
+          @if(count($formation->offers))
+            @foreach($formation->offers as $offer)
           <option selected value="{{$offer->id}}">{{$offer->name}}({{$offer->amount}} FCFA)</option>
-              @else
-          <option value="{{$offer->id}}">{{$offer->name}}({{$offer->amount}} FCFA)</option>
-              @endif
             @endforeach
+          @endif
+          @foreach($offers as $offer)
+            @if(!$formation->ownOffer($offer->id))
+            <option value="{{$offer->id}}">{{$offer->name}}</option>
+            @endif
           @endforeach
         </select>
 
