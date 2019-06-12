@@ -29,7 +29,7 @@
     <h6 class="details" _ngcontent-c91="" class="ng-star-inserted">Début de la prochaine rentrée</h6>
     <!---->
     <h5 id="date" _ngcontent-c91="" class="ng-star-inserted">
-      {{$formation->start_date}}
+      {{\Carbon\Carbon::parse($formation->start_date)->format('d-m-Y')}}
     </h5>
     <!---->
     <!---->

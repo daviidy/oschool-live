@@ -26,7 +26,7 @@
           <div class="col-sm-12 text-center">
             @if(\Carbon\Carbon::parse($formation->start_date) > \Carbon\Carbon::now())
 
-            <h3 id="info">Inscrivez-vous avant le: <span style="color:#3C7DC0">{{$formation->start_date}}</span> </h3>
+            <h3 id="info">Inscrivez-vous avant le: <span style="color:#3C7DC0">{{\Carbon\Carbon::parse($formation->start_date)->format('d-m-Y')}}</span> </h3>
             @else
 
             <h1 style="color:red" id="info">Les inscriptions sont terminées</h3>
