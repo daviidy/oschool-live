@@ -286,7 +286,7 @@
                         <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted">{{$projet->titre}}</h4>
                         <!---->
                       </header>
-                      <p _ngcontent-c95="" class="small mb-half"> <a target="_blank" href="{{$projet->enonce}}">Voir l'énoncé</a> </p>
+                    <!--  <p _ngcontent-c95="" class="small mb-half"> <a target="_blank" href="{{$projet->enonce}}">Voir l'énoncé</a> </p>-->
                       <!---->
                       <!---->
                       <!---->
