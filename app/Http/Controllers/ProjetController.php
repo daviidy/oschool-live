@@ -21,7 +21,7 @@ class ProjetController extends Controller
     public function index()
     {
       if (Auth::check()) {
-          $projets = Projet::orderby('id','asc');
+          $projets = Projet::orderby('id','asc')->paginate(30);
           return view('projets.index', ['projets' => $projets]);
       }
       else {
@@ -63,8 +63,13 @@ class ProjetController extends Controller
         $projet->save();
       }
 
-      $formation = Formation::find($request['formation_id']);
-      $projet->formations()->attach($formation);
+      $formations = $request->formation_id;
+
+      foreach ($formations as $formation) {
+        $formation_id = Formation::find($formation);
+        $projet->formations()->attach($formation_id);
+      }
+
 
       /*
       //on trouve le projet renseigné dans le formulaire
@@ -98,7 +103,8 @@ class ProjetController extends Controller
 
     public function edit(Projet $projet)
     {
-      return view('projets.edit', ['projet' => $projet]);
+      $formations = Formation::orderby('id','asc')->paginate(30);
+      return view('projets.edit', ['projet' => $projet, 'formations' => $formations]);
     }
 
     /**
@@ -110,7 +116,14 @@ class ProjetController extends Controller
      */
     public function update(Request $request, Projet $projet)
     {
-        $formation->update($request->all());
+        $projet->update($request->all());
+
+        $formations = $request->formation_id;
+
+        foreach ($formations as $formation) {
+          $formation_id = Formation::find($formation);
+          $projet->formations()->sync($formation_id, false);
+        }
         return redirect('home')->with('status', 'Modifications apportées' );
     }
 

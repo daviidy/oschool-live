@@ -44,7 +44,7 @@ class OfferController extends Controller
      */
     public function store(Request $request)
     {
-        $offer = Offer::create($request->all());
+        $offer = Offer::create($request->all()); 
 
 
         $characteristics = $request->characteristic_id;

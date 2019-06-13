@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Projet extends Model
 {
   //on crée les champs qui seront dans la table Projet
-  protected $fillable = ['titre', 'enonce', 'image', 'formation_id'];
+  protected $fillable = ['titre', 'enonce', 'image'];
 
   //Relation many-to-many : ici, une projet appartient à plusieurs formations
 
@@ -32,5 +32,10 @@ class Projet extends Model
   {
       return $this->hasOne('App\Guideprojet');
   }
+
+  public function own($formationsId)
+ {
+     return $this->formations()->where('formation_id', $formationsId)->count() > 0;
+ }
 
 }
