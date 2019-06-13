@@ -20,7 +20,7 @@
 
 
         <div class="wrap-input100 validate-input">
-          <input class="input100" value="" type="text" name="name" placeholder="Titre du projet" required>
+          <input class="input100" value="" type="text" name="titre" placeholder="Titre du projet" required>
           <span class="focus-input100"></span>
           <span class="symbol-input100">
             <i class="fa fa-laptop" aria-hidden="true"></i>
@@ -55,7 +55,7 @@
 
         <div class="container-login100-form-btn">
           <button class="login100-form-btn">
-            Modifier le projet
+            Ajouter le projet
           </button>
         </div>
 
