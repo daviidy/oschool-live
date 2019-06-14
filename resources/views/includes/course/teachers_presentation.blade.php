@@ -6,7 +6,7 @@
     <ir-horizontal-scroller _ngcontent-c29="" _nghost-c50="">
         <div _ngcontent-c50="" style="padding-top: 7rem;display: flex;flex-wrap: wrap;justify-content: center;">
             <!---->
-            @foreach($formation->users as $user)
+            @foreach($users as $user)
               @if($formation->teacher == $user->name && $user->type2 == 'teacher')
             <div _ngcontent-c29="" class="card ng-star-inserted"><img _ngcontent-c29="" class="image" irdeferimage="" alt="Karl Krueger" src="/avatars/users/{{$user->photo}}"
                   srcset="/avatars/users/{{$user->photo}}">
