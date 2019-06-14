@@ -98,7 +98,7 @@ body *{box-sizing:border-box;}
             @endauth
             !
           </div>
-          @if($formation->type == "parcours")
+          @if($formation->type == "parcours" || $formation->type == "kids")
           <div class="reset-password-modal--description--1y9D1">
             <!-- react-text: 11 -->Encore une étape !<br>
             <img width="40%" src="http://code.oschool.ci/img/page-parcours/card.png" alt="">
