@@ -427,7 +427,7 @@ var x = setInterval(function() {
 }, 1000);
 </script>
 -->
-
+<!--
 <script type="text/javascript">
 
 if (window.matchMedia('(max-width: 60em)').matches)
@@ -440,6 +440,7 @@ if (window.matchMedia('(max-width: 60em)').matches)
 
 
 </script>
+-->
 <!--
 <script>
 function openTab(evt, tabName) {

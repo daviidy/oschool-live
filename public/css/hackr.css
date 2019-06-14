@@ -1,3 +1,85 @@
+/*! CSS Used from: https://www.udacity.com/styles.92d8b8c354d7018f60f4.css */
+
+.contain{max-width:73.75rem;margin-left:auto;margin-right:auto;padding-top:3rem;padding-bottom:3rem;padding-left:0.75rem;padding-right:0.75rem;}
+.contain::after{clear:both;content:"";display:table;}
+@media screen and (min-width: 48rem){
+.contain{padding-top:6rem;padding-bottom:6rem;}
+}
+@media screen and (min-width: 30rem){
+.contain{padding-left:0.99rem;padding-right:0.99rem;}
+}
+@media screen and (min-width: 48rem){
+.contain{padding-left:1.5rem;padding-right:1.5rem;}
+}
+@media screen and (min-width: 73.75rem){
+.contain{padding-left:0;padding-right:0;}
+}
+
+/*! CSS Used from: https://www.udacity.com/assets/styles/styles.shared.c8f2bae483.css */
+
+.udacity-impact-container[_ngcontent-iridium-us-c35]{text-align:center;}
+@media screen and (min-width: 62rem){
+.udacity-impact-container[_ngcontent-iridium-us-c35]{text-align:left;}
+}
+.udacity-impact-container[_ngcontent-iridium-us-c35]   .header[_ngcontent-iridium-us-c35]{float:left;display:block;margin-right:1.69491525%;width:100%;}
+@media screen and (min-width: 62rem){
+.udacity-impact-container[_ngcontent-iridium-us-c35]   .header[_ngcontent-iridium-us-c35]{float:left;display:block;margin-right:1.69491525%;width:100%;padding-left:6rem;text-align: center;}
+}
+.udacity-impact-container[_ngcontent-iridium-us-c35]   .header-content[_ngcontent-iridium-us-c35]{width:62.5rem;margin:auto;}
+.udacity-impact-container[_ngcontent-iridium-us-c35]   .udacity-impact--title-image[_ngcontent-iridium-us-c35]{margin-bottom:0.8125rem;}
+.udacity-impact-container[_ngcontent-iridium-us-c35]   .udacity-impact--title[_ngcontent-iridium-us-c35]{color:#02b3e4;font-size:1.5rem;font-weight:300;line-height:40px;}
+@media screen and (min-width: 62rem){
+.udacity-impact-container[_ngcontent-iridium-us-c35]   .udacity-impact--title[_ngcontent-iridium-us-c35]{font-size:2.5rem;line-height:64px;}
+}
+.udacity-impact-container[_ngcontent-iridium-us-c35]   .selling-points-container[_ngcontent-iridium-us-c35]{float:left;display:block;margin-right:1.69491525%;width:100%;}
+.udacity-impact-container[_ngcontent-iridium-us-c35]   .selling-points-container[_ngcontent-iridium-us-c35]:last-child{margin-right:0;}
+@media screen and (min-width: 62rem){
+.udacity-impact-container[_ngcontent-iridium-us-c35]   .selling-points-container[_ngcontent-iridium-us-c35]{float:left;display:block;margin-right:1.69491525%;width:57.62711864%;}
+.udacity-impact-container[_ngcontent-iridium-us-c35]   .selling-points-container[_ngcontent-iridium-us-c35]:last-child{margin-right:0;}
+}
+.udacity-impact-container[_ngcontent-iridium-us-c35]   .selling-point[_ngcontent-iridium-us-c35]{float:left;display:block;margin-right:1.69491525%;width:100%;display:flex;flex-direction:column;}
+.udacity-impact-container[_ngcontent-iridium-us-c35]   .selling-point[_ngcontent-iridium-us-c35]:last-child{margin-right:0;}
+.udacity-impact-container[_ngcontent-iridium-us-c35]   .selling-point[_ngcontent-iridium-us-c35]:not(:first-child){margin-top:2rem;}
+@media screen and (min-width: 62rem){
+.udacity-impact-container[_ngcontent-iridium-us-c35]   .selling-point[_ngcontent-iridium-us-c35]{width:16.5rem;float:left;display:block;margin-right:1.69491525%;width:100%;}
+.udacity-impact-container[_ngcontent-iridium-us-c35]   .selling-point[_ngcontent-iridium-us-c35]:last-child{margin-right:0;}
+}
+.udacity-impact-container[_ngcontent-iridium-us-c35]   .selling-point--circle[_ngcontent-iridium-us-c35]{display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;width:4rem;height:4rem;margin:auto;padding:0.5rem;}
+@media screen and (min-width: 62rem){
+.udacity-impact-container[_ngcontent-iridium-us-c35]   .selling-point--circle[_ngcontent-iridium-us-c35]{float:left;display:block;margin-right:1.69491525%;width:23.72881356%;display:flex;flex-direction:column;justify-content:center;align-items:center;width:12.375rem;height:12.375rem;border:2px solid #fff;border-radius:50%;box-shadow:0 0 4px 0 rgba(98, 209, 241, 0.3), 10px 10px 40px 0 rgba(98, 209, 241, 0.3), 0 2px 4px 0 rgba(98, 209, 241, 0.12), 0 4px 8px 0 rgba(245, 252, 254, 0.08);}
+}
+.udacity-impact-container[_ngcontent-iridium-us-c35]   .selling-point--icon[_ngcontent-iridium-us-c35]{height:2.875rem;width:2.875rem;}
+.udacity-impact-container[_ngcontent-iridium-us-c35]   .selling-point--statistic[_ngcontent-iridium-us-c35]{color:#02b3e4;font-size:2.5rem;font-weight:300;padding-top:8px;}
+.udacity-impact-container[_ngcontent-iridium-us-c35]   .selling-point--text[_ngcontent-iridium-us-c35]{margin-top:12px;margin-left:auto;margin-right:auto;}
+@media screen and (min-width: 62rem){
+.udacity-impact-container[_ngcontent-iridium-us-c35]   .selling-point--text[_ngcontent-iridium-us-c35]{float:left;display:block;margin-right:1.69491525%;width:66.10169492%;margin-top:0;margin-left:30px;}
+.udacity-impact-container[_ngcontent-iridium-us-c35]   .selling-point--text[_ngcontent-iridium-us-c35]:last-child{margin-right:0;}
+}
+@media screen and (min-width: 73.75rem){
+.udacity-impact-container[_ngcontent-iridium-us-c35]   .selling-point--text[_ngcontent-iridium-us-c35]{margin-left:50px;}
+}
+.udacity-impact-container[_ngcontent-iridium-us-c35]   .selling-point--title[_ngcontent-iridium-us-c35]{color:#11161a;}
+.udacity-impact-container[_ngcontent-iridium-us-c35]   .selling-point--description[_ngcontent-iridium-us-c35]{color:#2e3d49;width:14.375rem;}
+@media screen and (min-width: 62rem){
+.udacity-impact-container[_ngcontent-iridium-us-c35]   .selling-point--description[_ngcontent-iridium-us-c35]{width:20.5rem;}
+}
+.udacity-impact-container[_ngcontent-iridium-us-c35]   .footer[_ngcontent-iridium-us-c35]{clear:both;text-align:center;font-size:0.75rem;margin:auto;padding-top:1rem;width:16.5rem;}
+@media screen and (min-width: 62rem){
+.udacity-impact-container[_ngcontent-iridium-us-c35]   .footer[_ngcontent-iridium-us-c35]{width:80%;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*advantages_kids zone*/
 
 /*! CSS Used from: https://www.udacity.com/styles.92d8b8c354d7018f60f4.css */
@@ -195,7 +277,7 @@ a:active,a:focus,a:hover{color:#24292d;}
 .uppercase[_ngcontent-iridium-us-c48]{text-transform:uppercase;}
 .price-cards[_ngcontent-iridium-us-c48]{display:flex;flex-wrap:wrap;flex-direction:column-reverse;justify-content:center;margin-top:-1rem;}
 @media screen and (min-width: 62rem){
-.price-cards[_ngcontent-iridium-us-c48]{flex-direction:row;}
+.price-cards[_ngcontent-iridium-us-c48]{flex-direction:row;margin-bottom: 3rem;}
 }
 .price-cards[_ngcontent-iridium-us-c48]   .price-card[_ngcontent-iridium-us-c48]{position:relative;width:233px;padding:1.75rem 1.5rem;margin:0 auto 2rem;border-radius:0.375rem;background-color:#fff;box-shadow:5px 5px 25px 0px rgba(46, 61, 73, 0.2);}
 @media screen and (min-width: 62rem){
@@ -204,7 +286,7 @@ a:active,a:focus,a:hover{color:#24292d;}
 }
 .price-cards[_ngcontent-iridium-us-c48]   .price-card[_ngcontent-iridium-us-c48]   .flag[_ngcontent-iridium-us-c48]{position:absolute;display:block;width:0;height:0;top:0;right:0;z-index:6000;border-width:40px;border-style:solid;border-bottom-color:transparent;border-right-color:#ff5483;border-top-color:#ff5483;border-left-color:transparent;border-radius:0 0.375rem 0 0;}
 .price-cards[_ngcontent-iridium-us-c48]   .price-card[_ngcontent-iridium-us-c48]   .flag__text[_ngcontent-iridium-us-c48]{position:absolute;top:-30px;-webkit-transform:rotate(45deg);transform:rotate(45deg);font-size:14px;color:#fff;line-height:1rem;}
-.price-cards[_ngcontent-iridium-us-c48]   .price-card[_ngcontent-iridium-us-c48]   .title[_ngcontent-iridium-us-c48]{color:#2e3d49;margin-bottom:0.5rem;font-size: 3rem;}
+.price-cards[_ngcontent-iridium-us-c48]   .price-card[_ngcontent-iridium-us-c48]   .title[_ngcontent-iridium-us-c48]{color:#2e3d49;margin-bottom:0.5rem;font-size: 2rem;}
 .price-cards[_ngcontent-iridium-us-c48]   .price-card[_ngcontent-iridium-us-c48]   .price[_ngcontent-iridium-us-c48]{display:flex;flex-direction:column;align-items:flex-start;padding-bottom:4rem;color:#4D90CC;font-size:2.25rem;line-height:2.25rem;font-weight:300;}
 .price-cards[_ngcontent-iridium-us-c48]   .price-card[_ngcontent-iridium-us-c48]   .price__payable[_ngcontent-iridium-us-c48]{white-space:nowrap;}
 .price-cards[_ngcontent-iridium-us-c48]   .price-card[_ngcontent-iridium-us-c48]   .price__label[_ngcontent-iridium-us-c48]{font-size:2rem;line-height:1.375rem;font-weight:600;color:#2e3d49;margin-top:0.625rem;}
@@ -220,90 +302,6 @@ a:active,a:focus,a:hover{color:#24292d;}
 @media screen and (min-width: 62rem){
 .price-cards[_ngcontent-iridium-us-c48]   .price-card[_ngcontent-iridium-us-c48]   .enroll-button__container[_ngcontent-iridium-us-c48]   .button[_ngcontent-iridium-us-c48]{width:227px;}
 }
-
-
-
-
-
-/*pour la zone des differentes offres nouvelle version*/
-/*! CSS Used from: https://www.udacity.com/styles.92d8b8c354d7018f60f4.css */
-svg:not(:root){overflow:hidden;}
-
-.contain{max-width:73.75rem;margin-left:auto;margin-right:auto;padding-top:3rem;padding-bottom:3rem;padding-left:0.75rem;padding-right:0.75rem;}
-.contain::after{clear:both;content:"";display:table;}
-@media screen and (min-width: 48rem){
-.contain{padding-top:6rem;padding-bottom:6rem;}
-}
-@media screen and (min-width: 30rem){
-.contain{padding-left:0.99rem;padding-right:0.99rem;}
-}
-@media screen and (min-width: 48rem){
-.contain{padding-left:1.5rem;padding-right:1.5rem;}
-}
-@media screen and (min-width: 73.75rem){
-.contain{padding-left:0;padding-right:0;}
-}
-
-.nd-advantages[_ngcontent-iridium-us-c32]   .comparison-table[_ngcontent-iridium-us-c32]{width:100%;border-radius:0.375rem;box-shadow:0px 1px 20px 0px rgba(46, 61, 73, 0.2);}
-.nd-advantages[_ngcontent-iridium-us-c32]   .comparison-table[_ngcontent-iridium-us-c32]   .row[_ngcontent-iridium-us-c32]{width:100%;display:flex;justify-content:space-around;align-items:center;}
-.nd-advantages[_ngcontent-iridium-us-c32]   .comparison-table[_ngcontent-iridium-us-c32]   .row[_ngcontent-iridium-us-c32]   .col-1[_ngcontent-iridium-us-c32]{flex:3;padding-left:2.25rem;}
-@media screen and (min-width: 48rem){
-.nd-advantages[_ngcontent-iridium-us-c32]   .comparison-table[_ngcontent-iridium-us-c32]   .row[_ngcontent-iridium-us-c32]   .col-1[_ngcontent-iridium-us-c32]{padding-left:3.25rem;}
-}
-.nd-advantages[_ngcontent-iridium-us-c32]   .comparison-table[_ngcontent-iridium-us-c32]   .row[_ngcontent-iridium-us-c32]   .col-2[_ngcontent-iridium-us-c32],.nd-advantages[_ngcontent-iridium-us-c32]   .comparison-table[_ngcontent-iridium-us-c32]   .row[_ngcontent-iridium-us-c32]   .col-3[_ngcontent-iridium-us-c32]{flex:1;text-align:center;}
-@media screen and (min-width: 48rem){
-.nd-advantages[_ngcontent-iridium-us-c32]   .comparison-table[_ngcontent-iridium-us-c32]   .row[_ngcontent-iridium-us-c32]   .col-2[_ngcontent-iridium-us-c32],.nd-advantages[_ngcontent-iridium-us-c32]   .comparison-table[_ngcontent-iridium-us-c32]   .row[_ngcontent-iridium-us-c32]   .col-3[_ngcontent-iridium-us-c32]{padding-right:2.9375rem;}
-}
-.nd-advantages[_ngcontent-iridium-us-c32]   .comparison-table[_ngcontent-iridium-us-c32]   .row__header-primary[_ngcontent-iridium-us-c32]{height:4.5rem;background:linear-gradient(329.99deg, #ff5483 0%, #a951ed 100%);border-radius:0.375rem 0.375rem 0 0;}
-.nd-advantages[_ngcontent-iridium-us-c32]   .comparison-table[_ngcontent-iridium-us-c32]   .row__header-primary[_ngcontent-iridium-us-c32]   .col[_ngcontent-iridium-us-c32]{font-size:2.125rem;font-weight:600;color:#fff;text-transform:capitalize;}
-.nd-advantages[_ngcontent-iridium-us-c32]   .comparison-table[_ngcontent-iridium-us-c32]   .row__header-primary[_ngcontent-iridium-us-c32]   .col[_ngcontent-iridium-us-c32]   .desktop[_ngcontent-iridium-us-c32]{display:none;}
-@media screen and (min-width: 48rem){
-.nd-advantages[_ngcontent-iridium-us-c32]   .comparison-table[_ngcontent-iridium-us-c32]   .row__header-primary[_ngcontent-iridium-us-c32]   .col[_ngcontent-iridium-us-c32]   .desktop[_ngcontent-iridium-us-c32]{display:inline;}
-}
-.nd-advantages[_ngcontent-iridium-us-c32]   .comparison-table[_ngcontent-iridium-us-c32]   .row__header-primary[_ngcontent-iridium-us-c32]   .col[_ngcontent-iridium-us-c32]   .mobile[_ngcontent-iridium-us-c32]{display:inline;}
-@media screen and (min-width: 48rem){
-.nd-advantages[_ngcontent-iridium-us-c32]   .comparison-table[_ngcontent-iridium-us-c32]   .row__header-primary[_ngcontent-iridium-us-c32]   .col[_ngcontent-iridium-us-c32]   .mobile[_ngcontent-iridium-us-c32]{display:none;}
-}
-.nd-advantages[_ngcontent-iridium-us-c32]   .comparison-table[_ngcontent-iridium-us-c32]   .row__header-primary[_ngcontent-iridium-us-c32]   .col-2[_ngcontent-iridium-us-c32],.nd-advantages[_ngcontent-iridium-us-c32]   .comparison-table[_ngcontent-iridium-us-c32]   .row__header-primary[_ngcontent-iridium-us-c32]   .col-3[_ngcontent-iridium-us-c32]{display:none;}
-@media screen and (min-width: 48rem){
-.nd-advantages[_ngcontent-iridium-us-c32]   .comparison-table[_ngcontent-iridium-us-c32]   .row__header-primary[_ngcontent-iridium-us-c32]   .col-2[_ngcontent-iridium-us-c32],.nd-advantages[_ngcontent-iridium-us-c32]   .comparison-table[_ngcontent-iridium-us-c32]   .row__header-primary[_ngcontent-iridium-us-c32]   .col-3[_ngcontent-iridium-us-c32]{display:flex;}
-}
-.nd-advantages[_ngcontent-iridium-us-c32]   .comparison-table[_ngcontent-iridium-us-c32]   .row__header-secondary[_ngcontent-iridium-us-c32]{height:2.9375rem;}
-.nd-advantages[_ngcontent-iridium-us-c32]   .comparison-table[_ngcontent-iridium-us-c32]   .row__header-secondary[_ngcontent-iridium-us-c32]   .h6[_ngcontent-iridium-us-c32]{display:flex;align-items:center;height:100%;color:#473986;background-color:rgba(201, 193, 234, 0.42);margin:0;font-size: 1.2rem;text-transform: uppercase;}
-.nd-advantages[_ngcontent-iridium-us-c32]   .comparison-table[_ngcontent-iridium-us-c32]   .row__feature[_ngcontent-iridium-us-c32]{height:4.875rem;margin-bottom:0.125rem;}
-.nd-advantages[_ngcontent-iridium-us-c32]   .comparison-table[_ngcontent-iridium-us-c32]   .row__feature[_ngcontent-iridium-us-c32]:last-child{margin-bottom:0;}
-.nd-advantages[_ngcontent-iridium-us-c32]   .comparison-table[_ngcontent-iridium-us-c32]   .row__feature[_ngcontent-iridium-us-c32]   .col[_ngcontent-iridium-us-c32]{display:flex;align-items:center;height:100%;background-color:#f9f8fd;font-size:1.5rem;font-weight:600;}
-.nd-advantages[_ngcontent-iridium-us-c32]   .comparison-table[_ngcontent-iridium-us-c32]   .row__feature[_ngcontent-iridium-us-c32]   .col[_ngcontent-iridium-us-c32]   .flag[_ngcontent-iridium-us-c32]{color:#fff;background-color:#ff5483;margin:1rem 0 1rem 1rem;padding:0.25rem 0.5rem;border-radius:0.375rem;}
-@media screen and (min-width: 48rem){
-.nd-advantages[_ngcontent-iridium-us-c32]   .comparison-table[_ngcontent-iridium-us-c32]   .row__feature[_ngcontent-iridium-us-c32]   .col[_ngcontent-iridium-us-c32]   .flag[_ngcontent-iridium-us-c32]{margin:0 1rem;font-size: 12px;}
-}
-.nd-advantages[_ngcontent-iridium-us-c32]   .comparison-table[_ngcontent-iridium-us-c32]   .row__feature[_ngcontent-iridium-us-c32]   .col-2[_ngcontent-iridium-us-c32],.nd-advantages[_ngcontent-iridium-us-c32]   .comparison-table[_ngcontent-iridium-us-c32]   .row__feature[_ngcontent-iridium-us-c32]   .col-3[_ngcontent-iridium-us-c32]{justify-content:center;}
-.nd-advantages[_ngcontent-iridium-us-c32]   .comparison-table[_ngcontent-iridium-us-c32]   .row__feature[_ngcontent-iridium-us-c32]   .col-3[_ngcontent-iridium-us-c32]{display:none;}
-@media screen and (min-width: 48rem){
-.nd-advantages[_ngcontent-iridium-us-c32]   .comparison-table[_ngcontent-iridium-us-c32]   .row__feature[_ngcontent-iridium-us-c32]   .col-3[_ngcontent-iridium-us-c32]{display:flex;}
-}
-.nd-advantages[_ngcontent-iridium-us-c32]   .comparison-table[_ngcontent-iridium-us-c32]   .section[_ngcontent-iridium-us-c32]:last-of-type   [_ngcontent-iridium-us-c32]:last-child   .col-1[_ngcontent-iridium-us-c32]{border-bottom-left-radius:0.375rem;}
-.nd-advantages[_ngcontent-iridium-us-c32]   .comparison-table[_ngcontent-iridium-us-c32]   .section[_ngcontent-iridium-us-c32]:last-of-type   [_ngcontent-iridium-us-c32]:last-child   .col-3[_ngcontent-iridium-us-c32]{border-bottom-right-radius:0.375rem;}
-.nd-advantages[_ngcontent-iridium-us-c32]   .program-pricing[_ngcontent-iridium-us-c32]{height:10.3125rem;width:100%;display:flex;flex-wrap:wrap;justify-content:space-around;align-items:center;margin-top:2rem;border-radius:0.375rem;background-color:rgba(201, 193, 234, 0.35);}
-@media screen and (min-width: 48rem){
-.nd-advantages[_ngcontent-iridium-us-c32]   .program-pricing[_ngcontent-iridium-us-c32]{height:6.25rem;}
-}
-.nd-advantages[_ngcontent-iridium-us-c32]   .program-pricing[_ngcontent-iridium-us-c32]   .col-1[_ngcontent-iridium-us-c32]{flex:0 0 100%;text-transform:capitalize;text-align:center;font-size:1.5rem;color:#000;font-weight:600;}
-@media screen and (min-width: 48rem){
-.nd-advantages[_ngcontent-iridium-us-c32]   .program-pricing[_ngcontent-iridium-us-c32]   .col-1[_ngcontent-iridium-us-c32]{text-align:left;padding-left:3.25rem;flex:3;}
-}
-.nd-advantages[_ngcontent-iridium-us-c32]   .program-pricing[_ngcontent-iridium-us-c32]   .col-2[_ngcontent-iridium-us-c32]{border-right:1px solid #988bd8;padding:0 5%;}
-@media screen and (min-width: 48rem){
-.nd-advantages[_ngcontent-iridium-us-c32]   .program-pricing[_ngcontent-iridium-us-c32]   .col-2[_ngcontent-iridium-us-c32]{border:none;padding:0;}
-}
-.nd-advantages[_ngcontent-iridium-us-c32]   .program-pricing[_ngcontent-iridium-us-c32]   .col-2[_ngcontent-iridium-us-c32],.nd-advantages[_ngcontent-iridium-us-c32]   .program-pricing[_ngcontent-iridium-us-c32]   .col-3[_ngcontent-iridium-us-c32]{flex:1;font-size:1.5rem;color:#657482;text-align:center;}
-@media screen and (min-width: 48rem){
-.nd-advantages[_ngcontent-iridium-us-c32]   .program-pricing[_ngcontent-iridium-us-c32]   .col-2[_ngcontent-iridium-us-c32],.nd-advantages[_ngcontent-iridium-us-c32]   .program-pricing[_ngcontent-iridium-us-c32]   .col-3[_ngcontent-iridium-us-c32]{padding-right:2.9375rem;}
-}
-.nd-advantages[_ngcontent-iridium-us-c32]   .program-pricing[_ngcontent-iridium-us-c32]   .col-2[_ngcontent-iridium-us-c32]   p[_ngcontent-iridium-us-c32],.nd-advantages[_ngcontent-iridium-us-c32]   .program-pricing[_ngcontent-iridium-us-c32]   .col-3[_ngcontent-iridium-us-c32]   p[_ngcontent-iridium-us-c32]{margin:0;}
-.nd-advantages[_ngcontent-iridium-us-c32]   .program-pricing[_ngcontent-iridium-us-c32]   .col-2[_ngcontent-iridium-us-c32]   p.price[_ngcontent-iridium-us-c32],.nd-advantages[_ngcontent-iridium-us-c32]   .program-pricing[_ngcontent-iridium-us-c32]   .col-3[_ngcontent-iridium-us-c32]   p.price[_ngcontent-iridium-us-c32]{color:#11161a;font-weight:600;}
-.nd-advantages[_ngcontent-iridium-us-c32]   .program-pricing[_ngcontent-iridium-us-c32]   .col-3[_ngcontent-iridium-us-c32]   p.price[_ngcontent-iridium-us-c32]   .strikethrough[_ngcontent-iridium-us-c32]{text-decoration:line-through;}
-.nd-advantages[_ngcontent-iridium-us-c32]   .program-pricing[_ngcontent-iridium-us-c32]   .col-3[_ngcontent-iridium-us-c32]   p.highlight[_ngcontent-iridium-us-c32]{color:#bd10e0;}
 
 
 
