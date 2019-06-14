@@ -137,11 +137,9 @@
         </div>
         @endif
 
-        @if($formation->type !== "kids")
 
           @include('includes.course.why')
 
-        @endif
 
 
         @if(\Carbon\Carbon::parse($formation->start_date) > \Carbon\Carbon::now())
@@ -245,7 +243,6 @@
                           <h4 _ngcontent-c95="" class="h5 mb-0 ng-star-inserted">Chapitre</h4>
                           <!---->
                         </header>
-                      <!--  <p _ngcontent-c95="" class="small mb-half"> <a target="_blank" href="{{$projet->enonce}}">Voir l'énoncé</a> </p>-->
                         <!---->
                         <!---->
                         <!---->
