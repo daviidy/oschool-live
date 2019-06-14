@@ -191,8 +191,8 @@ class FormationController extends Controller
     {
         $formation = Formation::where('slug', $slug)->firstOrFail();
         $categorycharacs = Categorycharac::orderby('id','asc')->paginate(30);
-        $user = User::where('name', $formation->teacher)->get();
-        return view('formations.show', ['formation' => $formation, 'categorycharacs' => $categorycharacs, '$user' => $user]);
+        $user = User::where('name', $formation->teacher)->firstOrFail();
+        return view('formations.show', ['formation' => $formation, 'categorycharacs' => $categorycharacs, 'user' => $user]);
     }
 
     /**
