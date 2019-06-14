@@ -104,6 +104,7 @@
           <select name="type" class="form-control" style="" required>
             <option value="parcours">Parcours</option>
             <option value="bootcamp">Bootcamp</option>
+            <option value="kids">Kids</option>
           </select>
         </div>
 

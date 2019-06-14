@@ -342,7 +342,7 @@ button::-moz-focus-inner{border:0;padding:0;}
 
     <div class="col-lg-12">
 
-      <div class="skills-hub-unit-desktop--skill-list-container--31VLW">
+      <div class="skills-hub-unit-desktop--skill-list-container--31VLW"> 
         <button onclick="openTab(event, 'Projet')" id="defaultOpen" type="button" class="skills-hub-unit-desktop--skill-link--3SpB6 skills-hub-unit-desktop--is-active--3ql8W btn btn-link btn-block">Projets</button>
         <button onclick="openTab(event, 'Cours')" type="button"class="skills-hub-unit-desktop--skill-link--3SpB6 btn btn-link btn-block">Ressources supplémentaires</button>
         <button onclick="openTab(event, 'Astuces')" type="button" class="skills-hub-unit-desktop--skill-link--3SpB6 btn btn-link btn-block">Astuces</button>
@@ -567,7 +567,7 @@ button::-moz-focus-inner{border:0;padding:0;}
       <div class="col-lg-8">
 
                 @foreach(Auth::user()->formations as $formation)
-                  @foreach($formation->projets as $projet) 
+                  @foreach($formation->projets as $projet)
                     @if(count($projet->etatprojets))
                       @foreach($projet->etatprojets as $etatprojet)
                         @if($etatprojet->user_id == Auth::user()->id)
