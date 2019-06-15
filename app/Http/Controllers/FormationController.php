@@ -187,7 +187,7 @@ class FormationController extends Controller
      * @param  \App\Formation  $formation
      * @return \Illuminate\Http\Response
      */
-    public function showSlug($slug)
+    public function showSlug($slug) 
     {
         $formation = Formation::where('slug', $slug)->firstOrFail();
         $categorycharacs = Categorycharac::orderby('id','asc')->paginate(30);
