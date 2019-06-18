@@ -37,7 +37,7 @@
 <div class="courses">
   <div class="container">
     <div class="row courses_row">
-      @foreach($category->formations as $formation) 
+      @foreach($category->formations as $formation)
         @if($formation->state == "active")
 
       <!-- Course -->

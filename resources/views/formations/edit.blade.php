@@ -32,7 +32,8 @@
         <input value="{{$formation->start_date}}" name="start_date" type="datetime" id="datepicker">
 
         <div class="wrap-input100">
-          <input class="input100" value="{{$formation->video}}" type="text" name="video" placeholder="Lien de la vidéo (optionnel)">
+          <label for=""> <strong>Vidéo (width: 100% et height: 390px)</strong> </label>
+          <input class="input100" value="{{$formation->video}}" type="text" name="video" placeholder="Lien d'intégration de la vidéo sur Viméo (optionnel)">
           <span class="focus-input100"></span>
           <span class="symbol-input100">
             <i class="fa fa-laptop" aria-hidden="true"></i>

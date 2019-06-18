@@ -132,8 +132,7 @@
             </div>
           </div>
           <div class="c-browser__image">
-            <iframe src="https://vimeo.com/336844762" width="640" height="1138" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-            <iframe width="100%" height="528" src="{{$formation->video}}" frameborder="0" allowFullScreen mozallowfullscreen webkitAllowFullScreen></iframe>
+            {{!!$formation->video!!}}
           </div>
         </div>
         @endif
@@ -149,6 +148,7 @@
         </a>
         @endif
       </div>
+
     </div>
   </div>
 

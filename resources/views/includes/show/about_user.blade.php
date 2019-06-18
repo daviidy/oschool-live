@@ -30,6 +30,13 @@
                                       @endif
                                     </p>
 
+                                    <p class="vds-text vds-spacing--stack-3x">
+
+                                    <span class="info_title">Email:</span>  <br>
+                                      {{$user->email}}
+
+                                    </p><br>
+
                                     @if($user->type2 == 'teacher')
                                     <p class="vds-text vds-spacing--stack-3x">
 
