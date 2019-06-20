@@ -4,7 +4,7 @@
             <!---->
             <div class="title ng-star-inserted">Le concept Oschool</div>
             <!---->
-            <div class="subtitle ng-star-inserted">We provide services customized for your needs at every step of your learning journey to ensure your success!</div>
+            <div class="subtitle ng-star-inserted">A la recherche d'une activité originale pour votre enfant ? <br> Faites lui decouvrir le codage en 2h00 avec OSCHOOL !</div>
             <!---->
             <div class="tabs">
                 <!---->
@@ -20,33 +20,33 @@
                 </div>
                 <div class="tab ng-star-inserted inactive"><img class="tab--icon" src="//images.ctfassets.net/2y9b3o528xhq/1wiqpVycnZpnTjY3fP23DO/4140ec14bc7c4432ba529b192b9afa9d/icon_person_wearing_suit_purple_on_white.svg">
                     <div class="tab--container">
-                        <div class="tab--title">Personal Career Coach</div>
+                        <div class="tab--title">Coach personnel</div>
                     </div>
                 </div>
             </div>
             <!---->
 
             <div class="tab-panel ng-star-inserted">
-                <div class="h4 tab-panel--title">Individual 1-on-1 Mentorship</div>
+                <div class="h4 tab-panel--title">Un coach pour les aider à atteindre l'objectif fixé</div>
                 <div class="statistics-section">
-                    <div class="h6 tab-panel--section-title"> Mentors by the numbers </div>
+                    <div class="h6 tab-panel--section-title">Les chiffres Oschool</div>
                     <div class="statistics">
                         <!---->
-                        <div class="statistic ng-star-inserted"><span class="statistic-quantity">1000+</span> technical mentors</div>
-                        <div class="statistic ng-star-inserted"><span class="statistic-quantity">4.7/5</span> average mentor ratings</div>
+                        <div class="statistic ng-star-inserted"><span class="statistic-quantity">25</span>places</div>
+                        <div class="statistic ng-star-inserted"><span class="statistic-quantity">4h</span> par semaine</div>
                     </div>
                 </div>
                 <div class="list-section">
-                    <div class="h6 tab-panel--section-title"> Mentorship Services </div>
+                    <div class="h6 tab-panel--section-title"> Amusez-vous avec Oschool</div>
                     <ul>
                         <!---->
-                        <li class="ng-star-inserted">6+ hrs of mentor support per month</li>
-                        <li class="ng-star-inserted">Weekly 1-on-1 personal mentor calls</li>
-                        <li class="ng-star-inserted">1-on-1 mentor chats anytime</li>
-                        <li class="ng-star-inserted">Custom weekly learning plan focused on your progress, goals and availability </li>
-                        <li class="ng-star-inserted">Daily progress tracking</li>
-                        <li class="ng-star-inserted">Proactive check-ins with you</li>
-                        <li class="ng-star-inserted">Compensated based on your progress and success</li>
+                        <li class="ng-star-inserted">Apprend en te trompant</li>
+                        <li class="ng-star-inserted">Partage tes idées avec les autres</li>
+                        <li class="ng-star-inserted">Sois fier de ce que tu fais</li>
+                        <li class="ng-star-inserted">Sois créatif</li>
+                        <li class="ng-star-inserted">Sois présent pour créer</li>
+                        <li class="ng-star-inserted">Soyez actif </li>
+
                     </ul>
                 </div>
             </div>
